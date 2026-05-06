@@ -1,89 +1,253 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { getAllPackages, getAllHubs } from '@/lib/data';
+import { getAllPackages } from '@/lib/data';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Junegiri Yatra — India Tour Packages | Char Dham, Treks, Golden Triangle',
-  description: 'India\'s most trusted travel company — Char Dham Yatra, Kedarnath, Himalayan treks, Golden Triangle, Kerala tours. All-inclusive packages from Haridwar, Uttarakhand.',
-  alternates: { canonical: 'https://junegiriyatra.com/' },
-};
+// Scroll reveal hook
+function useScrollReveal() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('v'); }),
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+}
+
+const JOURNEYS = [
+  {
+    tag: 'Sacred Pilgrimage',
+    title: 'Char Dham Yatra',
+    sub: 'Kedarnath · Badrinath · Gangotri · Yamunotri',
+    url: '/packages/char-dham-yatra/',
+    img: 'https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg',
+    color: '#C9923D',
+  },
+  {
+    tag: 'High Altitude Treks',
+    title: 'Himalayan Treks',
+    sub: 'Kedarkantha · Valley of Flowers · Hampta Pass · Kuari Pass',
+    url: '/packages/char-dham-yatra/',
+    img: 'https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=900&q=80',
+    color: '#5B9BD5',
+  },
+  {
+    tag: 'Iconic India',
+    title: 'Golden Triangle',
+    sub: 'Delhi · Agra · Jaipur · Taj Mahal',
+    url: '/packages/golden-triangle/',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/800px-Taj_Mahal_%28Edited%29.jpeg',
+    color: '#C97B3D',
+  },
+  {
+    tag: 'Active Adventures',
+    title: 'Rishikesh Thrills',
+    sub: 'Rafting · Bungee · Camping · Kayaking · Yoga',
+    url: '/packages/char-dham-yatra/',
+    img: 'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=900&q=80',
+    color: '#3DC9A0',
+  },
+];
+
+const PROMISE = [
+  {
+    icon: '🏔',
+    title: 'Himalayan Experts',
+    text: '8+ years operating across Uttarakhand. We know every mountain road, every seasonal window, every hidden gem.',
+  },
+  {
+    icon: '💰',
+    title: 'Zero Hidden Costs',
+    text: 'What we quote is what you pay. Hotel, meals, transport, permits — all included. No surprises at the end.',
+  },
+  {
+    icon: '📱',
+    title: '24/7 WhatsApp Support',
+    text: 'Reply within minutes during season. A dedicated guide on call throughout your journey. Never alone.',
+  },
+];
+
+const STEPS = [
+  { num: '1', title: 'WhatsApp Us', text: 'Tell us your dates, group size, and interests. We respond within 1 hour with a custom plan.' },
+  { num: '2', title: 'Get Your Itinerary', text: 'Receive a fully customised, all-inclusive package with transparent pricing. No obligation.' },
+  { num: '3', title: 'Journey Begins', text: 'Confirm with 30% advance. We handle everything — from pickup to your final drop.' },
+];
+
+const TESTIMONIALS = [
+  {
+    stars: '★★★★★',
+    quote: 'Junegiri made our Char Dham dream come true. Every hotel, every meal, every transfer was perfectly arranged. Felt like traveling with family.',
+    author: 'Rajesh & Sunita Sharma',
+    loc: 'Mumbai, Maharashtra',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'We were a group of 12 from the UK. The international pricing was fair and transparent. Nothing like paying inflated "tourist rates" elsewhere in India.',
+    author: 'David & Sarah Mitchell',
+    loc: 'London, United Kingdom',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'Kedarkantha trek in December — absolutely magical. The guides were experienced, safety was top priority, and the views were beyond words.',
+    author: 'Priya Nair',
+    loc: 'Bengaluru, Karnataka',
+  },
+];
+
+const DESTINATIONS = [
+  { flag: '⛰️', name: 'Kedarnath' },
+  { flag: '🛕', name: 'Char Dham' },
+  { flag: '🕌', name: 'Taj Mahal' },
+  { flag: '🌸', name: 'Valley of Flowers' },
+  { flag: '🏰', name: 'Jaipur' },
+  { flag: '🌊', name: 'Rishikesh' },
+  { flag: '🙏', name: 'Varanasi' },
+  { flag: '🌴', name: 'Kerala' },
+  { flag: '🏖', name: 'Goa' },
+  { flag: '🦚', name: 'Rajasthan' },
+];
+
+const TICKER_ITEMS = [
+  '🏔 8+ Years of Himalayan Expertise',
+  '⭐ 4.8/5 Rating — 312 Reviews',
+  '✈ 2,847+ Happy Travelers',
+  '🌍 International Pricing Available',
+  '📱 Reply in Under 1 Hour',
+  '✅ 100% Satisfaction Guarantee',
+  '💰 Zero Hidden Costs. Ever.',
+  '🕌 Char Dham Season 2025 Now Open',
+];
 
 export default function HomePage() {
   const packages = getAllPackages().slice(0, 3);
-  const hubs = getAllHubs();
+  const heroBgRef = useRef<HTMLDivElement>(null);
+  useScrollReveal();
+
+  useEffect(() => {
+    // Parallax on hero
+    const onScroll = () => {
+      if (heroBgRef.current) {
+        heroBgRef.current.style.transform = `scale(1.05) translateY(${window.scrollY * 0.15}px)`;
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Trigger hero bg loaded class
+    setTimeout(() => heroBgRef.current?.classList.add('loaded'), 100);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   return (
     <>
-      {/* HERO */}
-      <section style={{
-        minHeight: '85vh',
-        background: 'linear-gradient(135deg, #0a0a0a 0%, #0d3b12 50%, #0a0a0a 100%)',
-        display: 'flex',
-        alignItems: 'center',
-        marginTop: 84,
-        position: 'relative',
-        overflow: 'hidden',
-      }}>
-        <div style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: 'url(https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg)',
-          backgroundSize: 'cover', backgroundPosition: 'center',
-          opacity: 0.3,
-        }} />
-        <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-          <div style={{ marginBottom: 16 }}>
-            <span style={{
-              background: 'rgba(255,107,0,0.9)', color: '#fff', padding: '6px 18px',
-              borderRadius: 50, fontSize: 12, fontWeight: 700, letterSpacing: 2,
-            }}>
-              🇮🇳 INDIA&apos;S TRUSTED TRAVEL PARTNER
-            </span>
-          </div>
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 900, marginBottom: 20, lineHeight: 1.15 }}>
-            Sacred Journeys &amp; <em style={{ fontStyle: 'normal', color: '#FFC107' }}>Grand Adventures</em><br />
-            Across India
-          </h1>
-          <p style={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.85)', maxWidth: 700, margin: '0 auto 36px', lineHeight: 1.7 }}>
-            Char Dham Yatra · Golden Triangle · Himalayan Treks · Rishikesh Adventures · Kerala Backwaters · Rajasthan Palaces
-          </p>
-          <div style={{ display: 'flex', gap: 16, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20my%20India%20trip" className="btn btn-wa" target="_blank" rel="noopener noreferrer" style={{ fontSize: 16, padding: '18px 36px' }}>
-              📱 Plan My Trip on WhatsApp
-            </a>
-            <Link href="/packages/char-dham-yatra/" className="btn btn-outline" style={{ fontSize: 16, padding: '18px 36px' }}>
-              View Packages
-            </Link>
-          </div>
-          <div style={{ display: 'flex', gap: 32, justifyContent: 'center', marginTop: 48, flexWrap: 'wrap' }}>
-            {[['2,847+', 'Happy Travelers'], ['4.8/5', '312 Reviews'], ['8+ Yrs', 'Experience'], ['100%', 'Satisfaction']].map(([num, lbl]) => (
-              <div key={lbl} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '1.8rem', fontWeight: 800, color: '#FFC107', fontFamily: 'Poppins, sans-serif' }}>{num}</div>
-                <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', letterSpacing: 1 }}>{lbl}</div>
+      {/* ── HERO ───────────────────────────────── */}
+      <section className="hero">
+        <div
+          ref={heroBgRef}
+          className="hero-bg"
+          style={{ backgroundImage: 'url(https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg)' }}
+        />
+        <div className="hero-overlay" />
+
+        <div className="hero-content">
+          <div className="container">
+            <div style={{ maxWidth: 820 }}>
+              <div className="hero-badge">
+                ⛰️ Himalayan Season 2025 — Seats Filling Fast
               </div>
-            ))}
+
+              <h1 className="hero-h1">
+                Sacred Journeys &amp;
+                <em>Grand Adventures</em>
+                <span style={{
+                  fontFamily: 'Inter, sans-serif',
+                  fontSize: '0.38em',
+                  fontWeight: 300,
+                  color: 'rgba(255,248,238,0.55)',
+                  letterSpacing: '3px',
+                  textTransform: 'uppercase',
+                  display: 'block',
+                  marginTop: '10px',
+                }}>
+                  Across India
+                </span>
+              </h1>
+
+              <p className="hero-sub">
+                Char Dham Yatra · Himalayan Treks · Golden Triangle · Rishikesh Adventures ·
+                Kerala Backwaters · Rajasthan Palaces. Crafted by Haridwar&apos;s finest.
+              </p>
+
+              <div className="hero-ctas">
+                <a
+                  href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20my%20India%20trip"
+                  className="btn btn-wa btn-lg"
+                  target="_blank" rel="noopener noreferrer"
+                >
+                  📱 Plan on WhatsApp
+                </a>
+                <Link href="/packages/char-dham-yatra/" className="btn btn-gold btn-lg">
+                  Explore Packages →
+                </Link>
+              </div>
+
+              <div className="hero-stats">
+                {[
+                  ['2,847+', 'Happy Travelers'],
+                  ['4.8 ★', '312 Reviews'],
+                  ['8+ Yrs', 'Experience'],
+                  ['₹0', 'Hidden Costs'],
+                ].map(([num, lbl]) => (
+                  <div key={lbl} className="hero-stat">
+                    <span className="num">{num}</span>
+                    <span className="lbl">{lbl}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
+
+        <div className="hero-scroll">Scroll</div>
       </section>
 
-      {/* FEATURED CATEGORIES */}
+      {/* ── TICKER ─────────────────────────────── */}
+      <div className="ticker" aria-hidden="true">
+        <div className="ticker-track">
+          {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
+            <span key={i} className="ticker-item">
+              {item}
+              <span className="ticker-dot" />
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── JOURNEYS ───────────────────────────── */}
       <section className="section">
         <div className="container">
-          <h2 className="s-title">Explore <em>India</em></h2>
-          <p className="s-sub">Every kind of journey — sacred pilgrimages, mountain treks, royal heritage, coastal paradise</p>
+          <p className="s-label fade-in">Choose Your Journey</p>
+          <h2 className="s-title fade-in">Four Worlds to <em>Explore</em></h2>
+          <p className="s-sub fade-in">
+            Every kind of India, perfectly curated — from the sacred to the spectacular
+          </p>
           <div className="s-line" />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20 }}>
-            {[
-              { title: 'Char Dham Yatra', sub: 'Sacred Pilgrimage', url: '/packages/char-dham-yatra/', img: 'https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg', tag: 'Most Popular' },
-              { title: 'Golden Triangle', sub: 'Delhi · Agra · Jaipur', url: '/packages/golden-triangle/', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/800px-Taj_Mahal_%28Edited%29.jpeg', tag: 'Iconic India' },
-              { title: 'Taj Mahal Tours', sub: 'Day Trips & Multi-Day', url: '/packages/taj-mahal-tours/', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/800px-Taj_Mahal_%28Edited%29.jpeg', tag: 'Bestseller' },
-            ].map((cat) => (
-              <Link key={cat.url} href={cat.url} style={{ display: 'block', borderRadius: 14, overflow: 'hidden', position: 'relative', height: 280, textDecoration: 'none' }}>
-                <div style={{ position: 'absolute', inset: 0, backgroundImage: `url('${cat.img}')`, backgroundSize: 'cover', backgroundPosition: 'center', transition: 'transform .4s' }} />
-                <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%)' }} />
-                <div style={{ position: 'absolute', bottom: 20, left: 20 }}>
-                  <span style={{ background: 'rgba(255,107,0,0.9)', color: '#fff', padding: '3px 12px', borderRadius: 50, fontSize: 10, fontWeight: 700, letterSpacing: 1 }}>{cat.tag}</span>
-                  <div style={{ fontSize: 20, fontWeight: 800, color: '#fff', fontFamily: 'Poppins, sans-serif', marginTop: 8 }}>{cat.title}</div>
-                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)' }}>{cat.sub}</div>
+
+          <div className="journeys-grid">
+            {JOURNEYS.map((j) => (
+              <Link key={j.title} href={j.url} className="journey-card fade-in">
+                <div
+                  className="journey-card-img"
+                  style={{ backgroundImage: `url('${j.img}')` }}
+                />
+                <div className="journey-card-overlay" />
+                <div className="journey-card-body">
+                  <div className="journey-card-tag">{j.tag}</div>
+                  <div className="journey-card-title">{j.title}</div>
+                  <div className="journey-card-sub">{j.sub}</div>
+                  <div className="journey-card-arrow">Explore</div>
                 </div>
               </Link>
             ))}
@@ -91,12 +255,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FEATURED PACKAGES */}
-      <section className="section" style={{ background: 'var(--card)' }}>
+      {/* ── THE PROMISE ─────────────────────────── */}
+      <section className="section" style={{ background: 'var(--card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
-          <h2 className="s-title">Featured <em>Packages</em></h2>
-          <p className="s-sub">All-inclusive packages — hotel, meals, transport. No hidden costs.</p>
+          <p className="s-label fade-in">Why Travel With Us</p>
+          <h2 className="s-title fade-in">The <em>Junegiri</em> Promise</h2>
+          <p className="s-sub fade-in">
+            8 years of trust built one journey at a time. 2,847 travelers who came back — and brought their families.
+          </p>
           <div className="s-line" />
+
+          <div className="promise-grid fade-in">
+            {PROMISE.map((p) => (
+              <div key={p.title} className="promise-card">
+                <div className="promise-icon">{p.icon}</div>
+                <div className="promise-title">{p.title}</div>
+                <p className="promise-text">{p.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── FEATURED PACKAGES ───────────────────── */}
+      <section className="section">
+        <div className="container">
+          <p className="s-label fade-in">Most Loved Trips</p>
+          <h2 className="s-title fade-in">Featured <em>Packages</em></h2>
+          <p className="s-sub fade-in">
+            All-inclusive — hotel, meals, transport, guide. What you see is what you pay.
+          </p>
+          <div className="s-line" />
+
           <div className="pkg-grid">
             {packages.map((pkg) => (
               <div key={pkg.slug} className="pkg-card fade-in">
@@ -105,69 +295,154 @@ export default function HomePage() {
                 </div>
                 <div className="pkg-body">
                   <h3 className="pkg-name">{pkg.name}</h3>
-                  <p className="pkg-dur">{pkg.duration}</p>
+                  <p className="pkg-dur">⏱ {pkg.duration}</p>
                   <div className="pkg-price-block">
-                    <span className="price-primary" style={{ fontSize: '1.4rem' }}>₹{pkg.price_from.toLocaleString('en-IN')}</span>
+                    <span className="price-primary">₹{pkg.price_from.toLocaleString('en-IN')}</span>
                     <span className="price-suffix">/person</span>
                   </div>
                   <p className="pkg-route">{pkg.destinations_short}</p>
                   <div className="pkg-btns">
-                    <Link href={pkg.url} className="btn btn-outline">View Details</Link>
-                    <a href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`} className="btn btn-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <Link href={pkg.url} className="btn btn-outline-gold">Details</Link>
+                    <a
+                      href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
+                      className="btn btn-wa"
+                      target="_blank" rel="noopener noreferrer"
+                    >
+                      WhatsApp
+                    </a>
                   </div>
                 </div>
               </div>
             ))}
           </div>
+
+          <div style={{ textAlign: 'center', marginTop: 44 }}>
+            <Link href="/packages/char-dham-yatra/" className="btn btn-outline-gold btn-lg fade-in">
+              View All Packages →
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* WHY JUNEGIRI */}
-      <section className="section">
+      {/* ── HOW IT WORKS ────────────────────────── */}
+      <section className="section" style={{ background: 'var(--card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
-          <h2 className="s-title">Why <em>Junegiri Yatra?</em></h2>
-          <p className="s-sub">8 years of trust. 2,847+ happy travellers. Haridwar-based, Himalaya-expert.</p>
+          <p className="s-label fade-in">Simple Process</p>
+          <h2 className="s-title fade-in">How It <em>Works</em></h2>
+          <p className="s-sub fade-in">From first message to mountain summit — we make it effortless</p>
           <div className="s-line" />
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 18 }}>
-            {[
-              { icon: '🏔', title: 'Himalayan Experts', desc: '8+ years operating in Uttarakhand. We know every mountain road.' },
-              { icon: '💰', title: 'Transparent Pricing', desc: 'All-inclusive pricing. No hidden costs. INR for India, international rates for global visitors.' },
-              { icon: '📱', title: 'WhatsApp Support', desc: '24/7 support on WhatsApp. Reply within minutes during season.' },
-              { icon: '✅', title: '100% Satisfaction', desc: 'Guaranteed quality on hotels, food, and transport. Or we refund.' },
-            ].map((item) => (
-              <div key={item.title} style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)', borderRadius: 12, padding: 24, textAlign: 'center' }}>
-                <div style={{ fontSize: 36, marginBottom: 14 }}>{item.icon}</div>
-                <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 8, color: '#fff' }}>{item.title}</h3>
-                <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6 }}>{item.desc}</p>
+
+          <div className="steps-grid">
+            {STEPS.map((s) => (
+              <div key={s.num} className="step-card fade-in">
+                <div className="step-num">{s.num}</div>
+                <div className="step-title">{s.title}</div>
+                <p className="step-text">{s.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: 52 }}>
+            <a
+              href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20my%20India%20trip"
+              className="btn btn-wa btn-lg fade-in"
+              target="_blank" rel="noopener noreferrer"
+              style={{ display: 'inline-flex' }}
+            >
+              📱 Start on WhatsApp — Free
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ────────────────────────── */}
+      <section className="section test-section">
+        <div className="container">
+          <p className="s-label fade-in">Real Stories</p>
+          <h2 className="s-title fade-in">Words from the <em>Mountains</em></h2>
+          <div className="s-line" />
+
+          <div className="test-grid">
+            {TESTIMONIALS.map((t, i) => (
+              <div key={i} className="test-card fade-in">
+                <div className="test-stars">{t.stars}</div>
+                <p className="test-quote">&ldquo;{t.quote}&rdquo;</p>
+                <div className="test-divider" />
+                <div className="test-author">{t.author}</div>
+                <div className="test-loc">{t.loc}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="section" style={{ background: 'linear-gradient(135deg,var(--s2),var(--dark))', textAlign: 'center' }}>
+      {/* ── DESTINATIONS ────────────────────────── */}
+      <section className="section" style={{ background: 'var(--card)', borderTop: '1px solid var(--border)', paddingTop: 56, paddingBottom: 56 }}>
         <div className="container">
-          <h2 className="s-title">Start Planning Your <em>India Journey</em></h2>
-          <p className="s-sub">Tell us where you want to go. We&apos;ll build the perfect package for your group, dates, and budget.</p>
-          <a href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20an%20India%20trip%20with%20Junegiri%20Yatra" className="btn btn-wa" target="_blank" rel="noopener noreferrer" style={{ fontSize: 16, padding: '18px 36px', marginTop: 24, display: 'inline-flex' }}>
-            📱 WhatsApp +91 98738 97652
-          </a>
+          <p className="s-label fade-in">We Cover All of India</p>
+          <h2 className="s-title fade-in" style={{ marginBottom: 36 }}>Where Will You <em>Go?</em></h2>
+          <div className="dest-strip fade-in">
+            {DESTINATIONS.map((d) => (
+              <div key={d.name} className="dest-pill">
+                <span className="flag">{d.flag}</span>
+                {d.name}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* SCHEMA */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'TravelAgency',
-        name: 'Junegiri Yatra',
-        url: 'https://junegiriyatra.com',
-        logo: 'https://junegiriyatra.com/assets/logo.png',
-        telephone: '+919873897652',
-        address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressRegion: 'Uttarakhand', addressCountry: 'IN' },
-        description: 'India tour operator offering Char Dham Yatra, Golden Triangle, Himalayan treks and adventure tourism.',
-        aggregateRating: { '@type': 'AggregateRating', ratingValue: 4.8, reviewCount: 312 },
-      }) }} />
+      {/* ── FINAL CTA ────────────────────────────── */}
+      <section className="section cta-section">
+        <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
+          <p className="s-label fade-in">Ready?</p>
+          <h2 className="s-title fade-in" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: 16 }}>
+            Your India Story<br /><em>Begins Here</em>
+          </h2>
+          <p className="s-sub fade-in" style={{ marginBottom: 36 }}>
+            Tell us where you want to go. We&apos;ll build the perfect package for your group, dates, and budget. No obligation, reply guaranteed within 1 hour.
+          </p>
+          <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }} className="fade-in">
+            <a
+              href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20an%20India%20trip%20with%20Junegiri%20Yatra"
+              className="btn btn-wa btn-lg"
+              target="_blank" rel="noopener noreferrer"
+            >
+              📱 WhatsApp +91 98738 97652
+            </a>
+            <Link href="/packages/char-dham-yatra/" className="btn btn-outline btn-lg">
+              Browse Packages
+            </Link>
+          </div>
+          <p style={{ marginTop: 24, fontSize: 12, color: 'var(--muted)' }} className="fade-in">
+            🔒 No spam · No cold calls · Just your perfect India journey
+          </p>
+        </div>
+      </section>
+
+      {/* ── SCHEMA ───────────────────────────────── */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'TravelAgency',
+            name: 'Junegiri Yatra',
+            url: 'https://junegiriyatra.com',
+            logo: 'https://junegiriyatra.com/assets/logo.png',
+            telephone: '+919873897652',
+            address: {
+              '@type': 'PostalAddress',
+              addressLocality: 'Haridwar',
+              addressRegion: 'Uttarakhand',
+              addressCountry: 'IN',
+            },
+            description: 'India tour operator specialising in Char Dham Yatra, Himalayan treks, Golden Triangle, Rishikesh adventures and luxury India tours.',
+            aggregateRating: { '@type': 'AggregateRating', ratingValue: 4.8, reviewCount: 312 },
+            sameAs: ['https://www.junegiriyatra.com'],
+          }),
+        }}
+      />
     </>
   );
 }
