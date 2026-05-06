@@ -232,6 +232,21 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         </section>
       )}
 
+      {/* TRAVEL GUIDE — long-form SEO content */}
+      {(pkg as Package & { travel_guide?: string }).travel_guide && (
+        <section className="section" style={{ background: 'var(--card)' }}>
+          <div className="container">
+            <div
+              className="content-section travel-guide fade-in"
+              style={{ maxWidth: 900, margin: '0 auto' }}
+              dangerouslySetInnerHTML={{
+                __html: (pkg as Package & { travel_guide?: string }).travel_guide!,
+              }}
+            />
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
       {pkg.faq && pkg.faq.length > 0 && (
         <section className="section">

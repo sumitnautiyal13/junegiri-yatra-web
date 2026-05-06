@@ -155,6 +155,20 @@ export default function HubPage({ hub }: { hub: Hub }) {
         </section>
       )}
 
+      {/* TRAVEL GUIDE — long-form SEO content */}
+      {(hub as Hub & { travel_guide?: string }).travel_guide && (
+        <section className="section">
+          <div className="container">
+            <div
+              className="content-section travel-guide fade-in"
+              dangerouslySetInnerHTML={{
+                __html: (hub as Hub & { travel_guide?: string }).travel_guide!,
+              }}
+            />
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
       {hub.faq && hub.faq.length > 0 && (
         <section className="section" style={{ background: 'var(--card)' }}>

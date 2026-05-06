@@ -1083,3 +1083,310 @@ footer a:hover { color: var(--gold2); }
   .city-cta-btns { flex-direction: column; width: 100%; }
   .btn-gold-lg, .btn-outline-lg { width: 100%; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   NAV DROPDOWN SYSTEM
+   ══════════════════════════════════════════════════════════ */
+
+/* Group wrapper — positioned relative for dropdown */
+.nav-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* The button that triggers the dropdown */
+.nav-group-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 2px;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.nav-group-btn:hover { color: var(--gold2); }
+.nav-chevron {
+  color: var(--muted);
+  transition: transform .25s;
+  flex-shrink: 0;
+}
+.nav-group:hover .nav-chevron,
+.nav-group.mobile-open .nav-chevron {
+  transform: rotate(180deg);
+  color: var(--gold2);
+}
+
+/* Plain nav links (no dropdown) */
+.nav-plain {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  padding: 4px 2px;
+  transition: color .2s;
+  white-space: nowrap;
+}
+.nav-plain:hover { color: var(--gold2); }
+
+/* DROPDOWN PANEL */
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  background: #0f0c28;
+  border: 1px solid var(--border2);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,146,61,0.08);
+  z-index: 999;
+  /* Point arrow */
+  &::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px; height: 6px;
+    background: #0f0c28;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border-top: 1px solid var(--border2);
+  }
+}
+
+/* Show on hover (desktop) */
+@media (min-width: 901px) {
+  .nav-group:hover .nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    animation: dropIn .18s ease;
+  }
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(-6px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* Dropdown item */
+.ndi {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  text-decoration: none;
+  transition: background .15s;
+}
+.ndi:hover { background: rgba(201,146,61,0.10); }
+.ndi-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+.ndi:hover .ndi-label { color: var(--gold2); }
+.ndi-sub {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+/* Divider inside dropdown */
+.ndd {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 4px;
+}
+
+/* MOBILE: show dropdown when .mobile-open */
+@media (max-width: 900px) {
+  .nav-group { flex-direction: column; align-items: flex-start; width: 100%; }
+  .nav-group-btn { width: 100%; justify-content: space-between; font-size: 15px; padding: 10px 0; }
+  .nav-dropdown {
+    position: static;
+    transform: none;
+    min-width: unset;
+    width: 100%;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: none;
+    background: rgba(255,255,255,0.04);
+    border-color: var(--border);
+    margin-bottom: 6px;
+    display: none;
+    &::before { display: none; }
+  }
+  .nav-group.mobile-open .nav-dropdown { display: flex; flex-direction: column; gap: 2px; }
+  .nav-plain { font-size: 15px; padding: 10px 0; display: block; width: 100%; }
+  .ndi { padding: 9px 10px; }
+  .ndi-label { font-size: 13.5px; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   CHAR DHAM FROM — INDEX PAGE (/char-dham-from/)
+   ══════════════════════════════════════════════════════════ */
+
+.cdf-region { margin-bottom: 48px; }
+.cdf-region-title {
+  font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.10em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.cdf-city-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.cdf-city-card {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 3px;
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 18px 16px;
+  text-decoration: none;
+  position: relative;
+  transition: border-color .2s, background .2s, transform .15s;
+}
+.cdf-city-card:hover {
+  border-color: var(--gold);
+  background: var(--card3);
+  transform: translateY(-2px);
+}
+.cdf-city-name {
+  font-size: 1rem; font-weight: 700; color: #fff;
+}
+.cdf-city-state {
+  font-size: 0.75rem; color: var(--muted);
+}
+.cdf-city-time {
+  font-size: 0.8rem; color: var(--text); margin-top: 6px;
+}
+.cdf-city-mode {
+  font-size: 0.75rem; color: var(--muted);
+}
+.cdf-city-arrow {
+  position: absolute; top: 18px; right: 16px;
+  font-size: 1.1rem; color: var(--muted);
+  transition: color .2s, transform .2s;
+}
+.cdf-city-card:hover .cdf-city-arrow { color: var(--gold2); transform: translateX(3px); }
+
+/* Includes grid */
+.cdf-includes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.cdf-include-card {
+  display: flex; gap: 14px; align-items: flex-start;
+  background: var(--card3);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 18px;
+}
+.cdf-include-icon { font-size: 1.5rem; flex-shrink: 0; }
+.cdf-include-title { font-size: 0.9rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.cdf-include-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
+
+/* Steps */
+.cdf-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.cdf-step {
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.cdf-step-num {
+  font-size: 2rem; font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  color: var(--border2); flex-shrink: 0; line-height: 1;
+}
+.cdf-step-title { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.cdf-step-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cdf-city-grid { grid-template-columns: repeat(2, 1fr); }
+  .cdf-includes-grid { grid-template-columns: repeat(2, 1fr); }
+  .cdf-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 540px) {
+  .cdf-city-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .cdf-includes-grid { grid-template-columns: 1fr; }
+  .cdf-steps { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════
+   TRAVEL GUIDE — long-form SEO content block
+   ══════════════════════════════════════════════════════════ */
+.travel-guide { line-height: 1.80; }
+
+.travel-guide h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem; font-weight: 800;
+  color: #fff; margin: 48px 0 16px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.travel-guide h2:first-child { margin-top: 0; border-top: none; padding-top: 0; }
+
+.travel-guide h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 700;
+  color: var(--gold2); margin: 28px 0 10px;
+}
+
+.travel-guide p {
+  font-size: 0.95rem; color: var(--muted);
+  margin-bottom: 16px; max-width: 820px;
+}
+
+.travel-guide ul, .travel-guide ol {
+  padding-left: 20px; margin-bottom: 20px;
+}
+.travel-guide li {
+  font-size: 0.92rem; color: var(--muted);
+  margin-bottom: 8px; line-height: 1.65;
+}
+
+.travel-guide strong { color: var(--text); font-weight: 600; }
+
+.travel-guide a {
+  color: var(--gold2);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color .2s;
+}
+.travel-guide a:hover { color: var(--gold3); }
+
+.travel-guide table {
+  width: 100%; border-collapse: collapse;
+  margin: 20px 0; font-size: 0.88rem;
+}
+.travel-guide th {
+  background: var(--card3);
+  color: var(--gold2); font-weight: 700;
+  padding: 10px 14px; text-align: left;
+  border-bottom: 1px solid var(--border2);
+}
+.travel-guide td {
+  padding: 10px 14px; color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.travel-guide tr:last-child td { border-bottom: none; }
