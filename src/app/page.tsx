@@ -1,9 +1,8 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { getAllPackages } from '@/lib/data';
-import type { Metadata } from 'next';
 
 // Scroll reveal hook
 function useScrollReveal() {
@@ -23,7 +22,7 @@ const JOURNEYS = [
     title: 'Char Dham Yatra',
     sub: 'Kedarnath · Badrinath · Gangotri · Yamunotri',
     url: '/packages/char-dham-yatra/',
-    img: 'https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg',
     color: '#C9923D',
   },
   {
@@ -121,10 +120,25 @@ const TICKER_ITEMS = [
   '🕌 Char Dham Season 2025 Now Open',
 ];
 
+const PKG_CATEGORIES: Record<string, string> = {
+  'char-dham-yatra-9n-10d':       'Pilgrimage',
+  'kedarnath-yatra-3n-4d':        'Pilgrimage',
+  'do-dham-yatra-5n-6d':          'Pilgrimage',
+  'golden-triangle-tour-5n-6d':   'Heritage',
+  'taj-mahal-day-tour-from-delhi': 'Heritage',
+};
+
+const FILTERS = ['All', 'Pilgrimage', 'Heritage', 'Treks', 'Adventure'];
+
 export default function HomePage() {
-  const packages = getAllPackages().slice(0, 3);
+  const allPackages = getAllPackages();
   const heroBgRef = useRef<HTMLDivElement>(null);
+  const [activeFilter, setActiveFilter] = useState('All');
   useScrollReveal();
+
+  const filteredPackages = activeFilter === 'All'
+    ? allPackages
+    : allPackages.filter(p => PKG_CATEGORIES[p.slug] === activeFilter);
 
   useEffect(() => {
     // Parallax on hero
@@ -147,7 +161,7 @@ export default function HomePage() {
         <div
           ref={heroBgRef}
           className="hero-bg"
-          style={{ backgroundImage: 'url(https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg)' }}
+          style={{ backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg)' }}
         />
         <div className="hero-overlay" />
 
@@ -159,25 +173,12 @@ export default function HomePage() {
               </div>
 
               <h1 className="hero-h1">
-                Sacred Journeys &amp;
-                <em>Grand Adventures</em>
-                <span style={{
-                  fontFamily: 'Inter, sans-serif',
-                  fontSize: '0.38em',
-                  fontWeight: 300,
-                  color: 'rgba(255,248,238,0.55)',
-                  letterSpacing: '3px',
-                  textTransform: 'uppercase',
-                  display: 'block',
-                  marginTop: '10px',
-                }}>
-                  Across India
-                </span>
+                India, the way
+                <em>it was meant to be.</em>
               </h1>
 
               <p className="hero-sub">
-                Char Dham Yatra · Himalayan Treks · Golden Triangle · Rishikesh Adventures ·
-                Kerala Backwaters · Rajasthan Palaces. Crafted by Haridwar&apos;s finest.
+                Pilgrimage. Peaks. Heritage. Adventure. Crafted by Haridwar&apos;s finest since 2017.
               </p>
 
               <div className="hero-ctas">
@@ -287,8 +288,20 @@ export default function HomePage() {
           </p>
           <div className="s-line" />
 
+          <div className="pkg-tabs">
+            {FILTERS.map((f) => (
+              <button
+                key={f}
+                className={`pkg-tab${activeFilter === f ? ' active' : ''}`}
+                onClick={() => setActiveFilter(f)}
+              >
+                {f}
+              </button>
+            ))}
+          </div>
+
           <div className="pkg-grid">
-            {packages.map((pkg) => (
+            {filteredPackages.map((pkg) => (
               <div key={pkg.slug} className="pkg-card fade-in">
                 <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')` }}>
                   {pkg.tag && <span className="pkg-tag">{pkg.tag}</span>}

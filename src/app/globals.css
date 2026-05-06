@@ -101,6 +101,14 @@ header.scrolled {
 .nav-links { display: flex; gap: 28px; align-items: center; }
 .nav-links a { color: rgba(255,248,238,0.7); font-size: 13.5px; font-weight: 500; transition: color .25s; letter-spacing: 0.2px; }
 .nav-links a:hover { color: #fff; }
+.nav-phone {
+  color: var(--gold2) !important;
+  font-size: 12.5px !important;
+  font-weight: 600 !important;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+.nav-phone:hover { opacity: 1 !important; color: var(--gold3) !important; }
 .nav-cta {
   background: var(--wa) !important; color: #fff !important;
   padding: 10px 22px !important; border-radius: 8px;
@@ -418,6 +426,32 @@ footer a:hover { color: var(--gold2); }
   color: #fff; margin-bottom: 10px;
 }
 .promise-text { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+/* ── PACKAGE FILTER TABS ──────────────────── */
+.pkg-tabs {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.pkg-tab {
+  padding: 9px 24px;
+  border-radius: 50px;
+  font-size: 13px; font-weight: 600;
+  border: 1.5px solid var(--border2);
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all .25s;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.3px;
+}
+.pkg-tab:hover { border-color: var(--gold); color: var(--gold2); }
+.pkg-tab.active {
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  border-color: transparent;
+  color: #07051A;
+  box-shadow: 0 4px 18px rgba(201,146,61,.38);
+}
 
 /* ── PACKAGE CARDS ────────────────────────── */
 .pkg-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }

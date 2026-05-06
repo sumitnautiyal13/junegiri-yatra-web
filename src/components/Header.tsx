@@ -65,6 +65,9 @@ export default function Header() {
                   {link.label}
                 </Link>
               ))}
+              <a href="tel:+919873897652" className="nav-phone" aria-label="Call us">
+                📞 +91 98738 97652
+              </a>
               <a
                 href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
                 className="nav-cta"
