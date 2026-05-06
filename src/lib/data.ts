@@ -1,6 +1,7 @@
-import type { Package, Hub } from '@/types';
+import type { Package, Hub, City } from '@/types';
 import packagesData from '../../data/packages.json';
 import hubsData from '../../data/hubs.json';
+import citiesData from '../../data/cities.json';
 
 export function getAllPackages(): Package[] {
   return packagesData as Package[];
@@ -24,4 +25,12 @@ export function getAllPackageSlugs(): string[] {
 
 export function getAllHubSlugs(): string[] {
   return (hubsData as Hub[]).map((h) => h.slug);
+}
+
+export function getAllCities(): City[] {
+  return citiesData as City[];
+}
+
+export function getCityBySlug(slug: string): City | undefined {
+  return (citiesData as City[]).find((c) => c.slug === slug);
 }

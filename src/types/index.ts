@@ -109,6 +109,39 @@ export interface Hub {
   faq?: FAQ[];
 }
 
+export interface CityFlight {
+  route: string;
+  duration: string;
+  airlines: string;
+  frequency: string;
+  fare_range: string;
+}
+
+export interface CityTrain {
+  name: string;
+  from: string;
+  to: string;
+  duration: string;
+}
+
+export interface City {
+  slug: string;
+  name: string;
+  state: string;
+  distance_km: number;
+  airport_code: string;
+  airport_name: string;
+  flight: CityFlight;
+  train: CityTrain;
+  road_hours: number;
+  total_time: string;
+  haridwar_transfer: string;
+  best_mode: 'fly' | 'train' | 'road';
+  cultural_hook: string;
+  hero_image: string;
+  faq: FAQ[];
+}
+
 export type Currency = 'INR' | 'USD' | 'GBP' | 'EUR' | 'AUD' | 'CAD' | 'AED' | 'SGD';
 
 export interface ExchangeRates {
