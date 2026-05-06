@@ -253,7 +253,7 @@
     "keywords": "golden triangle tour package, delhi agra jaipur tour, taj mahal tour package, golden triangle 5 days 6 nights",
     "h1": "Golden Triangle Tour <em>Delhi · Agra · Jaipur</em>",
     "hero_tagline": "India's most iconic tour route — Mughal Delhi, the Taj Mahal in Agra, and royal Pink City Jaipur. 6 days of palaces, forts, and timeless history with English-speaking guide.",
-    "hero_image": "/images/golden_triangle_agra.jpg",
+    "hero_image": "/images/temple_entrance.jpg",
     "tag": "Iconic India",
     "duration": "5 Nights / 6 Days",
     "destinations_short": "Delhi · Agra · Jaipur",
@@ -314,9 +314,9 @@
       {"q": "What is the dress code for monuments?", "a": "Modest dress recommended (covered shoulders and knees). Some religious sites require head covering (we provide). At the Taj Mahal, no large bags or food items. Comfortable walking shoes essential."}
     ],
     "related": [
-      {"name": "Taj Mahal Day Tour from Delhi", "duration": "1 Day", "price": 5500, "image": "/images/golden_triangle_agra.jpg", "url": "/packages/taj-mahal-day-tour-from-delhi/"},
+      {"name": "Taj Mahal Day Tour from Delhi", "duration": "1 Day", "price": 5500, "image": "/images/temple_entrance.jpg", "url": "/packages/taj-mahal-day-tour-from-delhi/"},
       {"name": "Golden Triangle + Rajasthan", "duration": "11N/12D", "price": 38500, "image": "/images/mountains2.jpg", "url": "/packages/golden-triangle-rajasthan-tour/"},
-      {"name": "Golden Triangle 7N/8D", "duration": "7N/8D", "price": 26500, "image": "/images/golden_triangle_agra.jpg", "url": "/packages/golden-triangle-tour-7n-8d/"}
+      {"name": "Golden Triangle 7N/8D", "duration": "7N/8D", "price": 26500, "image": "/images/temple_entrance.jpg", "url": "/packages/golden-triangle-tour-7n-8d/"}
     ]
   },
 
@@ -329,7 +329,7 @@
     "keywords": "taj mahal day tour from delhi, same day taj mahal tour, taj mahal by train delhi, gatimaan express tour",
     "h1": "Taj Mahal <em>Day Tour</em> from Delhi",
     "hero_tagline": "Visit one of the Seven Wonders of the World in a single day. Pickup from Delhi at dawn, see the Taj Mahal at sunrise, explore Agra Fort, return to Delhi by evening.",
-    "hero_image": "/images/golden_triangle_agra.jpg",
+    "hero_image": "/images/temple_entrance.jpg",
     "tag": "Bestselling Day Trip",
     "duration": "1 Day · 14 hours",
     "destinations_short": "Delhi · Agra · Delhi",
@@ -385,8 +385,8 @@
       {"q": "Can I visit Mathura/Vrindavan on the way?", "a": "Yes, with the car option only. Adds about 2 hours to the day. Mathura is the birthplace of Lord Krishna. Tell us at booking time and we'll adjust the itinerary."}
     ],
     "related": [
-      {"name": "Golden Triangle Tour 5N/6D", "duration": "5N/6D", "price": 18500, "image": "/images/golden_triangle_agra.jpg", "url": "/packages/golden-triangle-tour-5n-6d/"},
-      {"name": "Taj Mahal + Mathura Day Tour", "duration": "1 Day", "price": 6800, "image": "/images/golden_triangle_agra.jpg", "url": "/packages/taj-mahal-mathura-day-tour/"},
+      {"name": "Golden Triangle Tour 5N/6D", "duration": "5N/6D", "price": 18500, "image": "/images/temple_entrance.jpg", "url": "/packages/golden-triangle-tour-5n-6d/"},
+      {"name": "Taj Mahal + Mathura Day Tour", "duration": "1 Day", "price": 6800, "image": "/images/temple_entrance.jpg", "url": "/packages/taj-mahal-mathura-day-tour/"},
       {"name": "Delhi Sightseeing Day Tour", "duration": "1 Day", "price": 3800, "image": "/images/mountains1.jpg", "url": "/packages/delhi-sightseeing-day-tour/"}
     ]
   }

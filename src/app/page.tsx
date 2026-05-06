@@ -38,7 +38,7 @@ const JOURNEYS = [
     title: 'Golden Triangle',
     sub: 'Delhi · Agra · Jaipur · Taj Mahal',
     url: '/packages/golden-triangle/',
-    img: '/images/mountains1.jpg',
+    img: '/images/temple_entrance.jpg',
     color: '#C97B3D',
   },
   {
@@ -46,7 +46,7 @@ const JOURNEYS = [
     title: 'Rishikesh Thrills',
     sub: 'Rafting · Bungee · Camping · Kayaking · Yoga',
     url: '/packages/char-dham-yatra/',
-    img: '/images/rishikesh_rafting.jpg',
+    img: '/images/rishikesh_bridge.jpg',
     color: '#3DC9A0',
   },
 ];
