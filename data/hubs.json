@@ -2,78 +2,557 @@
   {
     "slug": "char-dham-yatra",
     "url": "/packages/char-dham-yatra/",
-    "name": "Char Dham Yatra Packages",
-    "title": "Char Dham Yatra Packages 2026 — All Variants Compared",
-    "meta_description": "Compare all Char Dham Yatra packages — 9 days, 10 days, helicopter, from Delhi, from Haridwar. Starting Rs 7,590. Hotel + meals + private vehicle. Book now.",
-    "keywords": "char dham yatra packages, char dham 2026, char dham from haridwar, char dham from delhi, char dham helicopter package",
-    "h1": "Char Dham Yatra <em>Packages 2026</em>",
-    "hero_tagline": "All Char Dham Yatra packages compared — choose between 9-day, 10-day, helicopter, or full Char Dham + Hemkund variants. All include hotel, meals, and private vehicle.",
+    "name": "Char Dham Yatra",
+    "meta_description": "Complete Char Dham Yatra packages from Haridwar — Yamunotri, Gangotri, Kedarnath & Badrinath. Helicopter options available. 2,847+ pilgrims guided. Book now.",
+    "keywords": "char dham yatra packages, kedarnath yatra, badrinath yatra, char dham helicopter, do dham yatra, haridwar pilgrimage packages",
+    "h1": "Char Dham <em>Yatra</em>",
+    "hero_tagline": "Walk the Sacred Path — Four Divine Abodes, One Transformative Journey",
     "hero_image": "/images/kedarnath_temple_cover.jpg",
     "stats": [
-      {"num": "5+", "lbl": "PACKAGE VARIANTS"},
-      {"num": "₹7,590", "lbl": "STARTING PRICE"},
-      {"num": "May–Oct", "lbl": "BEST SEASON"},
-      {"num": "2,847+", "lbl": "PILGRIMS SERVED"}
+      {
+        "num": "5+",
+        "lbl": "Packages"
+      },
+      {
+        "num": "2,847+",
+        "lbl": "Pilgrims Guided"
+      },
+      {
+        "num": "4Y+",
+        "lbl": "Season Experience"
+      },
+      {
+        "num": "100%",
+        "lbl": "Satisfaction"
+      }
     ],
-    "grid_title": "All <em>Char Dham Yatra</em> Packages",
-    "grid_subtitle": "Find the package that fits your time, budget, and physical comfort",
+    "grid_title": "All <em>Char Dham Yatra Packages</em>",
+    "grid_subtitle": "From budget pilgrimages to luxury helicopter yatras — complete your Char Dham Yatra from Haridwar with expert guides, seamless logistics and devotional support.",
     "packages": [
-      {"name": "Char Dham Yatra 9N/10D", "duration": "9 Nights / 10 Days", "price": 19800, "intl_price_usd": 420, "tag": "MOST POPULAR", "image": "/images/kedarnath_temple_cover.jpg", "route": "Haridwar → Yamunotri → Gangotri → Kedarnath → Badrinath → Haridwar. Complete sacred circuit.", "url": "/packages/char-dham-yatra-9n-10d/", "wa_text": "Char Dham Yatra 9N/10D details chahiye"},
-      {"name": "Char Dham Yatra 8N/9D (Short)", "duration": "8 Nights / 9 Days", "price": 18590, "intl_price_usd": 399, "image": "/images/badrinath_temple.jpg", "route": "Same route, slightly compressed. Recommended for fit travellers wanting to save a day.", "url": "/packages/char-dham-yatra-8n-9d/", "wa_text": "Char Dham Yatra 8N/9D details chahiye"},
-      {"name": "Char Dham from Delhi", "duration": "10 Nights / 11 Days", "price": 22990, "intl_price_usd": 459, "image": "/images/haridwar_ghat.jpg", "route": "Delhi pickup, Haridwar transit, full Char Dham circuit, Delhi drop. Perfect for Delhi-based pilgrims.", "url": "/packages/char-dham-yatra-from-delhi-10n-11d/", "wa_text": "Char Dham from Delhi 10N/11D details chahiye"},
-      {"name": "Do Dham (Kedarnath + Badrinath)", "duration": "5 Nights / 6 Days", "price": 11550, "intl_price_usd": 265, "tag": "QUICK YATRA", "image": "/images/snow_cabin.jpg", "route": "Two holiest dhams in 6 days. Includes Mana Village, Tapt Kund. Perfect for limited time.", "url": "/packages/do-dham-yatra-5n-6d/", "wa_text": "Do Dham Yatra details chahiye"},
-      {"name": "Kedarnath Yatra", "duration": "3 Nights / 4 Days", "price": 7590, "intl_price_usd": 179, "tag": "BUDGET PICK", "image": "/images/trek_himalaya.jpg", "route": "Sacred Jyotirlinga in 4 days. Helicopter, palki, pony available. Best for short visits.", "url": "/packages/kedarnath-yatra-3n-4d/", "wa_text": "Kedarnath Yatra 3N/4D details chahiye"}
+      {
+        "name": "Char Dham Yatra",
+        "duration": "9N/10D",
+        "price": 19800,
+        "intl_price_usd": 238,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/char-dham-yatra-9n-10d/",
+        "tag": "Most Popular",
+        "route": "Haridwar → Yamunotri → Gangotri → Kedarnath → Badrinath → Haridwar",
+        "from_city": "Haridwar",
+        "wa_text": "Char Dham Yatra 9N10D booking enquiry"
+      },
+      {
+        "name": "Do Dham Yatra",
+        "duration": "5N/6D",
+        "price": 13500,
+        "intl_price_usd": 162,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/do-dham-yatra-5n-6d/",
+        "tag": "Value",
+        "route": "Haridwar → Kedarnath → Badrinath → Haridwar",
+        "from_city": "Haridwar",
+        "wa_text": "Do Dham Yatra booking enquiry"
+      },
+      {
+        "name": "Kedarnath Yatra",
+        "duration": "3N/4D",
+        "price": 8500,
+        "intl_price_usd": 102,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/kedarnath-yatra-3n-4d/",
+        "tag": "Popular",
+        "route": "Haridwar → Guptkashi → Gaurikund → Kedarnath Temple → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Kedarnath Yatra booking enquiry"
+      },
+      {
+        "name": "Badrinath Yatra",
+        "duration": "2N/3D",
+        "price": 6500,
+        "intl_price_usd": 79,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/badrinath-yatra-2n-3d/",
+        "tag": "Divine",
+        "route": "Haridwar → Joshimath → Badrinath Temple → Mana Village → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Badrinath Yatra booking enquiry"
+      },
+      {
+        "name": "Yamunotri & Gangotri 2 Dham",
+        "duration": "4N/5D",
+        "price": 11500,
+        "intl_price_usd": 138,
+        "image": "/images/mountains1.jpg",
+        "url": "/packages/yamunotri-gangotri-2-dham-4n-5d/",
+        "tag": "2 Dham",
+        "route": "Haridwar → Barkot → Yamunotri → Uttarkashi → Gangotri → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Yamunotri Gangotri 2 Dham booking enquiry"
+      },
+      {
+        "name": "Haridwar & Rishikesh Spiritual",
+        "duration": "3N/4D",
+        "price": 7500,
+        "intl_price_usd": 90,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/haridwar-rishikesh-spiritual-3n-4d/",
+        "tag": "Spiritual",
+        "route": "Haridwar → Har Ki Pauri → Rishikesh Ashrams → Ganga Aarti → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Haridwar Rishikesh Spiritual Tour booking enquiry"
+      },
+      {
+        "name": "Kedarnath Helicopter Yatra",
+        "duration": "2N/3D",
+        "price": 24000,
+        "intl_price_usd": 288,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/kedarnath-helicopter-2n-3d/",
+        "tag": "Premium",
+        "route": "Haridwar → Phata/Sersi Helipad → Kedarnath → Return by Helicopter",
+        "from_city": "Haridwar",
+        "wa_text": "Kedarnath Helicopter Yatra booking enquiry"
+      },
+      {
+        "name": "Char Dham Helicopter Yatra",
+        "duration": "7N/8D",
+        "price": 65000,
+        "intl_price_usd": 780,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/char-dham-helicopter-7n-8d/",
+        "tag": "Luxury",
+        "route": "Haridwar → Helicopter: Yamunotri → Gangotri → Kedarnath → Badrinath → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Char Dham Helicopter Yatra booking enquiry"
+      }
     ],
-    "content_title": "Complete <em>Char Dham Yatra Guide</em> 2026",
-    "content": "<h2>What is the Char Dham Yatra?</h2><p>The Char Dham Yatra is the most sacred Hindu pilgrimage in northern India. The four dhams (sacred abodes) are <strong>Yamunotri</strong> (source of the Yamuna river), <strong>Gangotri</strong> (source of the Ganga river), <strong>Kedarnath</strong> (one of the twelve Jyotirlingas of Lord Shiva), and <strong>Badrinath</strong> (the abode of Lord Vishnu). All four temples are situated in the Garhwal region of Uttarakhand at altitudes between 3,000 and 3,600 metres in the Himalayas.</p><p>Hindus believe that completing the Char Dham Yatra at least once in a lifetime washes away sins and bestows moksha. The temples are open only during the summer and autumn months — typically from late April to early November — as they remain snowbound in winter.</p><h2>Best Time for Char Dham Yatra</h2><ul><li><strong>May to mid-June</strong>: Cool weather, full crowds, beautiful clear views. Hotels fill up fast — book 2-3 months ahead.</li><li><strong>July-August</strong>: Heavy monsoon. Avoid due to landslide risks and trail closures.</li><li><strong>September-October</strong>: Excellent weather, smaller crowds. Highly recommended for first-time yatris.</li></ul><h2>Char Dham Yatra Routes</h2><p>The traditional Char Dham Yatra route is in clockwise order: <strong>Yamunotri → Gangotri → Kedarnath → Badrinath</strong>. Most pilgrims start from Haridwar (well-connected by train and air) and complete the circuit in 9-10 days. Total distance covered is approximately 1,750 km of mountain driving plus 50+ km of trekking.</p><h2>Char Dham Yatra Registration 2026</h2><p>The Uttarakhand government requires <strong>mandatory registration</strong> for all Char Dham pilgrims. Register at registrationandtouristcare.uk.gov.in. We help complete the registration as part of our service. Carry your registration certificate, government ID, and passport-size photographs.</p><h2>Difficulty Level</h2><p>The Char Dham Yatra includes three treks. Yamunotri is moderate (6 km one-way). Kedarnath is challenging (19-22 km one-way) but well-supported by ponies, palkis, and helicopters. Senior citizens are welcome — we routinely arrange helicopter ascents for elderly pilgrims.</p><h2>What to Pack</h2><p>Layered woollens, raincoat, sturdy trekking shoes, sunglasses, sunscreen, personal medicines, power bank, ID proof, and small daypack. Even in May, temperatures at Kedarnath can drop to 5°C. We share a detailed packing checklist after booking.</p>",
-    "comparison_headers": ["Package", "Duration", "Coverage", "Starting Price"],
+    "content_title": "Complete <em>Char Dham Yatra Guide</em>",
+    "content": "<p>The Char Dham Yatra — the circuit of four sacred shrines of Yamunotri, Gangotri, Kedarnath, and Badrinath — is one of the most revered pilgrimages in Hinduism and one of the most breathtaking journeys through the Garhwal Himalayas. Junegiri Yatra has guided over 2,847 pilgrims on this transformative circuit, departing from our hometown of Haridwar — the traditional starting point of the Char Dham Yatra.</p><p>Our complete 9-night, 10-day Char Dham Yatra covers all four dhams in the traditional order. Yamunotri, the source of the Yamuna River, is reached via a 6-km trek from Janki Chatti. Gangotri, the origin of the Ganga, sits at 3,048m in a dramatic glacial valley. Kedarnath, the highest Jyotirlinga dedicated to Lord Shiva, requires either an 18-km trek or a short helicopter hop from Phata or Sersi. Badrinath, enshrined between the Nar and Narayan peaks, is accessible by road and concludes the yatra with the grand Maha Abhishek puja at the Vishnu temple.</p><p>For pilgrims with limited time or mobility, our helicopter options make the yatra accessible without physical strain. The Kedarnath Helicopter Yatra completes the most strenuous leg by air. Our flagship Char Dham Helicopter Yatra covers all four dhams in 7 nights using chartered helicopters, luxury guesthouses, and dedicated pujaris for private darshan arrangements — ideal for senior devotees, corporate groups, and international pilgrims.</p><p>All ground packages include private AC vehicle transport, all meals (vegetarian sattvic), hotel accommodation near each dham, a devoted yatra manager accompanying the group throughout, and pre-arranged puja bookings at each temple. Our team handles all Kedarnath registration and biometric requirements on your behalf.</p>",
+    "comparison_headers": [
+      "Package",
+      "Duration",
+      "Dhams Covered",
+      "Best For",
+      "Price"
+    ],
     "comparison_rows": [
-      [{"is_link": true, "text": "Char Dham 9N/10D", "url": "/packages/char-dham-yatra-9n-10d/"}, {"text": "10 Days"}, {"text": "All 4 Dhams + Mana Village"}, {"is_price": true, "value": 19800}],
-      [{"is_link": true, "text": "Char Dham 8N/9D", "url": "/packages/char-dham-yatra-8n-9d/"}, {"text": "9 Days"}, {"text": "All 4 Dhams (compressed)"}, {"is_price": true, "value": 18590}],
-      [{"is_link": true, "text": "Char Dham from Delhi", "url": "/packages/char-dham-yatra-from-delhi-10n-11d/"}, {"text": "11 Days"}, {"text": "All 4 Dhams + Delhi pickup"}, {"is_price": true, "value": 22990}],
-      [{"is_link": true, "text": "Do Dham", "url": "/packages/do-dham-yatra-5n-6d/"}, {"text": "6 Days"}, {"text": "Kedarnath + Badrinath only"}, {"is_price": true, "value": 11550}],
-      [{"is_link": true, "text": "Kedarnath Only", "url": "/packages/kedarnath-yatra-3n-4d/"}, {"text": "4 Days"}, {"text": "Kedarnath Jyotirlinga"}, {"is_price": true, "value": 7590}]
+      [
+        {
+          "text": "Char Dham Yatra"
+        },
+        {
+          "text": "9N/10D"
+        },
+        {
+          "text": "All 4 Dhams"
+        },
+        {
+          "text": "Complete Pilgrimage"
+        },
+        {
+          "is_price": true,
+          "value": 19800
+        }
+      ],
+      [
+        {
+          "text": "Do Dham Yatra"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "Kedarnath + Badrinath"
+        },
+        {
+          "text": "Value Seekers"
+        },
+        {
+          "is_price": true,
+          "value": 13500
+        }
+      ],
+      [
+        {
+          "text": "Kedarnath Yatra"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "Kedarnath"
+        },
+        {
+          "text": "Shiva Devotees"
+        },
+        {
+          "is_price": true,
+          "value": 8500
+        }
+      ],
+      [
+        {
+          "text": "Badrinath Yatra"
+        },
+        {
+          "text": "2N/3D"
+        },
+        {
+          "text": "Badrinath"
+        },
+        {
+          "text": "Vishnu Devotees"
+        },
+        {
+          "is_price": true,
+          "value": 6500
+        }
+      ],
+      [
+        {
+          "text": "Yamunotri & Gangotri"
+        },
+        {
+          "text": "4N/5D"
+        },
+        {
+          "text": "Yamunotri + Gangotri"
+        },
+        {
+          "text": "Source Pilgrims"
+        },
+        {
+          "is_price": true,
+          "value": 11500
+        }
+      ],
+      [
+        {
+          "text": "Haridwar & Rishikesh"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "Haridwar + Rishikesh"
+        },
+        {
+          "text": "Spiritual Beginners"
+        },
+        {
+          "is_price": true,
+          "value": 7500
+        }
+      ],
+      [
+        {
+          "text": "Kedarnath Helicopter"
+        },
+        {
+          "text": "2N/3D"
+        },
+        {
+          "text": "Kedarnath"
+        },
+        {
+          "text": "Premium / Elderly"
+        },
+        {
+          "is_price": true,
+          "value": 24000
+        }
+      ],
+      [
+        {
+          "text": "Char Dham Helicopter"
+        },
+        {
+          "text": "7N/8D"
+        },
+        {
+          "text": "All 4 Dhams"
+        },
+        {
+          "text": "Luxury / Mobility"
+        },
+        {
+          "is_price": true,
+          "value": 65000
+        }
+      ]
     ],
     "faq": [
-      {"q": "Which Char Dham package is best for first-time pilgrims?", "a": "We recommend the <strong>9N/10D Char Dham Yatra</strong>. It includes all four dhams at a comfortable pace with proper rest days. The 8N/9D version is faster but more tiring. If you have less time, start with Do Dham (Kedarnath + Badrinath)."},
-      {"q": "Can I book Char Dham by helicopter?", "a": "Yes. Full helicopter Char Dham Yatra (5-6 days, all four dhams by chopper) costs Rs 1,80,000-2,10,000 per person. We can arrange this. For a hybrid approach, do Kedarnath by helicopter and other dhams by road — saves time and is more affordable."},
-      {"q": "How early should I book Char Dham Yatra 2026?", "a": "Book at least <strong>2-3 months in advance</strong> for May/June dates. Hotels in Kedarnath, Badrinath, Yamunotri area are limited and fill up fast. Helicopter bookings open in February-March. Last-minute bookings are possible but with limited hotel options."},
-      {"q": "What is the difference between Char Dham and Chota Char Dham?", "a": "Char Dham (or Chota Char Dham) refers to the four dhams in <strong>Uttarakhand</strong> — Yamunotri, Gangotri, Kedarnath, Badrinath. The original Char Dham (as established by Adi Shankaracharya) refers to four shrines across India: Badrinath (north), Dwarka (west), Puri (east), Rameshwaram (south). Most pilgrims today refer to the Uttarakhand Char Dham."}
-    ]
+      {
+        "q": "Is Char Dham Yatra registration mandatory?",
+        "a": "Yes. The Uttarakhand government mandates biometric registration for all pilgrims visiting Kedarnath and other Char Dham shrines during the yatra season. Registration is done through the official Devasthanam Board portal. Our team handles all registration formalities on behalf of our group pilgrims — you simply need to provide a valid photo ID and recent photograph at the time of booking."
+      },
+      {
+        "q": "Which month is best for Char Dham Yatra?",
+        "a": "The yatra season typically runs from Akshaya Tritiya (April/May) to Diwali (October/November). May–June and September–October are the most popular windows with stable weather and clear skies. July–August sees heavy monsoon rains which can cause landslides and road closures. We monitor NDMA advisories daily and keep pilgrims updated on route safety."
+      },
+      {
+        "q": "Can elderly pilgrims complete the Char Dham Yatra?",
+        "a": "Yes, with the right package. Badrinath is fully road-accessible and suitable for elderly pilgrims. Gangotri and Yamunotri involve short walks of 1–3 km that can be completed by palanquin (doli) or horseback, which we arrange. Kedarnath requires either a helicopter or a pony/doli for those unable to trek. Our Char Dham Helicopter package is specifically designed for senior devotees."
+      },
+      {
+        "q": "What is the difference between helicopter yatra and trek yatra to Kedarnath?",
+        "a": "The trek route from Gaurikund to Kedarnath is 18 km one-way at altitudes between 1,980m and 3,583m and takes 6–8 hours. It is a spiritually rewarding but physically demanding journey. The helicopter route from Phata or Sersi takes just 7–10 minutes and drops you 500m from the temple. Helicopter slots are limited and must be booked weeks in advance during peak season — we handle all bookings."
+      },
+      {
+        "q": "What is the maximum group size for Char Dham packages?",
+        "a": "Our standard group departures accommodate 6 to 20 pilgrims per vehicle convoy. Private group departures for families or corporate groups of 2 to 50 persons are available with dedicated vehicle fleets and a private yatra manager. Solo pilgrims are welcomed into scheduled group departures."
+      },
+      {
+        "q": "How far in advance should I book the Char Dham Yatra?",
+        "a": "We recommend booking at least 60–90 days in advance for May–June departures, which are the most heavily subscribed. September–October bookings should be made 30–45 days in advance. Helicopter yatra packages, especially the full Char Dham helicopter circuit, should be booked 90+ days ahead as helicopter slots are allocated by a government lottery system."
+      },
+      {
+        "q": "What precautions are taken for altitude sickness on the yatra?",
+        "a": "Our yatra managers carry basic altitude sickness medication and pulse oximeters throughout the journey. All pilgrims are briefed on acclimatisation protocols at Haridwar. Rest days are built into the full Char Dham itinerary. Pilgrims with pre-existing heart or lung conditions are advised to consult their doctor and share medical history with us before booking."
+      },
+      {
+        "q": "What is the cancellation policy for Char Dham packages?",
+        "a": "Cancellations 30+ days before departure: full refund minus 5% processing fee. 15–29 days before: 75% refund. 7–14 days before: 50% refund. Less than 7 days: non-refundable. If the yatra is cancelled by government order due to natural disaster or shrine closure, a full credit or rescheduling to the next available date is offered at no charge."
+      },
+      {
+        "q": "Can I arrange VVIP or special darshan at the shrines?",
+        "a": "We assist with Abhishek puja bookings at Kedarnath and Badrinath through the Badrinath-Kedarnath Temple Committee (BKTC). Priority darshan queues can be arranged at additional cost for Badrinath. Please note that VVIP darshan (direct government-tier access) at Kedarnath is managed directly by the state government and cannot be commercially guaranteed; we facilitate applications on your behalf."
+      },
+      {
+        "q": "Is the Char Dham Yatra suitable for children?",
+        "a": "Children aged 5 and above can comfortably join Badrinath and Gangotri itineraries. The Kedarnath trek is not recommended for children under 12. Helicopter options make Kedarnath accessible to younger children and are included in our family-friendly packages. All our vehicles have safety seats available for toddlers and young children on request."
+      }
+    ],
+    "travel_guide": "<h2>Your Complete Guide to Char Dham Yatra from Haridwar</h2><p>The Char Dham — four abodes of the divine — sits at the headwaters of India's most sacred rivers, scattered across the high Garhwal Himalayas between 1,981m (Gangotri) and 3,583m (Kedarnath). The traditional yatra circuit follows a precise sequence: Yamunotri first, then Gangotri, then Kedarnath, and finally Badrinath. This sequence aligns with both the positions of the shrines on the map (west to east) and the religious order of the associated deities.</p><h3>Temple Opening and Closing Dates</h3><p>All four Char Dham shrines open on specific auspicious dates in April or May (usually Akshaya Tritiya for Gangotri, and Shubh Muhurta for others) and close for winter between October and November (usually on Diwali or Bhai Dooj). The exact dates are announced by the temple committees based on the Hindu Panchang calendar. We update our website and WhatsApp broadcast list with dates each year as soon as they are officially declared.</p><h3>The Kedarnath Trek Route</h3><p>The 18-km trail from Gaurikund begins at 1,982m and climbs through rhododendron forests, rocky switchbacks, and glacial streams to Kedarnath at 3,583m. Key stops include Jungle Chatti (4 km), Bheembali (6 km), Lincholi (8 km), and Rambara (13 km). Porters, ponies, dolis (palanquins), and helicopter services operate from Gaurikund. Our team pre-arranges pony and doli bookings to avoid last-minute waits.</p><h3>Accommodation Near the Dhams</h3><p>Accommodation near the shrines ranges from basic GMVN guesthouses and dharamshalas to private lodges. Kedarnath offers only tented accommodation and GMVN huts near the temple. Badrinath, Gangotri, and Yamunotri have a wider range of private guesthouses. Our packages use verified, clean properties with vegetarian catering. Upgrades to riverside or mountain-view rooms are available on request.</p><h3>What to Carry for the Yatra</h3><p>Essential items include warm woolens (even in May, nights near the shrines drop below 5°C), comfortable walking shoes, a personal first-aid kit, any prescription medication, a raincoat, and a reusable water bottle. The shrines have strict dress codes — non-revealing, modest clothing is required inside all temple compounds. Electronic devices should be kept in waterproof pouches during the Kedarnath trek.</p>"
   },
-
   {
     "slug": "golden-triangle",
     "url": "/packages/golden-triangle/",
-    "name": "Golden Triangle Tour Packages",
-    "title": "Golden Triangle Tour Packages — Delhi, Agra, Jaipur 2026",
-    "meta_description": "All Golden Triangle Tour packages — 4 days, 5 days, 7 days, luxury, from Delhi. Taj Mahal, Amber Fort, Hawa Mahal. Starting Rs 14,500. AC vehicle, English guide. Book now.",
-    "keywords": "golden triangle tour packages, delhi agra jaipur tour, taj mahal package, golden triangle from delhi 2026",
-    "h1": "Golden Triangle <em>Tour Packages</em>",
-    "hero_tagline": "India's most iconic tour route — Delhi, Agra, and Jaipur. Choose from 4-day quick tours to 8-day deep dives, with options for luxury palace hotels and English-speaking guides.",
+    "name": "Golden Triangle Tours",
+    "meta_description": "Explore Delhi, Agra & Jaipur with Junegiri Yatra's Golden Triangle packages. Taj Mahal day tours, Rajasthan circuits & wildlife combos. Book from Haridwar.",
+    "keywords": "golden triangle tour, taj mahal tour, delhi agra jaipur package, rajasthan tour, ranthambore safari, braj bhoomi yatra",
+    "h1": "Golden Triangle <em>Tours</em>",
+    "hero_tagline": "India's Most Iconic Journey — Delhi, Agra & Jaipur Await",
     "hero_image": "/images/temple_entrance.jpg",
     "stats": [
-      {"num": "5+", "lbl": "VARIANTS"},
-      {"num": "₹14,500", "lbl": "STARTING PRICE"},
-      {"num": "Oct–Mar", "lbl": "BEST SEASON"},
-      {"num": "3 Cities", "lbl": "DELHI · AGRA · JAIPUR"}
+      {
+        "num": "5",
+        "lbl": "Packages"
+      },
+      {
+        "num": "800+",
+        "lbl": "Tourists"
+      },
+      {
+        "num": "Heritage",
+        "lbl": "UNESCO Sites"
+      },
+      {
+        "num": "All-Inclusive",
+        "lbl": "Pricing"
+      }
     ],
-    "grid_title": "All <em>Golden Triangle</em> Variants",
-    "grid_subtitle": "Pick the duration and luxury tier that fits your trip",
+    "grid_title": "All <em>Golden Triangle Packages</em>",
+    "grid_subtitle": "From a quick Taj Mahal day tour to a full Rajasthan circuit with wildlife safaris — discover India's heritage heartland with Junegiri Yatra.",
     "packages": [
-      {"name": "Golden Triangle 5N/6D", "duration": "5 Nights / 6 Days", "price": 18500, "intl_price_usd": 379, "tag": "MOST POPULAR", "image": "/images/temple_entrance.jpg", "route": "Delhi → Agra → Jaipur → Delhi. Perfect first-time India trip with comfortable pace.", "url": "/packages/golden-triangle-tour-5n-6d/", "wa_text": "Golden Triangle 5N/6D details chahiye"},
-      {"name": "Taj Mahal Day Tour", "duration": "1 Day", "price": 5500, "intl_price_usd": 89, "tag": "DAY TRIP", "image": "/images/temple_entrance.jpg", "route": "Same-day Taj Mahal from Delhi. By car or Gatimaan Express train.", "url": "/packages/taj-mahal-day-tour-from-delhi/", "wa_text": "Taj Mahal day tour details chahiye"}
+      {
+        "name": "Golden Triangle Tour",
+        "duration": "5N/6D",
+        "price": 18500,
+        "intl_price_usd": 222,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/golden-triangle-tour-5n-6d/",
+        "tag": "Classic",
+        "route": "Haridwar → Delhi → Agra (Taj Mahal) → Fatehpur Sikri → Jaipur → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Golden Triangle Tour 5N6D booking enquiry"
+      },
+      {
+        "name": "Taj Mahal Day Tour",
+        "duration": "1 Day",
+        "price": 6500,
+        "intl_price_usd": 79,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/taj-mahal-day-tour-from-delhi/",
+        "tag": "Day Tour",
+        "route": "Delhi → Agra (Taj Mahal & Agra Fort) → Delhi",
+        "from_city": "Delhi",
+        "wa_text": "Taj Mahal Day Tour booking enquiry"
+      },
+      {
+        "name": "Rajasthan Tour",
+        "duration": "6N/7D",
+        "price": 21000,
+        "intl_price_usd": 252,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/rajasthan-tour-6n-7d/",
+        "tag": "New",
+        "route": "Delhi → Jaipur → Pushkar → Jodhpur → Udaipur → Return",
+        "from_city": "Delhi",
+        "wa_text": "Rajasthan Tour 6N7D booking enquiry"
+      },
+      {
+        "name": "Golden Triangle + Ranthambore",
+        "duration": "7N/8D",
+        "price": 24500,
+        "intl_price_usd": 294,
+        "image": "/images/valley_flowers.jpg",
+        "url": "/packages/golden-triangle-ranthambore-7n-8d/",
+        "tag": "Wildlife",
+        "route": "Haridwar → Delhi → Agra → Ranthambore Safari → Jaipur → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Golden Triangle Ranthambore booking enquiry"
+      },
+      {
+        "name": "Braj Bhoomi Yatra",
+        "duration": "5N/6D",
+        "price": 14500,
+        "intl_price_usd": 174,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/braj-bhoomi-yatra-5n-6d/",
+        "tag": "Spiritual",
+        "route": "Haridwar → Mathura → Vrindavan → Govardhan → Agra → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Braj Bhoomi Yatra booking enquiry"
+      }
     ],
-    "content_title": "<em>Golden Triangle</em> Travel Guide",
-    "content": "<h2>What is the Golden Triangle?</h2><p>The Golden Triangle refers to India's most popular tourist circuit connecting three cities — <strong>Delhi</strong>, <strong>Agra</strong>, and <strong>Jaipur</strong>. The three cities form a roughly equilateral triangle on the map, each about 200-250 km apart. Together they showcase the best of North Indian heritage, Mughal architecture, royal Rajput culture, and ancient history.</p><h2>Why Visit the Golden Triangle?</h2><ul><li><strong>Delhi</strong>: India's capital. Mughal monuments (Red Fort, Humayun's Tomb), British colonial architecture (India Gate, Rashtrapati Bhavan), and chaotic Old Delhi bazaars (Chandni Chowk).</li><li><strong>Agra</strong>: Home of the Taj Mahal — one of the New Seven Wonders of the World. Also Agra Fort, Fatehpur Sikri, and beautiful Mehtab Bagh sunset view.</li><li><strong>Jaipur</strong>: Capital of Rajasthan, the Pink City. Amber Fort, City Palace, Hawa Mahal, Jantar Mantar (UNESCO observatory), and vibrant bazaars selling gemstones, textiles, and blue pottery.</li></ul><h2>Best Time for Golden Triangle</h2><p><strong>October to March</strong> is ideal — pleasant weather (15-28°C), clear skies, and dry conditions. December and January can have morning fog in Delhi but temperatures are still comfortable. April-June is very hot (40-45°C) — sightseeing becomes difficult. July-September is monsoon season — humid but green; some travellers prefer this for fewer crowds.</p><h2>Recommended Duration</h2><p>The minimum recommended duration is <strong>5 days / 4 nights</strong>. This allows 1.5 days in Delhi, 1 day in Agra, and 1.5 days in Jaipur with comfortable travel time. Adventurous travellers can do it in 4 days, but it will feel rushed. 7-8 days lets you explore at leisure and add side trips like Mathura/Vrindavan, Pushkar, or Ranthambore wildlife safari.</p><h2>How Much Does It Cost?</h2><p>Budget Golden Triangle tours start at Rs 14,500 per person. Mid-range comfort packages with 4-star hotels and AC vehicle are Rs 18,500-25,000. Luxury palace hotel tours range Rs 38,000-65,000. Per-person pricing depends on group size — solo travellers pay more, larger groups pay less per person.</p>",
+    "content_title": "Complete <em>Golden Triangle Travel Guide</em>",
+    "content": "<p>The Golden Triangle — connecting Delhi, Agra, and Jaipur — forms India's most celebrated tourist circuit, visiting three of the country's most historically significant and architecturally stunning cities in a compact, well-connected loop. Junegiri Yatra brings its Uttarakhand expertise to this iconic route, combining Haridwar departures with the rich cultural heritage of the North Indian plains.</p><p>Our classic 5-night Golden Triangle Tour begins in Delhi, where Day 1 covers Humayun's Tomb, Qutub Minar, India Gate, and the colourful bazaars of Chandni Chowk. Day 2 is dedicated entirely to Agra — the white marble Taj Mahal at sunrise, Agra Fort, and the Mehtab Bagh garden viewpoint for a sunset Taj silhouette. Day 3 takes you via Fatehpur Sikri, Akbar's abandoned Mughal capital, to Jaipur — the Pink City. Days 4 and 5 in Jaipur cover Amber Fort, City Palace, Jantar Mantar observatory, Hawa Mahal, and the vibrant markets of Johari Bazaar and Bapu Bazaar.</p><p>For wildlife enthusiasts, the Golden Triangle plus Ranthambore extension is a superb choice. Ranthambore National Park is among India's top tiger-spotting destinations, with a ruined 10th-century fort rising dramatically from the jungle floor adding a unique heritage dimension to every safari. Morning and evening zone safaris in open-sided Gypsies give you the best chance of spotting Bengal tigers, leopards, sloth bears, and hyenas.</p><p>The Braj Bhoomi Yatra is our devotional alternative for pilgrims wishing to walk in the footsteps of Lord Krishna. The circuit covers Mathura — birthplace of Krishna — Vrindavan with its 5,000+ temples and the sacred Banke Bihari Mandir, Govardhan hill, Barsana (birthplace of Radha), and culminates with a visit to the Taj Mahal in Agra. This package is particularly popular during Holi (March) and Janmashtami (August), when these towns transform into seas of colour and devotion.</p>",
+    "comparison_headers": [
+      "Package",
+      "Duration",
+      "Highlights",
+      "Best For",
+      "Price"
+    ],
+    "comparison_rows": [
+      [
+        {
+          "text": "Golden Triangle"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "Delhi, Taj Mahal, Jaipur"
+        },
+        {
+          "text": "First-Time India Visitors"
+        },
+        {
+          "is_price": true,
+          "value": 18500
+        }
+      ],
+      [
+        {
+          "text": "Taj Mahal Day Tour"
+        },
+        {
+          "text": "1 Day"
+        },
+        {
+          "text": "Taj Mahal, Agra Fort"
+        },
+        {
+          "text": "Short Trips from Delhi"
+        },
+        {
+          "is_price": true,
+          "value": 6500
+        }
+      ],
+      [
+        {
+          "text": "Rajasthan Tour"
+        },
+        {
+          "text": "6N/7D"
+        },
+        {
+          "text": "Jaipur, Jodhpur, Udaipur"
+        },
+        {
+          "text": "Heritage & Culture Lovers"
+        },
+        {
+          "is_price": true,
+          "value": 21000
+        }
+      ],
+      [
+        {
+          "text": "GT + Ranthambore"
+        },
+        {
+          "text": "7N/8D"
+        },
+        {
+          "text": "Taj Mahal, Tiger Safari, Jaipur"
+        },
+        {
+          "text": "Wildlife Enthusiasts"
+        },
+        {
+          "is_price": true,
+          "value": 24500
+        }
+      ],
+      [
+        {
+          "text": "Braj Bhoomi Yatra"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "Mathura, Vrindavan, Govardhan"
+        },
+        {
+          "text": "Devotional Pilgrims"
+        },
+        {
+          "is_price": true,
+          "value": 14500
+        }
+      ]
+    ],
     "faq": [
-      {"q": "What's the best length for a Golden Triangle tour?", "a": "<strong>5 nights / 6 days</strong> is the sweet spot. You get enough time in each city without feeling rushed. 4 days is too tight. 7-8 days lets you add experiences like Mathura, Pushkar, or Ranthambore."},
-      {"q": "Is the Taj Mahal closed any day?", "a": "Yes — closed every <strong>Friday</strong>. Plan your Agra visit on any other day. Open from sunrise to sunset."},
-      {"q": "Can foreigners book Golden Triangle tours easily?", "a": "Absolutely. We specialise in handling foreign travellers — English-speaking guides, vegetarian and special diet meal options, airport pickups, visa documentation help. WhatsApp us with your dates."},
-      {"q": "Can I add Varanasi or Rajasthan to the Golden Triangle?", "a": "Yes — common extensions: <strong>+Varanasi</strong> (3 days, by overnight train or flight), <strong>+Pushkar+Udaipur</strong> (5 days), <strong>+Ranthambore tiger safari</strong> (2 days), <strong>+Khajuraho temples</strong> (2 days). We design custom itineraries."}
-    ]
+      {
+        "q": "What are the Taj Mahal entry fees and timings?",
+        "a": "The Taj Mahal is open daily except Fridays, from sunrise to sunset. Entry fees (as of 2025) are ₹50 for Indian nationals and ₹1,100 for foreign tourists. An additional ₹200 is charged to enter the main mausoleum interior. All our packages include Taj Mahal entry fees and a certified ASI guide for the complex. Sunrise entry (06:00–07:00) is included in most packages for the best light and fewest crowds."
+      },
+      {
+        "q": "What can I see at Agra Fort?",
+        "a": "Agra Fort is a UNESCO World Heritage Site and a massive red sandstone fortification built by Emperor Akbar in 1565. Highlights include the Jahangir Palace, the Khas Mahal, the Diwan-i-Khas, the Musamman Burj (the tower where Shah Jahan spent his final years gazing at the Taj), and the Amar Singh Gate. Entry costs ₹35 for Indian nationals and ₹550 for foreign tourists — included in our packages."
+      },
+      {
+        "q": "When is the best time to visit the Golden Triangle?",
+        "a": "October through March is the ideal season, with cool days, clear skies, and manageable crowds. November–February is peak season with the most pleasant temperatures. April–June is hot (Agra can reach 45°C) but tours are operational with early morning site visits and air-conditioned transport throughout. July–September (monsoon) is quieter, greener, and significantly discounted."
+      },
+      {
+        "q": "What is the Jaipur Pink City and what should I see there?",
+        "a": "Jaipur earned the nickname Pink City in 1876 when Maharaja Sawai Ram Singh II ordered all buildings painted terracotta pink to welcome the Prince of Wales. Must-visit sites include Amber Fort (a UNESCO World Heritage Site with elephant rides and mirror palaces), Hawa Mahal (the Palace of Winds with its 953 windows), City Palace and its textile museum, and Jantar Mantar — a 18th-century astronomical observatory and UNESCO heritage site."
+      },
+      {
+        "q": "Which months are best for visiting Rajasthan?",
+        "a": "November through February offers the most comfortable weather for Rajasthan — cool nights, sunny days, and all major festivals. October and March are also excellent shoulder months. Avoid April through July when temperatures in Jodhpur and Jaipur regularly exceed 40°C. The monsoon (July–September) transforms Udaipur into a lush green city with dramatic lake scenery, and prices drop significantly."
+      },
+      {
+        "q": "Are the Golden Triangle packages family-friendly for young children?",
+        "a": "Yes. All our Golden Triangle packages are designed for families. The itinerary pace is relaxed with private AC vehicle transfers between all cities. Children under 5 receive complimentary accommodation sharing with parents and reduced entry fees at most monuments. We can adjust the itinerary to include more interactive experiences like elephant rides at Amber Fort, kite flying demonstrations in Jaipur, and craft workshops."
+      },
+      {
+        "q": "What are the photography rules at the Taj Mahal?",
+        "a": "Photography and videography are permitted in all outdoor areas of the Taj Mahal complex without restriction. Inside the main mausoleum (inner chamber), photography is strictly prohibited and cameras must be left outside. Drone photography requires special permission from the Archaeological Survey of India and is rarely granted. Tripods are not permitted inside the complex without prior written permission."
+      },
+      {
+        "q": "Is the Taj Mahal Day Tour available year-round?",
+        "a": "Yes. Our Taj Mahal Day Tour from Delhi operates year-round, departing at 06:00 from your Delhi hotel and returning by 20:00. The Taj Mahal is closed on Fridays for maintenance. On full moon nights, the monument operates a special ticketed moonlight viewing (available only 5 nights per month) — we can arrange this on request with advance notice of at least 2 weeks."
+      }
+    ],
+    "travel_guide": "<h2>Your Complete Guide to the Golden Triangle from Haridwar</h2><p>India's Golden Triangle connects three cities that together showcase the breadth of North Indian history, architecture, and culture. Delhi, the capital, layers 1,000 years of empires — from the Qutb Sultanate and the Mughals to the British Raj and the modern Republic. Agra, 200 km south, is home to the world's most photographed building. Jaipur, 270 km west of Agra, preserves the grandeur of the Rajput kingdoms that ruled Rajasthan for centuries.</p><h3>Getting to Delhi from Haridwar</h3><p>Haridwar to Delhi is approximately 220 km by road, taking 4–5 hours depending on traffic. Our packages include private AC vehicle pickup from your Haridwar hotel or guesthouse. Alternatively, the Mussoorie Express or Nanda Devi Express trains connect Haridwar to Delhi in 4.5–5.5 hours. Flying from Dehradun's Jolly Grant Airport to Delhi Indira Gandhi International is a 1-hour option for those short on time.</p><h3>Delhi Must-See Highlights</h3><p>Beyond the monuments, Old Delhi's narrow lanes around Chandni Chowk reward explorers with street food (jalebis, parathas, kulfi), spice markets, silver jewellery, and the atmospheric Jama Masjid — India's largest mosque. New Delhi's Lodhi Garden offers a peaceful morning walk through 15th-century tombs. The National Museum on Janpath has one of Asia's finest collections of Indian art and artefacts spanning 5,000 years.</p><h3>Agra Beyond the Taj</h3><p>Most visitors spend only 2–3 hours at the Taj Mahal and move on, but Agra has more to offer. Mehtab Bagh, a garden complex across the Yamuna River, gives an unobstructed sunset view of the Taj without the crowds. Fatehpur Sikri, 40 km west of Agra, is Akbar's abandoned Mughal capital built entirely of red sandstone — remarkably preserved and far less visited than the Taj. Agra's Petha sweet (a white crystallised gourd confection) and leather goods are the most popular local souvenirs.</p><h3>Jaipur Practical Tips</h3><p>Buy a composite ticket for Amber Fort, Jantar Mantar, City Palace, and Hawa Mahal at any ticket counter — it saves money and works across two days. The Jaipur metro connects the Old City to New Jaipur efficiently. Johari Bazaar is the place for gemstones, handblock-printed textiles, and meenakari enamel jewellery. Bargaining at bazaars is expected; government-run emporia (Rajasthali) offer fixed prices as a useful benchmark.</p>"
   },
-
   {
     "slug": "taj-mahal-tours",
     "url": "/packages/taj-mahal-tours/",
@@ -85,23 +564,780 @@
     "hero_tagline": "See one of the New Seven Wonders of the World. Day trips from Delhi, sunrise tours, multi-day Agra packages — all options compared.",
     "hero_image": "/images/temple_entrance.jpg",
     "stats": [
-      {"num": "₹5,500", "lbl": "STARTING PRICE"},
-      {"num": "1-3 Days", "lbl": "DURATION OPTIONS"},
-      {"num": "Sunrise", "lbl": "BEST TIME TO VISIT"},
-      {"num": "Closed Fri", "lbl": "PLAN ACCORDINGLY"}
+      {
+        "num": "₹5,500",
+        "lbl": "STARTING PRICE"
+      },
+      {
+        "num": "1-3 Days",
+        "lbl": "DURATION OPTIONS"
+      },
+      {
+        "num": "Sunrise",
+        "lbl": "BEST TIME TO VISIT"
+      },
+      {
+        "num": "Closed Fri",
+        "lbl": "PLAN ACCORDINGLY"
+      }
     ],
     "grid_title": "All <em>Taj Mahal</em> Tour Options",
     "packages": [
-      {"name": "Taj Mahal Day Tour from Delhi", "duration": "1 Day", "price": 5500, "intl_price_usd": 89, "tag": "BESTSELLER", "image": "/images/temple_entrance.jpg", "route": "5 AM Delhi pickup, sunrise Taj, Agra Fort, 8 PM return.", "url": "/packages/taj-mahal-day-tour-from-delhi/", "wa_text": "Taj Mahal day tour book karna hai"},
-      {"name": "Golden Triangle 5N/6D", "duration": "5N/6D", "price": 18500, "intl_price_usd": 379, "image": "/images/temple_entrance.jpg", "route": "Delhi + Agra + Jaipur with Taj Mahal sunrise visit.", "url": "/packages/golden-triangle-tour-5n-6d/", "wa_text": "Golden Triangle 5N/6D details chahiye"}
+      {
+        "name": "Taj Mahal Day Tour from Delhi",
+        "duration": "1 Day",
+        "price": 5500,
+        "intl_price_usd": 89,
+        "tag": "BESTSELLER",
+        "image": "/images/temple_entrance.jpg",
+        "route": "5 AM Delhi pickup, sunrise Taj, Agra Fort, 8 PM return.",
+        "url": "/packages/taj-mahal-day-tour-from-delhi/",
+        "wa_text": "Taj Mahal day tour book karna hai"
+      },
+      {
+        "name": "Golden Triangle 5N/6D",
+        "duration": "5N/6D",
+        "price": 18500,
+        "intl_price_usd": 379,
+        "image": "/images/temple_entrance.jpg",
+        "route": "Delhi + Agra + Jaipur with Taj Mahal sunrise visit.",
+        "url": "/packages/golden-triangle-tour-5n-6d/",
+        "wa_text": "Golden Triangle 5N/6D details chahiye"
+      }
     ],
     "content_title": "<em>Taj Mahal</em> Visitor Guide",
     "content": "<h2>About the Taj Mahal</h2><p>The Taj Mahal is a white marble mausoleum built by Mughal Emperor Shah Jahan between 1632 and 1648 in memory of his beloved wife Mumtaz Mahal, who died in childbirth. It is widely considered the finest example of Mughal architecture and one of the most beautiful buildings ever constructed. The Taj is a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</p><h2>Best Time to Visit the Taj Mahal</h2><ul><li><strong>Sunrise (most magical)</strong>: 6:00-9:00 AM. Soft golden light, fewer crowds, white marble glows pink-orange.</li><li><strong>Late afternoon</strong>: 4:00-6:30 PM. Warm light, lengthening shadows.</li><li><strong>Full moon nights</strong>: Special night viewing on full moon and 2 days before/after (limited tickets, advance booking required).</li></ul><h2>Taj Mahal Entry Tickets 2026</h2><ul><li>Indian citizens: Rs 50</li><li>Foreign tourists: Rs 1,100 (~$13 USD)</li><li>Mausoleum entry (additional): Rs 200</li><li>Children below 15: Free</li></ul><p>Tickets can be bought online at the official ASI website to skip queues. <strong>The Taj Mahal is closed every Friday.</strong></p><h2>Distance from Major Cities</h2><ul><li>From Delhi: 230 km (3.5-4 hours by car via Yamuna Expressway, 1.5 hours by Gatimaan Express train)</li><li>From Jaipur: 240 km (4 hours by car)</li><li>From Mumbai: ~1,400 km (2 hour flight to Delhi/Agra)</li><li>From Varanasi: 600 km (10-11 hours by train, 1 hour flight via Delhi)</li></ul>",
     "faq": [
-      {"q": "How long should I spend at the Taj Mahal?", "a": "<strong>2-3 hours minimum</strong> to fully appreciate the Taj. This includes the entrance, the gardens, the mausoleum, and time for photographs. Longer (3-4 hours) if you want to read the Quranic inscriptions, examine the inlay work, or visit the Taj Mahal museum on the grounds."},
-      {"q": "Is the Taj Mahal worth visiting?", "a": "Absolutely. The Taj Mahal is consistently ranked among the most beautiful buildings in the world. The white marble inlay craftsmanship, the perfect symmetry, and the romantic backstory create an unforgettable experience. First-time visitors to India almost always rank it as the highlight of their trip."},
-      {"q": "Can I take photos at the Taj Mahal?", "a": "Yes — outside in the gardens. Inside the mausoleum, photography is prohibited. Tripods, professional video cameras, and food are not allowed. Standard cameras and phones are fine. The classic photo spot is the central pool reflection — go early morning to avoid crowds."},
-      {"q": "Is there parking at the Taj Mahal?", "a": "There's no parking near the monument due to pollution restrictions. Visitors are dropped at a parking area 1 km away and use battery-operated buses or walk to the entrance. Our tour includes this transfer."}
+      {
+        "q": "How long should I spend at the Taj Mahal?",
+        "a": "<strong>2-3 hours minimum</strong> to fully appreciate the Taj. This includes the entrance, the gardens, the mausoleum, and time for photographs. Longer (3-4 hours) if you want to read the Quranic inscriptions, examine the inlay work, or visit the Taj Mahal museum on the grounds."
+      },
+      {
+        "q": "Is the Taj Mahal worth visiting?",
+        "a": "Absolutely. The Taj Mahal is consistently ranked among the most beautiful buildings in the world. The white marble inlay craftsmanship, the perfect symmetry, and the romantic backstory create an unforgettable experience. First-time visitors to India almost always rank it as the highlight of their trip."
+      },
+      {
+        "q": "Can I take photos at the Taj Mahal?",
+        "a": "Yes — outside in the gardens. Inside the mausoleum, photography is prohibited. Tripods, professional video cameras, and food are not allowed. Standard cameras and phones are fine. The classic photo spot is the central pool reflection — go early morning to avoid crowds."
+      },
+      {
+        "q": "Is there parking at the Taj Mahal?",
+        "a": "There's no parking near the monument due to pollution restrictions. Visitors are dropped at a parking area 1 km away and use battery-operated buses or walk to the entrance. Our tour includes this transfer."
+      }
     ]
+  },
+  {
+    "slug": "himalayan-treks",
+    "url": "/packages/himalayan-treks/",
+    "name": "Himalayan Treks",
+    "meta_description": "Book expert-guided Himalayan treks from Haridwar. Kedarkantha, Valley of Flowers, Roopkund & more. All levels welcome. 100% safety record.",
+    "keywords": "himalayan treks, kedarkantha trek, valley of flowers trek, roopkund trek, har ki dun trek, uttarakhand trekking packages",
+    "h1": "Himalayan <em>Treks</em>",
+    "hero_tagline": "Step Beyond the Ordinary — Guided Treks Across the Great Himalayas",
+    "hero_image": "/images/trek_snow_peak.jpg",
+    "stats": [
+      {
+        "num": "7+",
+        "lbl": "Trek Routes"
+      },
+      {
+        "num": "1,200+",
+        "lbl": "Trekkers Guided"
+      },
+      {
+        "num": "3,810m",
+        "lbl": "Max Altitude"
+      },
+      {
+        "num": "100%",
+        "lbl": "Safety Record"
+      }
+    ],
+    "grid_title": "All <em>Himalayan Treks</em>",
+    "grid_subtitle": "From beginner-friendly trails to advanced summit climbs — find the perfect Himalayan adventure departing from Haridwar.",
+    "packages": [
+      {
+        "name": "Kedarkantha Trek",
+        "duration": "5N/6D",
+        "price": 9500,
+        "intl_price_usd": 115,
+        "image": "/images/trek_snow_peak.jpg",
+        "url": "/packages/kedarkantha-trek-5n-6d/",
+        "tag": "Bestseller",
+        "route": "Haridwar → Sankri → Juda Ka Talab → Summit → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Kedarkantha Trek booking enquiry"
+      },
+      {
+        "name": "Valley of Flowers Trek",
+        "duration": "4N/5D",
+        "price": 8500,
+        "intl_price_usd": 102,
+        "image": "/images/valley_flowers.jpg",
+        "url": "/packages/valley-of-flowers-trek-4n-5d/",
+        "tag": "UNESCO",
+        "route": "Haridwar → Govindghat → Ghangaria → Valley of Flowers → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Valley of Flowers Trek booking enquiry"
+      },
+      {
+        "name": "Har Ki Dun Trek",
+        "duration": "5N/6D",
+        "price": 10500,
+        "intl_price_usd": 126,
+        "image": "/images/mountains2.jpg",
+        "url": "/packages/har-ki-dun-trek-5n-6d/",
+        "tag": "Heritage",
+        "route": "Haridwar → Sankri → Osla → Har Ki Dun → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Har Ki Dun Trek booking enquiry"
+      },
+      {
+        "name": "Chopta–Tungnath Trek",
+        "duration": "3N/4D",
+        "price": 6500,
+        "intl_price_usd": 79,
+        "image": "/images/snow_cabin.jpg",
+        "url": "/packages/chopta-tungnath-trek-3n-4d/",
+        "tag": "Beginner",
+        "route": "Haridwar → Ukhimath → Chopta → Tungnath → Chandrashila → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Chopta Tungnath Trek booking enquiry"
+      },
+      {
+        "name": "Kuari Pass Trek",
+        "duration": "4N/5D",
+        "price": 9000,
+        "intl_price_usd": 108,
+        "image": "/images/mountains1.jpg",
+        "url": "/packages/kuari-pass-trek-4n-5d/",
+        "tag": "Scenic",
+        "route": "Haridwar → Joshimath → Dhak → Khullara → Kuari Pass → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Kuari Pass Trek booking enquiry"
+      },
+      {
+        "name": "Roopkund Trek",
+        "duration": "7N/8D",
+        "price": 14500,
+        "intl_price_usd": 174,
+        "image": "/images/trek_snow_peak.jpg",
+        "url": "/packages/roopkund-trek-7n-8d/",
+        "tag": "Advanced",
+        "route": "Haridwar → Loharjung → Didna → Ali Bugyal → Roopkund → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Roopkund Trek booking enquiry"
+      },
+      {
+        "name": "Pangarchulla Peak",
+        "duration": "5N/6D",
+        "price": 11500,
+        "intl_price_usd": 138,
+        "image": "/images/mountains2.jpg",
+        "url": "/packages/pangarchulla-peak-5n-6d/",
+        "tag": "Summit",
+        "route": "Haridwar → Joshimath → Tugasi → Khullara → Pangarchulla Summit → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Pangarchulla Peak booking enquiry"
+      }
+    ],
+    "content_title": "Complete <em>Himalayan Trekking Guide</em>",
+    "content": "<p>Junegiri Yatra has been crafting unforgettable Himalayan trekking experiences for over four years, guiding more than 1,200 trekkers safely across Uttarakhand's most spectacular mountain trails. Based in Haridwar — the gateway to the Himalayas — we offer seamless departures that eliminate the stress of complex logistics from major cities.</p><p>Our trek portfolio spans every difficulty level. Beginners can explore the ancient temple trail of Chopta–Tungnath, a gentle 3-night journey reaching 4,000m with sweeping views of Nanda Devi, Trishul, and Kedarnath peaks. For those seeking the iconic postcard summit, Kedarkantha remains our bestselling trek, offering a snowbound summit experience accessible to moderately fit adults between December and April. The UNESCO-recognised Valley of Flowers transforms into a carpet of 300+ Himalayan wildflower species during the July–August bloom season — a truly unmissable spectacle.</p><p>Experienced trekkers gravitate toward Roopkund, the mysterious skeleton lake sitting at 5,029m, and the technical Pangarchulla Peak summit at 4,700m, which requires crampons and ice axes during the peak winter season. Our guides hold Himalayan Mountaineering Institute certifications and carry advanced first-aid kits, supplemental oxygen, and satellite communication devices on every trek above 4,000m.</p><p>All our Himalayan packages depart from Haridwar and include transportation to the trailhead, accommodation in certified tents or forest guesthouses, all meals on trail, a certified lead guide, and a porter for every two trekkers. We cap group sizes at 12 to ensure each participant receives personal attention and the trail remains pristine. Equipment such as sleeping bags, trekking poles, and microspike attachments is available for rent or included in select packages.</p><p>The best trekking months in Uttarakhand vary by trail. Kedarkantha and Pangarchulla are best December through March for snow. Valley of Flowers opens July–August. Har Ki Dun, Kuari Pass, and Roopkund are ideal May–June and September–October. Our team monitors NDMA weather bulletins daily and can reschedule departures in case of extreme weather at no cancellation charge within 48 hours of departure.</p>",
+    "comparison_headers": [
+      "Trek",
+      "Duration",
+      "Max Altitude",
+      "Difficulty",
+      "From Price"
+    ],
+    "comparison_rows": [
+      [
+        {
+          "text": "Kedarkantha"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "3,810m"
+        },
+        {
+          "text": "Easy–Moderate"
+        },
+        {
+          "is_price": true,
+          "value": 9500
+        }
+      ],
+      [
+        {
+          "text": "Valley of Flowers"
+        },
+        {
+          "text": "4N/5D"
+        },
+        {
+          "text": "3,658m"
+        },
+        {
+          "text": "Easy–Moderate"
+        },
+        {
+          "is_price": true,
+          "value": 8500
+        }
+      ],
+      [
+        {
+          "text": "Har Ki Dun"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "3,510m"
+        },
+        {
+          "text": "Moderate"
+        },
+        {
+          "is_price": true,
+          "value": 10500
+        }
+      ],
+      [
+        {
+          "text": "Chopta–Tungnath"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "4,090m"
+        },
+        {
+          "text": "Easy"
+        },
+        {
+          "is_price": true,
+          "value": 6500
+        }
+      ],
+      [
+        {
+          "text": "Kuari Pass"
+        },
+        {
+          "text": "4N/5D"
+        },
+        {
+          "text": "3,641m"
+        },
+        {
+          "text": "Moderate"
+        },
+        {
+          "is_price": true,
+          "value": 9000
+        }
+      ],
+      [
+        {
+          "text": "Roopkund"
+        },
+        {
+          "text": "7N/8D"
+        },
+        {
+          "text": "5,029m"
+        },
+        {
+          "text": "Difficult"
+        },
+        {
+          "is_price": true,
+          "value": 14500
+        }
+      ],
+      [
+        {
+          "text": "Pangarchulla Peak"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "4,700m"
+        },
+        {
+          "text": "Difficult"
+        },
+        {
+          "is_price": true,
+          "value": 11500
+        }
+      ]
+    ],
+    "faq": [
+      {
+        "q": "What is the best season for Himalayan treks in Uttarakhand?",
+        "a": "The best seasons depend on the trek. Snow treks like Kedarkantha are best December–March. Flower treks like Valley of Flowers peak July–August. Most other treks — Har Ki Dun, Kuari Pass, Roopkund — are excellent in May–June and September–October when skies are clear and trails are dry."
+      },
+      {
+        "q": "What fitness level is required to join a Himalayan trek?",
+        "a": "Chopta–Tungnath and Valley of Flowers are suitable for beginners with basic walking fitness. Kedarkantha and Kuari Pass require moderate fitness — 3–4 weeks of cardio preparation is recommended. Roopkund and Pangarchulla are for experienced trekkers with prior high-altitude exposure above 4,000m."
+      },
+      {
+        "q": "Is trekking gear provided or do I bring my own?",
+        "a": "We provide tents, sleeping bags rated to -10°C, camping mattresses, and common kitchen equipment. Trekking poles and microspikes are available on rent. You should bring personal clothing, boots with ankle support, and a daypack. A detailed packing list is shared upon booking."
+      },
+      {
+        "q": "What is the maximum group size on your treks?",
+        "a": "We cap all our treks at 12 participants to maintain trail quality, guide attention, and campsite hygiene. Solo bookings and private group departures of 2–10 people are also available on request."
+      },
+      {
+        "q": "What is the cancellation and refund policy?",
+        "a": "Cancellations made 15+ days before departure receive a full refund minus a 5% processing fee. Cancellations 7–14 days before receive 50% refund. Less than 7 days before departure are non-refundable. In cases of trek cancellation due to weather or government advisories, full credit or rescheduling is offered."
+      },
+      {
+        "q": "How does Junegiri Yatra handle altitude sickness?",
+        "a": "All our lead guides are certified in Wilderness First Aid and carry supplemental oxygen, pulse oximeters, and altitude sickness medication (Diamox). We build mandatory acclimatisation days into all treks above 3,500m and monitor participants' oxygen saturation each morning. Evacuation protocols are in place for every route."
+      },
+      {
+        "q": "Can I join a trek as a solo traveller?",
+        "a": "Absolutely. Solo travellers join our scheduled group departures and are paired with like-minded adventurers. We have a strong community of repeat solo trekkers. Private solo departures with a dedicated guide are also available at a modest supplement."
+      },
+      {
+        "q": "How experienced are your trek guides?",
+        "a": "All our lead guides hold Himalayan Mountaineering Institute (HMI) or equivalent certifications and have a minimum of 5 years guiding experience on Uttarakhand trails. Each guide is trained in first aid, rope techniques, and avalanche awareness. You will meet your guide at the Haridwar briefing the evening before departure."
+      }
+    ],
+    "travel_guide": "<h2>Your Complete Guide to Himalayan Trekking from Haridwar</h2><p>Haridwar sits at the foothills of the Himalayas at 314m above sea level, making it the ideal base camp for any Uttarakhand trekking adventure. Its excellent rail and road connectivity — just 6 hours from Delhi by train — means trekkers from across India and the world can arrive fresh and ready to explore.</p><h3>How to Reach Haridwar</h3><p>The fastest option from Delhi is the Shatabdi or Jan Shatabdi Express, taking approximately 4.5–5.5 hours. Jolly Grant Airport in Dehradun (35 km away) connects to major Indian cities and serves international arrivals via Delhi hub. From Haridwar, our ground transportation handles all transfers to trek base villages like Sankri, Govindghat, Joshimath, and Ukhimath.</p><h3>Acclimatisation and Pre-Trek Day</h3><p>We strongly recommend arriving in Haridwar the evening before your trek departure date. This allows time for a pre-trek briefing, gear check, and a restful night before the early-morning road journey to the trailhead. Haridwar offers a range of guesthouses, ashrams, and hotels across all budgets. Attending the famous Ganga Aarti at Har Ki Pauri at sunset is a spiritually uplifting way to begin any Himalayan journey.</p><h3>What to Pack</h3><p>Key items include sturdy ankle-high trekking boots broken in before the trek, moisture-wicking base layers, a fleece mid-layer, and a waterproof outer shell. Sunscreen of SPF 50+, UV-protection sunglasses, a wide-brim hat, and a high-quality headlamp with spare batteries are essential. Carry only 8–10 kg in your daypack; porters handle heavier kit bags.</p><h3>Food and Water on Trail</h3><p>All meals — breakfast, packed lunch, and hot dinner — are included in our trek packages. Our trail cooks prepare nutritious, freshly cooked Indian meals using locally sourced ingredients. Drinking water is provided at camp; trekkers should carry a 1-litre personal bottle. Water purification tablets are distributed before each trek as a precaution.</p><h3>Permits and Regulations</h3><p>Valley of Flowers National Park requires an entry permit issued at Ghangaria (approx. ₹150/day for Indian nationals). Roopkund falls within the Nanda Devi Biosphere Reserve and requires a forest department permit arranged by our team. All permit fees are included in our package prices unless otherwise stated. Trekkers are expected to follow Leave No Trace principles — no plastic waste, no campfire beyond designated zones.</p>"
+  },
+  {
+    "slug": "rishikesh-adventures",
+    "url": "/packages/rishikesh-adventures/",
+    "name": "Rishikesh Adventures",
+    "meta_description": "Experience white-water rafting, bungee jumping, yoga retreats & weekend escapes in Rishikesh. Book adventure packages from Haridwar with Junegiri Yatra.",
+    "keywords": "rishikesh adventure packages, rishikesh rafting, bungee jumping rishikesh, yoga retreat rishikesh, rishikesh weekend trip",
+    "h1": "Rishikesh <em>Adventures</em>",
+    "hero_tagline": "Adrenaline, Serenity & Everything In Between — Welcome to Rishikesh",
+    "hero_image": "/images/rishikesh_bridge.jpg",
+    "stats": [
+      {
+        "num": "3",
+        "lbl": "Packages"
+      },
+      {
+        "num": "5,000+",
+        "lbl": "Adventurers"
+      },
+      {
+        "num": "83m",
+        "lbl": "Bungee Height"
+      },
+      {
+        "num": "Year-Round",
+        "lbl": "Open Season"
+      }
+    ],
+    "grid_title": "All <em>Rishikesh Packages</em>",
+    "grid_subtitle": "From cliff-jumping and river rafting to sunrise yoga and meditation retreats — Rishikesh has an adventure for every kind of traveller.",
+    "packages": [
+      {
+        "name": "Rishikesh Adventure Pack",
+        "duration": "2N/3D",
+        "price": 5500,
+        "intl_price_usd": 66,
+        "image": "/images/rishikesh_bridge.jpg",
+        "url": "/packages/rishikesh-adventure-pack-2n-3d/",
+        "tag": "Thrilling",
+        "route": "Haridwar → Rishikesh → Rafting → Bungee/Camping → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Rishikesh Adventure Pack booking enquiry"
+      },
+      {
+        "name": "Rishikesh Yoga Retreat",
+        "duration": "5N/6D",
+        "price": 12000,
+        "intl_price_usd": 144,
+        "image": "/images/valley_flowers.jpg",
+        "url": "/packages/rishikesh-yoga-retreat-5n-6d/",
+        "tag": "Wellness",
+        "route": "Haridwar → Rishikesh Ashram → Daily Yoga & Meditation → Ganga Aarti → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Rishikesh Yoga Retreat booking enquiry"
+      },
+      {
+        "name": "Rishikesh Weekend Escape",
+        "duration": "1N/2D",
+        "price": 2500,
+        "intl_price_usd": 30,
+        "image": "/images/rishikesh_bridge.jpg",
+        "url": "/packages/rishikesh-weekend-1n-2d/",
+        "tag": "Quick",
+        "route": "Haridwar → Rishikesh → Rafting → Laxman Jhula → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Rishikesh Weekend Escape booking enquiry"
+      }
+    ],
+    "content_title": "Complete <em>Rishikesh Adventure Guide</em>",
+    "content": "<p>Just 24 km downstream from Haridwar, Rishikesh is India's adventure capital and spiritual heartland rolled into one. Nestled where the Ganges emerges from its final Himalayan gorge, the town offers a unique blend of adrenaline-pumping outdoor activities and deep inner-peace practices that draws travellers from every corner of the world.</p><p>Our Rishikesh Adventure Pack is designed for thrill-seekers who want to squeeze the most out of three days. Day one covers the legendary Shivpuri to Rishikesh river rafting stretch — 16 km of Grade III–IV rapids including the famous Wall, Three Blind Mice, and Golf Course rapids. Day two opens with optional bungee jumping at India's highest fixed bungee platform at 83 metres or the Giant Swing and Flying Fox. Evenings are spent at a riverside camp with bonfires, live acoustic music, and a sky full of stars.</p><p>For those seeking balance alongside adventure, our 5-night Yoga Retreat at a certified Rishikesh ashram includes twice-daily yoga sessions (Hatha and Vinyasa), pranayama, guided meditation, Ayurvedic consultations, sattvic vegetarian meals, and evening Ganga Aarti. This programme is ideal for professionals experiencing burnout, first-time yoga practitioners, and international travellers on a wellness journey through India.</p><p>Our Weekend Escape is the perfect quick reset — a compact 2-day itinerary covering river rafting, a guided walk across the famous Ram and Laxman Jhula suspension bridges, a visit to the Beatles Ashram, cliff jumping at Neer Garh Waterfall, and a serene evening aarti on the banks of the Ganga. All meals and overnight camping or guesthouse stay are included.</p>",
+    "comparison_headers": [
+      "Package",
+      "Duration",
+      "Activities",
+      "Difficulty",
+      "Price"
+    ],
+    "comparison_rows": [
+      [
+        {
+          "text": "Adventure Pack"
+        },
+        {
+          "text": "2N/3D"
+        },
+        {
+          "text": "Rafting, Bungee, Camping"
+        },
+        {
+          "text": "Moderate–High"
+        },
+        {
+          "is_price": true,
+          "value": 5500
+        }
+      ],
+      [
+        {
+          "text": "Yoga Retreat"
+        },
+        {
+          "text": "5N/6D"
+        },
+        {
+          "text": "Yoga, Meditation, Aarti"
+        },
+        {
+          "text": "Easy (Wellness)"
+        },
+        {
+          "is_price": true,
+          "value": 12000
+        }
+      ],
+      [
+        {
+          "text": "Weekend Escape"
+        },
+        {
+          "text": "1N/2D"
+        },
+        {
+          "text": "Rafting, Jhula Walk, Aarti"
+        },
+        {
+          "text": "Easy–Moderate"
+        },
+        {
+          "is_price": true,
+          "value": 2500
+        }
+      ]
+    ],
+    "faq": [
+      {
+        "q": "What grade of rapids are covered in the Rishikesh rafting packages?",
+        "a": "Our standard rafting route from Shivpuri to Rishikesh (16 km) covers Grade III–IV rapids. The Marine Drive stretch (26 km) includes Grade IV–V rapids and is available as an upgrade for experienced rafters. Beginner-friendly Grade I–II routes are also available on the Brahmpuri stretch."
+      },
+      {
+        "q": "What is the minimum age limit for activities in Rishikesh?",
+        "a": "River rafting requires participants to be at least 14 years old. Bungee jumping has a minimum age of 18 years. The Giant Swing allows participants aged 12 and above. The Yoga Retreat is open to all ages including teenagers, with prior parental consent required for participants under 18."
+      },
+      {
+        "q": "Can non-swimmers participate in river rafting?",
+        "a": "Yes. All rafting participants are provided with ISI-certified life jackets and safety helmets, and our trained safety kayakers accompany every raft. The Grade III–IV routes are manageable for non-swimmers. However, we recommend disclosing any health conditions like heart issues or back problems at the time of booking."
+      },
+      {
+        "q": "When is the best time to visit Rishikesh for adventure activities?",
+        "a": "September through June is ideal for river rafting. The monsoon season (July–August) closes rafting for safety due to high water levels, though trekking and yoga remain operational. Camping and bungee jumping operate year-round. March–May offers warm days and cool nights — perfect for outdoor camps."
+      },
+      {
+        "q": "Is gear and safety equipment provided?",
+        "a": "All safety and activity gear is provided in our packages, including life jackets, helmets, wet suits (for colder months), and harnesses for bungee and swing activities. You only need personal clothing, sunscreen, and a towel. Waterproof bags for valuables during rafting are also provided."
+      },
+      {
+        "q": "Is Rishikesh safe for solo women travellers?",
+        "a": "Rishikesh is widely considered one of India's most solo-female-traveller-friendly destinations. Our camps and retreat centres have separate dormitories and facilities. Our staff undergoes sensitisation training, and we have a 24/7 helpline for all our guests. We also facilitate group joining for solo bookings so you always travel with a group."
+      },
+      {
+        "q": "What is included in the Yoga Retreat package?",
+        "a": "The 5N/6D Yoga Retreat includes ashram accommodation, twice-daily yoga and meditation sessions, all sattvic vegetarian meals, an Ayurvedic consultation, evening Ganga Aarti visit, and a certificate of completion. Transfers from Haridwar and a guided city walk of Rishikesh are also included."
+      },
+      {
+        "q": "Can I customise an activity package to suit my interests?",
+        "a": "Absolutely. We offer fully customisable private packages that let you mix and match activities — for example, combining rafting with a half-day yoga session, or adding a waterfall trek to any package. Contact us on WhatsApp to build your ideal Rishikesh itinerary."
+      }
+    ],
+    "travel_guide": "<h2>Your Complete Guide to Rishikesh Adventure Travel</h2><p>Rishikesh sits at the confluence of adventure and spirituality. Declared a meat- and alcohol-free zone, the town's twin suspension bridges — Ram Jhula and Laxman Jhula — frame a skyline of ashrams, yoga centres, and guesthouses that cling to the ghats above the emerald Ganga. From Haridwar it is just a 45-minute drive or a 30-minute shared tempo ride, making it an ideal day trip or overnight extension to any Uttarakhand itinerary.</p><h3>Getting There from Haridwar</h3><p>Shared tempos from the Rishikesh tempo stand near the railway station run every 15–20 minutes and cost approximately ₹30 per person. Private taxis take 35–45 minutes depending on traffic and cost ₹400–600 one-way. All our packages include return transfers from Haridwar, so you need not worry about logistics.</p><h3>Permits and Safety Norms</h3><p>River rafting operators in Rishikesh are regulated by the Uttarakhand Tourism Development Board. Ensure your operator uses ISI-certified equipment — all Junegiri Yatra rafting partners comply. Photography on certain rapid sections may be restricted for safety; your guide will advise you. Bungee platforms operate under Ministry of Tourism adventure tourism guidelines with daily equipment inspections.</p><h3>What to Wear and Carry</h3><p>For rafting, wear quick-dry shorts, a rash vest or t-shirt, and secure sandals or sports shoes. Leave jewellery and loose items at the campsite. For yoga retreats, pack comfortable cotton or linen clothing, a personal mat if you have one, and light layers for early-morning sessions. The riverside can get chilly before sunrise even in summer.</p><h3>Spiritual Highlights Not to Miss</h3><p>The Ganga Aarti at Triveni Ghat each evening at sunset is a profound, free-to-attend ceremony with thousands of diyas (oil lamps) floating on the river. The Beatles Ashram (Chaurasi Kutia), where the Fab Four studied transcendental meditation in 1968, is open to visitors and worth a 2-hour exploration. Neelkanth Mahadev Temple, 30 km from Rishikesh, is a forest-flanked Shiva temple revered as the spot where Shiva drank the Halahala poison — a beautiful half-day trip paired with a short nature walk.</p>"
+  },
+  {
+    "slug": "uttarakhand-tours",
+    "url": "/packages/uttarakhand-tours/",
+    "name": "Uttarakhand Tours",
+    "meta_description": "Explore Mussoorie, Nainital, Auli, Kanatal & more with curated Uttarakhand tour packages from Haridwar. Family-friendly, wildlife safaris & hill station escapes.",
+    "keywords": "uttarakhand tour packages, mussoorie tour, nainital package, auli snow trip, kanatal weekend, jim corbett safari",
+    "h1": "Uttarakhand <em>Tours</em>",
+    "hero_tagline": "Discover the Hills, Lakes & Wild Forests of Devbhoomi Uttarakhand",
+    "hero_image": "/images/mountains1.jpg",
+    "stats": [
+      {
+        "num": "6",
+        "lbl": "Packages"
+      },
+      {
+        "num": "1,500+",
+        "lbl": "Visitors"
+      },
+      {
+        "num": "Year-Round",
+        "lbl": "Departures"
+      },
+      {
+        "num": "All-Inclusive",
+        "lbl": "Pricing"
+      }
+    ],
+    "grid_title": "All <em>Uttarakhand Tour Packages</em>",
+    "grid_subtitle": "From hill station getaways and wildlife safaris to snow escapes and serene lake retreats — explore the best of Uttarakhand with Junegiri Yatra.",
+    "packages": [
+      {
+        "name": "Mussoorie & Dehradun Tour",
+        "duration": "3N/4D",
+        "price": 8500,
+        "intl_price_usd": 102,
+        "image": "/images/mountains2.jpg",
+        "url": "/packages/mussoorie-dehradun-3n-4d/",
+        "tag": "Hill Station",
+        "route": "Haridwar → Dehradun → Mussoorie → Kempty Falls → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Mussoorie Dehradun Tour booking enquiry"
+      },
+      {
+        "name": "Nainital & Jim Corbett",
+        "duration": "4N/5D",
+        "price": 11000,
+        "intl_price_usd": 132,
+        "image": "/images/valley_flowers.jpg",
+        "url": "/packages/nainital-jim-corbett-4n-5d/",
+        "tag": "Wildlife",
+        "route": "Haridwar → Nainital → Jim Corbett National Park → Safari → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Nainital Jim Corbett Tour booking enquiry"
+      },
+      {
+        "name": "Auli Snow Trip",
+        "duration": "3N/4D",
+        "price": 9500,
+        "intl_price_usd": 114,
+        "image": "/images/snow_cabin.jpg",
+        "url": "/packages/auli-snow-trip-3n-4d/",
+        "tag": "Winter",
+        "route": "Haridwar → Joshimath → Auli Ropeway → Skiing & Snow Activities → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Auli Snow Trip booking enquiry"
+      },
+      {
+        "name": "Kanatal & Tehri Lake Weekend",
+        "duration": "2N/3D",
+        "price": 6500,
+        "intl_price_usd": 79,
+        "image": "/images/mountains1.jpg",
+        "url": "/packages/kanatal-tehri-weekend-2n-3d/",
+        "tag": "Weekend",
+        "route": "Haridwar → Tehri Lake → Kanatal → Surkanda Devi → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Kanatal Tehri Lake Weekend booking enquiry"
+      },
+      {
+        "name": "Chopta & Deoria Tal",
+        "duration": "2N/3D",
+        "price": 6000,
+        "intl_price_usd": 72,
+        "image": "/images/trek_snow_peak.jpg",
+        "url": "/packages/chopta-deoria-tal-2n-3d/",
+        "tag": "Scenic",
+        "route": "Haridwar → Ukhimath → Deoria Tal → Chopta Meadows → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Chopta Deoria Tal Tour booking enquiry"
+      },
+      {
+        "name": "Lansdowne & Corbett Safari",
+        "duration": "3N/4D",
+        "price": 9000,
+        "intl_price_usd": 108,
+        "image": "/images/mountains2.jpg",
+        "url": "/packages/lansdowne-corbett-safari-3n-4d/",
+        "tag": "Heritage",
+        "route": "Haridwar → Lansdowne Cantonment → Jim Corbett → Jeep Safari → Return",
+        "from_city": "Haridwar",
+        "wa_text": "Lansdowne Corbett Safari booking enquiry"
+      }
+    ],
+    "content_title": "Complete <em>Uttarakhand Travel Guide</em>",
+    "content": "<p>Uttarakhand — Devbhoomi, the Land of Gods — is a state of extraordinary natural variety. Within a single journey you can move from the warm sacred ghats of Haridwar through dense sal forests alive with tigers and elephants, ascend alpine meadows blanketed in snow, and emerge at a high lake that mirrors the Himalayan skyline. Junegiri Yatra's Uttarakhand tour packages are curated to showcase this diversity with comfortable pacing, reliable transport, and locally knowledgeable guides.</p><p>Our Mussoorie and Dehradun package is among our most popular family choices. The Queen of Hills retains a colonial-era charm with its Mall Road promenade, Camel's Back Road morning walks, and viewpoints overlooking the Doon Valley and the Shivalik ranges. Kempty Falls, 15 km from Mussoorie, offers a natural tiered waterfall perfect for a refreshing dip. Dehradun's highlights include the Indian Military Academy, Mindrolling Monastery, and the lively Paltan Bazaar.</p><p>Wildlife enthusiasts gravitate toward our Nainital and Jim Corbett combination. Jim Corbett National Park — India's oldest and arguably most celebrated tiger reserve — offers both jeep and elephant safaris through its Dhikala, Bijrani, and Jhirna zones. Pairing it with the lake city of Nainital, with its horse rides, ropeway, and boat rides on Naini Lake, creates a beautifully balanced itinerary for families with children of all ages.</p><p>For winter travellers, Auli stands out as Uttarakhand's premier ski resort. Sitting between 2,519m and 3,049m, it receives consistent snowfall from December through February and offers skiing lessons for all levels through GMVN's certified instructors. The Auli ropeway — one of Asia's longest at 4 km — rewards riders with panoramic views of Nanda Devi, India's second-highest peak. Our Auli Snow Trip includes all ropeway charges, ski equipment rental, and slope instruction.</p>",
+    "comparison_headers": [
+      "Package",
+      "Duration",
+      "Highlights",
+      "Best Season",
+      "Price"
+    ],
+    "comparison_rows": [
+      [
+        {
+          "text": "Mussoorie & Dehradun"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "Mall Road, Kempty Falls, Doon Valley"
+        },
+        {
+          "text": "Oct–Jun"
+        },
+        {
+          "is_price": true,
+          "value": 8500
+        }
+      ],
+      [
+        {
+          "text": "Nainital & Jim Corbett"
+        },
+        {
+          "text": "4N/5D"
+        },
+        {
+          "text": "Tiger Safari, Naini Lake, Boating"
+        },
+        {
+          "text": "Nov–Jun"
+        },
+        {
+          "is_price": true,
+          "value": 11000
+        }
+      ],
+      [
+        {
+          "text": "Auli Snow Trip"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "Skiing, Ropeway, Snow Sports"
+        },
+        {
+          "text": "Dec–Mar"
+        },
+        {
+          "is_price": true,
+          "value": 9500
+        }
+      ],
+      [
+        {
+          "text": "Kanatal & Tehri Lake"
+        },
+        {
+          "text": "2N/3D"
+        },
+        {
+          "text": "Water Sports, Pine Forests, Sunrise"
+        },
+        {
+          "text": "Sep–Jun"
+        },
+        {
+          "is_price": true,
+          "value": 6500
+        }
+      ],
+      [
+        {
+          "text": "Chopta & Deoria Tal"
+        },
+        {
+          "text": "2N/3D"
+        },
+        {
+          "text": "Mirror Lake, Bugyals, Tungnath Views"
+        },
+        {
+          "text": "Apr–Jun, Sep–Nov"
+        },
+        {
+          "is_price": true,
+          "value": 6000
+        }
+      ],
+      [
+        {
+          "text": "Lansdowne & Corbett"
+        },
+        {
+          "text": "3N/4D"
+        },
+        {
+          "text": "Cantonment Town, Jeep Safari, Ramnagar"
+        },
+        {
+          "text": "Oct–Jun"
+        },
+        {
+          "is_price": true,
+          "value": 9000
+        }
+      ]
+    ],
+    "faq": [
+      {
+        "q": "When is the best time to visit Uttarakhand?",
+        "a": "March through June is the most popular season — weather is pleasant across the hills and all attractions are accessible. October and November offer clear post-monsoon skies and excellent visibility of Himalayan peaks. December through February is ideal for snow-based activities at Auli but some high passes may close. July–August is monsoon season; some packages may be limited."
+      },
+      {
+        "q": "Are these tours family-friendly with young children?",
+        "a": "Yes. Mussoorie & Dehradun, Nainital & Jim Corbett, and Kanatal & Tehri Lake are all highly suitable for families with children aged 5 and above. We use comfortable SUVs or tempo travellers for all ground transport and can arrange adjoining rooms or family suites at all partner hotels. Child pricing applies to kids under 5 years."
+      },
+      {
+        "q": "Which destinations in Uttarakhand receive heavy snowfall?",
+        "a": "Auli receives reliable snowfall from December to February and is our top recommendation for snow. Chopta and Kedarnath valley areas see snow from November to March. Mussoorie and Kanatal occasionally get light snow in January. Nainital receives light snowfall once or twice per season, usually in January."
+      },
+      {
+        "q": "What is the probability of spotting a tiger at Jim Corbett?",
+        "a": "Jim Corbett has one of India's highest tiger densities, and sighting rates in the Dhikala and Bijrani zones are relatively strong — particularly during morning safaris. However, wildlife sightings are never guaranteed. Our packages use zone-experienced naturalist guides and CANTER safaris (open vehicles) to maximise your chances."
+      },
+      {
+        "q": "Is there a minimum child age for Jim Corbett safari?",
+        "a": "The Forest Department regulations for Jim Corbett require all safari participants to be above 5 years of age for zone entry. Children between 5 and 12 years are charged a child entry rate. Infants and toddlers under 5 are not permitted inside the core safari zones."
+      },
+      {
+        "q": "What type of accommodation is provided in the tour packages?",
+        "a": "All packages include 3-star equivalent hotels or government-approved resorts unless a specific category is requested. Jim Corbett packages use licensed eco-lodges or KMVN rest houses within or adjacent to the park. Auli packages use GMVN cottages or mountain resorts. Upgrades to 4-star or boutique heritage properties are available on request."
+      },
+      {
+        "q": "Can I customise the tour itinerary?",
+        "a": "All our Uttarakhand tours can be customised. Popular additions include extending Nainital with a Mukteshwar or Binsar day trip, combining Mussoorie with Dhanaulti, or adding a Haridwar temple tour as a day extension to any package. Tell us your interests and we will tailor the itinerary accordingly."
+      },
+      {
+        "q": "Are meals included in the Uttarakhand tour packages?",
+        "a": "All packages include daily breakfast at the hotel. Dinner is included in most packages at the hotel or a local restaurant. Lunches are typically on your own to allow flexibility to explore local food at leisure. Packages can be upgraded to all-inclusive (breakfast, lunch, and dinner) on request."
+      }
+    ],
+    "travel_guide": "<h2>Your Complete Guide to Uttarakhand Tours from Haridwar</h2><p>Uttarakhand borders China and Nepal to the north and east, and its terrain climbs from the subtropical Terai belt — home to Jim Corbett's tigers and elephants — all the way to glaciers feeding the Ganga and Yamuna rivers. The state is divided into two distinct cultural and geographic regions: Garhwal in the west, home to the Char Dham shrines and Haridwar, and Kumaon in the east, home to Nainital, Corbett, and the Binsar wildlife sanctuary.</p><h3>Transport Within Uttarakhand</h3><p>From Haridwar, our private vehicles handle all inter-city transfers. Shared state-run buses (Uttarakhand Roadways) connect major towns and are an economical alternative for budget travellers. Mountain roads can be narrow and winding — travel times listed in itineraries account for these conditions. During peak summer and winter seasons, booking transfers in advance is essential.</p><h3>Altitude and Weather Considerations</h3><p>Mussoorie (2,005m) and Nainital (2,084m) are temperate year-round but require light woolens from October through March. Auli (2,519m–3,049m) requires heavy winter gear December through February. All our packages include a packing list matched to your specific itinerary and season.</p><h3>Wildlife Etiquette at Jim Corbett</h3><p>Mobile phones must be on silent inside all safari zones. Flash photography is prohibited. Safaris depart at strict times — 06:00 and 14:30 — and late arrival forfeits your booking without refund. Our guides follow Forest Department codes strictly, ensuring both your safety and the park's conservation standards.</p><h3>Local Cuisine to Try</h3><p>Uttarakhand's Garhwali and Kumaoni cuisines are hearty and distinct from north Indian mainstream food. Look out for Aloo Ke Gutke (spiced potatoes), Kafuli (greens and lentil curry), Bal Mithai (chocolate-like fudge from Nainital), and Singori (coconut milk sweet wrapped in maalu leaf). Our guides happily recommend local dhabas and restaurants at each stop.</p>"
   }
 ]

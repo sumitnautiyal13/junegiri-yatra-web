@@ -34,26 +34,28 @@ interface NavEntry {
 /* ─── Navigation data ────────────────────────────────────── */
 const NAV: NavEntry[] = [
   {
-    label: 'Char Dham',
+    label: 'Pilgrimages',
     href: '/packages/char-dham-yatra/',
     mega: {
       columns: [
         {
-          heading: 'Pilgrimage Packages',
+          heading: 'Char Dham Circuit',
           items: [
-            { icon: '🕍', label: 'Char Dham Yatra 9N / 10D', sub: 'Full circuit — Yamunotri · Gangotri · Kedarnath · Badrinath', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
-            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5 Nights · 6 Days · from ₹13,500/person', href: '/packages/do-dham-yatra-5n-6d/' },
-            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3 Nights · 4 Days · from ₹8,500/person', href: '/packages/kedarnath-yatra-3n-4d/' },
-            { icon: '📋', label: 'Compare All Packages', sub: 'See pricing, duration & itineraries side by side', href: '/packages/char-dham-yatra/' },
+            { icon: '🕍', label: 'Char Dham Yatra 9N/10D', sub: 'Full circuit · Yamunotri · Gangotri · Kedarnath · Badrinath', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
+            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5N 6D · from ₹13,500', href: '/packages/do-dham-yatra-5n-6d/' },
+            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3N 4D · from ₹8,500', href: '/packages/kedarnath-yatra-3n-4d/' },
+            { icon: '🛕', label: 'Badrinath Yatra', sub: '2N 3D · Mana Village · from ₹6,500', href: '/packages/badrinath-yatra-2n-3d/' },
+            { icon: '🏔️', label: 'Yamunotri & Gangotri', sub: '4N 5D · 2 Dham · from ₹11,500', href: '/packages/yamunotri-gangotri-2-dham-4n-5d/' },
           ],
         },
         {
-          heading: 'Plan Your Journey',
+          heading: 'Spiritual & Pilgrim Tours',
           items: [
-            { icon: '📍', label: 'From Your City', sub: '20 Indian cities — Mumbai, Bangalore, Chennai & more', href: '/char-dham-from/' },
-            { icon: '🚁', label: 'Helicopter at Kedarnath', sub: 'Skip the 16 km trek — Phata & Guptkashi helipads', href: '/packages/kedarnath-yatra-3n-4d/' },
-            { icon: '🗓️', label: 'Best Time to Visit', sub: 'April – June and September – October seasons', href: '/packages/char-dham-yatra/' },
-            { icon: '👴', label: 'Senior-Friendly Options', sub: 'Palki · doli · helicopter for elderly pilgrims', href: '/packages/char-dham-yatra/' },
+            { icon: '🪷', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi · from ₹14,500', href: '/packages/braj-bhoomi-yatra-5n-6d/', badge: 'New' },
+            { icon: '🌊', label: 'Haridwar & Rishikesh Spiritual', sub: 'Ganga Aarti · temples · yoga · from ₹7,500', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
+            { icon: '🚁', label: 'Kedarnath by Helicopter', sub: 'Skip the trek · VVIP darshan · from ₹24,000', href: '/packages/kedarnath-helicopter-2n-3d/', badge: 'Premium' },
+            { icon: '✨', label: 'Char Dham by Helicopter', sub: 'All 4 dhams · 7N 8D · from ₹65,000', href: '/packages/char-dham-helicopter-7n-8d/', badge: 'Luxury' },
+            { icon: '📍', label: 'From Your City', sub: '20 departure cities — Mumbai, Bangalore & more', href: '/char-dham-from/' },
           ],
         },
       ],
@@ -69,32 +71,33 @@ const NAV: NavEntry[] = [
   },
   {
     label: 'Treks',
-    href: '/treks/',
+    href: '/packages/himalayan-treks/',
     mega: {
       columns: [
         {
-          heading: 'Winter & Spring Treks',
+          heading: 'Snow & Winter Treks',
           items: [
-            { icon: '❄️', label: 'Kedarkantha Trek', sub: 'Dec – Apr · 12,500 ft summit · snow trails', href: '/treks/', badge: 'Bestseller' },
-            { icon: '🌿', label: 'Kuari Pass Trek', sub: 'Easy · Feb – Jun · panoramic Himalayan views', href: '/treks/' },
-            { icon: '🏔️', label: 'Har Ki Dun Trek', sub: 'Moderate · May – Nov · ancient valley route', href: '/treks/' },
+            { icon: '❄️', label: 'Kedarkantha Trek', sub: 'Dec–Apr · 3,810m summit · snow trails', href: '/packages/kedarkantha-trek-5n-6d/', badge: 'Bestseller' },
+            { icon: '🏔️', label: 'Pangarchulla Peak', sub: 'Mar–May · 4,700m · summit climb', href: '/packages/pangarchulla-peak-5n-6d/' },
+            { icon: '⛷️', label: 'Kuari Pass Trek', sub: "Feb–Jun · Lord Curzon's Trail · panoramic", href: '/packages/kuari-pass-trek-4n-5d/' },
           ],
         },
         {
-          heading: 'Monsoon & Summer Treks',
+          heading: 'Summer & Monsoon Treks',
           items: [
-            { icon: '🌸', label: 'Valley of Flowers', sub: 'Jul – Sep · UNESCO World Heritage · alpine meadows', href: '/treks/', badge: 'UNESCO' },
-            { icon: '🏕️', label: 'Hampta Pass', sub: 'Jun – Sep · Spiti crossover · dramatic landscapes', href: '/treks/' },
-            { icon: '🌄', label: 'Sar Pass Trek', sub: 'May – Jun · Himachal Pradesh · beginner-friendly', href: '/treks/' },
+            { icon: '🌸', label: 'Valley of Flowers', sub: 'Jul–Sep · UNESCO · 500+ wildflowers', href: '/packages/valley-of-flowers-trek-4n-5d/', badge: 'UNESCO' },
+            { icon: '🏕️', label: 'Har Ki Dun Trek', sub: 'Apr–Nov · Pandava route · 3,566m', href: '/packages/har-ki-dun-trek-5n-6d/' },
+            { icon: '🌄', label: 'Chopta–Tungnath Trek', sub: "Year-round · world's highest Shiva temple", href: '/packages/chopta-tungnath-trek-3n-4d/' },
+            { icon: '🗻', label: 'Roopkund Trek', sub: 'May–Oct · Mystery Lake · 5,029m', href: '/packages/roopkund-trek-7n-8d/' },
           ],
         },
       ],
       featured: {
-        image: '/images/trek_himalaya.jpg',
+        image: '/images/trek_snow_peak.jpg',
         badge: '❄️ Season Open',
         title: 'Kedarkantha Trek 2025',
-        price: 'From ₹8,500 / person',
-        href: '/treks/',
+        price: 'From ₹9,500 / person',
+        href: '/packages/kedarkantha-trek-5n-6d/',
         waText: 'Namaste! I want to enquire about Kedarkantha Trek',
       },
     },
@@ -105,19 +108,19 @@ const NAV: NavEntry[] = [
     mega: {
       columns: [
         {
-          heading: 'Water Adventures',
+          heading: 'Adventure Activities',
           items: [
-            { icon: '🚣', label: 'River Rafting', sub: 'Grade I – IV · 16 km Shivpuri stretch · from ₹600', href: '/packages/rishikesh-adventures/', badge: 'Thrilling' },
-            { icon: '🛶', label: 'Kayaking', sub: 'Beginner to expert · half-day & full-day sessions', href: '/packages/rishikesh-adventures/' },
-            { icon: '🤿', label: 'Cliff Jumping', sub: 'Natural rock platforms · supervised sessions', href: '/packages/rishikesh-adventures/' },
+            { icon: '🚣', label: 'Adventure Pack — Rafting + Bungee', sub: '2N 3D · Grade III-IV · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
+            { icon: '🏕️', label: 'Weekend Escape', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
+            { icon: '🪂', label: 'Bungee Jumping', sub: '83m · India\'s highest · at Jumpin Heights', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
           ],
         },
         {
-          heading: 'Aerial & Wellness',
+          heading: 'Yoga & Wellness',
           items: [
-            { icon: '🪂', label: 'Bungee Jumping', sub: '83 metres · India\'s highest fixed bungee', href: '/packages/rishikesh-adventures/', badge: '83m' },
-            { icon: '🏕️', label: 'Camping & Bonfire', sub: 'Riverside campsites · tents · bonfire · from ₹1,500', href: '/packages/rishikesh-adventures/' },
-            { icon: '🧘', label: 'Yoga Retreats', sub: '3 – 7 day wellness stays · certified instructors', href: '/packages/rishikesh-adventures/' },
+            { icon: '🧘', label: 'Yoga Retreat 5N/6D', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
+            { icon: '🌊', label: 'River Rafting', sub: 'Shivpuri 16km · Marine Drive 26km · Grade I–IV', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
+            { icon: '🛶', label: 'Kayaking & Cliff Jumping', sub: 'Beginner & expert · supervised · all gear', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
           ],
         },
       ],
@@ -125,46 +128,78 @@ const NAV: NavEntry[] = [
         image: '/images/rishikesh_bridge.jpg',
         badge: '🌊 Adventure Capital',
         title: 'Rishikesh Adventure Pack',
-        price: 'From ₹2,500 / person',
-        href: '/packages/rishikesh-adventures/',
+        price: 'From ₹5,500 / person',
+        href: '/packages/rishikesh-adventure-pack-2n-3d/',
         waText: 'Namaste! I want to book Rishikesh adventure activities',
       },
     },
   },
   {
-    label: 'Golden Triangle',
+    label: 'Uttarakhand',
+    href: '/packages/uttarakhand-tours/',
+    mega: {
+      columns: [
+        {
+          heading: 'Hill Stations & Leisure',
+          items: [
+            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
+            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
+            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
+          ],
+        },
+        {
+          heading: 'Weekend Getaways',
+          items: [
+            { icon: '⛺', label: 'Kanatal & Tehri Lake', sub: '2N 3D · water sports · cedar forests · from ₹6,500', href: '/packages/kanatal-tehri-weekend-2n-3d/' },
+            { icon: '🌿', label: 'Chopta & Deoria Tal', sub: '2N 3D · reflective lake · Tungnath temple · from ₹6,000', href: '/packages/chopta-deoria-tal-2n-3d/' },
+            { icon: '🐘', label: 'Lansdowne & Corbett Safari', sub: '3N 4D · colonial hill town · wildlife · from ₹9,000', href: '/packages/lansdowne-corbett-safari-3n-4d/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/mountains1.jpg',
+        badge: '🌿 Uttarakhand',
+        title: 'Nainital & Jim Corbett 4N/5D',
+        price: 'From ₹11,000 / person',
+        href: '/packages/nainital-jim-corbett-4n-5d/',
+        waText: 'Namaste! I want to enquire about Nainital Jim Corbett package',
+      },
+    },
+  },
+  {
+    label: 'Heritage',
     href: '/packages/golden-triangle/',
     mega: {
       columns: [
         {
-          heading: 'Tour Packages',
+          heading: 'Heritage Tours',
           items: [
-            { icon: '🏛️', label: 'Golden Triangle 5N / 6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500/person', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Complete' },
-            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500/person', href: '/packages/taj-mahal-day-tour-from-delhi/' },
-            { icon: '🗺️', label: 'All Heritage Tours', sub: 'Compare durations, prices & inclusions', href: '/packages/golden-triangle/' },
+            { icon: '🏛️', label: 'Golden Triangle 5N/6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Classic' },
+            { icon: '🏰', label: 'Rajasthan Tour 6N/7D', sub: 'Jaipur · Jodhpur · Jaisalmer · from ₹21,000', href: '/packages/rajasthan-tour-6n-7d/', badge: 'New' },
+            { icon: '🐯', label: 'Golden Triangle + Ranthambore', sub: '7N 8D · Taj + tiger · from ₹24,500', href: '/packages/golden-triangle-ranthambore-7n-8d/' },
           ],
         },
         {
-          heading: 'Destinations',
+          heading: 'Spiritual Heritage',
           items: [
-            { icon: '🏙️', label: 'Delhi', sub: 'Red Fort · Qutub Minar · India Gate · Chandni Chowk', href: '/packages/golden-triangle-tour-5n-6d/' },
-            { icon: '🕌', label: 'Agra', sub: 'Taj Mahal · Agra Fort · Mehtab Bagh · Fatehpur Sikri', href: '/packages/taj-mahal-day-tour-from-delhi/' },
-            { icon: '🏯', label: 'Jaipur', sub: 'Amber Fort · Hawa Mahal · City Palace · Jantar Mantar', href: '/packages/golden-triangle-tour-5n-6d/' },
+            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500', href: '/packages/taj-mahal-day-tour-from-delhi/' },
+            { icon: '🪔', label: 'Varanasi & Prayagraj', sub: '3N 4D · Ganga Aarti · ghats · Sangam · from ₹9,500', href: '/packages/varanasi-prayagraj-spiritual-3n-4d/' },
+            { icon: '🌸', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi', href: '/packages/braj-bhoomi-yatra-5n-6d/' },
           ],
         },
       ],
       featured: {
         image: '/images/temple_entrance.jpg',
         badge: '🏆 Heritage India',
-        title: 'Golden Triangle 5N / 6D',
-        price: 'From ₹18,500 / person',
-        href: '/packages/golden-triangle-tour-5n-6d/',
-        waText: 'Namaste! I want to enquire about Golden Triangle tour',
+        title: 'Rajasthan Tour 6N / 7D',
+        price: 'From ₹21,000 / person',
+        href: '/packages/rajasthan-tour-6n-7d/',
+        waText: 'Namaste! I want to enquire about Rajasthan tour package',
       },
     },
   },
-  { label: 'About', href: '/about/' },
   { label: 'Blog', href: '/blog/' },
+  { label: 'Contact', href: '/contact/' },
 ];
 
 /* ─── Component ──────────────────────────────────────────── */
