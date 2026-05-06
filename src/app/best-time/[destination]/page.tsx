@@ -16,6 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ destinati
     title: `${item.title} | Junegiri Yatra`,
     description: item.meta_description,
     alternates: { canonical: `https://junegiriyatra.com/best-time/${destination}/` },
+    openGraph: {
+      title: `${item.title} | Junegiri Yatra`,
+      description: item.meta_description,
+      url: `https://junegiriyatra.com/best-time/${destination}/`,
+      images: [{ url: `https://junegiriyatra.com/images/mountains1.jpg`, width: 1200, height: 630 }],
+    },
   };
 }
 

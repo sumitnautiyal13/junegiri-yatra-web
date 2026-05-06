@@ -34,6 +34,10 @@ const CITY_ROUTE_MAP: Record<string, string> = {
   'rishikesh-yoga-wellness-5n-6d': '/rishikesh-from/',
   'rishikesh-weekend-getaway-1n-2d': '/rishikesh-from/',
   'valley-of-flowers-trek-4n-5d': '/valley-of-flowers-from/',
+  'mussoorie-dehradun-3n-4d': '/mussoorie-from/',
+  'nainital-jim-corbett-4n-5d': '/nainital-from/',
+  'nainital-corbett-tour-3n-4d': '/nainital-from/',
+  'varanasi-prayagraj-spiritual-3n-4d': '/varanasi-from/',
 };
 
 export default function PackageDetailPage({ pkg }: { pkg: Package }) {
@@ -389,32 +393,47 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'TouristTrip',
-            name: pkg.name,
-            description: pkg.meta_description,
-            url: `https://junegiriyatra.com${pkg.url}`,
-            image: pkg.hero_image,
-            touristType: 'Cultural tourism',
-            itinerary: { '@type': 'ItemList', numberOfItems: pkg.itinerary.length },
-            offers: {
-              '@type': 'Offer',
-              price: pkg.price_from,
-              priceCurrency: 'INR',
-              availability: 'https://schema.org/InStock',
-            },
-            aggregateRating: {
-              '@type': 'AggregateRating',
-              ratingValue: '4.8',
-              reviewCount: '47',
-              bestRating: '5',
-              worstRating: '1',
-            },
-            provider: {
-              '@type': 'TravelAgency',
-              name: 'Junegiri Yatra',
-              telephone: '+919873897652',
-              address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressCountry: 'IN' },
-            },
+            '@graph': [
+              {
+                '@type': 'TouristTrip',
+                name: pkg.name,
+                description: pkg.meta_description,
+                url: `https://junegiriyatra.com${pkg.url}`,
+                image: `https://junegiriyatra.com${pkg.hero_image}`,
+                touristType: 'Cultural tourism',
+                itinerary: { '@type': 'ItemList', numberOfItems: pkg.itinerary.length },
+                offers: {
+                  '@type': 'Offer',
+                  price: pkg.price_from,
+                  priceCurrency: 'INR',
+                  availability: 'https://schema.org/InStock',
+                },
+                aggregateRating: {
+                  '@type': 'AggregateRating',
+                  ratingValue: 4.8,
+                  reviewCount: 47,
+                  bestRating: 5,
+                  worstRating: 1,
+                },
+                provider: {
+                  '@type': 'TravelAgency',
+                  name: 'Junegiri Yatra',
+                  telephone: '+919873897652',
+                  url: 'https://junegiriyatra.com',
+                  address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressRegion: 'Uttarakhand', addressCountry: 'IN' },
+                  sameAs: ['https://www.instagram.com/junegiriyatra', 'https://www.facebook.com/junegiriyatra'],
+                },
+              },
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: breadcrumbs.map((b, i) => ({
+                  '@type': 'ListItem',
+                  position: i + 1,
+                  name: b.name,
+                  item: b.url.startsWith('http') ? b.url : `https://junegiriyatra.com${b.url}`,
+                })),
+              },
+            ],
           }),
         }}
       />

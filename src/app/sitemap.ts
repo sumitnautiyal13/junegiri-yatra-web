@@ -7,10 +7,12 @@ import citiesData from '../../data/cities.json';
 let blogData: Array<{ slug: string; published: string }> = [];
 let comparisonsData: Array<{ slug: string }> = [];
 let bestTimeData: Array<{ slug: string }> = [];
+let trekSeasonsData: Record<string, { months: string[] }> = {};
 
 try { blogData = require('../../data/blog-posts.json'); } catch {}
 try { comparisonsData = require('../../data/comparisons.json'); } catch {}
 try { bestTimeData = require('../../data/best-time.json'); } catch {}
+try { trekSeasonsData = require('../../data/trek-seasons.json'); } catch {}
 
 const BASE = 'https://junegiriyatra.com';
 const NOW = new Date().toISOString();
@@ -48,6 +50,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       urls.push({ url: `${BASE}${dest.index}${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: dest.priority - 0.1 });
     }
   }
+
+  // Trek × Month pages
+  for (const [slug, data] of Object.entries(trekSeasonsData)) {
+    for (const month of data.months) {
+      urls.push({ url: `${BASE}/packages/${slug}/${month}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 });
+    }
+  }
+
+  // Static pages
+  urls.push({ url: `${BASE}/about/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+  urls.push({ url: `${BASE}/contact/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
 
   // Blog
   if (blogData.length > 0) {

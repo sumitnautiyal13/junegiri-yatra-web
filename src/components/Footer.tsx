@@ -20,9 +20,7 @@ export default function Footer() {
             <Link href="/packages/kedarnath-yatra-3n-4d/">Kedarnath Yatra</Link>
             <Link href="/packages/golden-triangle/">Golden Triangle</Link>
             <Link href="/packages/taj-mahal-tours/">Taj Mahal Tours</Link>
-            <Link href="/packages/kerala-tours/">Kerala Tours</Link>
-            <Link href="/packages/rajasthan-tours/">Rajasthan Tours</Link>
-            <Link href="/packages/goa-packages/">Goa Packages</Link>
+            <Link href="/packages/uttarakhand-tours/">Uttarakhand Tours</Link>
             <Link href="/char-dham-from/">Char Dham from Your City</Link>
             <Link href="/kedarnath-from/">Kedarnath from Your City</Link>
             <Link href="/badrinath-from/">Badrinath from Your City</Link>
@@ -36,9 +34,9 @@ export default function Footer() {
             <h4>Experiences</h4>
             <Link href="/packages/himalayan-treks/">Himalayan Treks</Link>
             <Link href="/packages/rishikesh-adventures/">Rishikesh Adventures</Link>
-            <Link href="/packages/spiritual-tours/">Spiritual Tours</Link>
-            <Link href="/packages/wildlife-safari/">Wildlife Safari</Link>
-            <Link href="/packages/wellness-retreats/">Wellness Retreats</Link>
+            <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
+            <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers Trek</Link>
+            <Link href="/packages/rishikesh-adventure-pack-2n-3d/">Rishikesh Rafting & Bungee</Link>
             <Link href="/blog/">Travel Blog</Link>
           </div>
           <div>
@@ -57,9 +55,11 @@ export default function Footer() {
             <h4>Contact</h4>
             <a href="tel:+919873897652">+91 98738 97652</a>
             <a href="mailto:info@junegiriyatra.com">info@junegiriyatra.com</a>
-            <a href="https://instagram.com/junegiriyatra" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.instagram.com/junegiriyatra" target="_blank" rel="noopener noreferrer">Instagram</a>
             <a href="https://wa.me/919873897652" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
             <Link href="/about/">About Us</Link>
+            <Link href="/contact/">Contact Us</Link>
+            <Link href="/about/">Our Story</Link>
           </div>
         </div>
         <div className="footer-bottom">

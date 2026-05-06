@@ -38,7 +38,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const whatsappMsg = encodeURIComponent(
     `Hi! I read your blog post "${post.title}" and I'm interested in the ${post.related_package} package. Can you share details?`
   );
-  const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMsg}`;
+  const whatsappUrl = `https://wa.me/919873897652?text=${whatsappMsg}`;
 
   // JSON-LD schemas
   const articleSchema = {
@@ -48,7 +48,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
     description: post.meta_description,
     image: `https://junegiriyatra.com${post.hero_image}`,
     datePublished: post.published,
-    author: { '@type': 'Organization', name: post.author },
+    dateModified: (post as any).date_modified || post.published,
+    author: {
+      '@type': 'Person',
+      name: post.author,
+      url: 'https://junegiriyatra.com/about/',
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Junegiri Yatra',

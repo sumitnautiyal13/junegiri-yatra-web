@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import { CurrencyProvider } from '@/contexts/CurrencyContext';
 import Header from '@/components/Header';
@@ -25,21 +26,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics (GA4) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2BY0PVTXW" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P2BY0PVTXW');`,
-          }}
-        />
-        {/* Meta Pixel */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','808349899505470');fbq('track','PageView');`,
-          }}
-        />
-      </head>
+      <head />
       <body>
         <CurrencyProvider>
           <Header />
@@ -48,6 +35,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <WhatsAppFloat />
           <ScrollReveal />
         </CurrencyProvider>
+        {/* Google Analytics (GA4) — afterInteractive avoids render-blocking */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-P2BY0PVTXW"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-P2BY0PVTXW');`}
+        </Script>
+        {/* Meta Pixel — lazyOnload for non-critical tracking */}
+        <Script id="meta-pixel" strategy="lazyOnload">
+          {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','808349899505470');fbq('track','PageView');`}
+        </Script>
       </body>
     </html>
   );
