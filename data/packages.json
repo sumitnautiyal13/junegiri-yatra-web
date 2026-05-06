@@ -18,18 +18,108 @@
     "price_from": 19800,
     "intl_price_usd": 420,
     "wa_text": "Char Dham Yatra 9N/10D package details chahiye",
-    "overview": "<p>The Char Dham Yatra is the most sacred Hindu pilgrimage in India, covering four ancient temples in Uttarakhand. Our 10-day all-inclusive package starts from Haridwar and takes you through scenic Himalayan valleys to <strong>Yamunotri</strong> (source of Yamuna), <strong>Gangotri</strong> (source of Ganga), <strong>Kedarnath</strong> (one of 12 Jyotirlingas dedicated to Lord Shiva), and <strong>Badrinath</strong> (one of four sacred dhams of Lord Vishnu).</p><p>Junegiri Yatra has been organising Char Dham journeys for 8+ years, with hotel arrangements at every stop, breakfast and dinner included, private vehicle for your group throughout, and trained drivers who know every mountain route. Senior citizens are welcome — we arrange palki and pony services for the Kedarnath trek and helicopter options on request.</p>",
+    "overview": "<p><strong>Junegiri Yatra's 9 Nights / 10 Days Char Dham Yatra package</strong> at ₹19,800 per person covers all four sacred shrines of Uttarakhand — Yamunotri, Gangotri, Kedarnath, and Badrinath — in a well-paced itinerary designed to give you adequate rest and meaningful darshan at each site. We are a Haridwar-based operator, which means the circuit starts and ends in Haridwar and we manage every leg of the journey ourselves without sub-contracting your transfer or accommodation to third parties.</p><p>The route follows the traditional sequence: <strong>Haridwar → Barkot (Yamunotri) → Uttarkashi (Gangotri) → Guptkashi/Sonprayag (Kedarnath) → Badrinath → Haridwar</strong>. Each night halt is chosen for comfort relative to the terrain — you stay at mid-altitude towns where accommodation is better than at the shrine-level camps, though we also offer shrine-level stays at Kedarnath and Badrinath for those who want to attend the early morning aarti.</p><p>The package includes <strong>accommodation (double sharing), all transfers by dedicated vehicle, driver, and a local guide</strong> who accompanies the group through all four dhams. Meals are not included so pilgrims can eat according to their own preferences and timing, but we provide a curated list of reliable dhabas and guesthouses at each stop. Helicopter at Kedarnath, VVIP darshan tickets, and Char Dham registration assistance are available as add-ons.</p><p>This is a <strong>group departure package</strong> with fixed departure dates from Haridwar every Saturday from late April through October. Private customised char dham yatra packages are also available for families or groups of 6 or more — call us at <strong>+91 98738 97652</strong> to discuss. Whether you are planning <a href=\"/char-dham-from/delhi/\">char dham yatra from Delhi</a> or travelling from further south, we handle the full coordination from Haridwar onward. All package guests receive a detailed pre-departure briefing covering registration, packing, route conditions, and what to expect at each dham — so there are no surprises on the road.</p>",
     "itinerary": [
-      {"title": "Haridwar to Barkot", "meta": "150 km · 8 hours drive", "desc": "Pickup from Haridwar in the morning. Drive to Barkot via Mussoorie, passing Kempty Falls. Beautiful pine forests and mountain roads. Arrive Barkot, check into hotel, dinner and rest.", "highlights": ["Mussoorie", "Kempty Falls", "Barkot stay"]},
-      {"title": "Yamunotri Yatra", "meta": "45 km drive + 6 km trek each way", "desc": "Early morning drive to Jankichatti. Trek 6 km to Yamunotri Temple. Holy dip at Surya Kund. Darshan at the temple — source of Yamuna river. Return trek to Jankichatti, drive back to Barkot.", "highlights": ["Yamunotri Temple", "Surya Kund", "First Dham"]},
-      {"title": "Barkot to Uttarkashi", "meta": "100 km · 4 hours", "desc": "Scenic drive through pine forests to Uttarkashi. Visit Vishwanath Temple in Uttarkashi. Evening at leisure on the banks of Bhagirathi.", "highlights": ["Vishwanath Temple", "Bhagirathi River"]},
-      {"title": "Gangotri Yatra", "meta": "100 km drive each way", "desc": "Drive to Gangotri through Harsil Valley. Holy dip at Bhagirathi origin. Darshan at Gangotri Temple — source of holy Ganga. Return to Uttarkashi.", "highlights": ["Gangotri Temple", "Harsil Valley", "Second Dham"]},
-      {"title": "Uttarkashi to Guptkashi", "meta": "225 km · 9 hours", "desc": "Long scenic drive across the Garhwal Himalayas. Pass through tea estates and apple orchards. Arrive Guptkashi by evening, check into hotel.", "highlights": ["Garhwal Himalayas", "Apple orchards"]},
-      {"title": "Guptkashi to Kedarnath", "meta": "30 km drive + 22 km trek", "desc": "Early morning drive to Sonprayag, take local jeep to Gaurikund. Begin trek to Kedarnath. Ponies, palkis, and helicopter available. Visit Kedarnath Temple — one of 12 Jyotirlingas. Attend evening Sandhya Aarti.", "highlights": ["Kedarnath Jyotirlinga", "22 km Trek", "Sandhya Aarti", "Helicopter Available"]},
-      {"title": "Kedarnath to Guptkashi", "meta": "22 km trek + 30 km drive", "desc": "Attend early morning aarti at Kedarnath Temple. Begin return trek to Gaurikund. Drive back to Guptkashi for overnight stay.", "highlights": ["Morning Aarti", "Return Trek"]},
-      {"title": "Guptkashi to Badrinath", "meta": "200 km · 8 hours", "desc": "Drive to Pandukeshwar via Karna Prayag and Nandprayag (sacred river confluences). Arrive Pandukeshwar/Badrinath, evening check-in.", "highlights": ["Karna Prayag", "Nandprayag", "Sacred Confluences"]},
-      {"title": "Badrinath Darshan + Mana Village", "meta": "20 km one way", "desc": "Morning Badrinath Temple darshan. Holy dip at Tapt Kund (hot spring). Visit Brahma Kapal, Mana Village (last village of India), Vyas Gufa, Bheem Pul, and Saraswati River origin.", "highlights": ["Badrinath Temple", "Tapt Kund", "Mana Village", "Bheem Pul", "Fourth Dham"]},
-      {"title": "Badrinath to Haridwar Drop", "meta": "300 km · 9 hours via Rishikesh", "desc": "Morning drive back to Haridwar via Rishikesh. Brief stop for Ganga Aarti at Parmarth Niketan if time permits. Drop at Haridwar railway station or airport. Yatra complete with the blessings of all four dhams.", "highlights": ["Rishikesh stop", "Ganga Aarti", "Haridwar Drop"]}
+      {
+        "title": "Haridwar to Barkot",
+        "meta": "150 km · 8 hours drive",
+        "desc": "Pickup from Haridwar in the morning. Drive to Barkot via Mussoorie, passing Kempty Falls. Beautiful pine forests and mountain roads. Arrive Barkot, check into hotel, dinner and rest.",
+        "highlights": [
+          "Mussoorie",
+          "Kempty Falls",
+          "Barkot stay"
+        ]
+      },
+      {
+        "title": "Yamunotri Yatra",
+        "meta": "45 km drive + 6 km trek each way",
+        "desc": "Early morning drive to Jankichatti. Trek 6 km to Yamunotri Temple. Holy dip at Surya Kund. Darshan at the temple — source of Yamuna river. Return trek to Jankichatti, drive back to Barkot.",
+        "highlights": [
+          "Yamunotri Temple",
+          "Surya Kund",
+          "First Dham"
+        ]
+      },
+      {
+        "title": "Barkot to Uttarkashi",
+        "meta": "100 km · 4 hours",
+        "desc": "Scenic drive through pine forests to Uttarkashi. Visit Vishwanath Temple in Uttarkashi. Evening at leisure on the banks of Bhagirathi.",
+        "highlights": [
+          "Vishwanath Temple",
+          "Bhagirathi River"
+        ]
+      },
+      {
+        "title": "Gangotri Yatra",
+        "meta": "100 km drive each way",
+        "desc": "Drive to Gangotri through Harsil Valley. Holy dip at Bhagirathi origin. Darshan at Gangotri Temple — source of holy Ganga. Return to Uttarkashi.",
+        "highlights": [
+          "Gangotri Temple",
+          "Harsil Valley",
+          "Second Dham"
+        ]
+      },
+      {
+        "title": "Uttarkashi to Guptkashi",
+        "meta": "225 km · 9 hours",
+        "desc": "Long scenic drive across the Garhwal Himalayas. Pass through tea estates and apple orchards. Arrive Guptkashi by evening, check into hotel.",
+        "highlights": [
+          "Garhwal Himalayas",
+          "Apple orchards"
+        ]
+      },
+      {
+        "title": "Guptkashi to Kedarnath",
+        "meta": "30 km drive + 22 km trek",
+        "desc": "Early morning drive to Sonprayag, take local jeep to Gaurikund. Begin trek to Kedarnath. Ponies, palkis, and helicopter available. Visit Kedarnath Temple — one of 12 Jyotirlingas. Attend evening Sandhya Aarti.",
+        "highlights": [
+          "Kedarnath Jyotirlinga",
+          "22 km Trek",
+          "Sandhya Aarti",
+          "Helicopter Available"
+        ]
+      },
+      {
+        "title": "Kedarnath to Guptkashi",
+        "meta": "22 km trek + 30 km drive",
+        "desc": "Attend early morning aarti at Kedarnath Temple. Begin return trek to Gaurikund. Drive back to Guptkashi for overnight stay.",
+        "highlights": [
+          "Morning Aarti",
+          "Return Trek"
+        ]
+      },
+      {
+        "title": "Guptkashi to Badrinath",
+        "meta": "200 km · 8 hours",
+        "desc": "Drive to Pandukeshwar via Karna Prayag and Nandprayag (sacred river confluences). Arrive Pandukeshwar/Badrinath, evening check-in.",
+        "highlights": [
+          "Karna Prayag",
+          "Nandprayag",
+          "Sacred Confluences"
+        ]
+      },
+      {
+        "title": "Badrinath Darshan + Mana Village",
+        "meta": "20 km one way",
+        "desc": "Morning Badrinath Temple darshan. Holy dip at Tapt Kund (hot spring). Visit Brahma Kapal, Mana Village (last village of India), Vyas Gufa, Bheem Pul, and Saraswati River origin.",
+        "highlights": [
+          "Badrinath Temple",
+          "Tapt Kund",
+          "Mana Village",
+          "Bheem Pul",
+          "Fourth Dham"
+        ]
+      },
+      {
+        "title": "Badrinath to Haridwar Drop",
+        "meta": "300 km · 9 hours via Rishikesh",
+        "desc": "Morning drive back to Haridwar via Rishikesh. Brief stop for Ganga Aarti at Parmarth Niketan if time permits. Drop at Haridwar railway station or airport. Yatra complete with the blessings of all four dhams.",
+        "highlights": [
+          "Rishikesh stop",
+          "Ganga Aarti",
+          "Haridwar Drop"
+        ]
+      }
     ],
     "inclusions": [
       "9 nights hotel accommodation (twin sharing)",
@@ -50,12 +140,60 @@
       "Any item not mentioned in inclusions"
     ],
     "pricing_tiers": [
-      {"group_size": "2 Pax (Sedan)", "rates": {"standard": 30800, "deluxe": 40150, "super deluxe": 42790, "luxury": 59950}},
-      {"group_size": "4 Pax (Sedan)", "rates": {"standard": 22550, "deluxe": 28050, "super deluxe": 31020, "luxury": 47850}},
-      {"group_size": "6 Pax (Ertiga)", "rates": {"standard": 20900, "deluxe": 26620, "super deluxe": 29480, "luxury": 46200}},
-      {"group_size": "8 Pax (Tempo Traveller)", "rates": {"standard": 23650, "deluxe": 29590, "super deluxe": 32450, "luxury": 48950}},
-      {"group_size": "10 Pax (Tempo Traveller)", "rates": {"standard": 21230, "deluxe": 26950, "super deluxe": 29920, "luxury": 46750}},
-      {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 19800, "deluxe": 25300, "super deluxe": 28490, "luxury": 0}}
+      {
+        "group_size": "2 Pax (Sedan)",
+        "rates": {
+          "standard": 30800,
+          "deluxe": 40150,
+          "super deluxe": 42790,
+          "luxury": 59950
+        }
+      },
+      {
+        "group_size": "4 Pax (Sedan)",
+        "rates": {
+          "standard": 22550,
+          "deluxe": 28050,
+          "super deluxe": 31020,
+          "luxury": 47850
+        }
+      },
+      {
+        "group_size": "6 Pax (Ertiga)",
+        "rates": {
+          "standard": 20900,
+          "deluxe": 26620,
+          "super deluxe": 29480,
+          "luxury": 46200
+        }
+      },
+      {
+        "group_size": "8 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 23650,
+          "deluxe": 29590,
+          "super deluxe": 32450,
+          "luxury": 48950
+        }
+      },
+      {
+        "group_size": "10 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 21230,
+          "deluxe": 26950,
+          "super deluxe": 29920,
+          "luxury": 46750
+        }
+      },
+      {
+        "group_size": "12 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 19800,
+          "deluxe": 25300,
+          "super deluxe": 28490,
+          "luxury": 0
+        }
+      }
     ],
     "gallery": [
       "/images/trek_himalaya.jpg",
@@ -68,27 +206,89 @@
       "/images/snow_cabin.jpg"
     ],
     "testimonials": [
-      {"quote": "Did Char Dham with my parents last May. Junegiri team handled everything end-to-end. Hotels were clean, driver was respectful, and they even arranged a helicopter for my mother who couldn't trek. Highly recommend.", "author": "Rajesh Kumar", "loc": "Delhi · Travelled May 2025"},
-      {"quote": "First time doing Char Dham, was nervous about logistics. Junegiri made it stress-free. WhatsApp support was responsive throughout. The Mana Village stop was an unexpected highlight.", "author": "Priya Sharma", "loc": "Mumbai · Travelled June 2025"},
-      {"quote": "Travelled as a group of 10 from Bangalore. Tempo Traveller was comfortable, food was good, and the price was fair. Will definitely book Do Dham next year.", "author": "Anil Gupta", "loc": "Bangalore · Travelled May 2025"}
+      {
+        "quote": "Did Char Dham with my parents last May. Junegiri team handled everything end-to-end. Hotels were clean, driver was respectful, and they even arranged a helicopter for my mother who couldn't trek. Highly recommend.",
+        "author": "Rajesh Kumar",
+        "loc": "Delhi · Travelled May 2025"
+      },
+      {
+        "quote": "First time doing Char Dham, was nervous about logistics. Junegiri made it stress-free. WhatsApp support was responsive throughout. The Mana Village stop was an unexpected highlight.",
+        "author": "Priya Sharma",
+        "loc": "Mumbai · Travelled June 2025"
+      },
+      {
+        "quote": "Travelled as a group of 10 from Bangalore. Tempo Traveller was comfortable, food was good, and the price was fair. Will definitely book Do Dham next year.",
+        "author": "Anil Gupta",
+        "loc": "Bangalore · Travelled May 2025"
+      }
     ],
     "faq": [
-      {"q": "What is the best time for Char Dham Yatra in 2026?", "a": "Char Dham temple gates open from late April/early May (Akshay Tritiya) and close in November (Bhai Dooj). The best months are <strong>May, June, September, and October</strong>. July-August has heavy monsoon rains and landslide risks, so we advise against it. Most pilgrims prefer May or early June for the best weather and full darshan availability."},
-      {"q": "How difficult is the Char Dham Yatra physically?", "a": "The yatra involves three treks: Yamunotri (6 km one way), Kedarnath (19-22 km one way), and Hemkund (if added). Yamunotri is moderate. Kedarnath is challenging but manageable with palki, pony, or helicopter support. We help arrange all of these. Senior citizens and those with health issues are encouraged to take helicopter for Kedarnath."},
-      {"q": "Can I do Char Dham Yatra by helicopter?", "a": "Yes. Helicopter Char Dham Yatra is available — typically 5-6 days, costs Rs 1,80,000-2,10,000 per person. We can arrange this. For a hybrid, you can take helicopter only for Kedarnath while doing other dhams by road — this saves time and cost."},
-      {"q": "Is registration required for Char Dham Yatra?", "a": "Yes. The Uttarakhand government requires all yatris to register at <strong>registrationandtouristcare.uk.gov.in</strong>. We help you complete the registration. You'll receive a yatra registration certificate which you must carry."},
-      {"q": "What is the total distance covered in this 10-day package?", "a": "Approximately <strong>1,750-1,800 km</strong> by road, plus 50 km of trekking (combined total for Yamunotri 12 km + Kedarnath 38-44 km return). Long days of mountain driving — comfortable vehicle and good rest at hotels are essential."},
-      {"q": "What should I pack for Char Dham Yatra?", "a": "Layered woollens, sweater and shawl (cold at high altitudes), sturdy trekking shoes, raincoat or umbrella, sunscreen, cap, sunglasses, personal medicines, power bank, ID proof, and a small day backpack. We share a detailed packing checklist after booking."},
-      {"q": "How do I book and what is the advance payment?", "a": "WhatsApp us at +91 98738 97652 with your preferred dates and group size. We send a detailed quote within 30 minutes. Confirm with <strong>10-20% advance via UPI or bank transfer</strong>. Remaining payment is due before yatra start."},
-      {"q": "Can I customize this itinerary?", "a": "Absolutely. You can add Hemkund Sahib, Valley of Flowers, extra night in Rishikesh, helicopter Kedarnath, or shorten/extend the journey. Tell us your preferences and we'll build a custom plan."}
+      {
+        "q": "What is the best time for Char Dham Yatra?",
+        "a": "May and June are the peak months for Char Dham Yatra, with all four shrines open and roads clear. September and early October are also excellent — crowds are thinner and the weather is stable. Avoid July and August due to frequent landslides during the monsoon. The shrines open in late April (Kedarnath around Akshaya Tritiya) and close in October–November."
+      },
+      {
+        "q": "Is Char Dham registration mandatory and how do I do it?",
+        "a": "Yes, the Uttarakhand government requires biometric registration for all Char Dham pilgrims. You can register online at the official devasthanam portal or the Uttarakhand tourism portal before departure. Walk-in registration counters are also available at Rishikesh and Haridwar. Carry your Aadhaar or any government ID. Junegiri Yatra assists all guests with the registration process as part of our package."
+      },
+      {
+        "q": "What does the ₹19,800 Char Dham Yatra package include?",
+        "a": "The package includes 9 nights accommodation on double sharing basis, dedicated vehicle transfers for the entire route, a local guide accompanying the group, and all toll and permit charges. It does not include meals, helicopter at Kedarnath, VVIP darshan fees, or personal expenses. The package covers Haridwar to Haridwar."
+      },
+      {
+        "q": "How fit do I need to be for Char Dham Yatra?",
+        "a": "The most physically demanding section is the 16 km trek to Kedarnath from Gaurikund. If you cannot trek, mules, dolis (palanquins), or helicopter service are available at extra cost. Yamunotri also involves a 6 km trek from Janki Chatti. Gangotri and Badrinath are accessible by road. People with heart conditions, severe hypertension, or breathing issues should consult their doctor before attempting Kedarnath at 3,584m altitude."
+      },
+      {
+        "q": "Can elderly pilgrims do the Char Dham Yatra?",
+        "a": "Yes, with the right arrangements. For Kedarnath, helicopter service or doli (carried palanquin) is available for those who cannot trek. For Yamunotri, dolis and horses are available from Janki Chatti. Gangotri and Badrinath are fully accessible by vehicle. We plan itineraries specifically for senior pilgrims with slower pace, lower altitude overnight halts, and wheelchair-accessible accommodation where possible."
+      },
+      {
+        "q": "What is the difference between VVIP darshan and standard darshan at Char Dham?",
+        "a": "Standard darshan at Kedarnath and Badrinath can involve queues of 2–5 hours in peak months. VVIP darshan tickets (available for a separate fee at the temple counters) reduce waiting time to 30–60 minutes and allow access to a dedicated entry queue. The darshan itself is the same — a brief view of the deity inside the sanctum. We can assist in booking VVIP darshan as an add-on to your package."
+      },
+      {
+        "q": "How do I reach Haridwar for the Char Dham Yatra?",
+        "a": "Haridwar is connected by direct trains from Delhi (4–5 hrs), Mumbai, Kolkata, and most major cities. Dehradun's Jolly Grant Airport is the nearest airport (35 km). We offer pickup from Haridwar railway station, Rishikesh, and Jolly Grant Airport. Pilgrims from southern India typically fly to Delhi or Dehradun and proceed to Haridwar by road or rail."
+      },
+      {
+        "q": "What should I pack for the 10-day Char Dham Yatra?",
+        "a": "Pack warm layers — a fleece and a down jacket are essential for Kedarnath and Badrinath. Trekking shoes with ankle support are mandatory for Kedarnath. Sunscreen SPF 50+, UV sunglasses, a walking stick, personal medications, cash (ATMs are unreliable above Rishikesh), and a raincoat or poncho. Keep your main bag under 15 kg to manage vehicle and trek transfers."
+      },
+      {
+        "q": "Can I do Char Dham Yatra without covering all four shrines?",
+        "a": "Yes. If time or health is a constraint, our Do Dham Yatra (Kedarnath + Badrinath) in 5 Nights / 6 Days is a popular alternative. For just Kedarnath, we have a 3 Nights / 4 Days package. The four shrines do not need to be covered in a single trip — many pilgrims complete them over two or more seasons."
+      },
+      {
+        "q": "Are meals included in the Char Dham Yatra package?",
+        "a": "Meals are not included in the base package. This is intentional — pilgrims have different dietary habits and timings, especially during fasting days. We provide a list of recommended dhabas and restaurants at each stop. Simple vegetarian food (dal, rice, roti, sabzi) is available throughout the route. At Badrinath, the temple langar offers free meals. Carry energy bars and dry fruits for trek days."
+      }
     ],
     "related": [
-      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "/images/snow_cabin.jpg", "url": "/packages/do-dham-yatra-5n-6d/"},
-      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "/images/trek_himalaya.jpg", "url": "/packages/kedarnath-yatra-3n-4d/"},
-      {"name": "Char Dham from Delhi", "duration": "10N/11D", "price": 22990, "image": "/images/haridwar_ghat.jpg", "url": "/packages/char-dham-yatra-from-delhi-10n-11d/"}
-    ]
+      {
+        "name": "Do Dham Yatra (Kedarnath + Badrinath)",
+        "duration": "5N/6D",
+        "price": 11550,
+        "image": "/images/snow_cabin.jpg",
+        "url": "/packages/do-dham-yatra-5n-6d/"
+      },
+      {
+        "name": "Kedarnath Yatra",
+        "duration": "3N/4D",
+        "price": 7590,
+        "image": "/images/trek_himalaya.jpg",
+        "url": "/packages/kedarnath-yatra-3n-4d/"
+      },
+      {
+        "name": "Char Dham from Delhi",
+        "duration": "10N/11D",
+        "price": 22990,
+        "image": "/images/haridwar_ghat.jpg",
+        "url": "/packages/char-dham-yatra-from-delhi-10n-11d/"
+      }
+    ],
+    "travel_guide": "<h2>Char Dham Yatra from Haridwar: Complete Travel Guide</h2><p>The <strong>Char Dham Yatra</strong> covers the four sacred shrines of Uttarakhand — Yamunotri, Gangotri, Kedarnath, and Badrinath — and is considered one of the most significant Hindu pilgrimages in India. Starting from Haridwar puts you at the natural gateway to all four dhams. Our <strong>9 Nights / 10 Days Char Dham Yatra package</strong> at ₹19,800 per person is designed around how the route actually works on the ground, not just on paper.</p><h2>Best Time for Char Dham Yatra</h2><p>The shrines open in late April or early May and close by November. Within that window, two distinct seasons work well for pilgrims.</p><h3>April to June</h3><p>This is peak season. Kedarnath temple typically opens on the auspicious day of Akshaya Tritiya in late April — the exact date is announced by the Kedarnath temple committee after consulting the Jyotish panchang. Badrinath opens a few days later, usually in the first or second week of May. If you plan to travel in April, book at least 6–8 weeks in advance because accommodation at Sonprayag, Kedarnath, and Badrinath fills up fast. May is ideal for most pilgrims — snow on the higher passes has melted, the roads are clear, and the weather holds between 10°C and 20°C during the day at mid-altitude stops.</p><h3>September to October</h3><p>After the monsoon clears — usually by mid-September — the skies open up and visibility is sharp. Crowds are thinner than in summer, prices drop slightly, and the landscape along the route turns vivid green before autumn sets in. Badrinath closes in November, Kedarnath closes around Diwali. If you are travelling from cities like <a href=\"/char-dham-from/mumbai/\">Mumbai</a> or <a href=\"/char-dham-from/bangalore/\">Bangalore</a> and want to combine sightseeing with the yatra, September is a good compromise.</p><h3>Months to Avoid</h3><p>July and August bring heavy monsoon rainfall to Uttarakhand. Landslides on NH-58 (Rishikesh to Badrinath) and NH-94 (Rishikesh to Yamunotri via Barkot) are frequent and can delay travel by 12–36 hours. The route is open but unreliable. Unless you have a very flexible itinerary, avoid these months.</p><h2>How to Reach Haridwar</h2><p>Haridwar is the practical starting point for the <strong>Char Dham Yatra from Haridwar</strong>. It connects well to most Indian cities by rail. The Haridwar Junction is on the main broad-gauge line and has direct trains from Delhi (4–5 hrs), Mumbai (around 24 hrs), Kolkata (around 30 hrs), and several intermediate cities. If you are coming from the south, fly into Dehradun's Jolly Grant Airport (35 km from Haridwar) and take a taxi. Pilgrims coming <a href=\"/char-dham-from/chennai/\">from Chennai</a> or <a href=\"/char-dham-from/hyderabad/\">from Hyderabad</a> typically fly to Delhi or Dehradun. We can arrange pickup from Jolly Grant Airport, Haridwar station, or Rishikesh.</p><h2>Char Dham Registration</h2><p>The Uttarakhand government requires mandatory biometric registration for Char Dham pilgrims. You must register online at the official portal (devasthanam.uk.gov.in or the tourism board portal) before departure. Walk-in registration counters are available at Rishikesh, Haridwar, and at the entry points to each shrine, but they can have long queues in peak season. Carry a printout or a digital copy of your registration. Your Aadhaar card or any government-issued ID is mandatory. Our team assists all guests with the registration process as part of the package.</p><h2>What to Pack</h2><p>The altitude and climate vary significantly across the four dhams. Pack in layers. A lightweight down jacket or fleece works well at Kedarnath (3,584m) and Badrinath (3,133m). Good ankle-support trekking shoes are non-negotiable for Kedarnath — the 16 km trek from Gaurikund has loose rocks and uneven steps. At Yamunotri, the last 6 km from Janki Chatti is also a trek. Sunscreen SPF 50+, UV-blocking sunglasses, a refillable water bottle, and personal medications are all essential. Carry some cash — ATMs are unreliable above Rishikesh, and UPI connectivity is patchy.</p><h2>Temple Darshan Tips</h2><p>VVIP darshan tickets are available at Kedarnath and Badrinath for a separate fee and reduce waiting time significantly during peak months. Standard darshan queues in May can run 3–5 hours at Kedarnath. Arrive before 6 am for a shorter queue. The sanctum is small, so darshan itself lasts only 1–2 minutes; the walk around the temple and the exterior puja can be done at your own pace. Photography is restricted inside the main temples. At Badrinath, the <em>tapt kund</em> (natural hot spring) at the base of the temple is used for ritual bathing before entering — the water is around 45°C. Do not skip this if your health allows it.</p><h2>Helicopter vs Trek at Kedarnath</h2><p>Helicopter services operate from Phata, Sirsi, Guptkashi, and Agustmuni to Kedarnath helipad. A return helicopter ticket costs ₹4,500–₹6,500 per person and saves the 16 km, 6–7 hour trek. For elderly pilgrims or those with cardiac or joint conditions, helicopter or doli (palanquin) is the safer choice. Mules are also available from Gaurikund. If you are physically fit, the trek through the Mandakini valley is worth doing — the scenery between Gaurikund and Kedarnath is one of the finest mountain walks in India.</p><h2>Food on the Route</h2><p>Simple vegetarian food is available at all stops — dal, rice, chapati, sabzi, and khichdi dominate the menus. Prices are higher the further up you go. Maggi and chai are universally available. At Badrinath, the langar (community kitchen) near the temple offers free meals. Do not expect restaurant-quality food; the focus of the yatra is spiritual, and the food is practical fuel. Carry some energy bars, dry fruits, and glucose biscuits for the trek days.</p><p>Pilgrims coming <a href=\"/char-dham-from/kolkata/\">from Kolkata</a> or <a href=\"/char-dham-from/pune/\">from Pune</a> often ask about combining this with other trips — if you have limited time and want to cover just two of the four shrines, look at our <a href=\"/packages/do-dham-yatra-5n-6d/\">Do Dham Yatra 5N/6D package</a>. For those who want only Kedarnath, our <a href=\"/packages/kedarnath-yatra-3n-4d/\">Kedarnath Yatra 3N/4D package</a> is a focused, budget-friendly option. For a complete overview of all our char dham options, visit our <a href=\"/packages/char-dham-yatra/\">Char Dham Yatra hub page</a>.</p>"
   },
-
   {
     "slug": "kedarnath-yatra-3n-4d",
     "url": "/packages/kedarnath-yatra-3n-4d/",
@@ -108,12 +308,49 @@
     "price_from": 7590,
     "intl_price_usd": 179,
     "wa_text": "Kedarnath Yatra 3N/4D package details chahiye",
-    "overview": "<p>Kedarnath, nestled at 3,583 metres in the Garhwal Himalayas, is one of the most revered Hindu pilgrimage sites in India. Home to one of the twelve <strong>Jyotirlingas of Lord Shiva</strong>, the temple has stood for over 1,200 years against the harshest mountain weather. Our 4-day all-inclusive package from Haridwar makes this sacred journey accessible to everyone.</p><p>The package covers two nights in Guptkashi (a comfortable mountain town with good hotels), one night in Kedarnath itself, and includes the 19-22 km trek from Gaurikund. Pony, palki, and helicopter services are available on request. Senior citizens and first-time pilgrims welcome — our team handles every logistical detail.</p>",
+    "overview": "<p><strong>Junegiri Yatra's 3 Nights / 4 Days Kedarnath Yatra package</strong> at ₹8,500 per person is the most focused way to complete the Kedarnath pilgrimage without rushing. The itinerary runs Haridwar → Guptkashi → Kedarnath → Haridwar, with a planned overnight halt at Guptkashi on the way up to help your body adjust to the increase in altitude before the main trek day.</p><p>We are based in Haridwar and have been running the Kedarnath circuit for years. This means we know which roads are prone to delays in which months, which accommodation blocks at Sonprayag are reliable, and which helicopter slots book out first. That local knowledge is built into how this package operates — from the timing of the Gaurikund departure (4 am for a comfortable ascent) to the best spots to rest at Lincholi before the final push to the temple.</p><p>The package includes <strong>accommodation on double sharing, dedicated vehicle transfers, and a local guide</strong> for the full circuit. Helicopter at Kedarnath and mule/doli arrangements are available as add-ons. The package does not include meals — practical roadside vegetarian food is available throughout the route and we provide a list of recommended stops. On the trek itself, Maggi, chai, and glucose biscuits are available at stalls every 2–3 km.</p><p>Group departures run every Saturday from late April through October. The package is popular with pilgrims from <a href=\"/char-dham-from/delhi/\">Delhi</a>, <a href=\"/char-dham-from/mumbai/\">Mumbai</a>, and <a href=\"/char-dham-from/bangalore/\">Bangalore</a> who want a focused Kedarnath trip on a long weekend combined with a day in Haridwar or Rishikesh before departure. For pilgrims who want to extend this into a Kedarnath-Badrinath trip, our <a href=\"/packages/do-dham-yatra-5n-6d/\">Do Dham Yatra package</a> builds on this same circuit. For the full four-shrine pilgrimage, see our <a href=\"/packages/char-dham-yatra-9n-10d/\">Char Dham Yatra 9N/10D package</a>. Call <strong>+91 98738 97652</strong> for departure dates and group booking options.</p>",
     "itinerary": [
-      {"title": "Haridwar to Guptkashi", "meta": "210 km · 8-9 hours drive", "desc": "Pickup from Haridwar in the morning. Scenic drive through Rishikesh, Devprayag (confluence of Alaknanda and Bhagirathi rivers), Rudraprayag, and Srinagar. En-route visit Dhari Devi Temple. Evening arrival at Guptkashi, check into hotel.", "highlights": ["Devprayag Sangam", "Dhari Devi Temple", "Rudraprayag", "Guptkashi"]},
-      {"title": "Guptkashi to Kedarnath", "meta": "30 km drive + 22 km trek", "desc": "Early morning drive to Sonprayag (30 km). Take local jeep to Gaurikund (5 km). Begin 22 km trek to Kedarnath. Ponies and palkis are available — Rs 3,000-5,000 one way. Helicopter from Phata or Sersi also available (Rs 7,000-8,500 one way). Reach Kedarnath, check into guesthouse, attend evening Sandhya Aarti at the temple.", "highlights": ["Kedarnath Jyotirlinga", "22 km Trek", "Helicopter Available", "Evening Aarti"]},
-      {"title": "Kedarnath to Guptkashi", "meta": "22 km trek + 30 km drive", "desc": "Attend Mangala Aarti at Kedarnath Temple at dawn. Begin return trek to Gaurikund. Reach Sonprayag, drive back to Guptkashi. Rest at hotel.", "highlights": ["Mangala Aarti", "Return Trek", "Rest at Guptkashi"]},
-      {"title": "Guptkashi to Haridwar Drop", "meta": "210 km · 8-9 hours drive", "desc": "Morning drive back to Haridwar via Rudraprayag and Rishikesh. Drop at Haridwar railway station or airport by evening. Yatra complete.", "highlights": ["Rishikesh", "Haridwar Drop"]}
+      {
+        "title": "Haridwar to Guptkashi",
+        "meta": "210 km · 8-9 hours drive",
+        "desc": "Pickup from Haridwar in the morning. Scenic drive through Rishikesh, Devprayag (confluence of Alaknanda and Bhagirathi rivers), Rudraprayag, and Srinagar. En-route visit Dhari Devi Temple. Evening arrival at Guptkashi, check into hotel.",
+        "highlights": [
+          "Devprayag Sangam",
+          "Dhari Devi Temple",
+          "Rudraprayag",
+          "Guptkashi"
+        ]
+      },
+      {
+        "title": "Guptkashi to Kedarnath",
+        "meta": "30 km drive + 22 km trek",
+        "desc": "Early morning drive to Sonprayag (30 km). Take local jeep to Gaurikund (5 km). Begin 22 km trek to Kedarnath. Ponies and palkis are available — Rs 3,000-5,000 one way. Helicopter from Phata or Sersi also available (Rs 7,000-8,500 one way). Reach Kedarnath, check into guesthouse, attend evening Sandhya Aarti at the temple.",
+        "highlights": [
+          "Kedarnath Jyotirlinga",
+          "22 km Trek",
+          "Helicopter Available",
+          "Evening Aarti"
+        ]
+      },
+      {
+        "title": "Kedarnath to Guptkashi",
+        "meta": "22 km trek + 30 km drive",
+        "desc": "Attend Mangala Aarti at Kedarnath Temple at dawn. Begin return trek to Gaurikund. Reach Sonprayag, drive back to Guptkashi. Rest at hotel.",
+        "highlights": [
+          "Mangala Aarti",
+          "Return Trek",
+          "Rest at Guptkashi"
+        ]
+      },
+      {
+        "title": "Guptkashi to Haridwar Drop",
+        "meta": "210 km · 8-9 hours drive",
+        "desc": "Morning drive back to Haridwar via Rudraprayag and Rishikesh. Drop at Haridwar railway station or airport by evening. Yatra complete.",
+        "highlights": [
+          "Rishikesh",
+          "Haridwar Drop"
+        ]
+      }
     ],
     "inclusions": [
       "3 nights hotel accommodation (2N Guptkashi, 1N Kedarnath)",
@@ -132,12 +369,60 @@
       "Any item not in itinerary"
     ],
     "pricing_tiers": [
-      {"group_size": "2 Pax (Sedan)", "rates": {"standard": 12760, "deluxe": 16610, "super deluxe": 17820, "luxury": 21450}},
-      {"group_size": "4 Pax (Sedan)", "rates": {"standard": 8690, "deluxe": 10890, "super deluxe": 11990, "luxury": 15730}},
-      {"group_size": "6 Pax (Ertiga)", "rates": {"standard": 8140, "deluxe": 10230, "super deluxe": 11220, "luxury": 15180}},
-      {"group_size": "8 Pax (Tempo Traveller)", "rates": {"standard": 9130, "deluxe": 11550, "super deluxe": 12540, "luxury": 16280}},
-      {"group_size": "10 Pax (Tempo Traveller)", "rates": {"standard": 8140, "deluxe": 10450, "super deluxe": 11220, "luxury": 15290}},
-      {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 7590, "deluxe": 9790, "super deluxe": 10780, "luxury": 0}}
+      {
+        "group_size": "2 Pax (Sedan)",
+        "rates": {
+          "standard": 12760,
+          "deluxe": 16610,
+          "super deluxe": 17820,
+          "luxury": 21450
+        }
+      },
+      {
+        "group_size": "4 Pax (Sedan)",
+        "rates": {
+          "standard": 8690,
+          "deluxe": 10890,
+          "super deluxe": 11990,
+          "luxury": 15730
+        }
+      },
+      {
+        "group_size": "6 Pax (Ertiga)",
+        "rates": {
+          "standard": 8140,
+          "deluxe": 10230,
+          "super deluxe": 11220,
+          "luxury": 15180
+        }
+      },
+      {
+        "group_size": "8 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 9130,
+          "deluxe": 11550,
+          "super deluxe": 12540,
+          "luxury": 16280
+        }
+      },
+      {
+        "group_size": "10 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 8140,
+          "deluxe": 10450,
+          "super deluxe": 11220,
+          "luxury": 15290
+        }
+      },
+      {
+        "group_size": "12 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 7590,
+          "deluxe": 9790,
+          "super deluxe": 10780,
+          "luxury": 0
+        }
+      }
     ],
     "gallery": [
       "/images/trek_himalaya.jpg",
@@ -148,25 +433,89 @@
       "/images/cover_meditation.jpg"
     ],
     "testimonials": [
-      {"quote": "Wanted to do Kedarnath darshan but was worried about the trek. Junegiri arranged a pony for me up and helicopter down. Best decision. The team explained everything in advance. Felt very supported.", "author": "Sunita Verma", "loc": "Pune · Travelled May 2025"},
-      {"quote": "Did Kedarnath in 4 days flat — perfect for someone with limited leave. Hotels in Guptkashi were better than expected. Driver was patient and knew the route well.", "author": "Vikram Singh", "loc": "Delhi · Travelled June 2025"},
-      {"quote": "Group of 6 friends. We did the full trek both ways. Junegiri's package gave us flexibility on timing — no pressure. Sandhya Aarti at Kedarnath was unforgettable.", "author": "Aman Joshi", "loc": "Jaipur · Travelled May 2025"}
+      {
+        "quote": "Wanted to do Kedarnath darshan but was worried about the trek. Junegiri arranged a pony for me up and helicopter down. Best decision. The team explained everything in advance. Felt very supported.",
+        "author": "Sunita Verma",
+        "loc": "Pune · Travelled May 2025"
+      },
+      {
+        "quote": "Did Kedarnath in 4 days flat — perfect for someone with limited leave. Hotels in Guptkashi were better than expected. Driver was patient and knew the route well.",
+        "author": "Vikram Singh",
+        "loc": "Delhi · Travelled June 2025"
+      },
+      {
+        "quote": "Group of 6 friends. We did the full trek both ways. Junegiri's package gave us flexibility on timing — no pressure. Sandhya Aarti at Kedarnath was unforgettable.",
+        "author": "Aman Joshi",
+        "loc": "Jaipur · Travelled May 2025"
+      }
     ],
     "faq": [
-      {"q": "How long is the Kedarnath trek and how difficult is it?", "a": "The trek is <strong>19-22 km one way</strong> from Gaurikund to Kedarnath, ascending from 1,985 m to 3,583 m. It takes 6-9 hours one way for moderately fit walkers. The path is paved but steep in sections. Ponies (Rs 3,000-5,000) and palkis (Rs 6,000-9,000) are available. Helicopter from Phata/Sersi/Guptkashi takes 8-10 minutes (Rs 7,000-8,500 one way)."},
-      {"q": "Is helicopter available for Kedarnath?", "a": "Yes. Three helipads operate: <strong>Phata, Sersi, and Guptkashi</strong>. One-way cost is Rs 7,000-8,500 per person. Two-way (same day return) Rs 14,000-17,000. Bookings open in February for the season — we handle this for you. Subject to weather conditions."},
-      {"q": "When does Kedarnath Temple open and close?", "a": "The temple opens around <strong>Akshay Tritiya in late April/early May</strong> and closes on <strong>Bhai Dooj in late October/early November</strong>. Exact dates vary each year. Best months: May, June, September, early October. Avoid July-August (heavy monsoon)."},
-      {"q": "Can senior citizens do Kedarnath Yatra?", "a": "Yes, with the right arrangements. We recommend <strong>helicopter for ascent and pony/palki for descent</strong>, or all-helicopter. We've arranged Kedarnath darshan for travellers in their 70s and 80s. Medical clearance and an oxygen cylinder (available at Gaurikund) are wise precautions."},
-      {"q": "What is the registration requirement for Kedarnath Yatra?", "a": "All pilgrims must register on the Uttarakhand government portal: <strong>registrationandtouristcare.uk.gov.in</strong>. Carry the printed certificate. We help complete registration after booking."},
-      {"q": "What clothes should I pack for Kedarnath?", "a": "Even in May-June, Kedarnath is cold (5-15°C). Pack: thermal innerwear, fleece jacket, windproof jacket, woollen cap, gloves, raincoat or poncho, trekking shoes, sunglasses, sunscreen, basic medicines, power bank."}
+      {
+        "q": "How long is the Kedarnath trek and how difficult is it?",
+        "a": "The Kedarnath trek is 16 km one way from Gaurikund to the temple, gaining around 1,600 metres in elevation. It is rated moderate — a reasonably fit adult without prior trekking experience can complete it in 5–7 hours. The trail is paved in sections and has regular rest stops. The challenge is the altitude (3,584m) and the sustained climb over the last 6 km. Start early (4–5 am) to avoid afternoon weather changes."
+      },
+      {
+        "q": "What is the Kedarnath helicopter fare and how do I book it?",
+        "a": "Kedarnath helicopter fares range from ₹4,500 to ₹6,500 per person for a return trip, depending on the departure helipad (Phata, Sirsi, Guptkashi, or Agustmuni). Booking is done online through the IRCTC air platform or through approved operators. Slots in May sell out weeks in advance. Book as soon as your travel dates are fixed. We assist package guests with helicopter booking."
+      },
+      {
+        "q": "When does the Kedarnath temple open and close each year?",
+        "a": "The Kedarnath temple opens every year on Akshaya Tritiya (April–May) — the exact date is determined by the temple committee based on the Hindu calendar. It closes around Diwali (October–November), usually in the last week of October. The opening and closing ceremonies are significant events attracting large crowds. Check the official Kedarnath temple authority announcement each year for exact dates."
+      },
+      {
+        "q": "What is the Kedarnath Yatra package cost and what does it include?",
+        "a": "Our Kedarnath Yatra package is priced at ₹8,500 per person. It includes 3 nights accommodation on double sharing, dedicated vehicle transfers from Haridwar to Gaurikund and back, and a local guide. It excludes helicopter charges, mule/doli fees, VVIP darshan, meals, and personal expenses. Helicopter and mule arrangements are available as add-ons."
+      },
+      {
+        "q": "Is a medical certificate required for Kedarnath Yatra?",
+        "a": "A medical certificate is not mandatory for the Kedarnath Yatra, but the Uttarakhand government strongly advises pilgrims above 60 years or with cardiac/pulmonary conditions to carry a fitness certificate from a registered doctor. Biometric registration through the official portal is required for all pilgrims. Oxygen cylinders and first aid posts are available at Jungle Chatti and Lincholi on the trek route."
+      },
+      {
+        "q": "Can senior citizens do the Kedarnath Yatra?",
+        "a": "Yes. Senior citizens who cannot trek have three options: helicopter service (7–10 min flight to Kedarnath helipad), mule hire from Gaurikund, or doli (palanquin). Helicopter is the most comfortable option. Mules and dolis require some physical stability as the trail is uneven. Our package can be customised with helicopter booking and ground support for senior pilgrims."
+      },
+      {
+        "q": "What are the altitude sickness precautions for Kedarnath?",
+        "a": "Acclimatize by spending a night at Guptkashi (1,319m) before the trek. Stay hydrated — drink 3–4 litres of water daily. Avoid alcohol and heavy meals the night before the trek. Do not ascend if you feel a persistent headache — descend and rest. Diamox can help as a preventive measure but consult your doctor before taking it. Oxygen cylinders are available at trail posts."
+      },
+      {
+        "q": "How do I get to Sonprayag and Gaurikund?",
+        "a": "Sonprayag is the base camp for Kedarnath, approximately 210 km from Haridwar via Rudraprayag and Guptkashi. The road journey takes 7–9 hours depending on traffic and road conditions. From Sonprayag, shared jeeps run to Gaurikund (5 km). Private vehicles are not permitted beyond Sonprayag. Our package includes a dedicated vehicle for the full Haridwar–Sonprayag–Haridwar route."
+      },
+      {
+        "q": "What is the Gaurikund hot spring and can anyone use it?",
+        "a": "The Gaurikund hot spring (kund) is a natural thermal spring at around 45°C associated with Goddess Parvati. Most pilgrims take a dip here as a ritual purification before the Kedarnath trek. It is open to all — there are separate sections for men and women. The spring is small so mornings between 4–6 am are less crowded. It is not a swimming pool; a brief ritual bath is the norm."
+      },
+      {
+        "q": "How is Kedarnath Yatra different from the full Char Dham Yatra?",
+        "a": "The Char Dham Yatra covers all four sacred shrines — Yamunotri, Gangotri, Kedarnath, and Badrinath — over 9–10 days. The Kedarnath Yatra is a standalone trip to just one shrine, completed in 3–4 days. If you want to add Badrinath to this trip, the Do Dham Yatra (5N/6D) is the next step. The full Char Dham Yatra is a separate, longer commitment. Many pilgrims complete the four shrines in multiple trips over different years."
+      }
     ],
     "related": [
-      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "/images/snow_cabin.jpg", "url": "/packages/do-dham-yatra-5n-6d/"},
-      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "/images/kedarnath_temple_cover.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
-      {"name": "Kedarnath by Helicopter", "duration": "1 Day", "price": 17500, "image": "/images/trek_himalaya.jpg", "url": "/packages/kedarnath-helicopter-tour/"}
-    ]
+      {
+        "name": "Do Dham Yatra (Kedarnath + Badrinath)",
+        "duration": "5N/6D",
+        "price": 11550,
+        "image": "/images/snow_cabin.jpg",
+        "url": "/packages/do-dham-yatra-5n-6d/"
+      },
+      {
+        "name": "Char Dham Yatra",
+        "duration": "9N/10D",
+        "price": 19800,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/char-dham-yatra-9n-10d/"
+      },
+      {
+        "name": "Kedarnath by Helicopter",
+        "duration": "1 Day",
+        "price": 17500,
+        "image": "/images/trek_himalaya.jpg",
+        "url": "/packages/kedarnath-helicopter-tour/"
+      }
+    ],
+    "travel_guide": "<h2>Kedarnath Yatra: Everything You Need to Know Before You Go</h2><p>Kedarnath is one of the twelve Jyotirlingas and the most visited high-altitude temple in India. At 3,584 metres above sea level, it sits at the head of the Mandakini River valley, surrounded by peaks that stay snow-capped well into June. Our <strong>3 Nights / 4 Days Kedarnath Yatra package</strong> at ₹8,500 per person covers the full circuit from Haridwar, with options for both the trek and helicopter.</p><h2>The Trek Route: Gaurikund to Kedarnath</h2><p>The standard trekking route starts at Gaurikund (1,982m), which is the roadhead. Sonprayag, the base camp for vehicle parking and registration, is 5 km before Gaurikund by shared jeep. The trek from Gaurikund to Kedarnath temple is 16 km one way, gaining approximately 1,600 metres in elevation. The trail is well-marked and has regular signage. It passes through dense forest in the lower sections, opens up into alpine meadows around the 10 km mark, and then crosses a long stone-laid pathway before reaching the temple complex.</p><p>The climb takes 5–7 hours depending on fitness and pace. Most trekkers leave Gaurikund by 4–5 am to reach the temple by late morning, attend darshan, and have the option to descend the same day or overnight at Kedarnath. The descent takes 3–4 hours.</p><h3>Trail Facilities</h3><p>Tea stalls, rest shelters (mandap), and Maggi shops are available at regular intervals along the trail — at Jungle Chatti (4 km), Bheembali (8 km), and Lincholi (11 km). Toilet facilities exist at most stops. Medical posts with basic first aid and oxygen cylinders are also stationed at Jungle Chatti and Lincholi.</p><h2>Helicopter Option for Kedarnath</h2><p>If the 16 km trek is not an option — due to age, health, or time constraints — <strong>Kedarnath helicopter</strong> services operate from five helipads: Phata (30 km from Gaurikund), Sirsi, Guptkashi, Agustmuni, and Sersi. The shuttle takes 7–10 minutes to the Kedarnath helipad, which is 500 metres from the temple. Return helicopter tickets are booked online and cost ₹4,500–₹6,500 per person depending on the departure point. Phata is the most frequently used helipad and typically has the most slots. Helicopter slots sell out weeks in advance in May — book as soon as your travel dates are confirmed. Our package includes assistance with helicopter booking when opted.</p><h2>Best Months for Kedarnath Yatra</h2><p>May and June are the most popular months — the temple is freshly opened, the snow is still visible above the temple, and the valley is green. September and early October are arguably better for a calm experience — queues are shorter, accommodation is easier to get, and the mountain views are clearer after the monsoon. The temple closes around Diwali (October–November) and opens again in late April the following year. November through April sees the temple buried in snow.</p><h2>Altitude and Acclimatization</h2><p>Kedarnath sits at 3,584m and altitude sickness is a real concern, especially for first-time high-altitude trekkers coming from sea-level cities. The most common symptoms are headache, nausea, dizziness, and shortness of breath. To reduce the risk: arrive at Haridwar a day early, spend a night at Guptkashi or Sonprayag before attempting the trek, stay hydrated, and avoid alcohol. Do not ascend if you have a headache — descend instead. Diamox (acetazolamide) can help with prevention but should be discussed with a doctor beforehand.</p><h2>Gaurikund Hot Springs</h2><p>Gaurikund has a natural hot spring (kund) at its centre, associated with the legend of Goddess Parvati performing tapasya here. Most pilgrims take a dip in the hot spring water before starting the trek — the water temperature is around 45°C. It is considered a purifying ritual before darshan at Kedarnath. The kund is small and can get crowded; early morning between 4–6 am is the least congested time.</p><h2>Accommodation: Tents vs GMVN Hotels</h2><p>At Kedarnath itself, accommodation options are tents (run by private operators and GMVN), fixed-roof GMVN lodges, and small dharamshalas. Tent accommodations are basic — sleeping bags, a mattress, and a shared toilet — but perfectly functional for one night. GMVN rooms fill up within hours of the booking window opening. Book GMVN online at least 3–4 weeks before your departure in peak months. At Sonprayag and Guptkashi, hotel options are better and more comfortable. Our package includes accommodation at Guptkashi for the night before the trek, which is a good altitude for overnight stay (1,319m).</p><h2>Mule and Doli for Elderly Pilgrims</h2><p>Mules are available for hire from Gaurikund for the trek to Kedarnath and cost ₹1,500–₹2,500 per person one way depending on the season. Dolis — covered palanquins carried by four bearers — are also available and cost more. Both are booked at the Gaurikund base. Availability can be limited in peak weeks; early morning queueing (by 4 am) is advisable. Our team can pre-arrange mule booking with local operators when informed in advance.</p><h2>Kedarnath Temple: History and Significance</h2><p>The Kedarnath temple is believed to have been originally built by the Pandavas after the Mahabharata war and later restored by Adi Shankaracharya in the 8th century. The main deity is a naturally formed triangular rock lingam, representing the hump of Nandi — the bull — in one interpretation of the legend. The temple survived the devastating 2013 floods largely intact because a large boulder lodged itself directly behind the temple, diverting the floodwaters. The rebuilt structures around the temple are newer; the main sanctum and its walls are ancient stone.</p><p>If you want to extend your pilgrimage to include Badrinath and cover both major shrines, see our <a href=\"/packages/do-dham-yatra-5n-6d/\">Do Dham Yatra 5N/6D package</a>. For the complete four-shrine circuit, see our <a href=\"/packages/char-dham-yatra-9n-10d/\">Char Dham Yatra 9N/10D package</a>. Pilgrims from southern India planning this trip can also check our guide for <a href=\"/char-dham-from/bangalore/\">Char Dham Yatra from Bangalore</a> and <a href=\"/char-dham-from/chennai/\">Char Dham Yatra from Chennai</a>.</p>"
   },
-
   {
     "slug": "do-dham-yatra-5n-6d",
     "url": "/packages/do-dham-yatra-5n-6d/",
@@ -185,14 +534,67 @@
     "price_from": 11550,
     "intl_price_usd": 265,
     "wa_text": "Do Dham Yatra 5N/6D package details chahiye",
-    "overview": "<p>The Do Dham Yatra combines the two most spiritually significant dhams in Uttarakhand — <strong>Kedarnath</strong> (Lord Shiva's Jyotirlinga) and <strong>Badrinath</strong> (Lord Vishnu's sacred shrine). For pilgrims with limited time, this 6-day package is the perfect balance of completeness and pace.</p><p>The journey starts from Haridwar, includes the Kedarnath trek (palki/pony/helicopter available), drives through dramatic Garhwal mountain passes, and ends with Badrinath darshan and a visit to <strong>Mana Village</strong> — the last village of India before the Tibetan border. Includes Bheem Pul, Vyas Gufa, Saraswati River origin, and the holy Tapt Kund hot spring.</p>",
+    "overview": "<p><strong>Junegiri Yatra's 5 Nights / 6 Days Do Dham Yatra package</strong> at ₹13,500 per person is built around the two most significant shrines in Uttarakhand — <strong>Kedarnath (Shiva) and Badrinath (Vishnu)</strong>. The itinerary gives one full day each for Kedarnath and Badrinath, with the night halts planned to minimise fatigue from back-to-back mountain driving. Night 1 is at Guptkashi for altitude adjustment, Night 2 at Kedarnath or base, Night 3 at Joshimath or Pipalkoti, Night 4 at Badrinath, and Night 5 at Rudraprayag or Rishikesh on the return.</p><p>The package is ideal for pilgrims who want a meaningful, unhurried experience at both dhams without committing to the full 10-day Char Dham circuit. It suits working professionals with limited leave, senior citizens who prefer to avoid the Yamunotri and Gangotri treks, and families travelling with young children or elders for whom a shorter trip is more manageable.</p><p>Included in the package: <strong>5 nights accommodation on double sharing, dedicated vehicle for all transfers, and a local guide</strong> throughout the route. The itinerary includes time at Mana village and Tapt Kund as part of the Badrinath day. Meals are not included — dal, roti, and sabzi are available at roadside dhabas throughout the route. Helicopter at Kedarnath and VVIP darshan at both shrines are available as add-ons.</p><p>Pilgrims coming <a href=\"/char-dham-from/hyderabad/\">from Hyderabad</a>, <a href=\"/char-dham-from/chennai/\">from Chennai</a>, or <a href=\"/char-dham-from/kolkata/\">from Kolkata</a> typically fly into Delhi and take a connecting train to Haridwar — we can arrange pickup from Haridwar station. For pilgrims wanting to add Yamunotri and Gangotri, see our <a href=\"/packages/char-dham-yatra-9n-10d/\">Char Dham Yatra 9N/10D package</a>. Call <strong>+91 98738 97652</strong> to book or discuss private group dates.</p>",
     "itinerary": [
-      {"title": "Haridwar to Guptkashi", "meta": "210 km · 8-9 hours", "desc": "Drive from Haridwar to Guptkashi via Devprayag, Rudraprayag. Visit Dhari Devi Temple en-route. Evening check-in at Guptkashi.", "highlights": ["Devprayag", "Rudraprayag", "Dhari Devi"]},
-      {"title": "Guptkashi to Kedarnath", "meta": "30 km drive + 22 km trek", "desc": "Drive to Sonprayag, jeep to Gaurikund. Trek to Kedarnath (palki/pony/helicopter available). Visit Kedarnath Temple. Evening Sandhya Aarti.", "highlights": ["Kedarnath Jyotirlinga", "Sandhya Aarti", "Helicopter Available"]},
-      {"title": "Kedarnath to Guptkashi", "meta": "22 km trek + drive", "desc": "Mangala Aarti at dawn. Return trek to Gaurikund. Drive to Guptkashi.", "highlights": ["Mangala Aarti", "Return Trek"]},
-      {"title": "Guptkashi to Pandukeshwar", "meta": "170 km · 6-7 hours", "desc": "Scenic drive via Karna Prayag and Nandprayag. Arrive Pandukeshwar by evening.", "highlights": ["Karna Prayag", "Nandprayag"]},
-      {"title": "Badrinath Darshan + Mana Village", "meta": "20 km one way", "desc": "Morning Badrinath Temple darshan. Holy dip at Tapt Kund. Visit Brahma Kapal, Mana Village (last Indian village), Vyas Gufa, Bheem Pul, Saraswati River origin.", "highlights": ["Badrinath Temple", "Tapt Kund", "Mana Village", "Bheem Pul"]},
-      {"title": "Pandukeshwar to Haridwar", "meta": "300 km · 9 hours via Rishikesh", "desc": "Drive back to Haridwar. Brief stop at Rishikesh for Ganga Aarti or Ram Jhula if time permits. Drop at Haridwar.", "highlights": ["Rishikesh", "Ganga Aarti", "Haridwar Drop"]}
+      {
+        "title": "Haridwar to Guptkashi",
+        "meta": "210 km · 8-9 hours",
+        "desc": "Drive from Haridwar to Guptkashi via Devprayag, Rudraprayag. Visit Dhari Devi Temple en-route. Evening check-in at Guptkashi.",
+        "highlights": [
+          "Devprayag",
+          "Rudraprayag",
+          "Dhari Devi"
+        ]
+      },
+      {
+        "title": "Guptkashi to Kedarnath",
+        "meta": "30 km drive + 22 km trek",
+        "desc": "Drive to Sonprayag, jeep to Gaurikund. Trek to Kedarnath (palki/pony/helicopter available). Visit Kedarnath Temple. Evening Sandhya Aarti.",
+        "highlights": [
+          "Kedarnath Jyotirlinga",
+          "Sandhya Aarti",
+          "Helicopter Available"
+        ]
+      },
+      {
+        "title": "Kedarnath to Guptkashi",
+        "meta": "22 km trek + drive",
+        "desc": "Mangala Aarti at dawn. Return trek to Gaurikund. Drive to Guptkashi.",
+        "highlights": [
+          "Mangala Aarti",
+          "Return Trek"
+        ]
+      },
+      {
+        "title": "Guptkashi to Pandukeshwar",
+        "meta": "170 km · 6-7 hours",
+        "desc": "Scenic drive via Karna Prayag and Nandprayag. Arrive Pandukeshwar by evening.",
+        "highlights": [
+          "Karna Prayag",
+          "Nandprayag"
+        ]
+      },
+      {
+        "title": "Badrinath Darshan + Mana Village",
+        "meta": "20 km one way",
+        "desc": "Morning Badrinath Temple darshan. Holy dip at Tapt Kund. Visit Brahma Kapal, Mana Village (last Indian village), Vyas Gufa, Bheem Pul, Saraswati River origin.",
+        "highlights": [
+          "Badrinath Temple",
+          "Tapt Kund",
+          "Mana Village",
+          "Bheem Pul"
+        ]
+      },
+      {
+        "title": "Pandukeshwar to Haridwar",
+        "meta": "300 km · 9 hours via Rishikesh",
+        "desc": "Drive back to Haridwar. Brief stop at Rishikesh for Ganga Aarti or Ram Jhula if time permits. Drop at Haridwar.",
+        "highlights": [
+          "Rishikesh",
+          "Ganga Aarti",
+          "Haridwar Drop"
+        ]
+      }
     ],
     "inclusions": [
       "5 nights hotel accommodation",
@@ -210,12 +612,60 @@
       "Any item not specified"
     ],
     "pricing_tiers": [
-      {"group_size": "2 Pax (Sedan)", "rates": {"standard": 19360, "deluxe": 24530, "super deluxe": 26400, "luxury": 35200}},
-      {"group_size": "4 Pax (Sedan)", "rates": {"standard": 13090, "deluxe": 16720, "super deluxe": 17820, "luxury": 26290}},
-      {"group_size": "6 Pax (Ertiga)", "rates": {"standard": 12100, "deluxe": 15730, "super deluxe": 17380, "luxury": 25520}},
-      {"group_size": "8 Pax (Tempo Traveller)", "rates": {"standard": 13860, "deluxe": 17600, "super deluxe": 19030, "luxury": 27280}},
-      {"group_size": "10 Pax (Tempo Traveller)", "rates": {"standard": 12430, "deluxe": 16115, "super deluxe": 17545, "luxury": 25850}},
-      {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 11550, "deluxe": 15125, "super deluxe": 16500, "luxury": 0}}
+      {
+        "group_size": "2 Pax (Sedan)",
+        "rates": {
+          "standard": 19360,
+          "deluxe": 24530,
+          "super deluxe": 26400,
+          "luxury": 35200
+        }
+      },
+      {
+        "group_size": "4 Pax (Sedan)",
+        "rates": {
+          "standard": 13090,
+          "deluxe": 16720,
+          "super deluxe": 17820,
+          "luxury": 26290
+        }
+      },
+      {
+        "group_size": "6 Pax (Ertiga)",
+        "rates": {
+          "standard": 12100,
+          "deluxe": 15730,
+          "super deluxe": 17380,
+          "luxury": 25520
+        }
+      },
+      {
+        "group_size": "8 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 13860,
+          "deluxe": 17600,
+          "super deluxe": 19030,
+          "luxury": 27280
+        }
+      },
+      {
+        "group_size": "10 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 12430,
+          "deluxe": 16115,
+          "super deluxe": 17545,
+          "luxury": 25850
+        }
+      },
+      {
+        "group_size": "12 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 11550,
+          "deluxe": 15125,
+          "super deluxe": 16500,
+          "luxury": 0
+        }
+      }
     ],
     "gallery": [
       "/images/trek_himalaya.jpg",
@@ -226,24 +676,89 @@
       "/images/rishikesh_bridge.jpg"
     ],
     "testimonials": [
-      {"quote": "Wanted to do both dhams but didn't have 10 days. Do Dham 6-day package was perfect. Mana Village was a beautiful surprise. The team was professional throughout.", "author": "Meera Iyer", "loc": "Hyderabad · Travelled June 2025"},
-      {"quote": "Booked for parents and they came back happy. Hotel in Pandukeshwar had great Badrinath views. Kedarnath helicopter saved my mother's knees.", "author": "Rohit Mehra", "loc": "Lucknow · Travelled May 2025"},
-      {"quote": "Group of 8 colleagues. Tempo traveller was comfortable for long drives. Dinner spreads were generous. Will recommend to office friends.", "author": "Kavita Reddy", "loc": "Chennai · Travelled June 2025"}
+      {
+        "quote": "Wanted to do both dhams but didn't have 10 days. Do Dham 6-day package was perfect. Mana Village was a beautiful surprise. The team was professional throughout.",
+        "author": "Meera Iyer",
+        "loc": "Hyderabad · Travelled June 2025"
+      },
+      {
+        "quote": "Booked for parents and they came back happy. Hotel in Pandukeshwar had great Badrinath views. Kedarnath helicopter saved my mother's knees.",
+        "author": "Rohit Mehra",
+        "loc": "Lucknow · Travelled May 2025"
+      },
+      {
+        "quote": "Group of 8 colleagues. Tempo traveller was comfortable for long drives. Dinner spreads were generous. Will recommend to office friends.",
+        "author": "Kavita Reddy",
+        "loc": "Chennai · Travelled June 2025"
+      }
     ],
     "faq": [
-      {"q": "What is the difference between Do Dham and Char Dham Yatra?", "a": "<strong>Do Dham</strong> covers Kedarnath + Badrinath (the two most popular dhams). <strong>Char Dham</strong> adds Yamunotri and Gangotri. Do Dham takes 5-6 days; Char Dham needs 9-11 days. Many pilgrims do Do Dham first and Char Dham later."},
-      {"q": "Can I do Do Dham by helicopter?", "a": "Yes — helicopter Do Dham is available (typically 1-2 days). Costs Rs 80,000-1,20,000 per person depending on operator. We can arrange this. For a hybrid, take helicopter for Kedarnath only and drive to Badrinath."},
-      {"q": "What is Mana Village famous for?", "a": "Mana is the <strong>last Indian village before the Tibetan border</strong>. Famous for: Vyas Gufa (where Maharishi Vyas dictated the Mahabharata), Bheem Pul (a natural rock bridge over the Saraswati River), and the Saraswati River origin. It's a 3 km drive from Badrinath and worth half a day."},
-      {"q": "Is Badrinath open in winter?", "a": "No. Badrinath Temple closes for winter (typically late November) and re-opens in late April/May. The temple deity is moved to Pandukeshwar/Joshimath for winter worship. Best time: May-June, September-October."},
-      {"q": "How is the road condition between Kedarnath and Badrinath?", "a": "The route via Karna Prayag is in good condition for most of the year. Some sections are narrow mountain roads — driving requires care. Our drivers are experienced. Drive time: 6-7 hours from Guptkashi to Pandukeshwar."}
+      {
+        "q": "What are the two dhams covered in the Do Dham Yatra package?",
+        "a": "The Do Dham Yatra covers Kedarnath and Badrinath — the two most significant shrines in the Uttarakhand Char Dham circuit. Kedarnath is one of the twelve Jyotirlingas dedicated to Shiva, and Badrinath is a Vaishnava kshetra dedicated to Lord Vishnu. These two dhams are covered in 5 nights and 6 days from Haridwar."
+      },
+      {
+        "q": "Why choose Do Dham Yatra instead of full Char Dham?",
+        "a": "The full Char Dham also includes Yamunotri and Gangotri, requiring 4 additional days and more road travel. Do Dham is better suited to pilgrims with limited time, senior citizens who want to avoid the Yamunotri trek, or first-time visitors who prefer depth over coverage. Kedarnath and Badrinath are theologically the most prominent of the four shrines."
+      },
+      {
+        "q": "What is the route for the Do Dham Yatra?",
+        "a": "The route is: Haridwar → Guptkashi (Day 1) → Kedarnath (Day 2–3) → Joshimath/Badrinath (Day 3–4) → Mana village + sightseeing (Day 4) → Rudraprayag/Rishikesh (Day 5) → Haridwar (Day 6). The sequence always starts with Kedarnath and proceeds to Badrinath, following the clockwise pilgrimage route."
+      },
+      {
+        "q": "What is special about Badrinath temple?",
+        "a": "Badrinath is one of the 108 Divya Desams — the holiest Vaishnava shrines in India. The temple sits at 3,133m on the banks of the Alaknanda River. The presiding deity is a black stone idol of Lord Vishnu in meditation, set inside a golden-roofed stone temple. The Tapt Kund hot spring at the base of the temple is used for ritual bathing before darshan. The temple opens in May and closes in November."
+      },
+      {
+        "q": "Can I visit Mana village during the Do Dham Yatra?",
+        "a": "Yes. Mana village (3 km from Badrinath) is included in the itinerary as part of the Badrinath day. It is the last inhabited Indian village before the Tibet border and has the Vyas Gufa cave (where the Mahabharata is said to have been composed) and access to Vasudhara Falls, a 145-metre waterfall 5 km beyond the village. The Vasudhara Falls walk takes about 3 hours round trip."
+      },
+      {
+        "q": "What is Tapt Kund and is it mandatory to bathe there?",
+        "a": "Tapt Kund is a natural hot sulphur spring at around 45°C, located at the base of Badrinath temple. Bathing here before entering the temple is traditional and considered purifying. It is not mandatory, but most pilgrims observe this ritual. Separate bathing ghats exist for men and women. Early morning (5–6 am) is the quietest time."
+      },
+      {
+        "q": "What is the ₹13,500 Do Dham Yatra package cost and what does it include?",
+        "a": "The package is priced at ₹13,500 per person and includes 5 nights accommodation on double sharing, dedicated vehicle for all transfers, and a local guide throughout. It excludes meals, helicopter charges, VVIP darshan fees, mule/doli hire, and personal expenses. Helicopter and mule options can be added to the package."
+      },
+      {
+        "q": "How physically demanding is the Do Dham Yatra?",
+        "a": "The most demanding section is the 16 km Kedarnath trek from Gaurikund. Badrinath is accessible by vehicle. Pilgrims who cannot trek can use helicopter, mule, or doli for Kedarnath. Overall, the Do Dham Yatra requires moderate physical fitness. Altitude adjustment is important — a night at Guptkashi before the Kedarnath trek helps significantly."
+      },
+      {
+        "q": "What is the best time to do Do Dham Yatra?",
+        "a": "May–June and September–October are the best periods. May is peak season with all facilities operational. September and October have fewer crowds and clearer skies post-monsoon. Avoid July–August due to monsoon landslides. The shrines open in late April–May and close in October–November."
+      },
+      {
+        "q": "Can I book a private Do Dham Yatra for my family?",
+        "a": "Yes. Private customised Do Dham Yatra tours are available for families or groups of 4 or more. Private tours allow flexible departure dates, pace adjustments, and accommodation upgrades. Call +91 98738 97652 to discuss requirements, preferred dates, and group size. We build the itinerary around your schedule."
+      }
     ],
     "related": [
-      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "/images/kedarnath_temple_cover.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
-      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "/images/trek_himalaya.jpg", "url": "/packages/kedarnath-yatra-3n-4d/"},
-      {"name": "Do Dham Yatra (Short)", "duration": "4N/5D", "price": 10340, "image": "/images/kedarnath_trek_horses.jpg", "url": "/packages/do-dham-yatra-4n-5d/"}
-    ]
+      {
+        "name": "Char Dham Yatra",
+        "duration": "9N/10D",
+        "price": 19800,
+        "image": "/images/kedarnath_temple_cover.jpg",
+        "url": "/packages/char-dham-yatra-9n-10d/"
+      },
+      {
+        "name": "Kedarnath Yatra",
+        "duration": "3N/4D",
+        "price": 7590,
+        "image": "/images/trek_himalaya.jpg",
+        "url": "/packages/kedarnath-yatra-3n-4d/"
+      },
+      {
+        "name": "Do Dham Yatra (Short)",
+        "duration": "4N/5D",
+        "price": 10340,
+        "image": "/images/kedarnath_trek_horses.jpg",
+        "url": "/packages/do-dham-yatra-4n-5d/"
+      }
+    ],
+    "travel_guide": "<h2>Do Dham Yatra: Kedarnath and Badrinath in 5 Nights / 6 Days</h2><p>The <strong>Do Dham Yatra</strong> covers Kedarnath and Badrinath — the two most visited shrines in the Char Dham circuit. These are the shrines where demand for darshan is highest and which require the most physical preparation. Our <strong>5 Nights / 6 Days Do Dham Yatra package</strong> at ₹13,500 per person follows the most practical sequence: Haridwar → Guptkashi → Kedarnath → Badrinath → Haridwar.</p><h2>Why Pilgrims Choose Do Dham Over Full Char Dham</h2><p>The full Char Dham Yatra adds Yamunotri and Gangotri to the circuit, which requires 4 more days and significantly more road travel on mountain highways. For pilgrims with limited leave, health considerations, or a preference to spend more time at the major shrines rather than rushing through all four, Do Dham is the practical choice. Kedarnath and Badrinath are also theologically central — one is a Jyotirlinga (Shiva) and the other is a Vaishnava kshetra (Lord Vishnu) — together covering both major streams of Hindu devotion.</p><p>If time and health allow, upgrading to our <a href=\"/packages/char-dham-yatra-9n-10d/\">Char Dham Yatra 9N/10D package</a> is always an option. If you only want Kedarnath, our <a href=\"/packages/kedarnath-yatra-3n-4d/\">Kedarnath Yatra 3N/4D package</a> is available at ₹8,500.</p><h2>The Route: Haridwar to Kedarnath to Badrinath</h2><p>Day 1 begins in Haridwar with a drive to Guptkashi (220 km, 8–9 hrs). Day 2 covers the Kedarnath circuit — Guptkashi to Sonprayag to Gaurikund, then the 16 km trek to Kedarnath temple, darshan, and overnight stay at Kedarnath or return to base. Day 3 is the return trek and drive toward Badrinath, with an overnight halt at Joshimath or Pipalkoti. Day 4 covers Badrinath darshan, Mana village, and local sights. Days 5–6 are the return drive to Haridwar with a night halt at Rudraprayag or Rishikesh.</p><h2>Badrinath Temple: Significance and Visitor Information</h2><p>Badrinath temple is one of the 108 Divya Desams — the most sacred Vaishnava shrines — and is dedicated to Lord Vishnu in his Badri form. The temple sits at 3,133 metres on the banks of the Alaknanda River. The current temple structure is a colourful stone edifice rebuilt and maintained by the Badrinath-Kedarnath Temple Committee (BKTC). The presiding deity is a 1-metre tall black stone idol of Vishnu in a meditative posture, set inside the garbha griha. The temple is open from May to November; exact dates are announced annually.</p><p>Darshan queues at Badrinath are typically shorter than at Kedarnath. On non-peak weekdays, queue times are 30–90 minutes. VVIP darshan is available for a fee and reduces wait significantly. The morning abhishek (ritual bathing of the deity) and evening aarti are the two most sought-after darshan slots and must be attended by a separate ticket or early arrival.</p><h3>Tapt Kund — The Hot Spring at Badrinath</h3><p>Directly below the Badrinath temple is Tapt Kund — a natural hot sulphur spring at around 45°C. Ritual bathing here before entering the temple is traditional. There are separate bathing ghats for men and women. The hot spring water is believed to have medicinal properties and smells of sulphur. Early morning bathing, around 5–6 am, is the least crowded time.</p><h2>Mana Village — Last Indian Village Before Tibet</h2><p>Mana village, 3 km from Badrinath, is often described as the last inhabited village on the Indian side before the Tibet border. The village is home to the Bhotiya tribe and sits at 3,200 metres. It is worth the short drive or walk from Badrinath for two reasons: the cave where Vyas and Ganesh are said to have composed and transcribed the Mahabharata (Vyas Gufa), and the Vasudhara Falls — a 145-metre cascade 5 km beyond Mana that is reachable by a relatively flat walk through a rocky landscape. The village also has small shops selling local woollen goods, dry fruits from the region, and chyawanprash varieties made by local families.</p><h3>Vasudhara Falls</h3><p>Vasudhara Falls is a 5 km walk from Mana village, gaining about 200 metres in elevation. The walk crosses the Saraswati River (which disappears underground shortly after Mana and is said to become the underground Saraswati river of ancient texts). The waterfall drops dramatically from the high cliff above. It is one of the less-visited but more rewarding side trips in the Badrinath area. Fit pilgrims can comfortably do the round trip in 3 hours.</p><h2>Comparing Do Dham with Full Char Dham</h2><p>The full <a href=\"/packages/char-dham-yatra/\">Char Dham Yatra</a> adds Yamunotri and Gangotri — both involve separate treks (Yamunotri requires 6 km from Janki Chatti; Gangotri is accessible by road). The additional days are best used by pilgrims who are physically comfortable with mountain travel and have the time. For first-time pilgrims or those above 60, Do Dham is often a better introduction. You can always return to complete Yamunotri and Gangotri in a subsequent year.</p><p>Pilgrims from <a href=\"/char-dham-from/mumbai/\">Mumbai</a>, <a href=\"/char-dham-from/hyderabad/\">Hyderabad</a>, and <a href=\"/char-dham-from/kolkata/\">Kolkata</a> frequently ask about minimum travel time — Do Dham in 5N/6D is the minimum we recommend for a comfortable, non-rushed pilgrimage to both shrines. Call us at +91 98738 97652 to check departure dates or arrange a private group tour.</p>"
   },
-
   {
     "slug": "golden-triangle-tour-5n-6d",
     "url": "/packages/golden-triangle-tour-5n-6d/",
@@ -263,14 +778,71 @@
     "price_from": 18500,
     "intl_price_usd": 379,
     "wa_text": "Golden Triangle Tour 5N/6D package details chahiye",
-    "overview": "<p>The Golden Triangle is India's most popular tour circuit and the perfect introduction to North Indian heritage, food, and culture. The triangle connects three cities — <strong>Delhi</strong> (the historic capital), <strong>Agra</strong> (home of the Taj Mahal), and <strong>Jaipur</strong> (the Pink City and gateway to Rajasthan).</p><p>Our 6-day all-inclusive package includes 4-star hotels, AC vehicle with English-speaking driver, English-speaking guide at all monuments, monument entry fees, and daily breakfast. Visit the Taj Mahal at sunrise, explore the marble inlay craft of Agra, ride an elephant up to Amber Fort in Jaipur, and shop in the colourful bazaars of Old Delhi. Perfect for first-time visitors to India.</p>",
+    "overview": "<p><strong>Junegiri Yatra's 5 Nights / 6 Days Golden Triangle Tour</strong> at ₹18,500 per person is a well-paced circuit of Delhi, Agra, and Jaipur that covers the major heritage sites at each city without feeling like a monument-ticking exercise. Each city gets dedicated time — two days in Delhi, one day in Agra, and two days in Jaipur — with comfortable mid-range hotel accommodation and local guides who specialise in each city's history.</p><p>The tour uses the Yamuna Expressway for the Delhi-Agra leg (3–3.5 hrs), passes through Fatehpur Sikri en route to Jaipur, and returns from Jaipur to Delhi by road or train depending on the group's schedule. It is designed for international tourists, NRIs, and domestic travellers who want a structured but relaxed cultural circuit with reliable transport and accommodation.</p><p>Included: <strong>5 nights accommodation on double sharing, all transfers by AC vehicle, English-speaking local guide at each city, and monument entry fees</strong> for major sites (Taj Mahal, Agra Fort, Amber Fort, City Palace, Hawa Mahal, Jantar Mantar, Qutub Minar, Humayun's Tomb). Meals are not included — each city has a range of reliable vegetarian and non-vegetarian restaurants and our guide provides specific recommendations at each stop. For a shorter Agra-only option, see our <a href=\"/packages/taj-mahal-day-tour-from-delhi/\">Taj Mahal Day Tour from Delhi</a>. For a comprehensive overview of all our Golden Triangle packages, visit the <a href=\"/packages/golden-triangle/\">Golden Triangle hub</a>. Call <strong>+91 98738 97652</strong> to discuss custom dates, private group tours, or combined pilgrimage and heritage packages.</p>",
     "itinerary": [
-      {"title": "Arrival in Delhi", "meta": "Airport pickup", "desc": "Welcome to India! Pickup from Delhi airport. Transfer to hotel. Evening at leisure or optional Old Delhi food walk. Welcome dinner with the team.", "highlights": ["Airport Pickup", "Old Delhi Food Walk", "Welcome Dinner"]},
-      {"title": "Delhi Sightseeing", "meta": "Full day", "desc": "Morning Old Delhi tour: Jama Masjid, Red Fort, Chandni Chowk rickshaw ride, Raj Ghat (Gandhi memorial). Afternoon New Delhi: India Gate, Rashtrapati Bhavan drive-by, Qutub Minar (UNESCO), Humayun's Tomb (UNESCO). Evening at leisure.", "highlights": ["Red Fort", "Jama Masjid", "Qutub Minar", "Humayun's Tomb", "India Gate"]},
-      {"title": "Delhi to Agra via Mathura/Vrindavan (optional)", "meta": "230 km · 3.5 hours", "desc": "Morning drive to Agra. En-route optional stop at Mathura/Vrindavan (birthplace of Krishna). Afternoon visit Agra Fort (UNESCO) and Mehtab Bagh for sunset Taj Mahal view across the Yamuna. Evening cultural show optional.", "highlights": ["Agra Fort", "Mehtab Bagh", "Mathura/Vrindavan optional"]},
-      {"title": "Taj Mahal at Sunrise + Drive to Jaipur", "meta": "240 km · 4 hours", "desc": "Pre-dawn visit to the Taj Mahal at sunrise (most magical time). Breakfast at hotel. En-route to Jaipur visit Fatehpur Sikri (UNESCO) and Abhaneri stepwell. Evening arrival in Jaipur, check into Pink City heritage hotel.", "highlights": ["Taj Mahal Sunrise", "Fatehpur Sikri", "Abhaneri Stepwell"]},
-      {"title": "Jaipur Sightseeing", "meta": "Full day", "desc": "Morning visit to Amber Fort with elephant or jeep ride up. Afternoon city tour: City Palace, Jantar Mantar (UNESCO observatory), Hawa Mahal photo stop. Evening leisure or optional Chokhi Dhani village resort dinner with folk dance.", "highlights": ["Amber Fort", "Elephant Ride", "City Palace", "Hawa Mahal", "Chokhi Dhani Optional"]},
-      {"title": "Jaipur to Delhi Drop", "meta": "265 km · 5 hours", "desc": "Morning at leisure for shopping in Jaipur bazaars (gemstones, textiles, blue pottery). Drive back to Delhi. Drop at airport or hotel. Tour ends.", "highlights": ["Jaipur Shopping", "Delhi Drop"]}
+      {
+        "title": "Arrival in Delhi",
+        "meta": "Airport pickup",
+        "desc": "Welcome to India! Pickup from Delhi airport. Transfer to hotel. Evening at leisure or optional Old Delhi food walk. Welcome dinner with the team.",
+        "highlights": [
+          "Airport Pickup",
+          "Old Delhi Food Walk",
+          "Welcome Dinner"
+        ]
+      },
+      {
+        "title": "Delhi Sightseeing",
+        "meta": "Full day",
+        "desc": "Morning Old Delhi tour: Jama Masjid, Red Fort, Chandni Chowk rickshaw ride, Raj Ghat (Gandhi memorial). Afternoon New Delhi: India Gate, Rashtrapati Bhavan drive-by, Qutub Minar (UNESCO), Humayun's Tomb (UNESCO). Evening at leisure.",
+        "highlights": [
+          "Red Fort",
+          "Jama Masjid",
+          "Qutub Minar",
+          "Humayun's Tomb",
+          "India Gate"
+        ]
+      },
+      {
+        "title": "Delhi to Agra via Mathura/Vrindavan (optional)",
+        "meta": "230 km · 3.5 hours",
+        "desc": "Morning drive to Agra. En-route optional stop at Mathura/Vrindavan (birthplace of Krishna). Afternoon visit Agra Fort (UNESCO) and Mehtab Bagh for sunset Taj Mahal view across the Yamuna. Evening cultural show optional.",
+        "highlights": [
+          "Agra Fort",
+          "Mehtab Bagh",
+          "Mathura/Vrindavan optional"
+        ]
+      },
+      {
+        "title": "Taj Mahal at Sunrise + Drive to Jaipur",
+        "meta": "240 km · 4 hours",
+        "desc": "Pre-dawn visit to the Taj Mahal at sunrise (most magical time). Breakfast at hotel. En-route to Jaipur visit Fatehpur Sikri (UNESCO) and Abhaneri stepwell. Evening arrival in Jaipur, check into Pink City heritage hotel.",
+        "highlights": [
+          "Taj Mahal Sunrise",
+          "Fatehpur Sikri",
+          "Abhaneri Stepwell"
+        ]
+      },
+      {
+        "title": "Jaipur Sightseeing",
+        "meta": "Full day",
+        "desc": "Morning visit to Amber Fort with elephant or jeep ride up. Afternoon city tour: City Palace, Jantar Mantar (UNESCO observatory), Hawa Mahal photo stop. Evening leisure or optional Chokhi Dhani village resort dinner with folk dance.",
+        "highlights": [
+          "Amber Fort",
+          "Elephant Ride",
+          "City Palace",
+          "Hawa Mahal",
+          "Chokhi Dhani Optional"
+        ]
+      },
+      {
+        "title": "Jaipur to Delhi Drop",
+        "meta": "265 km · 5 hours",
+        "desc": "Morning at leisure for shopping in Jaipur bazaars (gemstones, textiles, blue pottery). Drive back to Delhi. Drop at airport or hotel. Tour ends.",
+        "highlights": [
+          "Jaipur Shopping",
+          "Delhi Drop"
+        ]
+      }
     ],
     "inclusions": [
       "5 nights at 4-star hotels (twin sharing)",
@@ -292,34 +864,124 @@
       "Optional activities (Chokhi Dhani, food walks)"
     ],
     "pricing_tiers": [
-      {"group_size": "2 Pax (Sedan)", "rates": {"standard": 28500, "deluxe": 36500, "luxury": 58000}},
-      {"group_size": "4 Pax (Innova)", "rates": {"standard": 22500, "deluxe": 28000, "luxury": 45000}},
-      {"group_size": "6 Pax (Innova)", "rates": {"standard": 19500, "deluxe": 25000, "luxury": 42000}},
-      {"group_size": "8-10 Pax (Tempo Traveller)", "rates": {"standard": 18500, "deluxe": 23500, "luxury": 38500}}
+      {
+        "group_size": "2 Pax (Sedan)",
+        "rates": {
+          "standard": 28500,
+          "deluxe": 36500,
+          "luxury": 58000
+        }
+      },
+      {
+        "group_size": "4 Pax (Innova)",
+        "rates": {
+          "standard": 22500,
+          "deluxe": 28000,
+          "luxury": 45000
+        }
+      },
+      {
+        "group_size": "6 Pax (Innova)",
+        "rates": {
+          "standard": 19500,
+          "deluxe": 25000,
+          "luxury": 42000
+        }
+      },
+      {
+        "group_size": "8-10 Pax (Tempo Traveller)",
+        "rates": {
+          "standard": 18500,
+          "deluxe": 23500,
+          "luxury": 38500
+        }
+      }
     ],
     "gallery": [],
     "testimonials": [
-      {"quote": "Travelled from London with my husband. Junegiri arranged everything from airport pickup to Taj Mahal sunrise. Driver was professional and knew Delhi like the back of his hand. Hotels were comfortable and well-located.", "author": "Sarah Mitchell", "loc": "London, UK · Travelled February 2026"},
-      {"quote": "First trip to India. Was nervous about logistics. Junegiri's WhatsApp support was incredible — replies in minutes. The Taj Mahal at sunrise was unforgettable. Highly recommend for first-timers.", "author": "Michael Chen", "loc": "Singapore · Travelled January 2026"},
-      {"quote": "Family of 4 — kids loved the elephant ride at Amber Fort. Guide was patient with our questions about Mughal history. Great value compared to other operators we considered.", "author": "Priyanka & Rajiv Patel", "loc": "New Jersey, USA · Travelled March 2026"}
+      {
+        "quote": "Travelled from London with my husband. Junegiri arranged everything from airport pickup to Taj Mahal sunrise. Driver was professional and knew Delhi like the back of his hand. Hotels were comfortable and well-located.",
+        "author": "Sarah Mitchell",
+        "loc": "London, UK · Travelled February 2026"
+      },
+      {
+        "quote": "First trip to India. Was nervous about logistics. Junegiri's WhatsApp support was incredible — replies in minutes. The Taj Mahal at sunrise was unforgettable. Highly recommend for first-timers.",
+        "author": "Michael Chen",
+        "loc": "Singapore · Travelled January 2026"
+      },
+      {
+        "quote": "Family of 4 — kids loved the elephant ride at Amber Fort. Guide was patient with our questions about Mughal history. Great value compared to other operators we considered.",
+        "author": "Priyanka & Rajiv Patel",
+        "loc": "New Jersey, USA · Travelled March 2026"
+      }
     ],
     "faq": [
-      {"q": "What is the best time for the Golden Triangle Tour?", "a": "<strong>October to March</strong> is the best time — pleasant temperatures (15-28°C), dry weather, ideal for sightseeing. Avoid April-June (very hot, 40°C+) and July-September (monsoon humidity). December and January can be foggy in Delhi mornings."},
-      {"q": "Is the Taj Mahal closed on any day?", "a": "Yes — the Taj Mahal is <strong>closed every Friday</strong>. We plan the itinerary to avoid visiting Agra on Fridays. The Taj is open from sunrise to sunset on all other days."},
-      {"q": "Can I do Golden Triangle as a day trip?", "a": "Same-day Taj Mahal day tours from Delhi are popular (by Gatimaan Express train or AC car). However, we recommend at least 4 days to properly experience all three cities. The 5N/6D package is ideal for a relaxed pace."},
-      {"q": "Are English-speaking guides included?", "a": "Yes. Our package includes a certified English-speaking guide at all major monuments. We can also arrange French, Spanish, German, Italian, or Japanese guides on request (small surcharge). Specify language at the time of booking."},
-      {"q": "What kind of hotels do you provide?", "a": "Standard tier: comfortable 3-star hotels (Hotel Radisson, Pride Plaza class). Deluxe tier: 4-star (Crowne Plaza, Le Meridien class). Luxury tier: 5-star palace hotels (Taj Group, ITC, Oberoi). Specify your preference at booking."},
-      {"q": "Can I extend the Golden Triangle to include Rajasthan?", "a": "Absolutely. Popular extensions: Jaipur → Pushkar → Udaipur → Jodhpur → Jaisalmer (10-14 day Rajasthan add-on). Or Delhi → Varanasi → Khajuraho. We design custom itineraries — share your interests."},
-      {"q": "Is the Golden Triangle safe for solo female travellers?", "a": "Yes, with our private guided tour format. Driver and guide are vetted, hotels are reputable, and we maintain WhatsApp contact throughout. Many of our solo female guests have had wonderful experiences."},
-      {"q": "What is the dress code for monuments?", "a": "Modest dress recommended (covered shoulders and knees). Some religious sites require head covering (we provide). At the Taj Mahal, no large bags or food items. Comfortable walking shoes essential."}
+      {
+        "q": "What does the Golden Triangle tour cover?",
+        "a": "The Golden Triangle tour covers three cities: Delhi (the national capital), Agra (home of the Taj Mahal, Agra Fort, and Fatehpur Sikri), and Jaipur (the Pink City, with Amber Fort, City Palace, Hawa Mahal, and Jantar Mantar). The three cities form a triangle in north India connected by well-maintained highways, and together represent a comprehensive cross-section of Indian history."
+      },
+      {
+        "q": "What is the best time to visit the Golden Triangle?",
+        "a": "October to March is the best period for the Golden Triangle tour. Temperatures are pleasant (10–28°C), ideal for outdoor sightseeing and early morning Taj Mahal visits. April and May see temperatures exceeding 40°C in all three cities. June to September is monsoon season — the weather is humid but the sites are functional. The winter months of November to February are most popular with international tourists."
+      },
+      {
+        "q": "What is the best time to visit the Taj Mahal?",
+        "a": "Arrive at the Taj Mahal at 6 am when the gates open. The morning light (6–9 am) is best for photography and the visitor count is lower than at midday. The Taj is closed on Fridays. Full moon nights offer a special viewing slot, but tickets must be booked separately weeks in advance. Avoid the Taj between 11 am and 2 pm in any season."
+      },
+      {
+        "q": "What is the ₹18,500 Golden Triangle Tour package cost and what does it include?",
+        "a": "The package is priced at ₹18,500 per person and includes 5 nights accommodation on double sharing, all transfers by AC vehicle, English-speaking local guides at each city, and entry fees for major monuments (Taj Mahal, Agra Fort, Amber Fort, City Palace, Hawa Mahal, Jantar Mantar, Qutub Minar, Humayun's Tomb). Meals, shopping, camera fees at some monuments, and personal expenses are not included."
+      },
+      {
+        "q": "Is Fatehpur Sikri included in the Golden Triangle tour?",
+        "a": "Yes. Fatehpur Sikri is 40 km from Agra and is visited en route from Agra to Jaipur on Day 3 of the tour. It is a UNESCO World Heritage Site — Akbar's abandoned Mughal capital with the Buland Darwaza, Jama Masjid, and palace complex. The visit takes 2–3 hours and is included in the itinerary."
+      },
+      {
+        "q": "Can I do the Golden Triangle tour in fewer days?",
+        "a": "You can do a shorter version, but we do not recommend less than 4 nights for the three-city circuit. The 5N/6D format allows one full day each for Delhi highlights, Agra, and Jaipur without rushing. For a single-day Agra trip from Delhi, we offer the Taj Mahal Day Tour from Delhi at ₹6,500 per person."
+      },
+      {
+        "q": "What should I buy in Agra and Jaipur?",
+        "a": "In Agra, marble inlay work (pietra dura) is the traditional craft — look for stone-inlay boxes, coasters, and decorative plates. Buy from government-run emporiums or established shops to avoid painted resin imitations. In Jaipur, gemstones and gem-set silver jewellery, block-print fabric, blue pottery, and leather mojri shoes are the signature purchases. Avoid unsolicited shop recommendations from guides or drivers."
+      },
+      {
+        "q": "Are the Golden Triangle cities accessible for senior citizens and families with children?",
+        "a": "Yes. Delhi, Agra, and Jaipur are all flat cities with well-developed tourist infrastructure. Most monuments have wheelchair-accessible paths or ramps. At Amber Fort in Jaipur, an elevator is available for those who cannot climb the ramp. Inside the Taj Mahal, the main mausoleum has steps but the surrounding gardens are flat. Our itinerary is paced for mixed-age groups."
+      },
+      {
+        "q": "What is the distance from Delhi to Agra to Jaipur?",
+        "a": "Delhi to Agra is approximately 200 km by the Yamuna Expressway (3–3.5 hrs). Agra to Jaipur is approximately 240 km (4.5–5 hrs) via Fatehpur Sikri. Jaipur to Delhi is approximately 270 km (4.5–5 hrs). All three legs are on well-maintained national highways and are covered by dedicated AC vehicle in this package."
+      },
+      {
+        "q": "Can I combine the Golden Triangle with a Char Dham pilgrimage trip?",
+        "a": "Yes, though they are distinct circuits. The Golden Triangle is entirely in the plains of northern India (Delhi, Agra, Jaipur), while Char Dham is in the Uttarakhand mountains (starting from Haridwar). Some pilgrims complete the Golden Triangle first and then travel to Haridwar for the Char Dham Yatra, with Delhi as the common transit point. We can plan combined itineraries — call +91 98738 97652 to discuss."
+      }
     ],
     "related": [
-      {"name": "Taj Mahal Day Tour from Delhi", "duration": "1 Day", "price": 5500, "image": "/images/temple_entrance.jpg", "url": "/packages/taj-mahal-day-tour-from-delhi/"},
-      {"name": "Golden Triangle + Rajasthan", "duration": "11N/12D", "price": 38500, "image": "/images/mountains2.jpg", "url": "/packages/golden-triangle-rajasthan-tour/"},
-      {"name": "Golden Triangle 7N/8D", "duration": "7N/8D", "price": 26500, "image": "/images/temple_entrance.jpg", "url": "/packages/golden-triangle-tour-7n-8d/"}
-    ]
+      {
+        "name": "Taj Mahal Day Tour from Delhi",
+        "duration": "1 Day",
+        "price": 5500,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/taj-mahal-day-tour-from-delhi/"
+      },
+      {
+        "name": "Golden Triangle + Rajasthan",
+        "duration": "11N/12D",
+        "price": 38500,
+        "image": "/images/mountains2.jpg",
+        "url": "/packages/golden-triangle-rajasthan-tour/"
+      },
+      {
+        "name": "Golden Triangle 7N/8D",
+        "duration": "7N/8D",
+        "price": 26500,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/golden-triangle-tour-7n-8d/"
+      }
+    ],
+    "travel_guide": "<h2>Golden Triangle Tour India: Delhi, Agra, and Jaipur in 5 Nights / 6 Days</h2><p>The <strong>Golden Triangle</strong> is India's most-travelled heritage circuit, connecting the capital Delhi, the Mughal city of Agra, and the royal city of Jaipur. These three cities form a rough triangle on the map, connected by well-maintained highways, and together represent the widest cross-section of Indian history — Mughal architecture, Rajput fortresses, and the colonial-era structures of Old Delhi. Our <strong>5 Nights / 6 Days Golden Triangle Tour package</strong> at ₹18,500 per person covers all three cities with comfortable accommodation and local guides at each stop.</p><h2>Delhi Highlights</h2><p>Delhi has enough historical sites for a week of exploration. This tour allocates two days, which means you cover the major monuments without rushing. The non-negotiables are:</p><ul><li><strong>Qutub Minar</strong> — the 73-metre minaret completed in 1193, the tallest brick minaret in the world. The complex also includes the Iron Pillar (4th century), which has not rusted in 1,600 years despite being exposed to rain.</li><li><strong>Humayun's Tomb</strong> — built in 1570, this is the first mature example of Mughal garden-tomb architecture and directly influenced the design of the Taj Mahal. Less crowded than the Taj and architecturally more complex.</li><li><strong>India Gate</strong> — the 42-metre war memorial at the end of Kartavya Path (formerly Rajpath), best seen in the evening when it is lit up.</li><li><strong>Red Fort</strong> — the Mughal imperial residence built by Shah Jahan, covering 2 km². The Diwan-i-Aam and Diwan-i-Khas are the most significant structures inside. Light and sound shows are held in the evenings.</li><li><strong>Chandni Chowk</strong> — Old Delhi's main bazaar, dating to the 17th century. Best experienced on foot; lanes branch off selling specific goods (spice market, silver market, electrical goods, sari shops). Jama Masjid, India's largest mosque, is a 10-minute walk from Chandni Chowk.</li></ul><h2>Agra Highlights</h2><p>Agra is a 3–3.5 hour drive from Delhi on the Yamuna Expressway. The city is dominated by three UNESCO World Heritage Sites — the Taj Mahal, Agra Fort, and Fatehpur Sikri.</p><h3>Taj Mahal: Best Time and Practical Tips</h3><p>The <strong>Taj Mahal</strong> is best seen early morning, between 6 am and 9 am. The light at sunrise softens the marble and reduces the number of visitors relative to midday. Entry gates open at 6 am. Long-lens photography of the Taj from the rear is possible from Mehtab Bagh across the river (see below). Inside the Taj complex, leather shoes are not permitted on the main mausoleum plinth — cloth booties are provided for free at the entrance. Food, drinks, and tripods are not permitted inside the complex. Spend 1.5–2 hours inside.</p><h3>Agra Fort</h3><p>Agra Fort is 2 km from the Taj Mahal and is often treated as a half-day addition to the Taj visit. It was the primary residence of Mughal emperors before Shah Jahan moved the court to Delhi. The Khas Mahal, Anguri Bagh (Grape Garden), and the tower where Shah Jahan was reportedly imprisoned by his son Aurangzeb — with a view of the Taj Mahal from the window — are the key sections.</p><h3>Mehtab Bagh</h3><p>Mehtab Bagh (Moonlight Garden) is a Mughal garden on the north bank of the Yamuna, directly across from the Taj. It provides the best rear view of the Taj Mahal and is especially striking at sunset when the marble turns amber. This is also the spot for Taj Mahal photography without the front plaza crowds. Admission is separate from the Taj ticket.</p><h3>Fatehpur Sikri</h3><p>Fatehpur Sikri, 40 km from Agra, was Akbar's purpose-built capital city, occupied for only 15 years (1571–1585) before being abandoned — the most common explanation is insufficient water supply. The complex is a UNESCO World Heritage Site and includes the Buland Darwaza (one of the largest gateways in the world), the Jama Masjid, and the palace quarters with intricate sandstone carvings. It is visited en route from Agra to Jaipur and takes 2–3 hours.</p><h2>Jaipur Highlights</h2><p>Jaipur, the capital of Rajasthan, is a 5-hour drive from Agra. The city was founded in 1727 by Maharaja Jai Singh II and is built on a grid plan — unusual for its era. The old city's buildings were painted pink in 1876 to welcome the Prince of Wales, and the colour has been maintained ever since, earning it the name &ldquo;Pink City.&rdquo;</p><ul><li><strong>Amber Fort</strong> — the hilltop Rajput fortress 11 km from Jaipur's city centre, with detailed mirror-work interiors in the Sheesh Mahal and views over the Man Sagar Lake and Jaigarh Fort above.</li><li><strong>City Palace</strong> — the royal residence of the Jaipur royal family, still partially occupied. The museum section displays royal artefacts including the world&#39;s largest silver urns (listed in the Guinness Book of Records).</li><li><strong>Hawa Mahal</strong> — the five-storey sandstone &ldquo;Palace of Winds&rdquo; with 953 small windows, built in 1799 to allow royal women to observe street festivals without being seen. Best photographed from across the street, early morning.</li><li><strong>Jantar Mantar</strong> — a set of 19 architectural astronomical instruments built by Maharaja Jai Singh II in 1734, a UNESCO World Heritage Site. The Samrat Yantra is the world's largest sundial and accurate to 2 seconds.</li></ul><h2>What to Buy</h2><p>In Agra: marble inlay work (pietra dura) is the traditional craft — small boxes, coasters, and table tops are popular. Verify that you are buying real marble and stone inlay, not painted resin. In Jaipur: gemstones and gem-set jewellery (Jaipur is one of the world's largest gem-cutting centres), block-print textiles, blue pottery, and leather footwear (mojri).</p><h2>Best Time for Golden Triangle Tour</h2><p>October to March is the best period — temperatures in Delhi and Jaipur are pleasant (10–28°C) and Agra is ideal for early morning Taj visits. April–May sees temperatures rise to 40–45°C and the Taj Mahal visits are uncomfortable after 8 am. June–September is monsoon season — roads are fine but humidity is high. If you only have a day for Agra, our <a href=\"/packages/taj-mahal-day-tour-from-delhi/\">Taj Mahal Day Tour from Delhi</a> is a practical alternative. For a full overview of our Golden Triangle options, visit the <a href=\"/packages/golden-triangle/\">Golden Triangle hub page</a>.</p>"
   },
-
   {
     "slug": "taj-mahal-day-tour-from-delhi",
     "url": "/packages/taj-mahal-day-tour-from-delhi/",
@@ -339,14 +1001,65 @@
     "price_from": 5500,
     "intl_price_usd": 89,
     "wa_text": "Taj Mahal Day Tour from Delhi book karna hai",
-    "overview": "<p>The Taj Mahal day tour from Delhi is the most efficient way to experience India's iconic monument when you have only one day to spare. Built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal, the <strong>Taj Mahal</strong> is one of the New Seven Wonders of the World and a UNESCO World Heritage Site.</p><p>Our day tour gets you to Agra at sunrise — the most beautiful time to see the white marble glow in soft morning light — explores the equally impressive Agra Fort (also UNESCO), includes lunch at a heritage hotel, and brings you back to Delhi by evening. Choose between AC private car (4 hours each way) or the high-speed Gatimaan Express train (1 hour 40 minutes).</p>",
+    "overview": "<p><strong>Junegiri Yatra's Taj Mahal Day Tour from Delhi</strong> at ₹6,500 per person is a single-day, guided trip to Agra covering the Taj Mahal, Agra Fort, and Mehtab Bagh. The tour departs from Delhi early morning (5 am recommended), uses the Yamuna Expressway, and returns by evening. It is designed for travellers with limited time who want to see the Taj Mahal properly rather than as a rushed stop.</p><p>The tour includes <strong>AC vehicle with driver, local Agra guide (English-speaking), and monument entry fees</strong> for the Taj Mahal, Agra Fort, and Mehtab Bagh. Pickup and drop-off at your Delhi hotel or Haridwar/Rishikesh is included. Meals are not included, but the guide recommends clean, reliable restaurants at Agra for lunch. The tour is available on all days except Fridays (when the Taj Mahal is closed for maintenance).</p><p>The itinerary is timed carefully: 5 am departure from Delhi, Taj Mahal from 6:30–9 am, Agra Fort from 9:30–11:30 am, lunch break in Agra, Mehtab Bagh at sunset (4:30–5:30 pm), return to Delhi arriving by 8–9 pm. The structure gives you the best light at the Taj, a full Fort visit, and the sunset rear view from Mehtab Bagh without feeling hurried.</p><p>This day tour is especially popular with travellers doing a Char Dham pilgrimage through Haridwar who want to add an Agra detour at the start or end of their trip via Delhi. For a comprehensive north India heritage experience, our <a href=\"/packages/golden-triangle-tour-5n-6d/\">5 Nights / 6 Days Golden Triangle Tour</a> adds Delhi sightseeing and Jaipur to this Agra base. For a full overview of all our Agra tour options, visit the <a href=\"/packages/taj-mahal-tours/\">Taj Mahal Tours hub</a>. Call <strong>+91 98738 97652</strong> to book or enquire about departure flexibility.</p>",
     "itinerary": [
-      {"title": "Pre-dawn Delhi Pickup", "meta": "5:30 AM · 230 km drive", "desc": "Early pickup from Delhi hotel. Drive to Agra via Yamuna Expressway (3.5-4 hours). Tea/coffee stop en-route. Train option: depart Hazrat Nizamuddin 6:00 AM by Gatimaan Express, arrive Agra Cantt 7:50 AM.", "highlights": ["Yamuna Expressway", "Optional Gatimaan Express"]},
-      {"title": "Taj Mahal Sunrise Visit", "meta": "9:00 AM · 2 hours", "desc": "Enter the Taj Mahal complex. Walk through the iconic Charbagh Garden. Marvel at the white marble mausoleum and intricate pietra dura inlay work. Photograph from multiple angles. Guide explains Mughal history and architectural details.", "highlights": ["Taj Mahal", "UNESCO Site", "Charbagh Garden", "Pietra Dura Inlay"]},
-      {"title": "Breakfast / Brunch", "meta": "11:30 AM", "desc": "Indian or continental breakfast at a heritage hotel near the Taj.", "highlights": ["Heritage Hotel Brunch"]},
-      {"title": "Agra Fort Tour", "meta": "12:30 PM · 2 hours", "desc": "Visit Agra Fort — the Mughal residence and seat of power for over 100 years. See the Diwan-i-Am, Diwan-i-Khas, Sheesh Mahal, and the room where Shah Jahan was imprisoned with a view of his Taj Mahal.", "highlights": ["Agra Fort", "UNESCO Site", "Sheesh Mahal", "Shah Jahan's Prison"]},
-      {"title": "Marble Inlay Workshop", "meta": "Optional · 1 hour", "desc": "Visit a marble inlay craft workshop where artisans demonstrate the same techniques used at the Taj Mahal. Optional shopping for souvenirs.", "highlights": ["Marble Craft", "Souvenir Shopping"]},
-      {"title": "Return to Delhi", "meta": "4:00 PM departure · arrive 8:00 PM", "desc": "Drive back to Delhi via Yamuna Expressway. Drop at hotel or airport. Tour ends. Train option: depart Agra 5:50 PM by Gatimaan Express, arrive Delhi 7:30 PM.", "highlights": ["Delhi Drop", "Return Train Optional"]}
+      {
+        "title": "Pre-dawn Delhi Pickup",
+        "meta": "5:30 AM · 230 km drive",
+        "desc": "Early pickup from Delhi hotel. Drive to Agra via Yamuna Expressway (3.5-4 hours). Tea/coffee stop en-route. Train option: depart Hazrat Nizamuddin 6:00 AM by Gatimaan Express, arrive Agra Cantt 7:50 AM.",
+        "highlights": [
+          "Yamuna Expressway",
+          "Optional Gatimaan Express"
+        ]
+      },
+      {
+        "title": "Taj Mahal Sunrise Visit",
+        "meta": "9:00 AM · 2 hours",
+        "desc": "Enter the Taj Mahal complex. Walk through the iconic Charbagh Garden. Marvel at the white marble mausoleum and intricate pietra dura inlay work. Photograph from multiple angles. Guide explains Mughal history and architectural details.",
+        "highlights": [
+          "Taj Mahal",
+          "UNESCO Site",
+          "Charbagh Garden",
+          "Pietra Dura Inlay"
+        ]
+      },
+      {
+        "title": "Breakfast / Brunch",
+        "meta": "11:30 AM",
+        "desc": "Indian or continental breakfast at a heritage hotel near the Taj.",
+        "highlights": [
+          "Heritage Hotel Brunch"
+        ]
+      },
+      {
+        "title": "Agra Fort Tour",
+        "meta": "12:30 PM · 2 hours",
+        "desc": "Visit Agra Fort — the Mughal residence and seat of power for over 100 years. See the Diwan-i-Am, Diwan-i-Khas, Sheesh Mahal, and the room where Shah Jahan was imprisoned with a view of his Taj Mahal.",
+        "highlights": [
+          "Agra Fort",
+          "UNESCO Site",
+          "Sheesh Mahal",
+          "Shah Jahan's Prison"
+        ]
+      },
+      {
+        "title": "Marble Inlay Workshop",
+        "meta": "Optional · 1 hour",
+        "desc": "Visit a marble inlay craft workshop where artisans demonstrate the same techniques used at the Taj Mahal. Optional shopping for souvenirs.",
+        "highlights": [
+          "Marble Craft",
+          "Souvenir Shopping"
+        ]
+      },
+      {
+        "title": "Return to Delhi",
+        "meta": "4:00 PM departure · arrive 8:00 PM",
+        "desc": "Drive back to Delhi via Yamuna Expressway. Drop at hotel or airport. Tour ends. Train option: depart Agra 5:50 PM by Gatimaan Express, arrive Delhi 7:30 PM.",
+        "highlights": [
+          "Delhi Drop",
+          "Return Train Optional"
+        ]
+      }
     ],
     "inclusions": [
       "Pickup and drop from Delhi hotel/airport",
@@ -365,29 +1078,118 @@
       "Any meal not specified"
     ],
     "pricing_tiers": [
-      {"group_size": "1 Pax (Solo)", "rates": {"by_car": 9500, "by_train": 12500}},
-      {"group_size": "2 Pax", "rates": {"by_car": 5500, "by_train": 8500}},
-      {"group_size": "3-4 Pax", "rates": {"by_car": 4500, "by_train": 7500}},
-      {"group_size": "5-6 Pax (Innova)", "rates": {"by_car": 4000, "by_train": 7000}}
+      {
+        "group_size": "1 Pax (Solo)",
+        "rates": {
+          "by_car": 9500,
+          "by_train": 12500
+        }
+      },
+      {
+        "group_size": "2 Pax",
+        "rates": {
+          "by_car": 5500,
+          "by_train": 8500
+        }
+      },
+      {
+        "group_size": "3-4 Pax",
+        "rates": {
+          "by_car": 4500,
+          "by_train": 7500
+        }
+      },
+      {
+        "group_size": "5-6 Pax (Innova)",
+        "rates": {
+          "by_car": 4000,
+          "by_train": 7000
+        }
+      }
     ],
     "gallery": [],
     "testimonials": [
-      {"quote": "Did the day tour from Delhi by car. Pickup was on time at 5 AM. Reaching Taj Mahal at 8:30 AM was perfect — fewer crowds and beautiful morning light. Guide was knowledgeable.", "author": "Emma Williams", "loc": "Sydney, Australia · Travelled March 2026"},
-      {"quote": "Took the Gatimaan Express both ways — fast, comfortable, and a fun experience itself. Got back to Delhi by 7:30 PM with the whole day in Agra. Junegiri team handled everything seamlessly.", "author": "James O'Connor", "loc": "Dublin, Ireland · Travelled February 2026"},
-      {"quote": "Long day but absolutely worth it. The Taj Mahal exceeded expectations. Loved that the package included Agra Fort too. Driver was excellent.", "author": "Anita Krishnan", "loc": "Toronto, Canada · Travelled January 2026"}
+      {
+        "quote": "Did the day tour from Delhi by car. Pickup was on time at 5 AM. Reaching Taj Mahal at 8:30 AM was perfect — fewer crowds and beautiful morning light. Guide was knowledgeable.",
+        "author": "Emma Williams",
+        "loc": "Sydney, Australia · Travelled March 2026"
+      },
+      {
+        "quote": "Took the Gatimaan Express both ways — fast, comfortable, and a fun experience itself. Got back to Delhi by 7:30 PM with the whole day in Agra. Junegiri team handled everything seamlessly.",
+        "author": "James O'Connor",
+        "loc": "Dublin, Ireland · Travelled February 2026"
+      },
+      {
+        "quote": "Long day but absolutely worth it. The Taj Mahal exceeded expectations. Loved that the package included Agra Fort too. Driver was excellent.",
+        "author": "Anita Krishnan",
+        "loc": "Toronto, Canada · Travelled January 2026"
+      }
     ],
     "faq": [
-      {"q": "Is the Taj Mahal day tour from Delhi tiring?", "a": "It's a long day (about 14 hours) but well-paced. The Yamuna Expressway makes the drive comfortable. Train option is faster — only 1.5 hours each way. Most travellers find it manageable, especially since you're at the Taj for several hours in the cooler morning."},
-      {"q": "Should I take the car or train option?", "a": "<strong>Car</strong>: more flexible, can stop where you want, includes lunch at heritage hotel. <strong>Train (Gatimaan Express)</strong>: faster, more comfortable seating, executive chair car AC class. Trains can be sold out in peak season — book 2 weeks ahead. Most foreigners prefer the train."},
-      {"q": "What time does the Taj Mahal open?", "a": "The Taj Mahal opens 30 minutes before sunrise (around 6:00-6:30 AM depending on season) and closes 30 minutes after sunset (around 6:30-7:00 PM). It is <strong>closed on Fridays</strong> for prayers."},
-      {"q": "Can I avoid the long lines at the Taj Mahal?", "a": "Yes. We can arrange <strong>fast-track tickets</strong> (skip-the-line) for an additional Rs 500 per person. We also time the visit to early morning when crowds are smaller. Indian queue and foreign queue are separate — foreigners often have shorter waits."},
-      {"q": "What is the entry fee for the Taj Mahal?", "a": "For Indian citizens: Rs 50. For foreign tourists: Rs 1,100 (about $13 USD). Both include shoe covers and a bottle of water. Mausoleum entry (closest to the cenotaphs) is an additional Rs 200. <strong>All entry fees are included in our package.</strong>"},
-      {"q": "Can I visit Mathura/Vrindavan on the way?", "a": "Yes, with the car option only. Adds about 2 hours to the day. Mathura is the birthplace of Lord Krishna. Tell us at booking time and we'll adjust the itinerary."}
+      {
+        "q": "How long does the Taj Mahal Day Tour from Delhi take?",
+        "a": "The full day tour takes approximately 12–13 hours. Departure from Delhi is around 5 am, arrival at Agra by 8:30 am, Taj Mahal visit (2–2.5 hrs), Agra Fort (1.5–2 hrs), lunch break, Mehtab Bagh (45 min), and return drive to Delhi arriving by 7–8 pm. The Yamuna Expressway makes the Delhi-Agra leg approximately 3–3.5 hours each way."
+      },
+      {
+        "q": "What is the best time to visit the Taj Mahal?",
+        "a": "The 6 am first slot is the best time — softer light, cooler temperature, and fewer visitors than midday. The Taj is most crowded between 10 am and 2 pm. Our day tour is timed to arrive at Agra before 9 am. The Taj Mahal is closed on Fridays, so the day tour does not operate on Fridays."
+      },
+      {
+        "q": "What does the ₹6,500 Taj Mahal Day Tour include?",
+        "a": "The tour price includes an AC vehicle with driver (pickup and drop from your Delhi hotel), an English-speaking local Agra guide, and monument entry fees for the Taj Mahal, Agra Fort, and Mehtab Bagh. Meals, shopping, personal expenses, and camera fees (if applicable) are not included."
+      },
+      {
+        "q": "Are leather shoes really not allowed inside the Taj Mahal?",
+        "a": "Correct. Leather shoes are not permitted on the main mausoleum plinth to protect the marble surface. Free cloth booties (overshoes) are distributed at the plinth entry point. You wear them over your own shoes. This applies to the mausoleum plinth only — the gardens and surrounding areas have no footwear restrictions."
+      },
+      {
+        "q": "Can I take photos inside the Taj Mahal?",
+        "a": "Photography is allowed throughout the Taj complex including the gardens, the mausoleum exterior, and the rooftop view. Photography inside the inner chamber (around the cenotaphs of Mumtaz Mahal and Shah Jahan) is strictly prohibited. Security guards enforce this rule consistently. Tripods and monopods are not permitted anywhere inside the complex."
+      },
+      {
+        "q": "Is the Agra Fort worth visiting on the same day as the Taj Mahal?",
+        "a": "Yes. Agra Fort is 2 km from the Taj Mahal and takes 1.5–2 hours to cover the key sections — Khas Mahal, Anguri Bagh, Musamman Burj, and Jahangiri Mahal. The fort provides important historical context for the Mughal period and includes the room from which Shah Jahan could see the Taj Mahal during his house arrest. Entry is ticketed separately."
+      },
+      {
+        "q": "What is Mehtab Bagh and why should I visit it?",
+        "a": "Mehtab Bagh is a Mughal garden on the north bank of the Yamuna, directly opposite the Taj Mahal. It offers the best unobstructed rear view of the Taj — free from the crowds on the front plaza. It is the best location for Taj Mahal photography with a clear frame. Sunset at Mehtab Bagh, when the marble turns amber, is particularly worth seeing. Entry is much cheaper than the Taj ticket."
+      },
+      {
+        "q": "When was the Taj Mahal built and by whom?",
+        "a": "The Taj Mahal was built by Mughal Emperor Shah Jahan between 1632 and 1653 as a mausoleum for his wife Mumtaz Mahal, who died in 1631. Construction involved 20,000 workers and artisans from across Central Asia and Persia. The white marble used is Makrana marble from Rajasthan. The Taj Mahal was designated a UNESCO World Heritage Site in 1983."
+      },
+      {
+        "q": "Can I combine the Taj Mahal Day Tour with an overnight stay in Agra?",
+        "a": "Yes. Adding one night in Agra allows you to visit Fatehpur Sikri (40 km from Agra) the next morning before returning to Delhi or proceeding to Jaipur. This naturally extends into the full 5N/6D Golden Triangle Tour (Delhi + Agra + Jaipur). Inform us at booking if you want to extend the day tour into an overnight trip."
+      },
+      {
+        "q": "Is the day tour comfortable for senior citizens?",
+        "a": "The Taj Mahal complex is largely flat and accessible for senior citizens. The main challenge is the heat in summer months (April–June) — mornings are manageable but afternoons are very hot. The October–March window is more comfortable for seniors. Agra Fort has some uneven stone paths but is navigable with comfortable footwear. Our vehicle is AC throughout. We can adjust the pace and itinerary for groups with senior travellers — just inform us in advance."
+      }
     ],
     "related": [
-      {"name": "Golden Triangle Tour 5N/6D", "duration": "5N/6D", "price": 18500, "image": "/images/temple_entrance.jpg", "url": "/packages/golden-triangle-tour-5n-6d/"},
-      {"name": "Taj Mahal + Mathura Day Tour", "duration": "1 Day", "price": 6800, "image": "/images/temple_entrance.jpg", "url": "/packages/taj-mahal-mathura-day-tour/"},
-      {"name": "Delhi Sightseeing Day Tour", "duration": "1 Day", "price": 3800, "image": "/images/mountains1.jpg", "url": "/packages/delhi-sightseeing-day-tour/"}
-    ]
+      {
+        "name": "Golden Triangle Tour 5N/6D",
+        "duration": "5N/6D",
+        "price": 18500,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/golden-triangle-tour-5n-6d/"
+      },
+      {
+        "name": "Taj Mahal + Mathura Day Tour",
+        "duration": "1 Day",
+        "price": 6800,
+        "image": "/images/temple_entrance.jpg",
+        "url": "/packages/taj-mahal-mathura-day-tour/"
+      },
+      {
+        "name": "Delhi Sightseeing Day Tour",
+        "duration": "1 Day",
+        "price": 3800,
+        "image": "/images/mountains1.jpg",
+        "url": "/packages/delhi-sightseeing-day-tour/"
+      }
+    ],
+    "travel_guide": "<h2>Taj Mahal Day Tour from Delhi: A Practical Guide</h2><p>The <strong>Taj Mahal Day Tour from Delhi</strong> is the most efficient way to visit Agra and return to Delhi within a single day. At ₹6,500 per person, our tour covers the Taj Mahal, Agra Fort, and Mehtab Bagh with a vehicle, driver, and local guide. If you are in Delhi for a short stay and want to see the Taj Mahal without committing to a multi-day trip, this is the right option.</p><h2>Why the Taj Mahal Matters</h2><p>The Taj Mahal is a UNESCO World Heritage Site and is consistently ranked among the most visited monuments in the world. It was built between 1632 and 1653 by Mughal Emperor Shah Jahan as a mausoleum for his wife Mumtaz Mahal, who died in childbirth in 1631. The complex covers 17 hectares on the south bank of the Yamuna River. Its architectural significance lies in the synthesis of Persian, Islamic, and Indian decorative traditions — the symmetry of the complex, the use of white Makrana marble from Rajasthan, and the inlay work using 28 types of precious and semi-precious stones from across the world are details that reward close inspection.</p><h2>Best Time to Visit the Taj Mahal</h2><p>The first entry slot (6 am) is by far the best for two reasons: the light is soft and photogenic, and the crowd is a fraction of what arrives after 9 am. By 10 am in peak tourist months (October–March), the main plaza in front of the mausoleum can have several thousand people. The Taj Mahal is closed on Fridays for cleaning and maintenance.</p><p>Seasonally, October to March is the best window. The weather in Agra is pleasant (morning temperatures around 8–15°C in December–January, 20–28°C in October–November and February–March). Summer (April–June) is very hot — the marble surface heats up quickly and the complex can be uncomfortable by 9 am. If you must visit in summer, arriving at exactly 6 am and leaving by 8:30 am is the only workable strategy.</p><h2>What to See: Inside the Taj Complex</h2><p>The Taj Mahal complex has four main structures, all built to be architecturally interdependent:</p><ul><li><strong>Main Mausoleum</strong> — the central white marble structure housing the cenotaphs of Mumtaz Mahal and Shah Jahan. The actual graves are in a crypt below, not open to the public. The marble exterior has detailed pietra dura inlay. Spend 30–45 minutes here.</li><li><strong>Mosque</strong> — the red sandstone mosque to the west of the mausoleum, still used for Friday prayers. Entry is free with a Taj Mahal ticket.</li><li><strong>Jawab (Guest House)</strong> — the mirror-image structure of the mosque on the east side, built for symmetry. It was never used as a mosque since it faces the wrong direction for prayer.</li><li><strong>Charbagh (Garden)</strong> — the classic Mughal four-part garden divided by water channels. The long reflecting pool running from the main gate to the mausoleum is the centrepiece. Walk slowly through the garden on both sides for different perspectives of the main dome.</li></ul><h2>Practical Rules at the Taj Mahal</h2><p>Several rules are strictly enforced and worth knowing before you arrive:</p><ul><li>Leather shoes are not permitted on the main mausoleum plinth. Cloth shoe-covers (booties) are provided free at the plinth entrance.</li><li>Food and drinks are not allowed inside the Taj complex (water in a clear bottle is permitted).</li><li>Tripods and monopods are not permitted inside the complex.</li><li>Photography is not allowed inside the main mausoleum (inside the inner chamber around the cenotaphs).</li><li>The main gate security checks are strict — leave heavy bags at your vehicle.</li></ul><h2>Agra Fort: Worth the Extra Hour</h2><p>Agra Fort is 2 km from the Taj Mahal (10–15 minutes by vehicle). Entry is separate. The fort covers 94 acres and served as the principal Mughal imperial residence before Shah Jahan moved the court to Delhi. Inside, the key sections are the Khas Mahal (private royal quarters), Anguri Bagh (inner garden), and the Musamman Burj — the octagonal tower where Shah Jahan was placed under house arrest by his son Aurangzeb and from which he could see the Taj Mahal across the river. The fort visit takes 1.5–2 hours.</p><h2>Mehtab Bagh: Rear View of the Taj Mahal</h2><p>Mehtab Bagh (Moonlight Garden) is a Mughal garden on the north bank of the Yamuna, directly opposite the Taj Mahal. It provides the best unobstructed rear view of the main mausoleum — especially useful for photography since the front of the Taj is often crowded with people. The garden was laid out by Babur and later restored. Entry is ticketed and much cheaper than the Taj. The garden is best at sunset when the marble takes on a warm tone. It is 3 km from the Taj Mahal by road.</p><h2>The Drive from Delhi to Agra</h2><p>The Yamuna Expressway (Yamuna Expressway Industrial Development Authority) connects Delhi to Agra in 3–3.5 hours under normal traffic conditions. The expressway is a 6-lane controlled-access highway with clean rest stops at regular intervals. Departing from Delhi by 5 am allows arrival at the Taj Mahal gate by 8–8:30 am, which is still early enough to beat the full crowd. Return to Delhi is comfortable by early evening, arriving back by 7–8 pm.</p><h2>Combining with the Golden Triangle or Overnight Agra</h2><p>The Taj Mahal Day Tour can be extended into an overnight Agra trip — add a night at an Agra hotel and visit Fatehpur Sikri (40 km) the next morning before returning to Delhi or proceeding to Jaipur. This makes it a natural entry point into the full <a href=\"/packages/golden-triangle-tour-5n-6d/\">Golden Triangle Tour 5N/6D</a>, which covers Delhi, Agra, and Jaipur in depth. For an overview of all our Taj Mahal tour options, see the <a href=\"/packages/taj-mahal-tours/\">Taj Mahal Tours hub page</a>. Travellers coming from <a href=\"/char-dham-from/delhi/\">Delhi</a> or visiting <a href=\"/char-dham-from/pune/\">from Pune</a> via Delhi can combine this day tour with a Haridwar pilgrimage trip for a comprehensive north India itinerary. Contact us at +91 98738 97652 to plan.</p>"
   }
 ]
