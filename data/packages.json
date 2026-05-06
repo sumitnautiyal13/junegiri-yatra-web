@@ -8,7 +8,7 @@
     "keywords": "char dham yatra 9 nights 10 days, char dham package from haridwar, kedarnath badrinath yamunotri gangotri tour, char dham 2026 booking",
     "h1": "Char Dham Yatra <em>9 Nights / 10 Days</em>",
     "hero_tagline": "The complete sacred journey to all four dhams — Yamunotri, Gangotri, Kedarnath, and Badrinath. Hotel, meals, and private vehicle from Haridwar included.",
-    "hero_image": "https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg",
+    "hero_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg",
     "tag": "Most Popular",
     "duration": "9 Nights / 10 Days",
     "destinations_short": "Yamunotri · Gangotri · Kedarnath · Badrinath",
@@ -58,14 +58,14 @@
       {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 19800, "deluxe": 25300, "super deluxe": 28490, "luxury": 0}}
     ],
     "gallery": [
-      "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg",
-      "https://junegiriyatra.com/assets/images/badrinath_temple.jpg",
-      "https://junegiriyatra.com/assets/images/kedarnath_trek_horses.jpg",
-      "https://junegiriyatra.com/assets/images/snow_cabin.jpg",
-      "https://junegiriyatra.com/assets/images/haridwar_ghat.jpg",
-      "https://junegiriyatra.com/assets/images/rishikesh_bridge.jpg",
-      "https://junegiriyatra.com/assets/images/guptkashi_hilltown.jpg",
-      "https://junegiriyatra.com/assets/images/kedarnath_temple_night.jpg"
+      "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80",
+      "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+      "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200&q=80",
+      "https://images.unsplash.com/photo-1612803483082-a86ff2f13e76?w=1200&q=80",
+      "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1200&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80"
     ],
     "testimonials": [
       {"quote": "Did Char Dham with my parents last May. Junegiri team handled everything end-to-end. Hotels were clean, driver was respectful, and they even arranged a helicopter for my mother who couldn't trek. Highly recommend.", "author": "Rajesh Kumar", "loc": "Delhi · Travelled May 2025"},
@@ -83,9 +83,9 @@
       {"q": "Can I customize this itinerary?", "a": "Absolutely. You can add Hemkund Sahib, Valley of Flowers, extra night in Rishikesh, helicopter Kedarnath, or shorten/extend the journey. Tell us your preferences and we'll build a custom plan."}
     ],
     "related": [
-      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_night.jpg", "url": "/packages/do-dham-yatra-5n-6d/"},
-      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg", "url": "/packages/kedarnath-yatra-3n-4d/"},
-      {"name": "Char Dham from Delhi", "duration": "10N/11D", "price": 22990, "image": "https://junegiriyatra.com/assets/images/haridwar_ghat.jpg", "url": "/packages/char-dham-yatra-from-delhi-10n-11d/"}
+      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80", "url": "/packages/do-dham-yatra-5n-6d/"},
+      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80", "url": "/packages/kedarnath-yatra-3n-4d/"},
+      {"name": "Char Dham from Delhi", "duration": "10N/11D", "price": 22990, "image": "https://images.unsplash.com/photo-1612803483082-a86ff2f13e76?w=1200&q=80", "url": "/packages/char-dham-yatra-from-delhi-10n-11d/"}
     ]
   },
 
@@ -98,7 +98,7 @@
     "keywords": "kedarnath yatra package, kedarnath 3 nights 4 days, kedarnath from haridwar, kedarnath jyotirlinga tour 2026",
     "h1": "Kedarnath Yatra <em>3 Nights / 4 Days</em>",
     "hero_tagline": "Sacred journey to Kedarnath — one of 12 Jyotirlingas of Lord Shiva. All-inclusive package from Haridwar with hotel, meals, transport, and palki/pony arrangement on request.",
-    "hero_image": "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg",
+    "hero_image": "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80",
     "tag": "Best Seller",
     "duration": "3 Nights / 4 Days",
     "destinations_short": "Haridwar · Guptkashi · Kedarnath",
@@ -140,12 +140,12 @@
       {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 7590, "deluxe": 9790, "super deluxe": 10780, "luxury": 0}}
     ],
     "gallery": [
-      "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg",
-      "https://junegiriyatra.com/assets/images/kedarnath_temple_night.jpg",
-      "https://junegiriyatra.com/assets/images/kedarnath_trek_horses.jpg",
-      "https://junegiriyatra.com/assets/images/guptkashi_hilltown.jpg",
-      "https://junegiriyatra.com/assets/images/haridwar_ghat.jpg",
-      "https://junegiriyatra.com/assets/images/cover_meditation.jpg"
+      "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80",
+      "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+      "https://images.unsplash.com/photo-1612803483082-a86ff2f13e76?w=1200&q=80",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80"
     ],
     "testimonials": [
       {"quote": "Wanted to do Kedarnath darshan but was worried about the trek. Junegiri arranged a pony for me up and helicopter down. Best decision. The team explained everything in advance. Felt very supported.", "author": "Sunita Verma", "loc": "Pune · Travelled May 2025"},
@@ -161,9 +161,9 @@
       {"q": "What clothes should I pack for Kedarnath?", "a": "Even in May-June, Kedarnath is cold (5-15°C). Pack: thermal innerwear, fleece jacket, windproof jacket, woollen cap, gloves, raincoat or poncho, trekking shoes, sunglasses, sunscreen, basic medicines, power bank."}
     ],
     "related": [
-      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_night.jpg", "url": "/packages/do-dham-yatra-5n-6d/"},
-      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
-      {"name": "Kedarnath by Helicopter", "duration": "1 Day", "price": 17500, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg", "url": "/packages/kedarnath-helicopter-tour/"}
+      {"name": "Do Dham Yatra (Kedarnath + Badrinath)", "duration": "5N/6D", "price": 11550, "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80", "url": "/packages/do-dham-yatra-5n-6d/"},
+      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
+      {"name": "Kedarnath by Helicopter", "duration": "1 Day", "price": 17500, "image": "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80", "url": "/packages/kedarnath-helicopter-tour/"}
     ]
   },
 
@@ -176,7 +176,7 @@
     "keywords": "do dham yatra, kedarnath badrinath package, do dham 5 nights 6 days, do dham from haridwar 2026",
     "h1": "Do Dham Yatra <em>Kedarnath + Badrinath</em>",
     "hero_tagline": "The two holiest dhams in 6 days — Kedarnath and Badrinath. All-inclusive from Haridwar with hotel, meals, private vehicle, and full Mana Village exploration.",
-    "hero_image": "https://junegiriyatra.com/assets/images/kedarnath_temple_night.jpg",
+    "hero_image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
     "tag": "All Inclusive",
     "duration": "5 Nights / 6 Days",
     "destinations_short": "Kedarnath · Badrinath · Mana Village",
@@ -218,12 +218,12 @@
       {"group_size": "12 Pax (Tempo Traveller)", "rates": {"standard": 11550, "deluxe": 15125, "super deluxe": 16500, "luxury": 0}}
     ],
     "gallery": [
-      "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg",
-      "https://junegiriyatra.com/assets/images/badrinath_temple.jpg",
-      "https://junegiriyatra.com/assets/images/badrinath_temple_front.jpg",
-      "https://junegiriyatra.com/assets/images/kedarnath_trek_horses.jpg",
-      "https://junegiriyatra.com/assets/images/haridwar_ghat.jpg",
-      "https://junegiriyatra.com/assets/images/rishikesh_bridge.jpg"
+      "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80",
+      "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=1200&q=80",
+      "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=1200&q=80",
+      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80",
+      "https://images.unsplash.com/photo-1612803483082-a86ff2f13e76?w=1200&q=80",
+      "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=1200&q=80"
     ],
     "testimonials": [
       {"quote": "Wanted to do both dhams but didn't have 10 days. Do Dham 6-day package was perfect. Mana Village was a beautiful surprise. The team was professional throughout.", "author": "Meera Iyer", "loc": "Hyderabad · Travelled June 2025"},
@@ -238,9 +238,9 @@
       {"q": "How is the road condition between Kedarnath and Badrinath?", "a": "The route via Karna Prayag is in good condition for most of the year. Some sections are narrow mountain roads — driving requires care. Our drivers are experienced. Drive time: 6-7 hours from Guptkashi to Pandukeshwar."}
     ],
     "related": [
-      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_cover.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
-      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "https://junegiriyatra.com/assets/images/kedarnath_temple_evening.jpg", "url": "/packages/kedarnath-yatra-3n-4d/"},
-      {"name": "Do Dham Yatra (Short)", "duration": "4N/5D", "price": 10340, "image": "https://junegiriyatra.com/assets/images/kedarnath_trek_horses.jpg", "url": "/packages/do-dham-yatra-4n-5d/"}
+      {"name": "Char Dham Yatra", "duration": "9N/10D", "price": 19800, "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg", "url": "/packages/char-dham-yatra-9n-10d/"},
+      {"name": "Kedarnath Yatra", "duration": "3N/4D", "price": 7590, "image": "https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=1200&q=80", "url": "/packages/kedarnath-yatra-3n-4d/"},
+      {"name": "Do Dham Yatra (Short)", "duration": "4N/5D", "price": 10340, "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80", "url": "/packages/do-dham-yatra-4n-5d/"}
     ]
   },
 

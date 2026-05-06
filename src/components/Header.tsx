@@ -46,7 +46,7 @@ export default function Header() {
           <nav className="nav">
             <Link href="/" className="logo">
               <Image
-                src="https://junegiriyatra.com/assets/logo.png"
+                src="/logo.png"
                 alt="Junegiri Yatra Logo"
                 width={180}
                 height={56}

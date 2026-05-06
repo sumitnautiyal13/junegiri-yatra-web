@@ -442,7 +442,7 @@ export default function HomePage() {
             '@type': 'TravelAgency',
             name: 'Junegiri Yatra',
             url: 'https://junegiriyatra.com',
-            logo: 'https://junegiriyatra.com/assets/logo.png',
+            logo: 'https://junegiriyatra.com/logo.png',
             telephone: '+919873897652',
             address: {
               '@type': 'PostalAddress',

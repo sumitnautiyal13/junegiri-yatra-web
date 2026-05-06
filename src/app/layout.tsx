@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: 'Junegiri Yatra',
     type: 'website',
     locale: 'en_IN',
-    images: [{ url: 'https://junegiriyatra.com/assets/og-default.jpg' }],
+    images: [{ url: 'https://junegiriyatra.com/logo.png' }],
   },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true },
