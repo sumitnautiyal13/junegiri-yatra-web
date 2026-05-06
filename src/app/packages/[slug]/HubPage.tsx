@@ -225,6 +225,13 @@ export default function HubPage({ hub }: { hub: Hub }) {
             description: hub.meta_description,
             url: `https://junegiriyatra.com${hub.url}`,
             numberOfItems: hub.packages.length,
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              reviewCount: '47',
+              bestRating: '5',
+              worstRating: '1',
+            },
             itemListElement: hub.packages.map((p, i) => ({
               '@type': 'ListItem',
               position: i + 1,

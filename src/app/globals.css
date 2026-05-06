@@ -1664,3 +1664,30 @@ footer a:hover { color: var(--gold2); }
   .blog-grid { grid-template-columns: 1fr; }
   .related-posts { grid-template-columns: 1fr; }
 }
+
+/* ── Package rating badge ── */
+.pkg-rating-badge { display: flex; align-items: center; gap: 8px; margin: 8px 0 16px; }
+.pkg-stars { color: #f5a623; font-size: 16px; letter-spacing: 1px; }
+.pkg-rating-text { font-size: 14px; font-weight: 700; color: #fff; }
+.pkg-rating-count { font-weight: 400; color: var(--muted); font-size: 13px; }
+
+/* ── City links section (package → city pSEO) ── */
+.city-links-section { padding: 64px 0; background: var(--card2); }
+.city-links-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.city-link-chip {
+  background: rgba(201,146,61,0.1);
+  border: 1px solid rgba(201,146,61,0.3);
+  color: var(--gold2);
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all .2s;
+  text-decoration: none;
+}
+.city-link-chip:hover {
+  background: rgba(201,146,61,0.2);
+  border-color: var(--gold2);
+  color: #fff;
+  transform: translateY(-1px);
+}

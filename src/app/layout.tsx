@@ -7,6 +7,7 @@ import WhatsAppFloat from '@/components/WhatsAppFloat';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://junegiriyatra.com'),
   title: 'Junegiri Yatra — India Tour Packages | Char Dham, Treks, Golden Triangle',
   description: 'India\'s trusted travel company — Char Dham Yatra, Kedarnath, Himalayan treks, Golden Triangle, Kerala tours. All-inclusive packages from Haridwar. Book via WhatsApp.',
   keywords: 'char dham yatra, kedarnath yatra, india tour packages, golden triangle, himalayan treks, rishikesh adventure, junegiri yatra',

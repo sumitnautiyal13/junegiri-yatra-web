@@ -25,6 +25,8 @@ export default function Footer() {
             <Link href="/packages/goa-packages/">Goa Packages</Link>
             <Link href="/char-dham-from/">Char Dham from Your City</Link>
             <Link href="/kedarnath-from/">Kedarnath from Your City</Link>
+            <Link href="/badrinath-from/">Badrinath from Your City</Link>
+            <Link href="/do-dham-from/">Do Dham from Your City</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
           </div>
           <div>

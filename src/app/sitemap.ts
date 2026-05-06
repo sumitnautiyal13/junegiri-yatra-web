@@ -29,17 +29,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push({ url: `${BASE}/packages/${h.slug}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });
   }
 
-  // Char Dham from cities
-  urls.push({ url: `${BASE}/char-dham-from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
-  for (const c of citiesData as Array<{ slug: string }>) {
-    urls.push({ url: `${BASE}/char-dham-from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
-    urls.push({ url: `${BASE}/kedarnath-from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
-    urls.push({ url: `${BASE}/rishikesh-from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
-    urls.push({ url: `${BASE}/valley-of-flowers-from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 });
+  // Destination × City pages (6 destinations × 20 cities = 120 pages)
+  const DEST_ROUTES = [
+    { index: '/char-dham-from/', priority: 0.9 as const },
+    { index: '/kedarnath-from/', priority: 0.9 as const },
+    { index: '/badrinath-from/', priority: 0.8 as const },
+    { index: '/do-dham-from/', priority: 0.8 as const },
+    { index: '/rishikesh-from/', priority: 0.8 as const },
+    { index: '/valley-of-flowers-from/', priority: 0.7 as const },
+  ];
+
+  for (const dest of DEST_ROUTES) {
+    urls.push({ url: `${BASE}${dest.index}`, lastModified: NOW, changeFrequency: 'monthly', priority: dest.priority });
+    for (const c of citiesData as Array<{ slug: string }>) {
+      urls.push({ url: `${BASE}${dest.index}${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: dest.priority - 0.1 });
+    }
   }
-  urls.push({ url: `${BASE}/kedarnath-from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
-  urls.push({ url: `${BASE}/rishikesh-from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
-  urls.push({ url: `${BASE}/valley-of-flowers-from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
 
   // Blog
   if (blogData.length > 0) {

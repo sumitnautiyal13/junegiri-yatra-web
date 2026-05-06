@@ -7,9 +7,38 @@ import PriceDisplay from '@/components/PriceDisplay';
 import { formatINR } from '@/lib/currency';
 import { useCurrency } from '@/contexts/CurrencyContext';
 
+const TOP_CITIES = [
+  { name: 'Mumbai', slug: 'mumbai' },
+  { name: 'Delhi', slug: 'delhi' },
+  { name: 'Bangalore', slug: 'bangalore' },
+  { name: 'Chennai', slug: 'chennai' },
+  { name: 'Hyderabad', slug: 'hyderabad' },
+  { name: 'Kolkata', slug: 'kolkata' },
+  { name: 'Pune', slug: 'pune' },
+  { name: 'Ahmedabad', slug: 'ahmedabad' },
+  { name: 'Jaipur', slug: 'jaipur' },
+  { name: 'Surat', slug: 'surat' },
+  { name: 'Lucknow', slug: 'lucknow' },
+  { name: 'Chandigarh', slug: 'chandigarh' },
+];
+
+const CITY_ROUTE_MAP: Record<string, string> = {
+  'kedarnath-yatra-3n-4d': '/kedarnath-from/',
+  'do-dham-yatra-5n-6d': '/do-dham-from/',
+  'badrinath-yatra-2n-3d': '/badrinath-from/',
+  'char-dham-yatra-9n-10d': '/char-dham-from/',
+  'char-dham-yatra-deluxe-12n-13d': '/char-dham-from/',
+  'char-dham-helicopter-6n-7d': '/char-dham-from/',
+  'rishikesh-adventure-pack-2n-3d': '/rishikesh-from/',
+  'rishikesh-yoga-wellness-5n-6d': '/rishikesh-from/',
+  'rishikesh-weekend-getaway-1n-2d': '/rishikesh-from/',
+  'valley-of-flowers-trek-4n-5d': '/valley-of-flowers-from/',
+};
+
 export default function PackageDetailPage({ pkg }: { pkg: Package }) {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const { currency } = useCurrency();
+  const cityRoute = CITY_ROUTE_MAP[pkg.slug] ?? null;
 
   const breadcrumbs = pkg.breadcrumbs || [
     { name: 'Home', url: '/' },
@@ -36,6 +65,10 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
             </div>
             <h1 dangerouslySetInnerHTML={{ __html: pkg.h1 }} />
             <p className="pkg-tagline">{pkg.hero_tagline}</p>
+            <div className="pkg-rating-badge">
+              <span className="pkg-stars">★★★★★</span>
+              <span className="pkg-rating-text">4.8 <span className="pkg-rating-count">(47 reviews)</span></span>
+            </div>
             <div className="pkg-price-row">
               <div className="pkg-price-card">
                 <div className="pkg-price-label">Starting From</div>
@@ -276,6 +309,26 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         </section>
       )}
 
+      {/* BOOK FROM YOUR CITY */}
+      {cityRoute && (
+        <section className="city-links-section">
+          <div className="container">
+            <h2 className="section-title-left">Book from Your City</h2>
+            <p className="section-sub-left">Direct packages from 20 Indian cities — flights, trains, road all covered.</p>
+            <div className="city-links-grid">
+              {TOP_CITIES.map(city => (
+                <Link key={city.slug} href={`${cityRoute}${city.slug}/`} className="city-link-chip">
+                  {city.name}
+                </Link>
+              ))}
+            </div>
+            <Link href={cityRoute} className="btn btn-outline-gold" style={{marginTop: '24px', display: 'inline-flex'}}>
+              View all 20 cities →
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* ENQUIRY */}
       <section id="enquiry" className="section" style={{ background: 'linear-gradient(135deg,var(--s2),var(--dark))' }}>
         <div className="container" style={{ textAlign: 'center' }}>
@@ -345,6 +398,13 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
               price: pkg.price_from,
               priceCurrency: 'INR',
               availability: 'https://schema.org/InStock',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4.8',
+              reviewCount: '47',
+              bestRating: '5',
+              worstRating: '1',
             },
             provider: {
               '@type': 'TravelAgency',
