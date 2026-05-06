@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
+import WaLink from '@/components/WaLink';
 
 /* ─── Config type ────────────────────────────────────────── */
 export interface DestinationHighlight {
@@ -113,9 +114,10 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
             {city.total_time}&nbsp;·&nbsp;All-inclusive from{' '}
             <strong>₹{basePrice.toLocaleString('en-IN')}/person</strong>
           </p>
-          <a href={waLink} className="btn-gold-hero" target="_blank" rel="noopener noreferrer">
+          <WaLink href={waLink} className="btn-gold-hero" target="_blank" rel="noopener noreferrer"
+            label={`city_hero_${config.destinationSlug}`}>
             📲 Get {city.name} Quote on WhatsApp
-          </a>
+          </WaLink>
         </div>
       </section>
 
@@ -221,9 +223,10 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
               </div>
             </div>
             <div className="city-pkg-cta">
-              <a href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer">
+              <WaLink href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer"
+                label={`city_pkg_cta_${config.destinationSlug}`}>
                 📲 WhatsApp for {city.name} Quote
-              </a>
+              </WaLink>
               <a href="tel:+919873897652" className="btn-outline-lg">📞 Call +91 98738 97652</a>
               <p className="city-pkg-note">Free itinerary · No booking fee · Pay after confirmation</p>
             </div>
@@ -259,7 +262,8 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
             <p className="city-cta-sub">Haridwar-based team — arranging pilgrimages & treks since 2017.</p>
           </div>
           <div className="city-cta-btns">
-            <a href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer">📲 WhatsApp Us Now</a>
+            <WaLink href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer"
+              label={`city_strip_${config.destinationSlug}`}>📲 WhatsApp Us Now</WaLink>
             <a href="tel:+919873897652" className="btn-outline-lg light">📞 +91 98738 97652</a>
           </div>
         </div>

@@ -37,6 +37,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { index: '/do-dham-from/', priority: 0.8 as const },
     { index: '/rishikesh-from/', priority: 0.8 as const },
     { index: '/valley-of-flowers-from/', priority: 0.7 as const },
+    { index: '/varanasi-from/', priority: 0.8 as const },
+    { index: '/mussoorie-from/', priority: 0.7 as const },
+    { index: '/nainital-from/', priority: 0.7 as const },
   ];
 
   for (const dest of DEST_ROUTES) {

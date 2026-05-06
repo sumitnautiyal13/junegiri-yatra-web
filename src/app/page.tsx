@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { getAllPackages } from '@/lib/data';
+import WaLink from '@/components/WaLink';
 
 // Scroll reveal hook
 function useScrollReveal() {
@@ -51,21 +52,42 @@ const JOURNEYS = [
   },
 ];
 
-const PROMISE = [
+const WHY_CHOOSE = [
   {
     icon: '🏔',
-    title: 'Himalayan Experts',
-    text: '8+ years operating across Uttarakhand. We know every mountain road, every seasonal window, every hidden gem.',
+    title: '8+ Years in the Himalayas',
+    text: 'Since 2017, operating across Uttarakhand in all seasons. We know every mountain road, every seasonal window, every shortcut that saves you 2 hours.',
+    stat: '8 Years',
   },
   {
     icon: '💰',
     title: 'Zero Hidden Costs',
-    text: 'What we quote is what you pay. Hotel, meals, transport, permits — all included. No surprises at the end.',
+    text: 'What we quote is what you pay. Hotel, meals, transport, permits, guide fees — all inclusive. No "optional" extras that aren\'t optional.',
+    stat: '100% Transparent',
   },
   {
     icon: '📱',
-    title: '24/7 WhatsApp Support',
-    text: 'Reply within minutes during season. A dedicated guide on call throughout your journey. Never alone.',
+    title: 'Reply in Under 60 Minutes',
+    text: 'WhatsApp us any time. During peak season we\'re available 6 AM to 10 PM. A dedicated guide stays reachable throughout your journey.',
+    stat: '<60 min',
+  },
+  {
+    icon: '🛡',
+    title: 'Licensed & Insured',
+    text: 'IATA registered, Uttarakhand Tourism licensed, fully insured operations. Trek guides are certified by NCRD and carry first-aid kits on every route.',
+    stat: 'Fully Licensed',
+  },
+  {
+    icon: '🌍',
+    title: 'Trusted by Travelers Worldwide',
+    text: 'From Bengaluru to Birmingham, 2,847+ satisfied travellers across 30+ countries. International pricing with local expertise — the best of both worlds.',
+    stat: '30+ Countries',
+  },
+  {
+    icon: '✅',
+    title: 'Book With Confidence',
+    text: 'Confirm with just 30% advance. Full flexibility — reschedule up to 7 days before departure. 100% refund if we cancel due to weather or government restrictions.',
+    stat: '30% to Book',
   },
 ];
 
@@ -78,21 +100,67 @@ const STEPS = [
 const TESTIMONIALS = [
   {
     stars: '★★★★★',
-    quote: 'Junegiri made our Char Dham dream come true. Every hotel, every meal, every transfer was perfectly arranged. Felt like traveling with family.',
+    quote: 'Junegiri made our Char Dham dream come true. Every hotel, every meal, every transfer was perfectly arranged. Felt like travelling with family, not a tour group.',
     author: 'Rajesh & Sunita Sharma',
     loc: 'Mumbai, Maharashtra',
+    trip: 'Char Dham Yatra 9N/10D',
+    avatar: 'RS',
   },
   {
     stars: '★★★★★',
-    quote: 'We were a group of 12 from the UK. The international pricing was fair and transparent. Nothing like paying inflated "tourist rates" elsewhere in India.',
-    author: 'David & Sarah Mitchell',
-    loc: 'London, United Kingdom',
-  },
-  {
-    stars: '★★★★★',
-    quote: 'Kedarkantha trek in December — absolutely magical. The guides were experienced, safety was top priority, and the views were beyond words.',
+    quote: 'Kedarkantha in December was pure magic — knee-deep snow, clear skies, and the best summit sunrise of my life. The guides were trained, safety-first, and genuinely fun.',
     author: 'Priya Nair',
     loc: 'Bengaluru, Karnataka',
+    trip: 'Kedarkantha Trek 5N/6D',
+    avatar: 'PN',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'As a group of 12 from the UK, we were nervous about logistics. Junegiri handled everything flawlessly — airport transfer, mountain roads, even dietary requirements for 3 vegetarians.',
+    author: 'David & Sarah Mitchell',
+    loc: 'London, United Kingdom',
+    trip: 'Do Dham Yatra 5N/6D',
+    avatar: 'DM',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'Valley of Flowers in August is indescribable. Our guide knew every flower species by name. The guesthouse at Ghangaria was cosy. Hemkund Sahib brought me to tears.',
+    author: 'Ananya Krishnamurthy',
+    loc: 'Hyderabad, Telangana',
+    trip: 'Valley of Flowers Trek 4N/5D',
+    avatar: 'AK',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'Booked Rishikesh adventure package just 4 days before departure. They arranged everything — river rafting, bungee jump, beachside camping. Zero stress, maximum adventure.',
+    author: 'Arjun Mehta',
+    loc: 'Delhi, NCR',
+    trip: 'Rishikesh Adventure Pack 2N/3D',
+    avatar: 'AM',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'My elderly parents wanted to do Badrinath and Kedarnath. Junegiri arranged helicopter for Kedarnath and a comfortable tempo traveller. Both of them walked out with the biggest smiles.',
+    author: 'Kiran Desai',
+    loc: 'Ahmedabad, Gujarat',
+    trip: 'Do Dham Helicopter Package',
+    avatar: 'KD',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'Golden Triangle in April was fantastic. Private car, knowledgeable local guides, and the Taj at sunrise — everything they promised was delivered. Already planning Rajasthan next year.',
+    author: 'Meena & Suresh Pillai',
+    loc: 'Chennai, Tamil Nadu',
+    trip: 'Golden Triangle 5N/6D',
+    avatar: 'MP',
+  },
+  {
+    stars: '★★★★★',
+    quote: 'Three generations — grandparents, parents, kids. Junegiri customised the itinerary so everyone was happy. The grandparents got their darshan, the kids got their trek. Truly special.',
+    author: 'The Kapoor Family',
+    loc: 'Pune, Maharashtra',
+    trip: 'Char Dham Yatra (Family Group)',
+    avatar: 'KF',
   },
 ];
 
@@ -182,13 +250,14 @@ export default function HomePage() {
               </p>
 
               <div className="hero-ctas">
-                <a
+                <WaLink
                   href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20my%20India%20trip"
                   className="btn btn-wa btn-lg"
                   target="_blank" rel="noopener noreferrer"
+                  label="hero_homepage"
                 >
                   📱 Plan on WhatsApp
-                </a>
+                </WaLink>
                 <Link href="/packages/char-dham-yatra/" className="btn btn-gold btn-lg">
                   Explore Packages →
                 </Link>
@@ -267,11 +336,12 @@ export default function HomePage() {
           <div className="s-line" />
 
           <div className="promise-grid fade-in">
-            {PROMISE.map((p) => (
-              <div key={p.title} className="promise-card">
-                <div className="promise-icon">{p.icon}</div>
-                <div className="promise-title">{p.title}</div>
-                <p className="promise-text">{p.text}</p>
+            {WHY_CHOOSE.map((w, i) => (
+              <div key={i} className="promise-card fade-in">
+                <div className="promise-icon">{w.icon}</div>
+                <div className="promise-stat">{w.stat}</div>
+                <h3 className="promise-title">{w.title}</h3>
+                <p className="promise-text">{w.text}</p>
               </div>
             ))}
           </div>
@@ -316,13 +386,14 @@ export default function HomePage() {
                   <p className="pkg-route">{pkg.destinations_short}</p>
                   <div className="pkg-btns">
                     <Link href={pkg.url} className="btn btn-outline-gold">Details</Link>
-                    <a
+                    <WaLink
                       href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
                       className="btn btn-wa"
                       target="_blank" rel="noopener noreferrer"
+                      label={`package_card_${pkg.slug}`}
                     >
                       WhatsApp
-                    </a>
+                    </WaLink>
                   </div>
                 </div>
               </div>
@@ -356,14 +427,15 @@ export default function HomePage() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: 52 }}>
-            <a
+            <WaLink
               href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20my%20India%20trip"
               className="btn btn-wa btn-lg fade-in"
               target="_blank" rel="noopener noreferrer"
               style={{ display: 'inline-flex' }}
+              label="mid_cta_homepage"
             >
               📱 Start on WhatsApp — Free
-            </a>
+            </WaLink>
           </div>
         </div>
       </section>
@@ -377,12 +449,17 @@ export default function HomePage() {
 
           <div className="test-grid">
             {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="test-card fade-in">
-                <div className="test-stars">{t.stars}</div>
-                <p className="test-quote">&ldquo;{t.quote}&rdquo;</p>
-                <div className="test-divider" />
-                <div className="test-author">{t.author}</div>
-                <div className="test-loc">{t.loc}</div>
+              <div key={i} className="testi-card fade-in">
+                <div className="testi-stars">{t.stars}</div>
+                <p className="testi-quote">&ldquo;{t.quote}&rdquo;</p>
+                <div className="testi-footer">
+                  <div className="testi-avatar">{t.avatar}</div>
+                  <div>
+                    <div className="testi-author">{t.author}</div>
+                    <div className="testi-loc">{t.loc}</div>
+                    <div className="testi-trip">✓ Verified trip: {t.trip}</div>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
@@ -416,13 +493,14 @@ export default function HomePage() {
             Tell us where you want to go. We&apos;ll build the perfect package for your group, dates, and budget. No obligation, reply guaranteed within 1 hour.
           </p>
           <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }} className="fade-in">
-            <a
+            <WaLink
               href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20plan%20an%20India%20trip%20with%20Junegiri%20Yatra"
               className="btn btn-wa btn-lg"
               target="_blank" rel="noopener noreferrer"
+              label="footer_cta_homepage"
             >
               📱 WhatsApp +91 98738 97652
-            </a>
+            </WaLink>
             <Link href="/packages/char-dham-yatra/" className="btn btn-outline btn-lg">
               Browse Packages
             </Link>

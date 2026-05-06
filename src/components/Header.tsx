@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import CurrencySwitcher from './CurrencySwitcher';
+import WaLink from '@/components/WaLink';
 
 /* ─── Data types ─────────────────────────────────────────── */
 interface MegaItem {
@@ -292,10 +293,11 @@ export default function Header() {
                 )
               )}
               <a href="tel:+919873897652" className="nav-phone">📞 +91 98738 97652</a>
-              <a href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
-                className="nav-cta" target="_blank" rel="noopener noreferrer">
+              <WaLink href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
+                className="nav-cta" target="_blank" rel="noopener noreferrer"
+                label="nav_cta">
                 WhatsApp Us
-              </a>
+              </WaLink>
             </div>
 
             {/* HAMBURGER */}
@@ -350,11 +352,12 @@ export default function Header() {
                         className="mega-btn-primary" onClick={() => setActiveMega(null)}>
                         View Package
                       </Link>
-                      <a href={`https://wa.me/919873897652?text=${encodeURIComponent(currentMega.featured.waText)}`}
+                      <WaLink href={`https://wa.me/919873897652?text=${encodeURIComponent(currentMega.featured.waText)}`}
                         className="mega-btn-wa" target="_blank" rel="noopener noreferrer"
+                        label="mega_menu_featured"
                         onClick={() => setActiveMega(null)}>
                         WhatsApp
-                      </a>
+                      </WaLink>
                     </div>
                   </div>
                 </div>
@@ -415,10 +418,12 @@ export default function Header() {
               <a href="tel:+919873897652" className="mob-call" onClick={closeAll}>
                 📞 +91 98738 97652
               </a>
-              <a href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
-                className="mob-wa" target="_blank" rel="noopener noreferrer" onClick={closeAll}>
+              <WaLink href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
+                className="mob-wa" target="_blank" rel="noopener noreferrer"
+                label="mobile_drawer"
+                onClick={closeAll}>
                 WhatsApp Us
-              </a>
+              </WaLink>
             </div>
           </div>
         </div>

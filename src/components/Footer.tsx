@@ -28,6 +28,9 @@ export default function Footer() {
             <Link href="/badrinath-from/">Badrinath from Your City</Link>
             <Link href="/do-dham-from/">Do Dham from Your City</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
+            <Link href="/varanasi-from/">Varanasi from Your City</Link>
+            <Link href="/mussoorie-from/">Mussoorie from Your City</Link>
+            <Link href="/nainital-from/">Nainital from Your City</Link>
           </div>
           <div>
             <h4>Experiences</h4>

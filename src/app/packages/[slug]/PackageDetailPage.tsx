@@ -6,6 +6,7 @@ import type { Package } from '@/types';
 import PriceDisplay from '@/components/PriceDisplay';
 import { formatINR } from '@/lib/currency';
 import { useCurrency } from '@/contexts/CurrencyContext';
+import WaLink from '@/components/WaLink';
 
 const TOP_CITIES = [
   { name: 'Mumbai', slug: 'mumbai' },
@@ -80,14 +81,15 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 />
               </div>
               <div className="pkg-cta-group">
-                <a
+                <WaLink
                   href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
                   className="btn btn-wa"
                   target="_blank"
                   rel="noopener noreferrer"
+                  label={`pkg_hero_${pkg.slug}`}
                 >
                   📱 WhatsApp Booking
-                </a>
+                </WaLink>
                 <a href="#enquiry" className="btn btn-outline">Get Free Quote</a>
               </div>
             </div>
@@ -335,15 +337,16 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
           <h2 className="s-title">Ready to <em>Book?</em></h2>
           <p className="s-sub">WhatsApp us for instant confirmation, custom dates, and group pricing.</p>
           <div style={{ marginTop: 24 }}>
-            <a
+            <WaLink
               href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
               className="btn btn-wa"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: 16, padding: '18px 36px' }}
+              label={`pkg_cta_${pkg.slug}`}
             >
               📱 WhatsApp +91 98738 97652
-            </a>
+            </WaLink>
           </div>
           {currency !== 'INR' && pkg.intl_price_usd && (
             <p style={{ marginTop: 16, color: 'var(--muted)', fontSize: 13 }}>
