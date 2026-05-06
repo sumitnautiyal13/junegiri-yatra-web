@@ -4,6 +4,7 @@ import { CurrencyProvider } from '@/contexts/CurrencyContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import ScrollReveal from '@/components/ScrollReveal';
 
 export const metadata: Metadata = {
   title: 'Junegiri Yatra — India Tour Packages | Char Dham, Treks, Golden Triangle',
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main>{children}</main>
           <Footer />
           <WhatsAppFloat />
+          <ScrollReveal />
         </CurrencyProvider>
       </body>
     </html>
