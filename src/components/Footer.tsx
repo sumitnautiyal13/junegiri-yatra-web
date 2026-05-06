@@ -15,13 +15,17 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4>Top Tours</h4>
+            <h4>Pilgrimages</h4>
             <Link href="/packages/char-dham-yatra/">Char Dham Yatra</Link>
+            <Link href="/packages/kedarnath-yatra-3n-4d/">Kedarnath Yatra</Link>
             <Link href="/packages/golden-triangle/">Golden Triangle</Link>
             <Link href="/packages/taj-mahal-tours/">Taj Mahal Tours</Link>
             <Link href="/packages/kerala-tours/">Kerala Tours</Link>
             <Link href="/packages/rajasthan-tours/">Rajasthan Tours</Link>
             <Link href="/packages/goa-packages/">Goa Packages</Link>
+            <Link href="/char-dham-from/">Char Dham from Your City</Link>
+            <Link href="/kedarnath-from/">Kedarnath from Your City</Link>
+            <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
           </div>
           <div>
             <h4>Experiences</h4>
@@ -31,6 +35,18 @@ export default function Footer() {
             <Link href="/packages/wildlife-safari/">Wildlife Safari</Link>
             <Link href="/packages/wellness-retreats/">Wellness Retreats</Link>
             <Link href="/blog/">Travel Blog</Link>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <Link href="/best-time/kedarnath/">Best Time to Visit Kedarnath</Link>
+            <Link href="/best-time/valley-of-flowers/">Best Time for Valley of Flowers</Link>
+            <Link href="/blog/kedarkantha-trek-beginners-guide/">Kedarkantha Trek Guide</Link>
+            <Link href="/blog/char-dham-yatra-packing-list/">Char Dham Packing List</Link>
+            <Link href="/blog/altitude-sickness-prevention-himalaya/">Altitude Sickness Guide</Link>
+            <Link href="/blog/">Our Blog</Link>
+            <Link href="/compare/do-dham-vs-char-dham/">Do Dham vs Char Dham</Link>
+            <Link href="/compare/kedarnath-trek-vs-helicopter/">Trek vs Helicopter</Link>
+            <Link href="/compare/mussoorie-vs-nainital/">Mussoorie vs Nainital</Link>
           </div>
           <div>
             <h4>Contact</h4>
