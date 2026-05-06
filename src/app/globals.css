@@ -1284,11 +1284,13 @@ footer a:hover { color: var(--gold2); }
 /* ── Mega backdrop (closes on click, blurs page) ──────── */
 .mega-backdrop {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
+  /* Start below the header so it never intercepts header mouse events */
+  top: 84px; left: 0; right: 0; bottom: 0;
   background: rgba(7,5,26,0.55);
   backdrop-filter: blur(3px);
   z-index: 998;
   animation: fadeIn .18s ease;
+  cursor: default;
 }
 
 /* ── Mega panel ───────────────────────────────────────── */

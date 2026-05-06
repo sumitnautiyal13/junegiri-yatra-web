@@ -186,13 +186,13 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  /* hover-intent helpers */
+  /* hover helpers — close only when mouse leaves the whole header */
   const openMega = (label: string) => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
     setActiveMega(label);
   };
   const scheduleMegaClose = () => {
-    closeTimer.current = setTimeout(() => setActiveMega(null), 120);
+    closeTimer.current = setTimeout(() => setActiveMega(null), 300);
   };
   const cancelClose = () => {
     if (closeTimer.current) clearTimeout(closeTimer.current);
@@ -218,7 +218,12 @@ export default function Header() {
       </div>
 
       {/* ── HEADER ────────────────────────────────────────── */}
-      <header className={scrolled ? 'scrolled' : ''}>
+      {/* onMouseLeave on header = single close zone; no per-element timers needed */}
+      <header
+        className={scrolled ? 'scrolled' : ''}
+        onMouseLeave={scheduleMegaClose}
+        onMouseEnter={cancelClose}
+      >
         <div className="container">
           <nav className="nav">
 
@@ -236,7 +241,6 @@ export default function Header() {
                     key={entry.label}
                     className={`nav-trigger${activeMega === entry.label ? ' active' : ''}`}
                     onMouseEnter={() => openMega(entry.label)}
-                    onMouseLeave={scheduleMegaClose}
                     onClick={() => setActiveMega(activeMega === entry.label ? null : entry.label)}
                     aria-expanded={activeMega === entry.label}
                     aria-haspopup="true"
@@ -271,16 +275,12 @@ export default function Header() {
         {/* ── MEGA MENU PANEL (desktop) ─────────────────── */}
         {currentMega && (
           <>
+            {/* Backdrop — click to close only; no mouse events that fight the header handler */}
             <div
               className="mega-backdrop"
-              onMouseEnter={scheduleMegaClose}
               onClick={() => setActiveMega(null)}
             />
-            <div
-              className="mega-panel"
-              onMouseEnter={cancelClose}
-              onMouseLeave={scheduleMegaClose}
-            >
+            <div className="mega-panel">
               <div className="container mega-inner">
                 {/* Columns */}
                 <div className="mega-cols">
