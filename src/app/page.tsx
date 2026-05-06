@@ -22,7 +22,7 @@ const JOURNEYS = [
     title: 'Char Dham Yatra',
     sub: 'Kedarnath · Badrinath · Gangotri · Yamunotri',
     url: '/packages/char-dham-yatra/',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg',
+    img: '/images/kedarnath_temple_cover.jpg',
     color: '#C9923D',
   },
   {
@@ -30,7 +30,7 @@ const JOURNEYS = [
     title: 'Himalayan Treks',
     sub: 'Kedarkantha · Valley of Flowers · Hampta Pass · Kuari Pass',
     url: '/packages/char-dham-yatra/',
-    img: 'https://images.unsplash.com/photo-1585016495481-91486cc13fe5?w=900&q=80',
+    img: '/images/trek_himalaya.jpg',
     color: '#5B9BD5',
   },
   {
@@ -38,7 +38,7 @@ const JOURNEYS = [
     title: 'Golden Triangle',
     sub: 'Delhi · Agra · Jaipur · Taj Mahal',
     url: '/packages/golden-triangle/',
-    img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/800px-Taj_Mahal_%28Edited%29.jpeg',
+    img: '/images/mountains1.jpg',
     color: '#C97B3D',
   },
   {
@@ -46,7 +46,7 @@ const JOURNEYS = [
     title: 'Rishikesh Thrills',
     sub: 'Rafting · Bungee · Camping · Kayaking · Yoga',
     url: '/packages/char-dham-yatra/',
-    img: 'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=900&q=80',
+    img: '/images/rishikesh_rafting.jpg',
     color: '#3DC9A0',
   },
 ];
@@ -161,7 +161,7 @@ export default function HomePage() {
         <div
           ref={heroBgRef}
           className="hero-bg"
-          style={{ backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Kedarnath_Temple.jpg/1280px-Kedarnath_Temple.jpg)' }}
+          style={{ backgroundImage: 'url(/images/kedarnath_temple_cover.jpg)' }}
         />
         <div className="hero-overlay" />
 
