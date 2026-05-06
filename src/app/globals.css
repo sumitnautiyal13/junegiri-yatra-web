@@ -77,14 +77,16 @@ img { max-width: 100%; display: block; }
 header {
   position: fixed; top: 36px; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(7,5,26,0);
-  backdrop-filter: blur(0px);
+  background: rgba(7,5,26,0.97);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 40px rgba(0,0,0,.5);
   transition: all .4s ease;
 }
 header.scrolled {
   top: 0;
-  background: rgba(7,5,26,0.96);
-  backdrop-filter: blur(24px);
+  background: rgba(7,5,26,0.98);
+  backdrop-filter: blur(28px);
   border-bottom: 1px solid var(--border);
   box-shadow: 0 4px 40px rgba(0,0,0,.6);
 }
