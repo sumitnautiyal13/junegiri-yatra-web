@@ -35,7 +35,7 @@ export default function Footer() {
             <h4>India Tours</h4>
             <Link href="/india-tour-from/">India Tour Packages</Link>
             <Link href="/golden-triangle-from/">Golden Triangle Tour</Link>
-            <Link href="/packages/himalayan-treks/">Himalayan Treks</Link>
+            <Link href="/himalayan-treks/">Himalayan Treks</Link>
             <Link href="/packages/rishikesh-adventures/">Rishikesh Adventures</Link>
             <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
             <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers</Link>
