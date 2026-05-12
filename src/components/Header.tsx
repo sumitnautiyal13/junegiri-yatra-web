@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import CurrencySwitcher from './CurrencySwitcher';
 import WaLink from '@/components/WaLink';
+import InstallAppButton from '@/components/InstallAppButton';
 
 /* ─── Data types ─────────────────────────────────────────── */
 interface MegaItem {
@@ -61,7 +62,7 @@ const NAV: NavEntry[] = [
         },
       ],
       featured: {
-        image: '/images/kedarnath_temple_cover.jpg',
+        image: '/images/kedarnath_temple_cover.webp',
         badge: '⭐ Most Popular',
         title: 'Char Dham Yatra 9N / 10D',
         price: 'From ₹19,800 / person',
@@ -94,9 +95,9 @@ const NAV: NavEntry[] = [
         },
       ],
       featured: {
-        image: '/images/trek_snow_peak.jpg',
+        image: '/images/trek_snow_peak.webp',
         badge: '❄️ Season Open',
-        title: 'Kedarkantha Trek 2025',
+        title: 'Kedarkantha Trek 2026',
         price: 'From ₹9,500 / person',
         href: '/packages/kedarkantha-trek-5n-6d/',
         waText: 'Namaste! I want to enquire about Kedarkantha Trek',
@@ -104,29 +105,31 @@ const NAV: NavEntry[] = [
     },
   },
   {
-    label: 'Rishikesh',
+    label: 'Adventures & Escapes',
     href: '/packages/rishikesh-adventures/',
     mega: {
       columns: [
         {
-          heading: 'Adventure Activities',
+          heading: 'Rishikesh Adventures',
           items: [
             { icon: '🚣', label: 'Adventure Pack — Rafting + Bungee', sub: '2N 3D · Grade III-IV · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
-            { icon: '🏕️', label: 'Weekend Escape', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
-            { icon: '🪂', label: 'Bungee Jumping', sub: '83m · India\'s highest · at Jumpin Heights', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
-          ],
-        },
-        {
-          heading: 'Yoga & Wellness',
-          items: [
-            { icon: '🧘', label: 'Yoga Retreat 5N/6D', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
+            { icon: '🏕️', label: 'Weekend Escape — Rishikesh', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
             { icon: '🌊', label: 'River Rafting', sub: 'Shivpuri 16km · Marine Drive 26km · Grade I–IV', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
             { icon: '🛶', label: 'Kayaking & Cliff Jumping', sub: 'Beginner & expert · supervised · all gear', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
           ],
         },
+        {
+          heading: 'Uttarakhand Escapes',
+          items: [
+            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
+            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
+            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
+            { icon: '⛺', label: 'Kanatal & Tehri Lake', sub: '2N 3D · water sports · cedar forests · from ₹6,500', href: '/packages/kanatal-tehri-weekend-2n-3d/' },
+          ],
+        },
       ],
       featured: {
-        image: '/images/rishikesh_bridge.jpg',
+        image: '/images/rishikesh_bridge.webp',
         badge: '🌊 Adventure Capital',
         title: 'Rishikesh Adventure Pack',
         price: 'From ₹5,500 / person',
@@ -136,34 +139,35 @@ const NAV: NavEntry[] = [
     },
   },
   {
-    label: 'Uttarakhand',
-    href: '/packages/uttarakhand-tours/',
+    label: 'Yoga & Wellness',
+    href: '/yoga/',
     mega: {
       columns: [
         {
-          heading: 'Hill Stations & Leisure',
+          heading: 'Yoga Teacher Training (TTC)',
           items: [
-            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
-            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
-            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
+            { icon: '🕉️', label: 'Rishikesh — 200-Hour TTC', sub: 'Himalayan ashram · Yoga Alliance RYT 200 · from ₹95,000', href: '/yoga/rishikesh/200hours/', badge: 'Authentic' },
+            { icon: '🌺', label: 'Bali — 200-Hour TTC', sub: 'Tropical villas · Aerial + Yin yoga · from $1,799', href: '/yoga/bali/200hours/', badge: 'Popular' },
+            { icon: '🏖️', label: 'Goa — 200-Hour TTC', sub: 'Beachside · Arabian Sea · from ₹1,09,000', href: '/yoga/goa/200hours/', badge: 'New' },
+            { icon: '📋', label: 'All Programs — 100hr · 200hr · 300hr', sub: 'Compare all levels and locations', href: '/yoga/' },
           ],
         },
         {
-          heading: 'Weekend Getaways',
+          heading: 'Yoga Retreats & Wellness',
           items: [
-            { icon: '⛺', label: 'Kanatal & Tehri Lake', sub: '2N 3D · water sports · cedar forests · from ₹6,500', href: '/packages/kanatal-tehri-weekend-2n-3d/' },
-            { icon: '🌿', label: 'Chopta & Deoria Tal', sub: '2N 3D · reflective lake · Tungnath temple · from ₹6,000', href: '/packages/chopta-deoria-tal-2n-3d/' },
-            { icon: '🐘', label: 'Lansdowne & Corbett Safari', sub: '3N 4D · colonial hill town · wildlife · from ₹9,000', href: '/packages/lansdowne-corbett-safari-3n-4d/' },
+            { icon: '🧘', label: 'Yoga Retreat 5N/6D — Rishikesh', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
+            { icon: '🌿', label: 'Ayurveda + Yoga — Rishikesh', sub: 'Detox · Panchakarma · mindfulness · 5N+', href: '/packages/rishikesh-yoga-retreat-5n-6d/' },
+            { icon: '🪷', label: 'Meditation Retreat', sub: 'Vipassana · Yoga Nidra · silent retreat experience', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
           ],
         },
       ],
       featured: {
-        image: '/images/mountains1.jpg',
-        badge: '🌿 Uttarakhand',
-        title: 'Nainital & Jim Corbett 4N/5D',
-        price: 'From ₹11,000 / person',
-        href: '/packages/nainital-jim-corbett-4n-5d/',
-        waText: 'Namaste! I want to enquire about Nainital Jim Corbett package',
+        image: '/images/rishikesh_bridge.webp',
+        badge: '🧘 Yoga Alliance Certified',
+        title: '200-Hour Yoga TTC — Rishikesh',
+        price: 'From ₹95,000 / person',
+        href: '/yoga/rishikesh/',
+        waText: 'Namaste! I want to enquire about Yoga Teacher Training programs',
       },
     },
   },
@@ -190,12 +194,44 @@ const NAV: NavEntry[] = [
         },
       ],
       featured: {
-        image: '/images/temple_entrance.jpg',
+        image: '/images/temple_entrance.webp',
         badge: '🏆 Heritage India',
         title: 'Rajasthan Tour 6N / 7D',
         price: 'From ₹21,000 / person',
         href: '/packages/rajasthan-tour-6n-7d/',
         waText: 'Namaste! I want to enquire about Rajasthan tour package',
+      },
+    },
+  },
+  {
+    label: 'International',
+    href: '/packages/international/',
+    mega: {
+      columns: [
+        {
+          heading: 'International Tour Packages',
+          items: [
+            { icon: '🏝️', label: 'Bali, Nusa Penida & Gili 7D/6N', sub: 'Beaches · Scuba · Party · ATV · from $530/person', href: '/packages/bali-7d6n-party-escape/', badge: 'New' },
+            { icon: '🌴', label: 'More International Destinations', sub: 'Thailand · Dubai · Singapore — coming soon', href: '/packages/international/', badge: 'Coming Soon' },
+          ],
+        },
+        {
+          heading: 'Plan Your India Trip',
+          items: [
+            { icon: '🗺️', label: 'India Tour from UK / USA / Australia', sub: 'Golden Triangle · Char Dham · Himalayan treks for global visitors', href: '/india-tour-from/', badge: 'Global' },
+            { icon: '🧘', label: 'Yoga TTC — All Locations', sub: 'Rishikesh · Bali · Goa — Yoga Alliance certified', href: '/yoga/' },
+            { icon: '🏔️', label: 'Himalayan Treks for Internationals', sub: 'Kedarkantha · Valley of Flowers · Har Ki Dun', href: '/packages/himalayan-treks/' },
+            { icon: '📋', label: 'India Visa Guide', sub: 'e-Visa process · tourist visa · eligibility check', href: '/blog/india-visa-guide-international-tourists/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/mountains1.webp',
+        badge: '🏝️ New International',
+        title: 'Bali, Nusa Penida & Gili T',
+        price: 'From $530 / person · 7D 6N',
+        href: '/packages/bali-7d6n-party-escape/',
+        waText: 'Namaste! I want to enquire about the Bali 7D6N package',
       },
     },
   },
@@ -292,7 +328,6 @@ export default function Header() {
                   </Link>
                 )
               )}
-              <a href="tel:+919873897652" className="nav-phone">📞 +91 98738 97652</a>
               <WaLink href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20a%20tour%20package"
                 className="nav-cta" target="_blank" rel="noopener noreferrer"
                 label="nav_cta">
@@ -424,6 +459,9 @@ export default function Header() {
                 onClick={closeAll}>
                 WhatsApp Us
               </WaLink>
+            </div>
+            <div style={{ padding: '12px 16px 4px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
+              <InstallAppButton style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, fontWeight: 600 }} />
             </div>
           </div>
         </div>
