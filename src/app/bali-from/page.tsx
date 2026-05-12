@@ -43,17 +43,10 @@ const SCHEMA = {
 
 const REGIONS = [
   { label: 'North & NCR', states: ['Delhi', 'Delhi NCR', 'Punjab', 'Punjab/Haryana', 'Haryana', 'Chandigarh', 'Uttarakhand', 'Jammu & Kashmir', 'Himachal Pradesh', 'Ladakh'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan', 'Goa'] },
+  { label: 'West India',  states: ['Maharashtra', 'Gujarat', 'Rajasthan', 'Goa'] },
   { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala', 'Puducherry'] },
   { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh', 'Jharkhand', 'Odisha', 'Assam', 'Tripura', 'Meghalaya', 'Manipur'] },
 ];
-
-const T = {
-  teal: '#0891B2', tealDark: '#0E7490', tealLight: '#ECFEFF',
-  coral: '#F97316', dark: '#0F172A', text: '#1E293B',
-  muted: '#64748B', border: '#E2E8F0', white: '#FFFFFF',
-  bg: '#F8FAFC', bg2: '#F0FDFD',
-};
 
 export default function BaliFromIndex() {
   const cities = getAllCities();
@@ -62,114 +55,72 @@ export default function BaliFromIndex() {
   const remaining = cities.filter(c => !assignedSlugs.includes(c.slug));
 
   return (
-    <div style={{ background: T.white, color: T.text }}>
+    <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
 
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section style={{ position: 'relative', minHeight: '65vh', display: 'flex', alignItems: 'flex-end' }}>
+      <section className="city-hero" style={{ minHeight: '60vh' }}>
         <Image
           src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=85&auto=format&fit=crop"
-          alt="Bali rice terraces tour packages from India"
+          alt="Bali tour packages from India"
           fill priority sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center 40%' }}
         />
-        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(15,23,42,0.88) 0%, rgba(14,116,144,0.25) 55%, rgba(0,0,0,0) 100%)' }} />
-        <div className="container" style={{ position: 'relative', zIndex: 2, paddingBottom: 60 }}>
-          <nav style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', marginBottom: 20, display: 'flex', gap: 6, alignItems: 'center' }}>
-            <Link href="/" style={{ color: 'inherit', textDecoration: 'none' }}>Home</Link>
-            <span>›</span>
-            <Link href="/packages/bali-7d6n-party-escape/" style={{ color: 'inherit', textDecoration: 'none' }}>Bali Package</Link>
-            <span>›</span>
-            <span style={{ color: '#fff' }}>From Your City</span>
+        <div className="city-hero-overlay" />
+        <div className="container city-hero-inner">
+          <nav className="city-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link><span>›</span>
+            <Link href="/packages/bali-7d6n-party-escape/">Bali Package</Link><span>›</span>
+            <span>From Your City</span>
           </nav>
-
-          {/* Tag strip */}
-          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 18 }}>
-            {['🏝️ Bali · Nusa Penida · Gili T', '7D / 6N', '300+ cities covered'].map(b => (
-              <span key={b} style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(6px)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', borderRadius: 20, padding: '4px 12px', fontSize: 12, fontWeight: 600 }}>{b}</span>
-            ))}
-          </div>
-
-          <h1 style={{ fontSize: 'clamp(30px,5vw,56px)', fontWeight: 800, color: '#fff', margin: '0 0 14px', lineHeight: 1.1, textShadow: '0 2px 16px rgba(0,0,0,0.4)' }}>
+          <h1 className="city-hero-h1">
             Bali Tour Package<br />
-            <span style={{ color: '#FCD34D' }}>from Your City</span>
+            <span className="city-name-gold">from Your City</span>
           </h1>
-          <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.85)', margin: '0 0 30px', maxWidth: 540, lineHeight: 1.6 }}>
-            7 Days · 6 Nights · Scuba Diving · Nusa Penida · Gili T Nightlife · ATV Ride · Parasailing<br />
-            <strong style={{ color: '#FCD34D' }}>All-inclusive from $530 / person · Min 2 Pax</strong>
+          <p className="city-hero-sub">
+            7 Days · 6 Nights · Nusa Penida · Gili Trawangan · Scuba Diving · ATV · Parasailing 🏝️<br />
+            <strong>Pick your departure city · All activities included · From $530 / person</strong>
           </p>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
-              target="_blank" rel="noopener noreferrer"
-              style={{ background: '#25D366', color: '#fff', padding: '14px 28px', borderRadius: 50, fontWeight: 700, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8, boxShadow: '0 4px 20px rgba(37,211,102,0.35)' }}>
-              📲 WhatsApp for Departure Quote
-            </a>
-            <Link href="/itinerary/bali-7d6n-party-escape/"
-              style={{ background: 'rgba(255,255,255,0.12)', border: '2px solid rgba(255,255,255,0.35)', color: '#fff', padding: '14px 28px', borderRadius: 50, fontWeight: 600, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-              🖨️ View Itinerary PDF
-            </Link>
-          </div>
+          <a
+            href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
+            className="btn-gold-hero"
+            target="_blank" rel="noopener noreferrer"
+          >
+            📲 WhatsApp for Departure Quote
+          </a>
         </div>
       </section>
 
       {/* ── HOOK BAR ─────────────────────────────────────── */}
-      <div style={{ background: T.teal, color: '#fff', padding: '14px 0' }}>
+      <section className="city-hook">
         <div className="container">
-          <p style={{ margin: 0, fontSize: 14, textAlign: 'center' }}>
-            🏝️ Every city has different flight routes, fares &amp; layovers to Bali — pick yours for a city-specific guide &amp; WhatsApp quote
+          <p className="city-hook-text">
+            🏝️ Every city has different flight routes, fares &amp; layovers to Bali.
+            Pick your city below for exact flight info &amp; a pre-filled WhatsApp quote.
           </p>
-        </div>
-      </div>
-
-      {/* ── TRUST BAR ────────────────────────────────────── */}
-      <section style={{ background: T.bg2, padding: '32px 0', borderBottom: `1px solid ${T.border}` }}>
-        <div className="container">
-          <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}>
-            {[
-              { icon: '🏝️', label: 'Destinations', value: '3 Islands' },
-              { icon: '🤿', label: 'Activities', value: 'Scuba · ATV · Parasailing' },
-              { icon: '💰', label: 'Starting From', value: '$530 / person' },
-              { icon: '🗓️', label: 'Duration', value: '7 Days 6 Nights' },
-              { icon: '👥', label: 'Group Size', value: 'Min 2 Pax' },
-              { icon: '✈️', label: 'Cities Covered', value: `${cities.length}+` },
-            ].map(s => (
-              <div key={s.label} style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: 22 }}>{s.icon}</div>
-                <div style={{ fontSize: 11, color: T.teal, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{s.label}</div>
-                <div style={{ fontSize: 14, fontWeight: 700, color: T.dark }}>{s.value}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* ── CITY GRID ────────────────────────────────────── */}
-      <section style={{ background: T.white, padding: '56px 0' }}>
+      <section className="city-section">
         <div className="container">
-          <div style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 'clamp(22px,3vw,32px)', fontWeight: 800, color: T.dark, margin: '0 0 8px' }}>
-              Choose Your <span style={{ color: T.teal }}>Departure City</span>
-            </h2>
-            <p style={{ color: T.muted, margin: 0, fontSize: 15 }}>
-              {cities.length} cities covered. Click your city for flight routes, fares &amp; a personalised WhatsApp quote.
-            </p>
-          </div>
+          <h2 className="section-title-left">Choose Your <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Departure City</em></h2>
+          <p className="section-sub-left">
+            {cities.length} cities covered. Click your city for flight routes, fares &amp; a personalised WhatsApp quote.
+          </p>
 
           {[...grouped, ...(remaining.length > 0 ? [{ label: 'Other Cities', cities: remaining }] : [])].map(group =>
             group.cities.length > 0 ? (
-              <div key={group.label} style={{ marginBottom: 40 }}>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: T.teal, margin: '0 0 14px', paddingBottom: 8, borderBottom: `2px solid ${T.tealLight}` }}>
-                  {group.label}
-                </h3>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))', gap: 10 }}>
+              <div key={group.label} className="cdf-region">
+                <h3 className="cdf-region-title">{group.label}</h3>
+                <div className="cdf-city-grid">
                   {group.cities.map(city => (
-                    <Link key={city.slug} href={`/bali-from/${city.slug}/`}
-                      style={{ background: T.bg, border: `1px solid ${T.border}`, borderRadius: 12, padding: '14px 16px', textDecoration: 'none', display: 'block', transition: 'all .18s' }}
-                      className="bali-city-card">
-                      <div style={{ fontWeight: 700, color: T.dark, fontSize: 14, marginBottom: 3 }}>{city.name}</div>
-                      <div style={{ fontSize: 11, color: T.muted, marginBottom: 6 }}>{city.state}</div>
-                      <div style={{ fontSize: 11, color: T.teal, fontWeight: 600 }}>✈️ Fly via SIN / KUL</div>
-                      <div style={{ fontSize: 11, color: T.coral, fontWeight: 600, marginTop: 4 }}>View flights →</div>
+                    <Link key={city.slug} href={`/bali-from/${city.slug}/`} className="cdf-city-card">
+                      <span className="cdf-city-name">{city.name}</span>
+                      <span className="cdf-city-state">{city.state}</span>
+                      <span className="cdf-city-time">✈️ Fly via SIN / KUL</span>
+                      <span className="cdf-city-mode">🏝️ Bali in {city.total_time}</span>
+                      <span className="cdf-city-arrow">→</span>
                     </Link>
                   ))}
                 </div>
@@ -180,28 +131,24 @@ export default function BaliFromIndex() {
       </section>
 
       {/* ── WHAT'S INCLUDED ──────────────────────────────── */}
-      <section style={{ background: T.bg, padding: '56px 0' }}>
+      <section className="city-section city-section-dark">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontSize: 'clamp(22px,3vw,32px)', fontWeight: 800, color: T.dark, margin: '0 0 8px' }}>
-              What Every Package <span style={{ color: T.teal }}>Includes</span>
-            </h2>
-            <p style={{ color: T.muted, margin: 0 }}>Same activities regardless of your departure city</p>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))', gap: 16, maxWidth: 960, margin: '0 auto' }}>
+          <h2 className="section-title-left light">What Every Package <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Includes</em></h2>
+          <p className="section-sub-left light">Same activities regardless of your departure city.</p>
+          <div className="cdf-includes-grid">
             {[
-              { icon: '🏨', title: '6 Nights Accommodation + Breakfast', desc: 'Akmani Legian (2N) · Mad Monkey Hostel Gili T (2N) · Evitel Ubud or Pool Villa (2N)' },
-              { icon: '🤿', title: 'Scuba Diving — Gili Trawangan', desc: 'Certified open-water dive for 2 pax at Gili T — one of SE Asia\'s best dive spots' },
-              { icon: '🏍️', title: 'ATV Ride in Bali', desc: 'Through rice paddies and jungle terrain — thrilling 2-person ATV adventure included' },
-              { icon: '🏝️', title: 'Nusa Penida West Tour', desc: 'Kelingking Beach · Broken Beach · Angel\'s Billabong · Crystal Bay — all by speed boat' },
-              { icon: '🪂', title: 'Parasailing Experience', desc: 'Pandawa or Melasti beach — soar above the Indian Ocean with the Bali coast below' },
-              { icon: '🚤', title: 'All Inter-Island Speed Boats', desc: 'Bali → Nusa Penida → Gili Trawangan → Bali + private AC vehicle throughout' },
+              { icon: '🏨', title: '6 Nights Accommodation + Breakfast', desc: 'Akmani Legian (2N) · Mad Monkey Hostel Gili T (2N) · Evitel Ubud or Private Pool Villa (2N)' },
+              { icon: '🤿', title: 'Scuba Diving — Gili Trawangan',       desc: 'Certified open-water dive for 2 pax at Gili T — crystal clear waters, vibrant marine life' },
+              { icon: '🏍️', title: 'ATV Ride in Bali',                    desc: 'Through rice paddies and jungle terrain — 2-person ATV adventure included in package price' },
+              { icon: '🏝️', title: 'Nusa Penida West Tour',               desc: 'Kelingking Beach · Broken Beach · Angel\'s Billabong · Crystal Bay — all by speed boat' },
+              { icon: '🪂', title: 'Parasailing Experience',              desc: 'Pandawa or Melasti beach parasailing — soar above the Bali coastline, included in package' },
+              { icon: '🚤', title: 'All Inter-Island Speed Boats',        desc: 'Bali → Nusa Penida → Gili T → Bali + private AC vehicle with driver throughout' },
             ].map(item => (
-              <div key={item.title} style={{ background: T.white, border: `1px solid ${T.border}`, borderRadius: 14, padding: '22px 20px', display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                <span style={{ fontSize: 30, flexShrink: 0 }}>{item.icon}</span>
+              <div key={item.title} className="cdf-include-card">
+                <span className="cdf-include-icon">{item.icon}</span>
                 <div>
-                  <div style={{ fontWeight: 700, color: T.dark, fontSize: 14, marginBottom: 6 }}>{item.title}</div>
-                  <div style={{ fontSize: 13, color: T.muted, lineHeight: 1.5 }}>{item.desc}</div>
+                  <div className="cdf-include-title">{item.title}</div>
+                  <div className="cdf-include-desc">{item.desc}</div>
                 </div>
               </div>
             ))}
@@ -210,28 +157,21 @@ export default function BaliFromIndex() {
       </section>
 
       {/* ── HOW IT WORKS ─────────────────────────────────── */}
-      <section style={{ background: T.white, padding: '56px 0' }}>
+      <section className="city-section">
         <div className="container">
-          <div style={{ textAlign: 'center', marginBottom: 40 }}>
-            <h2 style={{ fontSize: 'clamp(22px,3vw,32px)', fontWeight: 800, color: T.dark, margin: '0 0 8px' }}>
-              How <span style={{ color: T.teal }}>Booking Works</span>
-            </h2>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 20, maxWidth: 960, margin: '0 auto' }}>
+          <h2 className="section-title-left">How <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Booking Works</em></h2>
+          <div className="cdf-steps">
             {[
-              { step: '01', icon: '🌍', title: 'Pick Your City', desc: 'Click your departure city to see flight routes, fares, and a personalised Bali itinerary.' },
-              { step: '02', icon: '💬', title: 'WhatsApp Us', desc: 'Each city page has a pre-filled WhatsApp link. Our team responds within 30–60 minutes.' },
-              { step: '03', icon: '📅', title: 'Lock Your Dates', desc: 'Confirm travel dates, group size (min 2), and hotel option — standard or pool villa.' },
-              { step: '04', icon: '✈️', title: 'Book & Fly', desc: 'Pay advance to confirm. We handle all hotels, boats, ATV, scuba & activities.' },
+              { step: '01', title: 'Pick Your City',    desc: 'Click your departure city above to see exact flight routes, fares, and a city-specific Bali itinerary.' },
+              { step: '02', title: 'WhatsApp Us',       desc: 'Each city page has a pre-filled WhatsApp link. Our Bali team responds within 30–60 minutes.' },
+              { step: '03', title: 'Lock Your Dates',   desc: 'Confirm travel dates, group size (min 2), and hotel preference — standard or private pool villa.' },
+              { step: '04', title: 'Book & Fly',        desc: 'Pay advance to confirm. We handle all hotels, speed boats, ATV, scuba &amp; activities. You just fly.' },
             ].map(s => (
-              <div key={s.step} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                <div style={{ width: 48, height: 48, borderRadius: '50%', background: T.tealLight, border: `2px solid ${T.teal}`, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 18, flexShrink: 0 }}>
-                  {s.icon}
-                </div>
+              <div key={s.step} className="cdf-step">
+                <div className="cdf-step-num">{s.step}</div>
                 <div>
-                  <div style={{ fontSize: 11, fontWeight: 700, color: T.teal, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Step {s.step}</div>
-                  <div style={{ fontWeight: 700, color: T.dark, fontSize: 15, marginBottom: 6 }}>{s.title}</div>
-                  <div style={{ fontSize: 13, color: T.muted, lineHeight: 1.5 }}>{s.desc}</div>
+                  <div className="cdf-step-title">{s.title}</div>
+                  <div className="cdf-step-desc">{s.desc}</div>
                 </div>
               </div>
             ))}
@@ -240,36 +180,28 @@ export default function BaliFromIndex() {
       </section>
 
       {/* ── CTA STRIP ────────────────────────────────────── */}
-      <section style={{ background: `linear-gradient(135deg, ${T.tealDark} 0%, #164E63 50%, #1E3A5F 100%)`, padding: '60px 0' }}>
-        <div className="container" style={{ display: 'flex', alignItems: 'center', gap: 40, flexWrap: 'wrap', justifyContent: 'space-between' }}>
+      <section className="city-cta-strip">
+        <div className="container city-cta-inner">
           <div>
-            <h2 style={{ color: '#fff', fontSize: 'clamp(20px,3vw,28px)', fontWeight: 800, margin: '0 0 8px' }}>Ready to plan your Bali escape?</h2>
-            <p style={{ color: 'rgba(255,255,255,0.75)', margin: 0, fontSize: 14, maxWidth: 420 }}>
+            <p className="city-cta-headline">Ready to plan your Bali escape?</p>
+            <p className="city-cta-sub">
               WhatsApp for custom dates, group pricing &amp; combined flight + package quotes from your city.
             </p>
           </div>
-          <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-            <a href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
+          <div className="city-cta-btns">
+            <a
+              href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
+              className="btn-gold-lg"
               target="_blank" rel="noopener noreferrer"
-              style={{ background: '#25D366', color: '#fff', padding: '14px 28px', borderRadius: 50, fontWeight: 700, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            >
               📲 WhatsApp Us Now
             </a>
-            <a href="tel:+6282111759727"
-              style={{ background: 'rgba(255,255,255,0.12)', border: '2px solid rgba(255,255,255,0.35)', color: '#fff', padding: '14px 28px', borderRadius: 50, fontWeight: 600, fontSize: 15, textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <a href="tel:+6282111759727" className="btn-outline-lg">
               📞 +62 821-1175-9727
             </a>
           </div>
         </div>
       </section>
-
-      <style>{`
-        .bali-city-card:hover {
-          background: ${T.tealLight} !important;
-          border-color: ${T.teal} !important;
-          transform: translateY(-2px);
-          box-shadow: 0 4px 16px rgba(8,145,178,0.12);
-        }
-      `}</style>
-    </div>
+    </>
   );
 }
