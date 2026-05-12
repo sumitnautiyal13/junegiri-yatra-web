@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
 import WaLink from '@/components/WaLink';
@@ -88,6 +89,34 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
           { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com${config.routeBase}${city.slug}/` },
         ],
       },
+      {
+        '@type': 'HowTo',
+        name: `How to Book ${config.destination} from ${city.name}`,
+        description: `Step-by-step guide to booking an all-inclusive ${config.destination} package from ${city.name} with Junegiri Yatra.`,
+        totalTime: 'PT30M',
+        estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: `${basePrice}` },
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'WhatsApp Your Travel Dates',
+            text: `Send a WhatsApp to +91 98738 97652 with your travel dates, group size, and departure from ${city.name}. Our team responds within 60 minutes.`,
+            url: `https://wa.me/919873897652?text=${encodeURIComponent(config.waMessage)}`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Receive Your Custom Itinerary',
+            text: `Get an all-inclusive ${config.destination} itinerary with transparent pricing — hotel, meals, transport, guide, and all permits. No hidden costs, no booking fee.`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Confirm With 30% Advance',
+            text: `Pay 30% advance to lock your dates. We handle all arrangements including your ${city.name} departure advice, Haridwar transfers, and on-ground logistics throughout the trip.`,
+          },
+        ],
+      },
     ],
   };
 
@@ -95,8 +124,9 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* HERO */}
-      <section className="city-hero" style={{ backgroundImage: `url('${config.heroImage}')` }}>
+      {/* HERO — next/image fill+priority for LCP */}
+      <section className="city-hero">
+        <Image src={config.heroImage} alt={config.destination} fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
@@ -176,8 +206,8 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
               </div>
               <table className="route-table">
                 <tbody>
-                  <tr><td>Distance</td><td>{city.distance_km.toLocaleString('en-IN')} km</td></tr>
-                  <tr><td>Drive time</td><td>~{city.road_hours} hrs</td></tr>
+                  <tr><td>Distance</td><td>{city.distance_km != null ? city.distance_km.toLocaleString('en-IN') + ' km' : 'N/A (fly to Delhi)'}</td></tr>
+                  <tr><td>Drive time</td><td>{city.road_hours && city.road_hours < 9999 ? `~${city.road_hours} hrs` : 'Not applicable'}</td></tr>
                   <tr><td>Via</td><td>NH-58 / NH-334</td></tr>
                 </tbody>
               </table>
@@ -247,12 +277,53 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
                     <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                   </svg>
                 </button>
-                {openFaq === i && <div className="faq-a"><p>{f.a}</p></div>}
+                <div className="faq-a"><p>{f.a}</p></div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* ALSO EXPLORE FROM THIS CITY — Cross-destination internal links */}
+      {(() => {
+        const ALL_DESTINATIONS = [
+          { slug: 'char-dham', label: 'Char Dham Yatra', route: '/char-dham-from/', icon: '🛕', price: '₹19,800', tag: '9N/10D' },
+          { slug: 'kedarnath', label: 'Kedarnath Yatra', route: '/kedarnath-from/', icon: '⛰️', price: '₹8,500', tag: '3N/4D' },
+          { slug: 'kedarnath-helicopter', label: 'Kedarnath Helicopter', route: '/kedarnath-helicopter-from/', icon: '🚁', price: '₹14,500', tag: '2N/3D' },
+          { slug: 'badrinath', label: 'Badrinath Yatra', route: '/badrinath-from/', icon: '🙏', price: '₹6,500', tag: '2N/3D' },
+          { slug: 'do-dham', label: 'Do Dham Yatra', route: '/do-dham-from/', icon: '🕉️', price: '₹13,500', tag: '5N/6D' },
+          { slug: 'rishikesh', label: 'Rishikesh Adventure', route: '/rishikesh-from/', icon: '🚣', price: '₹5,500', tag: '2N/3D' },
+          { slug: 'valley-of-flowers', label: 'Valley of Flowers', route: '/valley-of-flowers-from/', icon: '🌸', price: '₹8,500', tag: '4N/5D' },
+          { slug: 'mussoorie', label: 'Mussoorie Tour', route: '/mussoorie-from/', icon: '🏔️', price: '₹5,500', tag: '2N/3D' },
+          { slug: 'nainital', label: 'Nainital Tour', route: '/nainital-from/', icon: '🚣', price: '₹7,500', tag: '3N/4D' },
+          { slug: 'varanasi', label: 'Varanasi Tour', route: '/varanasi-from/', icon: '🪔', price: '₹7,500', tag: '2N/3D' },
+          { slug: 'mathura-vrindavan', label: 'Mathura Vrindavan', route: '/mathura-vrindavan-from/', icon: '🪈', price: '₹6,500', tag: '2N/3D' },
+          { slug: 'ayodhya', label: 'Ayodhya Ram Mandir', route: '/ayodhya-from/', icon: '🕯️', price: '₹5,500', tag: '1N/2D' },
+          { slug: 'golden-triangle', label: 'Golden Triangle Tour', route: '/golden-triangle-from/', icon: '🏛️', price: '₹18,000', tag: '5N/6D' },
+          { slug: 'india-tour', label: 'All India Packages', route: '/india-tour-from/', icon: '🇮🇳', price: '₹8,500', tag: 'Custom' },
+        ];
+        const others = ALL_DESTINATIONS.filter((d) => d.slug !== config.destinationSlug);
+        return (
+          <section className="city-section">
+            <div className="container">
+              <h2 className="section-title-left">Also Explore from {city.name}</h2>
+              <p className="section-sub-left">More Uttarakhand & India experiences — same trusted team, same Haridwar base.</p>
+              <div className="cross-dest-grid">
+                {others.map((dest) => (
+                  <Link key={dest.slug} href={`${dest.route}${city.slug}/`} className="cross-dest-card">
+                    <span className="cross-dest-icon">{dest.icon}</span>
+                    <div className="cross-dest-info">
+                      <span className="cross-dest-name">{dest.label}</span>
+                      <span className="cross-dest-meta">{dest.tag} · from {dest.price}/person</span>
+                    </div>
+                    <span className="cross-dest-arrow">→</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* CTA STRIP */}
       <section className="city-cta-strip">

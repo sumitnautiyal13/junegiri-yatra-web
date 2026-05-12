@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pkg = getPackageBySlug(slug);
   const heroImage = pkg?.hero_image
     ? `https://junegiriyatra.com${pkg.hero_image}`
-    : 'https://junegiriyatra.com/images/trek_himalaya.jpg';
+    : 'https://junegiriyatra.com/images/trek_himalaya.webp';
   return {
     title: `${monthData.title} | Junegiri Yatra`,
     description: monthData.meta_description,

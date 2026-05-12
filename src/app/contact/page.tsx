@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Contact Junegiri Yatra — WhatsApp +91 98738 97652 | Haridwar Tour Operator',
+  title: 'Contact Junegiri Yatra | +91 98738 97652 | Haridwar',
   description:
     'Contact Junegiri Yatra — WhatsApp +91 98738 97652, email info@junegiriyatra.com. Haridwar-based India tour operator. We respond within 60 minutes. Book Char Dham Yatra, Himalayan treks & India tours.',
   alternates: { canonical: 'https://junegiriyatra.com/contact/' },
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     description:
       'Get in touch with our Haridwar team for Char Dham Yatra, Himalayan treks, and India tours. Reply guaranteed within 60 minutes.',
     url: 'https://junegiriyatra.com/contact/',
-    images: [{ url: 'https://junegiriyatra.com/images/mountains1.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://junegiriyatra.com/images/mountains1.webp', width: 1200, height: 630 }],
   },
 };
 
@@ -119,10 +120,8 @@ export default function ContactPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{ backgroundImage: "url('/images/mountains1.jpg')", minHeight: '45vh' }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/mountains1.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

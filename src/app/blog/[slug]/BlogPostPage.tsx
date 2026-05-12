@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import blogData from '../../../../data/blog-posts.json';
 
@@ -117,11 +118,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
         </div>
       </nav>
 
-      {/* Hero */}
-      <section
-        className="bp-hero"
-        style={{ backgroundImage: `url(${post.hero_image})` }}
-      >
+      {/* Hero — next/image for LCP */}
+      <section className="bp-hero">
+        <Image src={post.hero_image} alt={post.title} fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="bp-hero-overlay">
           <div className="bp-container bp-hero-content">
             <span className="bp-category-badge">{post.category}</span>
@@ -197,7 +196,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           <h2 className="bp-section-heading">Frequently Asked Questions</h2>
           <div className="bp-faq-list">
             {post.faq.map((item, i) => (
-              <div key={i} className="bp-faq-item">
+              <div key={i} className={`bp-faq-item${openFaq === i ? ' bp-faq-open' : ''}`}>
                 <button
                   className={`bp-faq-question${openFaq === i ? ' bp-faq-question--open' : ''}`}
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -206,11 +205,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                   <span>{item.q}</span>
                   <span className="bp-faq-icon">{openFaq === i ? '−' : '+'}</span>
                 </button>
-                {openFaq === i && (
-                  <div className="bp-faq-answer">
-                    <p>{item.a}</p>
-                  </div>
-                )}
+                <div className="bp-faq-answer">
+                  <p>{item.a}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -300,9 +297,8 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
         /* ---- Hero ---- */
         .bp-hero {
           min-height: 420px;
-          background-size: cover;
-          background-position: center;
           position: relative;
+          overflow: hidden;
           display: flex;
           align-items: flex-end;
         }
@@ -556,8 +552,16 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           color: #f59e0b;
         }
         .bp-faq-answer {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height .3s ease, padding .25s ease;
+          padding: 0 20px;
+          border-top: 0px solid #f3f4f6;
+        }
+        .bp-faq-item.bp-faq-open .bp-faq-answer {
+          max-height: 600px;
           padding: 0 20px 18px;
-          border-top: 1px solid #f3f4f6;
+          border-top-width: 1px;
         }
         .bp-faq-answer p {
           margin: 12px 0 0;

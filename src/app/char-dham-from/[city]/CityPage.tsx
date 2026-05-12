@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
 
@@ -51,8 +52,8 @@ export default function CityPage({ city, charDhamPkg }: Props) {
           price: basePrice,
           priceCurrency: 'INR',
           availability: 'https://schema.org/InStock',
-          validFrom: '2025-04-01',
-          validThrough: '2025-11-15',
+          validFrom: '2026-04-01',
+          validThrough: '2026-11-15',
           seller: {
             '@type': 'TravelAgency',
             name: 'Junegiri Yatra',
@@ -83,12 +84,40 @@ export default function CityPage({ city, charDhamPkg }: Props) {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Char Dham Yatra', item: 'https://junegiriyatra.com/packages/' },
+          { '@type': 'ListItem', position: 2, name: 'Char Dham Yatra', item: 'https://junegiriyatra.com/char-dham-from/' },
           {
             '@type': 'ListItem',
             position: 3,
             name: `From ${city.name}`,
             item: `https://junegiriyatra.com/char-dham-from/${city.slug}/`,
+          },
+        ],
+      },
+      {
+        '@type': 'HowTo',
+        name: `How to Book Char Dham Yatra from ${city.name}`,
+        description: `Step-by-step guide to booking an all-inclusive Char Dham Yatra from ${city.name} with Junegiri Yatra.`,
+        totalTime: 'PT30M',
+        estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: `${basePrice}` },
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'WhatsApp Your Travel Dates',
+            text: `Send a WhatsApp message to +91 98738 97652 with your preferred travel dates, group size, and departure city (${city.name}). Our Haridwar team responds within 60 minutes.`,
+            url: `https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20book%20Char%20Dham%20Yatra%20from%20${encodeURIComponent(city.name)}`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Receive Your Custom Itinerary',
+            text: 'Get a fully customised Char Dham Yatra itinerary with transparent all-inclusive pricing — hotel, meals, transport, guide, and all permits. No hidden costs. No booking fee.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Confirm With 30% Advance',
+            text: `Pay 30% advance to confirm your seats. We handle all arrangements from your ${city.name} departure to the final drop — flights/train advice, Haridwar hotel, all 4 dhams, and return transfer.`,
           },
         ],
       },
@@ -102,11 +131,9 @@ export default function CityPage({ city, charDhamPkg }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* ── HERO ─────────────────────────────────────────── */}
-      <section
-        className="city-hero"
-        style={{ backgroundImage: `url('${city.hero_image}')` }}
-      >
+      {/* ── HERO — next/image fill+priority for LCP ─────── */}
+      <section className="city-hero">
+        <Image src={city.hero_image} alt="Char Dham Yatra" fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
@@ -201,8 +228,8 @@ export default function CityPage({ city, charDhamPkg }: Props) {
               </div>
               <table className="route-table">
                 <tbody>
-                  <tr><td>Distance</td><td>{city.distance_km.toLocaleString('en-IN')} km</td></tr>
-                  <tr><td>Drive time</td><td>~{city.road_hours} hours</td></tr>
+                  <tr><td>Distance</td><td>{city.distance_km != null ? city.distance_km.toLocaleString('en-IN') + ' km' : 'N/A (fly to Delhi)'}</td></tr>
+                  <tr><td>Drive time</td><td>{city.road_hours && city.road_hours < 9999 ? `~${city.road_hours} hours` : 'Not applicable'}</td></tr>
                   <tr><td>Via</td><td>NH-58 / NH-334</td></tr>
                   <tr><td>Best for</td><td>Groups with private car</td></tr>
                 </tbody>
@@ -323,12 +350,44 @@ export default function CityPage({ city, charDhamPkg }: Props) {
                     />
                   </svg>
                 </button>
-                {openFaq === i && (
-                  <div className="faq-a">
-                    <p>{f.a}</p>
-                  </div>
-                )}
+                <div className="faq-a">
+                  <p>{f.a}</p>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── ALSO EXPLORE FROM THIS CITY ──────────────────── */}
+      <section className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">Also Explore from {city.name}</h2>
+          <p className="section-sub-left">More pilgrimages & adventures from {city.name} — same Haridwar-based team.</p>
+          <div className="cross-dest-grid">
+            {[
+              { slug: 'kedarnath', label: 'Kedarnath Yatra', route: '/kedarnath-from/', icon: '⛰️', price: '₹8,500', tag: '3N/4D' },
+              { slug: 'kedarnath-helicopter', label: 'Kedarnath Helicopter', route: '/kedarnath-helicopter-from/', icon: '🚁', price: '₹14,500', tag: '2N/3D' },
+              { slug: 'badrinath', label: 'Badrinath Yatra', route: '/badrinath-from/', icon: '🙏', price: '₹6,500', tag: '2N/3D' },
+              { slug: 'do-dham', label: 'Do Dham Yatra', route: '/do-dham-from/', icon: '🕉️', price: '₹13,500', tag: '5N/6D' },
+              { slug: 'rishikesh', label: 'Rishikesh Adventure', route: '/rishikesh-from/', icon: '🚣', price: '₹5,500', tag: '2N/3D' },
+              { slug: 'valley-of-flowers', label: 'Valley of Flowers', route: '/valley-of-flowers-from/', icon: '🌸', price: '₹8,500', tag: '4N/5D' },
+              { slug: 'mussoorie', label: 'Mussoorie Tour', route: '/mussoorie-from/', icon: '🏔️', price: '₹5,500', tag: '2N/3D' },
+              { slug: 'nainital', label: 'Nainital Tour', route: '/nainital-from/', icon: '🚣', price: '₹7,500', tag: '3N/4D' },
+              { slug: 'varanasi', label: 'Varanasi Tour', route: '/varanasi-from/', icon: '🪔', price: '₹7,500', tag: '2N/3D' },
+              { slug: 'mathura-vrindavan', label: 'Mathura Vrindavan', route: '/mathura-vrindavan-from/', icon: '🪈', price: '₹6,500', tag: '2N/3D' },
+              { slug: 'ayodhya', label: 'Ayodhya Ram Mandir', route: '/ayodhya-from/', icon: '🕯️', price: '₹5,500', tag: '1N/2D' },
+              { slug: 'golden-triangle', label: 'Golden Triangle Tour', route: '/golden-triangle-from/', icon: '🏛️', price: '₹18,000', tag: '5N/6D' },
+              { slug: 'india-tour', label: 'All India Packages', route: '/india-tour-from/', icon: '🇮🇳', price: '₹8,500', tag: 'Custom' },
+            ].map((dest) => (
+              <Link key={dest.slug} href={`${dest.route}${city.slug}/`} className="cross-dest-card">
+                <span className="cross-dest-icon">{dest.icon}</span>
+                <div className="cross-dest-info">
+                  <span className="cross-dest-name">{dest.label}</span>
+                  <span className="cross-dest-meta">{dest.tag} · from {dest.price}/person</span>
+                </div>
+                <span className="cross-dest-arrow">→</span>
+              </Link>
             ))}
           </div>
         </div>

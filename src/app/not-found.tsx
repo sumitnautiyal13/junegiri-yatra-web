@@ -1,11 +1,16 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Page Not Found | Junegiri Yatra',
+  robots: { index: false, follow: false },
+};
 
 export default function NotFound() {
   return (
-    <section
-      className="city-hero"
-      style={{ backgroundImage: "url('/images/mountains1.jpg')", minHeight: '80vh' }}
-    >
+    <section className="city-hero">
+        <Image src="/images/mountains1.webp" alt="Page not found" fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
       <div className="city-hero-overlay" />
       <div className="container city-hero-inner" style={{ textAlign: 'center' }}>
         <p style={{ fontSize: 80, margin: 0, lineHeight: 1 }}>🏔</p>

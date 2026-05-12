@@ -8,7 +8,7 @@ const MUSSOORIE_CONFIG: DestinationConfig = {
   destination: 'Mussoorie Tour',
   destinationSlug: 'mussoorie',
   routeBase: '/mussoorie-from/',
-  heroImage: '/images/mountains2.jpg',
+  heroImage: '/images/mountains2.webp',
   packageSlug: 'mussoorie-dehradun-3n-4d',
   basePrice: 5500,
   duration: '2 Nights / 3 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/mountains2.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/mountains2.webp' }],
       type: 'website',
     },
     alternates: {

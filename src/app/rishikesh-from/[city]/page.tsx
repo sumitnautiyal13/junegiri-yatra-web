@@ -8,7 +8,7 @@ const RISHIKESH_CONFIG: DestinationConfig = {
   destination: 'Rishikesh Adventure',
   destinationSlug: 'rishikesh',
   routeBase: '/rishikesh-from/',
-  heroImage: '/images/rishikesh_bridge.jpg',
+  heroImage: '/images/rishikesh_bridge.webp',
   packageSlug: 'rishikesh-adventure-pack-2n-3d',
   basePrice: 5500,
   duration: '2 Nights / 3 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/rishikesh_bridge.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/rishikesh_bridge.webp' }],
       type: 'website',
     },
     alternates: {

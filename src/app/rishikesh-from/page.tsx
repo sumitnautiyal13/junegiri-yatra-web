@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Rishikesh Trip from Your City 2026 | Junegiri Yatra',
-  description: 'Book Rishikesh adventure trip from any Indian city — rafting, bungee jumping, camping, kayaking. Haridwar-based operator, all-inclusive from ₹2,500/person. WhatsApp for departure quotes.',
+  description: 'Book Rishikesh adventure from any city — rafting, bungee jumping, camping, kayaking. All-inclusive from ₹2,500/person. Haridwar-based operator. WhatsApp for quote.',
   keywords: 'rishikesh trip from mumbai, rishikesh adventure from bangalore, rishikesh rafting from delhi, rishikesh weekend getaway, rishikesh package india',
   alternates: { canonical: 'https://junegiriyatra.com/rishikesh-from/' },
   openGraph: {
     title: 'Rishikesh Trip from Your City 2026 | Junegiri Yatra',
-    description: 'All-inclusive Rishikesh adventure packages with rafting, bungee & camping from 20 Indian cities.',
-    images: [{ url: 'https://junegiriyatra.com/images/rishikesh_bridge.jpg' }],
+    description: 'All-inclusive Rishikesh adventure packages with rafting, bungee & camping from 100 Indian cities.',
+    images: [{ url: 'https://junegiriyatra.com/images/rishikesh_bridge.webp' }],
   },
 };
 
@@ -20,7 +21,7 @@ const SCHEMA = {
     {
       '@type': 'CollectionPage',
       name: 'Rishikesh Trip from Your City',
-      description: 'Rishikesh adventure packages with city-specific travel routes from 20 Indian departure cities.',
+      description: 'Rishikesh adventure packages with city-specific travel routes from 100 Indian departure cities.',
       url: 'https://junegiriyatra.com/rishikesh-from/',
       provider: {
         '@type': 'TravelAgency',
@@ -47,10 +48,10 @@ const SCHEMA = {
 
 // Group cities by region for better UX
 const REGIONS = [
-  { label: 'North & NCR', states: ['Delhi', 'Punjab', 'Haryana', 'Chandigarh', 'Uttarakhand'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan'] },
-  { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala'] },
-  { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh'] },
+  { label: "North \& NCR", states: ["Delhi", "Delhi NCR", "Punjab", "Punjab/Haryana", "Haryana", "Chandigarh", "Uttarakhand", "Jammu \& Kashmir", "Himachal Pradesh", "Ladakh"] },
+  { label: "West India", states: ["Maharashtra", "Gujarat", "Rajasthan", "Goa"] },
+  { label: "South India", states: ["Karnataka", "Tamil Nadu", "Andhra Pradesh", "Telangana", "Kerala", "Puducherry"] },
+  { label: "East \& Central", states: ["West Bengal", "Bihar", "Madhya Pradesh", "Chhattisgarh", "Uttar Pradesh", "Jharkhand", "Odisha", "Assam", "Tripura", "Meghalaya", "Manipur"] },
 ];
 
 export default function RishikeshFromIndex() {
@@ -74,13 +75,8 @@ export default function RishikeshFromIndex() {
       />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{
-          backgroundImage: "url('/images/rishikesh_bridge.jpg')",
-          minHeight: '55vh',
-        }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/rishikesh_bridge.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

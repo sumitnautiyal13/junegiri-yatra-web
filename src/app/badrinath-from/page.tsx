@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://junegiriyatra.com/badrinath-from/' },
   openGraph: {
     title: 'Badrinath Yatra from Your City | Junegiri Yatra',
-    description: 'All-inclusive Badrinath Yatra packages from 20 Indian cities. Lord Vishnu shrine, Mana Village & Vasudhara Falls.',
-    images: [{ url: 'https://junegiriyatra.com/images/badrinath_temple.jpg' }],
+    description: 'All-inclusive Badrinath Yatra packages from 100 Indian cities. Lord Vishnu shrine, Mana Village & Vasudhara Falls.',
+    images: [{ url: 'https://junegiriyatra.com/images/badrinath_temple.webp' }],
   },
 };
 
@@ -20,7 +21,7 @@ const SCHEMA = {
     {
       '@type': 'CollectionPage',
       name: 'Badrinath Yatra from Your City',
-      description: 'Badrinath Yatra packages with city-specific travel routes from 20 Indian departure cities.',
+      description: 'Badrinath Yatra packages with city-specific travel routes from 100 Indian departure cities.',
       url: 'https://junegiriyatra.com/badrinath-from/',
       provider: {
         '@type': 'TravelAgency',
@@ -47,10 +48,10 @@ const SCHEMA = {
 
 // Group cities by region for better UX
 const REGIONS = [
-  { label: 'North & NCR', states: ['Delhi', 'Punjab', 'Haryana', 'Chandigarh', 'Uttarakhand'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan'] },
-  { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala'] },
-  { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh'] },
+  { label: "North \& NCR", states: ["Delhi", "Delhi NCR", "Punjab", "Punjab/Haryana", "Haryana", "Chandigarh", "Uttarakhand", "Jammu \& Kashmir", "Himachal Pradesh", "Ladakh"] },
+  { label: "West India", states: ["Maharashtra", "Gujarat", "Rajasthan", "Goa"] },
+  { label: "South India", states: ["Karnataka", "Tamil Nadu", "Andhra Pradesh", "Telangana", "Kerala", "Puducherry"] },
+  { label: "East \& Central", states: ["West Bengal", "Bihar", "Madhya Pradesh", "Chhattisgarh", "Uttar Pradesh", "Jharkhand", "Odisha", "Assam", "Tripura", "Meghalaya", "Manipur"] },
 ];
 
 export default function BadrinathFromIndex() {
@@ -74,13 +75,8 @@ export default function BadrinathFromIndex() {
       />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{
-          backgroundImage: "url('/images/badrinath_temple.jpg')",
-          minHeight: '55vh',
-        }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/badrinath_temple.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

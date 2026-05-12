@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Junegiri Yatra — India Tour Packages | Char Dham Yatra, Himalayan Treks, Golden Triangle 2026',
+  title: 'Junegiri Yatra | Char Dham Yatra, Kedarnath & India Tours 2026',
   description:
     "India's trusted travel company since 2017 — Char Dham Yatra, Kedarnath, Valley of Flowers, Golden Triangle, Rishikesh adventures & Kerala tours. All-inclusive packages from Haridwar. Book on WhatsApp.",
   keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.jpg',
+        url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp',
         width: 1200,
         height: 630,
         alt: 'Kedarnath Temple — Junegiri Yatra',
@@ -162,6 +162,14 @@ const HOMEPAGE_SCHEMA = {
 export default function Page() {
   return (
     <>
+      {/* Preload hero image in SSR'd HTML — ensures browser fetches it immediately, before JS hydrates */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/kedarnath_temple_cover.webp"
+        fetchPriority="high"
+        type="image/webp"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(HOMEPAGE_SCHEMA) }}

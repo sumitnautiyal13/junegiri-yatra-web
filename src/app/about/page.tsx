@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Junegiri Yatra — Haridwar-Based India Tour Operator Since 2017',
+  title: 'About Junegiri Yatra | Haridwar Tour Operator Since 2017',
   description:
     'Junegiri Yatra is a Haridwar-based tour operator founded in 2017 specialising in Char Dham Yatra, Himalayan treks, Golden Triangle, and Rishikesh adventures. ATOI approved, Uttarakhand Tourism licensed.',
   alternates: { canonical: 'https://junegiriyatra.com/about/' },
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
     description:
       'Meet the team behind India\'s trusted travel company — 8 years of Himalayan expertise, 2,847+ happy travelers, Haridwar-based.',
     url: 'https://junegiriyatra.com/about/',
-    images: [{ url: 'https://junegiriyatra.com/images/mountains1.jpg', width: 1200, height: 630 }],
+    images: [{ url: 'https://junegiriyatra.com/images/mountains1.webp', width: 1200, height: 630 }],
   },
 };
 
@@ -93,7 +94,7 @@ const MILESTONES = [
   { year: '2022', event: 'International pricing launched. First UK and US group bookings.' },
   { year: '2023', event: 'Launched helicopter packages for Kedarnath and Char Dham.' },
   { year: '2024', event: 'Crossed 2,000 happy travellers. Added Braj Bhoomi Yatra and Rajasthan.' },
-  { year: '2025', event: 'Now 2,847+ travellers across 30+ countries. 306 SEO pages launched.' },
+  { year: '2026', event: 'Now 3,000+ travellers across 30+ countries. 1,028 SEO pages live at scale.' },
 ];
 
 export default function AboutPage() {
@@ -102,10 +103,8 @@ export default function AboutPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{ backgroundImage: "url('/images/mountains1.jpg')", minHeight: '50vh' }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/mountains1.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

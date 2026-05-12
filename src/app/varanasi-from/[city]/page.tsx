@@ -8,7 +8,7 @@ const VARANASI_CONFIG: DestinationConfig = {
   destination: 'Varanasi Spiritual Tour',
   destinationSlug: 'varanasi',
   routeBase: '/varanasi-from/',
-  heroImage: '/images/braj_varanasi.jpg',
+  heroImage: '/images/braj_varanasi.webp',
   packageSlug: 'varanasi-prayagraj-spiritual-3n-4d',
   basePrice: 7500,
   duration: '2 Nights / 3 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/braj_varanasi.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/braj_varanasi.webp' }],
       type: 'website',
     },
     alternates: {

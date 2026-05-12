@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Do Dham Yatra from Your City 2026 | Kedarnath + Badrinath | Junegiri Yatra',
+  title: 'Do Dham Yatra from Your City 2026 | Kedarnath + Badrinath',
   description: 'Book Do Dham Yatra (Kedarnath + Badrinath) from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Haridwar-based operator, all-inclusive 5N/6D from ₹13,500. WhatsApp for departure quotes.',
   keywords: 'do dham yatra from mumbai, do dham yatra from bangalore, kedarnath badrinath package, do dham yatra departure cities, kedarnath badrinath tour india',
   alternates: { canonical: 'https://junegiriyatra.com/do-dham-from/' },
   openGraph: {
     title: 'Do Dham Yatra from Your City | Kedarnath + Badrinath | Junegiri Yatra',
-    description: 'All-inclusive Do Dham Yatra packages from 20 Indian cities. Kedarnath Jyotirlinga + Badrinath Vishnu shrine in one trip.',
-    images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.jpg' }],
+    description: 'All-inclusive Do Dham Yatra packages from 100 Indian cities. Kedarnath Jyotirlinga + Badrinath Vishnu shrine in one trip.',
+    images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }],
   },
 };
 
@@ -20,7 +21,7 @@ const SCHEMA = {
     {
       '@type': 'CollectionPage',
       name: 'Do Dham Yatra from Your City',
-      description: 'Do Dham Yatra packages (Kedarnath + Badrinath) with city-specific travel routes from 20 Indian departure cities.',
+      description: 'Do Dham Yatra packages (Kedarnath + Badrinath) with city-specific travel routes from 100 Indian departure cities.',
       url: 'https://junegiriyatra.com/do-dham-from/',
       provider: {
         '@type': 'TravelAgency',
@@ -47,10 +48,10 @@ const SCHEMA = {
 
 // Group cities by region for better UX
 const REGIONS = [
-  { label: 'North & NCR', states: ['Delhi', 'Punjab', 'Haryana', 'Chandigarh', 'Uttarakhand'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan'] },
-  { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala'] },
-  { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh'] },
+  { label: "North \& NCR", states: ["Delhi", "Delhi NCR", "Punjab", "Punjab/Haryana", "Haryana", "Chandigarh", "Uttarakhand", "Jammu \& Kashmir", "Himachal Pradesh", "Ladakh"] },
+  { label: "West India", states: ["Maharashtra", "Gujarat", "Rajasthan", "Goa"] },
+  { label: "South India", states: ["Karnataka", "Tamil Nadu", "Andhra Pradesh", "Telangana", "Kerala", "Puducherry"] },
+  { label: "East \& Central", states: ["West Bengal", "Bihar", "Madhya Pradesh", "Chhattisgarh", "Uttar Pradesh", "Jharkhand", "Odisha", "Assam", "Tripura", "Meghalaya", "Manipur"] },
 ];
 
 export default function DoDhamFromIndex() {
@@ -74,13 +75,8 @@ export default function DoDhamFromIndex() {
       />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{
-          backgroundImage: "url('/images/kedarnath_temple_cover.jpg')",
-          minHeight: '55vh',
-        }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/kedarnath_temple_cover.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

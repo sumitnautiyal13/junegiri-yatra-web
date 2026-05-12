@@ -8,7 +8,7 @@ const BADRINATH_CONFIG_BASE: DestinationConfig = {
   destination: 'Badrinath Yatra',
   destinationSlug: 'badrinath',
   routeBase: '/badrinath-from/',
-  heroImage: '/images/badrinath_temple.jpg',
+  heroImage: '/images/badrinath_temple.webp',
   packageSlug: 'badrinath-yatra-2n-3d',
   basePrice: 6500,
   duration: '2 Nights / 3 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/badrinath_temple.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/badrinath_temple.webp' }],
       type: 'website',
     },
     alternates: {

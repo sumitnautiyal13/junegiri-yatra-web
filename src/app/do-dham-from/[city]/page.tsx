@@ -8,7 +8,7 @@ const DO_DHAM_CONFIG_BASE: DestinationConfig = {
   destination: 'Do Dham Yatra',
   destinationSlug: 'do-dham',
   routeBase: '/do-dham-from/',
-  heroImage: '/images/kedarnath_temple_cover.jpg',
+  heroImage: '/images/kedarnath_temple_cover.webp',
   packageSlug: 'do-dham-yatra-5n-6d',
   basePrice: 13500,
   duration: '5 Nights / 6 Days',
@@ -59,7 +59,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }],
       type: 'website',
     },
     alternates: {

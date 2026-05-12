@@ -153,7 +153,6 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
         <div className="container">
           <ol>
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/packages/">Packages</Link></li>
             <li><Link href={pkg.url}>{pkg.name}</Link></li>
             <li>{monthLabel}</li>
           </ol>

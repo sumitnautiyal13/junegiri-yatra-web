@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     description: `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ₹8,500. Haridwar-based operator. Helicopter option available. WhatsApp for quote.`,
     keywords: `kedarnath yatra from ${city.name.toLowerCase()}, kedarnath package from ${city.name.toLowerCase()}, kedarnath tour ${city.name.toLowerCase()}, kedarnath yatra booking ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/kedarnath-from/${city.slug}/` },
-    openGraph: { title: `Kedarnath Yatra from ${city.name}`, description: `All-inclusive Kedarnath package from ${city.name} — 3N/4D from ₹8,500.`, images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.jpg' }] },
+    openGraph: { title: `Kedarnath Yatra from ${city.name}`, description: `All-inclusive Kedarnath package from ${city.name} — 3N/4D from ₹8,500.`, images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }] },
   };
 }
 
@@ -25,7 +25,7 @@ const KEDARNATH_CONFIG: DestinationConfig = {
   destination: 'Kedarnath Yatra',
   destinationSlug: 'kedarnath',
   routeBase: '/kedarnath-from/',
-  heroImage: '/images/kedarnath_temple_cover.jpg',
+  heroImage: '/images/kedarnath_temple_cover.webp',
   packageSlug: 'kedarnath-yatra-3n-4d',
   basePrice: 8500,
   duration: '3 Nights / 4 Days',

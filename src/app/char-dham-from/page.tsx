@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Char Dham Yatra from Your City 2025 | Junegiri Yatra',
-  description: 'Book Char Dham Yatra from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Haridwar-based operator, all-inclusive from ₹19,800. WhatsApp for departure quotes.',
+  title: 'Char Dham Yatra from Your City 2026 | Junegiri Yatra',
+  description: 'Book Char Dham Yatra from any city — Mumbai, Bangalore, Delhi, Chennai, Hyderabad, Pune & 90+ more. All-inclusive from ₹19,800. Haridwar-based operator. WhatsApp now.',
   keywords: 'char dham yatra from mumbai, char dham yatra from bangalore, char dham yatra from chennai, char dham package from india, char dham yatra departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/char-dham-from/' },
   openGraph: {
     title: 'Char Dham Yatra from Your City | Junegiri Yatra',
-    description: 'All-inclusive Char Dham packages with flights & transfers from 20 Indian cities.',
-    images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.jpg' }],
+    description: 'All-inclusive Char Dham packages with flights & transfers from 100 Indian cities.',
+    images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }],
   },
 };
 
@@ -20,7 +21,7 @@ const SCHEMA = {
     {
       '@type': 'CollectionPage',
       name: 'Char Dham Yatra from Your City',
-      description: 'Char Dham Yatra packages with city-specific travel routes from 20 Indian departure cities.',
+      description: 'Char Dham Yatra packages with city-specific travel routes from 100 Indian departure cities.',
       url: 'https://junegiriyatra.com/char-dham-from/',
       provider: {
         '@type': 'TravelAgency',
@@ -47,10 +48,10 @@ const SCHEMA = {
 
 // Group cities by region for better UX
 const REGIONS = [
-  { label: 'North & NCR', states: ['Delhi', 'Punjab', 'Haryana', 'Chandigarh', 'Uttarakhand'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan'] },
-  { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala'] },
-  { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh'] },
+  { label: "North \& NCR", states: ["Delhi", "Delhi NCR", "Punjab", "Punjab/Haryana", "Haryana", "Chandigarh", "Uttarakhand", "Jammu \& Kashmir", "Himachal Pradesh", "Ladakh"] },
+  { label: "West India", states: ["Maharashtra", "Gujarat", "Rajasthan", "Goa"] },
+  { label: "South India", states: ["Karnataka", "Tamil Nadu", "Andhra Pradesh", "Telangana", "Kerala", "Puducherry"] },
+  { label: "East \& Central", states: ["West Bengal", "Bihar", "Madhya Pradesh", "Chhattisgarh", "Uttar Pradesh", "Jharkhand", "Odisha", "Assam", "Tripura", "Meghalaya", "Manipur"] },
 ];
 
 export default function CharDhamFromIndex() {
@@ -74,13 +75,8 @@ export default function CharDhamFromIndex() {
       />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{
-          backgroundImage: "url('/images/kedarnath_temple_cover.jpg')",
-          minHeight: '55vh',
-        }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/kedarnath_temple_cover.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

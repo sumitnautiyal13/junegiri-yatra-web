@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPackages } from '@/lib/data';
 import WaLink from '@/components/WaLink';
@@ -23,7 +24,7 @@ const JOURNEYS = [
     title: 'Char Dham Yatra',
     sub: 'Kedarnath · Badrinath · Gangotri · Yamunotri',
     url: '/packages/char-dham-yatra/',
-    img: '/images/kedarnath_temple_cover.jpg',
+    img: '/images/kedarnath_temple_cover.webp',
     color: '#C9923D',
   },
   {
@@ -31,7 +32,7 @@ const JOURNEYS = [
     title: 'Himalayan Treks',
     sub: 'Kedarkantha · Valley of Flowers · Hampta Pass · Kuari Pass',
     url: '/packages/char-dham-yatra/',
-    img: '/images/trek_himalaya.jpg',
+    img: '/images/trek_himalaya.webp',
     color: '#5B9BD5',
   },
   {
@@ -39,7 +40,7 @@ const JOURNEYS = [
     title: 'Golden Triangle',
     sub: 'Delhi · Agra · Jaipur · Taj Mahal',
     url: '/packages/golden-triangle/',
-    img: '/images/temple_entrance.jpg',
+    img: '/images/temple_entrance.webp',
     color: '#C97B3D',
   },
   {
@@ -47,7 +48,7 @@ const JOURNEYS = [
     title: 'Rishikesh Thrills',
     sub: 'Rafting · Bungee · Camping · Kayaking · Yoga',
     url: '/packages/char-dham-yatra/',
-    img: '/images/rishikesh_bridge.jpg',
+    img: '/images/rishikesh_bridge.webp',
     color: '#3DC9A0',
   },
 ];
@@ -185,7 +186,7 @@ const TICKER_ITEMS = [
   '📱 Reply in Under 1 Hour',
   '✅ 100% Satisfaction Guarantee',
   '💰 Zero Hidden Costs. Ever.',
-  '🕌 Char Dham Season 2025 Now Open',
+  '🕌 Char Dham Season 2026 Now Open',
 ];
 
 const PKG_CATEGORIES: Record<string, string> = {
@@ -226,18 +227,25 @@ export default function HomePageClient() {
     <>
       {/* ── HERO ───────────────────────────────── */}
       <section className="hero">
-        <div
-          ref={heroBgRef}
-          className="hero-bg"
-          style={{ backgroundImage: 'url(/images/kedarnath_temple_cover.jpg)' }}
-        />
+        {/* Parallax wrapper — transform applied via scroll listener */}
+        <div ref={heroBgRef} className="hero-bg" style={{ background: 'none' }}>
+          <Image
+            src="/images/kedarnath_temple_cover.webp"
+            alt=""
+            aria-hidden="true"
+            fill
+            priority
+            sizes="100vw"
+            style={{ objectFit: 'cover', objectPosition: 'center 20%' }}
+          />
+        </div>
         <div className="hero-overlay" />
 
         <div className="hero-content">
           <div className="container">
             <div style={{ maxWidth: 820 }}>
               <div className="hero-badge">
-                ⛰️ Himalayan Season 2025 — Seats Filling Fast
+                ⛰️ Himalayan Season 2026 — Seats Filling Fast
               </div>
 
               <h1 className="hero-h1">

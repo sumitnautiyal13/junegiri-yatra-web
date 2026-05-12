@@ -18,7 +18,7 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
-  const title = `Char Dham Yatra from ${city.name} 2025 | Junegiri Yatra`;
+  const title = `Char Dham Yatra from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Char Dham Yatra from ${city.name} with Junegiri Yatra — Haridwar's trusted operator. ${city.total_time}. All-inclusive packages from ₹19,800. WhatsApp us for ${city.name} departure quotes.`;
 
   return {

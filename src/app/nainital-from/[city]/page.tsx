@@ -8,7 +8,7 @@ const NAINITAL_CONFIG: DestinationConfig = {
   destination: 'Nainital Tour',
   destinationSlug: 'nainital',
   routeBase: '/nainital-from/',
-  heroImage: '/images/mountains1.jpg',
+  heroImage: '/images/mountains1.webp',
   packageSlug: 'nainital-jim-corbett-4n-5d',
   basePrice: 7500,
   duration: '3 Nights / 4 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/mountains1.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/mountains1.webp' }],
       type: 'website',
     },
     alternates: {

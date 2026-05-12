@@ -8,7 +8,7 @@ const VOF_CONFIG: DestinationConfig = {
   destination: 'Valley of Flowers Trek',
   destinationSlug: 'valley-of-flowers',
   routeBase: '/valley-of-flowers-from/',
-  heroImage: '/images/valley_flowers.jpg',
+  heroImage: '/images/valley_flowers.webp',
   packageSlug: 'valley-of-flowers-trek-4n-5d',
   basePrice: 8500,
   duration: '4 Nights / 5 Days',
@@ -60,7 +60,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      images: [{ url: 'https://junegiriyatra.com/images/valley_flowers.jpg' }],
+      images: [{ url: 'https://junegiriyatra.com/images/valley_flowers.webp' }],
       type: 'website',
     },
     alternates: {

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://junegiriyatra.com/nainital-from/' },
   openGraph: {
     title: 'Nainital Tour from Your City | Junegiri Yatra',
-    description: 'All-inclusive Nainital 3N/4D tour packages from 20 Indian cities. Naini Lake boating, Snow View & optional Corbett safari.',
-    images: [{ url: 'https://junegiriyatra.com/images/mountains1.jpg' }],
+    description: 'All-inclusive Nainital 3N/4D tour packages from 100 Indian cities. Naini Lake boating, Snow View & optional Corbett safari.',
+    images: [{ url: 'https://junegiriyatra.com/images/mountains1.webp' }],
   },
 };
 
@@ -20,7 +21,7 @@ const SCHEMA = {
     {
       '@type': 'CollectionPage',
       name: 'Nainital Tour from Your City',
-      description: 'Nainital tour packages with city-specific travel routes from 20 Indian departure cities.',
+      description: 'Nainital tour packages with city-specific travel routes from 100 Indian departure cities.',
       url: 'https://junegiriyatra.com/nainital-from/',
       provider: {
         '@type': 'TravelAgency',
@@ -46,10 +47,10 @@ const SCHEMA = {
 };
 
 const REGIONS = [
-  { label: 'North & NCR', states: ['Delhi', 'Punjab', 'Haryana', 'Chandigarh', 'Uttarakhand'] },
-  { label: 'West India', states: ['Maharashtra', 'Gujarat', 'Rajasthan'] },
-  { label: 'South India', states: ['Karnataka', 'Tamil Nadu', 'Andhra Pradesh', 'Telangana', 'Kerala'] },
-  { label: 'East & Central', states: ['West Bengal', 'Bihar', 'Madhya Pradesh', 'Chhattisgarh', 'Uttar Pradesh'] },
+  { label: "North \& NCR", states: ["Delhi", "Delhi NCR", "Punjab", "Punjab/Haryana", "Haryana", "Chandigarh", "Uttarakhand", "Jammu \& Kashmir", "Himachal Pradesh", "Ladakh"] },
+  { label: "West India", states: ["Maharashtra", "Gujarat", "Rajasthan", "Goa"] },
+  { label: "South India", states: ["Karnataka", "Tamil Nadu", "Andhra Pradesh", "Telangana", "Kerala", "Puducherry"] },
+  { label: "East \& Central", states: ["West Bengal", "Bihar", "Madhya Pradesh", "Chhattisgarh", "Uttar Pradesh", "Jharkhand", "Odisha", "Assam", "Tripura", "Meghalaya", "Manipur"] },
 ];
 
 export default function NainitalFromIndex() {
@@ -71,10 +72,8 @@ export default function NainitalFromIndex() {
       />
 
       {/* HERO */}
-      <section
-        className="city-hero"
-        style={{ backgroundImage: "url('/images/mountains1.jpg')", minHeight: '55vh' }}
-      >
+      <section className="city-hero" style={{ minHeight: '55vh' }}>
+        <Image src="/images/mountains1.webp" alt="" aria-hidden fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
         <div className="city-hero-overlay" />
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">

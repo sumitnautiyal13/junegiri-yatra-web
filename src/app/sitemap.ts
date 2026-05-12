@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import packagesData from '../../data/packages.json';
 import hubsData from '../../data/hubs.json';
 import citiesData from '../../data/cities.json';
+import yogaData from '../../data/yoga-programs.json';
 
 // Import optional data files only if they exist
 let blogData: Array<{ slug: string; published: string }> = [];
@@ -15,7 +16,9 @@ try { bestTimeData = require('../../data/best-time.json'); } catch {}
 try { trekSeasonsData = require('../../data/trek-seasons.json'); } catch {}
 
 const BASE = 'https://junegiriyatra.com';
-const NOW = new Date().toISOString();
+// Stable date — only update manually when content changes significantly.
+// Using new Date() on every build floods Search Console with spurious lastModified signals.
+const NOW = '2026-05-10T00:00:00.000Z';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
@@ -31,10 +34,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push({ url: `${BASE}/packages/${h.slug}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });
   }
 
-  // Destination × City pages (6 destinations × 20 cities = 120 pages)
+  // Destination × City pages (14 destinations × 346 cities = ~4,844 city pages)
   const DEST_ROUTES = [
     { index: '/char-dham-from/', priority: 0.9 as const },
     { index: '/kedarnath-from/', priority: 0.9 as const },
+    { index: '/kedarnath-helicopter-from/', priority: 0.9 as const },
     { index: '/badrinath-from/', priority: 0.8 as const },
     { index: '/do-dham-from/', priority: 0.8 as const },
     { index: '/rishikesh-from/', priority: 0.8 as const },
@@ -42,6 +46,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { index: '/varanasi-from/', priority: 0.8 as const },
     { index: '/mussoorie-from/', priority: 0.7 as const },
     { index: '/nainital-from/', priority: 0.7 as const },
+    { index: '/mathura-vrindavan-from/', priority: 0.8 as const },
+    { index: '/ayodhya-from/', priority: 0.8 as const },
+    { index: '/india-tour-from/', priority: 0.9 as const },
+    { index: '/golden-triangle-from/', priority: 0.9 as const },
   ];
 
   for (const dest of DEST_ROUTES) {
@@ -61,6 +69,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static pages
   urls.push({ url: `${BASE}/about/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
   urls.push({ url: `${BASE}/contact/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+  urls.push({ url: `${BASE}/reviews/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+  urls.push({ url: `${BASE}/privacy/`, lastModified: NOW, changeFrequency: 'yearly', priority: 0.3 });
 
   // Blog
   if (blogData.length > 0) {
@@ -78,6 +88,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Best time
   for (const d of bestTimeData) {
     urls.push({ url: `${BASE}/best-time/${d.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+  }
+
+  // Yoga TTC pages
+  urls.push({ url: `${BASE}/yoga/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 });
+  for (const y of yogaData) {
+    urls.push({ url: `${BASE}/yoga/${y.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 });
+    for (const h of ['100hours', '200hours', '300hours']) {
+      urls.push({ url: `${BASE}/yoga/${y.slug}/${h}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
+    }
   }
 
   return urls;

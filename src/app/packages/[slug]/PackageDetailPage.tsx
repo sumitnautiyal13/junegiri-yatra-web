@@ -46,6 +46,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
   const { currency } = useCurrency();
   const cityRoute = CITY_ROUTE_MAP[pkg.slug] ?? null;
+  const waPhone = (pkg as Package & { wa_phone?: string }).wa_phone ?? '919873897652';
 
   const breadcrumbs = pkg.breadcrumbs || [
     { name: 'Home', url: '/' },
@@ -88,7 +89,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
               </div>
               <div className="pkg-cta-group">
                 <WaLink
-                  href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
+                  href={`https://wa.me/${waPhone}?text=${encodeURIComponent(pkg.wa_text)}`}
                   className="btn btn-wa"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -306,7 +307,14 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                     <span>{f.q}</span>
                     <span className="faq-arrow">▼</span>
                   </button>
-                  <div className="faq-a">
+                  <div
+                    className="faq-a"
+                    style={
+                      activeFaq === i
+                        ? { maxHeight: 600, padding: '0 24px 20px', overflow: 'hidden' }
+                        : { maxHeight: 0, padding: 0, overflow: 'hidden' }
+                    }
+                  >
                     <p dangerouslySetInnerHTML={{ __html: f.a }} />
                   </div>
                 </div>
@@ -343,14 +351,14 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
           <p className="s-sub">WhatsApp us for instant confirmation, custom dates, and group pricing.</p>
           <div style={{ marginTop: 24 }}>
             <WaLink
-              href={`https://wa.me/919873897652?text=${encodeURIComponent(pkg.wa_text)}`}
+              href={`https://wa.me/${waPhone}?text=${encodeURIComponent(pkg.wa_text)}`}
               className="btn btn-wa"
               target="_blank"
               rel="noopener noreferrer"
               style={{ fontSize: 16, padding: '18px 36px' }}
               label={`pkg_cta_${pkg.slug}`}
             >
-              📱 WhatsApp +91 98738 97652
+              📱 WhatsApp {waPhone === '6282111759727' ? '+62 821-1175-9727' : '+91 98738 97652'}
             </WaLink>
           </div>
           {currency !== 'INR' && pkg.intl_price_usd && (
@@ -419,7 +427,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 provider: {
                   '@type': 'TravelAgency',
                   name: 'Junegiri Yatra',
-                  telephone: '+919873897652',
+                  telephone: waPhone === '6282111759727' ? '+6282111759727' : '+919873897652',
                   url: 'https://junegiriyatra.com',
                   address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressRegion: 'Uttarakhand', addressCountry: 'IN' },
                   sameAs: ['https://www.instagram.com/junegiriyatra', 'https://www.facebook.com/junegiriyatra'],
