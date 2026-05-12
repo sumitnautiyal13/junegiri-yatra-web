@@ -1,0 +1,666 @@
+[
+  {
+    "location": "rishikesh",
+    "title": "Yoga Teacher Training in Rishikesh",
+    "slug": "rishikesh",
+    "tagline": "Birthplace of Yoga · Himalayas · Ganges",
+    "description": "Train in the world's yoga capital, where ancient Vedic tradition meets the sacred Ganges. Rishikesh offers the most authentic yoga lineage — Hatha, Ashtanga, Vinyasa — in a disciplined ashram environment with Himalayan air, mountain views, and centuries of spiritual heritage.",
+    "hero_image": "/images/rishikesh_bridge.webp",
+    "country": "India",
+    "setting": "Himalayan foothills · Ganges riverside · 350m altitude",
+    "best_season": "October – March (peak); April – June (warm season)",
+    "airport": "Jolly Grant Airport (DED), Dehradun — 35 km from Rishikesh",
+    "highlights": [
+      "Yoga Alliance RYT certified programs (200hr & 300hr)",
+      "Daily Ganga aarti ceremony at Triveni Ghat",
+      "Authentic ashram lifestyle with Vedic meals",
+      "Himalayan trekking & river rafting available",
+      "Small batch: 8–15 students maximum",
+      "Airport transfers from Dehradun included"
+    ],
+    "programs": [
+      {
+        "hours": 100,
+        "name": "100-Hour Yoga Immersion",
+        "subtitle": "Foundation Course · School Certificate",
+        "duration_days": 14,
+        "price_inr": 45000,
+        "price_usd": 549,
+        "certification": "School Certificate of Completion (pathway to 200hr RYT)",
+        "style": "Multi-style: Hatha · Ashtanga · Vinyasa",
+        "badge": "Great Start",
+        "included": [
+          "14 nights accommodation (shared room)",
+          "3 yogic vegetarian meals daily + herbal teas",
+          "Printed course manual & study materials",
+          "Yoga mat, blocks, strap & neti pot kit",
+          "School certificate of completion",
+          "Airport pickup from Dehradun",
+          "1 Ayurvedic full-body massage",
+          "Weekend excursion (Kunjapuri temple or Ganga aarti)"
+        ],
+        "not_included": [
+          "Flights and personal travel insurance",
+          "Personal expenses & shopping",
+          "Optional activities (rafting, bungee)"
+        ],
+        "curriculum": [
+          { "module": "Asana Practice", "detail": "Sun Salutations A & B, standing poses, backbends, inversions, balancing asanas — Hatha & Vinyasa flow fundamentals" },
+          { "module": "Pranayama", "detail": "Nadi Shodhana, Kapalabhati, Bhastrika, Ujjayi, Bhramari — breath awareness & energy regulation" },
+          { "module": "Shatkarma Kriyas", "detail": "Jala Neti, Trataka, Nauli Kriya — yogic cleansing practices" },
+          { "module": "Meditation", "detail": "Mantra meditation, body scan, Yoga Nidra, concentration practices" },
+          { "module": "Yoga Philosophy", "detail": "Eight Limbs of Yoga (Patanjali), four paths of yoga, introduction to yoga history" },
+          { "module": "Anatomy Basics", "detail": "Musculoskeletal system, breath mechanics, safe alignment principles" },
+          { "module": "Teaching Methodology", "detail": "Basic cueing, class structure, demonstration, observation" },
+          { "module": "Mantra & Chanting", "detail": "Sanskrit alphabet, Gayatri mantra, Om chanting, Vedic mantras" }
+        ],
+        "daily_schedule": [
+          { "time": "5:30 AM", "activity": "Wake up — morning bell" },
+          { "time": "6:00 AM", "activity": "Shatkarma Kriyas & Pranayama" },
+          { "time": "7:00 AM", "activity": "Hatha / Vinyasa Yoga practice" },
+          { "time": "8:30 AM", "activity": "Breakfast" },
+          { "time": "9:30 AM", "activity": "Yoga Philosophy class" },
+          { "time": "11:00 AM", "activity": "Anatomy & Alignment workshop" },
+          { "time": "12:30 PM", "activity": "Lunch & rest" },
+          { "time": "4:00 PM", "activity": "Ashtanga Vinyasa practice" },
+          { "time": "5:30 PM", "activity": "Tea break" },
+          { "time": "6:00 PM", "activity": "Meditation & Yoga Nidra" },
+          { "time": "7:00 PM", "activity": "Dinner" },
+          { "time": "9:00 PM", "activity": "Lights out" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-07-01", "end": "2026-07-14", "status": "open" },
+          { "start": "2026-08-01", "end": "2026-08-14", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-14", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-14", "status": "open" }
+        ],
+        "faq": [
+          { "q": "Do I need prior yoga experience for the 100hr program?", "a": "No prior experience is required. The 100-hour program is designed as a foundation course, perfect for dedicated beginners and regular practitioners who want to deepen their practice." },
+          { "q": "Is the 100hr Yoga Alliance certified?", "a": "The 100-hour program issues a school certificate of completion. It is not a standalone Yoga Alliance designation, but it counts as the first module toward a full 200-hour RYT certification when you continue your training." },
+          { "q": "What style of yoga is taught?", "a": "We teach a multi-style curriculum covering Hatha (foundational alignment), Ashtanga (structured sequences), and Vinyasa (breath-linked flow). You graduate with a well-rounded foundation rather than being limited to a single lineage." },
+          { "q": "What is the accommodation like?", "a": "Students stay in clean, comfortable shared rooms at our partner yoga school near the Ganges. Rooms have attached bathrooms, hot water, WiFi, and basic amenities. All meals are sattvic (pure) vegetarian." },
+          { "q": "Can I book 100hr and then continue to 200hr immediately?", "a": "Yes — many students complete the 100hr and immediately enrol in the second 100hr module to earn their RYT 200. Ask us about back-to-back batch scheduling to plan a continuous 28-day stay." }
+        ]
+      },
+      {
+        "hours": 200,
+        "name": "200-Hour Yoga Teacher Training",
+        "subtitle": "Yoga Alliance RYT 200 Certification",
+        "duration_days": 25,
+        "price_inr": 95000,
+        "price_usd": 1149,
+        "certification": "Yoga Alliance RYT 200 (Registered Yoga Teacher)",
+        "style": "Multi-style: Hatha · Ashtanga Primary · Vinyasa Flow",
+        "badge": "Most Popular",
+        "included": [
+          "25 nights accommodation (shared room)",
+          "3 yogic vegetarian meals daily + herbal teas",
+          "Printed 200hr course manual (400+ pages)",
+          "Yoga kit: mat, 2 blocks, strap, blanket, neti pot",
+          "Yoga Alliance RYT 200 certification",
+          "Airport pickup from Dehradun (Jolly Grant Airport)",
+          "2 Ayurvedic massage sessions",
+          "Weekend excursions (Kunjapuri trek, Ganga aarti)",
+          "Opening & closing fire ceremony (Havan)",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "Flights and travel insurance",
+          "Yoga Alliance registration fee ($120 USD — payable directly to YA)",
+          "Personal expenses & shopping",
+          "Optional adventure activities (rafting, bungee)"
+        ],
+        "curriculum": [
+          { "module": "Asana — Hatha Yoga", "detail": "60+ classical asanas with alignment, contraindications, modifications and hands-on adjustment techniques" },
+          { "module": "Asana — Ashtanga Primary Series", "detail": "Full Primary Series with vinyasas, driste, breath count — taught progressively over 25 days" },
+          { "module": "Vinyasa Flow", "detail": "Creative sequencing, peak pose methodology, transitions, theming and pacing a flow class" },
+          { "module": "Pranayama", "detail": "10 techniques: Nadi Shodhana, Kapalabhati, Bhastrika, Ujjayi, Sheetali, Bhramari, Surya & Chandra Bheda, Viloma, Sama Vritti" },
+          { "module": "Meditation", "detail": "Mantra meditation, Vipassana, loving-kindness, Yoga Nidra facilitation, mindfulness, Trataka" },
+          { "module": "Yoga Philosophy", "detail": "Patanjali Yoga Sutras (all 4 chapters), Bhagavad Gita (key chapters), Upanishads, Sankhya philosophy, four purusharthas" },
+          { "module": "Anatomy & Physiology", "detail": "Skeletal, muscular, respiratory, nervous and endocrine systems as they apply to yoga. Safe practice principles, injury prevention" },
+          { "module": "Teaching Methodology", "detail": "Voice, cues, assists, sequencing theory, class design, Sanskrit names, ethics of teaching, business basics" },
+          { "module": "Shatkarma & Kriyas", "detail": "6 classical yogic cleansing practices including Jala Neti, Sutra Neti, Nauli, Trataka, Kapalbhati, Dhauti" },
+          { "module": "Mudras, Bandhas & Chakras", "detail": "28 mudras, 4 primary bandhas, 7-chakra system — energetic anatomy and application in practice" },
+          { "module": "Mantra & Chanting", "detail": "Sanskrit pronunciation, traditional stotras, Kirtan, Ashtanga opening/closing mantras, Gayatri mantra" },
+          { "module": "Practicum Teaching", "detail": "Supervised student teaching hours, peer feedback, observation, teaching evaluation and final assessment" }
+        ],
+        "daily_schedule": [
+          { "time": "5:30 AM", "activity": "Wake up — morning bell" },
+          { "time": "6:00 AM", "activity": "Ashtanga Yoga practice" },
+          { "time": "8:00 AM", "activity": "Pranayama & Mantra chanting" },
+          { "time": "9:15 AM", "activity": "Breakfast" },
+          { "time": "11:00 AM", "activity": "Yoga Anatomy / Therapy session" },
+          { "time": "12:30 PM", "activity": "Yoga Philosophy class" },
+          { "time": "1:00 PM", "activity": "Lunch & rest" },
+          { "time": "3:00 PM", "activity": "Alignment, assists & teaching methodology" },
+          { "time": "4:15 PM", "activity": "Hatha / Vinyasa practice" },
+          { "time": "6:30 PM", "activity": "Meditation & Yoga Nidra" },
+          { "time": "7:45 PM", "activity": "Dinner" },
+          { "time": "9:30 PM", "activity": "Lights out" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-07-01", "end": "2026-07-25", "status": "open" },
+          { "start": "2026-08-01", "end": "2026-08-25", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-25", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-25", "status": "open" },
+          { "start": "2026-11-01", "end": "2026-11-25", "status": "open" }
+        ],
+        "faq": [
+          { "q": "What level of yoga experience do I need for the 200hr TTC?", "a": "We recommend at least 3–6 months of regular yoga practice before joining the 200hr course. You don't need to be advanced, but you should be comfortable with the basics. If you're a beginner, consider starting with our 100hr Foundation Course." },
+          { "q": "Is Yoga Alliance registration included in the price?", "a": "The course fee includes your school's Yoga Alliance graduation certificate and registration assistance. The Yoga Alliance annual membership fee ($120 USD) is paid directly to Yoga Alliance when you register online — this is standard industry practice." },
+          { "q": "How many students are in each batch?", "a": "We keep batches small — maximum 12–15 students — to ensure every student gets personalised attention and proper hands-on guidance from teachers." },
+          { "q": "Can international students join from UK, USA, or Australia?", "a": "Absolutely. Most of our 200hr students are international — from UK, USA, Australia, Canada, and Europe. Rishikesh is the world's yoga capital and we welcome students from all countries. You'll need an Indian e-Visa (easily obtained online) and fly into Delhi or Dehradun." },
+          { "q": "Is the food vegetarian? Are there options for dietary requirements?", "a": "All meals are sattvic vegetarian — no meat, fish, eggs, onion or garlic. We can accommodate vegan, gluten-free, and other dietary needs — just inform us at booking. The food is freshly cooked, nutritious and designed to support a rigorous yoga schedule." },
+          { "q": "What is the cancellation policy?", "a": "Cancellations 60+ days before start: full refund minus 10% processing fee. 30–60 days: 50% refund. Under 30 days: no refund, but you may transfer to the next available batch within 12 months." }
+        ]
+      },
+      {
+        "hours": 300,
+        "name": "300-Hour Advanced Yoga Training",
+        "subtitle": "Yoga Alliance RYT 500 Eligible",
+        "duration_days": 28,
+        "price_inr": 125000,
+        "price_usd": 1499,
+        "certification": "Yoga Alliance RYT 500 (combined with prior RYT 200)",
+        "style": "Advanced: Ashtanga Intermediate · Yin · Restorative · Yoga Therapy",
+        "badge": "Advanced",
+        "prerequisite": "Yoga Alliance RYT 200 certification required",
+        "included": [
+          "28 nights accommodation (shared room; private upgrade available)",
+          "3 yogic vegetarian meals daily + herbal teas",
+          "Advanced 300hr course manual (500+ pages)",
+          "Yoga kit: mat, props, neti pot, essential oil kit",
+          "Yoga Alliance RYT 300 / RYT 500 certification",
+          "Airport pickup from Dehradun",
+          "3 Ayurvedic massage sessions",
+          "Himalayan excursion (Tungnath / Chandrashila trek)",
+          "Sound healing workshop",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "Flights and travel insurance",
+          "Yoga Alliance registration fee ($120 USD)",
+          "Personal expenses & shopping"
+        ],
+        "curriculum": [
+          { "module": "Advanced Asana", "detail": "Ashtanga Second Series (Intermediate), advanced inversions, arm balances, backbends, pranayama asanas — going beyond the Primary Series" },
+          { "module": "Yin & Restorative Yoga", "detail": "Full Yin Yoga training: meridian theory, target areas, props use, sequencing. Restorative yoga with props and therapeutic applications" },
+          { "module": "Yoga Nidra Facilitation", "detail": "Complete Yoga Nidra teacher training — multiple techniques, leading guided sessions, creating scripts, therapeutic use" },
+          { "module": "Subtle Body Anatomy", "detail": "Koshas (5 sheaths), Nadis (72,000 energy channels), Chakra system deep dive, Marma therapy points, Prana Vayus" },
+          { "module": "Yoga Therapy Foundations", "detail": "Therapeutic applications for common conditions: back pain, anxiety, insomnia, hypertension, PCOD, knee injuries. Trauma-informed yoga teaching" },
+          { "module": "Advanced Philosophy", "detail": "Hatha Yoga Pradipika (all 4 chapters), selected Upanishads, Tantra philosophy, Vedanta, Samkhya-Yoga darshana" },
+          { "module": "Advanced Pranayama", "detail": "Kumbhaka (breath retention), Bandha mastery, advanced Kapalabhati, Khechari Mudra, full 12-technique pranayama system" },
+          { "module": "Sanskrit Deepening", "detail": "Devanagari script, pronunciation refinement, mantra meaning, teaching in Sanskrit, Sanskrit etymology" },
+          { "module": "Ayurveda Applied", "detail": "Tri-dosha system (Vata, Pitta, Kapha), seasonal living, Ayurvedic diet, herbal tonics, Panchakarma basics" },
+          { "module": "Advanced Teaching Methodology", "detail": "Theme-based class design, advanced cueing and assists, trauma-informed teaching, inclusive language, building a yoga business" },
+          { "module": "Sound Healing", "detail": "Tibetan singing bowls, crystal bowls, tuning forks, nada yoga, structuring a sound bath session" },
+          { "module": "Extended Practicum", "detail": "Supervised teaching of multiple class styles, peer observation, video review, final teaching assessment" }
+        ],
+        "daily_schedule": [
+          { "time": "5:00 AM", "activity": "Wake up — morning bell" },
+          { "time": "5:30 AM", "activity": "Shatkarma Kriyas" },
+          { "time": "6:30 AM", "activity": "Pranayama & Advanced breathing techniques" },
+          { "time": "7:30 AM", "activity": "Hatha / Ashtanga Yoga practice" },
+          { "time": "9:00 AM", "activity": "Breakfast" },
+          { "time": "10:00 AM", "activity": "Yoga Anatomy / Subtle body" },
+          { "time": "11:00 AM", "activity": "Alignment, assists & advanced methodology" },
+          { "time": "12:30 PM", "activity": "Lunch & rest" },
+          { "time": "3:00 PM", "activity": "Yoga Philosophy" },
+          { "time": "4:00 PM", "activity": "Ashtanga / Vinyasa / Yin practice" },
+          { "time": "6:00 PM", "activity": "Meditation / Sound healing / Yoga Nidra" },
+          { "time": "7:00 PM", "activity": "Dinner" },
+          { "time": "9:30 PM", "activity": "Lights out" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-08-01", "end": "2026-08-28", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-28", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-28", "status": "open" },
+          { "start": "2026-11-01", "end": "2026-11-28", "status": "open" }
+        ],
+        "faq": [
+          { "q": "Do I need my RYT 200 before joining the 300hr?", "a": "Yes. The 300-hour course is an advanced training designed for practising yoga teachers. You must hold a Yoga Alliance RYT 200 certification (from any Yoga Alliance registered school) to enrol. Upon completion, you become eligible for RYT 500 — the highest standalone Yoga Alliance designation." },
+          { "q": "Can I do the 200hr and 300hr back to back?", "a": "Yes — many dedicated students complete both trainings in one trip to Rishikesh. We can schedule a short gap between batches for rest. You'd be in Rishikesh for approximately 53–55 days total." },
+          { "q": "What is the difference between RYT 300 and RYT 500?", "a": "RYT 300 is the credential for completing the 300-hour advanced training. RYT 500 is earned by combining a completed RYT 200 + RYT 300 from Yoga Alliance registered schools — it is the most advanced professional yoga teaching credential Yoga Alliance offers." },
+          { "q": "Is Yoga Therapy taught in the 300hr?", "a": "Yes. We cover foundational Yoga Therapy applications for common physical and mental health conditions including back pain, anxiety, insomnia, hypertension, PCOD and knee injuries. This is not a standalone yoga therapy certification but gives you practical therapeutic skills for your teaching." }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "bali",
+    "title": "Yoga Teacher Training in Bali",
+    "slug": "bali",
+    "tagline": "Island of the Gods · Tropical Villas · UNESCO Rice Terraces",
+    "description": "Train in the world's most beautiful yoga destination — Bali. Practise in open-air shalahs with views of rice terraces and tropical jungle, live in a private villa, and immerse in Balinese Hindu spiritual culture. Bali attracts the most international yoga students globally, with a thriving community of teachers and seekers from every corner of the world.",
+    "hero_image": "/images/mountains1.webp",
+    "country": "Indonesia",
+    "setting": "Ubud jungle villas & Canggu beach · tropical, 400m altitude",
+    "best_season": "April – October (dry season); best months: May, June, September",
+    "airport": "Ngurah Rai International Airport (DPS), Denpasar — 1 hr to Ubud, 30 min to Canggu",
+    "highlights": [
+      "Yoga Alliance RYT certified programs (200hr & 300hr)",
+      "Private villa accommodation with pool access",
+      "Multi-style: Hatha + Ashtanga + Vinyasa + Aerial + Yin",
+      "Balinese temple ceremony & cultural immersion",
+      "International cohort from UK, USA, Australia, Europe",
+      "Sound healing & acro yoga specialty workshops"
+    ],
+    "programs": [
+      {
+        "hours": 100,
+        "name": "100-Hour Yoga Immersion Bali",
+        "subtitle": "Foundation Course · School Certificate",
+        "duration_days": 12,
+        "price_inr": 62000,
+        "price_usd": 749,
+        "certification": "School Certificate of Completion (pathway to 200hr RYT)",
+        "style": "Multi-style: Hatha · Ashtanga · Vinyasa · Yin",
+        "badge": "Bali Experience",
+        "included": [
+          "12 nights villa room (shared twin or private upgrade)",
+          "2 meals daily (breakfast + lunch) + herbal teas",
+          "Printed course manual & digital resources",
+          "Yoga mat, blocks, strap & props",
+          "School certificate of completion",
+          "Airport transfer from Denpasar",
+          "1 traditional Balinese massage",
+          "Temple purification ceremony",
+          "Optional beach excursion (Dreamland or Echo Beach)",
+          "Specialty workshops: sound healing introduction"
+        ],
+        "not_included": [
+          "International flights and travel insurance",
+          "Indonesian visa (30-day visa-on-arrival free for many nationalities)",
+          "Dinner (restaurants available 3–5 min walk, $3–8 USD)",
+          "Personal expenses & shopping"
+        ],
+        "curriculum": [
+          { "module": "Asana Practice", "detail": "Hatha fundamentals, Ashtanga Sun Salutations A & B, standing and seated sequences, intro to inversions and arm balances" },
+          { "module": "Vinyasa Flow", "detail": "Breath-linked movement, creative sequencing, transitions and basic flow class structure" },
+          { "module": "Yin Yoga", "detail": "Yin postures and meridian theory — a Bali specialty addition to the standard curriculum" },
+          { "module": "Pranayama", "detail": "6 foundational breathing techniques with Bali-specific pranayama in nature settings" },
+          { "module": "Meditation", "detail": "Morning seated practice, Yoga Nidra, walking meditation, Balinese sound healing introduction" },
+          { "module": "Yoga Philosophy", "detail": "Eight Limbs, Balinese Hindu spiritual traditions, chakra system, yoga history" },
+          { "module": "Anatomy Basics", "detail": "Movement anatomy, safe alignment, common injuries and how to avoid them" },
+          { "module": "Teaching Methodology", "detail": "Basic cues, class structure, peer observation and teaching practice" }
+        ],
+        "daily_schedule": [
+          { "time": "6:45 AM", "activity": "Pranayama & morning meditation" },
+          { "time": "7:15 AM", "activity": "Hatha / Vinyasa Yoga practice" },
+          { "time": "9:00 AM", "activity": "Breakfast" },
+          { "time": "10:00 AM", "activity": "Teaching methodology & philosophy" },
+          { "time": "11:30 AM", "activity": "Anatomy lab / Asana lab" },
+          { "time": "1:00 PM", "activity": "Lunch break (free afternoon on Sundays)" },
+          { "time": "3:00 PM", "activity": "Afternoon practice — Yin or Ashtanga" },
+          { "time": "4:30 PM", "activity": "Specialty workshops (sound healing, acro intro)" },
+          { "time": "6:00 PM", "activity": "Free time / dinner on own" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-07-01", "end": "2026-07-12", "status": "open" },
+          { "start": "2026-08-01", "end": "2026-08-12", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-12", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-12", "status": "open" }
+        ],
+        "faq": [
+          { "q": "Do I need a visa for Bali?", "a": "Most nationalities (UK, USA, Australia, Canada, EU, India) receive a 30-day visa-on-arrival at Denpasar airport at no cost or minimal fee. You can extend to 60 days at the local immigration office. Always check the latest Indonesian visa rules for your passport." },
+          { "q": "What is the accommodation like in Bali?", "a": "Students stay in villa-style rooms — either shared twin or private (upgrade available). Villas feature lush garden settings, in some cases with pool access, and are located within walking distance of cafés, shops and the yoga shala." },
+          { "q": "Is Bali safe for solo women travellers?", "a": "Bali is one of the most solo-female-traveller-friendly destinations in Asia. The yoga community is welcoming, the local culture is respectful, and our training centres are in curated, safe neighbourhoods. Many of our students are solo women from Western countries." },
+          { "q": "Why does the 100hr Bali cost more than Rishikesh?", "a": "Bali's higher cost reflects villa accommodation, tropical destination experience, and the premium of the Bali yoga community. The 100hr Bali course adds Yin yoga, Balinese cultural ceremonies, and specialty workshops not included in Rishikesh, making it a distinctly different experience." }
+        ]
+      },
+      {
+        "hours": 200,
+        "name": "200-Hour Yoga Teacher Training Bali",
+        "subtitle": "Yoga Alliance RYT 200 Certification",
+        "duration_days": 21,
+        "price_inr": 149000,
+        "price_usd": 1799,
+        "certification": "Yoga Alliance RYT 200 (Registered Yoga Teacher)",
+        "style": "Multi-style: Hatha · Ashtanga · Vinyasa · Yin · Aerial (workshop)",
+        "badge": "Most Popular",
+        "included": [
+          "21 nights villa room (shared; private upgrade available)",
+          "Breakfast + lunch daily (2 meals) + herbal teas",
+          "Printed 200hr course manual + digital resources",
+          "Yoga kit: mat, blocks, strap, blanket",
+          "Yoga Alliance RYT 200 certification",
+          "Airport transfer from Denpasar",
+          "2 traditional Balinese massages",
+          "Aerial yoga workshop (2 sessions)",
+          "Balinese water temple purification ceremony",
+          "Cultural excursion (Ubud royal palace, rice terrace trek or Uluwatu temple)",
+          "Closing ceremony dinner",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "International flights and travel insurance",
+          "Indonesian visa",
+          "Dinner (student responsibility — approx $5–12 USD/day)",
+          "Yoga Alliance registration fee ($120 USD)",
+          "Personal expenses"
+        ],
+        "curriculum": [
+          { "module": "Hatha Yoga", "detail": "60+ classical asanas with alignment, muscle engagement, breath integration and therapeutic modifications" },
+          { "module": "Ashtanga Primary Series", "detail": "Full Primary Series led and Mysore-style practice, vinyasas, drishte, breath count — progressive over 21 days" },
+          { "module": "Vinyasa Flow", "detail": "Creative sequencing, peak pose methodology, transitions, theme-based classes, pacing and music integration" },
+          { "module": "Yin Yoga", "detail": "Complete Yin practice: 30+ yin postures, meridian theory, holding times, prop use and therapeutic sequencing" },
+          { "module": "Aerial Yoga", "detail": "Introduction to aerial hammock yoga — beginner postures, inversions and restorative positions (2 workshop sessions)" },
+          { "module": "Pranayama", "detail": "10 classical techniques plus tropical breathing practices — morning pranayama in open-air shala setting" },
+          { "module": "Meditation & Yoga Nidra", "detail": "Multiple meditation styles: mantra, body scan, Vipassana, Yoga Nidra facilitation, sound healing immersion" },
+          { "module": "Yoga Philosophy", "detail": "Eight Limbs deep dive, Bhagavad Gita, chakra system, Balinese Hindu tradition and its parallels with yogic philosophy" },
+          { "module": "Anatomy & Physiology", "detail": "Functional anatomy, skeletal and muscular systems, joint health, pregnancy yoga overview, injury management" },
+          { "module": "Teaching Methodology", "detail": "Cueing styles, hands-on assists, sequencing theory, class design, ethical teaching, building a yoga career" },
+          { "module": "Sound Healing", "detail": "Tibetan bowls, crystal bowls, nada yoga — structuring and leading a basic sound bath session" },
+          { "module": "Practicum Teaching", "detail": "Supervised student teaching, peer and teacher feedback, observation of advanced classes, final teaching exam" }
+        ],
+        "daily_schedule": [
+          { "time": "6:45 AM", "activity": "Meditation & Pranayama" },
+          { "time": "7:15 AM", "activity": "Hatha or Vinyasa Yoga practice" },
+          { "time": "9:00 AM", "activity": "Breakfast" },
+          { "time": "9:45 AM", "activity": "Teaching methodology / philosophy" },
+          { "time": "11:00 AM", "activity": "Asana lab — alignment & assists" },
+          { "time": "12:30 PM", "activity": "Lunch break" },
+          { "time": "3:00 PM", "activity": "Anatomy / Philosophy deepening" },
+          { "time": "4:30 PM", "activity": "Specialty workshop: Yin / Aerial / Acro / Sound" },
+          { "time": "6:00 PM", "activity": "Evening practice or student teaching" },
+          { "time": "7:00 PM", "activity": "Free time / dinner on own" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-07-01", "end": "2026-07-21", "status": "open" },
+          { "start": "2026-08-01", "end": "2026-08-21", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-21", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-21", "status": "open" }
+        ],
+        "faq": [
+          { "q": "What makes the Bali 200hr different from Rishikesh?", "a": "The Bali program adds Yin Yoga, Aerial Yoga workshops, and Balinese cultural immersion. The setting is tropical villas vs ashram; the schedule is slightly less intense (dinner on your own gives you more flexibility). Bali attracts a highly international cohort — most students are from Australia, UK, USA and Europe." },
+          { "q": "Can I work as a yoga teacher internationally with RYT 200?", "a": "Yes. Yoga Alliance RYT 200 is the globally recognised standard for yoga teachers. With an RYT 200 from a Yoga Alliance registered school, you can teach at studios, gyms, retreats and wellness centres worldwide — in the UK, Australia, USA, Canada, Europe and beyond." },
+          { "q": "What if I'm not flexible enough?", "a": "You absolutely do not need to be flexible. Yoga teacher training is about learning, not performing. Many of our most skilled graduates started with limited flexibility. The training builds your practice progressively — physical flexibility will come naturally over the 21 days." },
+          { "q": "Is there free time to explore Bali?", "a": "Yes — Sundays are typically free or half-day. Evenings (from 6 PM onward) are free for dinner, exploring Ubud/Canggu, shopping or sightseeing. We also include a group cultural excursion to Balinese temples and rice terraces as part of the program." }
+        ]
+      },
+      {
+        "hours": 300,
+        "name": "300-Hour Advanced Yoga Training Bali",
+        "subtitle": "Yoga Alliance RYT 500 Eligible",
+        "duration_days": 28,
+        "price_inr": 207000,
+        "price_usd": 2499,
+        "certification": "Yoga Alliance RYT 500 (combined with prior RYT 200)",
+        "style": "Advanced: Yin · Restorative · Yoga Therapy · Somatic · Nidra",
+        "badge": "Advanced",
+        "prerequisite": "Yoga Alliance RYT 200 certification required",
+        "included": [
+          "28 nights villa room (shared; private available)",
+          "Breakfast + lunch daily + herbal teas",
+          "Advanced 300hr course manual (500+ pages)",
+          "Full yoga props kit",
+          "Yoga Alliance RYT 300 / RYT 500 certification",
+          "Airport transfer",
+          "3 Balinese spa treatments",
+          "Full sound healing workshop (3 sessions)",
+          "Aerial yoga advanced sessions",
+          "Cultural immersion: full-day Balinese ceremony experience",
+          "Yoga business masterclass",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "International flights and travel insurance",
+          "Indonesian visa",
+          "Dinner",
+          "Yoga Alliance registration fee ($120 USD)"
+        ],
+        "curriculum": [
+          { "module": "Advanced Asana & Inversions", "detail": "Advanced Ashtanga (Second Series introduction), handstands, forearm stands, scorpion, advanced backbends and drop-backs" },
+          { "module": "Somatic Movement", "detail": "Embodied anatomy, somatic awareness practices, fascia release, nervous system regulation through movement" },
+          { "module": "Yin Yoga Advanced", "detail": "Complete Yin teacher training — 50+ postures, full meridian theory (TCM), sequencing for specific therapeutic outcomes" },
+          { "module": "Restorative Yoga", "detail": "Props-intensive restorative practice, nervous system restoration, working with anxiety and chronic stress" },
+          { "module": "Yoga Nidra Deep Dive", "detail": "Full Yoga Nidra teacher training — iRest, classical Swami Satyananda, creating personalised scripts, therapeutic use" },
+          { "module": "Subtle Body Mastery", "detail": "Kosha system, 72,000 Nadis, advanced chakra work, Marma therapy, Prana Vayus, Kundalini awareness" },
+          { "module": "Yoga Therapy", "detail": "Therapeutic applications for: anxiety, depression, PTSD, back pain, hormonal imbalance, chronic fatigue. Trauma-informed teaching" },
+          { "module": "Advanced Philosophy", "detail": "Hatha Yoga Pradipika (complete text), Tantra Yoga philosophy, Kashmir Shaivism, non-dual teachings (Advaita Vedanta)" },
+          { "module": "Sound Healing Advanced", "detail": "Professional sound healer training — Tibetan bowls, crystal bowls, gongs, voice toning, structuring a full healing session" },
+          { "module": "Ayurveda Lifestyle", "detail": "Seasonal and circadian living (Dinacharya), Panchakarma overview, Ayurvedic cooking, herbs and self-care practices" },
+          { "module": "Yoga Business", "detail": "Building a sustainable yoga teaching career: online classes, retreats, workshops, branding, social media, pricing, legal basics" },
+          { "module": "Extended Practicum", "detail": "Multiple class-style teaching assessments, case studies, supervised therapeutic sessions, final graduation assessment" }
+        ],
+        "daily_schedule": [
+          { "time": "6:30 AM", "activity": "Meditation & advanced Pranayama" },
+          { "time": "7:15 AM", "activity": "Advanced asana practice" },
+          { "time": "9:00 AM", "activity": "Breakfast" },
+          { "time": "10:00 AM", "activity": "Subtle body / Yoga Therapy / Somatic" },
+          { "time": "11:30 AM", "activity": "Advanced methodology & philosophy" },
+          { "time": "1:00 PM", "activity": "Lunch break" },
+          { "time": "3:00 PM", "activity": "Specialty: Yin / Restorative / Sound / Aerial" },
+          { "time": "4:30 PM", "activity": "Teaching practicum / peer feedback" },
+          { "time": "6:00 PM", "activity": "Yoga Nidra / evening practice" },
+          { "time": "7:00 PM", "activity": "Free time / dinner" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-08-01", "end": "2026-08-28", "status": "open" },
+          { "start": "2026-09-01", "end": "2026-09-28", "status": "open" },
+          { "start": "2026-10-01", "end": "2026-10-28", "status": "open" }
+        ],
+        "faq": [
+          { "q": "What is the prerequisite for the 300hr Bali program?", "a": "You must hold a valid Yoga Alliance RYT 200 certification from any Yoga Alliance registered school. You should also have been actively teaching or practising for at least 6–12 months after your 200hr before joining the advanced training." },
+          { "q": "Can I complete 200hr + 300hr in Bali on the same trip?", "a": "Yes — we can arrange back-to-back batches. A combined 200hr + 300hr in Bali means approximately 49–51 days. Many serious students plan a 7–8 week Bali trip for the full RYT 500 journey." }
+        ]
+      }
+    ]
+  },
+  {
+    "location": "goa",
+    "title": "Yoga Teacher Training in Goa",
+    "slug": "goa",
+    "tagline": "Arabian Sea · Beach Shalahs · Portuguese Heritage",
+    "description": "Combine rigorous yoga teacher training with the laid-back magic of Goa — sun-soaked beaches, palm groves, vibrant café culture and the Arabian Sea. Goa sits perfectly between Rishikesh's spiritual depth and Bali's lifestyle appeal, offering a beachside yoga experience that's uniquely Indian yet internationally styled. Programs run October to May, perfectly timed for the best weather.",
+    "hero_image": "/images/mountains1.webp",
+    "country": "India",
+    "setting": "North Goa (Arambol / Morjim) · beachside · sea level",
+    "best_season": "October – March (peak); April – May (warm, less crowded)",
+    "airport": "Goa International Airport (GOI), Dabolim / Mopa (Manohar) — 1.5 hrs to North Goa",
+    "highlights": [
+      "Yoga Alliance RYT certified programs (200hr & 300hr)",
+      "Beachside yoga practice at sunrise",
+      "Morning meditation on the Arabian Sea shore",
+      "Ayurvedic spa treatments at partner centres",
+      "Easy beach access, vibrant café and wellness culture",
+      "North Goa excursions: Arambol, Anjuna, Vagator"
+    ],
+    "programs": [
+      {
+        "hours": 100,
+        "name": "100-Hour Yoga Immersion Goa",
+        "subtitle": "Foundation Course · School Certificate",
+        "duration_days": 12,
+        "price_inr": 52000,
+        "price_usd": 625,
+        "certification": "School Certificate of Completion (pathway to 200hr RYT)",
+        "style": "Multi-style: Hatha · Vinyasa · Yin",
+        "badge": "Beach Yoga",
+        "included": [
+          "12 nights accommodation (shared room near beach)",
+          "3 sattvic vegetarian meals daily + herbal teas",
+          "Printed course manual & study materials",
+          "Yoga mat, blocks, strap & neti pot kit",
+          "School certificate of completion",
+          "Airport pickup from Goa airport",
+          "1 full-body Ayurvedic massage",
+          "Sunrise beach meditation sessions",
+          "North Goa beach excursion"
+        ],
+        "not_included": [
+          "Flights and travel insurance",
+          "Personal expenses & shopping",
+          "Optional activities (water sports, dolphin cruise)"
+        ],
+        "curriculum": [
+          { "module": "Asana Practice", "detail": "Hatha foundational postures, Vinyasa flow basics, Yin yoga introduction — with beach practice sessions" },
+          { "module": "Pranayama", "detail": "6 essential breathing techniques with morning ocean-breeze pranayama practice on the beach" },
+          { "module": "Meditation", "detail": "Sunrise beach meditation, mantra practice, Yoga Nidra, body scan relaxation" },
+          { "module": "Yoga Philosophy", "detail": "Eight Limbs, yoga history, Goan ayurvedic traditions, basic chakra system" },
+          { "module": "Anatomy Basics", "detail": "Key joints and muscles used in yoga, safe alignment, common beginner injuries" },
+          { "module": "Teaching Methodology", "detail": "How to cue, structure a basic class, beginner demonstration and observation practice" },
+          { "module": "Shatkarma", "detail": "Neti, Nauli introduction, Kapalabhati — yogic cleansing for a clear, clean practice" },
+          { "module": "Mantra & Chanting", "detail": "Om chanting, Gayatri mantra, Ashtanga invocation mantras, basics of Sanskrit pronunciation" }
+        ],
+        "daily_schedule": [
+          { "time": "5:30 AM", "activity": "Sunrise beach meditation (optional)" },
+          { "time": "6:30 AM", "activity": "Pranayama & Shatkarma" },
+          { "time": "7:30 AM", "activity": "Hatha / Vinyasa / Yin practice" },
+          { "time": "9:30 AM", "activity": "Breakfast" },
+          { "time": "11:00 AM", "activity": "Philosophy & teaching methodology" },
+          { "time": "12:00 PM", "activity": "Anatomy class" },
+          { "time": "1:00 PM", "activity": "Lunch & free time / beach" },
+          { "time": "4:00 PM", "activity": "Evening asana practice" },
+          { "time": "6:00 PM", "activity": "Meditation / Yoga Nidra" },
+          { "time": "7:00 PM", "activity": "Dinner" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-10-01", "end": "2026-10-12", "status": "open" },
+          { "start": "2026-11-01", "end": "2026-11-12", "status": "open" },
+          { "start": "2026-12-01", "end": "2026-12-12", "status": "open" },
+          { "start": "2027-01-01", "end": "2027-01-12", "status": "open" }
+        ],
+        "faq": [
+          { "q": "When does Goa yoga training run?", "a": "Goa programs run from October through May. The best months are November to February (perfect weather, 25–30°C). June to September is monsoon season and programs are paused." },
+          { "q": "Can I go to the beach during training?", "a": "Yes — afternoons (lunch to ~4 PM) and evenings after dinner are free. The beach is typically 5–15 minutes from the yoga school. Sundays may be fully free for exploration." },
+          { "q": "Is Goa a good choice for international travellers?", "a": "Absolutely. Goa is one of India's most international destinations, with excellent infrastructure, English widely spoken, and a relaxed atmosphere that's welcoming to first-time India visitors. It's a softer entry into India than Delhi or even Rishikesh." }
+        ]
+      },
+      {
+        "hours": 200,
+        "name": "200-Hour Yoga Teacher Training Goa",
+        "subtitle": "Yoga Alliance RYT 200 Certification",
+        "duration_days": 25,
+        "price_inr": 109000,
+        "price_usd": 1299,
+        "certification": "Yoga Alliance RYT 200 (Registered Yoga Teacher)",
+        "style": "Multi-style: Hatha · Ashtanga · Vinyasa · Yin",
+        "badge": "Most Popular",
+        "included": [
+          "25 nights accommodation (shared room or private upgrade)",
+          "3 sattvic vegetarian meals daily + herbal teas",
+          "Printed 200hr course manual",
+          "Yoga kit: mat, 2 blocks, strap, blanket, neti pot",
+          "Yoga Alliance RYT 200 certification",
+          "Airport pickup from Goa airport",
+          "2 Ayurvedic massage sessions",
+          "Sunrise beach meditation & yoga sessions",
+          "North Goa heritage excursion",
+          "Closing ceremony dinner",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "Flights and travel insurance",
+          "Yoga Alliance registration fee ($120 USD)",
+          "Personal expenses & shopping"
+        ],
+        "curriculum": [
+          { "module": "Hatha Yoga", "detail": "60+ classical asanas — alignment, breath, adjustments, modifications and contraindications for all levels" },
+          { "module": "Ashtanga Primary Series", "detail": "Progressive learning of the full Primary Series — led and Mysore-style — over 25 days" },
+          { "module": "Vinyasa Flow", "detail": "Creative and intelligent sequencing, transitions, peak pose design, multi-level class management" },
+          { "module": "Yin Yoga", "detail": "20+ Yin postures with meridian theory, long holding, prop use and therapeutic application — perfect for beach relaxation context" },
+          { "module": "Pranayama", "detail": "10 classical techniques including beach-environment breathing practices: Ujjayi, Nadi Shodhana, Bhramari, Kapalabhati, Bhastrika, Viloma and more" },
+          { "module": "Meditation", "detail": "Sunrise beach meditation, mantra, body scan, Yoga Nidra, loving-kindness. Daily morning practice on the Arabian Sea shore" },
+          { "module": "Yoga Philosophy", "detail": "Patanjali Yoga Sutras, Bhagavad Gita key chapters, Sankhya darshana, Goan Ayurvedic traditions" },
+          { "module": "Anatomy & Physiology", "detail": "Skeletal, muscular, nervous and respiratory systems applied to yoga. Functional anatomy, injury prevention and therapeutic basics" },
+          { "module": "Teaching Methodology", "detail": "Voice, cueing, sequencing theory, hands-on assists, ethics, class design for different settings (studio, beach, corporate)" },
+          { "module": "Shatkarma & Kriyas", "detail": "Full 6-practice Shatkarma system including Jala Neti, Sutra Neti, Nauli, Kapalabhati, Trataka, Dhauti" },
+          { "module": "Mudras, Bandhas & Chakras", "detail": "28 mudras, 4 Bandhas, 7 Chakra system — energetic anatomy in practice" },
+          { "module": "Practicum Teaching", "detail": "Supervised teaching, peer feedback, teacher evaluations, beach class teaching opportunity" }
+        ],
+        "daily_schedule": [
+          { "time": "5:30 AM", "activity": "Optional sunrise beach meditation" },
+          { "time": "6:30 AM", "activity": "Pranayama, chanting & Shatkarma" },
+          { "time": "8:00 AM", "activity": "Asana practice (Hatha / Ashtanga / Vinyasa)" },
+          { "time": "9:30 AM", "activity": "Breakfast" },
+          { "time": "11:00 AM", "activity": "Anatomy / Philosophy lecture" },
+          { "time": "12:30 PM", "activity": "Alignment lab & teaching methodology" },
+          { "time": "1:30 PM", "activity": "Lunch & free time (beach, rest)" },
+          { "time": "3:00 PM", "activity": "Student teaching practice" },
+          { "time": "4:45 PM", "activity": "Evening practice — Yin / Restorative / Flow" },
+          { "time": "6:00 PM", "activity": "Yoga Nidra / Meditation" },
+          { "time": "7:00 PM", "activity": "Dinner" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-10-01", "end": "2026-10-25", "status": "open" },
+          { "start": "2026-11-01", "end": "2026-11-25", "status": "open" },
+          { "start": "2026-12-01", "end": "2026-12-25", "status": "open" },
+          { "start": "2027-01-01", "end": "2027-01-25", "status": "open" },
+          { "start": "2027-02-01", "end": "2027-02-25", "status": "open" }
+        ],
+        "faq": [
+          { "q": "How is Goa's 200hr different from Rishikesh?", "a": "Goa offers the same comprehensive Yoga Alliance RYT 200 curriculum as Rishikesh, with a beach lifestyle backdrop. Expect more free time, beach meditation sessions, and a laid-back atmosphere. Rishikesh is more ashram-disciplined; Goa balances discipline with enjoyment. Many students choose Goa if they want yoga training + Indian beach holiday in one trip." },
+          { "q": "What is Goa's yoga scene like?", "a": "Goa — especially North Goa (Arambol, Morjim) — has a thriving international yoga community. You'll find kirtan nights, cacao ceremonies, ecstatic dance, and yoga studios dotted between beach shacks and coconut groves. It's a genuinely yogic environment outside the school too." },
+          { "q": "Can I combine a Goa yoga training with a Rishikesh or Bali training?", "a": "Yes — many of our students complete 200hr in Rishikesh and then do the 300hr advanced training in Goa (or vice versa) on the same India trip. We can help you plan back-to-back trainings across multiple locations with a gap for travel." }
+        ]
+      },
+      {
+        "hours": 300,
+        "name": "300-Hour Advanced Yoga Training Goa",
+        "subtitle": "Yoga Alliance RYT 500 Eligible",
+        "duration_days": 28,
+        "price_inr": 145000,
+        "price_usd": 1749,
+        "certification": "Yoga Alliance RYT 500 (combined with prior RYT 200)",
+        "style": "Advanced: Yin · Restorative · Yoga Therapy · Nidra · Ayurveda",
+        "badge": "Advanced",
+        "prerequisite": "Yoga Alliance RYT 200 certification required",
+        "included": [
+          "28 nights accommodation (shared or private upgrade)",
+          "3 sattvic vegetarian meals daily + herbal teas",
+          "Advanced 300hr course manual (500+ pages)",
+          "Complete yoga props kit",
+          "Yoga Alliance RYT 300 / RYT 500 certification",
+          "Airport pickup from Goa airport",
+          "3 Ayurvedic spa treatments",
+          "Ayurveda cooking workshop",
+          "Goa heritage and spice plantation excursion",
+          "Sound healing sessions",
+          "Yoga Alliance registration assistance"
+        ],
+        "not_included": [
+          "Flights and travel insurance",
+          "Yoga Alliance registration fee ($120 USD)",
+          "Personal expenses & shopping"
+        ],
+        "curriculum": [
+          { "module": "Advanced Asana", "detail": "Advanced inversions and arm balances, Ashtanga Second Series introduction, advanced backbends, sequencing for advanced practitioners" },
+          { "module": "Yin Yoga Teacher Training", "detail": "Complete Yin teacher training — all meridians, 50+ postures, sequencing for specific therapeutic outcomes, TCM theory" },
+          { "module": "Restorative Yoga", "detail": "Restorative sequences for stress, anxiety, trauma and recovery — full props methodology" },
+          { "module": "Yoga Nidra Facilitation", "detail": "Full Yoga Nidra teacher training including classical and iRest approaches — creating personalised scripts" },
+          { "module": "Subtle Body Anatomy", "detail": "Koshas, Nadis, Chakras deep dive, Marma therapy points, Prana Vayus applied to therapeutic yoga" },
+          { "module": "Yoga Therapy", "detail": "Therapeutic yoga for chronic conditions: back pain, anxiety, PCOD, IBS, insomnia, hypertension, trauma" },
+          { "module": "Advanced Philosophy", "detail": "Hatha Yoga Pradipika complete study, Upanishads, Tantra traditions of coastal India, Ayurvedic philosophy" },
+          { "module": "Ayurveda Applied", "detail": "Ayurveda for yoga teachers: Tri-dosha assessment, seasonal living, Goan Ayurvedic herbs, Panchakarma principles, cooking workshop" },
+          { "module": "Advanced Pranayama", "detail": "Kumbhaka (internal and external retention), advanced Bandha application, subtle pranayama techniques" },
+          { "module": "Business of Yoga", "detail": "Teaching career development: beach retreats, online classes, corporate wellness, pricing, contracts, social media for yoga teachers" },
+          { "module": "Extended Practicum", "detail": "Multi-style teaching assessments including beach yoga session, therapeutic session, and final teaching evaluation" }
+        ],
+        "daily_schedule": [
+          { "time": "5:30 AM", "activity": "Optional sunrise beach meditation" },
+          { "time": "6:30 AM", "activity": "Advanced Pranayama & Shatkarma" },
+          { "time": "7:30 AM", "activity": "Advanced asana / Yin / Restorative practice" },
+          { "time": "9:30 AM", "activity": "Breakfast" },
+          { "time": "11:00 AM", "activity": "Subtle body / Yoga Therapy / Ayurveda" },
+          { "time": "12:30 PM", "activity": "Advanced methodology & philosophy" },
+          { "time": "1:30 PM", "activity": "Lunch & rest (beach time)" },
+          { "time": "3:00 PM", "activity": "Teaching practicum" },
+          { "time": "4:30 PM", "activity": "Evening practice / Sound healing / Yoga Nidra" },
+          { "time": "6:00 PM", "activity": "Meditation" },
+          { "time": "7:00 PM", "activity": "Dinner" }
+        ],
+        "upcoming_batches": [
+          { "start": "2026-10-01", "end": "2026-10-28", "status": "open" },
+          { "start": "2026-11-01", "end": "2026-11-28", "status": "open" },
+          { "start": "2026-12-01", "end": "2026-12-28", "status": "open" },
+          { "start": "2027-01-01", "end": "2027-01-28", "status": "open" }
+        ],
+        "faq": [
+          { "q": "Why choose Goa for the 300hr advanced training?", "a": "Goa uniquely blends the deep Ayurvedic and yogic knowledge of India with a beachside environment that supports your wellbeing. The 300hr Goa program emphasises Ayurveda (more than Rishikesh or Bali) because Goa's coastal Ayurvedic tradition is exceptional. You also get genuine beach access between classes." },
+          { "q": "Can I do 200hr in Rishikesh and 300hr in Goa?", "a": "Absolutely, and many students do exactly this. You earn RYT 200 in Rishikesh (spiritual, ashram experience) and RYT 500 by completing 300hr in Goa (beach, Ayurveda focus). We can coordinate both bookings for you." }
+        ]
+      }
+    ]
+  }
+]

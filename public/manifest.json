@@ -1,0 +1,66 @@
+{
+  "name": "Junegiri Yatra",
+  "short_name": "Junegiri",
+  "description": "India's trusted travel company — Char Dham, Kedarnath, Himalayan Treks, Yoga TTC. Book from anywhere.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f9f6f0",
+  "theme_color": "#c9a84c",
+  "orientation": "portrait-primary",
+  "lang": "en-IN",
+  "categories": ["travel", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Char Dham Yatra",
+      "short_name": "Char Dham",
+      "url": "/packages/char-dham-yatra/",
+      "description": "Book Char Dham Yatra package",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kedarnath Yatra",
+      "short_name": "Kedarnath",
+      "url": "/packages/kedarnath-yatra/",
+      "description": "Book Kedarnath Yatra package",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Yoga TTC",
+      "short_name": "Yoga TTC",
+      "url": "/yoga/",
+      "description": "Yoga Teacher Training — Rishikesh, Bali & Goa",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "url": "/contact/",
+      "description": "WhatsApp or call us",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/char_dham_map.webp",
+      "sizes": "1080x1920",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Char Dham Yatra packages"
+    }
+  ]
+}
