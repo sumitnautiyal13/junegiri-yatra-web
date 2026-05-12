@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Package } from '@/types';
 import PriceDisplay from '@/components/PriceDisplay';
 import { formatINR } from '@/lib/currency';
@@ -38,6 +39,7 @@ const CITY_ROUTE_MAP: Record<string, string> = {
   'nainital-jim-corbett-4n-5d': '/nainital-from/',
   'nainital-corbett-tour-3n-4d': '/nainital-from/',
   'varanasi-prayagraj-spiritual-3n-4d': '/varanasi-from/',
+  'bali-7d6n-party-escape': '/bali-from/',
 };
 
 export default function PackageDetailPage({ pkg }: { pkg: Package }) {
@@ -242,8 +244,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
             <div className="gallery-grid">
               {pkg.gallery.map((img, i) => (
                 <div key={i} className="gallery-item">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={img} alt={`${pkg.name} gallery ${i + 1}`} loading="lazy" />
+                  <Image src={img} alt={`${pkg.name} gallery ${i + 1}`} fill sizes="(max-width:768px) 100vw, 33vw" style={{ objectFit: 'cover' }} />
                 </div>
               ))}
             </div>
