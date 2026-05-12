@@ -7,7 +7,7 @@ export default function PrintBar() {
         🖨️ Save as PDF
       </button>
       <a
-        href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20book%20the%20Bali%207D6N%20package%20(23-29%20May)"
+        href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20book%20the%20Bali%207D6N%20package%20(23-29%20May)"
         className="wa-btn"
         target="_blank"
         rel="noopener noreferrer"

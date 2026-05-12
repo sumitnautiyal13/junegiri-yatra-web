@@ -70,7 +70,7 @@ export default function BaliCityPage({ city }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const flight = FLIGHT_DATA[city.slug] ?? DEFAULT_FLIGHT;
   const waText = `Namaste! I want to enquire about the Bali 7D6N package from ${city.name}`;
-  const waLink = `https://wa.me/919873897652?text=${encodeURIComponent(waText)}`;
+  const waLink = `https://wa.me/6282111759727?text=${encodeURIComponent(waText)}`;
 
   const faqs = [
     {
@@ -108,7 +108,7 @@ export default function BaliCityPage({ city }: Props) {
           price: '530',
           priceCurrency: 'USD',
           availability: 'https://schema.org/InStock',
-          seller: { '@type': 'TravelAgency', name: 'Junegiri Yatra', telephone: '+919873897652' },
+          seller: { '@type': 'TravelAgency', name: 'Junegiri Yatra', telephone: '+6282111759727' },
         },
         provider: { '@type': 'TravelAgency', name: 'Junegiri Yatra', url: 'https://junegiriyatra.com' },
       },
@@ -301,7 +301,7 @@ export default function BaliCityPage({ city }: Props) {
           <div style={{ marginTop: 24, display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
             <WaLink href={waLink} className="btn btn-wa" target="_blank" rel="noopener noreferrer"
               style={{ fontSize: 16, padding: '18px 32px' }} label={`bali_cta_${city.slug}`}>
-              📱 WhatsApp +91 98738 97652
+              📱 WhatsApp +62 821-1175-9727
             </WaLink>
             <Link href="/itinerary/bali-7d6n-party-escape/" className="btn btn-outline"
               style={{ fontSize: 16, padding: '18px 32px' }}>

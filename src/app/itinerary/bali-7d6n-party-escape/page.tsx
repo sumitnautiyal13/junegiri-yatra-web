@@ -496,7 +496,7 @@ export default function BaliItineraryPDF() {
             </div>
             <div className="pdf-divider" />
             <div className="pdf-contact">
-              <div>📞 <a href="tel:+919873897652">+91 98738 97652</a></div>
+              <div>📞 <a href="tel:+6282111759727">+62 821-1175-9727</a></div>
               <div>✉️ <a href="mailto:info@junegiriyatra.com">info@junegiriyatra.com</a></div>
             </div>
           </div>
@@ -759,7 +759,7 @@ export default function BaliItineraryPDF() {
             </div>
           </div>
           <div className="pdf-footer-contact">
-            <div>📞 <a href="tel:+919873897652">+91 98738 97652</a></div>
+            <div>📞 <a href="tel:+6282111759727">+62 821-1175-9727</a></div>
             <div>✉️ <a href="mailto:info@junegiriyatra.com">info@junegiriyatra.com</a></div>
             <div>🌐 <a href="https://junegiriyatra.com">junegiriyatra.com</a></div>
           </div>

@@ -101,7 +101,7 @@ export default function BaliFromIndex() {
             All-inclusive packages from <strong>$530 / person</strong>
           </p>
           <a
-            href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
+            href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
             className="btn-gold-hero"
             target="_blank"
             rel="noopener noreferrer"
@@ -219,15 +219,15 @@ export default function BaliFromIndex() {
           </div>
           <div className="city-cta-btns">
             <a
-              href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
+              href="https://wa.me/6282111759727?text=Namaste!%20I%20want%20to%20enquire%20about%20the%20Bali%207D6N%20package"
               className="btn-gold-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
               📲 WhatsApp Us Now
             </a>
-            <a href="tel:+919873897652" className="btn-outline-lg">
-              📞 +91 98738 97652
+            <a href="tel:+6282111759727" className="btn-outline-lg">
+              📞 +62 821-1175-9727
             </a>
           </div>
         </div>
