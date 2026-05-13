@@ -73,30 +73,37 @@ const NAV: NavEntry[] = [
   },
   {
     label: 'Treks',
-    href: '/packages/himalayan-treks/',
+    href: '/himalayan-treks/',
     mega: {
       columns: [
         {
-          heading: 'Snow & Winter Treks',
+          heading: 'Uttarakhand Treks',
           items: [
-            { icon: '❄️', label: 'Kedarkantha Trek', sub: 'Dec–Apr · 3,810m summit · snow trails', href: '/packages/kedarkantha-trek-5n-6d/', badge: 'Bestseller' },
-            { icon: '🏔️', label: 'Pangarchulla Peak', sub: 'Mar–May · 4,700m · summit climb', href: '/packages/pangarchulla-peak-5n-6d/' },
-            { icon: '⛷️', label: 'Kuari Pass Trek', sub: "Feb–Jun · Lord Curzon's Trail · panoramic", href: '/packages/kuari-pass-trek-4n-5d/' },
+            { icon: '❄️', label: 'Kedarkantha Trek', sub: 'Dec–Apr · 3,810m · snow trails', href: '/packages/kedarkantha-trek-5n-6d/', badge: 'Bestseller' },
+            { icon: '🌸', label: 'Valley of Flowers', sub: 'Jul–Sep · UNESCO · 300+ wildflowers', href: '/packages/valley-of-flowers-trek-4n-5d/', badge: 'UNESCO' },
+            { icon: '🏕️', label: 'Har Ki Dun Trek', sub: 'Apr–Nov · Pandava route · 3,566m', href: '/packages/har-ki-dun-trek-5n-6d/' },
+            { icon: '🌄', label: 'Chopta–Tungnath Trek', sub: "Year-round · world's highest Shiva temple", href: '/packages/chopta-tungnath-trek-3n-4d/' },
+            { icon: '⛷️', label: 'Kuari Pass Trek', sub: "Feb–Jun · Lord Curzon's Trail · 3,812m", href: '/packages/kuari-pass-trek-4n-5d/' },
+            { icon: '🗻', label: 'Roopkund Trek', sub: 'May–Oct · Mystery Lake · 4,800m', href: '/packages/roopkund-trek-7n-8d/' },
+            { icon: '🏔️', label: 'View All Treks', sub: 'Full list — Uttarakhand & Himachal Pradesh', href: '/himalayan-treks/' },
           ],
         },
         {
-          heading: 'Summer & Monsoon Treks',
+          heading: 'Himachal Pradesh Treks',
           items: [
-            { icon: '🌸', label: 'Valley of Flowers', sub: 'Jul–Sep · UNESCO · 500+ wildflowers', href: '/packages/valley-of-flowers-trek-4n-5d/', badge: 'UNESCO' },
-            { icon: '🏕️', label: 'Har Ki Dun Trek', sub: 'Apr–Nov · Pandava route · 3,566m', href: '/packages/har-ki-dun-trek-5n-6d/' },
-            { icon: '🌄', label: 'Chopta–Tungnath Trek', sub: "Year-round · world's highest Shiva temple", href: '/packages/chopta-tungnath-trek-3n-4d/' },
-            { icon: '🗻', label: 'Roopkund Trek', sub: 'May–Oct · Mystery Lake · 5,029m', href: '/packages/roopkund-trek-7n-8d/' },
+            { icon: '🏕️', label: 'Triund Trek', sub: 'Easy · 2,875m · Dharamshala · 2–3 days', href: '/himalayan-treks/' },
+            { icon: '🌊', label: 'Kareri Lake Trek', sub: 'Easy · 2,950m · Forests & rivers · 3–4 days', href: '/himalayan-treks/' },
+            { icon: '🏔️', label: 'Hamta Pass Trek', sub: 'Moderate · 4,270m · Kullu to Spiti · 4–5 days', href: '/himalayan-treks/' },
+            { icon: '🧊', label: 'Indrahar Pass Trek', sub: 'Moderate · 4,342m · Dhauladhar views · 3–4 days', href: '/himalayan-treks/' },
+            { icon: '🌸', label: 'Rupin Pass Trek', sub: 'Moderate · 4,650m · Snow bridges · 8 days', href: '/himalayan-treks/' },
+            { icon: '🏔️', label: 'Kanamo Peak', sub: 'Difficult · 5,964m · Spiti · summit climb', href: '/himalayan-treks/', badge: 'High Altitude' },
+            { icon: '🗺️', label: 'Pin Parvati Pass', sub: 'Difficult · 5,319m · Kullu to Spiti · 10–11 days', href: '/himalayan-treks/' },
           ],
         },
       ],
       featured: {
         image: '/images/trek_snow_peak.webp',
-        badge: '❄️ Season Open',
+        badge: '❄️ Bestseller',
         title: 'Kedarkantha Trek 2026',
         price: 'From ₹9,500 / person',
         href: '/packages/kedarkantha-trek-5n-6d/',
@@ -220,7 +227,7 @@ const NAV: NavEntry[] = [
           items: [
             { icon: '🗺️', label: 'India Tour from UK / USA / Australia', sub: 'Golden Triangle · Char Dham · Himalayan treks for global visitors', href: '/india-tour-from/', badge: 'Global' },
             { icon: '🧘', label: 'Yoga TTC — All Locations', sub: 'Rishikesh · Bali · Goa — Yoga Alliance certified', href: '/yoga/' },
-            { icon: '🏔️', label: 'Himalayan Treks for Internationals', sub: 'Kedarkantha · Valley of Flowers · Har Ki Dun', href: '/packages/himalayan-treks/' },
+            { icon: '🏔️', label: 'Himalayan Treks for Internationals', sub: 'Kedarkantha · Valley of Flowers · Har Ki Dun', href: '/himalayan-treks/' },
             { icon: '📋', label: 'India Visa Guide', sub: 'e-Visa process · tourist visa · eligibility check', href: '/blog/india-visa-guide-international-tourists/' },
           ],
         },
