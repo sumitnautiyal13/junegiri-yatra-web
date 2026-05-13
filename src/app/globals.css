@@ -1430,6 +1430,23 @@ footer a:hover { color: var(--gold2); }
 /* ══════════════════════════════════════════════════════════
    MOBILE DRAWER
    ══════════════════════════════════════════════════════════ */
+/* ── Trek card hover (CSS-only, no JS event handlers) ──────── */
+.trek-card-hover { display: block; text-decoration: none; }
+.trek-card-inner {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.trek-card-hover:hover .trek-card-inner {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(201,146,61,0.18);
+}
+
 .mobile-backdrop {
   position: fixed;
   inset: 0;

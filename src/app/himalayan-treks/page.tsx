@@ -285,15 +285,7 @@ const FEATURES = [
   { icon: '🏥', title: 'Altitude Safety Protocol', desc: 'Acclimatisation built into every itinerary. Pulse oximeters on all treks. Medical evacuation protocol in place.' },
 ];
 
-/* ── shared card styles ─────────────────────────────────────── */
-const cardBase: React.CSSProperties = {
-  background: 'var(--card)',
-  border: '1px solid var(--border)',
-  borderRadius: 14,
-  overflow: 'hidden',
-  display: 'flex',
-  flexDirection: 'column',
-};
+/* cardBase moved to CSS class .trek-card-hover in globals.css */
 
 export default function HimalayanTreksPage() {
   return (
@@ -368,11 +360,8 @@ export default function HimalayanTreksPage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 24, marginTop: 28 }}>
             {UK_TREKS.map((trek) => (
-              <Link key={trek.slug} href={`/packages/${trek.slug}/`} style={{ display: 'block', textDecoration: 'none' }}>
-                <div style={{ ...cardBase, transition: 'transform 0.2s, box-shadow 0.2s', cursor: 'pointer' }}
-                  onMouseEnter={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = 'translateY(-4px)'; d.style.boxShadow = '0 12px 40px rgba(201,146,61,0.18)'; }}
-                  onMouseLeave={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = ''; d.style.boxShadow = ''; }}
-                >
+              <Link key={trek.slug} href={`/packages/${trek.slug}/`} className="trek-card-hover" style={{ display: 'block', textDecoration: 'none' }}>
+                <div className="trek-card-inner">
                   <div style={{ position: 'relative', height: 190 }}>
                     <Image src={trek.image} alt={trek.name} fill sizes="400px" style={{ objectFit: 'cover' }} />
                     <span style={{ position: 'absolute', top: 12, left: 12, background: trek.tagColor, color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{trek.tag}</span>
@@ -430,10 +419,7 @@ export default function HimalayanTreksPage() {
                   target="_blank" rel="noopener noreferrer"
                   style={{ textDecoration: 'none', display: 'block' }}
                 >
-                  <div style={{ ...cardBase, transition: 'transform 0.2s, box-shadow 0.2s', cursor: 'pointer' }}
-                    onMouseEnter={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = 'translateY(-3px)'; d.style.boxShadow = '0 8px 28px rgba(61,201,160,0.12)'; }}
-                    onMouseLeave={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = ''; d.style.boxShadow = ''; }}
-                  >
+                  <div className="trek-card-inner">
                     <div style={{ position: 'relative', height: 160 }}>
                       <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
                       <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
@@ -469,10 +455,7 @@ export default function HimalayanTreksPage() {
                   target="_blank" rel="noopener noreferrer"
                   style={{ textDecoration: 'none', display: 'block' }}
                 >
-                  <div style={{ ...cardBase, transition: 'transform 0.2s, box-shadow 0.2s', cursor: 'pointer' }}
-                    onMouseEnter={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = 'translateY(-3px)'; d.style.boxShadow = '0 8px 28px rgba(232,170,80,0.12)'; }}
-                    onMouseLeave={(e) => { const d = e.currentTarget as HTMLDivElement; d.style.transform = ''; d.style.boxShadow = ''; }}
-                  >
+                  <div className="trek-card-inner">
                     <div style={{ position: 'relative', height: 160 }}>
                       <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
                       <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
