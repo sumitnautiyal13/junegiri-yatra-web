@@ -414,7 +414,20 @@ export default function Header() {
 
       {/* ── MOBILE DRAWER ─────────────────────────────────── */}
       {mobileOpen && (
-        <div className="mobile-drawer">
+        <>
+          {/* Backdrop — tap anywhere outside to close */}
+          <div
+            className="mobile-backdrop"
+            onClick={closeAll}
+            aria-hidden="true"
+          />
+          <div className="mobile-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+            {/* Close button */}
+            <button
+              className="mob-close"
+              onClick={closeAll}
+              aria-label="Close menu"
+            />
           <div className="mobile-drawer-inner">
             {NAV.map((entry) =>
               entry.mega ? (
@@ -474,7 +487,8 @@ export default function Header() {
               <InstallAppButton style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, fontWeight: 600 }} />
             </div>
           </div>
-        </div>
+          </div>
+        </>
       )}
     </>
   );
