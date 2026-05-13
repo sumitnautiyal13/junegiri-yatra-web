@@ -93,8 +93,11 @@ const NAV: NavEntry[] = [
           items: [
             { icon: '🏕️', label: 'Triund Trek', sub: 'Easy · 2,875m · Dharamshala · 2–3 days', href: '/himalayan-treks/' },
             { icon: '🌊', label: 'Kareri Lake Trek', sub: 'Easy · 2,950m · Forests & rivers · 3–4 days', href: '/himalayan-treks/' },
+            { icon: '🏞️', label: 'Beas Kund Trek', sub: 'Easy · 3,700m · Manali · glacier & wildflowers', href: '/himalayan-treks/' },
+            { icon: '🌅', label: 'Bhrigu Lake Trek', sub: 'Easy · 4,300m · Manali · high-altitude lake', href: '/himalayan-treks/' },
             { icon: '🏔️', label: 'Hamta Pass Trek', sub: 'Moderate · 4,270m · Kullu to Spiti · 4–5 days', href: '/himalayan-treks/' },
             { icon: '🧊', label: 'Indrahar Pass Trek', sub: 'Moderate · 4,342m · Dhauladhar views · 3–4 days', href: '/himalayan-treks/' },
+            { icon: '🍎', label: 'Chandrakhani Pass Trek', sub: 'Moderate · 3,660m · Apple orchards · 3–4 days', href: '/himalayan-treks/' },
             { icon: '🌸', label: 'Rupin Pass Trek', sub: 'Moderate · 4,650m · Snow bridges · 8 days', href: '/himalayan-treks/' },
             { icon: '🏔️', label: 'Kanamo Peak', sub: 'Difficult · 5,964m · Spiti · summit climb', href: '/himalayan-treks/', badge: 'High Altitude' },
             { icon: '🗺️', label: 'Pin Parvati Pass', sub: 'Difficult · 5,319m · Kullu to Spiti · 10–11 days', href: '/himalayan-treks/' },
