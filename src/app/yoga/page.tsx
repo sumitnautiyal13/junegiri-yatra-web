@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import Link from 'next/link';
 import Image from 'next/image';
 import WaLink from '@/components/WaLink';
@@ -73,8 +74,47 @@ const WHY_US = [
   { icon: '📞', title: 'Lifetime Support', body: 'Questions before, during or after training — our team is on WhatsApp 7 days a week to support your yoga journey.' },
 ];
 
+const yogaJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Yoga Teacher Training Programs — Rishikesh, Bali & Goa',
+  description: 'Yoga Alliance certified 100hr, 200hr & 300hr Teacher Training Courses in Rishikesh, Bali and Goa.',
+  url: 'https://junegiriyatra.com/yoga/',
+  numberOfItems: 9,
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Yoga TTC Rishikesh', url: 'https://junegiriyatra.com/yoga/rishikesh/' },
+    { '@type': 'ListItem', position: 2, name: 'Yoga TTC Bali', url: 'https://junegiriyatra.com/yoga/bali/' },
+    { '@type': 'ListItem', position: 3, name: 'Yoga TTC Goa', url: 'https://junegiriyatra.com/yoga/goa/' },
+  ],
+  provider: {
+    '@type': 'Organization',
+    name: 'Junegiri Yatra',
+    url: 'https://junegiriyatra.com',
+    logo: { '@type': 'ImageObject', url: 'https://junegiriyatra.com/logo.png' },
+    telephone: '+919873897652',
+    address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressRegion: 'Uttarakhand', addressCountry: 'IN' },
+    sameAs: ['https://www.instagram.com/junegiriyatra', 'https://www.facebook.com/junegiriyatra'],
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Yoga Teacher Training', item: 'https://junegiriyatra.com/yoga/' },
+  ],
+};
+
 export default function YogaHubPage() {
   return (
+    <>
+      <Script id="yoga-hub-jsonld" type="application/ld+json" strategy="beforeInteractive">
+        {JSON.stringify(yogaJsonLd)}
+      </Script>
+      <Script id="yoga-hub-breadcrumb" type="application/ld+json" strategy="beforeInteractive">
+        {JSON.stringify(breadcrumbJsonLd)}
+      </Script>
     <div style={{ color: '#1a1a1a' }}>
       {/* ── HERO ── */}
       <section className="city-hero">
@@ -308,5 +348,6 @@ export default function YogaHubPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

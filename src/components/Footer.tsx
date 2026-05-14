@@ -18,7 +18,7 @@ export default function Footer() {
 
           <div>
             <h4>Pilgrimages</h4>
-            <Link href="/packages/char-dham-yatra/">Char Dham Yatra</Link>
+            <Link href="/packages/char-dham-yatra-9n-10d/">Char Dham Yatra</Link>
             <Link href="/packages/kedarnath-yatra-3n-4d/">Kedarnath Yatra</Link>
             <Link href="/packages/kedarnath-helicopter-2n-3d/">Kedarnath Helicopter</Link>
             <Link href="/packages/braj-bhoomi-yatra-5n-6d/">Braj Bhoomi Yatra</Link>
@@ -36,7 +36,7 @@ export default function Footer() {
             <Link href="/india-tour-from/">India Tour Packages</Link>
             <Link href="/golden-triangle-from/">Golden Triangle Tour</Link>
             <Link href="/himalayan-treks/">Himalayan Treks</Link>
-            <Link href="/packages/rishikesh-adventures/">Rishikesh Adventures</Link>
+            <Link href="/packages/rishikesh-adventure-pack-2n-3d/">Rishikesh Adventures</Link>
             <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
             <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>

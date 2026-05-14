@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { index: '/ayodhya-from/', priority: 0.8 as const },
     { index: '/india-tour-from/', priority: 0.9 as const },
     { index: '/golden-triangle-from/', priority: 0.9 as const },
+    { index: '/bali-from/', priority: 0.8 as const },
   ];
 
   for (const dest of DEST_ROUTES) {
@@ -68,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Category hub pages
   urls.push({ url: `${BASE}/himalayan-treks/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 });
-  urls.push({ url: `${BASE}/bali-from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 });
+  // Note: /bali-from/ and its city pages are included in DEST_ROUTES loop above
 
   // Static pages
   urls.push({ url: `${BASE}/about/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
