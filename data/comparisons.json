@@ -13,8 +13,16 @@
       "duration": "5 Nights / 6 Days",
       "difficulty": "Moderate",
       "best_for": "First-time pilgrims, limited vacation time",
-      "pros": ["Shorter duration", "Lower cost", "Covers the most sacred dhams", "Less physically demanding"],
-      "cons": ["Misses Yamunotri & Gangotri", "Incomplete circuit for traditional pilgrims"]
+      "pros": [
+        "Shorter duration",
+        "Lower cost",
+        "Covers the most sacred dhams",
+        "Less physically demanding"
+      ],
+      "cons": [
+        "Misses Yamunotri & Gangotri",
+        "Incomplete circuit for traditional pilgrims"
+      ]
     },
     "item_b": {
       "name": "Char Dham Yatra",
@@ -23,22 +31,64 @@
       "duration": "9 Nights / 10 Days",
       "difficulty": "Moderate",
       "best_for": "Complete pilgrimage, spiritually inclined travellers",
-      "pros": ["Complete sacred circuit", "All 4 dhams covered", "Deeper spiritual experience", "Traditional pilgrimage"],
-      "cons": ["Higher cost", "Longer duration", "More physically tiring"]
+      "pros": [
+        "Complete sacred circuit",
+        "All 4 dhams covered",
+        "Deeper spiritual experience",
+        "Traditional pilgrimage"
+      ],
+      "cons": [
+        "Higher cost",
+        "Longer duration",
+        "More physically tiring"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "5 Nights / 6 Days", "b": "9 Nights / 10 Days"},
-      {"aspect": "Price (from)", "a": "₹11,550/person", "b": "₹19,800/person"},
-      {"aspect": "Dhams Covered", "a": "2 (Kedarnath + Badrinath)", "b": "4 (all dhams)"},
-      {"aspect": "Best Season", "a": "May–Oct", "b": "May–Oct"},
-      {"aspect": "Trek Involved", "a": "Kedarnath (22km or heli)", "b": "Kedarnath + Yamunotri"},
-      {"aspect": "Ideal For", "a": "Short leave, first-timers", "b": "Complete pilgrimage"}
+      {
+        "aspect": "Duration",
+        "a": "5 Nights / 6 Days",
+        "b": "9 Nights / 10 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹11,550/person",
+        "b": "₹19,800/person"
+      },
+      {
+        "aspect": "Dhams Covered",
+        "a": "2 (Kedarnath + Badrinath)",
+        "b": "4 (all dhams)"
+      },
+      {
+        "aspect": "Best Season",
+        "a": "May–Oct",
+        "b": "May–Oct"
+      },
+      {
+        "aspect": "Trek Involved",
+        "a": "Kedarnath (22km or heli)",
+        "b": "Kedarnath + Yamunotri"
+      },
+      {
+        "aspect": "Ideal For",
+        "a": "Short leave, first-timers",
+        "b": "Complete pilgrimage"
+      }
     ],
     "verdict": "Choose Do Dham if you have 6 days and want the core spiritual experience. Choose Char Dham if you have 10 days and want the complete traditional pilgrimage.",
     "faq": [
-      {"q": "Which is better — Do Dham or Char Dham?", "a": "Both are sacred, but Char Dham is the complete traditional circuit. Do Dham is ideal for those with limited time or budget."},
-      {"q": "Can I upgrade from Do Dham to Char Dham on the same trip?", "a": "Yes, with advance planning. Junegiri Yatra can customise your itinerary to add Yamunotri and Gangotri to any Do Dham trip."},
-      {"q": "What is the cost difference between Do Dham and Char Dham?", "a": "Do Dham starts at ₹11,550/person while Char Dham starts at ₹19,800/person. The difference covers 4 more nights accommodation, more vehicle days, and guide fees."}
+      {
+        "q": "Which is better — Do Dham or Char Dham?",
+        "a": "Both are sacred, but Char Dham is the complete traditional circuit. Do Dham is ideal for those with limited time or budget."
+      },
+      {
+        "q": "Can I upgrade from Do Dham to Char Dham on the same trip?",
+        "a": "Yes, with advance planning. Junegiri Yatra can customise your itinerary to add Yamunotri and Gangotri to any Do Dham trip."
+      },
+      {
+        "q": "What is the cost difference between Do Dham and Char Dham?",
+        "a": "Do Dham starts at ₹11,550/person while Char Dham starts at ₹19,800/person. The difference covers 4 more nights accommodation, more vehicle days, and guide fees."
+      }
     ]
   },
   {
@@ -55,8 +105,18 @@
       "duration": "3 Nights / 4 Days",
       "difficulty": "Moderate–Difficult",
       "best_for": "Adventure seekers, budget travellers, young & fit pilgrims",
-      "pros": ["Authentic pilgrim experience", "Scenic 22km trail", "Lower cost", "Greater sense of achievement"],
-      "cons": ["Physically demanding 22km walk", "Weather-dependent", "Takes more time", "Not suitable for elderly"]
+      "pros": [
+        "Authentic pilgrim experience",
+        "Scenic 22km trail",
+        "Lower cost",
+        "Greater sense of achievement"
+      ],
+      "cons": [
+        "Physically demanding 22km walk",
+        "Weather-dependent",
+        "Takes more time",
+        "Not suitable for elderly"
+      ]
     },
     "item_b": {
       "name": "Kedarnath Helicopter",
@@ -65,22 +125,65 @@
       "duration": "2 Nights / 3 Days",
       "difficulty": "Easy",
       "best_for": "Elderly pilgrims, families with kids, limited time travellers",
-      "pros": ["No trekking required", "Quick & comfortable", "Suitable for all ages", "Save 1–2 days"],
-      "cons": ["Much higher cost", "Subject to weather/slot cancellations", "Misses the trek experience", "Requires advance booking"]
+      "pros": [
+        "No trekking required",
+        "Quick & comfortable",
+        "Suitable for all ages",
+        "Save 1–2 days"
+      ],
+      "cons": [
+        "Much higher cost",
+        "Subject to weather/slot cancellations",
+        "Misses the trek experience",
+        "Requires advance booking"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "3 Nights / 4 Days", "b": "2 Nights / 3 Days"},
-      {"aspect": "Price (from)", "a": "₹8,500/person", "b": "₹24,000/person"},
-      {"aspect": "Trek Distance", "a": "22km (Gaurikund to temple)", "b": "None"},
-      {"aspect": "Fitness Required", "a": "Moderate fitness needed", "b": "No fitness required"},
-      {"aspect": "Best For", "a": "Young, fit, adventurous", "b": "Elderly, families, VIPs"},
-      {"aspect": "Booking Lead Time", "a": "1–2 weeks", "b": "4–6 weeks in advance"}
+      {
+        "aspect": "Duration",
+        "a": "3 Nights / 4 Days",
+        "b": "2 Nights / 3 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹8,500/person",
+        "b": "₹24,000/person"
+      },
+      {
+        "aspect": "Trek Distance",
+        "a": "22km (Gaurikund to temple)",
+        "b": "None"
+      },
+      {
+        "aspect": "Fitness Required",
+        "a": "Moderate fitness needed",
+        "b": "No fitness required"
+      },
+      {
+        "aspect": "Best For",
+        "a": "Young, fit, adventurous",
+        "b": "Elderly, families, VIPs"
+      },
+      {
+        "aspect": "Booking Lead Time",
+        "a": "1–2 weeks",
+        "b": "4–6 weeks in advance"
+      }
     ],
     "verdict": "Trek if you are fit, seek the true pilgrim experience and are budget-conscious. Take the helicopter if you are elderly, have limited time, or want a comfortable hassle-free darshan.",
     "faq": [
-      {"q": "Is the Kedarnath trek safe?", "a": "Yes, the trek is well-maintained with medical posts, porters and ponies available. Junegiri Yatra guides accompany all trek groups for safety."},
-      {"q": "How far in advance should I book the Kedarnath helicopter?", "a": "Book at least 4–6 weeks ahead, especially for May–June when demand is peak and slots fill up fast."},
-      {"q": "Can elderly people do the Kedarnath trek?", "a": "It depends on fitness level. For those above 60 or with health conditions, the helicopter or pony/palanquin service on the trek route is strongly recommended."}
+      {
+        "q": "Is the Kedarnath trek safe?",
+        "a": "Yes, the trek is well-maintained with medical posts, porters and ponies available. Junegiri Yatra guides accompany all trek groups for safety."
+      },
+      {
+        "q": "How far in advance should I book the Kedarnath helicopter?",
+        "a": "Book at least 4–6 weeks ahead, especially for May–June when demand is peak and slots fill up fast."
+      },
+      {
+        "q": "Can elderly people do the Kedarnath trek?",
+        "a": "It depends on fitness level. For those above 60 or with health conditions, the helicopter or pony/palanquin service on the trek route is strongly recommended."
+      }
     ]
   },
   {
@@ -97,8 +200,17 @@
       "duration": "5 Nights / 6 Days",
       "difficulty": "Easy–Moderate",
       "best_for": "Winter trekkers, snow lovers, beginners, summit seekers",
-      "pros": ["Stunning winter snowscape", "Beginner-friendly summit", "360° Himalayan panorama", "Year-round but magical in winter"],
-      "cons": ["Cold winter conditions", "No UNESCO tag", "Limited flora compared to VoF"]
+      "pros": [
+        "Stunning winter snowscape",
+        "Beginner-friendly summit",
+        "360° Himalayan panorama",
+        "Year-round but magical in winter"
+      ],
+      "cons": [
+        "Cold winter conditions",
+        "No UNESCO tag",
+        "Limited flora compared to VoF"
+      ]
     },
     "item_b": {
       "name": "Valley of Flowers Trek",
@@ -107,22 +219,64 @@
       "duration": "5 Nights / 6 Days",
       "difficulty": "Moderate",
       "best_for": "Nature lovers, flower enthusiasts, UNESCO heritage seekers, monsoon trekkers",
-      "pros": ["UNESCO World Heritage Site", "Over 500 wildflower species", "Hemkund Sahib combo possible", "Unique monsoon experience"],
-      "cons": ["Only accessible July–September", "Wet/rainy trail conditions", "No summit climb"]
+      "pros": [
+        "UNESCO World Heritage Site",
+        "Over 500 wildflower species",
+        "Hemkund Sahib combo possible",
+        "Unique monsoon experience"
+      ],
+      "cons": [
+        "Only accessible July–September",
+        "Wet/rainy trail conditions",
+        "No summit climb"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "5 Nights / 6 Days", "b": "5 Nights / 6 Days"},
-      {"aspect": "Price (from)", "a": "₹9,500/person", "b": "₹8,500/person"},
-      {"aspect": "Best Season", "a": "Dec–Apr (winter snow)", "b": "Jul–Sep (monsoon blooms)"},
-      {"aspect": "Difficulty", "a": "Easy–Moderate", "b": "Moderate"},
-      {"aspect": "Highlight", "a": "Snow summit, 360° views", "b": "UNESCO flora, 500+ species"},
-      {"aspect": "Ideal For", "a": "Beginners, snow lovers", "b": "Nature lovers, heritage seekers"}
+      {
+        "aspect": "Duration",
+        "a": "5 Nights / 6 Days",
+        "b": "5 Nights / 6 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹9,500/person",
+        "b": "₹8,500/person"
+      },
+      {
+        "aspect": "Best Season",
+        "a": "Dec–Apr (winter snow)",
+        "b": "Jul–Sep (monsoon blooms)"
+      },
+      {
+        "aspect": "Difficulty",
+        "a": "Easy–Moderate",
+        "b": "Moderate"
+      },
+      {
+        "aspect": "Highlight",
+        "a": "Snow summit, 360° views",
+        "b": "UNESCO flora, 500+ species"
+      },
+      {
+        "aspect": "Ideal For",
+        "a": "Beginners, snow lovers",
+        "b": "Nature lovers, heritage seekers"
+      }
     ],
     "verdict": "Choose Kedarkantha for a snow-covered winter adventure with a rewarding summit. Choose Valley of Flowers for a monsoon bloom spectacle and UNESCO heritage experience.",
     "faq": [
-      {"q": "Which trek is better for beginners — Kedarkantha or Valley of Flowers?", "a": "Kedarkantha is slightly more beginner-friendly with its gradual ascent. Valley of Flowers is also easy but trails can be slippery during monsoon."},
-      {"q": "Can Valley of Flowers be combined with Hemkund Sahib?", "a": "Yes. Most Junegiri Yatra VoF packages include Hemkund Sahib, adding a half-day extension for this sacred Sikh shrine at 4,329m."},
-      {"q": "What is the best month for each trek?", "a": "January–March for Kedarkantha to experience full snow, and July–August for Valley of Flowers to catch peak wildflower bloom."}
+      {
+        "q": "Which trek is better for beginners — Kedarkantha or Valley of Flowers?",
+        "a": "Kedarkantha is slightly more beginner-friendly with its gradual ascent. Valley of Flowers is also easy but trails can be slippery during monsoon."
+      },
+      {
+        "q": "Can Valley of Flowers be combined with Hemkund Sahib?",
+        "a": "Yes. Most Junegiri Yatra VoF packages include Hemkund Sahib, adding a half-day extension for this sacred Sikh shrine at 4,329m."
+      },
+      {
+        "q": "What is the best month for each trek?",
+        "a": "January–March for Kedarkantha to experience full snow, and July–August for Valley of Flowers to catch peak wildflower bloom."
+      }
     ]
   },
   {
@@ -139,8 +293,17 @@
       "duration": "2 Nights / 3 Days",
       "difficulty": "Easy",
       "best_for": "Adventure travellers, yoga seekers, backpackers, young groups",
-      "pros": ["River rafting & adventure sports", "International yoga capital", "Laxman Jhula & cafes", "Vibrant backpacker scene"],
-      "cons": ["More touristy feel", "Less traditional spiritual atmosphere", "Crowded in peak season"]
+      "pros": [
+        "River rafting & adventure sports",
+        "International yoga capital",
+        "Laxman Jhula & cafes",
+        "Vibrant backpacker scene"
+      ],
+      "cons": [
+        "More touristy feel",
+        "Less traditional spiritual atmosphere",
+        "Crowded in peak season"
+      ]
     },
     "item_b": {
       "name": "Haridwar Spiritual Tour",
@@ -149,22 +312,64 @@
       "duration": "3 Nights / 4 Days",
       "difficulty": "Easy",
       "best_for": "Devotees, elderly pilgrims, Ganga aarti seekers, families",
-      "pros": ["Iconic Ganga Aarti at Har Ki Pauri", "Deep spiritual atmosphere", "Gateway to Char Dham", "Kumbh Mela city"],
-      "cons": ["Limited adventure activities", "More crowded near ghats", "Less backpacker infrastructure"]
+      "pros": [
+        "Iconic Ganga Aarti at Har Ki Pauri",
+        "Deep spiritual atmosphere",
+        "Gateway to Char Dham",
+        "Kumbh Mela city"
+      ],
+      "cons": [
+        "Limited adventure activities",
+        "More crowded near ghats",
+        "Less backpacker infrastructure"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "2 Nights / 3 Days", "b": "3 Nights / 4 Days"},
-      {"aspect": "Price (from)", "a": "₹5,500/person", "b": "₹7,500/person"},
-      {"aspect": "Vibe", "a": "Adventure & Yoga", "b": "Pure Spiritual Devotion"},
-      {"aspect": "Top Activity", "a": "River Rafting, Bungee", "b": "Ganga Aarti, Ghat rituals"},
-      {"aspect": "Best For", "a": "Young groups, adventure seekers", "b": "Devotees, families, elderly"},
-      {"aspect": "Distance from Delhi", "a": "250 km (~5 hrs)", "b": "220 km (~4.5 hrs)"}
+      {
+        "aspect": "Duration",
+        "a": "2 Nights / 3 Days",
+        "b": "3 Nights / 4 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹5,500/person",
+        "b": "₹7,500/person"
+      },
+      {
+        "aspect": "Vibe",
+        "a": "Adventure & Yoga",
+        "b": "Pure Spiritual Devotion"
+      },
+      {
+        "aspect": "Top Activity",
+        "a": "River Rafting, Bungee",
+        "b": "Ganga Aarti, Ghat rituals"
+      },
+      {
+        "aspect": "Best For",
+        "a": "Young groups, adventure seekers",
+        "b": "Devotees, families, elderly"
+      },
+      {
+        "aspect": "Distance from Delhi",
+        "a": "250 km (~5 hrs)",
+        "b": "220 km (~4.5 hrs)"
+      }
     ],
     "verdict": "Choose Rishikesh for adventure, yoga and a vibrant international atmosphere. Choose Haridwar for an immersive, deeply traditional spiritual experience centred around the holy Ganga.",
     "faq": [
-      {"q": "Can I visit both Rishikesh and Haridwar in one trip?", "a": "Absolutely. They are only 20km apart. Junegiri Yatra offers combined itineraries covering both towns in 4–5 days."},
-      {"q": "Which is better for families with elderly members?", "a": "Haridwar is generally better suited for elderly travellers due to flat ghats, temple accessibility and a calmer spiritual environment."},
-      {"q": "Is river rafting available in Haridwar too?", "a": "Rafting is primarily based in Rishikesh. Haridwar is the starting point for many rafting routes but the main camps and action are in Rishikesh."}
+      {
+        "q": "Can I visit both Rishikesh and Haridwar in one trip?",
+        "a": "Absolutely. They are only 20km apart. Junegiri Yatra offers combined itineraries covering both towns in 4–5 days."
+      },
+      {
+        "q": "Which is better for families with elderly members?",
+        "a": "Haridwar is generally better suited for elderly travellers due to flat ghats, temple accessibility and a calmer spiritual environment."
+      },
+      {
+        "q": "Is river rafting available in Haridwar too?",
+        "a": "Rafting is primarily based in Rishikesh. Haridwar is the starting point for many rafting routes but the main camps and action are in Rishikesh."
+      }
     ]
   },
   {
@@ -181,8 +386,18 @@
       "duration": "9 Nights / 10 Days",
       "difficulty": "Moderate",
       "best_for": "Traditional pilgrims, families, budget-conscious travellers",
-      "pros": ["Traditional pilgrimage journey", "More affordable", "Scenic mountain road views", "Flexible itinerary stops"],
-      "cons": ["Long driving hours daily", "Physically tiring", "Longer duration", "Mountain road motion sickness risk"]
+      "pros": [
+        "Traditional pilgrimage journey",
+        "More affordable",
+        "Scenic mountain road views",
+        "Flexible itinerary stops"
+      ],
+      "cons": [
+        "Long driving hours daily",
+        "Physically tiring",
+        "Longer duration",
+        "Mountain road motion sickness risk"
+      ]
     },
     "item_b": {
       "name": "Char Dham Helicopter Yatra",
@@ -191,22 +406,65 @@
       "duration": "7 Nights / 8 Days",
       "difficulty": "Easy",
       "best_for": "Elderly pilgrims, VIP travellers, those with limited mobility",
-      "pros": ["Minimal physical effort", "Saves 2–3 days vs road", "Aerial Himalayan views", "Premium comfort & hotels"],
-      "cons": ["Very high cost", "Subject to weather disruptions", "Less immersive journey", "Must book 8–10 weeks in advance"]
+      "pros": [
+        "Minimal physical effort",
+        "Saves 2–3 days vs road",
+        "Aerial Himalayan views",
+        "Premium comfort & hotels"
+      ],
+      "cons": [
+        "Very high cost",
+        "Subject to weather disruptions",
+        "Less immersive journey",
+        "Must book 8–10 weeks in advance"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "9 Nights / 10 Days", "b": "7 Nights / 8 Days"},
-      {"aspect": "Price (from)", "a": "₹19,800/person", "b": "₹65,000/person"},
-      {"aspect": "Travel Mode", "a": "Private AC vehicle", "b": "Helicopter + vehicle"},
-      {"aspect": "Physical Effort", "a": "Moderate (some trekking)", "b": "Minimal"},
-      {"aspect": "Best For", "a": "Families, traditional pilgrims", "b": "Elderly, VIP, time-pressed"},
-      {"aspect": "Booking Lead Time", "a": "2–3 weeks", "b": "8–10 weeks in advance"}
+      {
+        "aspect": "Duration",
+        "a": "9 Nights / 10 Days",
+        "b": "7 Nights / 8 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹19,800/person",
+        "b": "₹65,000/person"
+      },
+      {
+        "aspect": "Travel Mode",
+        "a": "Private AC vehicle",
+        "b": "Helicopter + vehicle"
+      },
+      {
+        "aspect": "Physical Effort",
+        "a": "Moderate (some trekking)",
+        "b": "Minimal"
+      },
+      {
+        "aspect": "Best For",
+        "a": "Families, traditional pilgrims",
+        "b": "Elderly, VIP, time-pressed"
+      },
+      {
+        "aspect": "Booking Lead Time",
+        "a": "2–3 weeks",
+        "b": "8–10 weeks in advance"
+      }
     ],
     "verdict": "Choose road if you value the traditional journey, scenic drives and have 10 days. Choose helicopter if budget is not a concern and comfort or mobility is a priority.",
     "faq": [
-      {"q": "Is Char Dham helicopter yatra worth the high cost?", "a": "For elderly pilgrims or those with limited mobility, the comfort and time savings are significant. For younger travellers the road journey is equally fulfilling at a fraction of the cost."},
-      {"q": "How far in advance must Char Dham helicopter slots be booked?", "a": "Book 8–10 weeks ahead for May–June peak season. Slots are allotted by DGCA and fill up extremely fast each year."},
-      {"q": "Does the helicopter package cover all 4 dhams?", "a": "Yes. Junegiri Yatra's helicopter package covers all four — Yamunotri, Gangotri, Kedarnath and Badrinath — with premium hotels at each halt."}
+      {
+        "q": "Is Char Dham helicopter yatra worth the high cost?",
+        "a": "For elderly pilgrims or those with limited mobility, the comfort and time savings are significant. For younger travellers the road journey is equally fulfilling at a fraction of the cost."
+      },
+      {
+        "q": "How far in advance must Char Dham helicopter slots be booked?",
+        "a": "Book 8–10 weeks ahead for May–June peak season. Slots are allotted by DGCA and fill up extremely fast each year."
+      },
+      {
+        "q": "Does the helicopter package cover all 4 dhams?",
+        "a": "Yes. Junegiri Yatra's helicopter package covers all four — Yamunotri, Gangotri, Kedarnath and Badrinath — with premium hotels at each halt."
+      }
     ]
   },
   {
@@ -223,8 +481,17 @@
       "duration": "3 Nights / 4 Days",
       "difficulty": "Easy",
       "best_for": "Couples, honeymooners, families with kids, weekend getaways",
-      "pros": ["Mall Road & Lal Tibba views", "Kempty Falls nearby", "Colonial architecture", "Easy access from Delhi (300km)"],
-      "cons": ["Gets very crowded in summer", "Limited lake/wildlife experience", "Shorter itinerary options"]
+      "pros": [
+        "Mall Road & Lal Tibba views",
+        "Kempty Falls nearby",
+        "Colonial architecture",
+        "Easy access from Delhi (300km)"
+      ],
+      "cons": [
+        "Gets very crowded in summer",
+        "Limited lake/wildlife experience",
+        "Shorter itinerary options"
+      ]
     },
     "item_b": {
       "name": "Nainital + Corbett Tour",
@@ -233,22 +500,64 @@
       "duration": "4 Nights / 5 Days",
       "difficulty": "Easy",
       "best_for": "Wildlife lovers, families, those wanting lake + jungle combo",
-      "pros": ["Iconic Naini Lake & boat rides", "Jim Corbett tiger safari combo", "More varied activities", "Better for extended stays"],
-      "cons": ["Higher cost", "Longer trip needed", "Further from Delhi than Mussoorie"]
+      "pros": [
+        "Iconic Naini Lake & boat rides",
+        "Jim Corbett tiger safari combo",
+        "More varied activities",
+        "Better for extended stays"
+      ],
+      "cons": [
+        "Higher cost",
+        "Longer trip needed",
+        "Further from Delhi than Mussoorie"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "3 Nights / 4 Days", "b": "4 Nights / 5 Days"},
-      {"aspect": "Price (from)", "a": "₹8,500/person", "b": "₹11,000/person"},
-      {"aspect": "Highlight", "a": "Mall Road, Kempty Falls, vistas", "b": "Naini Lake, Jim Corbett safari"},
-      {"aspect": "Best Season", "a": "Mar–Jun, Sep–Nov", "b": "Oct–Jun (Corbett: Oct–May)"},
-      {"aspect": "Distance from Delhi", "a": "~300 km (6 hrs)", "b": "~310 km (6.5 hrs)"},
-      {"aspect": "Ideal For", "a": "Couples, quick getaways", "b": "Families, wildlife + lake combo"}
+      {
+        "aspect": "Duration",
+        "a": "3 Nights / 4 Days",
+        "b": "4 Nights / 5 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹8,500/person",
+        "b": "₹11,000/person"
+      },
+      {
+        "aspect": "Highlight",
+        "a": "Mall Road, Kempty Falls, vistas",
+        "b": "Naini Lake, Jim Corbett safari"
+      },
+      {
+        "aspect": "Best Season",
+        "a": "Mar–Jun, Sep–Nov",
+        "b": "Oct–Jun (Corbett: Oct–May)"
+      },
+      {
+        "aspect": "Distance from Delhi",
+        "a": "~300 km (6 hrs)",
+        "b": "~310 km (6.5 hrs)"
+      },
+      {
+        "aspect": "Ideal For",
+        "a": "Couples, quick getaways",
+        "b": "Families, wildlife + lake combo"
+      }
     ],
     "verdict": "Choose Mussoorie for a shorter colonial hill-station escape with great views. Choose Nainital + Corbett for a fuller holiday combining a lake town with a classic jungle safari.",
     "faq": [
-      {"q": "Which is closer to Delhi — Mussoorie or Nainital?", "a": "Both are roughly 300km from Delhi. Mussoorie via Dehradun takes about 6 hours; Nainital is slightly longer at 6.5 hours."},
-      {"q": "Can I combine Mussoorie and Nainital in one trip?", "a": "Yes, though it requires 7+ days. Junegiri Yatra offers combo itineraries covering Mussoorie, Nainital and Corbett in one seamless circuit."},
-      {"q": "When is the best time to visit Nainital?", "a": "October to June is ideal. The lake is at its most beautiful in October–November, while March–June offers pleasant weather for all activities."}
+      {
+        "q": "Which is closer to Delhi — Mussoorie or Nainital?",
+        "a": "Both are roughly 300km from Delhi. Mussoorie via Dehradun takes about 6 hours; Nainital is slightly longer at 6.5 hours."
+      },
+      {
+        "q": "Can I combine Mussoorie and Nainital in one trip?",
+        "a": "Yes, though it requires 7+ days. Junegiri Yatra offers combo itineraries covering Mussoorie, Nainital and Corbett in one seamless circuit."
+      },
+      {
+        "q": "When is the best time to visit Nainital?",
+        "a": "October to June is ideal. The lake is at its most beautiful in October–November, while March–June offers pleasant weather for all activities."
+      }
     ]
   },
   {
@@ -265,8 +574,17 @@
       "duration": "5 Nights / 6 Days",
       "difficulty": "Easy",
       "best_for": "First-time India visitors, international tourists, time-pressed travellers",
-      "pros": ["Covers 3 iconic UNESCO sites", "Shorter duration", "Efficient Delhi–Agra–Jaipur circuit", "Best introduction to India"],
-      "cons": ["Misses Rajasthan's deserts & forts", "Heavily touristy route", "Less cultural depth"]
+      "pros": [
+        "Covers 3 iconic UNESCO sites",
+        "Shorter duration",
+        "Efficient Delhi–Agra–Jaipur circuit",
+        "Best introduction to India"
+      ],
+      "cons": [
+        "Misses Rajasthan's deserts & forts",
+        "Heavily touristy route",
+        "Less cultural depth"
+      ]
     },
     "item_b": {
       "name": "Rajasthan Grand Tour",
@@ -275,22 +593,64 @@
       "duration": "6 Nights / 7 Days",
       "difficulty": "Easy",
       "best_for": "Culture lovers, photographers, those wanting a deeper India experience",
-      "pros": ["Desert safaris & camel rides", "Multiple forts & palaces", "Rich Rajput heritage", "Udaipur lakes & Jodhpur blue city"],
-      "cons": ["Longer trip required", "Higher cost", "Can be hot in summer months"]
+      "pros": [
+        "Desert safaris & camel rides",
+        "Multiple forts & palaces",
+        "Rich Rajput heritage",
+        "Udaipur lakes & Jodhpur blue city"
+      ],
+      "cons": [
+        "Longer trip required",
+        "Higher cost",
+        "Can be hot in summer months"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "5 Nights / 6 Days", "b": "6 Nights / 7 Days"},
-      {"aspect": "Price (from)", "a": "₹18,500/person", "b": "₹21,000/person"},
-      {"aspect": "Destinations", "a": "Delhi, Agra, Jaipur", "b": "Jaipur, Jodhpur, Udaipur, Jaisalmer"},
-      {"aspect": "UNESCO Sites", "a": "3 (Taj Mahal, Agra Fort, Jantar Mantar)", "b": "2 (Jantar Mantar, Keoladeo)"},
-      {"aspect": "Unique Experience", "a": "Taj Mahal sunrise", "b": "Thar Desert camel safari"},
-      {"aspect": "Ideal For", "a": "First-timers, international visitors", "b": "Return visitors, culture enthusiasts"}
+      {
+        "aspect": "Duration",
+        "a": "5 Nights / 6 Days",
+        "b": "6 Nights / 7 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹18,500/person",
+        "b": "₹21,000/person"
+      },
+      {
+        "aspect": "Destinations",
+        "a": "Delhi, Agra, Jaipur",
+        "b": "Jaipur, Jodhpur, Udaipur, Jaisalmer"
+      },
+      {
+        "aspect": "UNESCO Sites",
+        "a": "3 (Taj Mahal, Agra Fort, Jantar Mantar)",
+        "b": "2 (Jantar Mantar, Keoladeo)"
+      },
+      {
+        "aspect": "Unique Experience",
+        "a": "Taj Mahal sunrise",
+        "b": "Thar Desert camel safari"
+      },
+      {
+        "aspect": "Ideal For",
+        "a": "First-timers, international visitors",
+        "b": "Return visitors, culture enthusiasts"
+      }
     ],
     "verdict": "Choose Golden Triangle for the most iconic India highlights in the shortest time. Choose Rajasthan for a richer, more immersive journey through palaces, deserts and living Rajput heritage.",
     "faq": [
-      {"q": "Is Golden Triangle good for first-time visitors to India?", "a": "Yes, it is the most popular introduction to India covering three world-class destinations efficiently in 6 days."},
-      {"q": "Can Golden Triangle be extended into Rajasthan?", "a": "Absolutely. Many travellers extend from Jaipur into Pushkar, Jodhpur and Udaipur. Junegiri Yatra can customise a combined 10-day itinerary."},
-      {"q": "What is the best time to visit Rajasthan?", "a": "October to March is the prime season. The desert is pleasantly cool, all forts are accessible and the famous Pushkar Camel Fair happens in November."}
+      {
+        "q": "Is Golden Triangle good for first-time visitors to India?",
+        "a": "Yes, it is the most popular introduction to India covering three world-class destinations efficiently in 6 days."
+      },
+      {
+        "q": "Can Golden Triangle be extended into Rajasthan?",
+        "a": "Absolutely. Many travellers extend from Jaipur into Pushkar, Jodhpur and Udaipur. Junegiri Yatra can customise a combined 10-day itinerary."
+      },
+      {
+        "q": "What is the best time to visit Rajasthan?",
+        "a": "October to March is the prime season. The desert is pleasantly cool, all forts are accessible and the famous Pushkar Camel Fair happens in November."
+      }
     ]
   },
   {
@@ -307,8 +667,18 @@
       "duration": "7 Nights / 8 Days",
       "difficulty": "Difficult",
       "best_for": "Experienced trekkers, adventure seekers, mystery & high-altitude enthusiasts",
-      "pros": ["Mysterious skeleton lake at 5,029m", "High-altitude Himalayan experience", "Challenging & rewarding summit", "Unique archaeological site"],
-      "cons": ["Difficult — requires prior trek experience", "High altitude risk", "Higher cost", "Long demanding trail"]
+      "pros": [
+        "Mysterious skeleton lake at 5,029m",
+        "High-altitude Himalayan experience",
+        "Challenging & rewarding summit",
+        "Unique archaeological site"
+      ],
+      "cons": [
+        "Difficult — requires prior trek experience",
+        "High altitude risk",
+        "Higher cost",
+        "Long demanding trail"
+      ]
     },
     "item_b": {
       "name": "Har Ki Dun Trek",
@@ -317,22 +687,179 @@
       "duration": "5 Nights / 6 Days",
       "difficulty": "Moderate",
       "best_for": "Beginners to intermediate trekkers, heritage lovers, nature photographers",
-      "pros": ["Ancient Osla village & Mahabharat connection", "Lush valley & river crossings", "Lower difficulty, wider accessibility", "Rich cultural heritage"],
-      "cons": ["No dramatic summit", "Lower altitude (3,566m max)", "Less dramatic than Roopkund"]
+      "pros": [
+        "Ancient Osla village & Mahabharat connection",
+        "Lush valley & river crossings",
+        "Lower difficulty, wider accessibility",
+        "Rich cultural heritage"
+      ],
+      "cons": [
+        "No dramatic summit",
+        "Lower altitude (3,566m max)",
+        "Less dramatic than Roopkund"
+      ]
     },
     "comparison_table": [
-      {"aspect": "Duration", "a": "7 Nights / 8 Days", "b": "5 Nights / 6 Days"},
-      {"aspect": "Price (from)", "a": "₹14,500/person", "b": "₹10,500/person"},
-      {"aspect": "Max Altitude", "a": "5,029m (Roopkund Lake)", "b": "3,566m (Har Ki Dun)"},
-      {"aspect": "Difficulty", "a": "Difficult", "b": "Moderate"},
-      {"aspect": "Unique Feature", "a": "Skeleton mystery lake, archaeological", "b": "Mahabharat heritage, Osla village"},
-      {"aspect": "Ideal For", "a": "Experienced trekkers", "b": "Beginners, heritage lovers"}
+      {
+        "aspect": "Duration",
+        "a": "7 Nights / 8 Days",
+        "b": "5 Nights / 6 Days"
+      },
+      {
+        "aspect": "Price (from)",
+        "a": "₹14,500/person",
+        "b": "₹10,500/person"
+      },
+      {
+        "aspect": "Max Altitude",
+        "a": "5,029m (Roopkund Lake)",
+        "b": "3,566m (Har Ki Dun)"
+      },
+      {
+        "aspect": "Difficulty",
+        "a": "Difficult",
+        "b": "Moderate"
+      },
+      {
+        "aspect": "Unique Feature",
+        "a": "Skeleton mystery lake, archaeological",
+        "b": "Mahabharat heritage, Osla village"
+      },
+      {
+        "aspect": "Ideal For",
+        "a": "Experienced trekkers",
+        "b": "Beginners, heritage lovers"
+      }
     ],
     "verdict": "Choose Roopkund if you are an experienced trekker seeking a high-altitude challenge and the thrill of the famous skeleton lake. Choose Har Ki Dun for a more accessible, culturally rich valley trek.",
     "faq": [
-      {"q": "Is Roopkund trek suitable for beginners?", "a": "No. Roopkund reaches 5,029m and requires prior high-altitude trekking experience. At least 2–3 earlier treks of moderate difficulty are recommended before attempting it."},
-      {"q": "What is the mystery of Roopkund lake?", "a": "Roopkund is famous for hundreds of ancient human skeletons found at the lakeside, believed to be pilgrims from the 9th century who perished in a sudden hailstorm."},
-      {"q": "When is the best time to do Har Ki Dun trek?", "a": "April to June and September to November are ideal. July–August monsoon brings lush greenery but wet trails; December–March sees heavy snow."}
+      {
+        "q": "Is Roopkund trek suitable for beginners?",
+        "a": "No. Roopkund reaches 5,029m and requires prior high-altitude trekking experience. At least 2–3 earlier treks of moderate difficulty are recommended before attempting it."
+      },
+      {
+        "q": "What is the mystery of Roopkund lake?",
+        "a": "Roopkund is famous for hundreds of ancient human skeletons found at the lakeside, believed to be pilgrims from the 9th century who perished in a sudden hailstorm."
+      },
+      {
+        "q": "When is the best time to do Har Ki Dun trek?",
+        "a": "April to June and September to November are ideal. July–August monsoon brings lush greenery but wet trails; December–March sees heavy snow."
+      }
+    ]
+  },
+  {
+    "slug": "hamta-pass-vs-kedarkantha",
+    "title": "Hamta Pass Trek vs Kedarkantha Trek 2026 — Which Is Right for You?",
+    "meta_description": "Hamta Pass vs Kedarkantha trek comparison — season, difficulty, cost, terrain, and experience. Choose the right Himalayan trek for your 2026 adventure.",
+    "h1": "Hamta Pass vs <em>Kedarkantha Trek</em>",
+    "tagline": "Two iconic Himalayan treks — one for summer valleys, one for winter snow.",
+    "hero_image": "/images/kedarkantha_trek.webp",
+    "item_a": {
+      "name": "Hamta Pass Trek",
+      "slug": "hamta-pass-trek-4n-5d",
+      "price": 11500,
+      "duration": "4 Nights / 5 Days",
+      "difficulty": "Moderate",
+      "best_for": "Trekkers wanting a dramatic crossover, Spiti taste, and Chandrataal lake in summer",
+      "pros": [
+        "Kullu-to-Spiti crossover — two landscapes in one trek",
+        "Chandrataal (Moon Lake) camping included",
+        "Lush green to barren contrast is unique in India",
+        "Summer season — June to September",
+        "Adds Spiti Valley experience without a full Spiti trip"
+      ],
+      "cons": [
+        "Slightly higher cost than Kedarkantha",
+        "Manali base — longer travel from eastern Indian cities",
+        "No winter/snow option",
+        "Moderate difficulty — some steep sections"
+      ]
+    },
+    "item_b": {
+      "name": "Kedarkantha Trek",
+      "slug": "kedarkantha-trek-5n-6d",
+      "price": 9500,
+      "duration": "5 Nights / 6 Days",
+      "difficulty": "Easy–Moderate",
+      "best_for": "First-time trekkers wanting a snow summit and winter Himalayan experience",
+      "pros": [
+        "Snow summit experience — unique in India at this difficulty",
+        "360° panoramic views of Swargarohini, Bandarpoonch, Gangotri peaks",
+        "Beginner-friendly — India's best winter trek for first-timers",
+        "Haridwar/Dehradun base — easy access from Delhi NCR",
+        "Lower cost — from ₹9,500"
+      ],
+      "cons": [
+        "Winter only (Dec–Apr) — no summer option",
+        "5 nights vs 4 nights — longer time commitment",
+        "No lake or crossover experience",
+        "Cold camping (-10°C nights in Jan–Feb)"
+      ]
+    },
+    "comparison_table": [
+      {
+        "feature": "Season",
+        "item_a": "June – September",
+        "item_b": "December – April"
+      },
+      {
+        "feature": "Base City",
+        "item_a": "Manali (HP)",
+        "item_b": "Haridwar / Dehradun (UK)"
+      },
+      {
+        "feature": "Max Altitude",
+        "item_a": "4,300m (Chandrataal)",
+        "item_b": "3,810m (Summit)"
+      },
+      {
+        "feature": "Duration",
+        "item_a": "4 Nights / 5 Days",
+        "item_b": "5 Nights / 6 Days"
+      },
+      {
+        "feature": "Price (from)",
+        "item_a": "₹11,500/person",
+        "item_b": "₹9,500/person"
+      },
+      {
+        "feature": "Difficulty",
+        "item_a": "Moderate",
+        "item_b": "Easy–Moderate"
+      },
+      {
+        "feature": "Best Feature",
+        "item_a": "Kullu–Spiti crossover + Chandrataal",
+        "item_b": "Snow summit panorama"
+      },
+      {
+        "feature": "Terrain",
+        "item_a": "Alpine meadow → high-altitude desert",
+        "item_b": "Pine forest → snowfield → summit"
+      }
+    ],
+    "verdict": "Choose <strong>Kedarkantha</strong> if you want a winter snow experience, you're based in Delhi/Haridwar, this is your first Himalayan trek, or you want the iconic summit-at-sunrise moment on a budget. Choose <strong>Hamta Pass</strong> if you're trekking in summer, you want the unique experience of crossing from one Himalayan world to another, or you want to add Chandrataal and a taste of Spiti to your itinerary. Both are exceptional — the season and your base city often make the decision for you.",
+    "faq": [
+      {
+        "q": "Which trek is better for beginners — Hamta Pass or Kedarkantha?",
+        "a": "Kedarkantha is slightly better for absolute beginners. It is graded Easy–Moderate (vs Moderate for Hamta Pass), the pass crossing on Day 4 is the only challenging section, and the gradual 3-day acclimatisation profile is forgiving. That said, Hamta Pass is also accessible to first-timers with reasonable fitness — the pass crossing day is harder but the approach days are very manageable."
+      },
+      {
+        "q": "Can I do both Hamta Pass and Kedarkantha in the same trip?",
+        "a": "Not in the same seasonal window — Kedarkantha runs December–April while Hamta Pass runs June–September. However, combining them across two separate trips in one year is absolutely possible and gives you the complete Himalayan experience: winter snow in winter, summer meadows in summer."
+      },
+      {
+        "q": "Which trek has better views — Hamta Pass or Kedarkantha?",
+        "a": "Both are stunning in different ways. Kedarkantha offers a single dramatic 360° summit panorama (Swargarohini, Bandarpoonch, Gangotri range) at sunrise — a classic snow-peak view. Hamta Pass gives you two contrasting panoramas: the green Kullu valley below and the barren Spiti desert above the pass, plus Chandrataal's extraordinary high-altitude lake reflections. Hamta has more variety; Kedarkantha has the more dramatic single moment."
+      },
+      {
+        "q": "Which trek is closer to Delhi?",
+        "a": "Kedarkantha is significantly more accessible from Delhi. The Haridwar base is 6 hours by train from Delhi — a straightforward overnight journey. Manali (Hamta Pass base) is 14 hours by bus or requires a flight to Bhuntar. For Delhi/Chandigarh travellers, Kedarkantha is the easier choice logistically."
+      },
+      {
+        "q": "What if I want to do one trek in summer and one in winter?",
+        "a": "That's the perfect combination. Hamta Pass in July–September for summer meadows and the Spiti crossover, then Kedarkantha in December–February for the snow summit experience. Junegiri Yatra operates both routes year-round in season — WhatsApp us to plan both and we'll coordinate the logistics."
+      }
     ]
   }
 ]

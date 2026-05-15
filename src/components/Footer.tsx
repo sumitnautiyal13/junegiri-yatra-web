@@ -36,12 +36,15 @@ export default function Footer() {
             <Link href="/india-tour-from/">India Tour Packages</Link>
             <Link href="/golden-triangle-from/">Golden Triangle Tour</Link>
             <Link href="/himalayan-treks/">Himalayan Treks</Link>
+            <Link href="/spiti-valley/">Spiti Valley Guide</Link>
             <Link href="/packages/rishikesh-adventure-pack-2n-3d/">Rishikesh Adventures</Link>
             <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
             <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers</Link>
             <Link href="/packages/hamta-pass-trek-4n-5d/">Hamta Pass Trek</Link>
             <Link href="/packages/triund-trek-1n-2d/">Triund Trek</Link>
             <Link href="/packages/bhrigu-lake-trek-3n-4d/">Bhrigu Lake Trek</Link>
+            <Link href="/packages/kareri-lake-trek-3n-4d/">Kareri Lake Trek</Link>
+            <Link href="/packages/beas-kund-trek-2n-3d/">Beas Kund Trek</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
             <Link href="/valley-of-flowers-from/">Valley of Flowers from Your City</Link>
             <Link href="/badrinath-from/">Badrinath from Your City</Link>
@@ -60,6 +63,7 @@ export default function Footer() {
             <Link href="/compare/do-dham-vs-char-dham/">Do Dham vs Char Dham</Link>
             <Link href="/compare/kedarnath-trek-vs-helicopter/">Trek vs Helicopter</Link>
             <Link href="/compare/mussoorie-vs-nainital/">Mussoorie vs Nainital</Link>
+            <Link href="/compare/hamta-pass-vs-kedarkantha/">Hamta Pass vs Kedarkantha</Link>
             <Link href="/reviews/">Guest Reviews</Link>
           </div>
 

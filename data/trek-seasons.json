@@ -1984,5 +1984,336 @@
         ]
       }
     }
+  },
+  "kareri-lake-trek-3n-4d": {
+    "months": [
+      "march",
+      "april",
+      "may",
+      "june",
+      "september",
+      "october",
+      "november"
+    ],
+    "best_months": [
+      "april",
+      "october"
+    ],
+    "season_label": "Spring & Autumn",
+    "month_data": {
+      "march": {
+        "title": "Kareri Lake Trek in March 2026",
+        "meta_description": "Kareri Lake Trek in March 2026 — Early spring, quiet trail, possible light snow near the lake. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>March</em>",
+        "tagline": "Early spring, quiet trail, possible light snow near the lake",
+        "weather": "Cool (8–14°C day), cold nights (0–3°C). Morning mist common.",
+        "trail_condition": "Good below 2,500m. Snow patches possible near the lake basin.",
+        "crowd_level": "Low",
+        "price": 7500,
+        "highlights": [
+          "Very few trekkers — total solitude",
+          "Early rhododendrons beginning to bud",
+          "Lake possibly partially frozen"
+        ],
+        "what_to_pack": [
+          "Warm jacket and thermal layers",
+          "Waterproof boots",
+          "Gloves and warm hat",
+          "Trekking poles"
+        ],
+        "faq": [
+          {
+            "q": "Is Kareri Lake Trek open in March?",
+            "a": "Yes, the trail is accessible in March but expect cold temperatures and possible snow near the lake at 2,950m. Waterproof boots and warm layers are essential."
+          }
+        ]
+      },
+      "april": {
+        "title": "Kareri Lake Trek in April 2026",
+        "meta_description": "Kareri Lake Trek in April 2026 — Rhododendrons in full bloom, river levels manageable, pristine lake. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>April</em>",
+        "tagline": "Rhododendrons in full bloom, river levels manageable, pristine lake",
+        "weather": "Pleasant (12–18°C day), cool nights (3–7°C). Clear days common.",
+        "trail_condition": "Excellent. Trail clear, rhododendrons blooming, river crossings safe.",
+        "crowd_level": "Medium",
+        "price": 7500,
+        "highlights": [
+          "Red rhododendron forest in full bloom on the approach",
+          "River crossings at manageable levels",
+          "Lake transitioning from partially frozen to open"
+        ],
+        "what_to_pack": [
+          "Light fleece and windproof layer",
+          "Waterproof boots for crossings",
+          "Sunscreen and sun hat",
+          "Trekking poles (crossings)"
+        ],
+        "faq": [
+          {
+            "q": "Is April good for Kareri Lake Trek?",
+            "a": "April is one of the two best months. Rhododendrons are at their peak, the lake is opening up, and the trail is beautiful. River crossings are manageable. Book early as April sees increasing demand."
+          }
+        ]
+      },
+      "may": {
+        "title": "Kareri Lake Trek in May 2026",
+        "meta_description": "Kareri Lake Trek in May 2026 — Peak spring — wildflowers, warm trekking, lake fully open. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>May</em>",
+        "tagline": "Peak spring — wildflowers, warm trekking, lake fully open",
+        "weather": "Warm (16–22°C day), mild nights (6–10°C). Clear skies.",
+        "trail_condition": "Excellent. Lake fully open, wildflowers at peak, trail in best condition.",
+        "crowd_level": "High",
+        "price": 7500,
+        "highlights": [
+          "Lake fully open and vividly blue",
+          "Alpine wildflowers on the upper meadows",
+          "Best overall conditions for the trek"
+        ],
+        "what_to_pack": [
+          "Light layers (warm days, cool nights)",
+          "Sunscreen SPF 50+ and sun hat",
+          "Water bottle and purification tabs",
+          "Comfortable trekking footwear"
+        ],
+        "faq": [
+          {
+            "q": "Is May the best month for Kareri Lake?",
+            "a": "May is excellent — the lake is fully open, wildflowers are blooming, and weather is warm. It is the busiest month so book the permit and guide in advance."
+          }
+        ]
+      },
+      "june": {
+        "title": "Kareri Lake Trek in June 2026",
+        "meta_description": "Kareri Lake Trek in June 2026 — Warm pre-monsoon, lake at its clearest, manageable river crossings. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>June</em>",
+        "tagline": "Warm pre-monsoon, lake at its clearest, manageable river crossings",
+        "weather": "Warm (18–24°C day), mild nights (8–12°C). Good visibility.",
+        "trail_condition": "Good. Trail clear, river levels still manageable before monsoon.",
+        "crowd_level": "Medium",
+        "price": 7500,
+        "highlights": [
+          "Lake at its clearest and most vivid blue",
+          "Warm comfortable camping",
+          "Last clear month before monsoon rains"
+        ],
+        "what_to_pack": [
+          "Light rain jacket for afternoon showers",
+          "Sunscreen and sunglasses",
+          "Trekking poles",
+          "Insect repellent"
+        ],
+        "faq": [
+          {
+            "q": "Should I trek Kareri Lake in June?",
+            "a": "Early June is fine. By mid-June the monsoon may begin increasing river levels. We recommend completing the trek before June 20. Junegiri Yatra monitors conditions and will advise on departure timing."
+          }
+        ]
+      },
+      "september": {
+        "title": "Kareri Lake Trek in September 2026",
+        "meta_description": "Kareri Lake Trek in September 2026 — Post-monsoon freshness, crystal-clear lake, lush green forest. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>September</em>",
+        "tagline": "Post-monsoon freshness, crystal-clear lake, lush green forest",
+        "weather": "Pleasant (15–21°C day), cool nights (5–9°C). Excellent visibility.",
+        "trail_condition": "Very good. Trail green and lush. Some muddy sections early September.",
+        "crowd_level": "Medium",
+        "price": 7500,
+        "highlights": [
+          "Lake crystal clear post-monsoon — best reflections",
+          "Forest intensely green and atmospheric",
+          "River crossings back to manageable levels"
+        ],
+        "what_to_pack": [
+          "Light waterproof jacket",
+          "Trekking boots with grip",
+          "Fleece for evenings",
+          "Sunscreen"
+        ],
+        "faq": [
+          {
+            "q": "Is September good for Kareri Lake Trek?",
+            "a": "Yes. The post-monsoon forest is intensely green and the lake is crystal clear. River crossings are back to safe levels by mid-September. This is an underrated and excellent month."
+          }
+        ]
+      },
+      "october": {
+        "title": "Kareri Lake Trek in October 2026",
+        "meta_description": "Kareri Lake Trek in October 2026 — Crisp autumn, golden maples, spectacular Dhauladhar views. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>October</em>",
+        "tagline": "Crisp autumn, golden maples, spectacular Dhauladhar views",
+        "weather": "Cool (10–16°C day), cold nights (1–5°C). Clear and crisp.",
+        "trail_condition": "Excellent. Trail dry and clear. Maples turning golden.",
+        "crowd_level": "High",
+        "price": 7500,
+        "highlights": [
+          "Golden maple and oak forest — stunning autumn colour",
+          "Crystal-clear Dhauladhar views from the lake",
+          "Crisp cold air and superb visibility"
+        ],
+        "what_to_pack": [
+          "Warm insulated jacket",
+          "Gloves and warm hat",
+          "Waterproof boots",
+          "Thermal base layer for nights"
+        ],
+        "faq": [
+          {
+            "q": "Is October a good month for Kareri Lake?",
+            "a": "October is the other peak month (alongside April). The maple and oak forest turns golden, visibility is outstanding, and the lake is beautiful. Slightly cooler than April with a chance of light snow dusting on the Dhauladhar."
+          }
+        ]
+      },
+      "november": {
+        "title": "Kareri Lake Trek in November 2026",
+        "meta_description": "Kareri Lake Trek in November 2026 — Cold and quiet, last window before winter closure. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Kareri Lake Trek in <em>November</em>",
+        "tagline": "Cold and quiet, last window before winter closure",
+        "weather": "Cold (5–10°C day), very cold nights (-1–3°C). Clear and still.",
+        "trail_condition": "Fair. Trail clear but cold. Snow possible near lake in late November.",
+        "crowd_level": "Low",
+        "price": 7500,
+        "highlights": [
+          "Very few trekkers — complete solitude",
+          "Winter coming — dramatic cold-season atmosphere",
+          "Last chance before trail closes for winter"
+        ],
+        "what_to_pack": [
+          "Heavy insulated jacket",
+          "Warm gloves and balaclava",
+          "-10°C sleeping bag",
+          "Microspikes (late November)",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is Kareri Lake Trek open in November?",
+            "a": "Early November yes, late November is marginal as snowfall closes the upper trail. If trekking in November, go before the 20th and ensure full winter gear. Contact us for real-time conditions."
+          }
+        ]
+      }
+    }
+  },
+  "beas-kund-trek-2n-3d": {
+    "months": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+    "best_months": [
+      "july",
+      "august"
+    ],
+    "season_label": "Summer Season",
+    "month_data": {
+      "june": {
+        "title": "Beas Kund Trek in June 2026",
+        "meta_description": "Beas Kund Trek in June 2026 — Early season, snow patches above 3,400m, fewer crowds, cool conditions. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Beas Kund Trek in <em>June</em>",
+        "tagline": "Early season, snow patches above 3,400m, fewer crowds, cool conditions",
+        "weather": "Cool (12–18°C day), cold nights (2–5°C). Clear mornings.",
+        "trail_condition": "Good. Some snow patches above 3,400m. Lake accessible.",
+        "crowd_level": "Low",
+        "price": 6500,
+        "highlights": [
+          "Snow patches on the upper approach — scenic contrast",
+          "Very few trekkers",
+          "Cool comfortable trekking temperatures"
+        ],
+        "what_to_pack": [
+          "Waterproof insulated boots",
+          "Warm jacket and thermal layers",
+          "Sunscreen SPF 50+ and glacier glasses",
+          "Trekking poles"
+        ],
+        "faq": [
+          {
+            "q": "Is Beas Kund accessible in June?",
+            "a": "Yes. The trail is open and the lake is accessible. Expect some snow above 3,400m and cold nights at camp. June is a quiet, rewarding time to do this trek before the July–August crowds arrive."
+          }
+        ]
+      },
+      "july": {
+        "title": "Beas Kund Trek in July 2026",
+        "meta_description": "Beas Kund Trek in July 2026 — Peak wildflower season — meadows in full bloom, best overall conditions. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Beas Kund Trek in <em>July</em>",
+        "tagline": "Peak wildflower season — meadows in full bloom, best overall conditions",
+        "weather": "Warm (16–22°C day), cool nights (5–9°C). Occasional afternoon showers.",
+        "trail_condition": "Excellent. Trail clear, wildflowers at peak, lake fully open.",
+        "crowd_level": "High",
+        "price": 6500,
+        "highlights": [
+          "Bakarthach meadow carpeted in wildflowers",
+          "Beas Kund vivid blue under clear skies",
+          "Long daylight — 6am to 8pm at altitude"
+        ],
+        "what_to_pack": [
+          "Light waterproof jacket",
+          "Sunscreen and sun hat",
+          "Trekking poles",
+          "Quick-dry trekking clothes"
+        ],
+        "faq": [
+          {
+            "q": "Is July the best month for Beas Kund Trek?",
+            "a": "July is one of the best months. Bakarthach meadow is carpeted in wildflowers, the lake is beautifully blue, and conditions are warm and sunny. The main drawback is higher crowd levels compared to June or September."
+          }
+        ]
+      },
+      "august": {
+        "title": "Beas Kund Trek in August 2026",
+        "meta_description": "Beas Kund Trek in August 2026 — Warm and lush, wildflowers still in bloom, lake fully accessible. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Beas Kund Trek in <em>August</em>",
+        "tagline": "Warm and lush, wildflowers still in bloom, lake fully accessible",
+        "weather": "Warm (15–20°C day), cool nights (4–8°C). Some afternoon showers.",
+        "trail_condition": "Good. Trail lush, some wet sections after rain. Lake open.",
+        "crowd_level": "High",
+        "price": 6500,
+        "highlights": [
+          "Lush green meadows at their fullest",
+          "Beas Kund fully accessible",
+          "Glacier clearly visible above the lake"
+        ],
+        "what_to_pack": [
+          "Waterproof shell jacket",
+          "Grip trekking boots",
+          "Warm sleeping layers for camp",
+          "Sunscreen"
+        ],
+        "faq": [
+          {
+            "q": "Is August good for Beas Kund Trek?",
+            "a": "Yes. Conditions are similar to July — warm, green, and suitable for the full itinerary. Occasional afternoon showers are manageable. The glacier is clearly visible above the lake throughout August."
+          }
+        ]
+      },
+      "september": {
+        "title": "Beas Kund Trek in September 2026",
+        "meta_description": "Beas Kund Trek in September 2026 — Post-monsoon clarity, best mountain views, fresh snow on peaks. Weather, trail conditions and booking guide from Junegiri Yatra.",
+        "h1": "Beas Kund Trek in <em>September</em>",
+        "tagline": "Post-monsoon clarity, best mountain views, fresh snow on peaks",
+        "weather": "Crisp (13–19°C day), cold nights (1–5°C). Excellent visibility.",
+        "trail_condition": "Excellent. Trail clear and dry. Fresh snow on Hanuman Tibba and Shitidhar.",
+        "crowd_level": "Medium",
+        "price": 6500,
+        "highlights": [
+          "Crystal-clear visibility — best mountain views of the season",
+          "Fresh snow on Hanuman Tibba (5,982m) above the lake",
+          "Fewer trekkers than July–August"
+        ],
+        "what_to_pack": [
+          "Warm insulated jacket",
+          "Gloves and beanie for nights",
+          "Sunscreen and glacier glasses",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is September the best month for Beas Kund?",
+            "a": "Many trekkers prefer September. Post-monsoon skies are crystal clear, Hanuman Tibba and Shitidhar have fresh snow, and the lake is beautifully calm. Crowd levels drop significantly from peak season."
+          }
+        ]
+      }
+    }
   }
 }

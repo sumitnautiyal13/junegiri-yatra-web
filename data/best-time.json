@@ -2702,5 +2702,190 @@
         "a": "Yes. Bhrigu Lake is well-frequented, the guide ratio is good, and Manali is a well-established trekking hub with a safe environment for solo female travellers. All Junegiri Yatra guides are background-checked and trained."
       }
     ]
+  },
+  {
+    "slug": "kareri-lake-trek",
+    "name": "Kareri Lake Trek",
+    "title": "Best Time for Kareri Lake Trek 2026 — Month by Month Guide",
+    "meta_description": "Best time for Kareri Lake Trek from Dharamshala — April–May and September–October. Avoid July–August monsoon. River crossing safety and permit guide.",
+    "h1": "Best Time for <em>Kareri Lake Trek</em>",
+    "tagline": "Best months: April–May & October · Avoid July–August monsoon",
+    "hero_image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=80",
+    "overview": "Kareri Lake Trek is best visited in spring (April–May) and autumn (September–October). April has rhododendrons in bloom and manageable river crossings. October offers golden maple forests and crystal Dhauladhar views. Avoid July–August when monsoon rains make the river crossings dangerous.",
+    "package_slug": "kareri-lake-trek-3n-4d",
+    "package_price": 7500,
+    "months": [
+      {
+        "month": "March",
+        "rating": 2,
+        "weather": "Cool, possible snow near lake, quiet trail",
+        "crowd": "Very Low",
+        "price": "Off-season"
+      },
+      {
+        "month": "April",
+        "rating": 5,
+        "weather": "Rhododendrons in bloom, lake opening, clear skies",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "May",
+        "rating": 5,
+        "weather": "Warm, lake fully open, wildflowers, peak conditions",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "June",
+        "rating": 3,
+        "weather": "Warm, manageable crossings, pre-monsoon",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "September",
+        "rating": 4,
+        "weather": "Post-monsoon, crystal lake, lush green forest",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "October",
+        "rating": 5,
+        "weather": "Golden maples, crisp air, best Dhauladhar views",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "November",
+        "rating": 2,
+        "weather": "Cold and quiet, last window before closure",
+        "crowd": "Very Low",
+        "price": "Off-season"
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Lake altitude",
+        "value": "2,950 m (9,678 ft)"
+      },
+      {
+        "label": "Best months",
+        "value": "April–May & October"
+      },
+      {
+        "label": "Trek duration",
+        "value": "3 Nights / 4 Days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy to Moderate"
+      },
+      {
+        "label": "Season",
+        "value": "Mar–Jun, Sep–Nov"
+      },
+      {
+        "label": "Base",
+        "value": "McLeod Ganj, Dharamshala"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I do Kareri Lake Trek in monsoon?",
+        "a": "No. July–August monsoon rains dramatically increase river levels, making the multiple crossings dangerous. Junegiri Yatra does not operate Kareri Lake batches in July–August. The trail reopens safely from mid-September."
+      },
+      {
+        "q": "Are April and October equally good?",
+        "a": "Yes but different in character. April has rhododendron blooms and the lake emerging from its semi-frozen winter state. October has golden autumn foliage and the best clarity for mountain views. Both are excellent; choose based on what you value more."
+      },
+      {
+        "q": "Do I need a permit?",
+        "a": "Yes — the Dhauladhar Wildlife Sanctuary requires an entry permit. Junegiri Yatra handles all permit arrangements as part of the package. Permits are issued at the forest gate and are straightforward."
+      }
+    ]
+  },
+  {
+    "slug": "beas-kund-trek",
+    "name": "Beas Kund Trek",
+    "title": "Best Time for Beas Kund Trek 2026 — Month by Month Guide",
+    "meta_description": "Best time for Beas Kund Trek from Manali — June to September. July–August for wildflowers, September for clearest skies. Complete weather and conditions guide.",
+    "h1": "Best Time for <em>Beas Kund Trek</em>",
+    "tagline": "Trek season: June–September · Best months: July & September",
+    "hero_image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&q=80",
+    "overview": "Beas Kund Trek runs from June through September. July and August offer peak wildflower blooms at Bakarthach. September brings the clearest mountain views with fresh snow on Hanuman Tibba. June is quieter with possible snow patches above 3,400m.",
+    "package_slug": "beas-kund-trek-2n-3d",
+    "package_price": 6500,
+    "months": [
+      {
+        "month": "June",
+        "rating": 3,
+        "weather": "Cool, some snow above 3,400m, fewer crowds",
+        "crowd": "Low",
+        "price": "Standard"
+      },
+      {
+        "month": "July",
+        "rating": 5,
+        "weather": "Warm, wildflowers at peak, lake fully open",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "August",
+        "rating": 4,
+        "weather": "Warm and lush, occasional afternoon showers",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "September",
+        "rating": 5,
+        "weather": "Crystal clear, best views, fresh snow on Hanuman Tibba",
+        "crowd": "Medium",
+        "price": "Standard"
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Lake altitude",
+        "value": "3,700 m (12,139 ft)"
+      },
+      {
+        "label": "Best months",
+        "value": "July & September"
+      },
+      {
+        "label": "Trek duration",
+        "value": "2 Nights / 3 Days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy"
+      },
+      {
+        "label": "Season",
+        "value": "June–September"
+      },
+      {
+        "label": "Base",
+        "value": "Manali"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Beas Kund Trek a good acclimatisation trek?",
+        "a": "Yes — two nights at 3,200m and a day-trip to 3,700m makes Beas Kund the ideal warm-up for Hamta Pass (4,270m) or Bhrigu Lake (4,300m). Many Junegiri Yatra guests combine Beas Kund 2N/3D with Hamta Pass 4N/5D for a perfectly structured 6-day Manali adventure."
+      },
+      {
+        "q": "What makes July the best month?",
+        "a": "Bakarthach meadow (the base camp) is carpeted in alpine wildflowers in July — blue primrose, yellow potentilla, purple aconite. Combined with warm days and a vivid blue lake, July offers the most colourful and photogenic version of the trek."
+      },
+      {
+        "q": "Is Beas Kund Trek available in October?",
+        "a": "No — the Rohtang road and Dhundi access are generally closed from mid-October as early snowfall closes the highway. The trek season ends in September. If you want a post-September Manali trek, consider Triund from Dharamshala instead."
+      }
+    ]
   }
 ]

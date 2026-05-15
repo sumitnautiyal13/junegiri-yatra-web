@@ -69,6 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Category hub pages
   urls.push({ url: `${BASE}/himalayan-treks/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 });
+  urls.push({ url: `${BASE}/spiti-valley/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
   // Note: /bali-from/ and its city pages are included in DEST_ROUTES loop above
 
   // Static pages
