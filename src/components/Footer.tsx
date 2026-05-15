@@ -39,11 +39,12 @@ export default function Footer() {
             <Link href="/packages/rishikesh-adventure-pack-2n-3d/">Rishikesh Adventures</Link>
             <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
             <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers</Link>
+            <Link href="/packages/hamta-pass-trek-4n-5d/">Hamta Pass Trek</Link>
+            <Link href="/packages/triund-trek-1n-2d/">Triund Trek</Link>
+            <Link href="/packages/bhrigu-lake-trek-3n-4d/">Bhrigu Lake Trek</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
             <Link href="/valley-of-flowers-from/">Valley of Flowers from Your City</Link>
             <Link href="/badrinath-from/">Badrinath from Your City</Link>
-            <Link href="/mussoorie-from/">Mussoorie from Your City</Link>
-            <Link href="/nainital-from/">Nainital from Your City</Link>
           </div>
 
           <div>
@@ -51,6 +52,8 @@ export default function Footer() {
             <Link href="/blog/">Travel Blog</Link>
             <Link href="/best-time/kedarnath/">Best Time for Kedarnath</Link>
             <Link href="/best-time/valley-of-flowers/">Best Time for Valley of Flowers</Link>
+            <Link href="/best-time/hamta-pass-trek/">Best Time for Hamta Pass</Link>
+            <Link href="/best-time/triund-trek/">Best Time for Triund Trek</Link>
             <Link href="/blog/kedarkantha-trek-beginners-guide/">Kedarkantha Trek Guide</Link>
             <Link href="/blog/char-dham-yatra-packing-list/">Char Dham Packing List</Link>
             <Link href="/blog/altitude-sickness-prevention-himalaya/">Altitude Sickness Guide</Link>

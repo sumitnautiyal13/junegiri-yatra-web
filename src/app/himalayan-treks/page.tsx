@@ -142,18 +142,20 @@ const UK_TREKS = [
 
 /* ── HIMACHAL PRADESH TREKS (WhatsApp enquiry) ──────────────── */
 const HP_EASY: Array<{
-  name: string; altitude: string; duration: string; highlight: string;
-  difficulty: string; diffColor: string; image: string; waMsg: string;
+  name: string; altitude: string; duration: string; highlight: string; price?: string;
+  difficulty: string; diffColor: string; image: string; waMsg: string; packageUrl?: string;
 }> = [
   {
     name: 'Triund Trek',
     altitude: '2,875m / 9,432 ft',
-    duration: '2–3 days',
-    highlight: "One of Himachal's most popular summer treks. Stunning views of the Dhauladhar range and Kangra Valley. Perfect for beginners.",
-    difficulty: 'Easy–Moderate',
+    duration: '1N / 2D',
+    price: '₹3,500',
+    highlight: "One of Himachal's most popular beginner treks. Stunning views of the Dhauladhar snow wall and Kangra Valley. Perfect for first-timers.",
+    difficulty: 'Easy',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1605649487212-47bdab064df7?w=600&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=600&q=80&auto=format&fit=crop',
     waMsg: 'Namaste! I want to enquire about the Triund Trek in Himachal Pradesh',
+    packageUrl: '/packages/triund-trek-1n-2d/',
   },
   {
     name: 'Kareri Lake Trek',
@@ -178,28 +180,32 @@ const HP_EASY: Array<{
   {
     name: 'Bhrigu Lake Trek',
     altitude: '4,300m / 14,107 ft',
-    duration: '3 days',
-    highlight: 'High-altitude lake near Manali accessible in May–June. Panoramic views of Rohtang Pass and Manali valley.',
+    duration: '3N / 4D',
+    price: '₹9,500',
+    highlight: 'High-altitude sacred lake near Manali. Panoramic views of Rohtang, Deo Tibba and Kullu peaks. Often partially frozen in June.',
     difficulty: 'Easy–Moderate',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop',
     waMsg: 'Namaste! I want to enquire about the Bhrigu Lake Trek near Manali',
+    packageUrl: '/packages/bhrigu-lake-trek-3n-4d/',
   },
 ];
 
 const HP_MODERATE: Array<{
-  name: string; altitude: string; duration: string; highlight: string;
-  difficulty: string; diffColor: string; image: string; waMsg: string;
+  name: string; altitude: string; duration: string; highlight: string; price?: string;
+  difficulty: string; diffColor: string; image: string; waMsg: string; packageUrl?: string;
 }> = [
   {
     name: 'Hamta Pass Trek',
     altitude: '4,270m / 14,009 ft',
-    duration: '4–5 days',
-    highlight: 'Crosses from Kullu to Spiti valley — dramatic landscape change from lush green to high-altitude desert in one pass.',
-    difficulty: 'Moderate–Difficult',
+    duration: '4N / 5D',
+    price: '₹11,500',
+    highlight: 'Cross from lush Kullu valley to barren Spiti in one dramatic pass. Chandrataal moon lake included. Best HP moderate trek.',
+    difficulty: 'Moderate',
     diffColor: '#E8AA50',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=600&q=80&auto=format&fit=crop',
     waMsg: 'Namaste! I want to enquire about the Hamta Pass Trek in Himachal Pradesh',
+    packageUrl: '/packages/hamta-pass-trek-4n-5d/',
   },
   {
     name: 'Indrahar Pass Trek',
@@ -413,16 +419,12 @@ export default function HimalayanTreksPage() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
               {HP_EASY.map((trek) => (
-                <a
-                  key={trek.name}
-                  href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`}
-                  target="_blank" rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', display: 'block' }}
-                >
+                <div key={trek.name} className="trek-card-hover">
                   <div className="trek-card-inner">
                     <div style={{ position: 'relative', height: 160 }}>
                       <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
                       <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
+                      {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
                     </div>
                     <div style={{ padding: '16px 18px 18px' }}>
                       <h4 style={{ fontSize: 15, fontWeight: 700, color: '#fff', marginBottom: 4 }}>{trek.name}</h4>
@@ -431,12 +433,14 @@ export default function HimalayanTreksPage() {
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
                       </div>
                       <p style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12 }}>{trek.highlight}</p>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#25D366', fontSize: 12, fontWeight: 600 }}>
-                        <span>💬</span> WhatsApp for Quote &amp; Dates →
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        {trek.packageUrl
+                          ? <Link href={trek.packageUrl} style={{ flex: 1, textAlign: 'center', background: 'var(--gold)', color: '#1a1200', fontSize: 12, fontWeight: 700, padding: '8px 0', borderRadius: 6, textDecoration: 'none' }}>View Package →</Link>
+                          : <a href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: '#25D366', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}><span>💬</span> WhatsApp for Dates →</a>}
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>
@@ -449,16 +453,12 @@ export default function HimalayanTreksPage() {
             </div>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
               {HP_MODERATE.map((trek) => (
-                <a
-                  key={trek.name}
-                  href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`}
-                  target="_blank" rel="noopener noreferrer"
-                  style={{ textDecoration: 'none', display: 'block' }}
-                >
+                <div key={trek.name} className="trek-card-hover">
                   <div className="trek-card-inner">
                     <div style={{ position: 'relative', height: 160 }}>
                       <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
                       <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
+                      {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
                     </div>
                     <div style={{ padding: '16px 18px 18px' }}>
                       <h4 style={{ fontSize: 15, fontWeight: 700, color: '#fff', marginBottom: 4 }}>{trek.name}</h4>
@@ -467,12 +467,14 @@ export default function HimalayanTreksPage() {
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
                       </div>
                       <p style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12 }}>{trek.highlight}</p>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 6, color: '#25D366', fontSize: 12, fontWeight: 600 }}>
-                        <span>💬</span> WhatsApp for Quote &amp; Dates →
+                      <div style={{ display: 'flex', gap: 8 }}>
+                        {trek.packageUrl
+                          ? <Link href={trek.packageUrl} style={{ flex: 1, textAlign: 'center', background: 'var(--gold)', color: '#1a1200', fontSize: 12, fontWeight: 700, padding: '8px 0', borderRadius: 6, textDecoration: 'none' }}>View Package →</Link>
+                          : <a href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: '#25D366', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}><span>💬</span> WhatsApp for Dates →</a>}
                       </div>
                     </div>
                   </div>
-                </a>
+                </div>
               ))}
             </div>
           </div>

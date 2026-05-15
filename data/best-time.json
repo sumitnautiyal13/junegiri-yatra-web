@@ -121,12 +121,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Temple Opens", "value": "Late April / Early May" },
-      { "label": "Temple Closes", "value": "Diwali (Oct / Nov)" },
-      { "label": "Best Months", "value": "May & September" },
-      { "label": "Avoid", "value": "June 15 – Aug 15 (landslides)" },
-      { "label": "Altitude", "value": "3,584 m" },
-      { "label": "Trek Distance", "value": "22 km (or helicopter)" }
+      {
+        "label": "Temple Opens",
+        "value": "Late April / Early May"
+      },
+      {
+        "label": "Temple Closes",
+        "value": "Diwali (Oct / Nov)"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & September"
+      },
+      {
+        "label": "Avoid",
+        "value": "June 15 – Aug 15 (landslides)"
+      },
+      {
+        "label": "Altitude",
+        "value": "3,584 m"
+      },
+      {
+        "label": "Trek Distance",
+        "value": "22 km (or helicopter)"
+      }
     ],
     "faq": [
       {
@@ -265,12 +283,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Temple Opens", "value": "Late April / Early May" },
-      { "label": "Temple Closes", "value": "November (Vijaya Ekadashi)" },
-      { "label": "Best Months", "value": "May & September" },
-      { "label": "Avoid", "value": "July – August (landslides)" },
-      { "label": "Altitude", "value": "3,133 m" },
-      { "label": "Distance from Rishikesh", "value": "~298 km" }
+      {
+        "label": "Temple Opens",
+        "value": "Late April / Early May"
+      },
+      {
+        "label": "Temple Closes",
+        "value": "November (Vijaya Ekadashi)"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & September"
+      },
+      {
+        "label": "Avoid",
+        "value": "July – August (landslides)"
+      },
+      {
+        "label": "Altitude",
+        "value": "3,133 m"
+      },
+      {
+        "label": "Distance from Rishikesh",
+        "value": "~298 km"
+      }
     ],
     "faq": [
       {
@@ -409,12 +445,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Dhams Open", "value": "Late April / Early May" },
-      { "label": "Dhams Close", "value": "October / November" },
-      { "label": "Best Months", "value": "May & September" },
-      { "label": "Avoid", "value": "June 15 – Aug 15 (monsoon)" },
-      { "label": "Yatra Duration", "value": "9–12 days minimum" },
-      { "label": "Route", "value": "Yamunotri → Gangotri → Kedarnath → Badrinath" }
+      {
+        "label": "Dhams Open",
+        "value": "Late April / Early May"
+      },
+      {
+        "label": "Dhams Close",
+        "value": "October / November"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & September"
+      },
+      {
+        "label": "Avoid",
+        "value": "June 15 – Aug 15 (monsoon)"
+      },
+      {
+        "label": "Yatra Duration",
+        "value": "9–12 days minimum"
+      },
+      {
+        "label": "Route",
+        "value": "Yamunotri → Gangotri → Kedarnath → Badrinath"
+      }
     ],
     "faq": [
       {
@@ -553,12 +607,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Trek Open", "value": "November – April" },
-      { "label": "Monsoon Closure", "value": "June – September" },
-      { "label": "Best Months", "value": "December & January" },
-      { "label": "Summit Altitude", "value": "3,810 m" },
-      { "label": "Trek Duration", "value": "5 nights / 6 days" },
-      { "label": "Base Camp", "value": "Sankri Village, Uttarkashi" }
+      {
+        "label": "Trek Open",
+        "value": "November – April"
+      },
+      {
+        "label": "Monsoon Closure",
+        "value": "June – September"
+      },
+      {
+        "label": "Best Months",
+        "value": "December & January"
+      },
+      {
+        "label": "Summit Altitude",
+        "value": "3,810 m"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "5 nights / 6 days"
+      },
+      {
+        "label": "Base Camp",
+        "value": "Sankri Village, Uttarkashi"
+      }
     ],
     "faq": [
       {
@@ -697,12 +769,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Park Open", "value": "July 1 – September 30" },
-      { "label": "Peak Bloom", "value": "Late July & August" },
-      { "label": "Best Month", "value": "August" },
-      { "label": "Entry Fee", "value": "₹150/day (Indian), ₹600/day (Foreign)" },
-      { "label": "Valley Altitude", "value": "3,658 m" },
-      { "label": "Base Village", "value": "Ghangaria (3,050 m)" }
+      {
+        "label": "Park Open",
+        "value": "July 1 – September 30"
+      },
+      {
+        "label": "Peak Bloom",
+        "value": "Late July & August"
+      },
+      {
+        "label": "Best Month",
+        "value": "August"
+      },
+      {
+        "label": "Entry Fee",
+        "value": "₹150/day (Indian), ₹600/day (Foreign)"
+      },
+      {
+        "label": "Valley Altitude",
+        "value": "3,658 m"
+      },
+      {
+        "label": "Base Village",
+        "value": "Ghangaria (3,050 m)"
+      }
     ],
     "faq": [
       {
@@ -841,12 +931,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round" },
-      { "label": "Best Months", "value": "October – March" },
-      { "label": "Rafting Season", "value": "Oct–Jun (suspended Jul-Sep)" },
-      { "label": "Avoid", "value": "July–August (Ganga floods)" },
-      { "label": "Famous For", "value": "Yoga, Rafting, Ganga Aarti" },
-      { "label": "Distance from Delhi", "value": "~240 km (5–6 hrs)" }
+      {
+        "label": "Season",
+        "value": "Year-round"
+      },
+      {
+        "label": "Best Months",
+        "value": "October – March"
+      },
+      {
+        "label": "Rafting Season",
+        "value": "Oct–Jun (suspended Jul-Sep)"
+      },
+      {
+        "label": "Avoid",
+        "value": "July–August (Ganga floods)"
+      },
+      {
+        "label": "Famous For",
+        "value": "Yoga, Rafting, Ganga Aarti"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "~240 km (5–6 hrs)"
+      }
     ],
     "faq": [
       {
@@ -985,12 +1093,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round" },
-      { "label": "Best Months", "value": "October – March" },
-      { "label": "Major Festival", "value": "Kanwar Yatra (July-Aug)" },
-      { "label": "Next Ardh Kumbh", "value": "2027" },
-      { "label": "Famous For", "value": "Ganga Aarti, Har Ki Pauri" },
-      { "label": "Distance from Delhi", "value": "~220 km (4–5 hrs)" }
+      {
+        "label": "Season",
+        "value": "Year-round"
+      },
+      {
+        "label": "Best Months",
+        "value": "October – March"
+      },
+      {
+        "label": "Major Festival",
+        "value": "Kanwar Yatra (July-Aug)"
+      },
+      {
+        "label": "Next Ardh Kumbh",
+        "value": "2027"
+      },
+      {
+        "label": "Famous For",
+        "value": "Ganga Aarti, Har Ki Pauri"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "~220 km (4–5 hrs)"
+      }
     ],
     "faq": [
       {
@@ -1129,12 +1255,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round hill station" },
-      { "label": "Best Months", "value": "Mar–Jun & Sep–Nov" },
-      { "label": "Snowfall", "value": "January–February" },
-      { "label": "Avoid", "value": "July–August (fog & leeches)" },
-      { "label": "Altitude", "value": "2,005 m" },
-      { "label": "Distance from Delhi", "value": "~290 km (6–7 hrs)" }
+      {
+        "label": "Season",
+        "value": "Year-round hill station"
+      },
+      {
+        "label": "Best Months",
+        "value": "Mar–Jun & Sep–Nov"
+      },
+      {
+        "label": "Snowfall",
+        "value": "January–February"
+      },
+      {
+        "label": "Avoid",
+        "value": "July–August (fog & leeches)"
+      },
+      {
+        "label": "Altitude",
+        "value": "2,005 m"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "~290 km (6–7 hrs)"
+      }
     ],
     "faq": [
       {
@@ -1273,12 +1417,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round" },
-      { "label": "Best Months", "value": "Mar–Jun & Oct–Dec" },
-      { "label": "Snowfall", "value": "January–February" },
-      { "label": "Avoid", "value": "July–September (landslides)" },
-      { "label": "Altitude", "value": "2,084 m" },
-      { "label": "Famous For", "value": "Naini Lake, boat rides, Mall Road" }
+      {
+        "label": "Season",
+        "value": "Year-round"
+      },
+      {
+        "label": "Best Months",
+        "value": "Mar–Jun & Oct–Dec"
+      },
+      {
+        "label": "Snowfall",
+        "value": "January–February"
+      },
+      {
+        "label": "Avoid",
+        "value": "July–September (landslides)"
+      },
+      {
+        "label": "Altitude",
+        "value": "2,084 m"
+      },
+      {
+        "label": "Famous For",
+        "value": "Naini Lake, boat rides, Mall Road"
+      }
     ],
     "faq": [
       {
@@ -1417,12 +1579,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Ski Season", "value": "December – February" },
-      { "label": "Trekking Season", "value": "April – June" },
-      { "label": "Monsoon Closure", "value": "July – mid-September" },
-      { "label": "Altitude", "value": "2,519 – 3,049 m" },
-      { "label": "Slope Length", "value": "3 km (ski runs)" },
-      { "label": "Access", "value": "Cable car from Joshimath or road" }
+      {
+        "label": "Ski Season",
+        "value": "December – February"
+      },
+      {
+        "label": "Trekking Season",
+        "value": "April – June"
+      },
+      {
+        "label": "Monsoon Closure",
+        "value": "July – mid-September"
+      },
+      {
+        "label": "Altitude",
+        "value": "2,519 – 3,049 m"
+      },
+      {
+        "label": "Slope Length",
+        "value": "3 km (ski runs)"
+      },
+      {
+        "label": "Access",
+        "value": "Cable car from Joshimath or road"
+      }
     ],
     "faq": [
       {
@@ -1561,12 +1741,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Trek Open", "value": "May–Jun & Sep–Nov" },
-      { "label": "Best Months", "value": "May & October" },
-      { "label": "Monsoon Closure", "value": "July – mid September" },
-      { "label": "Maximum Altitude", "value": "3,566 m" },
-      { "label": "Trek Duration", "value": "5 nights / 6 days" },
-      { "label": "Base Camp", "value": "Sankri / Taluka" }
+      {
+        "label": "Trek Open",
+        "value": "May–Jun & Sep–Nov"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & October"
+      },
+      {
+        "label": "Monsoon Closure",
+        "value": "July – mid September"
+      },
+      {
+        "label": "Maximum Altitude",
+        "value": "3,566 m"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "5 nights / 6 days"
+      },
+      {
+        "label": "Base Camp",
+        "value": "Sankri / Taluka"
+      }
     ],
     "faq": [
       {
@@ -1705,12 +1903,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Trek Open", "value": "May–Jun & September" },
-      { "label": "Best Month", "value": "September" },
-      { "label": "Summit Altitude", "value": "5,029 m (Roopkund Lake)" },
-      { "label": "Trek Duration", "value": "7 nights / 8 days" },
-      { "label": "Difficulty", "value": "Difficult (high altitude)" },
-      { "label": "Base Town", "value": "Lohajung, Chamoli" }
+      {
+        "label": "Trek Open",
+        "value": "May–Jun & September"
+      },
+      {
+        "label": "Best Month",
+        "value": "September"
+      },
+      {
+        "label": "Summit Altitude",
+        "value": "5,029 m (Roopkund Lake)"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "7 nights / 8 days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Difficult (high altitude)"
+      },
+      {
+        "label": "Base Town",
+        "value": "Lohajung, Chamoli"
+      }
     ],
     "faq": [
       {
@@ -1849,12 +2065,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round (Oct–Feb best)" },
-      { "label": "Best Months", "value": "Oct, Nov, Feb, Mar" },
-      { "label": "Famous Festival", "value": "Braj Holi (Feb–Mar)" },
-      { "label": "Avoid", "value": "May–June (extreme heat)" },
-      { "label": "Key Sites", "value": "Mathura, Vrindavan, Barsana" },
-      { "label": "Distance from Delhi", "value": "~160 km (3 hrs)" }
+      {
+        "label": "Season",
+        "value": "Year-round (Oct–Feb best)"
+      },
+      {
+        "label": "Best Months",
+        "value": "Oct, Nov, Feb, Mar"
+      },
+      {
+        "label": "Famous Festival",
+        "value": "Braj Holi (Feb–Mar)"
+      },
+      {
+        "label": "Avoid",
+        "value": "May–June (extreme heat)"
+      },
+      {
+        "label": "Key Sites",
+        "value": "Mathura, Vrindavan, Barsana"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "~160 km (3 hrs)"
+      }
     ],
     "faq": [
       {
@@ -1993,12 +2227,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Season", "value": "Year-round" },
-      { "label": "Best Months", "value": "November – February" },
-      { "label": "Must-See Event", "value": "Dev Deepawali (November)" },
-      { "label": "Avoid", "value": "May–June (extreme heat)" },
-      { "label": "Famous For", "value": "Ghats, Ganga Aarti, Silk" },
-      { "label": "Distance from Delhi", "value": "~820 km (train 8–12 hrs)" }
+      {
+        "label": "Season",
+        "value": "Year-round"
+      },
+      {
+        "label": "Best Months",
+        "value": "November – February"
+      },
+      {
+        "label": "Must-See Event",
+        "value": "Dev Deepawali (November)"
+      },
+      {
+        "label": "Avoid",
+        "value": "May–June (extreme heat)"
+      },
+      {
+        "label": "Famous For",
+        "value": "Ghats, Ganga Aarti, Silk"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "~820 km (train 8–12 hrs)"
+      }
     ],
     "faq": [
       {
@@ -2137,12 +2389,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Best Season", "value": "October – March" },
-      { "label": "Peak Months", "value": "November – January" },
-      { "label": "Avoid", "value": "April – September (45°C heat)" },
-      { "label": "Famous Festival", "value": "Pushkar Camel Fair (Nov)" },
-      { "label": "Key Cities", "value": "Jaipur, Jodhpur, Jaisalmer, Udaipur" },
-      { "label": "Distance from Delhi", "value": "Jaipur ~280 km (5 hrs)" }
+      {
+        "label": "Best Season",
+        "value": "October – March"
+      },
+      {
+        "label": "Peak Months",
+        "value": "November – January"
+      },
+      {
+        "label": "Avoid",
+        "value": "April – September (45°C heat)"
+      },
+      {
+        "label": "Famous Festival",
+        "value": "Pushkar Camel Fair (Nov)"
+      },
+      {
+        "label": "Key Cities",
+        "value": "Jaipur, Jodhpur, Jaisalmer, Udaipur"
+      },
+      {
+        "label": "Distance from Delhi",
+        "value": "Jaipur ~280 km (5 hrs)"
+      }
     ],
     "faq": [
       {
@@ -2156,6 +2426,280 @@
       {
         "q": "Can I do a desert camping safari in Rajasthan?",
         "a": "Yes — camel safari and desert camping near Sam Sand Dunes (Jaisalmer), Khuri, or Osian are popular year-round, but October through February offers the most comfortable experience. Summer desert camping (May-June) is possible but temperatures drop to 25°C only after midnight. Night temperatures in January-February can reach 5–8°C, so carry warm layers for desert camping."
+      }
+    ]
+  },
+  {
+    "slug": "hamta-pass-trek",
+    "name": "Hamta Pass Trek",
+    "title": "Best Time for Hamta Pass Trek 2026 — Month by Month Guide",
+    "meta_description": "Best time for Hamta Pass Trek — June to September. July-August for wildflowers, September for clear skies. Snow conditions, permit info and packing guide.",
+    "h1": "Best Time for <em>Hamta Pass Trek</em>",
+    "tagline": "Trek season: June–September · Best months: July & September",
+    "hero_image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=1400&q=80",
+    "overview": "The Hamta Pass Trek is open from June through September. July and August offer lush wildflower meadows and reliable snow-free pass conditions. September has the clearest skies and fewest crowds. The pass closes October onward due to heavy snowfall.",
+    "package_slug": "hamta-pass-trek-4n-5d",
+    "package_price": 11500,
+    "months": [
+      {
+        "month": "June",
+        "rating": 3,
+        "weather": "Cool, some residual snow on pass, fewer crowds",
+        "crowd": "Low",
+        "price": "Standard"
+      },
+      {
+        "month": "July",
+        "rating": 5,
+        "weather": "Warm days, cold nights, wildflowers in full bloom, pass snow-free",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "August",
+        "rating": 4,
+        "weather": "Warm, occasional afternoon showers, lush green meadows",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "September",
+        "rating": 5,
+        "weather": "Crisp, clear skies, excellent visibility, snow on higher peaks",
+        "crowd": "Medium",
+        "price": "Standard"
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Pass altitude",
+        "value": "4,270 m (14,009 ft)"
+      },
+      {
+        "label": "Best months",
+        "value": "July & September"
+      },
+      {
+        "label": "Trek duration",
+        "value": "4 Nights / 5 Days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Moderate"
+      },
+      {
+        "label": "Season",
+        "value": "June–September"
+      },
+      {
+        "label": "Base",
+        "value": "Manali"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I do Hamta Pass in June?",
+        "a": "Yes, but expect some snow near the pass and cold nights. The meadows are less green than July-August. June departures are available with Junegiri Yatra."
+      },
+      {
+        "q": "Is Hamta Pass open in October?",
+        "a": "Generally no. By early October, snowfall on the pass makes the crossing unsafe and the Forest Department typically suspends permits. September is the last reliable month."
+      },
+      {
+        "q": "Is Chandrataal included all season?",
+        "a": "Yes — Chandrataal is included in all Junegiri Yatra Hamta Pass packages regardless of month. The lake is accessible June through September."
+      }
+    ]
+  },
+  {
+    "slug": "triund-trek",
+    "name": "Triund Trek",
+    "title": "Best Time for Triund Trek 2026 — Month by Month Guide",
+    "meta_description": "Best time for Triund Trek from McLeod Ganj — March to June and September to November. Avoid July-August monsoon. Complete weather and permit guide.",
+    "h1": "Best Time for <em>Triund Trek</em>",
+    "tagline": "Best months: April–May & October · Avoid July–August monsoon",
+    "hero_image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=1400&q=80",
+    "overview": "Triund is best visited in spring (March–June) and autumn (September–November). April and May offer rhododendron blooms and clear mountain views. October has snow on the Dhauladhar ridge and crisp air. Avoid July–August when the trail gets very muddy and visibility is poor.",
+    "package_slug": "triund-trek-1n-2d",
+    "package_price": 3500,
+    "months": [
+      {
+        "month": "March",
+        "rating": 3,
+        "weather": "Cool, rhododendrons starting to bloom, some light snow possible",
+        "crowd": "Low",
+        "price": "Off-season"
+      },
+      {
+        "month": "April",
+        "rating": 5,
+        "weather": "Perfect — rhododendrons in full bloom, clear Dhauladhar views",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "May",
+        "rating": 5,
+        "weather": "Warm days, cool nights, most popular month",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "June",
+        "rating": 3,
+        "weather": "Getting warm, pre-monsoon haze, some good days",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "September",
+        "rating": 4,
+        "weather": "Post-monsoon, fresh greenery, clearing skies",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "October",
+        "rating": 5,
+        "weather": "Crisp and clear, snow on Dhauladhar, spectacular views",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "November",
+        "rating": 3,
+        "weather": "Cold, possible light snowfall on ridge, quiet",
+        "crowd": "Low",
+        "price": "Off-season"
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Summit altitude",
+        "value": "2,875 m (9,432 ft)"
+      },
+      {
+        "label": "Best months",
+        "value": "April–May & October"
+      },
+      {
+        "label": "Trek duration",
+        "value": "1 Night / 2 Days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy"
+      },
+      {
+        "label": "Season",
+        "value": "Mar–Jun, Sep–Nov"
+      },
+      {
+        "label": "Base",
+        "value": "McLeod Ganj, Dharamshala"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Can I do Triund in monsoon (July-August)?",
+        "a": "It is possible but not recommended. The trail gets slippery and muddy, visibility is poor, and the views that make Triund special are hidden behind clouds. Junegiri Yatra does not operate July–August batches."
+      },
+      {
+        "q": "Is there snow at Triund in winter?",
+        "a": "Yes — heavy snowfall from December to February makes the trek difficult and sometimes closes it. Light snow in October–November is safe and beautiful. The Dhauladhar ridge behind Triund is snow-covered for most of the year."
+      },
+      {
+        "q": "Do I need a permit for Triund?",
+        "a": "Yes. Himachal Pradesh Forest Department requires a permit, which limits daily visitors to 150. Book at least 1-2 weeks ahead in April-May and October, which are peak season."
+      }
+    ]
+  },
+  {
+    "slug": "bhrigu-lake-trek",
+    "name": "Bhrigu Lake Trek",
+    "title": "Best Time for Bhrigu Lake Trek 2026 — Month by Month Guide",
+    "meta_description": "Best time for Bhrigu Lake Trek from Manali — June to October. July for wildflowers, September for clearest skies. Altitude, weather and packing guide.",
+    "h1": "Best Time for <em>Bhrigu Lake Trek</em>",
+    "tagline": "Trek season: June–October · Best months: Late June & September",
+    "hero_image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80",
+    "overview": "Bhrigu Lake trek runs from June through early October. Late June offers a partially frozen lake with dramatic ice-water reflections. July–August is warmest with wildflowers in full bloom. September has the clearest skies. October is cold but still safe with fresh snow on the peaks.",
+    "package_slug": "bhrigu-lake-trek-3n-4d",
+    "package_price": 9500,
+    "months": [
+      {
+        "month": "June",
+        "rating": 5,
+        "weather": "Lake partially frozen — ice & blue water contrast, meadows turning green",
+        "crowd": "Low",
+        "price": "Standard"
+      },
+      {
+        "month": "July",
+        "rating": 4,
+        "weather": "Warm, wildflowers in bloom, lake fully thawed",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "August",
+        "rating": 4,
+        "weather": "Warm and lush, occasional afternoon showers",
+        "crowd": "High",
+        "price": "Peak"
+      },
+      {
+        "month": "September",
+        "rating": 5,
+        "weather": "Crisp and clear, best visibility, snow on peaks, fewer crowds",
+        "crowd": "Medium",
+        "price": "Standard"
+      },
+      {
+        "month": "October",
+        "rating": 3,
+        "weather": "Cold nights (near 0°C), early snowfall possible, quiet trail",
+        "crowd": "Low",
+        "price": "Off-season"
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Lake altitude",
+        "value": "4,300 m (14,107 ft)"
+      },
+      {
+        "label": "Best months",
+        "value": "Late June & September"
+      },
+      {
+        "label": "Trek duration",
+        "value": "3 Nights / 4 Days"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy to Moderate"
+      },
+      {
+        "label": "Season",
+        "value": "June–October"
+      },
+      {
+        "label": "Base",
+        "value": "Manali"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Bhrigu Lake frozen in summer?",
+        "a": "Often yes in June — the lake is typically 60-70% frozen until late June/early July. By August it is fully thawed. The partial freezing in late June is actually one of the most photogenic times to visit."
+      },
+      {
+        "q": "Can I combine Bhrigu Lake with Hamta Pass?",
+        "a": "Yes — Bhrigu Lake (3N/4D) is excellent acclimatisation before Hamta Pass (4N/5D). Combined itinerary: 7-8 days from Manali with special combined pricing. Contact us on WhatsApp."
+      },
+      {
+        "q": "Is Bhrigu Lake trek safe for solo women?",
+        "a": "Yes. Bhrigu Lake is well-frequented, the guide ratio is good, and Manali is a well-established trekking hub with a safe environment for solo female travellers. All Junegiri Yatra guides are background-checked and trained."
       }
     ]
   }

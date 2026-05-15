@@ -1,8 +1,18 @@
 {
   "kedarkantha-trek-5n-6d": {
-    "months": ["november", "december", "january", "february", "march", "april"],
+    "months": [
+      "november",
+      "december",
+      "january",
+      "february",
+      "march",
+      "april"
+    ],
     "season_label": "Snow Season",
-    "best_months": ["december", "january"],
+    "best_months": [
+      "december",
+      "january"
+    ],
     "month_data": {
       "november": {
         "title": "Kedarkantha Trek in November 2026",
@@ -229,9 +239,16 @@
     }
   },
   "valley-of-flowers-trek-4n-5d": {
-    "months": ["july", "august", "september"],
+    "months": [
+      "july",
+      "august",
+      "september"
+    ],
     "season_label": "Bloom Season",
-    "best_months": ["july", "august"],
+    "best_months": [
+      "july",
+      "august"
+    ],
     "month_data": {
       "july": {
         "title": "Valley of Flowers Trek in July 2026",
@@ -347,9 +364,19 @@
     }
   },
   "har-ki-dun-trek-5n-6d": {
-    "months": ["april", "may", "june", "september", "october", "november"],
+    "months": [
+      "april",
+      "may",
+      "june",
+      "september",
+      "october",
+      "november"
+    ],
     "season_label": "All-Season Trek",
-    "best_months": ["may", "october"],
+    "best_months": [
+      "may",
+      "october"
+    ],
     "month_data": {
       "april": {
         "title": "Har Ki Dun Trek in April 2027",
@@ -576,9 +603,20 @@
     }
   },
   "chopta-tungnath-trek-3n-4d": {
-    "months": ["march", "april", "may", "june", "october", "november", "december"],
+    "months": [
+      "march",
+      "april",
+      "may",
+      "june",
+      "october",
+      "november",
+      "december"
+    ],
     "season_label": "Year-Round Trek",
-    "best_months": ["april", "november"],
+    "best_months": [
+      "april",
+      "november"
+    ],
     "month_data": {
       "march": {
         "title": "Chopta Tungnath Trek in March 2027",
@@ -842,9 +880,20 @@
     }
   },
   "kuari-pass-trek-4n-5d": {
-    "months": ["february", "march", "april", "may", "june", "october", "november"],
+    "months": [
+      "february",
+      "march",
+      "april",
+      "may",
+      "june",
+      "october",
+      "november"
+    ],
     "season_label": "All-Season Trek",
-    "best_months": ["april", "may"],
+    "best_months": [
+      "april",
+      "may"
+    ],
     "month_data": {
       "february": {
         "title": "Kuari Pass Trek in February 2027",
@@ -1108,9 +1157,16 @@
     }
   },
   "roopkund-trek-7n-8d": {
-    "months": ["may", "june", "september", "october"],
+    "months": [
+      "may",
+      "june",
+      "september",
+      "october"
+    ],
     "season_label": "Glacial Lake Trek",
-    "best_months": ["september"],
+    "best_months": [
+      "september"
+    ],
     "month_data": {
       "may": {
         "title": "Roopkund Trek in May 2026",
@@ -1263,9 +1319,17 @@
     }
   },
   "pangarchulla-peak-5n-6d": {
-    "months": ["march", "april", "may", "october"],
+    "months": [
+      "march",
+      "april",
+      "may",
+      "october"
+    ],
     "season_label": "Summit Trek",
-    "best_months": ["april", "may"],
+    "best_months": [
+      "april",
+      "may"
+    ],
     "month_data": {
       "march": {
         "title": "Pangarchulla Peak Trek in March 2027",
@@ -1412,6 +1476,510 @@
           {
             "q": "What makes the October Pangarchulla sunset view special?",
             "a": "From Khullara camp at sunset in October, the entire snow-clad Himalayan range from Nanda Devi to Chaukhamba is lit in alpenglow — an unforgettable golden-hour view at 3,600m altitude."
+          }
+        ]
+      }
+    }
+  },
+  "hamta-pass-trek-4n-5d": {
+    "months": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
+    "best_months": [
+      "july",
+      "september"
+    ],
+    "season_label": "Summer Season",
+    "month_data": {
+      "june": {
+        "title": "Hamta Pass Trek in June 2026",
+        "meta_description": "Hamta Pass Trek in June — cool weather, fewer crowds, some residual snow near the pass. Chandrataal included. Book with Junegiri Yatra from ₹11,500.",
+        "h1": "Hamta Pass Trek in <em>June</em>",
+        "tagline": "Cool temperatures, fewer crowds, residual snow near the pass",
+        "weather": "Cool days (12–18°C), cold nights (2–5°C). Clear mornings with afternoon cloud build-up.",
+        "trail_condition": "Trail clear below 3,500m. Some residual snow near the pass — crampons may be needed.",
+        "crowd_level": "Low",
+        "price": 11500,
+        "highlights": [
+          "Snow and green meadow contrast on approach",
+          "Chandrataal partially frozen — stunning reflections",
+          "Fewer trekkers, more solitude"
+        ],
+        "what_to_pack": [
+          "Waterproof trekking boots",
+          "Crampons (available to rent in Manali)",
+          "Insulated jacket (-10°C rated)",
+          "Sunscreen SPF 50+",
+          "Thermal base layer"
+        ],
+        "faq": [
+          {
+            "q": "Is Hamta Pass Trek open in June?",
+            "a": "Yes, June departures are available. The pass is crossable but may have residual snow above 4,000m. Crampons are advisable. Chandrataal is partially frozen — one of the most photogenic times."
+          },
+          {
+            "q": "How cold is it at night in June on Hamta Pass Trek?",
+            "a": "Night temperatures at Balu Ka Ghera camp (3,650m) drop to 2–5°C in June. A -10°C rated sleeping bag (provided) and thermal base layer are essential."
+          }
+        ]
+      },
+      "july": {
+        "title": "Hamta Pass Trek in July 2026",
+        "meta_description": "Hamta Pass Trek in July — peak season, wildflowers in bloom, snow-free pass, Chandrataal sapphire blue. Book with Junegiri Yatra from ₹11,500.",
+        "h1": "Hamta Pass Trek in <em>July</em>",
+        "tagline": "Peak wildflower season — lush meadows, snow-free pass, Chandrataal at its most vivid",
+        "weather": "Warm days (18–24°C), cool nights (6–10°C). Occasional afternoon showers — carry waterproof.",
+        "trail_condition": "Excellent. Pass fully snow-free. Meadows at their greenest. River crossings may be higher due to snowmelt.",
+        "crowd_level": "High",
+        "price": 11500,
+        "highlights": [
+          "Wildflowers carpeting every meadow",
+          "Hamta Pass fully snow-free — easier crossing",
+          "Chandrataal sapphire blue — best photo conditions",
+          "Long daylight hours"
+        ],
+        "what_to_pack": [
+          "Light waterproof shell jacket",
+          "Trekking poles (river crossings)",
+          "Sunscreen SPF 50+",
+          "Insect repellent",
+          "Quick-dry trekking clothes"
+        ],
+        "faq": [
+          {
+            "q": "Is July the best month for Hamta Pass Trek?",
+            "a": "July is one of the two best months (with September). The meadows are in full bloom, the pass is reliably snow-free, and Chandrataal is a vivid sapphire blue. The only downside is high crowd levels and occasional afternoon showers."
+          },
+          {
+            "q": "Are there leeches on the Hamta Pass Trek in July?",
+            "a": "Unlike monsoon treks in the lower Himalaya, the Hamta Pass trail is predominantly dry alpine terrain. Leeches are not a significant issue on this route even in July."
+          }
+        ]
+      },
+      "august": {
+        "title": "Hamta Pass Trek in August 2026",
+        "meta_description": "Hamta Pass Trek in August — warm weather, lush green meadows, Chandrataal included. Good visibility. Book with Junegiri Yatra from ₹11,500.",
+        "h1": "Hamta Pass Trek in <em>August</em>",
+        "tagline": "Warm and lush — green meadows at their peak, Chandrataal fully open",
+        "weather": "Warm days (17–22°C), cool nights (5–9°C). Occasional afternoon rain showers.",
+        "trail_condition": "Very good. Pass snow-free. Meadows lush. Some river crossings may be high.",
+        "crowd_level": "High",
+        "price": 11500,
+        "highlights": [
+          "Lush green Kullu valley approach",
+          "Dramatic green-to-grey landscape change at pass",
+          "Chandrataal fully thawed and vivid blue"
+        ],
+        "what_to_pack": [
+          "Waterproof jacket",
+          "Gaiters (wet trail sections)",
+          "Trekking poles",
+          "Sunscreen and sunglasses",
+          "Warm sleeping clothes for camp"
+        ],
+        "faq": [
+          {
+            "q": "Is August a good month for Hamta Pass Trek?",
+            "a": "Yes. August conditions are similar to July — warm, green, and suitable for the full itinerary including Chandrataal. The meadows are at their lushest and the pass is reliably snow-free."
+          },
+          {
+            "q": "What is the weather like at Chandrataal in August?",
+            "a": "Chandrataal in August is fully thawed and beautifully blue. Daytime temperatures are pleasant (12–16°C at 4,300m). Night temperatures drop to 2–5°C, so a warm sleeping bag is essential."
+          }
+        ]
+      },
+      "september": {
+        "title": "Hamta Pass Trek in September 2026",
+        "meta_description": "Hamta Pass Trek in September — crystal clear skies, crisp air, fewer crowds. Best visibility of the season. Book with Junegiri Yatra from ₹11,500.",
+        "h1": "Hamta Pass Trek in <em>September</em>",
+        "tagline": "Crystal-clear post-monsoon skies — best visibility and fewer crowds",
+        "weather": "Crisp days (15–20°C), cold nights (2–6°C). Excellent visibility, largely rain-free.",
+        "trail_condition": "Excellent. Pass clear, meadows drying out after monsoon. Fresh snow visible on higher peaks.",
+        "crowd_level": "Medium",
+        "price": 11500,
+        "highlights": [
+          "Clearest mountain views of the season",
+          "Fresh snow on Deo Tibba and surrounding peaks",
+          "Fewer trekkers than peak July–August",
+          "Chandrataal still vivid blue"
+        ],
+        "what_to_pack": [
+          "Warm layering system (temperatures drop fast)",
+          "Insulated jacket",
+          "Sunscreen and glacier glasses",
+          "Gloves and warm hat for nights",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is September the best month for Hamta Pass Trek?",
+            "a": "Many experienced trekkers consider September the best month. The skies are clearest after monsoon, visibility is outstanding, and crowd levels drop significantly from the July–August peak. The pass is still clear and Chandrataal is fully accessible."
+          },
+          {
+            "q": "Does it snow on Hamta Pass Trek in September?",
+            "a": "Snow is unlikely on the pass itself in September but fresh snow on the surrounding peaks (Deo Tibba, Indrasan) is common — adding dramatic contrast to the landscape. Night temperatures at camp can drop near 0°C so a -10°C sleeping bag is essential."
+          }
+        ]
+      }
+    }
+  },
+  "triund-trek-1n-2d": {
+    "months": [
+      "march",
+      "april",
+      "may",
+      "june",
+      "september",
+      "october",
+      "november"
+    ],
+    "best_months": [
+      "april",
+      "october"
+    ],
+    "season_label": "Spring & Autumn",
+    "month_data": {
+      "march": {
+        "title": "Triund Trek in March 2026",
+        "meta_description": "Triund Trek in March — early spring, rhododendrons beginning to bloom, quiet trail. Easy beginner trek near Dharamshala. From ₹3,500.",
+        "h1": "Triund Trek in <em>March</em>",
+        "tagline": "Early spring on the ridge — quiet, cool, and serene",
+        "weather": "Cool (8–15°C day), cold nights (0–4°C). Occasional morning mist.",
+        "trail_condition": "Good. Some light snow patches possible near the summit ridge.",
+        "crowd_level": "Low",
+        "price": 3500,
+        "highlights": [
+          "Quiet trail with very few trekkers",
+          "Early rhododendrons beginning to bloom",
+          "Snow dusting on Dhauladhar ridge"
+        ],
+        "what_to_pack": [
+          "Warm jacket and thermal layers",
+          "Waterproof boots",
+          "Gloves and warm hat",
+          "Trekking poles"
+        ],
+        "faq": [
+          {
+            "q": "Is Triund Trek safe in March?",
+            "a": "Yes, March is safe and quiet. Light snow patches may exist on the upper ridge. Waterproof boots and warm layers are advisable. The trail is well-marked and guides are available."
+          }
+        ]
+      },
+      "april": {
+        "title": "Triund Trek in April 2026",
+        "meta_description": "Triund Trek in April — rhododendrons in full bloom, clear views of Dhauladhar. One of the best months. From ₹3,500.",
+        "h1": "Triund Trek in <em>April</em>",
+        "tagline": "Rhododendrons in bloom and crystal-clear mountain views",
+        "weather": "Pleasant (14–20°C day), cool nights (4–8°C). Clear skies most days.",
+        "trail_condition": "Excellent. Trail clear, rhododendrons in full bloom.",
+        "crowd_level": "Medium",
+        "price": 3500,
+        "highlights": [
+          "Red rhododendron forests in full bloom",
+          "Crisp clear Dhauladhar views",
+          "Ideal daytime temperatures for trekking"
+        ],
+        "what_to_pack": [
+          "Light fleece and windproof layer",
+          "Sun hat and sunscreen",
+          "Comfortable trekking shoes",
+          "Water bottle (2L)"
+        ],
+        "faq": [
+          {
+            "q": "Is April a good month for Triund Trek?",
+            "a": "April is one of the best months for Triund. Rhododendrons are in full bloom, the weather is pleasant, and the Dhauladhar views are clear. Book your permit in advance as April sees increasing demand."
+          }
+        ]
+      },
+      "may": {
+        "title": "Triund Trek in May 2026",
+        "meta_description": "Triund Trek in May — peak season, warm weather, most popular month. Book early — permit capacity fills fast. From ₹3,500.",
+        "h1": "Triund Trek in <em>May</em>",
+        "tagline": "Peak season — warm days, clear skies, most popular month",
+        "weather": "Warm (18–24°C day), cool nights (8–12°C). Generally clear.",
+        "trail_condition": "Excellent. Trail busy but well-maintained.",
+        "crowd_level": "High",
+        "price": 3500,
+        "highlights": [
+          "Peak season Dhauladhar views",
+          "Warm comfortable camping",
+          "Vibrant trekking community atmosphere"
+        ],
+        "what_to_pack": [
+          "Light layers (warm days, cool nights)",
+          "Sunscreen SPF 50+",
+          "Sun hat and sunglasses",
+          "Comfortable trekking footwear"
+        ],
+        "faq": [
+          {
+            "q": "How crowded is Triund in May?",
+            "a": "May is the busiest month. The daily permit cap of 150 trekkers fills quickly — book at least 1–2 weeks ahead. Junegiri Yatra handles permit booking as part of the package."
+          }
+        ]
+      },
+      "june": {
+        "title": "Triund Trek in June 2026",
+        "meta_description": "Triund Trek in June — warm pre-monsoon conditions, good views on clear mornings. Book before monsoon season. From ₹3,500.",
+        "h1": "Triund Trek in <em>June</em>",
+        "tagline": "Warm pre-monsoon conditions — good views on clear mornings",
+        "weather": "Warm (20–26°C day), mild nights (10–14°C). Some haze as pre-monsoon builds.",
+        "trail_condition": "Good. Trail dry and clear.",
+        "crowd_level": "Medium",
+        "price": 3500,
+        "highlights": [
+          "Last clear month before monsoon",
+          "Warm camping conditions",
+          "Less crowded than May"
+        ],
+        "what_to_pack": [
+          "Light summer trekking clothes",
+          "Rain jacket (pre-monsoon showers possible)",
+          "Sunscreen and hat"
+        ],
+        "faq": [
+          {
+            "q": "Is June ok for Triund Trek?",
+            "a": "Yes, early June is fine. Pre-monsoon haze can reduce visibility compared to April–May, but you still get the Dhauladhar views on clear mornings. By mid-June the monsoon may begin — check conditions before booking."
+          }
+        ]
+      },
+      "september": {
+        "title": "Triund Trek in September 2026",
+        "meta_description": "Triund Trek in September — post-monsoon freshness, green trail, clearing skies. Ideal trekking weather. From ₹3,500.",
+        "h1": "Triund Trek in <em>September</em>",
+        "tagline": "Post-monsoon freshness — green trail, clearing skies, pleasant weather",
+        "weather": "Pleasant (16–22°C day), cool nights (6–10°C). Skies clearing after monsoon.",
+        "trail_condition": "Good. Trail lush and green. Some muddy sections in early September.",
+        "crowd_level": "Medium",
+        "price": 3500,
+        "highlights": [
+          "Lush green landscape post-monsoon",
+          "Clearing skies and improving views",
+          "Pleasant trekking temperatures"
+        ],
+        "what_to_pack": [
+          "Light waterproof jacket",
+          "Trekking boots with grip (wet sections)",
+          "Fleece for evenings",
+          "Sunscreen"
+        ],
+        "faq": [
+          {
+            "q": "Is September a good month for Triund Trek?",
+            "a": "Yes, September is underrated. The trail is beautifully green after monsoon, skies clear progressively through the month, and it's much less crowded than May. By late September conditions are excellent."
+          }
+        ]
+      },
+      "october": {
+        "title": "Triund Trek in October 2026",
+        "meta_description": "Triund Trek in October — crisp autumn air, possible light snow on Dhauladhar, spectacular views. Peak autumn season. From ₹3,500.",
+        "h1": "Triund Trek in <em>October</em>",
+        "tagline": "Crisp autumn — possible snow on Dhauladhar ridge, spectacular views",
+        "weather": "Cool (12–18°C day), cold nights (2–6°C). Mostly clear and crisp.",
+        "trail_condition": "Excellent. Trail clear. Light snow possible on the summit ridge in late October.",
+        "crowd_level": "High",
+        "price": 3500,
+        "highlights": [
+          "Light snow on the Dhauladhar ridge",
+          "Crystal-clear autumn visibility",
+          "Golden autumn colours on descent"
+        ],
+        "what_to_pack": [
+          "Warm insulated jacket",
+          "Gloves and beanie",
+          "Waterproof trekking boots",
+          "Thermal base layer for nights"
+        ],
+        "faq": [
+          {
+            "q": "Is Triund Trek snow-free in October?",
+            "a": "The trail to Triund is mostly snow-free in October. The Dhauladhar peaks behind the camp may have fresh snow — making for spectacular photography. By late October light snowfall on the ridge itself is possible."
+          }
+        ]
+      },
+      "november": {
+        "title": "Triund Trek in November 2026",
+        "meta_description": "Triund Trek in November — cold and quiet, possible light snow on ridge, clear skies. Off-season solitude. From ₹3,500.",
+        "h1": "Triund Trek in <em>November</em>",
+        "tagline": "Cold and quiet — off-season solitude with possible ridge snow",
+        "weather": "Cold (6–12°C day), very cold nights (-2–2°C). Clear skies.",
+        "trail_condition": "Fair. Light snowfall possible on the upper ridge — crampons recommended.",
+        "crowd_level": "Low",
+        "price": 3500,
+        "highlights": [
+          "Very few trekkers — true solitude",
+          "Possible snow on the Triund ridge",
+          "Clear, cold mountain air"
+        ],
+        "what_to_pack": [
+          "Heavy insulated jacket",
+          "Crampons or microspikes",
+          "Warm gloves and balaclava",
+          "-10°C sleeping bag",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is Triund Trek open in November?",
+            "a": "Yes, Triund is open in November but it is the last viable month before winter closure. Expect cold temperatures and possible snow on the upper ridge. All gear must be winter-grade. Junegiri Yatra provides -10°C sleeping bags in November."
+          }
+        ]
+      }
+    }
+  },
+  "bhrigu-lake-trek-3n-4d": {
+    "months": [
+      "june",
+      "july",
+      "august",
+      "september",
+      "october"
+    ],
+    "best_months": [
+      "june",
+      "september"
+    ],
+    "season_label": "Summer Season",
+    "month_data": {
+      "june": {
+        "title": "Bhrigu Lake Trek in June 2026",
+        "meta_description": "Bhrigu Lake Trek in June — lake partially frozen, stunning ice-and-blue reflections, fewer crowds. Book from Manali. From ₹9,500.",
+        "h1": "Bhrigu Lake Trek in <em>June</em>",
+        "tagline": "Lake partially frozen — dramatic ice and blue water reflections",
+        "weather": "Cool (10–16°C day), cold nights (0–4°C). Clear mornings.",
+        "trail_condition": "Good. Some snow patches above 3,500m. Lake 50–70% frozen.",
+        "crowd_level": "Low",
+        "price": 9500,
+        "highlights": [
+          "Bhrigu Lake partially frozen — most photogenic time",
+          "Ice and blue water reflections at 4,300m",
+          "Fewer trekkers than July–August"
+        ],
+        "what_to_pack": [
+          "Waterproof insulated boots",
+          "Crampons (advisable near lake)",
+          "Insulated jacket and thermal layers",
+          "Sunscreen SPF 50+ and glacier glasses"
+        ],
+        "faq": [
+          {
+            "q": "Is Bhrigu Lake frozen in June?",
+            "a": "Bhrigu Lake is typically 50–70% frozen in June, creating a spectacular combination of ice and vivid blue water. This is one of the most photogenic times to visit. The trail is accessible but some snow patches above 3,500m require caution."
+          }
+        ]
+      },
+      "july": {
+        "title": "Bhrigu Lake Trek in July 2026",
+        "meta_description": "Bhrigu Lake Trek in July — wildflowers in full bloom, lake fully thawed and vivid blue. Peak season. From ₹9,500.",
+        "h1": "Bhrigu Lake Trek in <em>July</em>",
+        "tagline": "Wildflowers in bloom, lake fully thawed and vivid sapphire blue",
+        "weather": "Warm (16–22°C day), cool nights (4–8°C). Occasional afternoon showers.",
+        "trail_condition": "Excellent. Trail clear, wildflowers at peak, lake fully thawed.",
+        "crowd_level": "High",
+        "price": 9500,
+        "highlights": [
+          "Wildflower meadows in full bloom on approach",
+          "Bhrigu Lake vivid sapphire blue",
+          "Best overall conditions for the trek"
+        ],
+        "what_to_pack": [
+          "Light waterproof jacket",
+          "Trekking poles",
+          "Sunscreen and sun hat",
+          "Quick-dry trekking clothes"
+        ],
+        "faq": [
+          {
+            "q": "Is July the best month for Bhrigu Lake Trek?",
+            "a": "July is excellent — wildflowers are at their peak, the lake is fully thawed and brilliantly blue, and weather is warm. It is the most popular month so book permits early. September is also highly recommended for clearer skies and fewer crowds."
+          }
+        ]
+      },
+      "august": {
+        "title": "Bhrigu Lake Trek in August 2026",
+        "meta_description": "Bhrigu Lake Trek in August — lush alpine meadows, warm trekking, lake fully blue. Good conditions throughout. From ₹9,500.",
+        "h1": "Bhrigu Lake Trek in <em>August</em>",
+        "tagline": "Lush green meadows and warm trekking conditions",
+        "weather": "Warm (15–21°C day), cool nights (3–7°C). Occasional afternoon rain showers.",
+        "trail_condition": "Good. Trail lush. Some wet sections after rain.",
+        "crowd_level": "High",
+        "price": 9500,
+        "highlights": [
+          "Lush Himalayan meadows at their greenest",
+          "Bhrigu Lake fully open",
+          "Warm and comfortable trekking weather"
+        ],
+        "what_to_pack": [
+          "Waterproof shell jacket",
+          "Gaiters (wet trail sections)",
+          "Grip trekking boots",
+          "Warm sleeping layers"
+        ],
+        "faq": [
+          {
+            "q": "Is August a good month for Bhrigu Lake Trek?",
+            "a": "Yes. August conditions are similar to July — warm, green, and suitable for the full itinerary. The occasional afternoon shower is manageable with a good rain jacket. The lake is fully accessible."
+          }
+        ]
+      },
+      "september": {
+        "title": "Bhrigu Lake Trek in September 2026",
+        "meta_description": "Bhrigu Lake Trek in September — crystal clear skies, best visibility, fresh snow on peaks. Ideal conditions. From ₹9,500.",
+        "h1": "Bhrigu Lake Trek in <em>September</em>",
+        "tagline": "Best visibility of the season — crisp clear skies and fresh snow on peaks",
+        "weather": "Crisp (13–19°C day), cold nights (1–5°C). Excellent visibility post-monsoon.",
+        "trail_condition": "Excellent. Trail clear and dry. Fresh snow on surrounding peaks.",
+        "crowd_level": "Medium",
+        "price": 9500,
+        "highlights": [
+          "Crystal-clear visibility — best mountain views",
+          "Fresh snow on Rohtang, Deo Tibba and nearby peaks",
+          "Fewer trekkers than July–August"
+        ],
+        "what_to_pack": [
+          "Warm insulated jacket",
+          "Gloves and warm hat for nights",
+          "Sunscreen and glacier glasses",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is September the best time for Bhrigu Lake Trek?",
+            "a": "Many experienced trekkers rate September as the best month. Post-monsoon skies are crystal clear, giving the best mountain views. Fresh snow on the surrounding peaks adds dramatic scenery. Crowd levels are lower than peak season."
+          }
+        ]
+      },
+      "october": {
+        "title": "Bhrigu Lake Trek in October 2026",
+        "meta_description": "Bhrigu Lake Trek in October — cold but stunning, early snowfall, clear skies. Last window before winter closure. From ₹9,500.",
+        "h1": "Bhrigu Lake Trek in <em>October</em>",
+        "tagline": "Cold and dramatic — early snowfall and crystal skies before winter closure",
+        "weather": "Cold (6–12°C day), very cold nights (-2–2°C). Clear but cold.",
+        "trail_condition": "Fair to good. Early snowfall possible above 3,500m. Lake still accessible.",
+        "crowd_level": "Low",
+        "price": 9500,
+        "highlights": [
+          "Early snowfall on the approach — magical atmosphere",
+          "Very few trekkers",
+          "Bhrigu Lake still accessible with proper gear"
+        ],
+        "what_to_pack": [
+          "Heavy insulated jacket",
+          "Crampons or microspikes",
+          "Warm gloves and balaclava",
+          "-10°C sleeping bag",
+          "Waterproof boots"
+        ],
+        "faq": [
+          {
+            "q": "Is Bhrigu Lake Trek possible in October?",
+            "a": "Yes, but it requires full winter gear. Temperatures at the lake can drop well below freezing at night, and early snowfall above 3,500m is common. October is for experienced trekkers comfortable with cold conditions."
           }
         ]
       }
