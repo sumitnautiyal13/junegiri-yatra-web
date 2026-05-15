@@ -37,6 +37,7 @@ export default function Footer() {
             <Link href="/golden-triangle-from/">Golden Triangle Tour</Link>
             <Link href="/himalayan-treks/">Himalayan Treks</Link>
             <Link href="/spiti-valley/">Spiti Valley Guide</Link>
+            <Link href="/ladakh/">Ladakh Travel Guide</Link>
             <Link href="/packages/rishikesh-adventure-pack-2n-3d/">Rishikesh Adventures</Link>
             <Link href="/packages/kedarkantha-trek-5n-6d/">Kedarkantha Trek</Link>
             <Link href="/packages/valley-of-flowers-trek-4n-5d/">Valley of Flowers</Link>
@@ -45,6 +46,13 @@ export default function Footer() {
             <Link href="/packages/bhrigu-lake-trek-3n-4d/">Bhrigu Lake Trek</Link>
             <Link href="/packages/kareri-lake-trek-3n-4d/">Kareri Lake Trek</Link>
             <Link href="/packages/beas-kund-trek-2n-3d/">Beas Kund Trek</Link>
+            <Link href="/packages/indrahar-pass-trek-3n-4d/">Indrahar Pass Trek</Link>
+            <Link href="/packages/rupin-pass-trek-8n-9d/">Rupin Pass Trek</Link>
+            <Link href="/packages/kanamo-peak-5n-6d/">Kanamo Peak</Link>
+            <Link href="/packages/pin-parvati-pass-10n-11d/">Pin Parvati Pass</Link>
+            <Link href="/packages/thailand-tour-7n-8d/">Thailand Tour</Link>
+            <Link href="/packages/dubai-tour-5n-6d/">Dubai Tour</Link>
+            <Link href="/packages/singapore-tour-5n-6d/">Singapore Tour</Link>
             <Link href="/rishikesh-from/">Rishikesh from Your City</Link>
             <Link href="/valley-of-flowers-from/">Valley of Flowers from Your City</Link>
             <Link href="/badrinath-from/">Badrinath from Your City</Link>

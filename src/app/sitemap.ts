@@ -51,6 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { index: '/india-tour-from/', priority: 0.9 as const },
     { index: '/golden-triangle-from/', priority: 0.9 as const },
     { index: '/bali-from/', priority: 0.8 as const },
+    { index: '/thailand-from/', priority: 0.7 as const },
+    { index: '/dubai-from/', priority: 0.7 as const },
+    { index: '/singapore-from/', priority: 0.7 as const },
   ];
 
   for (const dest of DEST_ROUTES) {
@@ -70,6 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Category hub pages
   urls.push({ url: `${BASE}/himalayan-treks/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.9 });
   urls.push({ url: `${BASE}/spiti-valley/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
+  urls.push({ url: `${BASE}/ladakh/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
   // Note: /bali-from/ and its city pages are included in DEST_ROUTES loop above
 
   // Static pages
