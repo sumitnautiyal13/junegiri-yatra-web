@@ -52,7 +52,7 @@ const INCLUDED = [
 ];
 const EXCLUDED = [
   'Airfare (book separately)',
-  'Thailand visa (₹3,500 approx)',
+  'Airfare (book separately — flight not included)',
   'Travel insurance',
   'Meals (except breakfast)',
   'Phuket Fantasea (optional)',

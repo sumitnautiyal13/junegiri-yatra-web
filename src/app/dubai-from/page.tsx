@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Dubai Tour Package from Your City 2025 | 5N/6D from $750 | Junegiri Yatra',
+  title: 'Dubai Tour Package from Your City 2026 | 5N/6D from $750 | Junegiri Yatra',
   description: 'Book Dubai 5N/6D — Burj Khalifa · Desert Safari · Marina from any Indian city — Mumbai, Delhi, Bangalore, Chennai, Hyderabad & 90+ more. From $750/person.',
   keywords: 'dubai tour package from india, dubai trip from mumbai, dubai package from bangalore, burj khalifa desert safari tour india, dubai holiday from india',
   alternates: { canonical: 'https://junegiriyatra.com/dubai-from/' },

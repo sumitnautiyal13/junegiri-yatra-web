@@ -51,7 +51,7 @@ const INCLUDED = [
 ];
 const EXCLUDED = [
   'Airfare (book separately)',
-  'No visa required for Indians (on valid passport — just note this)',
+  'Airfare (book separately — flight not included)',
   'Travel insurance',
   'Universal Studios tickets (own expense)',
   'Night Safari (optional, own expense)',

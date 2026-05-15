@@ -54,7 +54,7 @@ const nextConfig: NextConfig = {
       { source: '/packages/char-dham-yatra/', destination: '/packages/char-dham-yatra-9n-10d/', permanent: true },
       { source: '/packages/rishikesh-adventures/', destination: '/packages/rishikesh-adventure-pack-2n-3d/', permanent: true },
       { source: '/packages/himalayan-treks/', destination: '/himalayan-treks/', permanent: true },
-      { source: '/packages/international/', destination: '/packages/bali-7d6n-party-escape/', permanent: true },
+      { source: '/packages/international/', destination: '/packages/thailand-tour-7n-8d/', permanent: true },
       { source: '/packages/golden-triangle/', destination: '/packages/golden-triangle-tour-5n-6d/', permanent: true },
     ];
   },

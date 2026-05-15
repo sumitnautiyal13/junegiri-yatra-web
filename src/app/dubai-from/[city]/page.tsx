@@ -18,7 +18,7 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
-  const title = `Dubai Tour Package from ${city.name} 2025 | 5N/6D from $750 | Junegiri Yatra`;
+  const title = `Dubai Tour Package from ${city.name} 2026 | 5N/6D from $750 | Junegiri Yatra`;
   const description = `Book 5N/6D Dubai — Burj Khalifa, Desert Safari, Dhow Cruise from ${city.name} from $750/person. Direct flights available. UAE visa assistance included. WhatsApp for instant quote.`;
 
   return {

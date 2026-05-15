@@ -7627,8 +7627,7 @@
         "rates": {
           "standard": 10500,
           "deluxe": 12500,
-          "super deluxe": 15000,
-          "luxury": 0
+          "super deluxe": 15000
         }
       },
       {
@@ -7636,8 +7635,7 @@
         "rates": {
           "standard": 9000,
           "deluxe": 11000,
-          "super deluxe": 13500,
-          "luxury": 0
+          "super deluxe": 13500
         }
       },
       {
@@ -7645,8 +7643,7 @@
         "rates": {
           "standard": 8500,
           "deluxe": 10500,
-          "super deluxe": 12500,
-          "luxury": 0
+          "super deluxe": 12500
         }
       }
     ]
@@ -7786,8 +7783,7 @@
         "rates": {
           "standard": 9500,
           "deluxe": 11500,
-          "super deluxe": 14000,
-          "luxury": 0
+          "super deluxe": 14000
         }
       },
       {
@@ -7795,8 +7791,7 @@
         "rates": {
           "standard": 8000,
           "deluxe": 10000,
-          "super deluxe": 12500,
-          "luxury": 0
+          "super deluxe": 12500
         }
       },
       {
@@ -7804,8 +7799,7 @@
         "rates": {
           "standard": 7500,
           "deluxe": 9500,
-          "super deluxe": 11500,
-          "luxury": 0
+          "super deluxe": 11500
         }
       }
     ]
@@ -8000,8 +7994,7 @@
         "rates": {
           "standard": 20500,
           "deluxe": 24500,
-          "super deluxe": 29000,
-          "luxury": 0
+          "super deluxe": 29000
         }
       },
       {
@@ -8009,8 +8002,7 @@
         "rates": {
           "standard": 18000,
           "deluxe": 21500,
-          "super deluxe": 26000,
-          "luxury": 0
+          "super deluxe": 26000
         }
       },
       {
@@ -8018,8 +8010,7 @@
         "rates": {
           "standard": 16500,
           "deluxe": 20000,
-          "super deluxe": 24000,
-          "luxury": 0
+          "super deluxe": 24000
         }
       }
     ]
@@ -8185,8 +8176,7 @@
         "rates": {
           "standard": 24000,
           "deluxe": 28500,
-          "super deluxe": 34000,
-          "luxury": 0
+          "super deluxe": 34000
         }
       },
       {
@@ -8194,8 +8184,7 @@
         "rates": {
           "standard": 21000,
           "deluxe": 25000,
-          "super deluxe": 30000,
-          "luxury": 0
+          "super deluxe": 30000
         }
       },
       {
@@ -8203,8 +8192,7 @@
         "rates": {
           "standard": 19500,
           "deluxe": 23000,
-          "super deluxe": 27500,
-          "luxury": 0
+          "super deluxe": 27500
         }
       }
     ]
@@ -8421,8 +8409,7 @@
         "rates": {
           "standard": 27000,
           "deluxe": 32000,
-          "super deluxe": 38000,
-          "luxury": 0
+          "super deluxe": 38000
         }
       },
       {
@@ -8430,8 +8417,7 @@
         "rates": {
           "standard": 24000,
           "deluxe": 28500,
-          "super deluxe": 34000,
-          "luxury": 0
+          "super deluxe": 34000
         }
       },
       {
@@ -8439,8 +8425,7 @@
         "rates": {
           "standard": 22000,
           "deluxe": 26000,
-          "super deluxe": 31000,
-          "luxury": 0
+          "super deluxe": 31000
         }
       }
     ]
@@ -8573,7 +8558,7 @@
     "faqs": [
       {
         "q": "Do Indians need a visa for Thailand?",
-        "a": "<p>As of 2024, <strong>Indian passport holders can visit Thailand visa-free for up to 30 days</strong>. You do not need to apply for a visa in advance. You need a valid passport with at least 6 months validity, a return ticket, proof of hotel booking, and sufficient funds. Junegiri Yatra provides a complete pre-departure checklist and document guidance for all Thailand package guests.</p>"
+        "a": "As of 2024, Indian passport holders enjoy visa-free entry to Thailand for up to 30 days. You only need a valid passport (6+ months validity), confirmed return ticket, hotel booking, and proof of funds. No visa fee or prior application required."
       },
       {
         "q": "What is the best time for a Thailand tour?",
@@ -8625,8 +8610,7 @@
         "rates": {
           "standard": 65000,
           "deluxe": 78000,
-          "super deluxe": 95000,
-          "luxury": 0
+          "super deluxe": 95000
         }
       },
       {
@@ -8634,8 +8618,7 @@
         "rates": {
           "standard": 58000,
           "deluxe": 70000,
-          "super deluxe": 85000,
-          "luxury": 0
+          "super deluxe": 85000
         }
       },
       {
@@ -8643,8 +8626,7 @@
         "rates": {
           "standard": 54000,
           "deluxe": 65000,
-          "super deluxe": 78000,
-          "luxury": 0
+          "super deluxe": 78000
         }
       }
     ]
@@ -8809,8 +8791,7 @@
         "rates": {
           "standard": 75000,
           "deluxe": 90000,
-          "super deluxe": 110000,
-          "luxury": 0
+          "super deluxe": 110000
         }
       },
       {
@@ -8818,8 +8799,7 @@
         "rates": {
           "standard": 68000,
           "deluxe": 82000,
-          "super deluxe": 100000,
-          "luxury": 0
+          "super deluxe": 100000
         }
       },
       {
@@ -8827,8 +8807,7 @@
         "rates": {
           "standard": 62000,
           "deluxe": 75000,
-          "super deluxe": 92000,
-          "luxury": 0
+          "super deluxe": 92000
         }
       }
     ]
@@ -8943,7 +8922,7 @@
     "faqs": [
       {
         "q": "Do Indians need a visa for Singapore?",
-        "a": "<p>Yes — <strong>Indian passport holders require a Singapore tourist visa</strong>. The tourist visa (single entry, 30 days) is applied for online through the Singapore Immigration and Checkpoints Authority (ICA) website. Processing is typically 3–7 business days. The fee is approximately SGD 30 (~₹1,800) plus service charges. Junegiri Yatra provides complete application guidance, document checklist, and follow-up for all Singapore package guests.</p>"
+        "a": "No. Indian passport holders do not require a prior visa for Singapore — you get a 30-day visa-free entry on arrival. Simply carry a valid passport (6+ months validity), confirmed hotel booking, return ticket, and proof of sufficient funds."
       },
       {
         "q": "Is Singapore good for families with children?",
@@ -8995,8 +8974,7 @@
         "rates": {
           "standard": 68000,
           "deluxe": 82000,
-          "super deluxe": 98000,
-          "luxury": 0
+          "super deluxe": 98000
         }
       },
       {
@@ -9004,8 +8982,7 @@
         "rates": {
           "standard": 61000,
           "deluxe": 74000,
-          "super deluxe": 89000,
-          "luxury": 0
+          "super deluxe": 89000
         }
       },
       {
@@ -9013,8 +8990,7 @@
         "rates": {
           "standard": 56000,
           "deluxe": 68000,
-          "super deluxe": 82000,
-          "luxury": 0
+          "super deluxe": 82000
         }
       }
     ]

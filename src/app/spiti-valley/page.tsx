@@ -263,41 +263,39 @@ export default function SpitiValleyPage() {
               </div>
             </Link>
 
-            {/* Pin Parvati Placeholder */}
-            <a
-              href="https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20enquire%20about%20Pin%20Parvati%20Pass%20Trek%20in%20Spiti%20Valley"
-              target="_blank" rel="noopener noreferrer"
-              className="trek-card-hover"
-              style={{ display: 'block', textDecoration: 'none' }}
-            >
+            {/* Pin Parvati Pass Card */}
+            <Link href="/packages/pin-parvati-pass-10n-11d/" className="trek-card-hover" style={{ display: 'block', textDecoration: 'none' }}>
               <div className="trek-card-inner">
-                <div style={{ position: 'relative', height: 200, background: 'linear-gradient(135deg, #1a1040 0%, #0d0824 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ textAlign: 'center' }}>
-                    <div style={{ fontSize: 48, marginBottom: 8 }}>🗺️</div>
-                    <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.5)', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase' }}>Coming Soon</div>
-                  </div>
-                  <span style={{ position: 'absolute', top: 12, left: 12, background: '#5B9BD5', color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Enquire Now</span>
+                <div style={{ position: 'relative', height: 200 }}>
+                  <Image
+                    src="https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=600&q=80"
+                    alt="Pin Parvati Pass Trek — remote high-altitude crossing to Spiti"
+                    fill sizes="400px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <span style={{ position: 'absolute', top: 12, left: 12, background: '#E05C00', color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>Epic Crossover</span>
                   <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: '#E05C00', fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>Difficult</span>
                 </div>
                 <div style={{ padding: '20px 22px 22px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
                   <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 8 }}>Pin Parvati Pass Trek</h3>
                   <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6, marginBottom: 14, flexGrow: 1 }}>
-                    One of the most challenging and remote treks in India — crossing from Kullu&apos;s Parvati Valley into the austere landscape of Pin Valley, Spiti. A true wilderness crossing.
+                    One of the most challenging and remote treks in India — crossing from Kullu&apos;s Parvati Valley into the austere landscape of Pin Valley, Spiti. Glacier crossings at 5,319m.
                   </p>
                   <div style={{ display: 'flex', gap: 14, marginBottom: 14, flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: 12, color: 'var(--muted)' }}>🕐 10–11 days</span>
+                    <span style={{ fontSize: 12, color: 'var(--muted)' }}>🕐 10N / 11D</span>
                     <span style={{ fontSize: 12, color: 'var(--muted)' }}>⛰️ 5,319m / 17,457 ft</span>
                     <span style={{ fontSize: 12, color: 'var(--muted)' }}>📅 Jul–Sep</span>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 14, borderTop: '1px solid var(--border)' }}>
                     <div>
-                      <div style={{ fontSize: 11, color: 'var(--muted)', fontStyle: 'italic' }}>Full package details coming soon</div>
+                      <div style={{ fontSize: 10, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>From</div>
+                      <div style={{ fontSize: 22, fontWeight: 800, color: 'var(--gold2)' }}>₹22,000<span style={{ fontSize: 11, fontWeight: 400, color: 'var(--muted)' }}>/person</span></div>
                     </div>
-                    <span style={{ background: '#25D366', color: '#fff', fontSize: 12, fontWeight: 700, padding: '10px 18px', borderRadius: 8, display: 'flex', alignItems: 'center', gap: 6 }}>💬 WhatsApp →</span>
+                    <span style={{ background: 'var(--gold)', color: '#07051A', fontSize: 12, fontWeight: 700, padding: '10px 18px', borderRadius: 8 }}>View Trek →</span>
                   </div>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

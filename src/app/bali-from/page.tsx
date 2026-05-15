@@ -4,13 +4,14 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Bali Tour Package from Your City 2025 | 7D6N from $530 | Junegiri Yatra',
+  title: 'Bali Tour Package from Your City 2026 | 7D6N from $530 | Junegiri Yatra',
   description: 'Book Bali 7D6N party escape from any Indian city — Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune & 90+ more. Scuba diving, Nusa Penida, Gili T. From $530/person.',
   keywords: 'bali tour package from india, bali trip from mumbai, bali package from bangalore, bali holiday from delhi, nusa penida gili trawangan package india',
   alternates: { canonical: 'https://junegiriyatra.com/bali-from/' },
   openGraph: {
     title: 'Bali Tour Package from Your City | Junegiri Yatra',
     description: 'All-inclusive Bali 7D6N packages with activities from 100 Indian cities. From $530/person.',
+    url: 'https://junegiriyatra.com/bali-from/',
     images: [{ url: 'https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=1200&q=85&auto=format&fit=crop' }],
   },
 };
@@ -26,7 +27,7 @@ const SCHEMA = {
       provider: {
         '@type': 'TravelAgency',
         name: 'Junegiri Yatra',
-        telephone: '+6282111759727',
+        telephone: '+919873897652',
         address: { '@type': 'PostalAddress', addressLocality: 'Haridwar', addressRegion: 'Uttarakhand', addressCountry: 'IN' },
       },
     },

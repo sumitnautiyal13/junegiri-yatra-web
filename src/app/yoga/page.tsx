@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Yoga Teacher Training — Rishikesh, Bali & Goa | Junegiri Yatra',
     description: 'Yoga Alliance certified 100hr, 200hr & 300hr TTC programs in the world\'s top yoga destinations.',
+    url: 'https://junegiriyatra.com/yoga/',
     images: [{ url: 'https://junegiriyatra.com/images/rishikesh_bridge.webp' }],
     type: 'website',
   },

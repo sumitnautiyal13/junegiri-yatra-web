@@ -100,7 +100,7 @@
     "hero_image": "/images/trek_snow_peak.webp",
     "item_a": {
       "name": "Kedarnath Trek",
-      "slug": "kedarnath-trek-3n-4d",
+      "slug": "kedarnath-yatra-3n-4d",
       "price": 8500,
       "duration": "3 Nights / 4 Days",
       "difficulty": "Moderate–Difficult",
@@ -214,7 +214,7 @@
     },
     "item_b": {
       "name": "Valley of Flowers Trek",
-      "slug": "valley-of-flowers-trek-5n-6d",
+      "slug": "valley-of-flowers-trek-4n-5d",
       "price": 8500,
       "duration": "5 Nights / 6 Days",
       "difficulty": "Moderate",
@@ -288,7 +288,7 @@
     "hero_image": "/images/rishikesh_bridge.webp",
     "item_a": {
       "name": "Rishikesh Tour",
-      "slug": "rishikesh-adventure-tour-2n-3d",
+      "slug": "rishikesh-adventure-pack-2n-3d",
       "price": 5500,
       "duration": "2 Nights / 3 Days",
       "difficulty": "Easy",
@@ -307,7 +307,7 @@
     },
     "item_b": {
       "name": "Haridwar Spiritual Tour",
-      "slug": "haridwar-spiritual-tour-3n-4d",
+      "slug": "haridwar-rishikesh-spiritual-3n-4d",
       "price": 7500,
       "duration": "3 Nights / 4 Days",
       "difficulty": "Easy",
@@ -401,7 +401,7 @@
     },
     "item_b": {
       "name": "Char Dham Helicopter Yatra",
-      "slug": "char-dham-helicopter-yatra-7n-8d",
+      "slug": "char-dham-helicopter-7n-8d",
       "price": 65000,
       "duration": "7 Nights / 8 Days",
       "difficulty": "Easy",
@@ -476,7 +476,7 @@
     "hero_image": "/images/mountains1.webp",
     "item_a": {
       "name": "Mussoorie Tour",
-      "slug": "mussoorie-tour-3n-4d",
+      "slug": "mussoorie-dehradun-3n-4d",
       "price": 8500,
       "duration": "3 Nights / 4 Days",
       "difficulty": "Easy",
@@ -495,7 +495,7 @@
     },
     "item_b": {
       "name": "Nainital + Corbett Tour",
-      "slug": "nainital-corbett-tour-4n-5d",
+      "slug": "nainital-jim-corbett-4n-5d",
       "price": 11000,
       "duration": "4 Nights / 5 Days",
       "difficulty": "Easy",
@@ -588,7 +588,7 @@
     },
     "item_b": {
       "name": "Rajasthan Grand Tour",
-      "slug": "rajasthan-grand-tour-6n-7d",
+      "slug": "rajasthan-tour-6n-7d",
       "price": 21000,
       "duration": "6 Nights / 7 Days",
       "difficulty": "Easy",

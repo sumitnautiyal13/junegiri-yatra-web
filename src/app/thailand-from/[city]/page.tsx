@@ -18,7 +18,7 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
-  const title = `Thailand Tour Package from ${city.name} 2025 | 7N/8D from $650 | Junegiri Yatra`;
+  const title = `Thailand Tour Package from ${city.name} 2026 | 7N/8D from $650 | Junegiri Yatra`;
   const description = `Book 7N/8D Thailand Bangkok · Phuket · Pattaya from ${city.name} from $650/person. Grand Palace, Phi Phi Islands, Coral Island & Chao Phraya Cruise included. WhatsApp for instant quote.`;
 
   return {

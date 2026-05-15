@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 
 const blogJsonLd = {
   '@context': 'https://schema.org',
+  '@graph': [{
   '@type': 'Blog',
   name: 'Junegiri Yatra Travel Blog',
   description: 'Expert travel guides for Char Dham Yatra, Himalayan treks, Rishikesh adventures, and Uttarakhand destinations.',
@@ -41,6 +42,13 @@ const blogJsonLd = {
     { '@type': 'Thing', name: 'Rishikesh Adventures' },
     { '@type': 'Thing', name: 'Uttarakhand Tourism' },
   ],
+  }, {
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Travel Blog', item: 'https://junegiriyatra.com/blog/' },
+  ],
+  }],
 };
 
 export default function BlogPage() {

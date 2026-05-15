@@ -18,7 +18,7 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
-  const title = `Singapore Tour Package from ${city.name} 2025 | 5N/6D from $680 | Junegiri Yatra`;
+  const title = `Singapore Tour Package from ${city.name} 2026 | 5N/6D from $680 | Junegiri Yatra`;
   const description = `Book 5N/6D Singapore — Gardens by the Bay, Sentosa, Singapore Zoo from ${city.name} from $680/person. No visa required for Indians. WhatsApp for instant quote.`;
 
   return {

@@ -3,12 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Himalayan Treks 2025–26 | Uttarakhand & Himachal Pradesh | Junegiri Yatra',
+  title: 'Himalayan Treks 2026 | Uttarakhand & Himachal Pradesh | Junegiri Yatra',
   description: 'Book Himalayan treks from ₹6,500/person — Kedarkantha, Valley of Flowers, Hamta Pass, Triund, Kuari Pass, Roopkund & 16 more routes. Expert guides, all permits. Uttarakhand & Himachal Pradesh.',
   keywords: 'himalayan treks india, kedarkantha trek, valley of flowers trek, hamta pass trek, triund trek, kuari pass trek, himachal pradesh treks, uttarakhand trekking packages 2025',
   alternates: { canonical: 'https://junegiriyatra.com/himalayan-treks/' },
   openGraph: {
-    title: 'Himalayan Treks 2025–26 | Junegiri Yatra',
+    title: 'Himalayan Treks 2026 | Junegiri Yatra',
     description: '16 Himalayan trek routes — Uttarakhand & Himachal Pradesh. All difficulty levels, all-inclusive from ₹6,500.',
     images: [{ url: 'https://junegiriyatra.com/images/trek_himalaya.webp' }],
     type: 'website',
