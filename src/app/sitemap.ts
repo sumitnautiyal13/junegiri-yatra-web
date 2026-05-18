@@ -18,7 +18,7 @@ try { trekSeasonsData = require('../../data/trek-seasons.json'); } catch {}
 const BASE = 'https://junegiriyatra.com';
 // Stable date — only update manually when content changes significantly.
 // Using new Date() on every build floods Search Console with spurious lastModified signals.
-const NOW = '2026-05-10T00:00:00.000Z';
+const NOW = '2026-05-18T00:00:00.000Z';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
@@ -26,12 +26,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Homepage
   urls.push({ url: `${BASE}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 1.0 });
 
-  // Packages + hubs
+  // Packages
   for (const p of packagesData as Array<{ slug: string }>) {
     urls.push({ url: `${BASE}/packages/${p.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
   }
+  // Hubs — only include those that serve real content (not redirects).
+  // char-dham-yatra, golden-triangle, himalayan-treks, rishikesh-adventures all
+  // redirect via next.config.ts — submitting their source URLs to the sitemap
+  // causes GSC "page with redirect" warnings. Only keep content-serving hubs.
+  const HUB_CONTENT_SLUGS = new Set(['taj-mahal-tours', 'uttarakhand-tours']);
   for (const h of hubsData as Array<{ slug: string }>) {
-    urls.push({ url: `${BASE}/packages/${h.slug}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });
+    if (HUB_CONTENT_SLUGS.has(h.slug)) {
+      urls.push({ url: `${BASE}/packages/${h.slug}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });
+    }
   }
 
   // Destination × City pages (14 destinations × 346 cities = ~4,844 city pages)

@@ -56,6 +56,20 @@ const nextConfig: NextConfig = {
       { source: '/packages/himalayan-treks/', destination: '/himalayan-treks/', permanent: true },
       { source: '/packages/international/', destination: '/packages/thailand-tour-7n-8d/', permanent: true },
       { source: '/packages/golden-triangle/', destination: '/packages/golden-triangle-tour-5n-6d/', permanent: true },
+      // Blog-post related_package slugs that were wrong — redirect old crawled URLs
+      { source: '/packages/kedarnath-yatra-5n-6d/', destination: '/packages/kedarnath-yatra-3n-4d/', permanent: true },
+      { source: '/packages/kedarkantha-trek-5d/', destination: '/packages/kedarkantha-trek-5n-6d/', permanent: true },
+      { source: '/packages/valley-of-flowers-trek-4d/', destination: '/packages/valley-of-flowers-trek-4n-5d/', permanent: true },
+      { source: '/packages/valley-of-flowers-4n-5d/', destination: '/packages/valley-of-flowers-trek-4n-5d/', permanent: true },
+      { source: '/packages/rishikesh-adventure-3n-4d/', destination: '/packages/rishikesh-adventure-pack-2n-3d/', permanent: true },
+      { source: '/packages/rishikesh-adventure-2n-3d/', destination: '/packages/rishikesh-adventure-pack-2n-3d/', permanent: true },
+      { source: '/packages/rishikesh-haridwar-weekend-2n-3d/', destination: '/packages/haridwar-rishikesh-spiritual-3n-4d/', permanent: true },
+      { source: '/packages/auli-skiing-5d/', destination: '/packages/auli-snow-trip-3n-4d/', permanent: true },
+      { source: '/packages/golden-triangle-5d/', destination: '/packages/golden-triangle-tour-5n-6d/', permanent: true },
+      { source: '/packages/rishikesh-yoga-retreat-7d/', destination: '/packages/rishikesh-yoga-retreat-5n-6d/', permanent: true },
+      { source: '/packages/braj-bhoomi-yatra/', destination: '/packages/braj-bhoomi-yatra-5n-6d/', permanent: true },
+      { source: '/packages/mussoorie-tour-2n-3d/', destination: '/packages/mussoorie-dehradun-3n-4d/', permanent: true },
+      { source: '/packages/nainital-tour-3n-4d/', destination: '/packages/nainital-jim-corbett-4n-5d/', permanent: true },
     ];
   },
 };
