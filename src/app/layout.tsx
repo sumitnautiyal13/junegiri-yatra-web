@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Poppins, Playfair_Display, Inter } from 'next/font/google';
+import { headers } from 'next/headers';
 import './globals.css';
 import { CurrencyProvider } from '@/contexts/CurrencyContext';
 import Header from '@/components/Header';
@@ -60,7 +61,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') ?? headersList.get('x-invoke-path') ?? '';
+  const isAppRoute = pathname.startsWith('/admin') || pathname.startsWith('/p/');
+
   return (
     <html
       lang="en"
@@ -74,14 +79,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <CurrencyProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <WhatsAppFloat />
-          <ScrollReveal />
-          <PWASetup />
-          <PWAInstallBanner />
-          <NavigationProgress />
+          {isAppRoute ? (
+            <>{children}</>
+          ) : (
+            <>
+              <Header />
+              <main>{children}</main>
+              <Footer />
+              <WhatsAppFloat />
+              <ScrollReveal />
+              <PWASetup />
+              <PWAInstallBanner />
+              <NavigationProgress />
+            </>
+          )}
         </CurrencyProvider>
         {/* Google Analytics (GA4) — afterInteractive avoids render-blocking */}
         <Script

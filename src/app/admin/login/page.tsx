@@ -160,8 +160,8 @@ const S = {
 function LoginForm() {
   const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
-  const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -179,25 +179,13 @@ function LoginForm() {
     setError(null);
 
     const supabase = createClient();
-    const { error: authError } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: `${window.location.origin}/api/auth/callback`,
-      },
-    });
+    const { error: authError } = await supabase.auth.signInWithPassword({ email, password });
 
     if (authError) {
-      // Distinguish unauthorized from other errors
-      const msg = authError.message.toLowerCase();
-      if (msg.includes('not authorized') || msg.includes('signup disabled') || msg.includes('user not found')) {
-        setError('This email is not authorized. Access restricted to Junegiri Yatra team members.');
-      } else {
-        setError(authError.message);
-      }
+      setError('Invalid email or password. Please try again.');
       setLoading(false);
     } else {
-      setSent(true);
-      setLoading(false);
+      window.location.href = '/admin';
     }
   }
 
@@ -211,59 +199,60 @@ function LoginForm() {
         </div>
 
         <h1 style={S.heading}>Team Access</h1>
-        <p style={S.subheading}>Enter your team email to receive a magic link</p>
+        <p style={S.subheading}>Sign in with your team credentials</p>
 
         {/* Error */}
         {error && <div style={S.errorBox}>{error}</div>}
 
-        {/* Success state */}
-        {sent ? (
-          <div style={S.successBox}>
-            <span style={S.successIcon}>✉️</span>
-            <div style={S.successTitle}>Check your email!</div>
-            <div style={S.successText}>
-              A magic link has been sent to{' '}
-              <strong style={{ color: '#C9923D' }}>{email}</strong>.
-              <br />
-              Click the link in your inbox to sign in.
-            </div>
-          </div>
-        ) : (
-          <form onSubmit={handleSubmit} noValidate>
-            <div style={S.inputWrapper}>
-              <label htmlFor="email" style={S.label}>
-                Email address
-              </label>
-              <input
-                id="email"
-                type="email"
-                required
-                autoFocus
-                placeholder="you@junegiriyatra.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                style={S.input}
-                onFocus={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(201,146,61,0.55)';
-                }}
-                onBlur={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(201,146,61,0.2)';
-                }}
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={loading || !email}
-              style={{
-                ...S.button,
-                ...(loading || !email ? S.buttonDisabled : {}),
+        <form onSubmit={handleSubmit} noValidate>
+          <div style={S.inputWrapper}>
+            <label htmlFor="email" style={S.label}>
+              Email address
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              autoFocus
+              placeholder="you@junegiriyatra.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              style={S.input}
+              onFocus={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(201,146,61,0.55)';
               }}
-            >
-              {loading ? 'Sending…' : 'Send Magic Link'}
-            </button>
-          </form>
-        )}
+              onBlur={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(201,146,61,0.2)';
+              }}
+            />
+          </div>
+
+          <div style={S.inputWrapper}>
+            <label htmlFor="password" style={S.label}>Password</label>
+            <input
+              id="password"
+              type="password"
+              required
+              placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              style={S.input}
+              onFocus={(e) => { e.currentTarget.style.borderColor = 'rgba(201,146,61,0.55)'; }}
+              onBlur={(e) => { e.currentTarget.style.borderColor = 'rgba(201,146,61,0.2)'; }}
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={loading || !email || !password}
+            style={{
+              ...S.button,
+              ...(loading || !email || !password ? S.buttonDisabled : {}),
+            }}
+          >
+            {loading ? 'Signing in…' : 'Sign In'}
+          </button>
+        </form>
 
         {/* Privacy note */}
         <p style={S.privacyNote}>

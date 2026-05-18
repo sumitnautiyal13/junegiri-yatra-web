@@ -32,6 +32,18 @@ const nextConfig: NextConfig = {
         headers: SECURITY_HEADERS,
       },
       {
+        source: '/admin/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+      {
+        source: '/p/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+      {
+        source: '/api/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      },
+      {
         // Cache static assets for 1 year
         source: '/images/(.*)',
         headers: [

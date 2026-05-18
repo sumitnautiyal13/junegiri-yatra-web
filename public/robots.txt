@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /p/
+Disallow: /api/
 
 # Allow all AI search bots — enables citations in ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot
 User-agent: GPTBot

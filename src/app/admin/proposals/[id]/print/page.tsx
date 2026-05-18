@@ -8,737 +8,515 @@ export const metadata = {
   robots: { index: false },
 };
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
+// ── Cover image by destination keyword ───────────────────────────────────────
 
-const CURRENCY_SYMBOLS: Record<string, string> = {
-  INR: '₹',
-  USD: '$',
-  AED: 'AED ',
-  SGD: 'S$',
-  THB: '฿',
-  EUR: '€',
-  GBP: '£',
-};
+const COVERS = [
+  { keys: ['kedarnath'], url: '/img/kedarnath_temple_cover.jpg' },
+  { keys: ['char dham', 'chardham', 'badrinath'], url: '/img/kedarnath_landscape.jpg' },
+  { keys: ['valley of flowers'], url: '/img/trek_valley_flowers.jpg' },
+  { keys: ['rishikesh', 'yoga', 'rafting'], url: '/img/rishikesh1.jpg' },
+  { keys: ['trek', 'kedarkantha', 'hampta', 'har ki dun', 'kuari', 'sar pass'], url: '/img/trek_himalaya.jpg' },
+  { keys: ['braj', 'mathura', 'vrindavan', 'ayodhya'], url: '/img/braj_mathura.jpg' },
+];
+const DEFAULT_COVER = '/img/cover_meditation.jpg';
 
-function calcPricing(pricing: ProposalPricing | null, proposal: Proposal) {
-  if (!pricing) return null;
-  const adultSub = pricing.base_price_per_person * proposal.num_adults;
-  const childSub = pricing.child_price_per_person * proposal.num_children;
+// ── Day photo mapping — pick image based on day title keywords ────────────────
+
+const DAY_PHOTOS = [
+  { keys: ['haridwar', 'har ki pauri', 'ganga aarti', 'aarti'], url: '/img/haridwar_ghat.jpg' },
+  { keys: ['kedarnath'], url: '/img/kedarnath2.jpg' },
+  { keys: ['badrinath', 'mana'], url: '/img/badrinath_temple_front.jpg' },
+  { keys: ['rishikesh', 'rafting', 'bungee', 'camping'], url: '/img/rishikesh1.jpg' },
+  { keys: ['yoga'], url: '/img/rishikesh_yoga.jpg' },
+  { keys: ['valley of flowers', 'ghangaria'], url: '/img/trek_valley_flowers.jpg' },
+  { keys: ['gangotri', 'yamunotri', 'gaumukh', 'barkot', 'janki chatti'], url: '/img/himalaya1.jpg' },
+  { keys: ['uttarkashi', 'guptkashi'], url: '/img/guptkashi_hilltown.jpg' },
+  { keys: ['delhi'], url: '/img/sunrise_mountain.jpg' },
+  { keys: ['mathura', 'vrindavan', 'braj'], url: '/img/braj_vrindavan.jpg' },
+  { keys: ['trek', 'kedarkantha', 'hampta', 'har ki dun', 'kuari', 'sar pass'], url: '/img/trek_himalaya.jpg' },
+  { keys: ['ganga', 'river', 'sangam'], url: '/img/ganga1.jpg' },
+  { keys: ['temple', 'darshan', 'mandir'], url: '/img/temple1.jpg' },
+];
+const DEFAULT_DAY_PHOTO = '/img/kedarnath_landscape.jpg';
+
+function getDayPhoto(title: string, overview?: string | null): string {
+  const t = (title + ' ' + (overview ?? '')).toLowerCase();
+  return DAY_PHOTOS.find(d => d.keys.some(k => t.includes(k)))?.url ?? DEFAULT_DAY_PHOTO;
+}
+
+function getCoverImage(dest: string | null, title: string): string {
+  const t = ((dest ?? '') + ' ' + title).toLowerCase();
+  return COVERS.find(c => c.keys.some(k => t.includes(k)))?.url ?? DEFAULT_COVER;
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+const SYM: Record<string, string> = { INR: '₹', USD: '$', AED: 'AED ', SGD: 'S$', THB: '฿', EUR: '€', GBP: '£' };
+
+function calcPricing(p: ProposalPricing | null, pr: Proposal) {
+  if (!p) return null;
+  const adultSub = p.base_price_per_person * pr.num_adults;
+  const childSub = p.child_price_per_person * pr.num_children;
   const subtotal = adultSub + childSub;
-  const discount = subtotal * (pricing.group_discount_pct / 100);
-  const afterDiscount = subtotal - discount;
-  const gst = pricing.apply_gst ? afterDiscount * (pricing.gst_pct / 100) : 0;
-  const total = afterDiscount + gst;
-  return { adultSub, childSub, subtotal, discount, afterDiscount, gst, total };
+  const discount = subtotal * (p.group_discount_pct / 100);
+  const after = subtotal - discount;
+  const gst = p.apply_gst ? after * (p.gst_pct / 100) : 0;
+  return { adultSub, childSub, subtotal, discount, after, gst, total: after + gst };
 }
 
 function fmt(n: number, sym: string) {
   return `${sym}${n.toLocaleString('en-IN', { maximumFractionDigits: 0 })}`;
 }
 
-function formatDate(d: string | null) {
+function fmtDate(d: string | null) {
   if (!d) return '—';
-  return new Date(d).toLocaleDateString('en-IN', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-  });
+  return new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-function itemIcon(type: string) {
-  switch (type) {
-    case 'hotel': return '🏨';
-    case 'activity': return '🎯';
-    case 'transport': return '🚌';
-    case 'meal': return '🍽️';
-    default: return '📌';
-  }
+function itemIcon(t: string) {
+  return t === 'hotel' ? '🏨' : t === 'activity' ? '🎯' : t === 'transport' ? '🚌' : t === 'meal' ? '🍽️' : '📌';
 }
 
-// ── Page ─────────────────────────────────────────────────────────────────────
+// ── Shared colours ────────────────────────────────────────────────────────────
+const C = {
+  bg:       '#141414',
+  card:     '#1E1E1E',
+  green:    '#2A4520',
+  orange:   '#F0921E',
+  amber:    '#F5A020',
+  white:    '#FFFFFF',
+  gray:     '#AAAAAA',
+  border:   '#2E2E2E',
+};
 
-export default async function PrintPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+// ── Sub-components (inline) ───────────────────────────────────────────────────
+
+function PageHeader() {
+  return (
+    <div style={{ background: C.green, padding: '14px 40px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <span style={{ color: C.white, fontWeight: 700, fontSize: 16, letterSpacing: '0.02em' }}>Junegiri Yatra</span>
+      <span style={{ color: C.orange, fontWeight: 600, fontSize: 14 }}>+91 98738 97652</span>
+    </div>
+  );
+}
+
+function SectionHeading({ first, second }: { first: string; second: string }) {
+  return (
+    <div style={{ marginBottom: 24 }}>
+      <h2 style={{ fontSize: 28, fontWeight: 800, margin: 0 }}>
+        <span style={{ color: C.white }}>{first} </span>
+        <span style={{ color: C.orange }}>{second}</span>
+      </h2>
+      <div style={{ width: 48, height: 3, background: C.orange, borderRadius: 2, marginTop: 8 }} />
+    </div>
+  );
+}
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+
+export default async function PrintPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const supabase = await createClient();
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { data: proposalRaw } = await supabase
-    .from('proposals')
-    .select('*, customers(*)')
-    .eq('id', id)
-    .single();
-
+  const { data: raw } = await (supabase as any).from('proposals').select('*, customers(*)').eq('id', id).single();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { data: daysRaw } = await supabase
-    .from('proposal_days')
-    .select('*, proposal_items(*)')
-    .eq('proposal_id', id)
-    .order('day_number');
-
+  const { data: daysRaw } = await (supabase as any).from('proposal_days').select('*, proposal_items(*)').eq('proposal_id', id).order('day_number');
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { data: pricingRaw } = await supabase
-    .from('proposal_pricing')
-    .select('*')
-    .eq('proposal_id', id)
-    .single();
+  const { data: pricingRaw } = await (supabase as any).from('proposal_pricing').select('*').eq('proposal_id', id).single();
 
-  if (!proposalRaw) notFound();
+  if (!raw) notFound();
 
-  // Cast to known types — Supabase typed client infers `never` for joined queries
-  const proposal = proposalRaw as unknown as Proposal & { customers: Customer };
-  const days = daysRaw as unknown as (ProposalDay & { proposal_items: ProposalItem[] })[] | null;
-  const pricing = pricingRaw as unknown as ProposalPricing | null;
+  const proposal = raw as unknown as Proposal & { customers: Customer };
+  const days     = daysRaw as unknown as (ProposalDay & { proposal_items: ProposalItem[] })[] | null;
+  const pricing  = pricingRaw as unknown as ProposalPricing | null;
 
-  const calc = calcPricing(pricing, proposal);
-  const sym = CURRENCY_SYMBOLS[proposal.currency] ?? proposal.currency + ' ';
-  const customer = proposal.customers;
-  const totalPax = proposal.num_adults + proposal.num_children;
+  const calc   = calcPricing(pricing, proposal);
+  const sym    = SYM[proposal.currency] ?? proposal.currency + ' ';
+  const cust   = proposal.customers;
+  const pax    = proposal.num_adults + proposal.num_children;
+  const cover  = getCoverImage(proposal.destination, proposal.title);
 
-  const durationDays =
+  const nights =
     proposal.travel_date_from && proposal.travel_date_to
-      ? Math.ceil(
-          (new Date(proposal.travel_date_to).getTime() -
-            new Date(proposal.travel_date_from).getTime()) /
-            (1000 * 60 * 60 * 24)
-        ) + 1
-      : (days?.length ?? 0);
+      ? Math.ceil((new Date(proposal.travel_date_to).getTime() - new Date(proposal.travel_date_from).getTime()) / 86400000)
+      : Math.max((days?.length ?? 1) - 1, 0);
+  const tripDays = nights + 1;
 
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html, body { background: #f5f5f0; font-family: 'Inter', sans-serif; }
-
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body {
+          background: #0a0a0a;
+          font-family: 'Inter', system-ui, sans-serif;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+          color: ${C.white};
+        }
         .print-hide { display: flex !important; }
 
         @media print {
           .print-hide { display: none !important; }
-          html, body { background: white !important; }
+          html, body { background: ${C.bg} !important; }
           .page-wrap { padding-top: 0 !important; }
-          .day-card { page-break-inside: avoid; }
-          .pricing-section { page-break-inside: avoid; }
-          .footer-section { page-break-inside: avoid; }
-          @page { margin: 12mm 14mm; size: A4; }
+          .no-break { page-break-inside: avoid; }
+          .page-break { page-break-before: always; }
+          @page { margin: 0; size: A4; }
         }
       `}</style>
 
       <PrintBar proposalId={id} title={proposal.title} />
 
-      <div className="page-wrap" style={{ paddingTop: 72, background: '#f5f5f0', minHeight: '100vh' }}>
-        <div
-          style={{
-            maxWidth: 860,
-            margin: '0 auto',
-            background: '#ffffff',
-            boxShadow: '0 4px 40px rgba(0,0,0,0.12)',
-          }}
-        >
-          {/* ── SECTION 1: Header / Cover ──────────────────────────────── */}
-          <div
-            style={{
-              background: 'linear-gradient(135deg, #0a2540 0%, #1a3a6b 60%, #0d3320 100%)',
-              padding: '56px 48px 40px',
-              textAlign: 'center',
-            }}
-          >
-            <div style={{ marginBottom: 32 }}>
-              <div
-                style={{
-                  fontSize: 36,
-                  fontFamily: "'Playfair Display', serif",
-                  fontWeight: 900,
-                  color: '#C9923D',
-                  letterSpacing: '0.04em',
-                  textTransform: 'uppercase',
-                  textShadow: '0 2px 12px rgba(201,146,61,0.4)',
-                }}
-              >
-                🏔 Junegiri Yatra
-              </div>
-              <div
-                style={{
-                  color: 'rgba(255,248,238,0.55)',
-                  fontSize: 13,
-                  letterSpacing: '0.12em',
-                  textTransform: 'uppercase',
-                  marginTop: 6,
-                }}
-              >
-                Your Trusted Travel Partner
-              </div>
-            </div>
+      <div className="page-wrap" style={{ paddingTop: 68, background: '#0a0a0a', minHeight: '100vh' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto', background: C.bg, boxShadow: '0 0 80px rgba(0,0,0,0.8)' }}>
 
-            <div
-              style={{
-                width: 80,
-                height: 2,
-                background: 'linear-gradient(90deg, transparent, #C9923D, transparent)',
-                margin: '0 auto 28px',
-              }}
+          {/* ══════════════════════════════════════════
+              PAGE 1 — COVER
+          ══════════════════════════════════════════ */}
+          <div style={{ position: 'relative', height: 580, overflow: 'hidden' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={cover} alt="destination"
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
             />
+            {/* Dark overlay — heavier at bottom like the brochure */}
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.78) 80%, rgba(0,0,0,0.92) 100%)' }} />
 
-            <h1
-              style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 28,
-                fontWeight: 700,
-                color: '#fff',
-                lineHeight: 1.3,
-                marginBottom: 20,
-              }}
-            >
-              {proposal.title}
-            </h1>
-
-            {customer && (
-              <div style={{ color: 'rgba(255,248,238,0.8)', fontSize: 16, marginBottom: 12, fontWeight: 500 }}>
-                Prepared for:{' '}
-                <strong style={{ color: '#E8AA50' }}>{customer.name}</strong>
-                {customer.city ? ` · ${customer.city}` : ''}
-                {customer.country ? `, ${customer.country}` : ''}
+            {/* Bottom content */}
+            <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '0 44px 44px' }}>
+              {/* Brand */}
+              <div style={{ fontWeight: 800, fontSize: 22, color: C.amber, letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 20 }}>
+                JUNEGIRI YATRA
               </div>
-            )}
 
-            {proposal.destination && (
-              <div style={{ color: 'rgba(255,248,238,0.65)', fontSize: 14, marginBottom: 6 }}>
-                📍 {proposal.destination}
+              {/* Trip title */}
+              <h1 style={{ fontSize: 40, fontWeight: 800, color: C.white, lineHeight: 1.15, marginBottom: 20, maxWidth: 680, textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}>
+                {proposal.title}
+              </h1>
+
+              {/* Duration pill + customer */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16, flexWrap: 'wrap' }}>
+                <div style={{ background: C.orange, borderRadius: 50, padding: '10px 28px', fontWeight: 800, fontSize: 16, color: C.white, display: 'inline-block' }}>
+                  {nights} NIGHTS / {tripDays} DAYS
+                </div>
+                {cust && (
+                  <div style={{ color: 'rgba(255,255,255,0.75)', fontSize: 14, fontWeight: 500 }}>
+                    Prepared for <strong style={{ color: C.white }}>{cust.name}</strong>
+                    {cust.city ? ` · ${cust.city}` : ''}
+                    {cust.country ? `, ${cust.country}` : ''}
+                  </div>
+                )}
               </div>
-            )}
 
-            {(proposal.travel_date_from || proposal.travel_date_to) && (
-              <div style={{ color: 'rgba(255,248,238,0.65)', fontSize: 14, marginBottom: 6 }}>
-                📅 {formatDate(proposal.travel_date_from)} — {formatDate(proposal.travel_date_to)}
-              </div>
-            )}
-
-            <div style={{ color: 'rgba(255,248,238,0.65)', fontSize: 14, marginBottom: 24 }}>
-              👥 {proposal.num_adults} Adult{proposal.num_adults !== 1 ? 's' : ''}
-              {proposal.num_children > 0
-                ? ` · ${proposal.num_children} Child${proposal.num_children !== 1 ? 'ren' : ''}`
-                : ''}
-            </div>
-
-            <div
-              style={{
-                borderTop: '1px solid rgba(201,146,61,0.25)',
-                paddingTop: 20,
-                color: 'rgba(255,248,238,0.45)',
-                fontSize: 12,
-                letterSpacing: '0.04em',
-              }}
-            >
-              Prepared by Junegiri Yatra &nbsp;|&nbsp; +91 98738 97652 &nbsp;|&nbsp; junegiriyatra.com
+              {/* Dates + pax */}
+              {(proposal.travel_date_from || proposal.destination) && (
+                <div style={{ marginTop: 14, display: 'flex', gap: 20, color: 'rgba(255,255,255,0.55)', fontSize: 13 }}>
+                  {proposal.destination && <span>📍 {proposal.destination}</span>}
+                  {(proposal.travel_date_from || proposal.travel_date_to) && (
+                    <span>📅 {fmtDate(proposal.travel_date_from)} – {fmtDate(proposal.travel_date_to)}</span>
+                  )}
+                  <span>👥 {pax} Traveller{pax !== 1 ? 's' : ''}</span>
+                </div>
+              )}
             </div>
           </div>
 
-          {/* ── SECTION 2: Trip Overview ──────────────────────────────────── */}
-          <div style={{ padding: '36px 48px 0' }}>
-            <div
-              style={{
-                background: '#f8f6f0',
-                borderRadius: 12,
-                padding: '24px 32px',
-                border: '1px solid #e8e0d0',
-              }}
-            >
-              <div
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr 1fr',
-                  gap: 24,
-                  textAlign: 'center',
-                  marginBottom: proposal.message_to_customer ? 20 : 0,
-                }}
-              >
-                <div>
-                  <div
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 800,
-                      color: '#C9923D',
-                      fontFamily: "'Playfair Display', serif",
-                    }}
-                  >
-                    {durationDays}
+          {/* ══════════════════════════════════════════
+              PAGE 2 — TOUR OVERVIEW
+          ══════════════════════════════════════════ */}
+          <div className="page-break">
+            <PageHeader />
+            <div style={{ padding: '44px 44px 0', background: C.bg }}>
+
+              <SectionHeading first="Tour" second="Overview" />
+
+              {/* Key facts */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 36 }}>
+                {[
+                  { label: 'Duration', value: `${tripDays} Days / ${nights} Nights` },
+                  ...(proposal.destination ? [{ label: 'Destination', value: proposal.destination }] : []),
+                  ...((proposal.travel_date_from || proposal.travel_date_to) ? [{ label: 'Travel Dates', value: `${fmtDate(proposal.travel_date_from)} – ${fmtDate(proposal.travel_date_to)}` }] : []),
+                  { label: 'Travellers', value: `${proposal.num_adults} Adult${proposal.num_adults !== 1 ? 's' : ''}${proposal.num_children > 0 ? ` + ${proposal.num_children} Child${proposal.num_children !== 1 ? 'ren' : ''}` : ''}` },
+                  ...(calc ? [{ label: 'Package Price', value: `${fmt(calc.total, sym)} total · ${fmt(Math.round(calc.total / Math.max(pax, 1)), sym)} per person` }] : []),
+                ].map(({ label, value }) => (
+                  <div key={label} style={{ fontSize: 15, color: C.white }}>
+                    <span style={{ color: C.orange, fontWeight: 700 }}>{label}: </span>
+                    <span style={{ color: 'rgba(255,255,255,0.85)' }}>{value}</span>
                   </div>
-                  <div
-                    style={{
-                      fontSize: 12,
-                      color: '#666',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      marginTop: 4,
-                    }}
-                  >
-                    Days
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: 28,
-                      fontWeight: 800,
-                      color: '#C9923D',
-                      fontFamily: "'Playfair Display', serif",
-                    }}
-                  >
-                    {totalPax}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 12,
-                      color: '#666',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      marginTop: 4,
-                    }}
-                  >
-                    Travellers
-                  </div>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontSize: 18,
-                      fontWeight: 800,
-                      color: '#C9923D',
-                      fontFamily: "'Playfair Display', serif",
-                      wordBreak: 'break-word',
-                    }}
-                  >
-                    {proposal.destination ?? '—'}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: 12,
-                      color: '#666',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      marginTop: 4,
-                    }}
-                  >
-                    Destination
-                  </div>
-                </div>
+                ))}
               </div>
 
+              {/* Personal message */}
               {proposal.message_to_customer && (
-                <>
-                  <div style={{ height: 1, background: '#e0d8c8', marginBottom: 16 }} />
-                  <p
-                    style={{
-                      fontStyle: 'italic',
-                      color: '#4a3f2f',
-                      fontSize: 14,
-                      lineHeight: 1.7,
-                      textAlign: 'center',
-                    }}
-                  >
+                <div style={{ background: C.card, border: `1px solid ${C.border}`, borderLeft: `4px solid ${C.orange}`, borderRadius: 8, padding: '18px 22px', marginBottom: 36 }}>
+                  <div style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', lineHeight: 1.7, fontStyle: 'italic' }}>
                     &ldquo;{proposal.message_to_customer}&rdquo;
-                  </p>
+                  </div>
+                  <div style={{ marginTop: 10, fontSize: 12, color: C.orange, fontWeight: 600 }}>— Junegiri Yatra Team</div>
+                </div>
+              )}
+
+              {/* Inclusions & Exclusions */}
+              {pricing && (pricing.inclusions?.length > 0 || pricing.exclusions?.length > 0) && (
+                <>
+                  <SectionHeading first="What's" second="Included" />
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28, marginBottom: 44 }}>
+                    {/* Inclusions */}
+                    {pricing.inclusions?.length > 0 && (
+                      <div>
+                        <div style={{ fontSize: 16, fontWeight: 700, color: '#4CAF50', marginBottom: 16 }}>Inclusions</div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                          {pricing.inclusions.map((inc: string, i: number) => (
+                            <div key={i} style={{ display: 'flex', gap: 10, fontSize: 13.5, color: 'rgba(255,255,255,0.8)', lineHeight: 1.5 }}>
+                              <span style={{ color: '#4CAF50', fontWeight: 700, flexShrink: 0 }}>+</span>
+                              {inc}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                    {/* Exclusions */}
+                    {pricing.exclusions?.length > 0 && (
+                      <div>
+                        <div style={{ fontSize: 16, fontWeight: 700, color: '#EF5350', marginBottom: 16 }}>Exclusions</div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                          {pricing.exclusions.map((exc: string, i: number) => (
+                            <div key={i} style={{ display: 'flex', gap: 10, fontSize: 13.5, color: 'rgba(255,255,255,0.8)', lineHeight: 1.5 }}>
+                              <span style={{ color: '#EF5350', fontWeight: 700, flexShrink: 0 }}>−</span>
+                              {exc}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </>
               )}
             </div>
           </div>
 
-          {/* ── SECTION 3: Inclusions & Exclusions ───────────────────────── */}
-          {pricing && (
-            (pricing.inclusions?.length > 0 || pricing.exclusions?.length > 0)
-          ) && (
-            <div style={{ padding: '32px 48px 0' }}>
-              <h2
-                style={{
-                  fontSize: 18,
-                  fontWeight: 700,
-                  color: '#1a1a2e',
-                  marginBottom: 20,
-                  fontFamily: "'Playfair Display', serif",
-                }}
-              >
-                What&apos;s Included
-              </h2>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32 }}>
-                <div>
-                  <div
-                    style={{
-                      fontWeight: 600,
-                      fontSize: 12,
-                      color: '#1a8a3a',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      marginBottom: 12,
-                    }}
-                  >
-                    ✓ Inclusions
-                  </div>
-                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {(pricing.inclusions ?? []).map((inc, i) => (
-                      <li
-                        key={i}
+          {/* ══════════════════════════════════════════
+              PAGES 3+ — DAY-BY-DAY ITINERARY
+          ══════════════════════════════════════════ */}
+          {days && days.length > 0 && (
+            <div className="page-break">
+              <PageHeader />
+              <div style={{ padding: '44px 44px 0', background: C.bg }}>
+                <SectionHeading first="Day-by-Day" second="Itinerary" />
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 20, paddingBottom: 44 }}>
+                  {days.map((day) => {
+                    const dayPhoto = getDayPhoto(day.title, day.overview);
+                    const items = [...(day.proposal_items ?? [])].sort((a, b) => a.sort_order - b.sort_order);
+
+                    return (
+                      <div
+                        key={day.id}
+                        className="no-break"
                         style={{
-                          display: 'flex',
-                          alignItems: 'flex-start',
-                          gap: 8,
-                          fontSize: 13,
-                          color: '#333',
-                          lineHeight: 1.5,
+                          background: C.card,
+                          borderRadius: 10,
+                          overflow: 'hidden',
+                          border: `1px solid ${C.border}`,
+                          borderLeft: `4px solid ${C.amber}`,
                         }}
                       >
-                        <span style={{ color: '#1a8a3a', fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✓</span>
-                        {inc}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div>
-                  <div
-                    style={{
-                      fontWeight: 600,
-                      fontSize: 12,
-                      color: '#c0392b',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.08em',
-                      marginBottom: 12,
-                    }}
-                  >
-                    ✗ Exclusions
-                  </div>
-                  <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {(pricing.exclusions ?? []).map((exc, i) => (
-                      <li
-                        key={i}
-                        style={{
-                          display: 'flex',
-                          alignItems: 'flex-start',
-                          gap: 8,
-                          fontSize: 13,
-                          color: '#333',
-                          lineHeight: 1.5,
-                        }}
-                      >
-                        <span style={{ color: '#c0392b', fontWeight: 700, flexShrink: 0, marginTop: 1 }}>✗</span>
-                        {exc}
-                      </li>
-                    ))}
-                  </ul>
+                        {/* Day card header */}
+                        <div style={{ padding: '20px 24px 16px' }}>
+                          {/* DAY badge */}
+                          <div style={{ display: 'inline-block', background: C.orange, borderRadius: 50, padding: '5px 18px', fontWeight: 800, fontSize: 13, color: C.white, marginBottom: 12, letterSpacing: '0.04em' }}>
+                            DAY {day.day_number}
+                            {day.date ? ` · ${fmtDate(day.date)}` : ''}
+                          </div>
+
+                          <h3 style={{ fontSize: 22, fontWeight: 800, color: C.white, lineHeight: 1.2, marginBottom: 4 }}>
+                            {day.title}
+                          </h3>
+
+                          {/* Sub-info from items — show timing/transport as subtitle */}
+                          {items.find(i => i.type === 'transport') && (
+                            <div style={{ fontSize: 13, color: C.gray, marginBottom: 0 }}>
+                              {items.find(i => i.type === 'transport')?.description ?? ''}
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Location photo */}
+                        <div style={{ height: 220, overflow: 'hidden', position: 'relative' }}>
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={dayPhoto} alt={day.title}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                          />
+                          {/* Bottom fade */}
+                          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: 60, background: `linear-gradient(transparent, ${C.card})` }} />
+                        </div>
+
+                        {/* Day body */}
+                        <div style={{ padding: '16px 24px 20px' }}>
+                          {/* Overview text */}
+                          {day.overview && (
+                            <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.72)', lineHeight: 1.7, marginBottom: items.length ? 16 : 0 }}>
+                              {day.overview}
+                            </p>
+                          )}
+
+                          {/* Items list */}
+                          {items.length > 0 && (
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                              {items.map((item) => (
+                                <div key={item.id} style={{ display: 'flex', alignItems: 'flex-start', gap: 10 }}>
+                                  <span style={{ fontSize: 15, flexShrink: 0, lineHeight: 1.6 }}>{item.icon ?? itemIcon(item.type)}</span>
+                                  <div style={{ flex: 1 }}>
+                                    <span style={{ fontWeight: 600, fontSize: 13.5, color: C.white }}>{item.name}</span>
+                                    {item.timing && (
+                                      <span style={{ marginLeft: 8, fontSize: 11, color: C.orange, fontWeight: 600, background: 'rgba(240,146,30,0.12)', padding: '1px 7px', borderRadius: 3 }}>
+                                        {item.timing}
+                                      </span>
+                                    )}
+                                    {item.description && (
+                                      <div style={{ fontSize: 12, color: C.gray, marginTop: 2, lineHeight: 1.5 }}>{item.description}</div>
+                                    )}
+                                  </div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+
+                          {/* Activity tags — from item names when no descriptions */}
+                          {items.filter(i => i.type === 'activity').length > 0 && (
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginTop: 14 }}>
+                              {items.filter(i => i.type === 'activity').map((item) => (
+                                <span
+                                  key={item.id}
+                                  style={{
+                                    border: `1px solid ${C.amber}`,
+                                    borderRadius: 4,
+                                    padding: '4px 12px',
+                                    fontSize: 12,
+                                    color: C.amber,
+                                    fontWeight: 500,
+                                    background: 'rgba(245,160,32,0.08)',
+                                  }}
+                                >
+                                  {item.name}
+                                </span>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
           )}
 
-          {/* ── SECTION 4: Day-by-Day Itinerary ──────────────────────────── */}
-          {days && days.length > 0 && (
-            <div style={{ padding: '36px 48px 0' }}>
-              <h2
-                style={{
-                  fontSize: 20,
-                  fontWeight: 700,
-                  color: '#1a1a2e',
-                  marginBottom: 24,
-                  fontFamily: "'Playfair Display', serif",
-                }}
-              >
-                Your Day-by-Day Itinerary
-              </h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-                {days.map((day) => (
-                  <div
-                    key={day.id}
-                    className="day-card"
-                    style={{ border: '1px solid #e8e0d0', borderRadius: 10, overflow: 'hidden' }}
-                  >
-                    {/* Day header bar */}
+          {/* ══════════════════════════════════════════
+              PRICING PAGE
+          ══════════════════════════════════════════ */}
+          {calc && pricing && (
+            <div className="page-break no-break">
+              <PageHeader />
+              <div style={{ padding: '44px 44px 44px', background: C.bg }}>
+                <SectionHeading first="Package" second="Pricing" />
+
+                <p style={{ fontSize: 13.5, color: C.gray, marginBottom: 28, lineHeight: 1.6 }}>
+                  {pricing.payment_terms
+                    ? pricing.payment_terms
+                    : 'All prices are inclusive of taxes and applicable charges.'}
+                </p>
+
+                {/* Pricing table */}
+                <div style={{ border: `1px solid ${C.border}`, borderRadius: 10, overflow: 'hidden' }}>
+                  {/* Orange header */}
+                  <div style={{ background: C.orange, padding: '16px 24px', display: 'flex', justifyContent: 'space-between' }}>
+                    <span style={{ fontWeight: 700, fontSize: 15, color: C.white }}>Package Details</span>
+                    <span style={{ fontWeight: 700, fontSize: 15, color: C.white }}>Amount</span>
+                  </div>
+
+                  {/* Rows */}
+                  {[
+                    { label: `Adults (${proposal.num_adults} × ${fmt(pricing.base_price_per_person, sym)})`, value: fmt(calc.adultSub, sym), show: true },
+                    { label: `Children (${proposal.num_children} × ${fmt(pricing.child_price_per_person, sym)})`, value: fmt(calc.childSub, sym), show: proposal.num_children > 0 },
+                    { label: 'Subtotal', value: fmt(calc.subtotal, sym), show: true, dim: true },
+                    { label: `Group Discount (${pricing.group_discount_pct}%)`, value: `− ${fmt(calc.discount, sym)}`, show: pricing.group_discount_pct > 0, green: true },
+                    { label: `GST (${pricing.gst_pct}%)`, value: `+ ${fmt(calc.gst, sym)}`, show: pricing.apply_gst && calc.gst > 0 },
+                  ].filter(r => r.show).map((row, i) => (
                     <div
+                      key={i}
                       style={{
-                        background: 'linear-gradient(135deg, #E05C00, #C9923D)',
+                        display: 'flex', justifyContent: 'space-between', alignItems: 'center',
                         padding: '14px 24px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: 16,
+                        background: i % 2 === 0 ? C.card : '#1A1A1A',
+                        borderBottom: `1px solid ${C.border}`,
                       }}
                     >
-                      <div
-                        style={{
-                          background: 'rgba(255,255,255,0.2)',
-                          borderRadius: 6,
-                          padding: '4px 10px',
-                          fontSize: 11,
-                          fontWeight: 800,
-                          color: '#fff',
-                          letterSpacing: '0.1em',
-                          textTransform: 'uppercase',
-                          flexShrink: 0,
-                        }}
-                      >
-                        Day {day.day_number}
-                      </div>
-                      {day.date && (
-                        <div style={{ fontSize: 12, color: 'rgba(255,255,255,0.8)', flexShrink: 0 }}>
-                          {formatDate(day.date)}
-                        </div>
-                      )}
-                      <div
-                        style={{
-                          fontFamily: "'Playfair Display', serif",
-                          fontWeight: 700,
-                          fontSize: 16,
-                          color: '#fff',
-                          flex: 1,
-                        }}
-                      >
-                        {day.title}
-                      </div>
+                      <span style={{ fontSize: 14, color: row.dim ? C.gray : row.green ? '#4CAF50' : 'rgba(255,255,255,0.85)' }}>{row.label}</span>
+                      <span style={{ fontSize: 14, fontWeight: 600, color: row.dim ? C.gray : row.green ? '#4CAF50' : C.white }}>{row.value}</span>
                     </div>
+                  ))}
 
-                    {/* Day body */}
-                    <div style={{ padding: '16px 24px' }}>
-                      {day.overview && (
-                        <p
-                          style={{
-                            fontSize: 13,
-                            color: '#4a4a4a',
-                            lineHeight: 1.7,
-                            marginBottom: day.proposal_items?.length ? 14 : 0,
-                          }}
-                        >
-                          {day.overview}
-                        </p>
-                      )}
-
-                      {day.proposal_items && day.proposal_items.length > 0 && (
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                          {[...day.proposal_items]
-                            .sort((a, b) => a.sort_order - b.sort_order)
-                            .map((item) => (
-                              <div
-                                key={item.id}
-                                style={{
-                                  display: 'flex',
-                                  alignItems: 'flex-start',
-                                  gap: 10,
-                                  padding: '8px 12px',
-                                  background: '#faf9f6',
-                                  borderRadius: 6,
-                                  border: '1px solid #f0ebe0',
-                                }}
-                              >
-                                <span style={{ fontSize: 18, flexShrink: 0, lineHeight: 1 }}>
-                                  {item.icon ?? itemIcon(item.type)}
-                                </span>
-                                <div style={{ flex: 1 }}>
-                                  {item.timing && (
-                                    <span
-                                      style={{
-                                        fontSize: 11,
-                                        color: '#E05C00',
-                                        fontWeight: 600,
-                                        marginRight: 8,
-                                        background: 'rgba(224,92,0,0.08)',
-                                        padding: '1px 6px',
-                                        borderRadius: 3,
-                                        letterSpacing: '0.04em',
-                                      }}
-                                    >
-                                      {item.timing}
-                                    </span>
-                                  )}
-                                  <span style={{ fontWeight: 600, fontSize: 13, color: '#1a1a2e' }}>
-                                    {item.name}
-                                  </span>
-                                  {item.description && (
-                                    <div
-                                      style={{
-                                        fontSize: 12,
-                                        color: '#666',
-                                        marginTop: 2,
-                                        lineHeight: 1.5,
-                                      }}
-                                    >
-                                      {item.description}
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            ))}
-                        </div>
-                      )}
+                  {/* Total row */}
+                  <div style={{ background: '#111', padding: '20px 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: `2px solid ${C.orange}` }}>
+                    <div>
+                      <div style={{ fontSize: 12, color: C.gray, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 4 }}>Total Package Price</div>
+                      <div style={{ fontSize: 12, color: C.gray }}>{fmt(Math.round(calc.total / Math.max(pax, 1)), sym)} per person</div>
+                    </div>
+                    <div style={{ fontSize: 32, fontWeight: 800, color: C.orange }}>
+                      {fmt(calc.total, sym)}
                     </div>
                   </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* ── SECTION 5: Pricing Table ──────────────────────────────────── */}
-          {calc && pricing && (
-            <div className="pricing-section" style={{ padding: '36px 48px 0' }}>
-              <h2
-                style={{
-                  fontSize: 20,
-                  fontWeight: 700,
-                  color: '#1a1a2e',
-                  marginBottom: 20,
-                  fontFamily: "'Playfair Display', serif",
-                }}
-              >
-                Pricing Breakdown
-              </h2>
-              <div style={{ border: '1px solid #e8e0d0', borderRadius: 10, overflow: 'hidden' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                  <tbody>
-                    <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
-                      <td style={{ padding: '13px 20px', fontSize: 14, color: '#333' }}>
-                        Adults ({proposal.num_adults} × {fmt(pricing.base_price_per_person, sym)})
-                      </td>
-                      <td style={{ padding: '13px 20px', fontSize: 14, color: '#333', textAlign: 'right', fontWeight: 500 }}>
-                        {fmt(calc.adultSub, sym)}
-                      </td>
-                    </tr>
-
-                    {proposal.num_children > 0 && (
-                      <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#333' }}>
-                          Children ({proposal.num_children} × {fmt(pricing.child_price_per_person, sym)})
-                        </td>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#333', textAlign: 'right', fontWeight: 500 }}>
-                          {fmt(calc.childSub, sym)}
-                        </td>
-                      </tr>
-                    )}
-
-                    <tr style={{ borderBottom: '1px solid #f0ebe0', background: '#faf9f6' }}>
-                      <td style={{ padding: '13px 20px', fontSize: 13, color: '#666' }}>Subtotal</td>
-                      <td style={{ padding: '13px 20px', fontSize: 13, color: '#666', textAlign: 'right' }}>
-                        {fmt(calc.subtotal, sym)}
-                      </td>
-                    </tr>
-
-                    {pricing.group_discount_pct > 0 && (
-                      <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#1a8a3a' }}>
-                          Group Discount ({pricing.group_discount_pct}%)
-                        </td>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#1a8a3a', textAlign: 'right', fontWeight: 500 }}>
-                          -{fmt(calc.discount, sym)}
-                        </td>
-                      </tr>
-                    )}
-
-                    {pricing.apply_gst && calc.gst > 0 && (
-                      <tr style={{ borderBottom: '1px solid #f0ebe0' }}>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#333' }}>
-                          GST ({pricing.gst_pct}%)
-                        </td>
-                        <td style={{ padding: '13px 20px', fontSize: 14, color: '#333', textAlign: 'right', fontWeight: 500 }}>
-                          +{fmt(calc.gst, sym)}
-                        </td>
-                      </tr>
-                    )}
-
-                    <tr style={{ background: 'linear-gradient(135deg, #0a2540, #1a3a6b)' }}>
-                      <td
-                        style={{
-                          padding: '18px 20px',
-                          fontSize: 16,
-                          fontWeight: 800,
-                          color: '#E8AA50',
-                          letterSpacing: '0.04em',
-                        }}
-                      >
-                        TOTAL PACKAGE PRICE
-                      </td>
-                      <td
-                        style={{
-                          padding: '18px 20px',
-                          fontSize: 22,
-                          fontWeight: 900,
-                          color: '#E8AA50',
-                          textAlign: 'right',
-                          fontFamily: "'Playfair Display', serif",
-                        }}
-                      >
-                        {fmt(calc.total, sym)}
-                      </td>
-                    </tr>
-
-                    <tr style={{ background: '#f8f6f0', borderTop: '1px solid #e8e0d0' }}>
-                      <td style={{ padding: '10px 20px', fontSize: 13, color: '#666' }}>
-                        Per person ({totalPax} traveller{totalPax !== 1 ? 's' : ''})
-                      </td>
-                      <td style={{ padding: '10px 20px', fontSize: 13, color: '#666', textAlign: 'right', fontWeight: 600 }}>
-                        {fmt(Math.round(calc.total / Math.max(totalPax, 1)), sym)}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-              {pricing.payment_terms && (
-                <div
-                  style={{
-                    marginTop: 16,
-                    padding: '14px 20px',
-                    background: '#fffbf4',
-                    border: '1px solid #f0d8a0',
-                    borderRadius: 8,
-                    fontSize: 13,
-                    color: '#5a4020',
-                    lineHeight: 1.6,
-                  }}
-                >
-                  <strong style={{ display: 'block', marginBottom: 4 }}>Payment Terms</strong>
-                  {pricing.payment_terms}
                 </div>
-              )}
+
+                {/* Important notes */}
+                <div style={{ marginTop: 28, background: C.card, border: `1px solid ${C.border}`, borderRadius: 8, padding: '18px 22px' }}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: C.orange, marginBottom: 10, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Important Notes</div>
+                  <div style={{ fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: 1.7 }}>
+                    • This proposal is valid for 7 days from the date of issue.<br />
+                    • Prices are subject to availability at the time of booking.<br />
+                    • For queries, contact us on WhatsApp: +91 98738 97652
+                  </div>
+                </div>
+              </div>
             </div>
           )}
 
-          {/* ── SECTION 6: Footer ──────────────────────────────────────────── */}
-          <div
-            className="footer-section"
-            style={{
-              marginTop: 40,
-              background: 'linear-gradient(135deg, #0a2540 0%, #1a3a6b 60%, #0d3320 100%)',
-              padding: '36px 48px',
-              textAlign: 'center',
-            }}
-          >
-            <div
-              style={{
-                fontSize: 22,
-                fontFamily: "'Playfair Display', serif",
-                fontWeight: 700,
-                color: '#C9923D',
-                marginBottom: 12,
-              }}
-            >
-              🏔 Junegiri Yatra
+          {/* ══════════════════════════════════════════
+              FOOTER — closing page
+          ══════════════════════════════════════════ */}
+          <div style={{ background: C.green, padding: '44px', textAlign: 'center' }}>
+            <div style={{ fontWeight: 800, fontSize: 24, color: C.amber, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: 12 }}>
+              JUNEGIRI YATRA
             </div>
-            <div style={{ color: 'rgba(255,248,238,0.8)', fontSize: 16, fontWeight: 600, marginBottom: 8 }}>
-              📱 Book Now: WhatsApp +91 98738 97652
+            <div style={{ color: 'rgba(255,255,255,0.65)', fontSize: 14, marginBottom: 20 }}>
+              Your Trusted Himalayan &amp; Pilgrimage Travel Partner
             </div>
-            <div style={{ color: 'rgba(255,248,238,0.55)', fontSize: 14, marginBottom: 20 }}>
-              🌐 junegiriyatra.com
+            <div style={{ display: 'flex', justifyContent: 'center', gap: 40, flexWrap: 'wrap' }}>
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'rgba(255,255,255,0.45)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 5 }}>WhatsApp</div>
+                <div style={{ color: C.orange, fontWeight: 700, fontSize: 15 }}>+91 98738 97652</div>
+              </div>
+              <div style={{ width: 1, background: 'rgba(255,255,255,0.15)' }} />
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'rgba(255,255,255,0.45)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 5 }}>Website</div>
+                <div style={{ color: C.orange, fontWeight: 700, fontSize: 15 }}>junegiriyatra.com</div>
+              </div>
+              <div style={{ width: 1, background: 'rgba(255,255,255,0.15)' }} />
+              <div style={{ textAlign: 'center' }}>
+                <div style={{ color: 'rgba(255,255,255,0.45)', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: 5 }}>Based In</div>
+                <div style={{ color: C.white, fontWeight: 700, fontSize: 15 }}>Haridwar, Uttarakhand</div>
+              </div>
             </div>
-            <div
-              style={{
-                color: 'rgba(255,248,238,0.4)',
-                fontSize: 12,
-                fontStyle: 'italic',
-                borderTop: '1px solid rgba(201,146,61,0.2)',
-                paddingTop: 16,
-              }}
-            >
-              This itinerary is customized exclusively for {customer?.name ?? 'you'}.
-              &nbsp;All prices and itinerary details are valid as per the date of issue.
+            <div style={{ marginTop: 28, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,0.1)', fontSize: 11, color: 'rgba(255,255,255,0.3)', fontStyle: 'italic' }}>
+              This itinerary is crafted exclusively for {cust?.name ?? 'you'}. All prices & details are valid as of the date of issue.
             </div>
           </div>
+
         </div>
       </div>
     </>
