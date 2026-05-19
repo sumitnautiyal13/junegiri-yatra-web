@@ -56,7 +56,8 @@ export async function PATCH(
 
     const supabase = await createClient();
 
-    const { data, error } = await supabase
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const { data, error } = await (supabase as any)
       .from('customers')
       .update({
         name:     (name as string).trim(),
