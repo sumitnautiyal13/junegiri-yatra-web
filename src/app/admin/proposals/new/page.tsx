@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import type { Customer, ProposalCurrency } from '@/types/database';
 import Link from 'next/link';
@@ -71,6 +71,8 @@ const defaultForm: FormData = {
 
 export default function NewProposalPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const prefilledCustomerId = searchParams.get('customer_id');
   const supabase = createClient();
 
   const [form, setForm] = useState<FormData>(defaultForm);
@@ -84,7 +86,7 @@ export default function NewProposalPage() {
   const [error, setError] = useState<string | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Load customers on mount
+  // Load customers on mount, pre-select if customer_id in URL
   useEffect(() => {
     async function loadCustomers() {
       const { data, error } = await supabase
@@ -92,13 +94,23 @@ export default function NewProposalPage() {
         .select('*')
         .order('name', { ascending: true });
       if (!error && data) {
-        setCustomers(data as Customer[]);
-        setFilteredCustomers(data as Customer[]);
+        const list = data as Customer[];
+        setCustomers(list);
+        setFilteredCustomers(list);
+        // Pre-select customer if customer_id passed via URL
+        if (prefilledCustomerId) {
+          const match = list.find((c) => c.id === prefilledCustomerId);
+          if (match) {
+            setSelectedCustomer(match);
+            setForm((f) => ({ ...f, customer_id: match.id }));
+            setCustomerSearch(match.name);
+          }
+        }
       }
       setLoadingCustomers(false);
     }
     loadCustomers();
-  }, []);
+  }, [prefilledCustomerId]);
 
   // Close dropdown on outside click
   useEffect(() => {
