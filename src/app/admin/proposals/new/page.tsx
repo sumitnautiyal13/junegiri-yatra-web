@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createClient } from '@/lib/supabase/client';
 import type { Customer, ProposalCurrency } from '@/types/database';
@@ -69,7 +69,7 @@ const defaultForm: FormData = {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-export default function NewProposalPage() {
+function NewProposalForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const prefilledCustomerId = searchParams.get('customer_id');
@@ -609,5 +609,13 @@ export default function NewProposalPage() {
         </form>
       </div>
     </div>
+  );
+}
+
+export default function NewProposalPage() {
+  return (
+    <Suspense fallback={<div style={{ minHeight: "100vh", background: "#07051A", display: "flex", alignItems: "center", justifyContent: "center" }}><span style={{ color: "rgba(255,248,238,0.4)", fontFamily: "Inter, sans-serif" }}>Loading…</span></div>}>
+      <NewProposalForm />
+    </Suspense>
   );
 }

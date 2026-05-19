@@ -13,6 +13,12 @@ export async function GET(
   const { id } = await params;
   const supabase = await createClient();
 
+  // Auth check
+  const { data: { user }, error: authError } = await supabase.auth.getUser();
+  if (authError || !user) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   const { data, error } = await supabase
     .from('customers')
     .select('*')
@@ -35,6 +41,14 @@ export async function PATCH(
   const { id } = await params;
 
   try {
+    const supabase = await createClient();
+
+    // Auth check
+    const { data: { user }, error: authError } = await supabase.auth.getUser();
+    if (authError || !user) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     const body = await request.json();
     const { name, whatsapp, email, phone, country, city, source, notes } = body as {
       name?: unknown; whatsapp?: unknown; email?: unknown; phone?: unknown;
@@ -54,20 +68,18 @@ export async function PATCH(
       return NextResponse.json({ error: 'Invalid source.' }, { status: 400 });
     }
 
-    const supabase = await createClient();
-
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { data, error } = await (supabase as any)
       .from('customers')
       .update({
-        name:     (name as string).trim(),
-        whatsapp: (whatsapp as string).trim(),
-        email:    typeof email === 'string' && (email as string).trim() !== '' ? (email as string).trim() : null,
-        phone:    typeof phone === 'string' && (phone as string).trim() !== '' ? (phone as string).trim() : null,
-        country:  (country as string).trim(),
-        city:     typeof city === 'string' && (city as string).trim() !== '' ? (city as string).trim() : null,
-        source:   source as CustomerSource,
-        notes:    typeof notes === 'string' && (notes as string).trim() !== '' ? (notes as string).trim() : null,
+        name:       (name as string).trim(),
+        whatsapp:   (whatsapp as string).trim(),
+        email:      typeof email === 'string' && (email as string).trim() !== '' ? (email as string).trim() : null,
+        phone:      typeof phone === 'string' && (phone as string).trim() !== '' ? (phone as string).trim() : null,
+        country:    (country as string).trim(),
+        city:       typeof city === 'string' && (city as string).trim() !== '' ? (city as string).trim() : null,
+        source:     source as CustomerSource,
+        notes:      typeof notes === 'string' && (notes as string).trim() !== '' ? (notes as string).trim() : null,
         updated_at: new Date().toISOString(),
       })
       .eq('id', id)

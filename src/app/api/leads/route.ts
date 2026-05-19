@@ -42,6 +42,12 @@ export async function POST(request: NextRequest) {
 
     const supabase = await createClient();
 
+    // Auth check
+    const { data: { user }, error: authError } = await supabase.auth.getUser();
+    if (authError || !user) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const { data, error } = await (supabase as any)
       .from('customers')

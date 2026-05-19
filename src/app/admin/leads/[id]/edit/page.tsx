@@ -41,8 +41,13 @@ export default function EditLeadPage() {
 
   useEffect(() => {
     fetch(`/api/leads/${id}`)
-      .then((r) => r.json())
+      .then((r) => {
+        if (r.status === 401) { router.push('/admin/login'); return null; }
+        if (r.status === 404) { setError('Lead not found.'); return null; }
+        return r.json();
+      })
       .then((data) => {
+        if (!data) return;
         if (data.customer) {
           const c = data.customer;
           setForm({
@@ -59,7 +64,7 @@ export default function EditLeadPage() {
           setError('Lead not found.');
         }
       })
-      .catch(() => setError('Failed to load lead.'))
+      .catch(() => setError('Failed to load lead. Please check your connection.'))
       .finally(() => setFetching(false));
   }, [id]);
 

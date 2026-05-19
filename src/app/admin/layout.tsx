@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
+import { redirect } from 'next/navigation';
 import type { ReactNode } from 'react';
 import NavLink from './_components/NavLink';
 
@@ -21,9 +22,9 @@ export default async function AdminLayout({ children }: { children: ReactNode })
     data: { user },
   } = await supabase.auth.getUser();
 
-  // Middleware handles the redirect; this is a safety-net render
+  // Middleware handles the redirect; this is a safety-net fallback
   if (!user) {
-    return <>{children}</>;
+    redirect('/admin/login');
   }
 
   /* ─── Styles ─────────────────────────────────────────────────────────────── */

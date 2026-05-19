@@ -277,6 +277,8 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
   const [paymentTerms, setPaymentTerms] = useState(initialPricing?.payment_terms ?? '');
 
   const [actionStatus, setActionStatus] = useState<string | null>(null);
+  const [actionIsError, setActionIsError] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const [shareLink, setShareLink] = useState<string | null>(null);
 
   // ── Derived ────────────────────────────────────────────────────────────────
@@ -301,22 +303,26 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
   // ── Save All ───────────────────────────────────────────────────────────────
   const handleSaveAll = async () => {
     setSaving(true);
+    setSaveError(null);
     try {
-      // Update proposal title
-      await supabase
+      const { error: propErr } = await supabase
         .from('proposals')
         .update({ title: proposal.title, notes: proposal.notes, message_to_customer: proposal.message_to_customer })
         .eq('id', proposal.id);
+      if (propErr) throw propErr;
 
-      // Update all days
       for (const day of days) {
-        await supabase
+        const { error: dayErr } = await supabase
           .from('proposal_days')
           .update({ title: day.title, overview: day.overview, date: day.date })
           .eq('id', day.id);
+        if (dayErr) throw dayErr;
       }
 
       flashSaved(setSavedAll);
+    } catch (e: unknown) {
+      const msg = e instanceof Error ? e.message : 'Save failed. Please try again.';
+      setSaveError(msg);
     } finally {
       setSaving(false);
     }
@@ -358,10 +364,15 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
   const handleSaveDay = async (dayId: string) => {
     const day = days.find(d => d.id === dayId);
     if (!day) return;
-    await supabase
-      .from('proposal_days')
-      .update({ title: day.title, overview: day.overview, date: day.date })
-      .eq('id', dayId);
+    try {
+      const { error } = await supabase
+        .from('proposal_days')
+        .update({ title: day.title, overview: day.overview, date: day.date })
+        .eq('id', dayId);
+      if (error) console.error('Failed to save day:', error.message);
+    } catch (e) {
+      console.error('Failed to save day:', e);
+    }
   };
 
   // ── Item Operations ────────────────────────────────────────────────────────
@@ -506,25 +517,42 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
   const handleSendToCustomer = async () => {
     const link = `${window.location.origin}/p/${proposal.share_token}`;
     setShareLink(link);
+    setActionIsError(false);
     try {
       await navigator.clipboard.writeText(link);
       setActionStatus('Link copied to clipboard!');
     } catch {
-      setActionStatus('Link ready (copy manually below)');
+      setActionStatus('Link ready — copy it manually below.');
     }
-    // Update status to sent
-    await supabase.from('proposals').update({ status: 'sent' }).eq('id', proposal.id);
-    setProposal(prev => ({ ...prev, status: 'sent' }));
+    try {
+      const { error } = await supabase.from('proposals').update({ status: 'sent' }).eq('id', proposal.id);
+      if (error) throw error;
+      setProposal(prev => ({ ...prev, status: 'sent' }));
+    } catch {
+      // Non-critical: link was already copied, status update failure is minor
+      console.error('Failed to update status to sent');
+    }
     setTimeout(() => setActionStatus(null), 4000);
   };
 
   const handleMarkBooked = async () => {
     if (!confirm('Mark this proposal as booked?')) return;
-    await supabase.from('proposals').update({ status: 'booked' }).eq('id', proposal.id);
-    setProposal(prev => ({ ...prev, status: 'booked' }));
+    setActionIsError(false);
+    try {
+      const { error } = await supabase.from('proposals').update({ status: 'booked' }).eq('id', proposal.id);
+      if (error) throw error;
+      setProposal(prev => ({ ...prev, status: 'booked' }));
+      setActionStatus('Proposal marked as booked!');
+      setTimeout(() => setActionStatus(null), 3000);
+    } catch {
+      setActionIsError(true);
+      setActionStatus('Failed to update status. Please try again.');
+      setTimeout(() => { setActionStatus(null); setActionIsError(false); }, 4000);
+    }
   };
 
   const handleDuplicate = async () => {
+    setActionIsError(false);
     setActionStatus('Duplicating...');
     try {
       const { data: newProposal, error } = await supabase
@@ -546,21 +574,25 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
         .select()
         .single();
 
-      if (!error && newProposal) {
+      if (error) throw error;
+      if (newProposal) {
         window.open(`/admin/proposals/${newProposal.id}`, '_blank');
         setActionStatus('Duplicated! Opening in new tab.');
         setTimeout(() => setActionStatus(null), 3000);
       }
     } catch {
-      setActionStatus('Duplication failed');
-      setTimeout(() => setActionStatus(null), 3000);
+      setActionIsError(true);
+      setActionStatus('Duplication failed. Please try again.');
+      setTimeout(() => { setActionStatus(null); setActionIsError(false); }, 3000);
     }
   };
 
   const waLink = () => {
+    if (!proposal.customers?.whatsapp) return '#';
     const link = `${window.location.origin}/p/${proposal.share_token}`;
+    const firstName = proposal.customers.name?.split(' ')[0] ?? 'there';
     const msg = encodeURIComponent(
-      `Hi ${proposal.customers.name.split(' ')[0]}! Your personalised travel proposal from Junegiri Yatra is ready. View & approve here: ${link}`
+      `Hi ${firstName}! Your personalised travel proposal from Junegiri Yatra is ready. View & approve here: ${link}`
     );
     return `https://wa.me/${proposal.customers.whatsapp.replace(/\D/g, '')}?text=${msg}`;
   };
@@ -854,7 +886,7 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
               </div>
 
               {/* Save All + Add Day */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: saveError ? '10px' : '24px' }}>
                 <button
                   style={s.btnSaffron}
                   onClick={handleSaveAll}
@@ -868,6 +900,19 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
                   + Add Day
                 </button>
               </div>
+              {saveError && (
+                <div style={{
+                  background: 'rgba(239,68,68,0.1)',
+                  border: '1px solid rgba(239,68,68,0.35)',
+                  borderRadius: '8px',
+                  padding: '10px 14px',
+                  fontSize: '13px',
+                  color: '#f87171',
+                  marginBottom: '16px',
+                }}>
+                  ⚠️ {saveError}
+                </div>
+              )}
 
               {/* Days */}
               {days.length === 0 && (
@@ -1393,12 +1438,12 @@ export default function ProposalEditor({ proposal: initialProposal, days: initia
 
               {actionStatus && (
                 <div style={{
-                  background: 'rgba(34,197,94,0.12)',
-                  border: '1px solid rgba(34,197,94,0.3)',
+                  background: actionIsError ? 'rgba(239,68,68,0.1)' : 'rgba(34,197,94,0.12)',
+                  border: `1px solid ${actionIsError ? 'rgba(239,68,68,0.35)' : 'rgba(34,197,94,0.3)'}`,
                   borderRadius: '8px',
                   padding: '10px 14px',
                   fontSize: '13px',
-                  color: '#4ade80',
+                  color: actionIsError ? '#f87171' : '#4ade80',
                   marginBottom: '12px',
                 }}>
                   {actionStatus}
