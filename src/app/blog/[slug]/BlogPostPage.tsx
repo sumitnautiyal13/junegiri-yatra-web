@@ -47,7 +47,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
     '@type': 'Article',
     headline: post.title,
     description: post.meta_description,
-    image: `https://junegiriyatra.com${post.hero_image}`,
+    image: {
+      '@type': 'ImageObject',
+      url: `https://junegiriyatra.com${post.hero_image}`,
+      width: 1200,
+      height: 630,
+    },
     datePublished: post.published,
     dateModified: (post as any).date_modified || post.published,
     author: {

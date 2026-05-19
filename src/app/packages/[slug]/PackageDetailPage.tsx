@@ -408,7 +408,12 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 name: pkg.name,
                 description: pkg.meta_description,
                 url: `https://junegiriyatra.com${pkg.url}`,
-                image: `https://junegiriyatra.com${pkg.hero_image}`,
+                image: {
+                  '@type': 'ImageObject',
+                  url: `https://junegiriyatra.com${pkg.hero_image}`,
+                  width: 1200,
+                  height: 630,
+                },
                 touristType: 'Cultural tourism',
                 itinerary: { '@type': 'ItemList', numberOfItems: pkg.itinerary.length },
                 offers: {

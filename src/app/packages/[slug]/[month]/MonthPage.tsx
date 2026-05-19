@@ -62,7 +62,12 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
     name: monthData.title,
     description: monthData.meta_description,
     touristType: 'Adventure',
-    image: pkg.hero_image,
+    image: {
+      '@type': 'ImageObject',
+      url: `https://junegiriyatra.com${pkg.hero_image}`,
+      width: 1200,
+      height: 630,
+    },
     offers: {
       '@type': 'Offer',
       price: monthData.price,
