@@ -9,11 +9,13 @@ let blogData: Array<{ slug: string; published: string }> = [];
 let comparisonsData: Array<{ slug: string }> = [];
 let bestTimeData: Array<{ slug: string }> = [];
 let trekSeasonsData: Record<string, { months: string[] }> = {};
+let yatraSeasonsData: Record<string, { route_base: string; months: string[] }> = {};
 
 try { blogData = require('../../data/blog-posts.json'); } catch {}
 try { comparisonsData = require('../../data/comparisons.json'); } catch {}
 try { bestTimeData = require('../../data/best-time.json'); } catch {}
 try { trekSeasonsData = require('../../data/trek-seasons.json'); } catch {}
+try { yatraSeasonsData = require('../../data/yatra-seasons.json'); } catch {}
 
 const BASE = 'https://junegiriyatra.com';
 // Stable date — only update manually when content changes significantly.
@@ -74,6 +76,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const [slug, data] of Object.entries(trekSeasonsData)) {
     for (const month of data.months) {
       urls.push({ url: `${BASE}/packages/${slug}/${month}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 });
+    }
+  }
+
+  // Destination × City × Month pages (~36k pages, ISR — enumerate all combos for indexation)
+  for (const [dest, data] of Object.entries(yatraSeasonsData)) {
+    for (const month of data.months) {
+      for (const c of citiesData as Array<{ slug: string }>) {
+        urls.push({ url: `${BASE}/from/${dest}/${c.slug}/${month}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.6 });
+      }
     }
   }
 
