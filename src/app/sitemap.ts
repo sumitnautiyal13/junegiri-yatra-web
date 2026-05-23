@@ -79,6 +79,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // Trek × City pages (17 treks × 346 cities = 5,882 pages via ISR)
+  for (const slug of Object.keys(trekSeasonsData)) {
+    urls.push({ url: `${BASE}/trek/${slug}/from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+    for (const c of citiesData as Array<{ slug: string }>) {
+      urls.push({ url: `${BASE}/trek/${slug}/from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.65 });
+    }
+  }
+
   // Destination × City × Month pages (~36k pages, ISR — enumerate all combos for indexation)
   for (const [dest, data] of Object.entries(yatraSeasonsData)) {
     for (const month of data.months) {
