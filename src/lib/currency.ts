@@ -1,5 +1,52 @@
 import type { Currency, ExchangeRates } from '@/types';
 
+// ─── Geo Pricing Tiers ───────────────────────────────────────────────────────
+
+export type GeoTier = 'india' | 'gulf' | 'west' | 'sea' | 'other';
+
+/** Markup multiplier on top of INR base price per tier */
+export const TIER_MARKUP: Record<GeoTier, number> = {
+  india: 1.00,
+  gulf:  1.35,   // UAE, Saudi, Bahrain, Kuwait, Oman, Qatar
+  west:  1.25,   // US, CA, GB, EU, AU, NZ
+  sea:   1.15,   // SG, MY, TH, ID, PH, VN
+  other: 1.20,
+};
+
+/** Country code → pricing tier */
+export const PRICING_TIERS: Record<string, GeoTier> = {
+  IN: 'india',
+  AE: 'gulf', SA: 'gulf', BH: 'gulf', KW: 'gulf', OM: 'gulf', QA: 'gulf',
+  US: 'west',  CA: 'west', GB: 'west', AU: 'west', NZ: 'west',
+  DE: 'west',  FR: 'west', IT: 'west', ES: 'west', NL: 'west',
+  SE: 'west',  NO: 'west', DK: 'west', FI: 'west', BE: 'west',
+  AT: 'west',  CH: 'west', PT: 'west', IE: 'west', PL: 'west',
+  CZ: 'west',  GR: 'west', HU: 'west', HR: 'west', RO: 'west',
+  SG: 'sea',   MY: 'sea',  TH: 'sea',  ID: 'sea',  PH: 'sea',
+  VN: 'sea',   KH: 'sea',  LA: 'sea',  MM: 'sea',
+};
+
+/** Country code → preferred display currency */
+export const COUNTRY_TO_CURRENCY: Record<string, Currency> = {
+  IN: 'INR',
+  AE: 'AED', SA: 'AED', BH: 'AED', KW: 'AED', OM: 'AED', QA: 'AED',
+  US: 'USD', CA: 'CAD', GB: 'GBP',
+  AU: 'AUD', NZ: 'AUD',
+  SG: 'SGD', MY: 'SGD',
+  DE: 'EUR', FR: 'EUR', IT: 'EUR', ES: 'EUR', NL: 'EUR',
+  SE: 'EUR', NO: 'EUR', DK: 'EUR', FI: 'EUR', BE: 'EUR',
+  AT: 'EUR', CH: 'EUR', PT: 'EUR', IE: 'EUR', PL: 'EUR',
+  CZ: 'EUR', GR: 'EUR', HU: 'EUR', HR: 'EUR', RO: 'EUR',
+};
+
+/**
+ * Apply regional markup to INR base price before currency conversion.
+ * Gulf visitors pay 35% more, Western 25% more, etc.
+ */
+export function applyTierMarkup(inrPrice: number, tier: GeoTier): number {
+  return Math.round(inrPrice * TIER_MARKUP[tier]);
+}
+
 export const EXCHANGE_RATES: ExchangeRates = {
   INR: 1.0,
   USD: 0.0105,
@@ -52,31 +99,38 @@ export function detectCurrencyFromLocale(locale: string): Currency {
 }
 
 /**
- * Convert INR price to target currency.
- * Uses international USD rack rate (intl_price_usd) for foreign visitors
- * to correctly price packages at international market rates (not just forex conversion).
+ * Convert INR price to target currency, with optional geo tier markup.
+ * Gulf visitors see 35% higher prices, Western 25%, SEA 15%.
+ * Uses intl_price_usd as the USD anchor when available.
  */
 export function convertPrice(
   inrPrice: number,
   currency: Currency,
-  usdIntlPrice?: number
+  usdIntlPrice?: number,
+  tier?: GeoTier,
 ): number {
-  if (currency === 'INR') return inrPrice;
+  // Apply regional markup to base INR price first
+  const markedUp = tier ? applyTierMarkup(inrPrice, tier) : inrPrice;
+
+  if (currency === 'INR') return markedUp;
 
   const rate = EXCHANGE_RATES[currency];
-  if (!rate) return inrPrice;
+  if (!rate) return markedUp;
 
   const usdRate = EXCHANGE_RATES['USD'];
   let converted: number;
 
-  if (usdIntlPrice && usdIntlPrice > 0) {
-    // Cross-rate: international USD price → target currency
+  if (usdIntlPrice && usdIntlPrice > 0 && tier) {
+    // Anchor to USD intl price, apply tier markup, cross-rate to target currency
+    const usdMarked = usdIntlPrice * TIER_MARKUP[tier];
+    converted = currency === 'USD' ? usdMarked : usdMarked * (rate / usdRate);
+  } else if (usdIntlPrice && usdIntlPrice > 0) {
+    // Legacy: use intl_price_usd without tier
     converted = currency === 'USD'
       ? usdIntlPrice
       : usdIntlPrice * (rate / usdRate);
   } else {
-    // Fallback: market exchange rate
-    converted = inrPrice * rate;
+    converted = markedUp * rate;
   }
 
   // Round to clean numbers
@@ -89,9 +143,10 @@ export function convertPrice(
 export function formatPrice(
   inrPrice: number,
   currency: Currency,
-  usdIntlPrice?: number
+  usdIntlPrice?: number,
+  tier?: GeoTier,
 ): string {
-  const converted = convertPrice(inrPrice, currency, usdIntlPrice);
+  const converted = convertPrice(inrPrice, currency, usdIntlPrice, tier);
   const symbol = CURRENCY_SYMBOLS[currency] || '';
 
   if (currency === 'INR') {

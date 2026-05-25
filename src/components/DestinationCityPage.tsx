@@ -5,6 +5,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
 import WaLink from '@/components/WaLink';
+import WABookingCard from '@/components/WABookingCard';
+import { useCurrency } from '@/contexts/CurrencyContext';
+import { formatPrice } from '@/lib/currency';
 
 /* ─── Config type ────────────────────────────────────────── */
 export interface DestinationHighlight {
@@ -42,8 +45,14 @@ interface Props {
 
 export default function DestinationCityPage({ city, pkg, config }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { currency, geo } = useCurrency();
   const basePrice = pkg?.price_from ?? config.basePrice;
   const waLink = `https://wa.me/919873897652?text=${encodeURIComponent(config.waMessage)}`;
+
+  // Geo-aware display price
+  const displayPrice = geo.isLoading
+    ? `₹${basePrice.toLocaleString('en-IN')}`
+    : formatPrice(basePrice, currency, pkg?.intl_price_usd, geo.tier);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -142,7 +151,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
           </h1>
           <p className="city-hero-sub">
             {city.total_time}&nbsp;·&nbsp;All-inclusive from{' '}
-            <strong>₹{basePrice.toLocaleString('en-IN')}/person</strong>
+            <strong>{displayPrice}/person</strong>
           </p>
           <WaLink href={waLink} className="btn-gold-hero" target="_blank" rel="noopener noreferrer"
             label={`city_hero_${config.destinationSlug}`}>
@@ -247,17 +256,25 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
                 {config.inclusions.map((inc) => <li key={inc}>✓ {inc}</li>)}
               </ul>
               <div className="city-pkg-price">
-                Starting from <strong>₹{basePrice.toLocaleString('en-IN')}</strong>
+                Starting from <strong>{displayPrice}</strong>
                 <span>/person</span>
                 <em> · Groups of 6+ get 10% off</em>
               </div>
             </div>
             <div className="city-pkg-cta">
-              <WaLink href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer"
-                label={`city_pkg_cta_${config.destinationSlug}`}>
-                📲 WhatsApp for {city.name} Quote
-              </WaLink>
-              <a href="tel:+919873897652" className="btn-outline-lg">📞 Call +91 98738 97652</a>
+              {pkg ? (
+                <WABookingCard
+                  pkg={pkg}
+                  cityName={city.name}
+                  variant="card"
+                />
+              ) : (
+                <WaLink href={waLink} className="btn-gold-lg" target="_blank" rel="noopener noreferrer"
+                  label={`city_pkg_cta_${config.destinationSlug}`}>
+                  📲 WhatsApp for {city.name} Quote
+                </WaLink>
+              )}
+              <a href="tel:+919873897652" className="btn-outline-lg" style={{ marginTop: 12 }}>📞 Call +91 98738 97652</a>
               <p className="city-pkg-note">Free itinerary · No booking fee · Pay after confirmation</p>
             </div>
           </div>

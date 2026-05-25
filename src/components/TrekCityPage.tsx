@@ -4,6 +4,9 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
+import WABookingCard from '@/components/WABookingCard';
+import { useCurrency } from '@/contexts/CurrencyContext';
+import { formatPrice } from '@/lib/currency';
 
 interface TrekData {
   months: string[];
@@ -33,11 +36,19 @@ function capitalize(s: string) {
 
 export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const { currency, geo } = useCurrency();
 
   const trekName = pkg?.name ?? slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   const heroImage = pkg?.hero_image ?? '/images/trek_himalaya.webp';
   const price = pkg?.price_from ?? 9500;
   const duration = pkg?.duration ?? '';
+
+  // Geo-aware price for hero display
+  const displayPrice = geo.isLoading
+    ? `₹${price.toLocaleString('en-IN')}`
+    : formatPrice(price, currency, pkg?.intl_price_usd, geo.tier);
+
+  // Legacy plain WA link (used for non-card CTAs like hero button)
   const waText = encodeURIComponent(
     `Namaste! I want to book ${trekName} from ${city.name}. Please share package details and available dates.`
   );
@@ -157,7 +168,7 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
           </h1>
           <p className="city-hero-sub">
             {city.total_time}&nbsp;·&nbsp;All-inclusive from{' '}
-            <strong>₹{price.toLocaleString('en-IN')}/person</strong>
+            <strong>{displayPrice}/person</strong>
             {duration && <>&nbsp;·&nbsp;{duration}</>}
           </p>
           <a
@@ -369,21 +380,21 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
               )}
               <div className="city-pkg-price">
                 Starting from{' '}
-                <strong>₹{price.toLocaleString('en-IN')}</strong>
+                <strong>{displayPrice}</strong>
                 <span>/person</span>
                 <em> · Groups of 6+ get 10% off</em>
               </div>
             </div>
             <div className="city-pkg-cta">
-              <a
-                href={waLink}
-                className="btn-gold-lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                📲 WhatsApp for {city.name} Quote
-              </a>
-              <a href="tel:+919873897652" className="btn-outline-lg">
+              {pkg && (
+                <WABookingCard
+                  pkg={pkg}
+                  cityName={city.name}
+                  trekName={trekName}
+                  variant="card"
+                />
+              )}
+              <a href="tel:+919873897652" className="btn-outline-lg" style={{ marginTop: 12 }}>
                 📞 Call +91 98738 97652
               </a>
               <p className="city-pkg-note">
