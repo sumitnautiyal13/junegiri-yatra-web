@@ -67,7 +67,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // Hubs (content-serving only — redirect hubs cause GSC "redirect" warnings)
-  const HUB_CONTENT_SLUGS = new Set(['taj-mahal-tours', 'uttarakhand-tours']);
+  // char-dham-yatra, rishikesh-adventures, golden-triangle added after removing their redirect rules
+  const HUB_CONTENT_SLUGS = new Set(['taj-mahal-tours', 'uttarakhand-tours', 'char-dham-yatra', 'rishikesh-adventures', 'golden-triangle']);
   for (const h of hubsData as Array<{ slug: string }>) {
     if (HUB_CONTENT_SLUGS.has(h.slug)) {
       urls.push({ url: `${BASE}/packages/${h.slug}/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });

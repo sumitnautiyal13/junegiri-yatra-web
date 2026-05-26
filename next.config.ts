@@ -63,11 +63,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       // Legacy/wrong package slugs → correct slugs (permanent 308)
-      { source: '/packages/char-dham-yatra/', destination: '/packages/char-dham-yatra-9n-10d/', permanent: true },
-      { source: '/packages/rishikesh-adventures/', destination: '/packages/rishikesh-adventure-pack-2n-3d/', permanent: true },
+      // NOTE: char-dham-yatra, rishikesh-adventures, golden-triangle are HUB CONTENT PAGES
+      // — redirect rules removed so generateStaticParams serves the hub page correctly.
+      // himalayan-treks has a dedicated top-level route (/himalayan-treks/) so redirect stays.
       { source: '/packages/himalayan-treks/', destination: '/himalayan-treks/', permanent: true },
       { source: '/packages/international/', destination: '/packages/thailand-tour-7n-8d/', permanent: true },
-      { source: '/packages/golden-triangle/', destination: '/packages/golden-triangle-tour-5n-6d/', permanent: true },
       // Blog-post related_package slugs that were wrong — redirect old crawled URLs
       { source: '/packages/kedarnath-yatra-5n-6d/', destination: '/packages/kedarnath-yatra-3n-4d/', permanent: true },
       { source: '/packages/kedarkantha-trek-5d/', destination: '/packages/kedarkantha-trek-5n-6d/', permanent: true },
