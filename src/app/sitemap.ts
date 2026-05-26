@@ -74,7 +74,7 @@ function buildDCMUrls(): MetadataRoute.Sitemap {
 }
 
 // ── generateSitemaps — tells Next.js how many chunks to create ───────────────
-export function generateSitemaps() {
+export async function generateSitemaps() {
   const dcmTotal = Object.values(yatraSeasonsData).reduce(
     (sum, v) => sum + v.months.length * (citiesData as Array<unknown>).length,
     0
@@ -84,8 +84,11 @@ export function generateSitemaps() {
   return Array.from({ length: 1 + dcmChunks }, (_, i) => ({ id: i }));
 }
 
-// ── Main sitemap function ────────────────────────────────────────────────────
-export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
+// ── Main sitemap function (Next.js 15/16: id is Promise<string>) ─────────────
+export default async function sitemap(props: {
+  id: Promise<string>;
+}): Promise<MetadataRoute.Sitemap> {
+  const id = Number(await props.id);
 
   // ── Chunk 0: everything except Dest×City×Month ──────────────────────────
   if (id === 0) {
