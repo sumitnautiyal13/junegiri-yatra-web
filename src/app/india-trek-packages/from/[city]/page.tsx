@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import IntlCityPage, { type IntlCity, type IntlPackage } from '@/components/IntlCityPage';
+import IntlCityPage, { type IntlCity, type IntlPackage, type TrekPackage } from '@/components/IntlCityPage';
 import intlCitiesData from '../../../../../data/international-cities.json';
+import allPackagesData from '../../../../../data/packages.json';
 
 export async function generateStaticParams() {
   return (intlCitiesData as IntlCity[]).map((city) => ({ city: city.slug }));
@@ -65,7 +66,32 @@ export default async function Page({
     // data file may not exist yet — page renders with empty packages
   }
 
-  // Sort packages: popular_package_slugs first, then remainder in original order
+  // Individual trek packages (from packages.json): those with intl_price_usd set
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const trekPackages: TrekPackage[] = (allPackagesData as any[])
+    .filter((p) => p.intl_price_usd && p.intl_price_usd > 0)
+    .map((p) => ({
+      slug: p.slug,
+      name: p.name,
+      duration: p.duration,
+      intl_price_usd: p.intl_price_usd,
+      difficulty: p.difficulty,
+      tag: p.tag,
+      hero_image: p.hero_image,
+      destinations_short: p.destinations_short,
+      hero_tagline: p.hero_tagline,
+    }))
+    // Sort: popular city slugs first, then by price ascending
+    .sort((a, b) => {
+      const ai = city.popular_package_slugs.indexOf(a.slug);
+      const bi = city.popular_package_slugs.indexOf(b.slug);
+      if (ai !== -1 && bi !== -1) return ai - bi;
+      if (ai !== -1) return -1;
+      if (bi !== -1) return 1;
+      return a.intl_price_usd - b.intl_price_usd;
+    });
+
+  // Sort bundled packages: popular_package_slugs first, then remainder in original order
   const sortedPackages = [...intlPackages].sort((a, b) => {
     const ai = city.popular_package_slugs.indexOf(a.slug);
     const bi = city.popular_package_slugs.indexOf(b.slug);
@@ -75,5 +101,5 @@ export default async function Page({
     return ai - bi;
   });
 
-  return <IntlCityPage city={city} packages={sortedPackages} />;
+  return <IntlCityPage city={city} packages={sortedPackages} treks={trekPackages} />;
 }

@@ -46,9 +46,12 @@ export interface IntlPackage {
   hero_tagline: string;
 }
 
+export type TrekPackage = IntlPackage;
+
 interface Props {
   city: IntlCity;
   packages: IntlPackage[];
+  treks: TrekPackage[];
 }
 
 const WA_NUMBER = '919873897652';
@@ -62,12 +65,15 @@ const ALL_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep
 const DIFFICULTY_COLORS: Record<string, { bg: string; color: string }> = {
   Easy: { bg: 'rgba(34,197,94,0.18)', color: '#4ade80' },
   Moderate: { bg: 'rgba(234,179,8,0.18)', color: '#fbbf24' },
+  'Easy to Moderate': { bg: 'rgba(234,179,8,0.18)', color: '#fbbf24' },
   'Easy–Moderate': { bg: 'rgba(234,179,8,0.18)', color: '#fbbf24' },
+  'Moderate–Difficult': { bg: 'rgba(249,115,22,0.18)', color: '#fb923c' },
   Challenging: { bg: 'rgba(249,115,22,0.18)', color: '#fb923c' },
+  Difficult: { bg: 'rgba(239,68,68,0.18)', color: '#f87171' },
   Hard: { bg: 'rgba(239,68,68,0.18)', color: '#f87171' },
 };
 
-export default function IntlCityPage({ city, packages }: Props) {
+export default function IntlCityPage({ city, packages, treks }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const heroWaText = `Hello! I'm from ${city.name} and interested in India trek packages. Please share details and available dates.`;
@@ -169,7 +175,7 @@ export default function IntlCityPage({ city, packages }: Props) {
             <span className="city-name-gold">from {city.name}</span>
           </h1>
           <p className="city-hero-sub">
-            {city.flight_hours_to_delhi}h flight · {city.visa_type} for {city.nationality} citizens · Private guide &amp; SUV · From <strong>$820/person</strong>
+            {city.flight_hours_to_delhi}h flight · {city.visa_type} for {city.nationality} citizens · Private guide &amp; SUV · Treks from <strong>$80/person</strong>
           </p>
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
             <WaLink
@@ -179,8 +185,8 @@ export default function IntlCityPage({ city, packages }: Props) {
             >
               📲 WhatsApp from {city.name}
             </WaLink>
-            <a href="#packages" className="btn btn-outline" style={{ borderRadius: 50, padding: '12px 26px', fontSize: '0.95rem' }}>
-              Explore Packages ↓
+            <a href="#treks" className="btn btn-outline" style={{ borderRadius: 50, padding: '12px 26px', fontSize: '0.95rem' }}>
+              Browse Treks ↓
             </a>
           </div>
         </div>
@@ -196,7 +202,7 @@ export default function IntlCityPage({ city, packages }: Props) {
             <span style={{ color: 'var(--border2)' }}>|</span>
             <span>📅 Best: <strong style={{ color: '#fff' }}>{city.best_travel_months.slice(0, 3).join(', ')}</strong></span>
             <span style={{ color: 'var(--border2)' }}>|</span>
-            <span>💰 From <strong style={{ color: 'var(--gold2)' }}>$820</strong> · {city.currency_symbol}{localPrice(820).toLocaleString()}</span>
+            <span>💰 Treks from <strong style={{ color: 'var(--gold2)' }}>$80</strong> · {city.currency_symbol}{localPrice(80).toLocaleString()}</span>
           </div>
         </div>
       </div>
@@ -311,14 +317,74 @@ export default function IntlCityPage({ city, packages }: Props) {
         </div>
       </section>
 
-      {/* ── PACKAGES ──────────────────────────────────────────────────── */}
-      <section id="packages" className="city-section city-section-dark">
+      {/* ── HIMALAYAN TREKS ───────────────────────────────────────────── */}
+      <section id="treks" className="city-section city-section-dark">
         <div className="container">
           <h2 className="section-title-left light">
-            {city.flag} India Trek Packages for {city.nationality} Travelers
+            🏔️ Himalayan Trek Packages from {city.name}
           </h2>
           <p className="section-sub-left light">
-            Private transport · 3-star hotels · English ITMB guide · 24/7 WhatsApp support · All-inclusive
+            {treks.length} treks available · {city.flight_hours_to_delhi}h to Delhi · Private transport to trailhead · ITMB-certified guide included
+          </p>
+          <div className="pkg-grid">
+            {treks.map((trek) => {
+              const isPopular = city.popular_package_slugs.includes(trek.slug);
+              const trekWaText = `Hello! I'm from ${city.name} and interested in the "${trek.name}". Please share dates and availability.`;
+              const trekWaLink = buildWaLink(trekWaText);
+              const localAmt = localPrice(trek.intl_price_usd);
+              const diff = DIFFICULTY_COLORS[trek.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
+
+              return (
+                <div key={trek.slug} className="pkg-card" style={isPopular ? { borderColor: 'var(--gold)', boxShadow: '0 0 0 1px rgba(201,146,61,0.25), 0 20px 60px rgba(0,0,0,.5)' } : {}}>
+                  {(isPopular || trek.tag) && (
+                    <div className="pkg-tag" style={isPopular ? {} : { background: 'var(--card3)', color: 'var(--gold2)', border: '1px solid var(--border2)' }}>
+                      {isPopular ? `Popular from ${city.name}` : trek.tag}
+                    </div>
+                  )}
+                  <div className="pkg-img" style={{ backgroundImage: `url('${trek.hero_image}')` }} />
+                  <div className="pkg-body">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                      <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>
+                        {trek.difficulty}
+                      </span>
+                      <span className="pkg-dur">{trek.duration}</span>
+                    </div>
+                    <div className="pkg-name">{trek.name}</div>
+                    <div className="pkg-route">{trek.destinations_short}</div>
+                    <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{trek.hero_tagline}</p>
+                    <div className="pkg-price-block">
+                      <span className="price-primary">${trek.intl_price_usd}</span>
+                      <span className="price-suffix">/person</span>
+                      <span className="price-inr-ref">≈ {city.currency_symbol}{localAmt.toLocaleString()} · all-inclusive from Delhi</span>
+                    </div>
+                    <div className="pkg-btns">
+                      <WaLink
+                        href={trekWaLink}
+                        label={`intl_city_trek_${city.slug}_${trek.slug}`}
+                        className="btn btn-wa"
+                      >
+                        📲 WhatsApp for Quote
+                      </WaLink>
+                      <Link href={`/packages/${trek.slug}/`} className="btn btn-outline-gold">
+                        View Trek
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── CURATED MULTI-DAY TOURS ───────────────────────────────────── */}
+      <section id="packages" className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">
+            {city.flag} Curated Multi-Day India Tours
+          </h2>
+          <p className="section-sub-left">
+            All-inclusive packages designed for {city.nationality} travelers — flights from {city.name} + India hotels + guide + transport
           </p>
           <div className="pkg-grid">
             {packages.map((pkg) => {
