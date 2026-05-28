@@ -6,13 +6,13 @@ import type { IntlCity, IntlPackage } from '@/components/IntlCityPage';
 export const metadata: Metadata = {
   title: 'International India Trek Packages | Himalayan Tours for Global Travelers | Junegiri Yatra',
   description:
-    'Premium Himalayan trek packages for international travelers. 10-15 day private tours from $820/person. English guide, 3-star hotels, airport transfers. Trusted by travelers from 30+ countries.',
+    'Premium Himalayan trek packages for international travelers. 10-15 day private tours from $2,000/person. English guide, 3-star hotels, airport transfers. Trusted by travelers from 30+ countries.',
   alternates: {
     canonical: 'https://junegiriyatra.com/international/',
   },
   openGraph: {
     title: 'International India Trek Packages | Junegiri Yatra',
-    description: 'Himalayan treks for global travelers. From $820/person. Private transport, English guide, 3-star hotels.',
+    description: 'Himalayan treks for global travelers. From $2,000/person. Private transport, English guide, 3-star hotels.',
     url: 'https://junegiriyatra.com/international/',
     siteName: 'Junegiri Yatra',
     locale: 'en_US',
@@ -133,7 +133,7 @@ export default function InternationalHubPage() {
         description:
           'Haridwar-based Himalayan trek specialists offering private tours for international travelers. Trusted by guests from 30+ countries since 2017.',
         areaServed: 'Worldwide',
-        priceRange: '$820–$2,500',
+        priceRange: '$2,000–$3,500',
       },
       {
         '@type': 'FAQPage',
@@ -174,7 +174,7 @@ export default function InternationalHubPage() {
               <span className="text-amber-400">We Handle Everything Else.</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              10–15 day private Himalayan tours for international travelers. English guide, private transport, 3-star hotels, airport transfer, visa guidance. From <strong className="text-amber-400">$820/person</strong>.
+              10–15 day private Himalayan tours for international travelers. English guide, private transport, 3-star hotels, airport transfer, visa guidance. From <strong className="text-amber-400">$2,000/person</strong>.
             </p>
             <div className="flex flex-wrap gap-4">
               <a
@@ -244,7 +244,7 @@ export default function InternationalHubPage() {
             Our International Trek Packages
           </h2>
           <p className="text-slate-400 mb-10">
-            Curated for 10–15 day holidays. All-inclusive from $820/person.
+            Curated for 10–15 day holidays. All-inclusive from $2,000/person.
           </p>
           {intlPackages.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

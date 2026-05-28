@@ -223,12 +223,12 @@ const NAV: NavEntry[] = [
         {
           heading: 'India Trek Packages for Travellers',
           items: [
-            { icon: '🏔️', label: 'Himalayan Spirit 10D', sub: 'Rishikesh · Kedarkantha · Valley camp · from $820', href: '/international/himalayan-spirit-10d/', badge: 'Bestseller' },
-            { icon: '🧘', label: 'Yoga & Chopta Trek 10D', sub: 'Rishikesh Yoga + Tungnath temple · from $890', href: '/international/yoga-chopta-trek-10d/', badge: 'Wellness' },
-            { icon: '🌸', label: 'Sacred India Circuit 12D', sub: 'Agra · Kedarnath · Haridwar Ganga Aarti · from $1,080', href: '/international/sacred-india-circuit-12d/', badge: 'Spiritual' },
-            { icon: '🌼', label: 'Valley of Flowers Grand Tour 14D', sub: 'Taj Mahal · Valley of Flowers · Jaipur · from $1,300', href: '/international/valley-of-flowers-grand-tour-14d/', badge: 'Premium' },
-            { icon: '🏕️', label: 'Himalayan Village Trail 12D', sub: 'Kasol · Triund · McLeod Ganj · Amritsar · from $870', href: '/international/himalayan-village-trail-12d/' },
-            { icon: '🗻', label: 'Ultimate Himalayan Expedition 15D', sub: 'Har Ki Dun · Kasol · Mussoorie · Amritsar · from $1,480', href: '/international/ultimate-himalayan-expedition-15d/', badge: 'Epic' },
+            { icon: '🏔️', label: 'Himalayan Spirit 10D', sub: 'Rishikesh · Kedarkantha · Valley camp · from $2,000', href: '/international/himalayan-spirit-10d/', badge: 'Bestseller' },
+            { icon: '🧘', label: 'Yoga & Chopta Trek 10D', sub: 'Rishikesh Yoga + Tungnath temple · from $2,200', href: '/international/yoga-chopta-trek-10d/', badge: 'Wellness' },
+            { icon: '🌸', label: 'Sacred India Circuit 12D', sub: 'Agra · Kedarnath · Haridwar Ganga Aarti · from $2,600', href: '/international/sacred-india-circuit-12d/', badge: 'Spiritual' },
+            { icon: '🌼', label: 'Valley of Flowers Grand Tour 14D', sub: 'Taj Mahal · Valley of Flowers · Jaipur · from $2,900', href: '/international/valley-of-flowers-grand-tour-14d/', badge: 'Premium' },
+            { icon: '🏕️', label: 'Himalayan Village Trail 12D', sub: 'Kasol · Triund · McLeod Ganj · Amritsar · from $2,400', href: '/international/himalayan-village-trail-12d/' },
+            { icon: '🗻', label: 'Ultimate Himalayan Expedition 15D', sub: 'Har Ki Dun · Kasol · Mussoorie · Amritsar · from $3,200', href: '/international/ultimate-himalayan-expedition-15d/', badge: 'Epic' },
           ],
         },
         {
@@ -246,7 +246,7 @@ const NAV: NavEntry[] = [
         image: '/images/trek_snow_peak.webp',
         badge: '🌍 For International Travellers',
         title: 'Himalayan Spirit 10-Day Trek',
-        price: 'From $820 / person',
+        price: 'From $2,000 / person',
         href: '/international/himalayan-spirit-10d/',
         waText: 'Hello! I am an international traveller interested in the Himalayan Spirit 10-Day package',
       },

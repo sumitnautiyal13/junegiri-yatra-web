@@ -120,7 +120,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
       {
         '@type': 'TouristTrip',
         name: `India Trek Packages from ${city.name}`,
-        description: `Premium Himalayan trek packages for travelers from ${city.name}, ${city.country}. ${city.flight_hours_to_delhi}h flight to Delhi. ${city.visa_type} for ${city.nationality} citizens. From $820/person.`,
+        description: `Premium Himalayan trek packages for travelers from ${city.name}, ${city.country}. ${city.flight_hours_to_delhi}h flight to Delhi. ${city.visa_type} for ${city.nationality} citizens. From $2,000/person.`,
         touristType: 'Adventure travelers',
         provider: {
           '@type': 'TravelAgency',
@@ -128,7 +128,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
           url: 'https://junegiriyatra.com',
           telephone: `+${WA_NUMBER}`,
         },
-        offers: { '@type': 'Offer', price: '820', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
+        offers: { '@type': 'Offer', price: '2000', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
       },
       {
         '@type': 'FAQPage',

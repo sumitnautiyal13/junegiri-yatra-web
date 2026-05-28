@@ -5,7 +5,7 @@
     "duration": "10 Days / 9 Nights",
     "tag": "Best Seller",
     "difficulty": "Moderate",
-    "intl_price_usd": 820,
+    "intl_price_usd": 2000,
     "hero_image": "/images/kedarkantha_summit.webp",
     "destinations_short": "Delhi · Rishikesh · Kedarkantha · Haridwar",
     "hero_tagline": "Yoga at sunrise in Rishikesh, summit at 12,500 ft, Ganga Aarti at dusk.",
@@ -18,7 +18,15 @@
       "Private Innova Crysta — no shared transport",
       "ITMB-certified English-speaking mountain guide"
     ],
-    "route_stops": ["Delhi", "Rishikesh", "Sankri (Kedarkantha Base)", "Juda Ka Talab Camp", "Kedarkantha Summit", "Haridwar", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Rishikesh",
+      "Sankri (Kedarkantha Base)",
+      "Juda Ka Talab Camp",
+      "Kedarkantha Summit",
+      "Haridwar",
+      "Delhi"
+    ],
     "itinerary": [
       {
         "day": "Day 1",
@@ -95,22 +103,68 @@
       "Tips for guide and driver"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 960, "note": "Private vehicle, single room occupancy" },
-      { "label": "2 Travelers", "usd": 900, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 860, "note": "Per person — sweet spot pricing" },
-      { "label": "Group 5–8", "usd": 820, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 960,
+        "note": "Private vehicle, single room occupancy"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 900,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 860,
+        "note": "Per person — sweet spot pricing"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 820,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "What fitness level is required for Kedarkantha?", "a": "Moderate fitness. You should be comfortable walking 4-6 hours per day on uneven terrain. No prior trekking experience is required, but regular walking or gym workouts in the 4-6 weeks before the trek is recommended." },
-      { "q": "What is the best time of year for this package?", "a": "October-November for clear skies and autumn colours. January-March for deep snow and white landscapes. April-May for spring flowers. June-September is monsoon — trek is closed." },
-      { "q": "Is the trek safe for solo female travelers?", "a": "Yes. Our guides are trained, the trail is well-marked, and we have a safety protocol for all trekkers. Many solo female international travelers have done this trek with us without any issues." },
-      { "q": "What is the highest altitude on this trek?", "a": "Kedarkantha summit is at 12,500 ft (3,810 m). Base camp is at 11,250 ft. Altitude sickness is uncommon but we carry a full medical kit and acclimatize properly on Day 4." },
-      { "q": "Can I extend this package?", "a": "Yes — popular extensions include Har Ki Dun Trek (+5 days), Varanasi (+3 days), or Taj Mahal day trip from Delhi. WhatsApp us for a custom itinerary." }
+      {
+        "q": "What fitness level is required for Kedarkantha?",
+        "a": "Moderate fitness. You should be comfortable walking 4-6 hours per day on uneven terrain. No prior trekking experience is required, but regular walking or gym workouts in the 4-6 weeks before the trek is recommended."
+      },
+      {
+        "q": "What is the best time of year for this package?",
+        "a": "October-November for clear skies and autumn colours. January-March for deep snow and white landscapes. April-May for spring flowers. June-September is monsoon — trek is closed."
+      },
+      {
+        "q": "Is the trek safe for solo female travelers?",
+        "a": "Yes. Our guides are trained, the trail is well-marked, and we have a safety protocol for all trekkers. Many solo female international travelers have done this trek with us without any issues."
+      },
+      {
+        "q": "What is the highest altitude on this trek?",
+        "a": "Kedarkantha summit is at 12,500 ft (3,810 m). Base camp is at 11,250 ft. Altitude sickness is uncommon but we carry a full medical kit and acclimatize properly on Day 4."
+      },
+      {
+        "q": "Can I extend this package?",
+        "a": "Yes — popular extensions include Har Ki Dun Trek (+5 days), Varanasi (+3 days), or Taj Mahal day trip from Delhi. WhatsApp us for a custom itinerary."
+      }
     ],
     "testimonials": [
-      { "quote": "The Kedarkantha summit was the single most breathtaking moment of my life. Junegiri's organisation was flawless — private car, great guide, no hidden costs. I'll be booking the 15-day trek next year.", "author": "James T.", "location": "London, UK", "flag": "🇬🇧" },
-      { "quote": "I was nervous about solo trekking in India. Our guide Arun was knowledgeable, funny, and kept us safe throughout. The Ganga Aarti on the last evening was magical.", "author": "Nina K.", "location": "Amsterdam, Netherlands", "flag": "🇳🇱" },
-      { "quote": "Did this with my partner for our anniversary. Perfectly balanced — yoga and culture first, then the wild Himalayas. Worth every dollar.", "author": "Mark & Sarah D.", "location": "Sydney, Australia", "flag": "🇦🇺" }
+      {
+        "quote": "The Kedarkantha summit was the single most breathtaking moment of my life. Junegiri's organisation was flawless — private car, great guide, no hidden costs. I'll be booking the 15-day trek next year.",
+        "author": "James T.",
+        "location": "London, UK",
+        "flag": "🇬🇧"
+      },
+      {
+        "quote": "I was nervous about solo trekking in India. Our guide Arun was knowledgeable, funny, and kept us safe throughout. The Ganga Aarti on the last evening was magical.",
+        "author": "Nina K.",
+        "location": "Amsterdam, Netherlands",
+        "flag": "🇳🇱"
+      },
+      {
+        "quote": "Did this with my partner for our anniversary. Perfectly balanced — yoga and culture first, then the wild Himalayas. Worth every dollar.",
+        "author": "Mark & Sarah D.",
+        "location": "Sydney, Australia",
+        "flag": "🇦🇺"
+      }
     ],
     "guide_name": "Arun Singh",
     "guide_credentials": "ITMB Certified Mountain Guide, 12 years experience, Kedarkantha specialist",
@@ -122,7 +176,7 @@
     "duration": "10 Days / 9 Nights",
     "tag": "Wellness Pick",
     "difficulty": "Moderate",
-    "intl_price_usd": 890,
+    "intl_price_usd": 2200,
     "hero_image": "/images/chopta_tungnath.webp",
     "destinations_short": "Delhi · Rishikesh · Chopta · Tungnath · Haridwar",
     "hero_tagline": "Four days of deep Rishikesh yoga, then the world's highest Shiva temple at 13,000 ft.",
@@ -135,18 +189,66 @@
       "Chopta meadows — rhododendron and pine at 8,000 ft",
       "Ganga Aarti at Haridwar — India's most sacred river ritual"
     ],
-    "route_stops": ["Delhi", "Rishikesh", "Chopta", "Tungnath Temple", "Chandrashila Summit", "Haridwar", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Rishikesh",
+      "Chopta",
+      "Tungnath Temple",
+      "Chandrashila Summit",
+      "Haridwar",
+      "Delhi"
+    ],
     "itinerary": [
-      { "day": "Day 1", "title": "Arrive Delhi — Transfer to Rishikesh", "desc": "Arrive at Delhi airport, private transfer to Rishikesh (6 hours). Check in, orientation walk along the Ganges. Rest." },
-      { "day": "Day 2", "title": "Rishikesh Yoga Day 1 — Foundations", "desc": "Morning yoga and pranayama (breathing) at sunrise with certified instructor. Afternoon: Beatles Ashram visit, Ayurveda introduction session. Evening Ganga Aarti at Triveni Ghat." },
-      { "day": "Day 3", "title": "Rishikesh Yoga Day 2 — Deepening", "desc": "Morning yoga and meditation session. Afternoon: White-water rafting on the Ganges (Grade II-III rapids, 16 km). Evening: Ashram tour — Ram Jhula, Parmarth Niketan, local spiritual culture." },
-      { "day": "Day 4", "title": "Rishikesh Yoga Day 3 — Integration", "desc": "Morning yoga and nidra (sleep meditation). Afternoon cooking class — learn to make a full Himalayan dal-sabzi meal. Evening: Laxman Jhula walk, café time, journaling." },
-      { "day": "Day 5", "title": "Drive Rishikesh to Chopta (Ukhimath route)", "desc": "Scenic 5-6 hour drive through Devprayag, Rudraprayag, and Ukhimath to Chopta at 8,000 ft. The road passes three sacred river confluences. Check into camp. Trek briefing and early rest." },
-      { "day": "Day 6", "title": "Acclimatization — Chopta Meadows Walk", "desc": "Rest day at Chopta. Short 3 km meadow walk through rhododendron and buransh forest at 8,000-9,000 ft. Views of Kedarnath, Chaukhamba, and the Garhwal range on clear days. Equipment check and briefing." },
-      { "day": "Day 7", "title": "Trek — Tungnath Temple (12,073 ft) + Chandrashila Summit (13,123 ft)", "desc": "Pre-dawn start at 4 AM from Chopta. Trek 3.5 km to Tungnath — world's highest Shiva temple, believed to be 1,000+ years old. Continue 1 km to Chandrashila summit at 13,123 ft. 270-degree views: Kedarnath, Chaukhamba, Nanda Devi, Trishul, Bandarpunch all visible on clear days. Descend back to Chopta. Celebration dinner at camp." },
-      { "day": "Day 8", "title": "Drive Chopta to Haridwar", "desc": "Morning drive through the scenic Kedarnath Wildlife Sanctuary back to Haridwar (approx. 5-6 hours). Check in, rest, explore the ghats." },
-      { "day": "Day 9", "title": "Haridwar — Ganga Aarti, Har Ki Pauri", "desc": "Morning visit to Mansa Devi Temple (cable car). Evening Ganga Aarti at Har Ki Pauri — the most sacred of all Ganga Aartis, attended by thousands. Farewell dinner." },
-      { "day": "Day 10", "title": "Haridwar to Delhi — Departure", "desc": "Private transfer to Delhi airport (5 hours). Drop at your terminal. Trip ends." }
+      {
+        "day": "Day 1",
+        "title": "Arrive Delhi — Transfer to Rishikesh",
+        "desc": "Arrive at Delhi airport, private transfer to Rishikesh (6 hours). Check in, orientation walk along the Ganges. Rest."
+      },
+      {
+        "day": "Day 2",
+        "title": "Rishikesh Yoga Day 1 — Foundations",
+        "desc": "Morning yoga and pranayama (breathing) at sunrise with certified instructor. Afternoon: Beatles Ashram visit, Ayurveda introduction session. Evening Ganga Aarti at Triveni Ghat."
+      },
+      {
+        "day": "Day 3",
+        "title": "Rishikesh Yoga Day 2 — Deepening",
+        "desc": "Morning yoga and meditation session. Afternoon: White-water rafting on the Ganges (Grade II-III rapids, 16 km). Evening: Ashram tour — Ram Jhula, Parmarth Niketan, local spiritual culture."
+      },
+      {
+        "day": "Day 4",
+        "title": "Rishikesh Yoga Day 3 — Integration",
+        "desc": "Morning yoga and nidra (sleep meditation). Afternoon cooking class — learn to make a full Himalayan dal-sabzi meal. Evening: Laxman Jhula walk, café time, journaling."
+      },
+      {
+        "day": "Day 5",
+        "title": "Drive Rishikesh to Chopta (Ukhimath route)",
+        "desc": "Scenic 5-6 hour drive through Devprayag, Rudraprayag, and Ukhimath to Chopta at 8,000 ft. The road passes three sacred river confluences. Check into camp. Trek briefing and early rest."
+      },
+      {
+        "day": "Day 6",
+        "title": "Acclimatization — Chopta Meadows Walk",
+        "desc": "Rest day at Chopta. Short 3 km meadow walk through rhododendron and buransh forest at 8,000-9,000 ft. Views of Kedarnath, Chaukhamba, and the Garhwal range on clear days. Equipment check and briefing."
+      },
+      {
+        "day": "Day 7",
+        "title": "Trek — Tungnath Temple (12,073 ft) + Chandrashila Summit (13,123 ft)",
+        "desc": "Pre-dawn start at 4 AM from Chopta. Trek 3.5 km to Tungnath — world's highest Shiva temple, believed to be 1,000+ years old. Continue 1 km to Chandrashila summit at 13,123 ft. 270-degree views: Kedarnath, Chaukhamba, Nanda Devi, Trishul, Bandarpunch all visible on clear days. Descend back to Chopta. Celebration dinner at camp."
+      },
+      {
+        "day": "Day 8",
+        "title": "Drive Chopta to Haridwar",
+        "desc": "Morning drive through the scenic Kedarnath Wildlife Sanctuary back to Haridwar (approx. 5-6 hours). Check in, rest, explore the ghats."
+      },
+      {
+        "day": "Day 9",
+        "title": "Haridwar — Ganga Aarti, Har Ki Pauri",
+        "desc": "Morning visit to Mansa Devi Temple (cable car). Evening Ganga Aarti at Har Ki Pauri — the most sacred of all Ganga Aartis, attended by thousands. Farewell dinner."
+      },
+      {
+        "day": "Day 10",
+        "title": "Haridwar to Delhi — Departure",
+        "desc": "Private transfer to Delhi airport (5 hours). Drop at your terminal. Trip ends."
+      }
     ],
     "included": [
       "Airport pickup and drop (Delhi)",
@@ -171,21 +273,64 @@
       "Personal shopping"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 1055, "note": "Single room, private vehicle" },
-      { "label": "2 Travelers", "usd": 990, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 940, "note": "Per person" },
-      { "label": "Group 5–8", "usd": 890, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 1055,
+        "note": "Single room, private vehicle"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 990,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 940,
+        "note": "Per person"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 890,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "Do I need prior yoga experience?", "a": "No. Our yoga sessions are adapted for all levels from complete beginners to experienced practitioners. The instructor will personalise sessions based on your level." },
-      { "q": "What is Chandrashila's altitude and is it hard?", "a": "Chandrashila is at 13,123 ft (4,000 m). The trek from Chopta is 4.5 km one way with 1,500 ft elevation gain. Moderate difficulty — suitable for fit beginners with proper acclimatization." },
-      { "q": "Is rafting mandatory?", "a": "No — rafting is included in the itinerary but optional. Let us know in advance if you prefer to skip it and we can arrange an alternative (Ayurveda massage, additional yoga session, etc.)." },
-      { "q": "What's the best season for this package?", "a": "March-April (spring flowers, clear views), September-November (post-monsoon clarity, best for summit views). December-February is snow season — beautiful but cold." }
+      {
+        "q": "Do I need prior yoga experience?",
+        "a": "No. Our yoga sessions are adapted for all levels from complete beginners to experienced practitioners. The instructor will personalise sessions based on your level."
+      },
+      {
+        "q": "What is Chandrashila's altitude and is it hard?",
+        "a": "Chandrashila is at 13,123 ft (4,000 m). The trek from Chopta is 4.5 km one way with 1,500 ft elevation gain. Moderate difficulty — suitable for fit beginners with proper acclimatization."
+      },
+      {
+        "q": "Is rafting mandatory?",
+        "a": "No — rafting is included in the itinerary but optional. Let us know in advance if you prefer to skip it and we can arrange an alternative (Ayurveda massage, additional yoga session, etc.)."
+      },
+      {
+        "q": "What's the best season for this package?",
+        "a": "March-April (spring flowers, clear views), September-November (post-monsoon clarity, best for summit views). December-February is snow season — beautiful but cold."
+      }
     ],
     "testimonials": [
-      { "quote": "This was the perfect India trip. Four days of yoga changed my relationship with stress, then the Chandrashila summit was the physical equivalent. Junegiri planned every detail perfectly.", "author": "Claire B.", "location": "Paris, France", "flag": "🇫🇷" },
-      { "quote": "I'm a yoga teacher and this package exceeded my expectations. The Rishikesh instructors were world-class. The Chopta meadows at dawn are incomparable.", "author": "Maria V.", "location": "Amsterdam, Netherlands", "flag": "🇳🇱" },
-      { "quote": "The cooking class was an unexpected highlight — I'm now making dal back home every week. The summit views were worth every step.", "author": "Tom R.", "location": "San Francisco, USA", "flag": "🇺🇸" }
+      {
+        "quote": "This was the perfect India trip. Four days of yoga changed my relationship with stress, then the Chandrashila summit was the physical equivalent. Junegiri planned every detail perfectly.",
+        "author": "Claire B.",
+        "location": "Paris, France",
+        "flag": "🇫🇷"
+      },
+      {
+        "quote": "I'm a yoga teacher and this package exceeded my expectations. The Rishikesh instructors were world-class. The Chopta meadows at dawn are incomparable.",
+        "author": "Maria V.",
+        "location": "Amsterdam, Netherlands",
+        "flag": "🇳🇱"
+      },
+      {
+        "quote": "The cooking class was an unexpected highlight — I'm now making dal back home every week. The summit views were worth every step.",
+        "author": "Tom R.",
+        "location": "San Francisco, USA",
+        "flag": "🇺🇸"
+      }
     ],
     "guide_name": "Deepak Rawat",
     "guide_credentials": "ITMB Certified, Yoga retreat specialist, 9 years leading international groups in Garhwal",
@@ -197,7 +342,7 @@
     "duration": "12 Days / 11 Nights",
     "tag": "Israel Favourite",
     "difficulty": "Easy–Moderate",
-    "intl_price_usd": 870,
+    "intl_price_usd": 2400,
     "hero_image": "/images/kasol_parvati.webp",
     "destinations_short": "Delhi · Kasol · Kheerganga · Triund · McLeod Ganj · Amritsar",
     "hero_tagline": "Parvati Valley hot springs, Triund at midnight, Dalai Lama's temple, Golden Temple at sunrise.",
@@ -210,20 +355,76 @@
       "Wagah Border ceremony — India-Pakistan flag-lowering at sunset",
       "Kasol village — the Himachal backpacker capital"
     ],
-    "route_stops": ["Delhi", "Kasol", "Kheerganga", "McLeod Ganj", "Triund Camp", "Amritsar", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Kasol",
+      "Kheerganga",
+      "McLeod Ganj",
+      "Triund Camp",
+      "Amritsar",
+      "Delhi"
+    ],
     "itinerary": [
-      { "day": "Day 1", "title": "Arrive Delhi", "desc": "Arrive at IGI Airport. Private transfer to hotel in Delhi. Rest and recover from journey. Welcome dinner at a local restaurant." },
-      { "day": "Day 2", "title": "Delhi to Kasol (via Chandigarh)", "desc": "Early morning private transfer to Kasol via Chandigarh and Bhuntar (approx. 9-10 hours). Stop in Bhuntar for lunch. Arrive in Kasol by evening — the Parvati River views from the guesthouse are spectacular. Local Israeli restaurants and Israeli bakeries nearby." },
-      { "day": "Day 3", "title": "Kasol — Parvati Valley Exploration", "desc": "Free morning in Kasol — cafes, local market, Parvati River walk. Afternoon short hike to Chalal village (30 min walk) — a quieter, more local experience. Evening back in Kasol. Plenty of options for vegetarian food, hummus, and falafel." },
-      { "day": "Day 4", "title": "Trek — Kasol to Kheerganga (9,711 ft)", "desc": "Trek from Nakthan to Kheerganga — 12 km, approx. 5-6 hours through dense forests and Himalayan villages. Arrive at Kheerganga's famous natural hot spring pool at 9,711 ft. Soak in the hot spring as the sun sets over the mountains. Overnight at camp." },
-      { "day": "Day 5", "title": "Kheerganga — Morning Soak + Descent to Kasol", "desc": "Morning dip in the hot springs at sunrise — one of the most peaceful moments of the trip. Descend back through the forest to Nakthan, then transfer to Bhuntar. Drive to McLeod Ganj (approx. 4 hours). Check in." },
-      { "day": "Day 6", "title": "McLeod Ganj — Dalai Lama Complex + Tibetan Culture", "desc": "Morning visit to the Dalai Lama Complex — Tsuglagkhang Temple, Tibet Museum, and the monastery where you may attend a public teaching if scheduled. Afternoon: Tibetan market, momos lunch, Namgyal Monastery. Evening: local cafe culture in McLeod Ganj." },
-      { "day": "Day 7", "title": "Trek — McLeod Ganj to Triund (9,350 ft)", "desc": "Trek from McLeod Ganj to Triund — 9 km, approx. 4 hours. The Dhauladhar range towers above you throughout the climb. Arrive at Triund meadow at 9,350 ft. Sunset over the plains of Punjab on one side, Dhauladhar peaks on the other. Overnight at fixed camp." },
-      { "day": "Day 8", "title": "Triund Sunrise + Drive to Amritsar", "desc": "Wake at 5 AM for the Triund sunrise — one of the finest in Himachal Pradesh. Descent after breakfast, then drive to Amritsar via Pathankot (approx. 4-5 hours). Check in at hotel in Amritsar." },
-      { "day": "Day 9", "title": "Amritsar — Golden Temple at Dawn + Wagah Border", "desc": "5 AM visit to Harmandir Sahib (Golden Temple) before crowds arrive — the reflection of gold on the sacred pool in early morning light is unforgettable. Free time for the Amritsar langar (world's largest free community kitchen — 100,000 meals/day). Evening: Wagah Border ceremony — India-Pakistan flag lowering with marching soldiers and enormous crowd energy." },
-      { "day": "Day 10", "title": "Amritsar — Jallianwala Bagh + Partition Museum", "desc": "Morning visit to Jallianwala Bagh (historic site of 1919 massacre). The Partition Museum — the world's first museum dedicated to the Partition of India — is essential for understanding modern South Asia. Afternoon at leisure. Overnight in Amritsar." },
-      { "day": "Day 11", "title": "Amritsar to Delhi (Train or Flight)", "desc": "Transfer to Amritsar station or airport. Train to Delhi (5.5 hours) or flight (1.5 hours) depending on your preference. Afternoon/evening in Delhi — Connaught Place, India Gate, or rest before final departure." },
-      { "day": "Day 12", "title": "Delhi — Departure", "desc": "Private transfer to IGI Airport. Trip ends. Optional: add a Taj Mahal day trip from Delhi if your flight departs late." }
+      {
+        "day": "Day 1",
+        "title": "Arrive Delhi",
+        "desc": "Arrive at IGI Airport. Private transfer to hotel in Delhi. Rest and recover from journey. Welcome dinner at a local restaurant."
+      },
+      {
+        "day": "Day 2",
+        "title": "Delhi to Kasol (via Chandigarh)",
+        "desc": "Early morning private transfer to Kasol via Chandigarh and Bhuntar (approx. 9-10 hours). Stop in Bhuntar for lunch. Arrive in Kasol by evening — the Parvati River views from the guesthouse are spectacular. Local Israeli restaurants and Israeli bakeries nearby."
+      },
+      {
+        "day": "Day 3",
+        "title": "Kasol — Parvati Valley Exploration",
+        "desc": "Free morning in Kasol — cafes, local market, Parvati River walk. Afternoon short hike to Chalal village (30 min walk) — a quieter, more local experience. Evening back in Kasol. Plenty of options for vegetarian food, hummus, and falafel."
+      },
+      {
+        "day": "Day 4",
+        "title": "Trek — Kasol to Kheerganga (9,711 ft)",
+        "desc": "Trek from Nakthan to Kheerganga — 12 km, approx. 5-6 hours through dense forests and Himalayan villages. Arrive at Kheerganga's famous natural hot spring pool at 9,711 ft. Soak in the hot spring as the sun sets over the mountains. Overnight at camp."
+      },
+      {
+        "day": "Day 5",
+        "title": "Kheerganga — Morning Soak + Descent to Kasol",
+        "desc": "Morning dip in the hot springs at sunrise — one of the most peaceful moments of the trip. Descend back through the forest to Nakthan, then transfer to Bhuntar. Drive to McLeod Ganj (approx. 4 hours). Check in."
+      },
+      {
+        "day": "Day 6",
+        "title": "McLeod Ganj — Dalai Lama Complex + Tibetan Culture",
+        "desc": "Morning visit to the Dalai Lama Complex — Tsuglagkhang Temple, Tibet Museum, and the monastery where you may attend a public teaching if scheduled. Afternoon: Tibetan market, momos lunch, Namgyal Monastery. Evening: local cafe culture in McLeod Ganj."
+      },
+      {
+        "day": "Day 7",
+        "title": "Trek — McLeod Ganj to Triund (9,350 ft)",
+        "desc": "Trek from McLeod Ganj to Triund — 9 km, approx. 4 hours. The Dhauladhar range towers above you throughout the climb. Arrive at Triund meadow at 9,350 ft. Sunset over the plains of Punjab on one side, Dhauladhar peaks on the other. Overnight at fixed camp."
+      },
+      {
+        "day": "Day 8",
+        "title": "Triund Sunrise + Drive to Amritsar",
+        "desc": "Wake at 5 AM for the Triund sunrise — one of the finest in Himachal Pradesh. Descent after breakfast, then drive to Amritsar via Pathankot (approx. 4-5 hours). Check in at hotel in Amritsar."
+      },
+      {
+        "day": "Day 9",
+        "title": "Amritsar — Golden Temple at Dawn + Wagah Border",
+        "desc": "5 AM visit to Harmandir Sahib (Golden Temple) before crowds arrive — the reflection of gold on the sacred pool in early morning light is unforgettable. Free time for the Amritsar langar (world's largest free community kitchen — 100,000 meals/day). Evening: Wagah Border ceremony — India-Pakistan flag lowering with marching soldiers and enormous crowd energy."
+      },
+      {
+        "day": "Day 10",
+        "title": "Amritsar — Jallianwala Bagh + Partition Museum",
+        "desc": "Morning visit to Jallianwala Bagh (historic site of 1919 massacre). The Partition Museum — the world's first museum dedicated to the Partition of India — is essential for understanding modern South Asia. Afternoon at leisure. Overnight in Amritsar."
+      },
+      {
+        "day": "Day 11",
+        "title": "Amritsar to Delhi (Train or Flight)",
+        "desc": "Transfer to Amritsar station or airport. Train to Delhi (5.5 hours) or flight (1.5 hours) depending on your preference. Afternoon/evening in Delhi — Connaught Place, India Gate, or rest before final departure."
+      },
+      {
+        "day": "Day 12",
+        "title": "Delhi — Departure",
+        "desc": "Private transfer to IGI Airport. Trip ends. Optional: add a Taj Mahal day trip from Delhi if your flight departs late."
+      }
     ],
     "included": [
       "Airport pickup and drop (Delhi)",
@@ -246,21 +447,64 @@
       "Amritsar-Delhi train/flight ticket (approx. $20-60 depending on mode)"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 1020, "note": "Single room, private vehicle" },
-      { "label": "2 Travelers", "usd": 960, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 915, "note": "Per person" },
-      { "label": "Group 5–8", "usd": 870, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 1020,
+        "note": "Single room, private vehicle"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 960,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 915,
+        "note": "Per person"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 870,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "Is this route popular with Israeli travelers?", "a": "Yes — this is the most iconic route for Israeli post-army travelers. Kasol has been a hub for Israeli backpackers for 20+ years. Hebrew menus, Israeli bakeries, and a strong community atmosphere." },
-      { "q": "What is the trek difficulty?", "a": "Easy-Moderate. Kheerganga is a straightforward forest trail (12 km, 5 hours) and Triund is a popular day trek (9 km, 4 hours). No technical sections. Suitable for fit beginners." },
-      { "q": "Are vegetarian options available throughout?", "a": "Yes — Kasol and McLeod Ganj are among the best vegetarian dining destinations in India. Tibetan cuisine in Dharamsala and Israeli-influenced cafes in Kasol make it easy." },
-      { "q": "Can I extend to Spiti Valley from McLeod Ganj?", "a": "Yes — Spiti Valley is accessible from McLeod Ganj in 1-2 days. We offer a 3-5 day Spiti extension. WhatsApp us to discuss." }
+      {
+        "q": "Is this route popular with Israeli travelers?",
+        "a": "Yes — this is the most iconic route for Israeli post-army travelers. Kasol has been a hub for Israeli backpackers for 20+ years. Hebrew menus, Israeli bakeries, and a strong community atmosphere."
+      },
+      {
+        "q": "What is the trek difficulty?",
+        "a": "Easy-Moderate. Kheerganga is a straightforward forest trail (12 km, 5 hours) and Triund is a popular day trek (9 km, 4 hours). No technical sections. Suitable for fit beginners."
+      },
+      {
+        "q": "Are vegetarian options available throughout?",
+        "a": "Yes — Kasol and McLeod Ganj are among the best vegetarian dining destinations in India. Tibetan cuisine in Dharamsala and Israeli-influenced cafes in Kasol make it easy."
+      },
+      {
+        "q": "Can I extend to Spiti Valley from McLeod Ganj?",
+        "a": "Yes — Spiti Valley is accessible from McLeod Ganj in 1-2 days. We offer a 3-5 day Spiti extension. WhatsApp us to discuss."
+      }
     ],
     "testimonials": [
-      { "quote": "This is the perfect India route. Kasol, Kheerganga, Triund, Amritsar — everything an Israeli wants. Junegiri added the organisation we needed. Highly recommend for groups.", "author": "Yael R.", "location": "Tel Aviv, Israel", "flag": "🇮🇱" },
-      { "quote": "The Golden Temple at 5 AM is one of the most beautiful things I have ever witnessed. The whole trip was extraordinary. Private car made everything so much more comfortable.", "author": "Anna S.", "location": "Berlin, Germany", "flag": "🇩🇪" },
-      { "quote": "I came for Kasol, stayed for everything else. The Wagah Border was electric. Junegiri's guide knew every corner of every place we visited.", "author": "Ben T.", "location": "Melbourne, Australia", "flag": "🇦🇺" }
+      {
+        "quote": "This is the perfect India route. Kasol, Kheerganga, Triund, Amritsar — everything an Israeli wants. Junegiri added the organisation we needed. Highly recommend for groups.",
+        "author": "Yael R.",
+        "location": "Tel Aviv, Israel",
+        "flag": "🇮🇱"
+      },
+      {
+        "quote": "The Golden Temple at 5 AM is one of the most beautiful things I have ever witnessed. The whole trip was extraordinary. Private car made everything so much more comfortable.",
+        "author": "Anna S.",
+        "location": "Berlin, Germany",
+        "flag": "🇩🇪"
+      },
+      {
+        "quote": "I came for Kasol, stayed for everything else. The Wagah Border was electric. Junegiri's guide knew every corner of every place we visited.",
+        "author": "Ben T.",
+        "location": "Melbourne, Australia",
+        "flag": "🇦🇺"
+      }
     ],
     "guide_name": "Vikram Negi",
     "guide_credentials": "ITMB Certified, Himachal Pradesh specialist, 11 years leading international groups",
@@ -272,7 +516,7 @@
     "duration": "12 Days / 11 Nights",
     "tag": "UK Favourite",
     "difficulty": "Easy–Moderate",
-    "intl_price_usd": 1080,
+    "intl_price_usd": 2600,
     "hero_image": "/images/kedarnath_temple.webp",
     "destinations_short": "Delhi · Agra · Rishikesh · Kedarnath · Haridwar",
     "hero_tagline": "Taj Mahal at sunrise, Ganga Aarti at dusk, and Kedarnath's ancient temple at 11,755 ft.",
@@ -285,20 +529,77 @@
       "Agra Fort and Mehtab Bagh (Taj Mahal from the other side of the river)",
       "Kedarnath shrine — the spiritual heart of the Himalayas"
     ],
-    "route_stops": ["Delhi", "Agra", "Rishikesh", "Sonprayag", "Kedarnath (11,755 ft)", "Guptkashi", "Haridwar", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Agra",
+      "Rishikesh",
+      "Sonprayag",
+      "Kedarnath (11,755 ft)",
+      "Guptkashi",
+      "Haridwar",
+      "Delhi"
+    ],
     "itinerary": [
-      { "day": "Day 1", "title": "Arrive Delhi — Old Delhi Immersion", "desc": "Arrive at IGI Airport. Private transfer to central Delhi. Afternoon orientation walk: Jama Masjid, Old Delhi lanes, Chandni Chowk street food. Welcome dinner. Rest." },
-      { "day": "Day 2", "title": "Agra — Taj Mahal Sunrise + Agra Fort", "desc": "Pre-dawn drive to Agra (2.5 hours). Arrive at the Taj Mahal gates as they open at sunrise — the most beautiful light of the day. Private guide explains the love story of Shah Jahan and Mumtaz. Afternoon: Agra Fort (Red Fort), Mehtab Bagh sunset view of the Taj. Evening drive to Rishikesh (6 hours)." },
-      { "day": "Day 3", "title": "Rishikesh — Yoga, Beatles Ashram", "desc": "Arrive in Rishikesh by morning. Morning yoga session with local instructor. Visit the Beatles Ashram — walk the meditation cells where Lennon, McCartney, Harrison, and Starr wrote 48 songs. Evening Ganga Aarti at Triveni Ghat." },
-      { "day": "Day 4", "title": "Rishikesh — Rafting, Laxman Jhula", "desc": "Morning white-water rafting on Grade II-III Ganges rapids (16 km). Afternoon: explore Laxman Jhula, Ram Jhula, ashram hopping. Late afternoon drive to Sonprayag (5-6 hours) — the staging point for Kedarnath." },
-      { "day": "Day 5", "title": "Rest Day at Sonprayag / Gaurikund (6,562 ft)", "desc": "Acclimatize at Gaurikund. Visit the ancient Gauri Temple and hot spring. Trek briefing. Early dinner and rest before the big trek day." },
-      { "day": "Day 6", "title": "Kedarnath Trek — Gaurikund to Kedarnath (11,755 ft)", "desc": "The most important day. Trek from Gaurikund (6,562 ft) to Kedarnath Temple (11,755 ft) — 16 km, 5,000 ft elevation gain, approx. 6-7 hours. Pony and helicopter options available (at extra cost). Arrive at Kedarnath — the ancient stone temple surrounded by Himalayan peaks. Evening puja (prayer ceremony). Overnight at lodge near the temple." },
-      { "day": "Day 7", "title": "Kedarnath — Dawn Puja + Descent", "desc": "5 AM — attend the pre-dawn abhishek (sacred ritual bathing of the Shivalinga) inside the Kedarnath Temple — one of the most sacred rituals in Hinduism. Trek descent (16 km down, approx. 5 hours). Drive to Guptkashi or Rudraprayag for overnight." },
-      { "day": "Day 8", "title": "Drive to Haridwar", "desc": "Scenic drive back through the Alaknanda and Ganga valleys to Haridwar (approx. 5-6 hours). Stop at Devprayag — the confluence of Alaknanda and Bhagirathi rivers where the Ganga officially begins. Check into hotel in Haridwar." },
-      { "day": "Day 9", "title": "Haridwar — Ganga Aarti + Ghats", "desc": "Morning visit to Har Ki Pauri ghats — witness pilgrims bathing at sunrise. Mansa Devi Temple (cable car). Afternoon at leisure. Evening: the legendary Ganga Aarti at Har Ki Pauri — bells, fire, priests, and 10,000 devotees on the river steps." },
-      { "day": "Day 10", "title": "Haridwar to Delhi", "desc": "Private transfer to Delhi (5 hours). Afternoon at leisure — Humayun's Tomb, India Gate, Lodhi Gardens, or shopping at Janpath/Dilli Haat." },
-      { "day": "Day 11", "title": "Delhi — Cultural Day", "desc": "Morning: Qutub Minar (12th century UNESCO monument), Mehrauli Archaeological Park. Afternoon: Raj Ghat (Gandhi memorial), National Museum (optional). Farewell dinner — North Indian cuisine." },
-      { "day": "Day 12", "title": "Departure from Delhi", "desc": "Private transfer to IGI Airport. Trip ends." }
+      {
+        "day": "Day 1",
+        "title": "Arrive Delhi — Old Delhi Immersion",
+        "desc": "Arrive at IGI Airport. Private transfer to central Delhi. Afternoon orientation walk: Jama Masjid, Old Delhi lanes, Chandni Chowk street food. Welcome dinner. Rest."
+      },
+      {
+        "day": "Day 2",
+        "title": "Agra — Taj Mahal Sunrise + Agra Fort",
+        "desc": "Pre-dawn drive to Agra (2.5 hours). Arrive at the Taj Mahal gates as they open at sunrise — the most beautiful light of the day. Private guide explains the love story of Shah Jahan and Mumtaz. Afternoon: Agra Fort (Red Fort), Mehtab Bagh sunset view of the Taj. Evening drive to Rishikesh (6 hours)."
+      },
+      {
+        "day": "Day 3",
+        "title": "Rishikesh — Yoga, Beatles Ashram",
+        "desc": "Arrive in Rishikesh by morning. Morning yoga session with local instructor. Visit the Beatles Ashram — walk the meditation cells where Lennon, McCartney, Harrison, and Starr wrote 48 songs. Evening Ganga Aarti at Triveni Ghat."
+      },
+      {
+        "day": "Day 4",
+        "title": "Rishikesh — Rafting, Laxman Jhula",
+        "desc": "Morning white-water rafting on Grade II-III Ganges rapids (16 km). Afternoon: explore Laxman Jhula, Ram Jhula, ashram hopping. Late afternoon drive to Sonprayag (5-6 hours) — the staging point for Kedarnath."
+      },
+      {
+        "day": "Day 5",
+        "title": "Rest Day at Sonprayag / Gaurikund (6,562 ft)",
+        "desc": "Acclimatize at Gaurikund. Visit the ancient Gauri Temple and hot spring. Trek briefing. Early dinner and rest before the big trek day."
+      },
+      {
+        "day": "Day 6",
+        "title": "Kedarnath Trek — Gaurikund to Kedarnath (11,755 ft)",
+        "desc": "The most important day. Trek from Gaurikund (6,562 ft) to Kedarnath Temple (11,755 ft) — 16 km, 5,000 ft elevation gain, approx. 6-7 hours. Pony and helicopter options available (at extra cost). Arrive at Kedarnath — the ancient stone temple surrounded by Himalayan peaks. Evening puja (prayer ceremony). Overnight at lodge near the temple."
+      },
+      {
+        "day": "Day 7",
+        "title": "Kedarnath — Dawn Puja + Descent",
+        "desc": "5 AM — attend the pre-dawn abhishek (sacred ritual bathing of the Shivalinga) inside the Kedarnath Temple — one of the most sacred rituals in Hinduism. Trek descent (16 km down, approx. 5 hours). Drive to Guptkashi or Rudraprayag for overnight."
+      },
+      {
+        "day": "Day 8",
+        "title": "Drive to Haridwar",
+        "desc": "Scenic drive back through the Alaknanda and Ganga valleys to Haridwar (approx. 5-6 hours). Stop at Devprayag — the confluence of Alaknanda and Bhagirathi rivers where the Ganga officially begins. Check into hotel in Haridwar."
+      },
+      {
+        "day": "Day 9",
+        "title": "Haridwar — Ganga Aarti + Ghats",
+        "desc": "Morning visit to Har Ki Pauri ghats — witness pilgrims bathing at sunrise. Mansa Devi Temple (cable car). Afternoon at leisure. Evening: the legendary Ganga Aarti at Har Ki Pauri — bells, fire, priests, and 10,000 devotees on the river steps."
+      },
+      {
+        "day": "Day 10",
+        "title": "Haridwar to Delhi",
+        "desc": "Private transfer to Delhi (5 hours). Afternoon at leisure — Humayun's Tomb, India Gate, Lodhi Gardens, or shopping at Janpath/Dilli Haat."
+      },
+      {
+        "day": "Day 11",
+        "title": "Delhi — Cultural Day",
+        "desc": "Morning: Qutub Minar (12th century UNESCO monument), Mehrauli Archaeological Park. Afternoon: Raj Ghat (Gandhi memorial), National Museum (optional). Farewell dinner — North Indian cuisine."
+      },
+      {
+        "day": "Day 12",
+        "title": "Departure from Delhi",
+        "desc": "Private transfer to IGI Airport. Trip ends."
+      }
     ],
     "included": [
       "Airport pickup and drop (Delhi)",
@@ -323,21 +624,64 @@
       "Pony for Kedarnath trek (optional, ₹2,500 one way)"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 1320, "note": "Single room, private vehicle, solo guide" },
-      { "label": "2 Travelers", "usd": 1230, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 1150, "note": "Per person" },
-      { "label": "Group 5–8", "usd": 1080, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 1320,
+        "note": "Single room, private vehicle, solo guide"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 1230,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 1150,
+        "note": "Per person"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 1080,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "Is the Kedarnath trek hard?", "a": "It's 16 km uphill with 5,000 ft elevation gain — the hardest physical day of this package. However, ponies and helicopters are available as alternatives. Good fitness and acclimatization on Day 5 make it manageable for most travelers." },
-      { "q": "When is Kedarnath Temple open?", "a": "Kedarnath Temple opens in late April/early May and closes in November (exact dates follow the Hindu calendar). Best visiting period: May-June and September-October. July-August is monsoon — trek is open but wet." },
-      { "q": "Can I see the Taj Mahal on the same trip as Kedarnath?", "a": "Yes — this package is specifically designed to combine both. You see the Taj Mahal on Day 2 en route to Rishikesh, then do the Kedarnath pilgrimage on Days 6-7." },
-      { "q": "Is this a religious trip or can non-Hindus visit Kedarnath?", "a": "Non-Hindus are warmly welcomed at Kedarnath. The temple is open to all. Many international travelers describe it as a deeply moving spiritual experience regardless of their own faith." }
+      {
+        "q": "Is the Kedarnath trek hard?",
+        "a": "It's 16 km uphill with 5,000 ft elevation gain — the hardest physical day of this package. However, ponies and helicopters are available as alternatives. Good fitness and acclimatization on Day 5 make it manageable for most travelers."
+      },
+      {
+        "q": "When is Kedarnath Temple open?",
+        "a": "Kedarnath Temple opens in late April/early May and closes in November (exact dates follow the Hindu calendar). Best visiting period: May-June and September-October. July-August is monsoon — trek is open but wet."
+      },
+      {
+        "q": "Can I see the Taj Mahal on the same trip as Kedarnath?",
+        "a": "Yes — this package is specifically designed to combine both. You see the Taj Mahal on Day 2 en route to Rishikesh, then do the Kedarnath pilgrimage on Days 6-7."
+      },
+      {
+        "q": "Is this a religious trip or can non-Hindus visit Kedarnath?",
+        "a": "Non-Hindus are warmly welcomed at Kedarnath. The temple is open to all. Many international travelers describe it as a deeply moving spiritual experience regardless of their own faith."
+      }
     ],
     "testimonials": [
-      { "quote": "From the Taj Mahal at dawn to Kedarnath at 11,000 feet — this trip showed me more of India in 12 days than I could have imagined. The guide was extraordinary.", "author": "Rachel K.", "location": "London, UK", "flag": "🇬🇧" },
-      { "quote": "The dawn puja at Kedarnath was one of the most moving experiences of my life. I'm not religious, but standing in a 7th-century stone temple as the priests chant at 5 AM — it gets you.", "author": "David M.", "location": "Toronto, Canada", "flag": "🇨🇦" },
-      { "quote": "Perfectly organised. The Taj Mahal guide was superb — told us things no guidebook mentions. Everything flowed seamlessly.", "author": "Emma & Paul T.", "location": "Sydney, Australia", "flag": "🇦🇺" }
+      {
+        "quote": "From the Taj Mahal at dawn to Kedarnath at 11,000 feet — this trip showed me more of India in 12 days than I could have imagined. The guide was extraordinary.",
+        "author": "Rachel K.",
+        "location": "London, UK",
+        "flag": "🇬🇧"
+      },
+      {
+        "quote": "The dawn puja at Kedarnath was one of the most moving experiences of my life. I'm not religious, but standing in a 7th-century stone temple as the priests chant at 5 AM — it gets you.",
+        "author": "David M.",
+        "location": "Toronto, Canada",
+        "flag": "🇨🇦"
+      },
+      {
+        "quote": "Perfectly organised. The Taj Mahal guide was superb — told us things no guidebook mentions. Everything flowed seamlessly.",
+        "author": "Emma & Paul T.",
+        "location": "Sydney, Australia",
+        "flag": "🇦🇺"
+      }
     ],
     "guide_name": "Suresh Bhatt",
     "guide_credentials": "ITMB Certified, Heritage guide (Delhi/Agra), Kedarnath yatra specialist, 15 years",
@@ -349,7 +693,7 @@
     "duration": "14 Days / 13 Nights",
     "tag": "Premium",
     "difficulty": "Moderate",
-    "intl_price_usd": 1300,
+    "intl_price_usd": 2900,
     "hero_image": "/images/valley_of_flowers.webp",
     "destinations_short": "Delhi · Agra · Rishikesh · Valley of Flowers · Haridwar · Jaipur",
     "hero_tagline": "The Taj Mahal, a valley of 500 Himalayan wildflower species, Ganga Aarti, and Rajasthan's Pink City.",
@@ -362,22 +706,89 @@
       "Jaipur — Amber Fort, City Palace, bazaars of Rajasthan",
       "Haridwar Ganga Aarti — India's most sacred river ritual"
     ],
-    "route_stops": ["Delhi", "Agra", "Rishikesh", "Joshimath", "Govindghat", "Valley of Flowers", "Hemkund Sahib", "Haridwar", "Jaipur", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Agra",
+      "Rishikesh",
+      "Joshimath",
+      "Govindghat",
+      "Valley of Flowers",
+      "Hemkund Sahib",
+      "Haridwar",
+      "Jaipur",
+      "Delhi"
+    ],
     "itinerary": [
-      { "day": "Day 1", "title": "Arrive Delhi", "desc": "Private airport pickup, transfer to hotel, welcome briefing." },
-      { "day": "Day 2", "title": "Agra — Taj Mahal Sunrise", "desc": "Drive to Agra at dawn (2.5 hours). Taj Mahal as gates open. Private guide, Agra Fort, Mehtab Bagh. Evening drive to Rishikesh." },
-      { "day": "Day 3", "title": "Rishikesh — Yoga + Beatles Ashram", "desc": "Yoga at sunrise. Beatles Ashram. Evening Ganga Aarti at Triveni Ghat." },
-      { "day": "Day 4", "title": "Rishikesh — Rafting + Drive to Joshimath", "desc": "Morning rafting on Ganges. Post-lunch drive to Joshimath (8-9 hours, 6,150 ft). Arrival, check in, rest." },
-      { "day": "Day 5", "title": "Joshimath — Acclimatization + Govindghat", "desc": "Rest at Joshimath. Short walk to Narasimha Temple. Afternoon drive to Govindghat — the trailhead for Valley of Flowers. Trek briefing. Early rest." },
-      { "day": "Day 6", "title": "Trek Day 1 — Govindghat to Ghangaria (10,800 ft)", "desc": "Trek from Govindghat to Ghangaria — 13 km through Bhyundar Valley, following the Pushpawati river. Arrive at Ghangaria, the base camp for both Valley of Flowers and Hemkund Sahib. Overnight at guesthouse." },
-      { "day": "Day 7", "title": "Valley of Flowers — Day Visit (12,300 ft)", "desc": "Day hike into the Valley of Flowers UNESCO World Heritage Site — 3 km from Ghangaria. The valley stretches 8 km and blooms with Brahmakamal, Himalayan blue poppy, orchids, and hundreds of wildflower species between July-September. Return to Ghangaria." },
-      { "day": "Day 8", "title": "Hemkund Sahib — Sacred Lake (15,190 ft)", "desc": "Trek to Hemkund Sahib — a sacred Sikh lake at 15,190 ft surrounded by seven snow peaks. The Gurdwara Sahib here is one of the holiest Sikh shrines. The altitude is demanding (2,400 ft gain from Ghangaria) — rewarded by an extraordinary experience. Return to Ghangaria." },
-      { "day": "Day 9", "title": "Trek Back — Ghangaria to Govindghat + Drive to Haridwar", "desc": "Trek down to Govindghat (13 km). Drive to Haridwar (approx. 7 hours). Check into hotel, rest." },
-      { "day": "Day 10", "title": "Haridwar — Ganga Aarti + Ghats", "desc": "Morning at ghats, Mansa Devi Temple. Evening Ganga Aarti at Har Ki Pauri." },
-      { "day": "Day 11", "title": "Haridwar to Jaipur (via Delhi or direct)", "desc": "Transfer to Delhi, then evening train to Jaipur (Pink City Express — 4.5 hours, scenic). Arrive Jaipur, check in." },
-      { "day": "Day 12", "title": "Jaipur — Amber Fort + City Palace", "desc": "Morning: Amber Fort (elephant ride optional), Jal Mahal. Afternoon: City Palace complex, Jantar Mantar (UNESCO astronomical observatory). Evening: Johari Bazaar for gemstones and textiles." },
-      { "day": "Day 13", "title": "Jaipur — Hawa Mahal + Local Life", "desc": "Hawa Mahal (Palace of Winds). Visit a blue pottery workshop. Local market for block-print textiles, Rajasthani crafts. Farewell Rajasthani thali dinner." },
-      { "day": "Day 14", "title": "Jaipur to Delhi — Departure", "desc": "Train or drive to Delhi (4.5 hours). Transfer to IGI Airport. Trip ends." }
+      {
+        "day": "Day 1",
+        "title": "Arrive Delhi",
+        "desc": "Private airport pickup, transfer to hotel, welcome briefing."
+      },
+      {
+        "day": "Day 2",
+        "title": "Agra — Taj Mahal Sunrise",
+        "desc": "Drive to Agra at dawn (2.5 hours). Taj Mahal as gates open. Private guide, Agra Fort, Mehtab Bagh. Evening drive to Rishikesh."
+      },
+      {
+        "day": "Day 3",
+        "title": "Rishikesh — Yoga + Beatles Ashram",
+        "desc": "Yoga at sunrise. Beatles Ashram. Evening Ganga Aarti at Triveni Ghat."
+      },
+      {
+        "day": "Day 4",
+        "title": "Rishikesh — Rafting + Drive to Joshimath",
+        "desc": "Morning rafting on Ganges. Post-lunch drive to Joshimath (8-9 hours, 6,150 ft). Arrival, check in, rest."
+      },
+      {
+        "day": "Day 5",
+        "title": "Joshimath — Acclimatization + Govindghat",
+        "desc": "Rest at Joshimath. Short walk to Narasimha Temple. Afternoon drive to Govindghat — the trailhead for Valley of Flowers. Trek briefing. Early rest."
+      },
+      {
+        "day": "Day 6",
+        "title": "Trek Day 1 — Govindghat to Ghangaria (10,800 ft)",
+        "desc": "Trek from Govindghat to Ghangaria — 13 km through Bhyundar Valley, following the Pushpawati river. Arrive at Ghangaria, the base camp for both Valley of Flowers and Hemkund Sahib. Overnight at guesthouse."
+      },
+      {
+        "day": "Day 7",
+        "title": "Valley of Flowers — Day Visit (12,300 ft)",
+        "desc": "Day hike into the Valley of Flowers UNESCO World Heritage Site — 3 km from Ghangaria. The valley stretches 8 km and blooms with Brahmakamal, Himalayan blue poppy, orchids, and hundreds of wildflower species between July-September. Return to Ghangaria."
+      },
+      {
+        "day": "Day 8",
+        "title": "Hemkund Sahib — Sacred Lake (15,190 ft)",
+        "desc": "Trek to Hemkund Sahib — a sacred Sikh lake at 15,190 ft surrounded by seven snow peaks. The Gurdwara Sahib here is one of the holiest Sikh shrines. The altitude is demanding (2,400 ft gain from Ghangaria) — rewarded by an extraordinary experience. Return to Ghangaria."
+      },
+      {
+        "day": "Day 9",
+        "title": "Trek Back — Ghangaria to Govindghat + Drive to Haridwar",
+        "desc": "Trek down to Govindghat (13 km). Drive to Haridwar (approx. 7 hours). Check into hotel, rest."
+      },
+      {
+        "day": "Day 10",
+        "title": "Haridwar — Ganga Aarti + Ghats",
+        "desc": "Morning at ghats, Mansa Devi Temple. Evening Ganga Aarti at Har Ki Pauri."
+      },
+      {
+        "day": "Day 11",
+        "title": "Haridwar to Jaipur (via Delhi or direct)",
+        "desc": "Transfer to Delhi, then evening train to Jaipur (Pink City Express — 4.5 hours, scenic). Arrive Jaipur, check in."
+      },
+      {
+        "day": "Day 12",
+        "title": "Jaipur — Amber Fort + City Palace",
+        "desc": "Morning: Amber Fort (elephant ride optional), Jal Mahal. Afternoon: City Palace complex, Jantar Mantar (UNESCO astronomical observatory). Evening: Johari Bazaar for gemstones and textiles."
+      },
+      {
+        "day": "Day 13",
+        "title": "Jaipur — Hawa Mahal + Local Life",
+        "desc": "Hawa Mahal (Palace of Winds). Visit a blue pottery workshop. Local market for block-print textiles, Rajasthani crafts. Farewell Rajasthani thali dinner."
+      },
+      {
+        "day": "Day 14",
+        "title": "Jaipur to Delhi — Departure",
+        "desc": "Train or drive to Delhi (4.5 hours). Transfer to IGI Airport. Trip ends."
+      }
     ],
     "included": [
       "Airport pickup and drop (Delhi)",
@@ -404,20 +815,60 @@
       "Amber Fort elephant ride (optional, ₹1,100)"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 1620, "note": "Single room, private vehicle, solo guide" },
-      { "label": "2 Travelers", "usd": 1500, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 1400, "note": "Per person" },
-      { "label": "Group 5–8", "usd": 1300, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 1620,
+        "note": "Single room, private vehicle, solo guide"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 1500,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 1400,
+        "note": "Per person"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 1300,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "When does the Valley of Flowers bloom?", "a": "Peak bloom: mid-July to mid-August. The valley is accessible June through October, but the floral display is most spectacular in July-August. September has fewer flowers but clearer skies." },
-      { "q": "Is Hemkund Sahib at 15,190 ft safe?", "a": "Yes with proper acclimatization. Day 5 at Joshimath (6,150 ft) and Day 6 at Ghangaria (10,800 ft) are essential acclimatization steps. Altitude sickness medication (Diamox) is available and we carry a full medical kit." },
-      { "q": "Can I skip Jaipur and add more trek time?", "a": "Yes — we can swap Jaipur for an extra day at the Valley of Flowers, a side trek to Kuari Pass, or Varanasi. WhatsApp us for a custom version." }
+      {
+        "q": "When does the Valley of Flowers bloom?",
+        "a": "Peak bloom: mid-July to mid-August. The valley is accessible June through October, but the floral display is most spectacular in July-August. September has fewer flowers but clearer skies."
+      },
+      {
+        "q": "Is Hemkund Sahib at 15,190 ft safe?",
+        "a": "Yes with proper acclimatization. Day 5 at Joshimath (6,150 ft) and Day 6 at Ghangaria (10,800 ft) are essential acclimatization steps. Altitude sickness medication (Diamox) is available and we carry a full medical kit."
+      },
+      {
+        "q": "Can I skip Jaipur and add more trek time?",
+        "a": "Yes — we can swap Jaipur for an extra day at the Valley of Flowers, a side trek to Kuari Pass, or Varanasi. WhatsApp us for a custom version."
+      }
     ],
     "testimonials": [
-      { "quote": "I've been to 47 countries. The Valley of Flowers is the single most beautiful place I have ever seen. And Junegiri made the entire 14-day journey feel effortless.", "author": "Jonathan F.", "location": "New York, USA", "flag": "🇺🇸" },
-      { "quote": "Taj Mahal to Hemkund Sahib in two weeks — India in its full glory. The guide who took us through the valley knew every flower by name. Extraordinary experience.", "author": "Charlotte W.", "location": "London, UK", "flag": "🇬🇧" },
-      { "quote": "The Jaipur addition was perfect. We went from Himalayan altitude to Rajput forts in 48 hours. India is overwhelming in the best possible way.", "author": "Lars E.", "location": "Stockholm, Sweden", "flag": "🇸🇪" }
+      {
+        "quote": "I've been to 47 countries. The Valley of Flowers is the single most beautiful place I have ever seen. And Junegiri made the entire 14-day journey feel effortless.",
+        "author": "Jonathan F.",
+        "location": "New York, USA",
+        "flag": "🇺🇸"
+      },
+      {
+        "quote": "Taj Mahal to Hemkund Sahib in two weeks — India in its full glory. The guide who took us through the valley knew every flower by name. Extraordinary experience.",
+        "author": "Charlotte W.",
+        "location": "London, UK",
+        "flag": "🇬🇧"
+      },
+      {
+        "quote": "The Jaipur addition was perfect. We went from Himalayan altitude to Rajput forts in 48 hours. India is overwhelming in the best possible way.",
+        "author": "Lars E.",
+        "location": "Stockholm, Sweden",
+        "flag": "🇸🇪"
+      }
     ],
     "guide_name": "Prakash Bisht",
     "guide_credentials": "ITMB Certified, Valley of Flowers specialist since 2008, 16 years guiding international groups",
@@ -429,7 +880,7 @@
     "duration": "15 Days / 14 Nights",
     "tag": "For Serious Trekkers",
     "difficulty": "Moderate–Hard",
-    "intl_price_usd": 1480,
+    "intl_price_usd": 3200,
     "hero_image": "/images/har_ki_dun.webp",
     "destinations_short": "Delhi · Rishikesh · Har Ki Dun · Mussoorie · Kasol · Amritsar",
     "hero_tagline": "15 days. Two states. Three Himalayan regions. The complete Indian adventure.",
@@ -442,23 +893,93 @@
       "Kasol and Parvati Valley — Himalayan backpacker haven",
       "Golden Temple Amritsar — most visited monument in India"
     ],
-    "route_stops": ["Delhi", "Rishikesh", "Sankri (Har Ki Dun base)", "Taluka", "Har Ki Dun Valley", "Mussoorie", "Kasol", "Amritsar", "Delhi"],
+    "route_stops": [
+      "Delhi",
+      "Rishikesh",
+      "Sankri (Har Ki Dun base)",
+      "Taluka",
+      "Har Ki Dun Valley",
+      "Mussoorie",
+      "Kasol",
+      "Amritsar",
+      "Delhi"
+    ],
     "itinerary": [
-      { "day": "Day 1", "title": "Arrive Delhi", "desc": "Private airport pickup. Transfer to hotel. Welcome briefing." },
-      { "day": "Day 2", "title": "Rishikesh — Yoga + Beatles Ashram", "desc": "Drive to Rishikesh (6 hours). Yoga at sunset. Beatles Ashram. Evening Ganga Aarti." },
-      { "day": "Day 3", "title": "Rishikesh — Rafting + Drive to Sankri", "desc": "Morning rafting. Post-lunch drive to Sankri (8 hours, 6,400 ft) — Har Ki Dun base." },
-      { "day": "Day 4", "title": "Acclimatization at Sankri", "desc": "Rest and short walk to Osla village. Trek briefing. Early rest." },
-      { "day": "Day 5", "title": "Trek Day 1 — Sankri to Taluka (7,480 ft)", "desc": "Trek from Sankri to Taluka — 7 km through apple orchards and terraced fields. Taluka is the last motorable point on the Har Ki Dun trail." },
-      { "day": "Day 6", "title": "Trek Day 2 — Taluka to Seema (8,800 ft)", "desc": "Trek along the Supin river through dense cedar, birch, and oak forest. Pass Gangad village — unchanged for centuries. 12 km, approx. 6 hours." },
-      { "day": "Day 7", "title": "Trek Day 3 — Seema to Har Ki Dun (11,680 ft)", "desc": "Final ascent to Har Ki Dun Valley — a hanging valley directly beneath Swargarohini. The Pandavas, according to Hindu mythology, ascended to heaven from this valley. Views of Swargarohini (20,722 ft) and Bandarpunch (20,154 ft). Camp overnight in the valley." },
-      { "day": "Day 8", "title": "Har Ki Dun — Rest and Exploration Day", "desc": "Day hike to Maninda Tal (optional, 4 km) or simply explore the valley — meadows, glacial streams, alpine birds. One of the most remote and peaceful places accessible without technical climbing." },
-      { "day": "Day 9", "title": "Return Trek — Har Ki Dun to Sankri", "desc": "Full return trek, often done in one day (descending is faster). 26 km over the two-day route, approx. 8 hours. Celebration dinner at Sankri." },
-      { "day": "Day 10", "title": "Drive Sankri to Mussoorie", "desc": "Drive from Sankri to Mussoorie (approx. 6-7 hours). Mussoorie sits at 6,588 ft — the Queen of Hill Stations, first established by the British in 1823. Check in, Mall Road evening walk." },
-      { "day": "Day 11", "title": "Mussoorie — Kempty Falls + Lal Tibba", "desc": "Morning: Kempty Falls (15 km from Mussoorie). Afternoon: Lal Tibba — the highest point in Mussoorie with telescope views of the Himalayan range. Cloud's End walk. Evening: Mall Road shopping — woolens, local honey." },
-      { "day": "Day 12", "title": "Drive Mussoorie to Kasol", "desc": "Long scenic drive via Chandigarh to Kasol in Parvati Valley (approx. 8-9 hours). Check in to guesthouse. Evening walk along the Parvati river." },
-      { "day": "Day 13", "title": "Kasol — Parvati Valley + Kheerganga Hike", "desc": "Morning exploration of Kasol, Chalal village, and the river. Afternoon short hike (4 km) toward Kheerganga forest trail or Nakthan. Israeli cafes, fusion food, local market. Overnight in Kasol." },
-      { "day": "Day 14", "title": "Kasol to Amritsar — Golden Temple", "desc": "Drive from Kasol to Amritsar via Pathankot (approx. 5 hours). Check in. Evening visit to the Golden Temple — illuminated at night, reflecting on the Amrit Sarovar. The langar (free kitchen) serves 100,000 meals a day. Wagah Border ceremony if timing allows." },
-      { "day": "Day 15", "title": "Amritsar to Delhi — Departure", "desc": "Morning Golden Temple visit at 5 AM for the most peaceful experience. Transfer to Amritsar airport or station → Delhi. Fly home." }
+      {
+        "day": "Day 1",
+        "title": "Arrive Delhi",
+        "desc": "Private airport pickup. Transfer to hotel. Welcome briefing."
+      },
+      {
+        "day": "Day 2",
+        "title": "Rishikesh — Yoga + Beatles Ashram",
+        "desc": "Drive to Rishikesh (6 hours). Yoga at sunset. Beatles Ashram. Evening Ganga Aarti."
+      },
+      {
+        "day": "Day 3",
+        "title": "Rishikesh — Rafting + Drive to Sankri",
+        "desc": "Morning rafting. Post-lunch drive to Sankri (8 hours, 6,400 ft) — Har Ki Dun base."
+      },
+      {
+        "day": "Day 4",
+        "title": "Acclimatization at Sankri",
+        "desc": "Rest and short walk to Osla village. Trek briefing. Early rest."
+      },
+      {
+        "day": "Day 5",
+        "title": "Trek Day 1 — Sankri to Taluka (7,480 ft)",
+        "desc": "Trek from Sankri to Taluka — 7 km through apple orchards and terraced fields. Taluka is the last motorable point on the Har Ki Dun trail."
+      },
+      {
+        "day": "Day 6",
+        "title": "Trek Day 2 — Taluka to Seema (8,800 ft)",
+        "desc": "Trek along the Supin river through dense cedar, birch, and oak forest. Pass Gangad village — unchanged for centuries. 12 km, approx. 6 hours."
+      },
+      {
+        "day": "Day 7",
+        "title": "Trek Day 3 — Seema to Har Ki Dun (11,680 ft)",
+        "desc": "Final ascent to Har Ki Dun Valley — a hanging valley directly beneath Swargarohini. The Pandavas, according to Hindu mythology, ascended to heaven from this valley. Views of Swargarohini (20,722 ft) and Bandarpunch (20,154 ft). Camp overnight in the valley."
+      },
+      {
+        "day": "Day 8",
+        "title": "Har Ki Dun — Rest and Exploration Day",
+        "desc": "Day hike to Maninda Tal (optional, 4 km) or simply explore the valley — meadows, glacial streams, alpine birds. One of the most remote and peaceful places accessible without technical climbing."
+      },
+      {
+        "day": "Day 9",
+        "title": "Return Trek — Har Ki Dun to Sankri",
+        "desc": "Full return trek, often done in one day (descending is faster). 26 km over the two-day route, approx. 8 hours. Celebration dinner at Sankri."
+      },
+      {
+        "day": "Day 10",
+        "title": "Drive Sankri to Mussoorie",
+        "desc": "Drive from Sankri to Mussoorie (approx. 6-7 hours). Mussoorie sits at 6,588 ft — the Queen of Hill Stations, first established by the British in 1823. Check in, Mall Road evening walk."
+      },
+      {
+        "day": "Day 11",
+        "title": "Mussoorie — Kempty Falls + Lal Tibba",
+        "desc": "Morning: Kempty Falls (15 km from Mussoorie). Afternoon: Lal Tibba — the highest point in Mussoorie with telescope views of the Himalayan range. Cloud's End walk. Evening: Mall Road shopping — woolens, local honey."
+      },
+      {
+        "day": "Day 12",
+        "title": "Drive Mussoorie to Kasol",
+        "desc": "Long scenic drive via Chandigarh to Kasol in Parvati Valley (approx. 8-9 hours). Check in to guesthouse. Evening walk along the Parvati river."
+      },
+      {
+        "day": "Day 13",
+        "title": "Kasol — Parvati Valley + Kheerganga Hike",
+        "desc": "Morning exploration of Kasol, Chalal village, and the river. Afternoon short hike (4 km) toward Kheerganga forest trail or Nakthan. Israeli cafes, fusion food, local market. Overnight in Kasol."
+      },
+      {
+        "day": "Day 14",
+        "title": "Kasol to Amritsar — Golden Temple",
+        "desc": "Drive from Kasol to Amritsar via Pathankot (approx. 5 hours). Check in. Evening visit to the Golden Temple — illuminated at night, reflecting on the Amrit Sarovar. The langar (free kitchen) serves 100,000 meals a day. Wagah Border ceremony if timing allows."
+      },
+      {
+        "day": "Day 15",
+        "title": "Amritsar to Delhi — Departure",
+        "desc": "Morning Golden Temple visit at 5 AM for the most peaceful experience. Transfer to Amritsar airport or station → Delhi. Fly home."
+      }
     ],
     "included": [
       "Airport pickup and drop (Delhi)",
@@ -482,20 +1003,60 @@
       "Porter (optional, ₹600/day)"
     ],
     "pricing": [
-      { "label": "Solo Traveler", "usd": 1860, "note": "Single room, private vehicle" },
-      { "label": "2 Travelers", "usd": 1720, "note": "Per person — double sharing" },
-      { "label": "Group 3–4", "usd": 1600, "note": "Per person" },
-      { "label": "Group 5–8", "usd": 1480, "note": "Per person — best value" }
+      {
+        "label": "Solo Traveler",
+        "usd": 1860,
+        "note": "Single room, private vehicle"
+      },
+      {
+        "label": "2 Travelers",
+        "usd": 1720,
+        "note": "Per person — double sharing"
+      },
+      {
+        "label": "Group 3–4",
+        "usd": 1600,
+        "note": "Per person"
+      },
+      {
+        "label": "Group 5–8",
+        "usd": 1480,
+        "note": "Per person — best value"
+      }
     ],
     "faq": [
-      { "q": "How hard is the Har Ki Dun Trek?", "a": "Moderate-Hard. Daily distances of 7-13 km on forest trails, max altitude 11,680 ft. The terrain is well-maintained and the forest section is beautiful, but Days 6-7 require sustained effort. Suitable for trekkers with some prior experience or good fitness." },
-      { "q": "Why is Har Ki Dun called the Valley of Gods?", "a": "According to Hindu mythology, the Pandavas (heroes of the Mahabharata) began their final ascent to heaven (Swargarohini peak) from this valley. Locals have worshipped this valley for thousands of years. It's one of the least-visited major treks in Uttarakhand despite its beauty." },
-      { "q": "Is 15 days too long for a first India trip?", "a": "This is actually an ideal length for experiencing multiple regions. Shorter trips leave you feeling you've rushed. 15 days gives time to slow down, adjust to India's pace, and actually absorb what you see." }
+      {
+        "q": "How hard is the Har Ki Dun Trek?",
+        "a": "Moderate-Hard. Daily distances of 7-13 km on forest trails, max altitude 11,680 ft. The terrain is well-maintained and the forest section is beautiful, but Days 6-7 require sustained effort. Suitable for trekkers with some prior experience or good fitness."
+      },
+      {
+        "q": "Why is Har Ki Dun called the Valley of Gods?",
+        "a": "According to Hindu mythology, the Pandavas (heroes of the Mahabharata) began their final ascent to heaven (Swargarohini peak) from this valley. Locals have worshipped this valley for thousands of years. It's one of the least-visited major treks in Uttarakhand despite its beauty."
+      },
+      {
+        "q": "Is 15 days too long for a first India trip?",
+        "a": "This is actually an ideal length for experiencing multiple regions. Shorter trips leave you feeling you've rushed. 15 days gives time to slow down, adjust to India's pace, and actually absorb what you see."
+      }
     ],
     "testimonials": [
-      { "quote": "The Har Ki Dun Valley is the most remote and beautiful place I've been in 20 years of trekking. Zero other tourists for two days. Just us, the guide, and Swargarohini.", "author": "Marcus B.", "location": "Berlin, Germany", "flag": "🇩🇪" },
-      { "quote": "15 days felt exactly right. We went from jungle trekking to hill stations to Himalayan cafes to the Golden Temple. India in full colour.", "author": "Sophie & Alex R.", "location": "Vancouver, Canada", "flag": "🇨🇦" },
-      { "quote": "Booked as a solo traveler via WhatsApp. The team added a second solo traveler to share costs, which worked perfectly. The guide was exceptional throughout all 15 days.", "author": "Ori L.", "location": "Tel Aviv, Israel", "flag": "🇮🇱" }
+      {
+        "quote": "The Har Ki Dun Valley is the most remote and beautiful place I've been in 20 years of trekking. Zero other tourists for two days. Just us, the guide, and Swargarohini.",
+        "author": "Marcus B.",
+        "location": "Berlin, Germany",
+        "flag": "🇩🇪"
+      },
+      {
+        "quote": "15 days felt exactly right. We went from jungle trekking to hill stations to Himalayan cafes to the Golden Temple. India in full colour.",
+        "author": "Sophie & Alex R.",
+        "location": "Vancouver, Canada",
+        "flag": "🇨🇦"
+      },
+      {
+        "quote": "Booked as a solo traveler via WhatsApp. The team added a second solo traveler to share costs, which worked perfectly. The guide was exceptional throughout all 15 days.",
+        "author": "Ori L.",
+        "location": "Tel Aviv, Israel",
+        "flag": "🇮🇱"
+      }
     ],
     "guide_name": "Ravi Kumar",
     "guide_credentials": "ITMB Certified, Har Ki Dun specialist, Wildlife guide certification, 14 years",

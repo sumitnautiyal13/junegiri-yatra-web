@@ -20,7 +20,7 @@ export async function generateMetadata({
     return { title: 'Not Found' };
   }
 
-  let minPrice = 820;
+  let minPrice = 2000;
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const pkgs: IntlPackage[] = require('../../../../../data/international-packages.json');
