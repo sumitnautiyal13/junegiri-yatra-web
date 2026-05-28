@@ -19,6 +19,8 @@ import packagesData from '../../data/packages.json';
 import hubsData from '../../data/hubs.json';
 import citiesData from '../../data/cities.json';
 import yogaData from '../../data/yoga-programs.json';
+import intlCitiesData from '../../data/international-cities.json';
+import intlPackagesData from '../../data/international-packages.json';
 
 let blogData: Array<{ slug: string; published: string }> = [];
 let comparisonsData: Array<{ slug: string }> = [];
@@ -128,6 +130,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Best time
   for (const d of bestTimeData) {
     urls.push({ url: `${BASE}/best-time/${d.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.7 });
+  }
+
+  // International hub page
+  urls.push({ url: `${BASE}/international/`, lastModified: NOW, changeFrequency: 'weekly', priority: 0.9 });
+
+  // International package detail pages (6 packages)
+  for (const p of intlPackagesData as Array<{ slug: string }>) {
+    urls.push({ url: `${BASE}/international/${p.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.85 });
+  }
+
+  // India trek packages from international city pages (40 cities)
+  urls.push({ url: `${BASE}/india-trek-packages/from/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.8 });
+  for (const c of intlCitiesData as Array<{ slug: string }>) {
+    urls.push({ url: `${BASE}/india-trek-packages/from/${c.slug}/`, lastModified: NOW, changeFrequency: 'monthly', priority: 0.75 });
   }
 
   // Yoga TTC pages

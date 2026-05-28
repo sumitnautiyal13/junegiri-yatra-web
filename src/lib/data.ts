@@ -2,6 +2,8 @@ import type { Package, Hub, City } from '@/types';
 import packagesData from '../../data/packages.json';
 import hubsData from '../../data/hubs.json';
 import citiesData from '../../data/cities.json';
+import intlCitiesData from '../../data/international-cities.json';
+import intlPackagesData from '../../data/international-packages.json';
 
 export function getAllPackages(): Package[] {
   return packagesData as Package[];
@@ -33,4 +35,26 @@ export function getAllCities(): City[] {
 
 export function getCityBySlug(slug: string): City | undefined {
   return (citiesData as City[]).find((c) => c.slug === slug);
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getAllIntlCities(): any[] {
+  return intlCitiesData as any[];
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getIntlCityBySlug(slug: string): any | undefined {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (intlCitiesData as any[]).find((c: any) => c.slug === slug);
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getAllIntlPackages(): any[] {
+  return intlPackagesData as any[];
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function getIntlPackageBySlug(slug: string): any | undefined {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (intlPackagesData as any[]).find((p: any) => p.slug === slug);
 }
