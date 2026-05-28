@@ -3,24 +3,43 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* ──────────────────────────────────────────────
-   DESIGN SYSTEM — Midnight Indigo × Sacred Gold
+   DESIGN SYSTEM — Himalayan Ember
+   Warm mountain charcoal × campfire orange
+   Inspired by the earthy tones of Uttarakhand
    ────────────────────────────────────────────── */
 :root {
-  --bg:      #07051A;
-  --card:    #0D0A26;
-  --card2:   #13102E;
-  --card3:   #181538;
-  --gold:    #C9923D;
-  --gold2:   #E8AA50;
-  --gold3:   #F5C96A;
+  /* Backgrounds — warm dark charcoal, not cold navy */
+  --bg:      #0C0A08;
+  --card:    #161210;
+  --card2:   #1E1A16;
+  --card3:   #26211C;
+
+  /* Primary accent — campfire orange (Camp In Himalayas #F39519) */
+  --gold:    #F39519;
+  --gold2:   #FFB347;
+  --gold3:   #FFCC6E;
+
+  /* Secondary accents */
   --saffron: #E05C00;
   --saffron2:#F07020;
+  --forest:  #2E7D32;
+  --forest2: #57BF6D;
+  --blue:    #114F78;
+  --blue2:   #1A6FA8;
+
+  /* WhatsApp */
   --wa:      #25D366;
-  --border:  rgba(201,146,61,0.15);
-  --border2: rgba(201,146,61,0.28);
-  --text:    rgba(255,248,238,0.88);
-  --muted:   rgba(255,248,238,0.48);
-  --muted2:  rgba(255,248,238,0.28);
+
+  /* Borders — orange-tinted */
+  --border:  rgba(243,149,25,0.14);
+  --border2: rgba(243,149,25,0.28);
+
+  /* Text — warm white */
+  --text:    rgba(255,248,238,0.90);
+  --muted:   rgba(235,220,200,0.52);
+  --muted2:  rgba(235,220,200,0.28);
+
+  /* Radius */
   --r:       14px;
   --r2:      20px;
 }
@@ -323,11 +342,11 @@ footer a:hover { color: var(--gold2); }
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--font-poppins), sans-serif;
   font-size: 12.5px; font-weight: 700;
-  color: #07051A;
+  color: #0C0A08;
   padding: 0 32px;
   letter-spacing: 1px;
 }
-.ticker-dot { width: 5px; height: 5px; background: rgba(7,5,26,0.35); border-radius: 50%; flex-shrink: 0; }
+.ticker-dot { width: 5px; height: 5px; background: rgba(12,10,8,0.35); border-radius: 50%; flex-shrink: 0; }
 @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 /* ── JOURNEY CARDS (Categories) ───────────── */
@@ -502,8 +521,42 @@ footer a:hover { color: var(--gold2); }
 .pkg-tab.active {
   background: linear-gradient(135deg, var(--gold), var(--gold2));
   border-color: transparent;
-  color: #07051A;
-  box-shadow: 0 4px 18px rgba(201,146,61,.38);
+  color: #0C0A08;
+  box-shadow: 0 4px 18px rgba(243,149,25,.38);
+}
+
+/* ── HOMEPAGE CATEGORY TABS (Pilgrimages / Treks / Adventures) ── */
+.hp-tabs {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  margin-bottom: 44px;
+  border-bottom: 2px solid var(--border);
+}
+.hp-tab {
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-poppins), sans-serif;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: all .22s;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+.hp-tab:hover { color: var(--gold2); }
+.hp-tab.active {
+  color: var(--gold2);
+  border-bottom-color: var(--gold);
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .hp-tabs { gap: 0; overflow-x: auto; justify-content: flex-start; padding-bottom: 0; }
+  .hp-tab { padding: 10px 18px; font-size: 13px; }
 }
 
 /* ── PACKAGE CARDS ────────────────────────── */

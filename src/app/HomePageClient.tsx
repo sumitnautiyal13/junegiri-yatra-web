@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { getAllPackages } from '@/lib/data';
@@ -51,13 +51,19 @@ const JOURNEYS = [
   },
 ];
 
-const FEATURED_SLUGS = [
-  'char-dham-yatra-9n-10d',
-  'kedarnath-yatra-3n-4d',
-  'kedarkantha-trek-5n-6d',
-  'valley-of-flowers-trek-4n-5d',
-  'rishikesh-adventure-pack-2n-3d',
-  'golden-triangle-tour-5n-6d',
+const PKG_TABS = [
+  {
+    label: 'Pilgrimages',
+    slugs: ['char-dham-yatra-9n-10d', 'kedarnath-yatra-3n-4d', 'do-dham-yatra-5n-6d'],
+  },
+  {
+    label: 'Treks',
+    slugs: ['kedarkantha-trek-5n-6d', 'valley-of-flowers-trek-4n-5d', 'roopkund-trek-7n-8d'],
+  },
+  {
+    label: 'Adventures & Escapes',
+    slugs: ['rishikesh-adventure-pack-2n-3d', 'rishikesh-yoga-retreat-5n-6d', 'auli-snow-trip-3n-4d'],
+  },
 ];
 
 const TESTIMONIALS = [
@@ -123,9 +129,10 @@ const TICKER_ITEMS = [
 export default function HomePageClient() {
   const allPackages = getAllPackages();
   const heroBgRef = useRef<HTMLDivElement>(null);
+  const [activeTab, setActiveTab] = useState(0);
   useScrollReveal();
 
-  const featuredPackages = FEATURED_SLUGS
+  const tabPackages = PKG_TABS[activeTab].slugs
     .map(slug => allPackages.find(p => p.slug === slug))
     .filter(Boolean) as typeof allPackages;
 
@@ -267,20 +274,34 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* ── FEATURED PACKAGES ────────────────────────────────────────────── */}
+      {/* ── PACKAGES WITH TABS ───────────────────────────────────────────── */}
       <section className="section" style={{ background: 'var(--card)', borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
         <div className="container">
           <p className="s-label fade-in">Most Loved Trips</p>
           <h2 className="s-title fade-in" style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.8rem)' }}>
-            Handpicked <em>Packages</em>
+            Find Your <em>Perfect Trip</em>
           </h2>
           <p className="s-sub fade-in">
             All-inclusive — hotel, meals, transport, guide &amp; permits. What you see is what you pay.
           </p>
           <div className="s-line" />
 
+          {/* Category Tabs */}
+          <div className="hp-tabs fade-in">
+            {PKG_TABS.map((tab, i) => (
+              <button
+                key={tab.label}
+                className={`hp-tab${activeTab === i ? ' active' : ''}`}
+                onClick={() => setActiveTab(i)}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+          {/* Package Cards — 3 per tab */}
           <div className="pkg-grid">
-            {featuredPackages.map((pkg) => (
+            {tabPackages.map((pkg) => (
               <div key={pkg.slug} className="pkg-card fade-in">
                 <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')`, height: 240 }}>
                   {pkg.tag && <span className="pkg-tag">{pkg.tag}</span>}
