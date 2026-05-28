@@ -142,7 +142,7 @@ export default function IntlCityPage({ city, packages }: Props) {
       {/* ── HERO ──────────────────────────────────────────────────────── */}
       <section className="city-hero">
         <Image
-          src="/images/trek_himalaya.webp"
+          src="/images/kedarkantha_trek.webp"
           alt={`India trek packages from ${city.name}`}
           fill
           priority
