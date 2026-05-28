@@ -238,7 +238,7 @@ const NAV: NavEntry[] = [
             { icon: '🇺🇸', label: 'From New York / USA', sub: 'Connecting via EAM · top-rated guides · small groups', href: '/india-trek-packages/from/new-york/' },
             { icon: '🇦🇺', label: 'From Sydney / Australia', sub: 'SYD→DEL · visa on arrival · curated experiences', href: '/india-trek-packages/from/sydney/' },
             { icon: '🇩🇪', label: 'From Germany / Europe', sub: 'Frankfurt · Berlin · Munich → New Delhi direct', href: '/india-trek-packages/from/frankfurt/' },
-            { icon: '🌍', label: 'All Departure Cities', sub: '40+ cities — UK · USA · Australia · Europe · Israel', href: '/india-trek-packages/from/london/' },
+            { icon: '🌍', label: 'All Departure Cities', sub: '40+ cities — UK · USA · Australia · Europe · Israel', href: '/india-trek-packages/' },
           ],
         },
       ],

@@ -13,6 +13,7 @@ export interface IntlCity {
   nationality: string;
   flag: string;
   continent: string;
+  region?: string;
   nearest_airport: string;
   airport_code: string;
   flight_hours_to_delhi: number;
