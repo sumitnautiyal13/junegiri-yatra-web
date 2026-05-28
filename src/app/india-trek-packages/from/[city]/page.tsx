@@ -80,6 +80,8 @@ export default async function Page({
       hero_image: p.hero_image,
       destinations_short: p.destinations_short,
       hero_tagline: p.hero_tagline,
+      price_from: p.price_from,
+      pricing_tiers: p.pricing_tiers ?? [],
     }))
     // Sort: popular city slugs first, then by price ascending
     .sort((a, b) => {

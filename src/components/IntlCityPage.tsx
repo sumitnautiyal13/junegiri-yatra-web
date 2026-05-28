@@ -46,7 +46,15 @@ export interface IntlPackage {
   hero_tagline: string;
 }
 
-export type TrekPackage = IntlPackage;
+export interface PricingTier {
+  group_size: string;
+  rates: { standard: number; deluxe: number; 'super deluxe': number; luxury: number };
+}
+
+export interface TrekPackage extends IntlPackage {
+  price_from?: number;
+  pricing_tiers?: PricingTier[];
+}
 
 interface Props {
   city: IntlCity;
@@ -175,7 +183,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
             <span className="city-name-gold">from {city.name}</span>
           </h1>
           <p className="city-hero-sub">
-            {city.flight_hours_to_delhi}h flight · {city.visa_type} for {city.nationality} citizens · Private guide &amp; SUV · Treks from <strong>$80/person</strong>
+            {city.flight_hours_to_delhi}h flight · {city.visa_type} for {city.nationality} citizens · Private guide &amp; SUV · Treks from <strong>{city.currency_symbol}{localPrice(80)}/person</strong>
           </p>
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
             <WaLink
@@ -202,7 +210,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
             <span style={{ color: 'var(--border2)' }}>|</span>
             <span>📅 Best: <strong style={{ color: '#fff' }}>{city.best_travel_months.slice(0, 3).join(', ')}</strong></span>
             <span style={{ color: 'var(--border2)' }}>|</span>
-            <span>💰 Treks from <strong style={{ color: 'var(--gold2)' }}>$80</strong> · {city.currency_symbol}{localPrice(80).toLocaleString()}</span>
+            <span>💰 Treks from <strong style={{ color: 'var(--gold2)' }}>{city.currency_symbol}{localPrice(80).toLocaleString()}</strong> <span style={{ color: 'var(--muted)', fontSize: '0.8em' }}>($80)</span></span>
           </div>
         </div>
       </div>
@@ -243,10 +251,29 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                     <div className="pkg-route">{trek.destinations_short}</div>
                     <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{trek.hero_tagline}</p>
                     <div className="pkg-price-block">
-                      <span className="price-primary">${trek.intl_price_usd}</span>
+                      <span className="price-primary">{city.currency_symbol}{localAmt.toLocaleString()}</span>
                       <span className="price-suffix">/person</span>
-                      <span className="price-inr-ref">≈ {city.currency_symbol}{localAmt.toLocaleString()} · all-inclusive from Delhi</span>
+                      <span className="price-inr-ref">≈ ${trek.intl_price_usd} USD · all-inclusive from Delhi</span>
                     </div>
+                    {trek.pricing_tiers && trek.pricing_tiers.length > 0 && (
+                      <div style={{ marginBottom: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
+                        <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: 8 }}>
+                          Group pricing (USD/person)
+                        </div>
+                        <div style={{ display: 'flex', gap: 8 }}>
+                          {trek.pricing_tiers.map((tier) => {
+                            const usdPrice = Math.round(tier.rates.standard / 83);
+                            const localTierPrice = Math.round(usdPrice * city.usd_to_local);
+                            return (
+                              <div key={tier.group_size} style={{ flex: 1, background: 'rgba(201,146,61,0.07)', border: '1px solid var(--border)', borderRadius: 8, padding: '8px 6px', textAlign: 'center' }}>
+                                <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--gold2)' }}>{city.currency_symbol}{localTierPrice}</div>
+                                <div style={{ fontSize: 9, color: 'var(--muted)', marginTop: 2 }}>{tier.group_size}</div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    )}
                     <div className="pkg-btns">
                       <WaLink
                         href={trekWaLink}
@@ -303,9 +330,9 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                     <div className="pkg-route">{pkg.destinations_short}</div>
                     <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{pkg.hero_tagline}</p>
                     <div className="pkg-price-block">
-                      <span className="price-primary">${pkg.intl_price_usd}</span>
+                      <span className="price-primary">{city.currency_symbol}{localAmt.toLocaleString()}</span>
                       <span className="price-suffix">/person</span>
-                      <span className="price-inr-ref">≈ {city.currency_symbol}{localAmt.toLocaleString()} · bookings confirmed in USD</span>
+                      <span className="price-inr-ref">≈ ${pkg.intl_price_usd} USD · bookings confirmed in USD</span>
                     </div>
                     <div className="pkg-btns">
                       <WaLink
