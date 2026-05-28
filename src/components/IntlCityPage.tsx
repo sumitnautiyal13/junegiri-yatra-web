@@ -216,6 +216,66 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
         </div>
       </div>
 
+      {/* ── CURATED MULTI-DAY TOURS ───────────────────────────────────── */}
+      <section id="packages" className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">
+            {city.flag} Curated Multi-Day India Tours
+          </h2>
+          <p className="section-sub-left">
+            All-inclusive packages designed for {city.nationality} travelers — flights from {city.name} + India hotels + guide + transport
+          </p>
+          <div className="pkg-grid">
+            {packages.map((pkg) => {
+              const isPopular = city.popular_package_slugs.includes(pkg.slug);
+              const pkgWaText = `Hello! I'm from ${city.name} and interested in the "${pkg.name}" package. Please share availability and pricing.`;
+              const pkgWaLink = buildWaLink(pkgWaText);
+              const localAmt = localPrice(pkg.intl_price_usd);
+              const diff = DIFFICULTY_COLORS[pkg.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
+
+              return (
+                <div key={pkg.slug} className="pkg-card" style={isPopular ? { borderColor: 'var(--gold)', boxShadow: '0 0 0 1px rgba(201,146,61,0.25), 0 20px 60px rgba(0,0,0,.5)' } : {}}>
+                  {(isPopular || pkg.tag) && (
+                    <div className="pkg-tag" style={isPopular ? {} : { background: 'var(--card3)', color: 'var(--gold2)', border: '1px solid var(--border2)' }}>
+                      {isPopular ? `Popular from ${city.name}` : pkg.tag}
+                    </div>
+                  )}
+                  <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')` }} />
+                  <div className="pkg-body">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                      <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>
+                        {pkg.difficulty}
+                      </span>
+                      <span className="pkg-dur">{pkg.duration}</span>
+                    </div>
+                    <div className="pkg-name">{pkg.name}</div>
+                    <div className="pkg-route">{pkg.destinations_short}</div>
+                    <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{pkg.hero_tagline}</p>
+                    <div className="pkg-price-block">
+                      <span className="price-primary">{city.currency_symbol}{localAmt.toLocaleString()}</span>
+                      <span className="price-suffix">/person</span>
+                      <span className="price-inr-ref">≈ ${pkg.intl_price_usd} USD · bookings confirmed in USD</span>
+                    </div>
+                    <div className="pkg-btns">
+                      <WaLink
+                        href={pkgWaLink}
+                        label={`intl_city_pkg_${city.slug}_${pkg.slug}`}
+                        className="btn btn-wa"
+                      >
+                        📲 WhatsApp for Quote
+                      </WaLink>
+                      <Link href={`/international/${pkg.slug}/`} className="btn btn-outline-gold">
+                        View Details
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* ── HIMALAYAN TREKS ───────────────────────────────────────────── */}
       <section id="treks" className="city-section city-section-dark">
         <div className="container">
@@ -285,66 +345,6 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                       </WaLink>
                       <Link href={`/packages/${trek.slug}/`} className="btn btn-outline-gold">
                         View Trek
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* ── CURATED MULTI-DAY TOURS ───────────────────────────────────── */}
-      <section id="packages" className="city-section">
-        <div className="container">
-          <h2 className="section-title-left">
-            {city.flag} Curated Multi-Day India Tours
-          </h2>
-          <p className="section-sub-left">
-            All-inclusive packages designed for {city.nationality} travelers — flights from {city.name} + India hotels + guide + transport
-          </p>
-          <div className="pkg-grid">
-            {packages.map((pkg) => {
-              const isPopular = city.popular_package_slugs.includes(pkg.slug);
-              const pkgWaText = `Hello! I'm from ${city.name} and interested in the "${pkg.name}" package. Please share availability and pricing.`;
-              const pkgWaLink = buildWaLink(pkgWaText);
-              const localAmt = localPrice(pkg.intl_price_usd);
-              const diff = DIFFICULTY_COLORS[pkg.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
-
-              return (
-                <div key={pkg.slug} className="pkg-card" style={isPopular ? { borderColor: 'var(--gold)', boxShadow: '0 0 0 1px rgba(201,146,61,0.25), 0 20px 60px rgba(0,0,0,.5)' } : {}}>
-                  {(isPopular || pkg.tag) && (
-                    <div className="pkg-tag" style={isPopular ? {} : { background: 'var(--card3)', color: 'var(--gold2)', border: '1px solid var(--border2)' }}>
-                      {isPopular ? `Popular from ${city.name}` : pkg.tag}
-                    </div>
-                  )}
-                  <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')` }} />
-                  <div className="pkg-body">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-                      <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>
-                        {pkg.difficulty}
-                      </span>
-                      <span className="pkg-dur">{pkg.duration}</span>
-                    </div>
-                    <div className="pkg-name">{pkg.name}</div>
-                    <div className="pkg-route">{pkg.destinations_short}</div>
-                    <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{pkg.hero_tagline}</p>
-                    <div className="pkg-price-block">
-                      <span className="price-primary">{city.currency_symbol}{localAmt.toLocaleString()}</span>
-                      <span className="price-suffix">/person</span>
-                      <span className="price-inr-ref">≈ ${pkg.intl_price_usd} USD · bookings confirmed in USD</span>
-                    </div>
-                    <div className="pkg-btns">
-                      <WaLink
-                        href={pkgWaLink}
-                        label={`intl_city_pkg_${city.slug}_${pkg.slug}`}
-                        className="btn btn-wa"
-                      >
-                        📲 WhatsApp for Quote
-                      </WaLink>
-                      <Link href={`/international/${pkg.slug}/`} className="btn btn-outline-gold">
-                        View Details
                       </Link>
                     </div>
                   </div>
