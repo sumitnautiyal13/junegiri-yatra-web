@@ -44,6 +44,7 @@ const CITY_ROUTE_MAP: Record<string, string> = {
 
 export default function PackageDetailPage({ pkg }: { pkg: Package }) {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const [activeDay, setActiveDay] = useState<number | null>(0); // first day open by default
   const { currency } = useCurrency();
   const cityRoute = CITY_ROUTE_MAP[pkg.slug] ?? null;
   const waPhone = (pkg as Package & { wa_phone?: string }).wa_phone ?? '919873897652';
@@ -150,7 +151,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
           <div className="s-line" />
           <div
             className="content-section fade-in"
-            style={{ maxWidth: 900, margin: '0 auto' }}
+            style={{ maxWidth: 720, margin: '0 auto', fontSize: 15, lineHeight: 1.85, color: 'var(--muted)' }}
             dangerouslySetInnerHTML={{ __html: pkg.overview }}
           />
         </div>
@@ -161,20 +162,82 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         <div className="container">
           <h2 className="s-title">Day-by-Day <em>Itinerary</em></h2>
           <div className="s-line" />
-          <div style={{ maxWidth: 900, margin: '0 auto' }}>
-            {pkg.itinerary.map((day, i) => (
-              <div key={i} className="day-card fade-in">
-                <div className="day-num">DAY {i + 1}</div>
-                <div className="day-title">{day.title}</div>
-                <div className="day-meta">📍 {day.meta}</div>
-                <div className="day-desc">{day.desc}</div>
-                <div className="day-hls">
-                  {day.highlights.map((h, j) => (
-                    <span key={j} className="day-hl">{h}</span>
-                  ))}
+          <div style={{ maxWidth: 780, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 8 }}>
+            {pkg.itinerary.map((day, i) => {
+              const isOpen = activeDay === i;
+              return (
+                <div
+                  key={i}
+                  style={{
+                    background: isOpen ? 'var(--card2)' : 'var(--bg)',
+                    border: `1px solid ${isOpen ? 'rgba(201,146,61,0.4)' : 'var(--border)'}`,
+                    borderRadius: 12,
+                    overflow: 'hidden',
+                    transition: 'border-color 0.2s',
+                  }}
+                >
+                  {/* Header — always visible */}
+                  <button
+                    onClick={() => setActiveDay(isOpen ? null : i)}
+                    style={{
+                      width: '100%',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: 14,
+                      padding: '14px 20px',
+                      background: 'none',
+                      border: 'none',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                    }}
+                  >
+                    <span style={{
+                      background: 'linear-gradient(135deg, var(--gold), var(--gold2))',
+                      color: '#07051A',
+                      fontSize: 10,
+                      fontWeight: 800,
+                      padding: '4px 10px',
+                      borderRadius: 999,
+                      textTransform: 'uppercase',
+                      letterSpacing: '1px',
+                      flexShrink: 0,
+                    }}>
+                      DAY {i + 1}
+                    </span>
+                    <span style={{ fontWeight: 700, fontSize: 14, color: 'var(--text)', flex: 1 }}>{day.title}</span>
+                    {day.meta && (
+                      <span style={{ fontSize: 12, color: 'var(--muted)', flexShrink: 0, display: 'flex', alignItems: 'center', gap: 4 }}>
+                        📍 {day.meta}
+                      </span>
+                    )}
+                    <span style={{
+                      color: 'var(--gold2)',
+                      flexShrink: 0,
+                      transition: 'transform 0.25s',
+                      transform: isOpen ? 'rotate(180deg)' : 'none',
+                      display: 'inline-block',
+                      fontSize: 14,
+                    }}>▾</span>
+                  </button>
+
+                  {/* Body — only visible when open */}
+                  {isOpen && (
+                    <div style={{ padding: '0 20px 18px' }}>
+                      <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.8, marginBottom: day.highlights?.length ? 14 : 0 }}>
+                        {day.desc}
+                      </p>
+                      {day.highlights && day.highlights.length > 0 && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+                          {day.highlights.map((h, j) => (
+                            <span key={j} className="day-hl">{h}</span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
