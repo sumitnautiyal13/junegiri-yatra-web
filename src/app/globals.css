@@ -398,6 +398,56 @@ footer a:hover { color: var(--gold2); }
 .journey-card:hover .journey-card-arrow { opacity: 1; transform: translateY(0); }
 .journey-card-arrow::after { content: '→'; font-size: 14px; }
 
+/* ── EDITORIAL JOURNEY GRID ──────────────── */
+.ed-journeys {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+}
+.ed-feature {
+  height: 560px !important;
+}
+.ed-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.ed-side-card {
+  flex: 1;
+  height: auto !important;
+  min-height: 160px;
+}
+/* Why split — image + reasons */
+.why-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.why-img-wrap {
+  position: relative;
+  height: 560px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.why-reasons {
+  padding: 12px 0;
+}
+@media (max-width: 900px) {
+  .ed-journeys { grid-template-columns: 1fr; }
+  .ed-feature { height: 420px !important; }
+  .ed-side { flex-direction: row; flex-wrap: wrap; }
+  .ed-side-card { min-height: 220px; flex: 1 1 calc(50% - 8px); }
+  .why-split { grid-template-columns: 1fr; gap: 32px; }
+  .why-img-wrap { height: 300px; }
+}
+@media (max-width: 600px) {
+  .ed-side { flex-direction: column; }
+  .ed-side-card { min-height: 180px; flex: 1; }
+  .ed-feature { height: 340px !important; }
+}
+
 /* ── PROMISE SECTION ─────────────────────── */
 .promise-grid {
   display: grid;
