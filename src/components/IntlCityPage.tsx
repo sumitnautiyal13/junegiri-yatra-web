@@ -207,116 +207,6 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
         </div>
       </div>
 
-      {/* ── GETTING THERE ─────────────────────────────────────────────── */}
-      <section className="city-section">
-        <div className="container">
-          <h2 className="section-title-left">Getting There from {city.name}</h2>
-          <p className="section-sub-left">
-            {city.nearest_airport} ({city.airport_code}) → Delhi (DEL). Our team picks you up and drives you straight to Haridwar.
-          </p>
-          <div className="route-cards" style={{ gridTemplateColumns: 'repeat(2,1fr)', maxWidth: 780 }}>
-            <div className="route-card">
-              <div className="route-card-header">
-                <span className="route-icon">✈️</span>
-                <span className="route-mode">By Air</span>
-                {city.direct_flights && <span className="route-badge">Direct</span>}
-              </div>
-              <table className="route-table">
-                <tbody>
-                  <tr><td>From</td><td>{city.nearest_airport} ({city.airport_code})</td></tr>
-                  <tr><td>To</td><td>Delhi Indira Gandhi (DEL)</td></tr>
-                  <tr><td>Flight time</td><td>~{city.flight_hours_to_delhi} hours</td></tr>
-                  <tr><td>Type</td><td>{city.direct_flights ? 'Direct flights available' : 'Via 1 connecting hub'}</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="route-card">
-              <div className="route-card-header">
-                <span className="route-icon">🛫</span>
-                <span className="route-mode">Airlines</span>
-              </div>
-              <table className="route-table">
-                <tbody>
-                  {city.airlines.map((airline) => (
-                    <tr key={airline}><td>✓</td><td>{airline}</td></tr>
-                  ))}
-                  <tr><td>IST offset</td><td>{city.ist_offset} from India</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p className="route-tip" style={{ maxWidth: 780 }}>
-            💡 <strong>Travel tip:</strong> {city.travel_note} We arrange private airport transfer from Delhi (DEL) to Haridwar / Rishikesh — your trek starting point.
-          </p>
-        </div>
-      </section>
-
-      {/* ── VISA INFO ─────────────────────────────────────────────────── */}
-      <section className="city-section city-section-dark">
-        <div className="container">
-          <h2 className="section-title-left light">India Visa for {city.nationality} Citizens</h2>
-          <p className="section-sub-left light">Apply online — no embassy visit required for most nationalities.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 640, marginBottom: 24 }}>
-            {[
-              { label: 'Visa Type', value: city.visa_type },
-              { label: 'Processing', value: `${city.visa_processing_days} days` },
-              { label: 'Application Fee', value: `$${city.visa_cost_usd} USD` },
-            ].map((item) => (
-              <div key={item.label} style={{ background: 'var(--card2)', border: '1px solid var(--border)', borderRadius: 'var(--r2)', padding: '22px 20px', textAlign: 'center' }}>
-                <div className="price-primary" style={{ fontSize: '1.4rem' }}>{item.value}</div>
-                <div style={{ fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1.5px', marginTop: 6 }}>{item.label}</div>
-              </div>
-            ))}
-          </div>
-          <p style={{ fontSize: '0.88rem', color: 'var(--muted)', maxWidth: 560, marginBottom: 16 }}>
-            As a {city.nationality} citizen, you qualify for India&apos;s {city.visa_type}. Apply at least {city.visa_processing_days + 5} days before travel. We&apos;ll guide you through the process — just ask on WhatsApp.
-          </p>
-          <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" rel="noopener noreferrer"
-            style={{ color: 'var(--gold2)', fontSize: '0.88rem', fontWeight: 700, textDecoration: 'none' }}>
-            Apply for India e-Visa →
-          </a>
-        </div>
-      </section>
-
-      {/* ── BEST TIME ─────────────────────────────────────────────────── */}
-      <section className="city-section">
-        <div className="container">
-          <h2 className="section-title-left">Best Time to Visit from {city.name}</h2>
-          <p className="section-sub-left">
-            Peak booking from {city.name}: <strong style={{ color: 'var(--gold2)' }}>{city.peak_booking_months.join(', ')}</strong> — book early for your preferred dates.
-          </p>
-          <div style={{ maxWidth: 680 }}>
-            <div style={{ marginBottom: 20 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
-                Best months to trek
-              </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                {ALL_MONTHS.filter((m) => city.best_travel_months.includes(m)).map((month) => (
-                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(34,197,94,0.12)', border: '1px solid rgba(34,197,94,0.35)', borderRadius: 999, fontSize: '0.82rem', fontWeight: 700, color: '#4ade80' }}>
-                    ✓ {month}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div style={{ marginBottom: 24 }}>
-              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
-                Months to avoid
-              </div>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-                {ALL_MONTHS.filter((m) => city.avoid_months.includes(m)).map((month) => (
-                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 999, fontSize: '0.82rem', color: '#f87171' }}>
-                    ✗ {month}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <p className="route-tip">
-              📅 <strong>Holiday planning tip:</strong> Most travelers from {city.name} take {city.typical_holiday_days} days for India. Our {city.best_travel_months[0]}–{city.best_travel_months[city.best_travel_months.length - 1]} season packages are built around {city.typical_holiday_days}-day holidays.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* ── HIMALAYAN TREKS ───────────────────────────────────────────── */}
       <section id="treks" className="city-section city-section-dark">
         <div className="container">
@@ -433,6 +323,116 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── GETTING THERE ─────────────────────────────────────────────── */}
+      <section className="city-section city-section-dark">
+        <div className="container">
+          <h2 className="section-title-left light">Getting There from {city.name}</h2>
+          <p className="section-sub-left light">
+            {city.nearest_airport} ({city.airport_code}) → Delhi (DEL). Our team picks you up and drives you straight to Haridwar.
+          </p>
+          <div className="route-cards" style={{ gridTemplateColumns: 'repeat(2,1fr)', maxWidth: 780 }}>
+            <div className="route-card">
+              <div className="route-card-header">
+                <span className="route-icon">✈️</span>
+                <span className="route-mode">By Air</span>
+                {city.direct_flights && <span className="route-badge">Direct</span>}
+              </div>
+              <table className="route-table">
+                <tbody>
+                  <tr><td>From</td><td>{city.nearest_airport} ({city.airport_code})</td></tr>
+                  <tr><td>To</td><td>Delhi Indira Gandhi (DEL)</td></tr>
+                  <tr><td>Flight time</td><td>~{city.flight_hours_to_delhi} hours</td></tr>
+                  <tr><td>Type</td><td>{city.direct_flights ? 'Direct flights available' : 'Via 1 connecting hub'}</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="route-card">
+              <div className="route-card-header">
+                <span className="route-icon">🛫</span>
+                <span className="route-mode">Airlines</span>
+              </div>
+              <table className="route-table">
+                <tbody>
+                  {city.airlines.map((airline) => (
+                    <tr key={airline}><td>✓</td><td>{airline}</td></tr>
+                  ))}
+                  <tr><td>IST offset</td><td>{city.ist_offset} from India</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p className="route-tip" style={{ maxWidth: 780 }}>
+            💡 <strong>Travel tip:</strong> {city.travel_note} We arrange private airport transfer from Delhi (DEL) to Haridwar / Rishikesh — your trek starting point.
+          </p>
+        </div>
+      </section>
+
+      {/* ── VISA INFO ─────────────────────────────────────────────────── */}
+      <section className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">India Visa for {city.nationality} Citizens</h2>
+          <p className="section-sub-left">Apply online — no embassy visit required for most nationalities.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 640, marginBottom: 24 }}>
+            {[
+              { label: 'Visa Type', value: city.visa_type },
+              { label: 'Processing', value: `${city.visa_processing_days} days` },
+              { label: 'Application Fee', value: `$${city.visa_cost_usd} USD` },
+            ].map((item) => (
+              <div key={item.label} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 'var(--r2)', padding: '22px 20px', textAlign: 'center' }}>
+                <div className="price-primary" style={{ fontSize: '1.4rem' }}>{item.value}</div>
+                <div style={{ fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1.5px', marginTop: 6 }}>{item.label}</div>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: '0.88rem', color: 'var(--muted)', maxWidth: 560, marginBottom: 16 }}>
+            As a {city.nationality} citizen, you qualify for India&apos;s {city.visa_type}. Apply at least {city.visa_processing_days + 5} days before travel. We&apos;ll guide you through the process — just ask on WhatsApp.
+          </p>
+          <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" rel="noopener noreferrer"
+            style={{ color: 'var(--gold2)', fontSize: '0.88rem', fontWeight: 700, textDecoration: 'none' }}>
+            Apply for India e-Visa →
+          </a>
+        </div>
+      </section>
+
+      {/* ── BEST TIME ─────────────────────────────────────────────────── */}
+      <section className="city-section city-section-dark">
+        <div className="container">
+          <h2 className="section-title-left light">Best Time to Visit from {city.name}</h2>
+          <p className="section-sub-left light">
+            Peak booking from {city.name}: <strong style={{ color: 'var(--gold2)' }}>{city.peak_booking_months.join(', ')}</strong> — book early for your preferred dates.
+          </p>
+          <div style={{ maxWidth: 680 }}>
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
+                Best months to trek
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                {ALL_MONTHS.filter((m) => city.best_travel_months.includes(m)).map((month) => (
+                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(34,197,94,0.12)', border: '1px solid rgba(34,197,94,0.35)', borderRadius: 999, fontSize: '0.82rem', fontWeight: 700, color: '#4ade80' }}>
+                    ✓ {month}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
+                Months to avoid
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+                {ALL_MONTHS.filter((m) => city.avoid_months.includes(m)).map((month) => (
+                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 999, fontSize: '0.82rem', color: '#f87171' }}>
+                    ✗ {month}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <p className="route-tip">
+              📅 <strong>Holiday planning tip:</strong> Most travelers from {city.name} take {city.typical_holiday_days} days for India. Our {city.best_travel_months[0]}–{city.best_travel_months[city.best_travel_months.length - 1]} season packages are built around {city.typical_holiday_days}-day holidays.
+            </p>
           </div>
         </div>
       </section>
