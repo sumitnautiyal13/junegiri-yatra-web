@@ -59,11 +59,12 @@ function buildWaLink(text: string) {
 
 const ALL_MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const DIFFICULTY_COLORS: Record<string, string> = {
-  Easy: 'bg-green-600',
-  Moderate: 'bg-amber-500',
-  Challenging: 'bg-orange-600',
-  Hard: 'bg-red-600',
+const DIFFICULTY_COLORS: Record<string, { bg: string; color: string }> = {
+  Easy: { bg: 'rgba(34,197,94,0.18)', color: '#4ade80' },
+  Moderate: { bg: 'rgba(234,179,8,0.18)', color: '#fbbf24' },
+  'Easy–Moderate': { bg: 'rgba(234,179,8,0.18)', color: '#fbbf24' },
+  Challenging: { bg: 'rgba(249,115,22,0.18)', color: '#fb923c' },
+  Hard: { bg: 'rgba(239,68,68,0.18)', color: '#f87171' },
 };
 
 export default function IntlCityPage({ city, packages }: Props) {
@@ -74,7 +75,6 @@ export default function IntlCityPage({ city, packages }: Props) {
 
   const localPrice = (usdPrice: number) => Math.round(usdPrice * city.usd_to_local);
 
-  // FAQ data
   const faqs = [
     {
       q: `Can I fly direct from ${city.name} to India?`,
@@ -96,11 +96,10 @@ export default function IntlCityPage({ city, packages }: Props) {
     },
     {
       q: `Is it safe for solo travelers from ${city.country}?`,
-      a: `Absolutely. We operate exclusively private group tours — no shared transport with strangers. Your package includes a dedicated English-speaking ITMB-certified Himalayan guide, private SUV transfers, and 24/7 WhatsApp support from our Haridwar base. Our team has guided travelers from ${city.country} since 2017. We handle all on-ground logistics so you can focus on the experience.`,
+      a: `Absolutely. We operate exclusively private group tours — no shared transport with strangers. Your package includes a dedicated English-speaking ITMB-certified Himalayan guide, private SUV transfers, and 24/7 WhatsApp support from our Haridwar base. Our team has guided travelers from ${city.country} since 2017.`,
     },
   ];
 
-  // JSON-LD
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -115,12 +114,7 @@ export default function IntlCityPage({ city, packages }: Props) {
           url: 'https://junegiriyatra.com',
           telephone: `+${WA_NUMBER}`,
         },
-        offers: {
-          '@type': 'Offer',
-          price: '820',
-          priceCurrency: 'USD',
-          availability: 'https://schema.org/InStock',
-        },
+        offers: { '@type': 'Offer', price: '820', priceCurrency: 'USD', availability: 'https://schema.org/InStock' },
       },
       {
         '@type': 'FAQPage',
@@ -143,27 +137,10 @@ export default function IntlCityPage({ city, packages }: Props) {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
-      {/* ── BREADCRUMB ────────────────────────────────────────────────── */}
-      <div className="bg-slate-900 border-b border-slate-800">
-        <div className="container mx-auto px-4 py-3">
-          <nav className="flex items-center gap-2 text-sm text-slate-400" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-amber-400 transition-colors">Home</Link>
-            <span className="text-slate-600">›</span>
-            <Link href="/international/" className="hover:text-amber-400 transition-colors">International Packages</Link>
-            <span className="text-slate-600">›</span>
-            <span className="text-slate-300">From {city.name}</span>
-          </nav>
-        </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ── HERO ──────────────────────────────────────────────────────── */}
-      <section className="relative min-h-[72vh] flex items-center bg-slate-900">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/60 to-slate-900" />
+      <section className="city-hero">
         <Image
           src="/images/trek_himalaya.webp"
           alt={`India trek packages from ${city.name}`}
@@ -172,250 +149,219 @@ export default function IntlCityPage({ city, packages }: Props) {
           sizes="100vw"
           style={{ objectFit: 'cover', objectPosition: 'center top' }}
         />
-        <div className="container mx-auto px-4 relative z-10 py-20">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-full px-4 py-1.5 text-sm text-slate-300 mb-6">
-              <span>{city.flag}</span>
-              <span>{city.name}, {city.country}</span>
-              <span className="text-slate-500">·</span>
-              <span>{city.flight_hours_to_delhi}h to Delhi</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
-              India Trek Packages<br />
-              <span className="text-amber-400">from {city.name}</span>
-            </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-8 leading-relaxed">
-              {city.flight_hours_to_delhi}h flight to Delhi · {city.visa_type} for {city.nationality} citizens · Private guide &amp; transport · From <strong className="text-amber-400">$820/person</strong>
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <WaLink
-                href={heroWaLink}
-                label={`intl_city_hero_${city.slug}`}
-                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold px-6 py-4 rounded-xl text-base transition-colors"
-              >
-                📲 WhatsApp Us from {city.name}
-              </WaLink>
-              <a
-                href="#packages"
-                className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-6 py-4 rounded-xl text-base transition-colors"
-              >
-                Explore Packages ↓
-              </a>
-            </div>
+        <div className="city-hero-overlay" />
+        <div className="container city-hero-inner">
+          <nav className="city-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span>›</span>
+            <Link href="/international/">International Packages</Link>
+            <span>›</span>
+            <span>India Treks from {city.name}</span>
+          </nav>
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 8, background: 'rgba(201,146,61,0.18)', border: '1px solid rgba(201,146,61,0.4)', borderRadius: 50, padding: '6px 18px', fontSize: 12, fontWeight: 700, letterSpacing: '1.2px', textTransform: 'uppercase', color: 'var(--gold2)', marginBottom: 18 }}>
+            <span>{city.flag}</span>
+            <span>{city.name}, {city.country}</span>
+            <span style={{ color: 'var(--muted)', margin: '0 4px' }}>·</span>
+            <span>{city.flight_hours_to_delhi}h to Delhi</span>
           </div>
-        </div>
-      </section>
-
-      {/* ── QUICK STATS BAR ───────────────────────────────────────────── */}
-      <section className="bg-slate-800 border-y border-slate-700">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm md:text-base">
-            <span className="text-slate-300">
-              ✈️ <strong className="text-white">{city.flight_hours_to_delhi}h</strong> flight to Delhi
-            </span>
-            <span className="text-slate-500 hidden md:block">|</span>
-            <span className="text-slate-300">
-              🛂 <strong className="text-white">{city.visa_type}</strong>
-            </span>
-            <span className="text-slate-500 hidden md:block">|</span>
-            <span className="text-slate-300">
-              📅 Best: <strong className="text-white">{city.best_travel_months.slice(0, 3).join(', ')}</strong>
-            </span>
-            <span className="text-slate-500 hidden md:block">|</span>
-            <span className="text-slate-300">
-              💰 From <strong className="text-amber-400">$820</strong>
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── GETTING THERE ─────────────────────────────────────────────── */}
-      <section className="bg-slate-900 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            Getting There from {city.name}
-          </h2>
-          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 md:p-8 max-w-3xl">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-              <div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Departure Airport</div>
-                <div className="text-white font-semibold">{city.nearest_airport}</div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Flight Time to Delhi</div>
-                <div className="text-white font-semibold">{city.flight_hours_to_delhi} hours</div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Flight Type</div>
-                <div className="text-white font-semibold">
-                  {city.direct_flights ? (
-                    <span className="text-green-400">✓ Direct flights available</span>
-                  ) : (
-                    <span className="text-amber-400">1 stop via hub city</span>
-                  )}
-                </div>
-              </div>
-              <div>
-                <div className="text-xs text-slate-500 uppercase tracking-widest mb-1">Airlines</div>
-                <div className="text-white font-semibold">{city.airlines.join(', ')}</div>
-              </div>
-            </div>
-            <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4">
-              <p className="text-amber-300 text-sm">
-                💡 <strong>Travel tip:</strong> {city.travel_note} We arrange private airport transfer from Delhi (DEL) to Haridwar/Rishikesh — your trek starting point.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── VISA INFO ─────────────────────────────────────────────────── */}
-      <section className="bg-slate-800/50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-8">
-            Visa for {city.nationality} Citizens
-          </h2>
-          <div className="bg-slate-800 border border-slate-700 rounded-2xl p-6 md:p-8 max-w-3xl">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6">
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-amber-400 mb-1">{city.visa_type}</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest">Visa Type</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-amber-400 mb-1">{city.visa_processing_days} days</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest">Processing Time</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-extrabold text-amber-400 mb-1">${city.visa_cost_usd}</div>
-                <div className="text-xs text-slate-400 uppercase tracking-widest">Application Fee</div>
-              </div>
-            </div>
-            <p className="text-slate-300 text-sm mb-4">
-              As a {city.nationality} citizen, you qualify for the India {city.visa_type}. Apply online at least {city.visa_processing_days + 5} days before travel. We&apos;ll guide you through the process.
-            </p>
-            <a
-              href="https://indianvisaonline.gov.in/evisa/tvoa.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 text-sm font-semibold transition-colors"
+          <h1 className="city-hero-h1">
+            India Trek Packages<br />
+            <span className="city-name-gold">from {city.name}</span>
+          </h1>
+          <p className="city-hero-sub">
+            {city.flight_hours_to_delhi}h flight · {city.visa_type} for {city.nationality} citizens · Private guide &amp; SUV · From <strong>$820/person</strong>
+          </p>
+          <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+            <WaLink
+              href={heroWaLink}
+              label={`intl_city_hero_${city.slug}`}
+              className="btn-gold-hero"
             >
-              Apply for India e-Visa →
+              📲 WhatsApp from {city.name}
+            </WaLink>
+            <a href="#packages" className="btn btn-outline" style={{ borderRadius: 50, padding: '12px 26px', fontSize: '0.95rem' }}>
+              Explore Packages ↓
             </a>
           </div>
         </div>
       </section>
 
-      {/* ── BEST TIME ─────────────────────────────────────────────────── */}
-      <section className="bg-slate-900 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Best Time to Visit from {city.name}
-          </h2>
-          <p className="text-slate-400 mb-8 max-w-2xl">
-            Plan your Himalayan adventure around these optimal travel windows. Peak booking months from {city.name} are {city.peak_booking_months.join(', ')} — book early.
+      {/* ── QUICK STATS BAR ───────────────────────────────────────────── */}
+      <div className="city-hook">
+        <div className="container">
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px 36px', fontSize: '0.9rem' }}>
+            <span>✈️ <strong style={{ color: '#fff' }}>{city.flight_hours_to_delhi}h</strong> flight to Delhi</span>
+            <span style={{ color: 'var(--border2)' }}>|</span>
+            <span>🛂 <strong style={{ color: '#fff' }}>{city.visa_type}</strong> · {city.visa_processing_days} days</span>
+            <span style={{ color: 'var(--border2)' }}>|</span>
+            <span>📅 Best: <strong style={{ color: '#fff' }}>{city.best_travel_months.slice(0, 3).join(', ')}</strong></span>
+            <span style={{ color: 'var(--border2)' }}>|</span>
+            <span>💰 From <strong style={{ color: 'var(--gold2)' }}>$820</strong> · {city.currency_symbol}{localPrice(820).toLocaleString()}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* ── GETTING THERE ─────────────────────────────────────────────── */}
+      <section className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">Getting There from {city.name}</h2>
+          <p className="section-sub-left">
+            {city.nearest_airport} ({city.airport_code}) → Delhi (DEL). Our team picks you up and drives you straight to Haridwar.
           </p>
-          <div className="max-w-3xl space-y-6">
-            <div>
-              <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-3">Best months to travel</div>
-              <div className="flex flex-wrap gap-2">
+          <div className="route-cards" style={{ gridTemplateColumns: 'repeat(2,1fr)', maxWidth: 780 }}>
+            <div className="route-card">
+              <div className="route-card-header">
+                <span className="route-icon">✈️</span>
+                <span className="route-mode">By Air</span>
+                {city.direct_flights && <span className="route-badge">Direct</span>}
+              </div>
+              <table className="route-table">
+                <tbody>
+                  <tr><td>From</td><td>{city.nearest_airport} ({city.airport_code})</td></tr>
+                  <tr><td>To</td><td>Delhi Indira Gandhi (DEL)</td></tr>
+                  <tr><td>Flight time</td><td>~{city.flight_hours_to_delhi} hours</td></tr>
+                  <tr><td>Type</td><td>{city.direct_flights ? 'Direct flights available' : 'Via 1 connecting hub'}</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="route-card">
+              <div className="route-card-header">
+                <span className="route-icon">🛫</span>
+                <span className="route-mode">Airlines</span>
+              </div>
+              <table className="route-table">
+                <tbody>
+                  {city.airlines.map((airline) => (
+                    <tr key={airline}><td>✓</td><td>{airline}</td></tr>
+                  ))}
+                  <tr><td>IST offset</td><td>{city.ist_offset} from India</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p className="route-tip" style={{ maxWidth: 780 }}>
+            💡 <strong>Travel tip:</strong> {city.travel_note} We arrange private airport transfer from Delhi (DEL) to Haridwar / Rishikesh — your trek starting point.
+          </p>
+        </div>
+      </section>
+
+      {/* ── VISA INFO ─────────────────────────────────────────────────── */}
+      <section className="city-section city-section-dark">
+        <div className="container">
+          <h2 className="section-title-left light">India Visa for {city.nationality} Citizens</h2>
+          <p className="section-sub-left light">Apply online — no embassy visit required for most nationalities.</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 20, maxWidth: 640, marginBottom: 24 }}>
+            {[
+              { label: 'Visa Type', value: city.visa_type },
+              { label: 'Processing', value: `${city.visa_processing_days} days` },
+              { label: 'Application Fee', value: `$${city.visa_cost_usd} USD` },
+            ].map((item) => (
+              <div key={item.label} style={{ background: 'var(--card2)', border: '1px solid var(--border)', borderRadius: 'var(--r2)', padding: '22px 20px', textAlign: 'center' }}>
+                <div className="price-primary" style={{ fontSize: '1.4rem' }}>{item.value}</div>
+                <div style={{ fontSize: 11, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1.5px', marginTop: 6 }}>{item.label}</div>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: '0.88rem', color: 'var(--muted)', maxWidth: 560, marginBottom: 16 }}>
+            As a {city.nationality} citizen, you qualify for India&apos;s {city.visa_type}. Apply at least {city.visa_processing_days + 5} days before travel. We&apos;ll guide you through the process — just ask on WhatsApp.
+          </p>
+          <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" rel="noopener noreferrer"
+            style={{ color: 'var(--gold2)', fontSize: '0.88rem', fontWeight: 700, textDecoration: 'none' }}>
+            Apply for India e-Visa →
+          </a>
+        </div>
+      </section>
+
+      {/* ── BEST TIME ─────────────────────────────────────────────────── */}
+      <section className="city-section">
+        <div className="container">
+          <h2 className="section-title-left">Best Time to Visit from {city.name}</h2>
+          <p className="section-sub-left">
+            Peak booking from {city.name}: <strong style={{ color: 'var(--gold2)' }}>{city.peak_booking_months.join(', ')}</strong> — book early for your preferred dates.
+          </p>
+          <div style={{ maxWidth: 680 }}>
+            <div style={{ marginBottom: 20 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
+                Best months to trek
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                 {ALL_MONTHS.filter((m) => city.best_travel_months.includes(m)).map((month) => (
-                  <span
-                    key={month}
-                    className="px-4 py-1.5 bg-green-600/20 border border-green-500/40 text-green-400 rounded-full text-sm font-semibold"
-                  >
+                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(34,197,94,0.12)', border: '1px solid rgba(34,197,94,0.35)', borderRadius: 999, fontSize: '0.82rem', fontWeight: 700, color: '#4ade80' }}>
                     ✓ {month}
                   </span>
                 ))}
               </div>
             </div>
-            <div>
-              <div className="text-sm font-semibold text-slate-400 uppercase tracking-widest mb-3">Months to avoid</div>
-              <div className="flex flex-wrap gap-2">
+            <div style={{ marginBottom: 24 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '2px', marginBottom: 12 }}>
+                Months to avoid
+              </div>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                 {ALL_MONTHS.filter((m) => city.avoid_months.includes(m)).map((month) => (
-                  <span
-                    key={month}
-                    className="px-4 py-1.5 bg-red-600/20 border border-red-500/40 text-red-400 rounded-full text-sm"
-                  >
+                  <span key={month} style={{ padding: '6px 16px', background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 999, fontSize: '0.82rem', color: '#f87171' }}>
                     ✗ {month}
                   </span>
                 ))}
               </div>
             </div>
-            <div className="bg-slate-800 border border-slate-700 rounded-xl p-4">
-              <p className="text-slate-300 text-sm">
-                📅 <strong className="text-white">Typical holiday:</strong> Most travelers from {city.name} take {city.typical_holiday_days} days for India. Our {city.best_travel_months[0]}–{city.best_travel_months[city.best_travel_months.length - 1]} season packages are specifically designed for {city.typical_holiday_days}-day holidays.
-              </p>
-            </div>
+            <p className="route-tip">
+              📅 <strong>Holiday planning tip:</strong> Most travelers from {city.name} take {city.typical_holiday_days} days for India. Our {city.best_travel_months[0]}–{city.best_travel_months[city.best_travel_months.length - 1]} season packages are built around {city.typical_holiday_days}-day holidays.
+            </p>
           </div>
         </div>
       </section>
 
       {/* ── PACKAGES ──────────────────────────────────────────────────── */}
-      <section id="packages" className="bg-slate-800/50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-            India Trek Packages for {city.flag} {city.nationality} Travelers
+      <section id="packages" className="city-section city-section-dark">
+        <div className="container">
+          <h2 className="section-title-left light">
+            {city.flag} India Trek Packages for {city.nationality} Travelers
           </h2>
-          <p className="text-slate-400 mb-10">
-            All packages include private transport, 3-star hotels, English-speaking ITMB guide, and 24/7 WhatsApp support.
+          <p className="section-sub-left light">
+            Private transport · 3-star hotels · English ITMB guide · 24/7 WhatsApp support · All-inclusive
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="pkg-grid">
             {packages.map((pkg) => {
               const isPopular = city.popular_package_slugs.includes(pkg.slug);
               const pkgWaText = `Hello! I'm from ${city.name} and interested in the "${pkg.name}" package. Please share availability and pricing.`;
               const pkgWaLink = buildWaLink(pkgWaText);
               const localAmt = localPrice(pkg.intl_price_usd);
-              const diffColor = DIFFICULTY_COLORS[pkg.difficulty] ?? 'bg-slate-600';
+              const diff = DIFFICULTY_COLORS[pkg.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
 
               return (
-                <div
-                  key={pkg.slug}
-                  className={`relative bg-slate-800 border rounded-2xl overflow-hidden flex flex-col transition-transform hover:-translate-y-1 ${isPopular ? 'border-amber-500 shadow-lg shadow-amber-500/10' : 'border-slate-700'}`}
-                >
-                  {isPopular && (
-                    <div className="absolute top-3 left-3 z-10 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                      Popular from {city.name}
+                <div key={pkg.slug} className="pkg-card" style={isPopular ? { borderColor: 'var(--gold)', boxShadow: '0 0 0 1px rgba(201,146,61,0.25), 0 20px 60px rgba(0,0,0,.5)' } : {}}>
+                  {(isPopular || pkg.tag) && (
+                    <div className="pkg-tag" style={isPopular ? {} : { background: 'var(--card3)', color: 'var(--gold2)', border: '1px solid var(--border2)' }}>
+                      {isPopular ? `Popular from ${city.name}` : pkg.tag}
                     </div>
                   )}
-                  {pkg.tag && !isPopular && (
-                    <div className="absolute top-3 left-3 z-10 bg-slate-700 text-amber-400 text-xs font-bold px-3 py-1 rounded-full border border-amber-500/30">
-                      {pkg.tag}
-                    </div>
-                  )}
-                  <div className="relative h-48 bg-slate-700">
-                    <Image
-                      src={pkg.hero_image}
-                      alt={pkg.name}
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      style={{ objectFit: 'cover' }}
-                    />
-                  </div>
-                  <div className="p-5 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className={`text-xs font-bold text-white px-2.5 py-0.5 rounded-full ${diffColor}`}>
+                  <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')` }} />
+                  <div className="pkg-body">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+                      <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>
                         {pkg.difficulty}
                       </span>
-                      <span className="text-xs text-slate-400">{pkg.duration}</span>
+                      <span className="pkg-dur">{pkg.duration}</span>
                     </div>
-                    <h3 className="text-base font-bold text-white mb-1">{pkg.name}</h3>
-                    <p className="text-xs text-slate-400 mb-1">{pkg.destinations_short}</p>
-                    <p className="text-xs text-slate-500 mb-4 italic">{pkg.hero_tagline}</p>
-                    <div className="mt-auto">
-                      <div className="mb-3">
-                        <span className="text-2xl font-extrabold text-amber-400">${pkg.intl_price_usd}</span>
-                        <span className="text-slate-400 text-sm ml-1">/person</span>
-                        <div className="text-xs text-slate-500 mt-0.5">
-                          ≈ {city.currency_symbol}{localAmt.toLocaleString()} · Approximate exchange rate — bookings confirmed in USD
-                        </div>
-                      </div>
+                    <div className="pkg-name">{pkg.name}</div>
+                    <div className="pkg-route">{pkg.destinations_short}</div>
+                    <p style={{ fontSize: '0.78rem', color: 'var(--muted)', fontStyle: 'italic', marginBottom: 16 }}>{pkg.hero_tagline}</p>
+                    <div className="pkg-price-block">
+                      <span className="price-primary">${pkg.intl_price_usd}</span>
+                      <span className="price-suffix">/person</span>
+                      <span className="price-inr-ref">≈ {city.currency_symbol}{localAmt.toLocaleString()} · bookings confirmed in USD</span>
+                    </div>
+                    <div className="pkg-btns">
                       <WaLink
                         href={pkgWaLink}
                         label={`intl_city_pkg_${city.slug}_${pkg.slug}`}
-                        className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold py-3 rounded-xl text-sm transition-colors"
+                        className="btn btn-wa"
                       >
                         📲 WhatsApp for Quote
                       </WaLink>
+                      <Link href={`/international/${pkg.slug}/`} className="btn btn-outline-gold">
+                        View Details
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -426,23 +372,22 @@ export default function IntlCityPage({ city, packages }: Props) {
       </section>
 
       {/* ── WHY JUNEGIRI ──────────────────────────────────────────────── */}
-      <section className="bg-slate-900 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-3 text-center">
-            Why Choose Junegiri Yatra
-          </h2>
-          <p className="text-slate-400 text-center mb-10">Built for international travelers. No surprises.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <section className="city-section">
+        <div className="container">
+          <h2 className="s-title">Why Choose <em>Junegiri Yatra</em></h2>
+          <p className="s-sub">Built for international travelers. No surprises. No shared groups.</p>
+          <div className="s-line" />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20, maxWidth: 1040, margin: '0 auto' }}>
             {[
               { icon: '🚗', title: 'Private Transport', desc: 'Dedicated SUV for your group — no shared jeeps, no strangers.' },
               { icon: '🏨', title: '3-Star Hotels', desc: 'Curated stays with attached bathroom, hot water, and WiFi.' },
               { icon: '🧭', title: 'English Guide', desc: 'ITMB-certified Himalayan guide. Fluent English. Safety-first.' },
               { icon: '📲', title: '24/7 WhatsApp', desc: 'Direct line to our Haridwar team. Real humans. Fast replies.' },
             ].map((item) => (
-              <div key={item.title} className="bg-slate-800 border border-slate-700 rounded-2xl p-6 text-center hover:border-amber-500/40 transition-colors">
-                <div className="text-4xl mb-3">{item.icon}</div>
-                <div className="font-bold text-white mb-2">{item.title}</div>
-                <div className="text-sm text-slate-400">{item.desc}</div>
+              <div key={item.title} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 'var(--r2)', padding: '28px 22px', textAlign: 'center', transition: 'border-color .2s' }}>
+                <div style={{ fontSize: '2.2rem', marginBottom: 14 }}>{item.icon}</div>
+                <div style={{ fontFamily: 'var(--font-poppins)', fontWeight: 700, fontSize: '0.95rem', color: '#fff', marginBottom: 8 }}>{item.title}</div>
+                <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65 }}>{item.desc}</div>
               </div>
             ))}
           </div>
@@ -450,70 +395,58 @@ export default function IntlCityPage({ city, packages }: Props) {
       </section>
 
       {/* ── FAQ ───────────────────────────────────────────────────────── */}
-      <section className="bg-slate-800/50 py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-10">
-            Frequently Asked Questions — {city.name}
-          </h2>
-          <div className="max-w-3xl space-y-3">
+      <section className="city-section city-section-faq">
+        <div className="container">
+          <h2 className="section-title-left">Frequently Asked Questions — {city.name}</h2>
+          <div className="faq-list" style={{ maxWidth: 780, marginTop: 32 }}>
             {faqs.map((f, i) => (
-              <div
-                key={i}
-                className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden"
-              >
+              <div key={i} className={`faq-item${openFaq === i ? ' open' : ''}`}>
                 <button
-                  className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left hover:bg-slate-700/50 transition-colors"
+                  className="faq-q"
                   onClick={() => setOpenFaq(openFaq === i ? null : i)}
                   aria-expanded={openFaq === i}
                 >
-                  <span className="font-semibold text-white text-sm md:text-base">{f.q}</span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    aria-hidden="true"
-                    className={`flex-shrink-0 text-amber-400 transition-transform ${openFaq === i ? 'rotate-180' : ''}`}
-                  >
+                  <span>{f.q}</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" className="faq-chevron">
                     <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
                   </svg>
                 </button>
-                {openFaq === i && (
-                  <div className="px-6 pb-5">
-                    <p className="text-slate-300 text-sm leading-relaxed">{f.a}</p>
-                  </div>
-                )}
+                <div className="faq-a">
+                  <p>{f.a}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── FINAL CTA ─────────────────────────────────────────────────── */}
-      <section className="bg-gradient-to-r from-amber-600 to-amber-500 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">
-            Ready to trek the Himalayas from {city.name}?
-          </h2>
-          <p className="text-slate-800 mb-8 max-w-xl mx-auto">
-            Our Haridwar-based team responds within 60 minutes. Free itinerary, no booking fee, pay after confirmation.
-          </p>
-          <WaLink
-            href={heroWaLink}
-            label={`intl_city_footer_${city.slug}`}
-            className="inline-flex items-center gap-3 bg-slate-900 hover:bg-slate-800 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
-          >
-            📲 WhatsApp Us Now
-          </WaLink>
+      {/* ── CTA STRIP ─────────────────────────────────────────────────── */}
+      <section className="city-cta-strip">
+        <div className="container city-cta-inner">
+          <div>
+            <p className="city-cta-headline">Ready to trek the Himalayas from {city.name}?</p>
+            <p className="city-cta-sub">Our Haridwar team responds within 60 mins · Free itinerary · No booking fee · Pay after confirmation</p>
+          </div>
+          <div className="city-cta-btns">
+            <WaLink
+              href={heroWaLink}
+              label={`intl_city_cta_${city.slug}`}
+              className="btn-gold-lg"
+            >
+              📲 WhatsApp Us Now
+            </WaLink>
+            <a href="tel:+919873897652" className="btn-outline-lg light">📞 +91 98738 97652</a>
+          </div>
         </div>
       </section>
 
-      {/* ── STICKY MOBILE CTA ─────────────────────────────────────────── */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-green-600 border-t border-green-500">
+      {/* ── STICKY MOBILE CTA (hidden on desktop via inline media style) ── */}
+      <style>{`.intl-sticky-cta { display: none; } @media (max-width: 768px) { .intl-sticky-cta { display: flex; } }`}</style>
+      <div className="intl-sticky-cta" style={{ position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 50 }}>
         <WaLink
           href={heroWaLink}
           label={`intl_city_sticky_${city.slug}`}
-          className="flex items-center justify-center gap-2 text-white font-bold py-4 text-base w-full"
+          style={{ flex: 1, background: 'var(--wa)', color: '#fff', fontWeight: 700, padding: '15px 0', fontSize: '0.95rem', textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}
         >
           📲 WhatsApp us to plan your India trek →
         </WaLink>
