@@ -189,10 +189,10 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── OVERVIEW ───────────────────────────────────────────────────── */}
       {pkg.overview && (
         <section className="city-section">
-          <div className="container" style={{ maxWidth: 820 }}>
-            <div className="s-label">About This Package</div>
-            <h2 className="section-title-left">What to Expect</h2>
-            <p style={{ fontSize: 15, color: 'var(--muted)', lineHeight: 1.85 }}>{pkg.overview}</p>
+          <div className="container">
+            <h2 className="s-title">What to <em>Expect</em></h2>
+            <div className="s-line" />
+            <p style={{ maxWidth: 760, margin: '0 auto', fontSize: 15, color: 'var(--muted)', lineHeight: 1.85, textAlign: 'center' }}>{pkg.overview}</p>
           </div>
         </section>
       )}
@@ -201,9 +201,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {pkg.route_stops && pkg.route_stops.length > 0 && (
         <section className="city-section city-section-dark">
           <div className="container">
-            <div className="s-label">The Route</div>
-            <h2 className="section-title-left light">Route Overview</h2>
-            <div style={{ maxWidth: 540, display: 'flex', flexDirection: 'column' }}>
+            <h2 className="s-title">Route <em>Overview</em></h2>
+            <div className="s-line" />
+            <div style={{ maxWidth: 540, margin: '0 auto', display: 'flex', flexDirection: 'column' }}>
               {pkg.route_stops.map((stop, i) => (
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: 16 }}>
                   <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -228,9 +228,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {pkg.itinerary && pkg.itinerary.length > 0 && (
         <section className="city-section">
           <div className="container">
-            <div className="s-label">Day by Day</div>
-            <h2 className="section-title-left">Detailed Itinerary</h2>
-            <div style={{ maxWidth: 780, display: 'flex', flexDirection: 'column', gap: 8 }}>
+            <h2 className="s-title">Detailed <em>Itinerary</em></h2>
+            <div className="s-line" />
+            <div style={{ maxWidth: 780, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 8 }}>
               {pkg.itinerary.map((day, i) => (
                 <ItineraryItem key={i} day={day} />
               ))}
@@ -242,9 +242,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── INCLUDED / EXCLUDED ────────────────────────────────────────── */}
       <section className="city-section city-section-dark">
         <div className="container">
-          <div className="s-label">Package Details</div>
-          <h2 className="section-title-left light">What&apos;s Included</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, maxWidth: 860 }}>
+          <h2 className="s-title">What&apos;s <em>Included</em></h2>
+          <div className="s-line" />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(280px,1fr))', gap: 20, maxWidth: 860, margin: '0 auto', textAlign: 'left' }}>
             <div style={{ background: 'rgba(34,197,94,0.06)', border: '1px solid rgba(34,197,94,0.2)', borderRadius: 16, padding: 24 }}>
               <div style={{ fontWeight: 700, color: '#4ade80', fontSize: 13, marginBottom: 16 }}>✓ Included in Package</div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: 9 }}>
@@ -272,10 +272,10 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── PRICING TABLE ──────────────────────────────────────────────── */}
       <section className="city-section">
         <div className="container">
-          <div className="s-label">Pricing</div>
-          <h2 className="section-title-left">Package Pricing</h2>
-          <p style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 28, marginTop: -16 }}>All prices in USD · 30% deposit to confirm booking</p>
-          <div style={{ maxWidth: 560 }}>
+          <h2 className="s-title">Package <em>Pricing</em></h2>
+          <p className="s-sub">All prices in USD · 30% deposit to confirm booking</p>
+          <div className="s-line" />
+          <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'left' }}>
             <div style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 16, overflow: 'hidden' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
@@ -310,9 +310,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── GUIDE ──────────────────────────────────────────────────────── */}
       <section className="city-section city-section-dark">
         <div className="container">
-          <div className="s-label">Your Expert</div>
-          <h2 className="section-title-left light">Your Guide</h2>
-          <div style={{ background: 'var(--card2)', border: '1px solid var(--border)', borderRadius: 16, padding: 24, maxWidth: 540 }}>
+          <h2 className="s-title">Your <em>Guide</em></h2>
+          <div className="s-line" />
+          <div style={{ background: 'var(--card2)', border: '1px solid var(--border)', borderRadius: 16, padding: 24, maxWidth: 540, margin: '0 auto' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: 20 }}>
               <div style={{ width: 64, height: 64, borderRadius: '50%', background: 'rgba(201,146,61,0.12)', border: '2px solid rgba(201,146,61,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 28, flexShrink: 0 }}>
                 🧭
@@ -341,9 +341,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── TESTIMONIALS ───────────────────────────────────────────────── */}
       <section className="city-section">
         <div className="container">
-          <div className="s-label">Social Proof</div>
-          <h2 className="section-title-left">What Travelers Say</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 16, maxWidth: 900 }}>
+          <h2 className="s-title">What <em>Travelers Say</em></h2>
+          <div className="s-line" />
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 16, maxWidth: 900, margin: '0 auto', textAlign: 'left' }}>
             {testimonials.map((t, i) => (
               <div key={i} className="pkg-card" style={{ padding: 24 }}>
                 <div style={{ fontSize: 28, color: 'var(--gold)', marginBottom: 12 }}>❝</div>
@@ -359,9 +359,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {/* ── FAQ ────────────────────────────────────────────────────────── */}
       <section className="city-section city-section-faq">
         <div className="container">
-          <div className="s-label">Common Questions</div>
-          <h2 className="section-title-left light">Frequently Asked Questions</h2>
-          <div style={{ maxWidth: 780, display: 'flex', flexDirection: 'column', gap: 8 }}>
+          <h2 className="s-title">Frequently Asked <em>Questions</em></h2>
+          <div className="s-line" />
+          <div style={{ maxWidth: 780, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 8 }}>
             {faqs.map((f, i) => (
               <div key={i} className="faq-item" style={{ background: openFaq === i ? 'var(--card2)' : 'var(--card)', borderColor: openFaq === i ? 'rgba(201,146,61,0.4)' : undefined }}>
                 <button className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: '16px 20px', color: 'var(--text)', fontWeight: 600, fontSize: 14 }}>
@@ -381,10 +381,10 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {popularCities.length > 0 && (
         <section className="city-section">
           <div className="container">
-            <div className="s-label">Departure Cities</div>
-            <h2 className="section-title-left">Book from Your City</h2>
-            <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 28, marginTop: -16 }}>Personalised flight info, visa details & local pricing for your city.</p>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))', gap: 12, maxWidth: 860 }}>
+            <h2 className="s-title">Book from <em>Your City</em></h2>
+            <p className="s-sub">Personalised flight info, visa details & local pricing for your city.</p>
+            <div className="s-line" />
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill,minmax(140px,1fr))', gap: 12, maxWidth: 860, margin: '0 auto' }}>
               {popularCities.map((city) => (
                 <Link key={city.slug} href={`/india-trek-packages/from/${city.slug}/`} style={{ textDecoration: 'none' }}>
                   <div className="route-card" style={{ textAlign: 'center', padding: '16px 12px' }}>
@@ -403,7 +403,8 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
       {related.length > 0 && (
         <section className="city-section city-section-dark">
           <div className="container">
-            <h2 className="section-title-left light">You Might Also Like</h2>
+            <h2 className="s-title">You Might <em>Also Like</em></h2>
+            <div className="s-line" />
             <div className="pkg-grid">
               {related.map((rp) => {
                 const rpDiff = DIFF_STYLE[rp.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
