@@ -33,7 +33,7 @@ const JOURNEYS = [
     title: 'Himalayan Treks',
     sub: 'Kedarkantha · Valley of Flowers · Roopkund · Kuari Pass',
     url: '/himalayan-treks/',
-    img: '/images/trek_himalaya.webp',
+    img: '/images/kedarkantha_1.webp',
   },
   {
     tag: 'Active Adventures',

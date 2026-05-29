@@ -2555,7 +2555,9 @@
       "/images/kedarkantha_3.webp",
       "/images/kedarkantha_4.webp",
       "/images/kedarkantha_5.webp",
-      "/images/kedarkantha_6.webp"
+      "/images/kedarkantha_6.webp",
+      "/images/kedarkantha_7.webp",
+      "/images/kedarkantha_8.webp"
     ],
     "testimonials": [
       {
@@ -2759,7 +2761,8 @@
       "/images/vof_3.jpg",
       "/images/vof_4.jpg",
       "/images/vof_5.jpg",
-      "/images/vof_6.jpg"
+      "/images/vof_6.jpg",
+      "/images/vof_7.jpg"
     ],
     "testimonials": [
       {
@@ -2970,9 +2973,11 @@
     "gallery": [
       "/images/harkidun_2.jpg",
       "/images/harkidun_3.jpg",
+      "/images/harkidun_4.jpg",
       "/images/harkidun_5.jpg",
       "/images/harkidun_6.jpg",
-      "/images/harkidun_7.jpg"
+      "/images/harkidun_7.jpg",
+      "/images/harkidun_8.jpg"
     ],
     "testimonials": [
       {
@@ -3365,8 +3370,8 @@
       "/images/kuari_pass_2.jpg",
       "/images/kuari_pass_3.jpg",
       "/images/kuari_pass_4.jpg",
-      "/images/kuari_pass_6.jpg",
-      "/images/kuari_pass_7.jpg"
+      "/images/kuari_pass_5.jpg",
+      "/images/kuari_pass_6.jpg"
     ],
     "testimonials": [
       {
@@ -6769,7 +6774,9 @@
       "/images/hampta_3.jpg",
       "/images/hampta_4.jpg",
       "/images/hampta_5.jpg",
-      "/images/hampta_6.jpg"
+      "/images/hampta_6.jpg",
+      "/images/hampta_7.jpg",
+      "/images/hampta_8.jpg"
     ],
     "testimonials": [
       {
@@ -8651,7 +8658,9 @@
       "/images/ebc_3.jpg",
       "/images/ebc_4.jpg",
       "/images/ebc_5.jpg",
-      "/images/ebc_6.jpg"
+      "/images/ebc_6.jpg",
+      "/images/ebc_7.jpg",
+      "/images/ebc_8.jpg"
     ],
     "testimonials": [
       {
@@ -8845,7 +8854,8 @@
       "/images/sarpass_3.jpg",
       "/images/sarpass_4.jpg",
       "/images/sarpass_5.jpg",
-      "/images/sarpass_6.jpg"
+      "/images/sarpass_6.jpg",
+      "/images/sarpass_7.jpg"
     ],
     "testimonials": [
       {
@@ -8924,7 +8934,7 @@
     "keywords": "kuari pass pangarchulla trek, pangarchulla peak, kuari pass summit, garhwal peak trek, nanda devi views trek, joshimath trek, pangarchulla 4594m, advanced uttarakhand trek",
     "h1": "Kuari Pass + <em>Pangarchulla Peak 6N/7D</em>",
     "hero_tagline": "From Lord Curzon's Trail to a Real Himalayan Summit",
-    "hero_image": "/images/kuari_pass_6.jpg",
+    "hero_image": "/images/kuari_pass_1.jpg",
     "tag": "Summit Trek",
     "duration": "6 Nights / 7 Days",
     "destinations_short": "Joshimath · Khullara · Kuari Pass · Pangarchulla",
@@ -9060,8 +9070,8 @@
       "/images/kuari_pass_2.jpg",
       "/images/kuari_pass_3.jpg",
       "/images/kuari_pass_4.jpg",
-      "/images/kuari_pass_7.jpg",
-      "/images/kuari_pass_1.jpg"
+      "/images/kuari_pass_5.jpg",
+      "/images/kuari_pass_6.jpg"
     ],
     "testimonials": [
       {
