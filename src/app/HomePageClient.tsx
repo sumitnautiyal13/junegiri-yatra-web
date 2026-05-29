@@ -351,7 +351,7 @@ export default function HomePageClient() {
               <span key={s} style={{ color: '#F5C842', fontSize: 20 }}>★</span>
             ))}
           </div>
-          <blockquote className="fade-in" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.75rem)', fontWeight: 700, color: '#fff', lineHeight: 1.6, maxWidth: 860, margin: '0 auto 36px', letterSpacing: '-0.3px' }}>
+          <blockquote className="fade-in" style={{ fontSize: 'clamp(1.2rem, 2.5vw, 1.75rem)', fontWeight: 700, color: 'var(--heading)', lineHeight: 1.6, maxWidth: 860, margin: '0 auto 36px', letterSpacing: '-0.3px' }}>
             &ldquo;{FEATURED_QUOTE.quote}&rdquo;
           </blockquote>
           <div className="fade-in" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
@@ -359,7 +359,7 @@ export default function HomePageClient() {
               KF
             </div>
             <div style={{ textAlign: 'left' }}>
-              <div style={{ fontWeight: 700, color: '#fff', fontSize: 15 }}>{FEATURED_QUOTE.author}</div>
+              <div style={{ fontWeight: 700, color: 'var(--heading)', fontSize: 15 }}>{FEATURED_QUOTE.author}</div>
               <div style={{ fontSize: 12, color: 'var(--muted)' }}>{FEATURED_QUOTE.loc} · ✓ {FEATURED_QUOTE.trip}</div>
             </div>
           </div>
@@ -459,7 +459,7 @@ export default function HomePageClient() {
             {/* Right — reasons */}
             <div className="why-reasons">
               <p className="s-label" style={{ textAlign: 'left' }}>Why Travel With Us</p>
-              <h2 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 800, color: '#fff', marginBottom: 8, letterSpacing: '-0.5px', lineHeight: 1.2 }}>
+              <h2 style={{ fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 800, color: 'var(--heading)', marginBottom: 8, letterSpacing: '-0.5px', lineHeight: 1.2 }}>
                 The <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Junegiri</em> Promise
               </h2>
               <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 40, lineHeight: 1.7 }}>
@@ -474,7 +474,7 @@ export default function HomePageClient() {
                     </div>
                     <div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 4 }}>
-                        <span style={{ fontWeight: 800, color: '#fff', fontSize: 15 }}>{w.title}</span>
+                        <span style={{ fontWeight: 800, color: 'var(--heading)', fontSize: 15 }}>{w.title}</span>
                         <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', color: 'var(--gold)', background: 'rgba(201,146,61,0.1)', border: '1px solid rgba(201,146,61,0.25)', padding: '2px 8px', borderRadius: 50 }}>{w.stat}</span>
                       </div>
                       <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>{w.text}</p>

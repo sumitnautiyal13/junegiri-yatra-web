@@ -338,7 +338,7 @@ export default function BestTimePage({ destination }: Props) {
                     fontFamily: "'Poppins', sans-serif",
                     fontSize: '1.4rem',
                     fontWeight: 800,
-                    color: '#fff',
+                    color: 'var(--heading)',
                     marginBottom: '12px',
                   }}
                 >
@@ -402,7 +402,7 @@ export default function BestTimePage({ destination }: Props) {
                         : undefined
                     }
                   >
-                    <td style={{ fontWeight: 600, color: '#fff', whiteSpace: 'nowrap' }}>{m.month}</td>
+                    <td style={{ fontWeight: 600, color: 'var(--heading)', whiteSpace: 'nowrap' }}>{m.month}</td>
                     <td><StatusBadge status={m.status} /></td>
                     <td style={{ fontSize: '12.5px' }}>{m.weather}</td>
                     <td style={{ fontSize: '12.5px' }}>{m.crowds}</td>
@@ -466,7 +466,7 @@ export default function BestTimePage({ destination }: Props) {
                   fontFamily: "'Poppins', sans-serif",
                   fontSize: '1.6rem',
                   fontWeight: 800,
-                  color: '#fff',
+                  color: 'var(--heading)',
                   marginBottom: '10px',
                   lineHeight: 1.2,
                 }}

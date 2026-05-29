@@ -161,7 +161,7 @@ export default function SpitiValleyPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{ width: 44, height: 44, borderRadius: 10, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>🚗</div>
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>Via Manali</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)' }}>Via Manali</div>
                   <div style={{ fontSize: 12, color: 'var(--muted)' }}>Rohtang / Atal Tunnel Route</div>
                 </div>
               </div>
@@ -189,7 +189,7 @@ export default function SpitiValleyPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{ width: 44, height: 44, borderRadius: 10, background: 'rgba(91,155,213,0.12)', border: '1px solid rgba(91,155,213,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>🛣️</div>
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>Via Shimla</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)' }}>Via Shimla</div>
                   <div style={{ fontSize: 12, color: 'var(--muted)' }}>Kinnaur Valley Route</div>
                 </div>
               </div>
@@ -243,7 +243,7 @@ export default function SpitiValleyPage() {
                   <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: '#E8AA50', fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>Moderate</span>
                 </div>
                 <div style={{ padding: '20px 22px 22px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                  <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 8 }}>Hamta Pass Trek</h3>
+                  <h3 style={{ fontSize: 18, fontWeight: 700, color: 'var(--heading)', marginBottom: 8 }}>Hamta Pass Trek</h3>
                   <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6, marginBottom: 14, flexGrow: 1 }}>
                     Cross from the lush green Kullu Valley to the barren lunar landscapes of Spiti in one dramatic high-altitude pass. Chandrataal Moon Lake included.
                   </p>
@@ -277,7 +277,7 @@ export default function SpitiValleyPage() {
                   <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: '#E05C00', fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>Difficult</span>
                 </div>
                 <div style={{ padding: '20px 22px 22px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                  <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 8 }}>Pin Parvati Pass Trek</h3>
+                  <h3 style={{ fontSize: 18, fontWeight: 700, color: 'var(--heading)', marginBottom: 8 }}>Pin Parvati Pass Trek</h3>
                   <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6, marginBottom: 14, flexGrow: 1 }}>
                     One of the most challenging and remote treks in India — crossing from Kullu&apos;s Parvati Valley into the austere landscape of Pin Valley, Spiti. Glacier crossings at 5,319m.
                   </p>
@@ -314,7 +314,7 @@ export default function SpitiValleyPage() {
             {HIGHLIGHTS.map((h) => (
               <div key={h.title} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 14, padding: '24px 22px' }}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>{h.icon}</div>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 8 }}>{h.title}</h3>
+                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--heading)', marginBottom: 8 }}>{h.title}</h3>
                 <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.65 }}>{h.desc}</p>
               </div>
             ))}
@@ -345,7 +345,7 @@ export default function SpitiValleyPage() {
               <tbody>
                 {BEST_TIME.map((row, i) => (
                   <tr key={row.month} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.02)' }}>
-                    <td style={{ padding: '14px 16px', fontWeight: 700, color: row.month === 'Sep' ? 'var(--gold2)' : '#fff', fontSize: 14 }}>{row.month}{row.month === 'Sep' ? ' ⭐' : ''}</td>
+                    <td style={{ padding: '14px 16px', fontWeight: 700, color: row.month === 'Sep' ? 'var(--gold2)' : 'var(--heading)', fontSize: 14 }}>{row.month}{row.month === 'Sep' ? ' ⭐' : ''}</td>
                     <td style={{ padding: '14px 16px', fontSize: 13, color: 'var(--muted)' }}>{row.crowd}</td>
                     <td style={{ padding: '14px 16px', fontSize: 18 }}>{row.sky}</td>
                     <td style={{ padding: '14px 16px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.55 }}>{row.note}</td>

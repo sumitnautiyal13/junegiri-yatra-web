@@ -162,7 +162,7 @@ export default function LadakhPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{ width: 44, height: 44, borderRadius: 10, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>✈️</div>
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>By Air</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)' }}>By Air</div>
                   <div style={{ fontSize: 12, color: 'var(--muted)' }}>Leh Kushok Bakula Rimpochee Airport</div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function LadakhPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{ width: 44, height: 44, borderRadius: 10, background: 'rgba(91,155,213,0.12)', border: '1px solid rgba(91,155,213,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>🚗</div>
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>Manali–Leh Highway</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)' }}>Manali–Leh Highway</div>
                   <div style={{ fontSize: 12, color: 'var(--muted)' }}>NH3 — The Epic Mountain Road</div>
                 </div>
               </div>
@@ -218,7 +218,7 @@ export default function LadakhPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 16 }}>
                 <div style={{ width: 44, height: 44, borderRadius: 10, background: 'rgba(61,201,160,0.12)', border: '1px solid rgba(61,201,160,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22 }}>🛣️</div>
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 700, color: '#fff' }}>Srinagar–Leh Highway</div>
+                  <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)' }}>Srinagar–Leh Highway</div>
                   <div style={{ fontSize: 12, color: 'var(--muted)' }}>NH1 — Via Kargil & Zoji La</div>
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function LadakhPage() {
                   <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: 'var(--gold)', fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>Jun–Sep</span>
                 </div>
                 <div style={{ padding: '20px 22px 22px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                  <h3 style={{ fontSize: 18, fontWeight: 700, color: '#fff', marginBottom: 8 }}>Ladakh Tour — Pangong &amp; Nubra</h3>
+                  <h3 style={{ fontSize: 18, fontWeight: 700, color: 'var(--heading)', marginBottom: 8 }}>Ladakh Tour — Pangong &amp; Nubra</h3>
                   <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.6, marginBottom: 14, flexGrow: 1 }}>
                     Classic Ladakh circuit: Leh city, Pangong Tso overnight camp, Nubra Valley with Bactrian camel safari, Khardung La, and Magnetic Hill. Full package with flights, hotels, and permits.
                   </p>
@@ -311,7 +311,7 @@ export default function LadakhPage() {
             {HIGHLIGHTS.map((h) => (
               <div key={h.title} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 14, padding: '24px 22px' }}>
                 <div style={{ fontSize: 32, marginBottom: 12 }}>{h.icon}</div>
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: '#fff', marginBottom: 8 }}>{h.title}</h3>
+                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'var(--heading)', marginBottom: 8 }}>{h.title}</h3>
                 <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.65 }}>{h.desc}</p>
               </div>
             ))}
@@ -342,7 +342,7 @@ export default function LadakhPage() {
               <tbody>
                 {BEST_TIME.map((row, i) => (
                   <tr key={row.month} style={{ borderBottom: '1px solid var(--border)', background: i % 2 === 0 ? 'transparent' : 'rgba(255,255,255,0.02)' }}>
-                    <td style={{ padding: '14px 16px', fontWeight: 700, color: row.month === 'Sep' ? 'var(--gold2)' : '#fff', fontSize: 14 }}>{row.month}{row.month === 'Sep' ? ' ⭐' : ''}</td>
+                    <td style={{ padding: '14px 16px', fontWeight: 700, color: row.month === 'Sep' ? 'var(--gold2)' : 'var(--heading)', fontSize: 14 }}>{row.month}{row.month === 'Sep' ? ' ⭐' : ''}</td>
                     <td style={{ padding: '14px 16px', fontSize: 13, color: 'var(--muted)' }}>{row.crowd}</td>
                     <td style={{ padding: '14px 16px', fontSize: 18 }}>{row.sky}</td>
                     <td style={{ padding: '14px 16px', fontSize: 13, color: 'var(--muted)', lineHeight: 1.55 }}>{row.note}</td>

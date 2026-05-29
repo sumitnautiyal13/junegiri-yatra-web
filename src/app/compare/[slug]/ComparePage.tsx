@@ -202,7 +202,7 @@ export default function ComparePage({ comparison }: Props) {
               <tbody>
                 {comparison.comparison_table.map((row, i) => (
                   <tr key={i}>
-                    <td style={{ fontWeight: 600, color: 'rgba(255,248,238,0.75)', fontSize: 12, letterSpacing: 1, textTransform: 'uppercase' }}>
+                    <td style={{ fontWeight: 600, color: 'var(--heading)', fontSize: 12, letterSpacing: 1, textTransform: 'uppercase' }}>
                       {row.aspect}
                     </td>
                     <td>{row.a}</td>
@@ -240,7 +240,7 @@ export default function ComparePage({ comparison }: Props) {
             >
               Our Verdict
             </p>
-            <p style={{ fontSize: 16, color: 'rgba(255,248,238,0.9)', lineHeight: 1.75 }}>
+            <p style={{ fontSize: 16, color: 'var(--text)', lineHeight: 1.75 }}>
               {comparison.verdict}
             </p>
           </div>
@@ -348,7 +348,7 @@ function GlanceCard({
             fontFamily: 'Poppins, sans-serif',
             fontSize: 18,
             fontWeight: 700,
-            color: '#fff',
+            color: 'var(--heading)',
             margin: 0,
             paddingBottom: 12,
             borderBottom: '1px solid var(--border)',

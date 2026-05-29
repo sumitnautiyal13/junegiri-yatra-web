@@ -285,7 +285,7 @@ export default function DubaiCityPage({ city }: Props) {
                   {opt.badge}
                 </span>
                 <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--gold)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 10 }}>{opt.label}</div>
-                <div style={{ fontSize: 36, fontWeight: 800, color: '#fff', marginBottom: 6, lineHeight: 1 }}>{opt.price}<span style={{ fontSize: 14, fontWeight: 500, color: 'var(--muted)', marginLeft: 4 }}>/person</span></div>
+                <div style={{ fontSize: 36, fontWeight: 800, color: 'var(--heading)', marginBottom: 6, lineHeight: 1 }}>{opt.price}<span style={{ fontSize: 14, fontWeight: 500, color: 'var(--muted)', marginLeft: 4 }}>/person</span></div>
                 <div style={{ fontSize: 13, color: 'var(--muted)', marginBottom: 22 }}>🏨 {opt.hotel}</div>
                 <WaLink
                   href={`https://wa.me/919873897652?text=${encodeURIComponent(opt.waMsg)}`}

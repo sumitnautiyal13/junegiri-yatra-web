@@ -388,7 +388,7 @@ export default function HimalayanTreksPage() {
                     <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>{trek.difficulty}</span>
                   </div>
                   <div style={{ padding: '18px 20px 20px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: 17, fontWeight: 700, color: '#fff', marginBottom: 6 }}>{trek.name}</h3>
+                    <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--heading)', marginBottom: 6 }}>{trek.name}</h3>
                     <p style={{ fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12, flexGrow: 1 }}>{trek.desc}</p>
                     <div style={{ display: 'flex', gap: 14, marginBottom: 12, flexWrap: 'wrap' }}>
                       <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
@@ -441,7 +441,7 @@ export default function HimalayanTreksPage() {
                       {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
                     </div>
                     <div style={{ padding: '16px 18px 18px' }}>
-                      <h4 style={{ fontSize: 15, fontWeight: 700, color: '#fff', marginBottom: 4 }}>{trek.name}</h4>
+                      <h4 style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)', marginBottom: 4 }}>{trek.name}</h4>
                       <div style={{ display: 'flex', gap: 12, marginBottom: 8 }}>
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>⛰️ {trek.altitude}</span>
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
@@ -475,7 +475,7 @@ export default function HimalayanTreksPage() {
                       {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
                     </div>
                     <div style={{ padding: '16px 18px 18px' }}>
-                      <h4 style={{ fontSize: 15, fontWeight: 700, color: '#fff', marginBottom: 4 }}>{trek.name}</h4>
+                      <h4 style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)', marginBottom: 4 }}>{trek.name}</h4>
                       <div style={{ display: 'flex', gap: 12, marginBottom: 8 }}>
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>⛰️ {trek.altitude}</span>
                         <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>

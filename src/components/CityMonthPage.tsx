@@ -133,7 +133,7 @@ export default function CityMonthPage({
     condHeader: {
       fontSize: '1.05rem',
       fontWeight: 700,
-      color: '#fff',
+      color: 'var(--heading)',
       marginBottom: '20px',
     } as React.CSSProperties,
     condGrid: {

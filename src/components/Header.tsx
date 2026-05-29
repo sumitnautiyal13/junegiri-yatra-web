@@ -490,8 +490,8 @@ export default function Header() {
                 WhatsApp Us
               </WaLink>
             </div>
-            <div style={{ padding: '12px 16px 4px', borderTop: '1px solid rgba(255,255,255,0.08)' }}>
-              <InstallAppButton style={{ color: 'rgba(255,255,255,0.7)', fontSize: 14, fontWeight: 600 }} />
+            <div style={{ padding: '12px 16px 4px', borderTop: '1px solid var(--border)' }}>
+              <InstallAppButton style={{ color: 'var(--muted)', fontSize: 14, fontWeight: 600 }} />
             </div>
           </div>
           </div>

@@ -173,7 +173,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
               fontSize: '1.5rem',
               fontWeight: 700,
               marginBottom: 28,
-              color: '#fff',
+              color: 'var(--heading)',
             }}
           >
             {monthLabel} Conditions at a Glance
@@ -231,7 +231,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
               fontWeight: 700,
               paddingTop: 56,
               marginBottom: 28,
-              color: '#fff',
+              color: 'var(--heading)',
             }}
           >
             What to Expect in {monthLabel}
@@ -285,7 +285,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
               fontSize: '1.5rem',
               fontWeight: 700,
               marginBottom: 28,
-              color: '#fff',
+              color: 'var(--heading)',
             }}
           >
             What to Pack for {monthLabel}
@@ -332,7 +332,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
               fontSize: '1.6rem',
               fontWeight: 800,
               marginBottom: 12,
-              color: '#fff',
+              color: 'var(--heading)',
             }}
           >
             Ready to Trek in {monthLabel}?
@@ -381,7 +381,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
               fontSize: '1.5rem',
               fontWeight: 700,
               marginBottom: 28,
-              color: '#fff',
+              color: 'var(--heading)',
             }}
           >
             Frequently Asked Questions — {monthLabel}
@@ -427,7 +427,7 @@ export default function MonthPage({ pkg, month, monthData }: Props) {
                 fontSize: '1.5rem',
                 fontWeight: 700,
                 marginBottom: 8,
-                color: '#fff',
+                color: 'var(--heading)',
               }}
             >
               Other Months for {pkg.name}

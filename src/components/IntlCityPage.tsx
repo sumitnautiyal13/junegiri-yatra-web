@@ -205,11 +205,11 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
       <div className="city-hook">
         <div className="container">
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px 36px', fontSize: '0.9rem' }}>
-            <span>✈️ <strong style={{ color: '#fff' }}>{city.flight_hours_to_delhi}h</strong> flight to Delhi</span>
+            <span>✈️ <strong style={{ color: 'var(--heading)' }}>{city.flight_hours_to_delhi}h</strong> flight to Delhi</span>
             <span style={{ color: 'var(--border2)' }}>|</span>
-            <span>🛂 <strong style={{ color: '#fff' }}>{city.visa_type}</strong> · {city.visa_processing_days} days</span>
+            <span>🛂 <strong style={{ color: 'var(--heading)' }}>{city.visa_type}</strong> · {city.visa_processing_days} days</span>
             <span style={{ color: 'var(--border2)' }}>|</span>
-            <span>📅 Best: <strong style={{ color: '#fff' }}>{city.best_travel_months.slice(0, 3).join(', ')}</strong></span>
+            <span>📅 Best: <strong style={{ color: 'var(--heading)' }}>{city.best_travel_months.slice(0, 3).join(', ')}</strong></span>
             <span style={{ color: 'var(--border2)' }}>|</span>
             <span>💰 Treks from <strong style={{ color: 'var(--gold2)' }}>{city.currency_symbol}{localPrice(80).toLocaleString()}</strong> <span style={{ color: 'var(--muted)', fontSize: '0.8em' }}>($80)</span></span>
           </div>
@@ -480,7 +480,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
             ].map((item) => (
               <div key={item.title} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 'var(--r2)', padding: '28px 22px', textAlign: 'center', transition: 'border-color .2s' }}>
                 <div style={{ fontSize: '2.2rem', marginBottom: 14 }}>{item.icon}</div>
-                <div style={{ fontFamily: 'var(--font-poppins)', fontWeight: 700, fontSize: '0.95rem', color: '#fff', marginBottom: 8 }}>{item.title}</div>
+                <div style={{ fontFamily: 'var(--font-poppins)', fontWeight: 700, fontSize: '0.95rem', color: 'var(--heading)', marginBottom: 8 }}>{item.title}</div>
                 <div style={{ fontSize: '0.82rem', color: 'var(--muted)', lineHeight: 1.65 }}>{item.desc}</div>
               </div>
             ))}
