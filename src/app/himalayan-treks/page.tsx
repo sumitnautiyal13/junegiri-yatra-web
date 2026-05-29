@@ -143,7 +143,8 @@ const UK_TREKS = [
 /* ── HIMACHAL PRADESH TREKS (WhatsApp enquiry) ──────────────── */
 const HP_EASY: Array<{
   name: string; altitude: string; duration: string; highlight: string; price?: string;
-  difficulty: string; diffColor: string; image: string; waMsg: string; packageUrl?: string;
+  difficulty: string; diffColor: string; tag: string; tagColor: string; season: string;
+  image: string; waMsg: string; packageUrl?: string;
 }> = [
   {
     name: 'Triund Trek',
@@ -153,7 +154,10 @@ const HP_EASY: Array<{
     highlight: "One of Himachal's most popular beginner treks. Stunning views of the Dhauladhar snow wall and Kangra Valley. Perfect for first-timers.",
     difficulty: 'Easy',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=600&q=80&auto=format&fit=crop',
+    tag: 'Weekend Trek',
+    tagColor: '#3DC9A0',
+    season: 'Mar–Jun · Sep–Nov',
+    image: '/images/himalaya1.webp',
     waMsg: 'Namaste! I want to enquire about the Triund Trek in Himachal Pradesh',
     packageUrl: '/packages/triund-trek-1n-2d/',
   },
@@ -165,7 +169,10 @@ const HP_EASY: Array<{
     highlight: 'Pristine alpine lake above Dharamshala. Multiple river crossings, oak and rhododendron forest, total wilderness camping.',
     difficulty: 'Easy–Moderate',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80&auto=format&fit=crop',
+    tag: 'Alpine Lake',
+    tagColor: '#5B9BD5',
+    season: 'Apr–Jun · Sep–Oct',
+    image: '/images/trek_lake.webp',
     waMsg: 'Namaste! I want to enquire about the Kareri Lake Trek in Himachal Pradesh',
     packageUrl: '/packages/kareri-lake-trek-3n-4d/',
   },
@@ -177,7 +184,10 @@ const HP_EASY: Array<{
     highlight: 'Source of the sacred Beas river — glacial lake at 3,700m with Hanuman Tibba and Shitidhar glacier above. Perfect beginner trek from Manali.',
     difficulty: 'Easy',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80&auto=format&fit=crop',
+    tag: 'Glacial Lake',
+    tagColor: '#5B9BD5',
+    season: 'May–Oct',
+    image: '/images/snow_mountain.webp',
     waMsg: 'Namaste! I want to enquire about the Beas Kund Trek near Manali',
     packageUrl: '/packages/beas-kund-trek-2n-3d/',
   },
@@ -189,7 +199,10 @@ const HP_EASY: Array<{
     highlight: 'High-altitude sacred lake near Manali. Panoramic views of Rohtang, Deo Tibba and Kullu peaks. Often partially frozen in June.',
     difficulty: 'Easy–Moderate',
     diffColor: '#3DC9A0',
-    image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80&auto=format&fit=crop',
+    tag: 'Sacred Lake',
+    tagColor: '#9B5BD5',
+    season: 'May–Oct',
+    image: '/images/mountains2.webp',
     waMsg: 'Namaste! I want to enquire about the Bhrigu Lake Trek near Manali',
     packageUrl: '/packages/bhrigu-lake-trek-3n-4d/',
   },
@@ -197,7 +210,8 @@ const HP_EASY: Array<{
 
 const HP_MODERATE: Array<{
   name: string; altitude: string; duration: string; highlight: string; price?: string;
-  difficulty: string; diffColor: string; image: string; waMsg: string; packageUrl?: string;
+  difficulty: string; diffColor: string; tag: string; tagColor: string; season: string;
+  image: string; waMsg: string; packageUrl?: string;
 }> = [
   {
     name: 'Hamta Pass Trek',
@@ -207,7 +221,10 @@ const HP_MODERATE: Array<{
     highlight: 'Cross from lush Kullu valley to barren Spiti in one dramatic pass. Chandrataal moon lake included. Best HP moderate trek.',
     difficulty: 'Moderate',
     diffColor: '#E8AA50',
-    image: 'https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=600&q=80&auto=format&fit=crop',
+    tag: 'Valley Crossover',
+    tagColor: '#9B5BD5',
+    season: 'Jun–Sep',
+    image: '/images/hampta_1.jpg',
     waMsg: 'Namaste! I want to enquire about the Hamta Pass Trek in Himachal Pradesh',
     packageUrl: '/packages/hamta-pass-trek-4n-5d/',
   },
@@ -219,7 +236,10 @@ const HP_MODERATE: Array<{
     highlight: 'Breathtaking views of the Pir Panjal range and Dhauladhar mountains. One of the best adventure treks in Himachal Pradesh.',
     difficulty: 'Moderate–Difficult',
     diffColor: '#E8AA50',
-    image: 'https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80&auto=format&fit=crop',
+    tag: 'Ridge Trek',
+    tagColor: '#5B9BD5',
+    season: 'May–Oct',
+    image: '/images/mountains1.webp',
     waMsg: 'Namaste! I want to enquire about the Indrahar Pass Trek in Himachal Pradesh',
     packageUrl: '/packages/indrahar-pass-trek-3n-4d/',
   },
@@ -231,7 +251,10 @@ const HP_MODERATE: Array<{
     highlight: 'Lush forests, apple orchards, and panoramic Himalayan views. Connects Naggar to Malana village.',
     difficulty: 'Moderate–Difficult',
     diffColor: '#E8AA50',
-    image: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&q=80&auto=format&fit=crop',
+    tag: 'Forest Trek',
+    tagColor: '#3DC9A0',
+    season: 'Apr–Oct',
+    image: '/images/trek_himalaya.webp',
     waMsg: 'Namaste! I want to enquire about the Chandrakhani Pass Trek in Himachal Pradesh',
     packageUrl: '/packages/chandrakhani-pass-trek-3n-4d/',
   },
@@ -243,7 +266,10 @@ const HP_MODERATE: Array<{
     highlight: 'Best in May–June. Trails filled with snow bridges and melting glaciers. Multi-state Uttarakhand → Himachal crossover.',
     difficulty: 'Moderate–Difficult',
     diffColor: '#E8AA50',
-    image: 'https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=600&q=80&auto=format&fit=crop',
+    tag: 'Crossover Trek',
+    tagColor: '#9B5BD5',
+    season: 'May–Jun · Sep–Oct',
+    image: '/images/river1.webp',
     waMsg: 'Namaste! I want to enquire about the Rupin Pass Trek',
     packageUrl: '/packages/rupin-pass-trek-8n-9d/',
   },
@@ -255,7 +281,10 @@ const HP_MODERATE: Array<{
     highlight: "Among the highest non-technical summit climbs in India. Cold desert Spiti Valley. Book well in advance — limited slots.",
     difficulty: 'Difficult',
     diffColor: '#E05C00',
-    image: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&q=80&auto=format&fit=crop',
+    tag: 'Summit Climb',
+    tagColor: '#E05C00',
+    season: 'Jun–Sep',
+    image: '/images/himalaya_altitude.webp',
     waMsg: 'Namaste! I want to enquire about Kanamo Peak trek in Spiti Valley',
     packageUrl: '/packages/kanamo-peak-5n-6d/',
   },
@@ -267,7 +296,10 @@ const HP_MODERATE: Array<{
     highlight: 'Challenging, remote crossover from Kullu to Spiti. Glacier crossings, high camp, one of India\'s most adventurous HP routes.',
     difficulty: 'Difficult',
     diffColor: '#E05C00',
-    image: 'https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=600&q=80&auto=format&fit=crop',
+    tag: 'Expedition',
+    tagColor: '#E05C00',
+    season: 'Jul–Sep',
+    image: '/images/trek_mountain_path.webp',
     waMsg: 'Namaste! I want to enquire about the Pin Parvati Pass Trek',
     packageUrl: '/packages/pin-parvati-pass-10n-11d/',
   },
@@ -306,6 +338,44 @@ const FEATURES = [
 ];
 
 /* cardBase moved to CSS class .trek-card-hover in globals.css */
+
+/* ── Shared trek card (one design for all sections) ──────────── */
+function TrekCard({
+  image, name, tag, tagColor, difficulty, diffColor,
+  duration, altitude, season, desc, price, href,
+}: {
+  image: string; name: string; tag: string; tagColor: string;
+  difficulty: string; diffColor: string; duration: string; altitude: string;
+  season: string; desc: string; price?: string; href: string;
+}) {
+  return (
+    <Link href={href} className="trek-card-hover" style={{ display: 'block', textDecoration: 'none' }}>
+      <div className="trek-card-inner">
+        <div style={{ position: 'relative', height: 190 }}>
+          <Image src={image} alt={name} fill sizes="400px" style={{ objectFit: 'cover' }} />
+          <span style={{ position: 'absolute', top: 12, left: 12, background: tagColor, color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{tag}</span>
+          <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: diffColor, fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>{difficulty}</span>
+        </div>
+        <div style={{ padding: '18px 20px 20px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
+          <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--heading)', marginBottom: 6 }}>{name}</h3>
+          <p style={{ fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12, flexGrow: 1 }}>{desc}</p>
+          <div style={{ display: 'flex', gap: 14, marginBottom: 12, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>🕐 {duration}</span>
+            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>⛰️ {altitude}</span>
+            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>📅 {season}</span>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 12, borderTop: '1px solid var(--border)' }}>
+            <div>
+              <div style={{ fontSize: 10, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>From</div>
+              <div style={{ fontSize: 20, fontWeight: 800, color: 'var(--gold2)' }}>{price}<span style={{ fontSize: 11, fontWeight: 400, color: 'var(--muted)' }}>/person</span></div>
+            </div>
+            <span style={{ background: 'var(--gold)', color: '#07051A', fontSize: 12, fontWeight: 700, padding: '9px 16px', borderRadius: 8 }}>View Trek →</span>
+          </div>
+        </div>
+      </div>
+    </Link>
+  );
+}
 
 export default function HimalayanTreksPage() {
   return (
@@ -364,56 +434,9 @@ export default function HimalayanTreksPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          UTTARAKHAND TREKS
-      ══════════════════════════════════════════════════════ */}
-      <section className="city-section">
-        <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', background: 'rgba(201,146,61,0.12)', padding: '4px 12px', borderRadius: 20 }}>Uttarakhand</span>
-          </div>
-          <h2 className="section-title-left">
-            Garhwal &amp; Kumaon <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Trek Packages</em>
-          </h2>
-          <p className="section-sub-left">
-            6 fully-packaged treks departing from Haridwar — itinerary, inclusions, pricing &amp; booking all on the trek page.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: 24, marginTop: 28 }}>
-            {UK_TREKS.map((trek) => (
-              <Link key={trek.slug} href={`/packages/${trek.slug}/`} className="trek-card-hover" style={{ display: 'block', textDecoration: 'none' }}>
-                <div className="trek-card-inner">
-                  <div style={{ position: 'relative', height: 190 }}>
-                    <Image src={trek.image} alt={trek.name} fill sizes="400px" style={{ objectFit: 'cover' }} />
-                    <span style={{ position: 'absolute', top: 12, left: 12, background: trek.tagColor, color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{trek.tag}</span>
-                    <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>{trek.difficulty}</span>
-                  </div>
-                  <div style={{ padding: '18px 20px 20px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                    <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--heading)', marginBottom: 6 }}>{trek.name}</h3>
-                    <p style={{ fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12, flexGrow: 1 }}>{trek.desc}</p>
-                    <div style={{ display: 'flex', gap: 14, marginBottom: 12, flexWrap: 'wrap' }}>
-                      <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
-                      <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>⛰️ {trek.altitude}</span>
-                      <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>📅 {trek.season}</span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 12, borderTop: '1px solid var(--border)' }}>
-                      <div>
-                        <div style={{ fontSize: 10, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>From</div>
-                        <div style={{ fontSize: 20, fontWeight: 800, color: 'var(--gold2)' }}>{trek.price}<span style={{ fontSize: 11, fontWeight: 400, color: 'var(--muted)' }}>/person</span></div>
-                      </div>
-                      <span style={{ background: 'var(--gold)', color: '#07051A', fontSize: 12, fontWeight: 700, padding: '9px 16px', borderRadius: 8 }}>View Trek →</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════
           HIMACHAL PRADESH TREKS
       ══════════════════════════════════════════════════════ */}
-      <section className="city-section" style={{ background: 'var(--card)', paddingTop: 60, paddingBottom: 60 }}>
+      <section className="city-section">
         <div className="container">
           <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
             <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#5B9BD5', background: 'rgba(91,155,213,0.12)', padding: '4px 12px', borderRadius: 20 }}>Himachal Pradesh</span>
@@ -422,7 +445,7 @@ export default function HimalayanTreksPage() {
             Himachal Pradesh <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Trek Routes</em>
           </h2>
           <p className="section-sub-left">
-            10 trek routes from Manali, Dharamshala &amp; Spiti. WhatsApp us for custom packages, transport &amp; dates.
+            10 trek routes from Manali, Dharamshala &amp; Spiti — fully packaged with transport, permits &amp; guides.
           </p>
 
           {/* Easy–Moderate */}
@@ -431,30 +454,23 @@ export default function HimalayanTreksPage() {
               <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#3DC9A0', display: 'inline-block', flexShrink: 0 }} />
               <h3 style={{ fontSize: 15, fontWeight: 700, color: '#3DC9A0', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Easy – Moderate</h3>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
               {HP_EASY.map((trek) => (
-                <div key={trek.name} className="trek-card-hover">
-                  <div className="trek-card-inner">
-                    <div style={{ position: 'relative', height: 160 }}>
-                      <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
-                      <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
-                      {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
-                    </div>
-                    <div style={{ padding: '16px 18px 18px' }}>
-                      <h4 style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)', marginBottom: 4 }}>{trek.name}</h4>
-                      <div style={{ display: 'flex', gap: 12, marginBottom: 8 }}>
-                        <span style={{ fontSize: 11, color: 'var(--muted)' }}>⛰️ {trek.altitude}</span>
-                        <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
-                      </div>
-                      <p style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12 }}>{trek.highlight}</p>
-                      <div style={{ display: 'flex', gap: 8 }}>
-                        {trek.packageUrl
-                          ? <Link href={trek.packageUrl} style={{ flex: 1, textAlign: 'center', background: 'var(--gold)', color: '#1a1200', fontSize: 12, fontWeight: 700, padding: '8px 0', borderRadius: 6, textDecoration: 'none' }}>View Package →</Link>
-                          : <a href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: '#25D366', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}><span>💬</span> WhatsApp for Dates →</a>}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <TrekCard
+                  key={trek.name}
+                  image={trek.image}
+                  name={trek.name}
+                  tag={trek.tag}
+                  tagColor={trek.tagColor}
+                  difficulty={trek.difficulty}
+                  diffColor={trek.diffColor}
+                  duration={trek.duration}
+                  altitude={trek.altitude}
+                  season={trek.season}
+                  desc={trek.highlight}
+                  price={trek.price}
+                  href={trek.packageUrl ?? '/himalayan-treks/'}
+                />
               ))}
             </div>
           </div>
@@ -465,32 +481,62 @@ export default function HimalayanTreksPage() {
               <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#E8AA50', display: 'inline-block', flexShrink: 0 }} />
               <h3 style={{ fontSize: 15, fontWeight: 700, color: '#E8AA50', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Moderate – Difficult</h3>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 20 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
               {HP_MODERATE.map((trek) => (
-                <div key={trek.name} className="trek-card-hover">
-                  <div className="trek-card-inner">
-                    <div style={{ position: 'relative', height: 160 }}>
-                      <Image src={trek.image} alt={trek.name} fill sizes="320px" style={{ objectFit: 'cover' }} />
-                      <span style={{ position: 'absolute', top: 10, right: 10, background: 'rgba(0,0,0,0.65)', color: trek.diffColor, fontSize: 10, fontWeight: 600, padding: '3px 9px', borderRadius: 20 }}>{trek.difficulty}</span>
-                      {trek.price && <span style={{ position: 'absolute', bottom: 10, left: 10, background: 'var(--gold)', color: '#1a1200', fontSize: 11, fontWeight: 700, padding: '3px 9px', borderRadius: 20 }}>From {trek.price}</span>}
-                    </div>
-                    <div style={{ padding: '16px 18px 18px' }}>
-                      <h4 style={{ fontSize: 15, fontWeight: 700, color: 'var(--heading)', marginBottom: 4 }}>{trek.name}</h4>
-                      <div style={{ display: 'flex', gap: 12, marginBottom: 8 }}>
-                        <span style={{ fontSize: 11, color: 'var(--muted)' }}>⛰️ {trek.altitude}</span>
-                        <span style={{ fontSize: 11, color: 'var(--muted)' }}>🕐 {trek.duration}</span>
-                      </div>
-                      <p style={{ fontSize: 12, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12 }}>{trek.highlight}</p>
-                      <div style={{ display: 'flex', gap: 8 }}>
-                        {trek.packageUrl
-                          ? <Link href={trek.packageUrl} style={{ flex: 1, textAlign: 'center', background: 'var(--gold)', color: '#1a1200', fontSize: 12, fontWeight: 700, padding: '8px 0', borderRadius: 6, textDecoration: 'none' }}>View Package →</Link>
-                          : <a href={`https://wa.me/919873897652?text=${encodeURIComponent(trek.waMsg)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5, color: '#25D366', fontSize: 12, fontWeight: 600, textDecoration: 'none' }}><span>💬</span> WhatsApp for Dates →</a>}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <TrekCard
+                  key={trek.name}
+                  image={trek.image}
+                  name={trek.name}
+                  tag={trek.tag}
+                  tagColor={trek.tagColor}
+                  difficulty={trek.difficulty}
+                  diffColor={trek.diffColor}
+                  duration={trek.duration}
+                  altitude={trek.altitude}
+                  season={trek.season}
+                  desc={trek.highlight}
+                  price={trek.price}
+                  href={trek.packageUrl ?? '/himalayan-treks/'}
+                />
               ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════
+          ALSO EXPLORE — UTTARAKHAND TREKS
+      ══════════════════════════════════════════════════════ */}
+      <section className="city-section" style={{ background: 'var(--card)', paddingTop: 60, paddingBottom: 60 }}>
+        <div className="container">
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', background: 'rgba(201,146,61,0.12)', padding: '4px 12px', borderRadius: 20 }}>Also Explore · Uttarakhand</span>
+          </div>
+          <h2 className="section-title-left">
+            Garhwal &amp; Kumaon <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Trek Packages</em>
+          </h2>
+          <p className="section-sub-left">
+            Prefer the Garhwal Himalayas? You can also explore our Uttarakhand treks — Kuari Pass, Roopkund, Chopta–Tungnath &amp; more, all departing from Haridwar.
+          </p>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24, marginTop: 28 }}>
+            {UK_TREKS.map((trek) => (
+              <TrekCard
+                key={trek.slug}
+                image={trek.image}
+                name={trek.name}
+                tag={trek.tag}
+                tagColor={trek.tagColor}
+                difficulty={trek.difficulty}
+                diffColor={trek.diffColor}
+                duration={trek.duration}
+                altitude={trek.altitude}
+                season={trek.season}
+                desc={trek.desc}
+                price={trek.price}
+                href={`/packages/${trek.slug}/`}
+              />
+            ))}
           </div>
         </div>
       </section>
