@@ -68,6 +68,7 @@ export default function IndiaTrekPackagesHubPage() {
 
   return (
     <>
+      <style>{`.intl-city-hover-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 20px;transition:border-color 0.2s,transform 0.2s;cursor:pointer}.intl-city-hover-card:hover{border-color:var(--gold);transform:translateY(-2px)}`}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -216,24 +217,7 @@ export default function IndiaTrekPackagesHubPage() {
                       href={`/india-trek-packages/from/${city.slug}/`}
                       style={{ textDecoration: 'none' }}
                     >
-                      <div
-                        style={{
-                          background: 'var(--card)',
-                          border: '1px solid var(--border)',
-                          borderRadius: 12,
-                          padding: '18px 20px',
-                          transition: 'border-color 0.2s, transform 0.2s',
-                          cursor: 'pointer',
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--gold)';
-                          (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-2px)';
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLDivElement).style.borderColor = 'var(--border)';
-                          (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
-                        }}
-                      >
+                      <div className="intl-city-hover-card">
                         <div
                           style={{
                             display: 'flex',

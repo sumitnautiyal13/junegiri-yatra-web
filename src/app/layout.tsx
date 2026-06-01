@@ -62,9 +62,18 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const headersList = await headers();
-  const pathname = headersList.get('x-pathname') ?? headersList.get('x-invoke-path') ?? '';
-  const isAppRoute = pathname.startsWith('/admin') || pathname.startsWith('/p/');
+  // headers() throws DYNAMIC_SERVER_USAGE in static/ISR rendering contexts (Next.js 15+).
+  // Wrap in try/catch so public ISR pages (e.g. /from/, /trek/) render without 500 errors.
+  // isAppRoute is only ever true for /admin and /p routes, which are always dynamic anyway.
+  let isAppRoute = false;
+  try {
+    const headersList = await headers();
+    const pathname = headersList.get('x-pathname') ?? headersList.get('x-invoke-path') ?? '';
+    isAppRoute = pathname.startsWith('/admin') || pathname.startsWith('/p/');
+  } catch {
+    // Static or ISR rendering context — headers not available, default to public layout
+    isAppRoute = false;
+  }
 
   return (
     <html
