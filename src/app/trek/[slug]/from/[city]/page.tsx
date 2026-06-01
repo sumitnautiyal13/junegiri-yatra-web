@@ -3,13 +3,9 @@ import type { Metadata } from 'next';
 import { getCityBySlug, getPackageBySlug } from '@/lib/data';
 import TrekCityPage from '@/components/TrekCityPage';
 
-export const dynamicParams = true;
+// Dynamic ISR — rendered on demand, cached at CDN for 24 h
+export const dynamic = 'force-dynamic';
 export const revalidate = 86400;
-
-// Full ISR — no static params pre-built at build time
-export async function generateStaticParams() {
-  return [];
-}
 
 // ── Trek seasons data (loaded at module level for server-side use) ──────────
 let trekSeasonsData: Record<string, { months: string[]; season_label: string; best_months: string[] }> = {};

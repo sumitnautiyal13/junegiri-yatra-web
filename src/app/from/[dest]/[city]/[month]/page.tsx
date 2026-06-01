@@ -4,13 +4,9 @@ import { getCityBySlug, getAllPackages } from '@/lib/data';
 import CityMonthPage from '@/components/CityMonthPage';
 import yatraSeasons from '../../../../../../data/yatra-seasons.json';
 
-/* ── ISR — rely entirely on on-demand generation + revalidation ── */
-export const dynamicParams = true;
+/* ── Dynamic ISR — rendered on demand, cached at CDN for 24 h ── */
+export const dynamic = 'force-dynamic';
 export const revalidate = 86400;
-
-export function generateStaticParams() {
-  return [];
-}
 
 /* ── Types ──────────────────────────────────────────────────────── */
 type SeasonEntry = {
