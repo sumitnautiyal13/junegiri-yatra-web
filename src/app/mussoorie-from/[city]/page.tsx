@@ -50,10 +50,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Mussoorie Trip from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Mussoorie weekend getaway from ${city.name} with Junegiri Yatra — Kempty Falls, Gun Hill & Mall Road. ${city.total_time}. All-inclusive from ₹5,500. WhatsApp for ${city.name} quotes.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `mussoorie trip from ${city.name.toLowerCase()}, mussoorie tour from ${city.name.toLowerCase()}, mussoorie weekend ${city.name.toLowerCase()}, kempty falls from ${city.name.toLowerCase()}, mussoorie package ${city.name.toLowerCase()}`,

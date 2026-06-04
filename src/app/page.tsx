@@ -2,16 +2,16 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Junegiri Yatra | Char Dham Yatra, Kedarnath & India Tours 2026',
+  title: 'Junegiri Yatra | Himalayan Treks, India Tours & Sacred Yatras 2026',
   description:
-    "India's trusted travel company since 2017 — Char Dham Yatra, Kedarnath, Valley of Flowers, Golden Triangle, Rishikesh adventures & Kerala tours. All-inclusive packages from Haridwar. Book on WhatsApp.",
+    "India's trusted travel company since 2017 — Himalayan treks, Char Dham Yatra, Golden Triangle, Rishikesh adventures, yoga retreats & international tours. All-inclusive packages from Haridwar. Book on WhatsApp.",
   keywords:
-    'char dham yatra 2026, kedarnath yatra, india tour packages, golden triangle tour, himalayan treks, rishikesh adventure, junegiri yatra haridwar, uttarakhand tour operator',
+    'himalayan treks, india tour packages, char dham yatra 2026, kedarnath yatra, golden triangle tour, rishikesh adventure, uttarakhand tour operator, junegiri yatra haridwar',
   alternates: { canonical: 'https://junegiriyatra.com/' },
   openGraph: {
-    title: 'Junegiri Yatra — India Tour Packages | Char Dham, Treks & Heritage',
+    title: 'Junegiri Yatra — Himalayan Treks, India Tours & Sacred Yatras',
     description:
-      "India's trusted travel company — Char Dham Yatra, Himalayan treks, Golden Triangle & Rishikesh adventures. All-inclusive from Haridwar since 2017.",
+      "India's trusted travel company — Himalayan treks, Char Dham Yatra, Golden Triangle, Rishikesh adventures & yoga retreats. All-inclusive from Haridwar since 2017.",
     url: 'https://junegiriyatra.com/',
     type: 'website',
     images: [
@@ -57,7 +57,16 @@ const HOMEPAGE_SCHEMA = {
         longitude: 78.1642,
       },
       description:
-        'India tour operator specialising in Char Dham Yatra, Kedarnath pilgrimage, Himalayan treks, Golden Triangle, Rishikesh adventures and Braj Bhoomi Yatra. Haridwar-based. Serving travelers since 2017.',
+        'India tour operator specialising in Himalayan treks, Char Dham Yatra, Kedarnath pilgrimage, Rishikesh adventures, Golden Triangle, yoga retreats and Braj Bhoomi Yatra. Haridwar-based. Serving travelers since 2017.',
+      knowsAbout: [
+        'Himalayan Trekking',
+        'Char Dham Yatra',
+        'Kedarnath Pilgrimage',
+        'Rishikesh Adventure Tourism',
+        'Golden Triangle Tours',
+        'Yoga Teacher Training',
+        'India Heritage Tours',
+      ],
       aggregateRating: {
         '@type': 'AggregateRating',
         ratingValue: 4.8,

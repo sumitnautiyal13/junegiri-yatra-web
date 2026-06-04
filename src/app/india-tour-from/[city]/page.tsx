@@ -14,6 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   const isIntl = (city as any).is_international;
   const title = isIntl
     ? `India Tour Packages from ${city.name} 2026 | Char Dham, Kedarnath, Golden Triangle`
@@ -22,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     ? `Book India tour packages from ${city.name} — Char Dham Yatra, Kedarnath, Golden Triangle, Rishikesh adventures. All-inclusive from ₹8,500. Expert Haridwar-based operator. WhatsApp for a custom itinerary.`
     : `Book India spiritual & adventure tour packages from ${city.name} — Char Dham, Kedarnath, Rishikesh, Varanasi, Mathura. All-inclusive from ₹8,500. WhatsApp for departure details.`;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description: desc,
     keywords: `india tour packages from ${city.name.toLowerCase()}, india holiday from ${city.name.toLowerCase()}, char dham yatra from ${city.name.toLowerCase()}, kedarnath tour from ${city.name.toLowerCase()}, golden triangle from ${city.name.toLowerCase()}`,

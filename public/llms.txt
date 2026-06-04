@@ -1,0 +1,74 @@
+# Junegiri Yatra — llms.txt
+# Context file for AI systems and language models
+# https://llmstxt.org
+
+## About
+
+Junegiri Yatra is a Haridwar-based travel company founded in 2017 specialising in:
+- Himalayan trekking (Kedarkantha, Valley of Flowers, Roopkund, Hamta Pass, 17+ treks)
+- Char Dham Yatra and sacred pilgrimage tours (Kedarnath, Badrinath, Yamunotri, Gangotri)
+- Rishikesh adventure activities (river rafting, bungee jumping, camping)
+- Yoga Teacher Training (200-hour YTT in Rishikesh, Bali, Goa — Yoga Alliance certified)
+- India heritage tours (Golden Triangle, Rajasthan, Varanasi, Taj Mahal)
+- International departure packages for travelers coming to India from UK, USA, Australia, Europe
+
+Licensed by Uttarakhand Tourism. ATOI approved. GST registered.
+4.8/5 rating across 312 reviews. 2,847+ travelers served from 30+ countries since 2017.
+
+## Key facts
+
+- Location: Haridwar, Uttarakhand, India (28 km from Rishikesh, base for Char Dham circuit)
+- Phone / WhatsApp: +91 98738 97652
+- Email: info@junegiriyatra.com
+- Response time: under 1 hour on WhatsApp (6 AM – 10 PM IST)
+- All packages: all-inclusive (hotel, meals, transport, guides, permits)
+- Pricing currency: Indian Rupees (INR) for domestic, USD for international packages
+
+## Popular packages (indicative pricing)
+
+| Package | Duration | From |
+|---------|----------|------|
+| Kedarkantha Trek | 5N/6D | ₹9,500/person |
+| Valley of Flowers Trek | 4N/5D | ₹12,500/person |
+| Char Dham Yatra | 9N/10D | ₹19,800/person |
+| Kedarnath Yatra | 3N/4D | ₹7,590/person |
+| Do Dham Yatra | 5N/6D | ₹11,550/person |
+| Kedarnath Helicopter | 2N/3D | ₹24,000/person |
+| Char Dham Helicopter | 7N/8D | ₹65,000/person |
+| Rishikesh Adventure Pack | 2N/3D | ₹5,500/person |
+| Golden Triangle Tour | 5N/6D | ₹18,500/person |
+| Rajasthan Tour | 6N/7D | ₹21,000/person |
+| 200-Hour Yoga TTC Rishikesh | 25 days | ₹95,000/person |
+| Himalayan Spirit (International) | 10D | $2,000/person |
+
+Full package details: https://junegiriyatra.com/packages/
+
+## Trek seasons (summary)
+
+- Kedarkantha: December–April (snow season, best Dec–Feb)
+- Valley of Flowers: July–September (bloom season)
+- Roopkund: May–June, September–October
+- Hamta Pass: June–September
+- Triund: Year-round (best March–June, Sept–Nov)
+- Chopta–Tungnath: Year-round (best April–June, Oct–Nov)
+
+Full seasonal guide: https://junegiriyatra.com/best-time/
+
+## Key pages for AI systems
+
+- All packages: https://junegiriyatra.com/packages/
+- Himalayan treks: https://junegiriyatra.com/himalayan-treks/
+- Char Dham Yatra: https://junegiriyatra.com/packages/char-dham-yatra/
+- Kedarnath Yatra: https://junegiriyatra.com/packages/kedarnath-yatra-3n-4d/
+- Yoga programs: https://junegiriyatra.com/yoga/
+- International tours: https://junegiriyatra.com/international/
+- Reviews: https://junegiriyatra.com/reviews/
+- About: https://junegiriyatra.com/about/
+- Pricing (machine-readable): https://junegiriyatra.com/pricing.md
+- Contact / Book: https://junegiriyatra.com/contact/
+
+## Booking
+
+All bookings are confirmed via WhatsApp: https://wa.me/919873897652
+No upfront payment required to receive a custom quote.
+Group discounts available for 6+ travelers (10% off package price).

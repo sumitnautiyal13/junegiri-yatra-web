@@ -27,11 +27,15 @@ export async function generateMetadata({
   const trekName = pkg?.name ?? slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   const price = pkg?.price_from ?? 9500;
 
+  // Tier 3 cities (low/zero search demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: `${trekName} from ${city.name} — Trek Package | Junegiri Yatra`,
-    description:
-      pkg?.meta_description ??
-      `Book ${trekName} from ${city.name} — all-inclusive trek package from ₹${price.toLocaleString('en-IN')}. Haridwar-based operator with expert guides. WhatsApp for a custom quote.`,
+    // Always city-specific — never the generic package meta_description.
+    // Prevents 9,367 city-from pages sharing the same description across city variants.
+    description: `Book ${trekName} from ${city.name} — all-inclusive ${trekData.season_label.toLowerCase()} trek from ₹${price.toLocaleString('en-IN')}. Best months: ${trekData.best_months.slice(0, 3).join(', ')}. Expert guides, Haridwar-based operator. WhatsApp for a custom quote.`,
     keywords: `${trekName.toLowerCase()} from ${city.name.toLowerCase()}, ${slug} from ${city.name.toLowerCase()}, himalayan trek from ${city.name.toLowerCase()}, trek package ${city.name.toLowerCase()}`,
     alternates: {
       canonical: `https://junegiriyatra.com/trek/${slug}/from/${city.slug}/`,

@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: `Kedarnath Yatra from ${city.name} 2026 | Junegiri Yatra`,
     description: `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ₹8,500. Haridwar-based operator. Helicopter option available. WhatsApp for quote.`,
     keywords: `kedarnath yatra from ${city.name.toLowerCase()}, kedarnath package from ${city.name.toLowerCase()}, kedarnath tour ${city.name.toLowerCase()}, kedarnath yatra booking ${city.name.toLowerCase()}`,

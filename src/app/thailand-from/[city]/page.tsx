@@ -18,10 +18,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Thailand Tour Package from ${city.name} 2026 | 7N/8D from $650 | Junegiri Yatra`;
   const description = `Book 7N/8D Thailand Bangkok · Phuket · Pattaya from ${city.name} from $650/person. Grand Palace, Phi Phi Islands, Coral Island & Chao Phraya Cruise included. WhatsApp for instant quote.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `thailand tour package from ${city.name.toLowerCase()}, thailand trip from ${city.name.toLowerCase()}, bangkok phuket pattaya from ${city.name.toLowerCase()}, phi phi islands tour from ${city.name.toLowerCase()}, thailand holiday from india`,

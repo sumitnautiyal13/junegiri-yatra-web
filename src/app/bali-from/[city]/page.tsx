@@ -18,10 +18,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Bali Tour Package from ${city.name} 2025 | 7D6N from $530 | Junegiri Yatra`;
   const description = `Book 7D/6N Bali, Nusa Penida & Gili Party Escape from ${city.name} from $530/person. Scuba diving, ATV ride, parasailing & Nusa Penida west tour included. WhatsApp for instant quote.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `bali tour package from ${city.name.toLowerCase()}, bali trip from ${city.name.toLowerCase()}, bali holiday from ${city.name.toLowerCase()}, nusa penida tour from ${city.name.toLowerCase()}, gili island package from india`,

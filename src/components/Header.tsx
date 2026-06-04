@@ -36,42 +36,6 @@ interface NavEntry {
 /* ─── Navigation data ────────────────────────────────────── */
 const NAV: NavEntry[] = [
   {
-    label: 'Pilgrimages',
-    href: '/packages/char-dham-yatra/',
-    mega: {
-      columns: [
-        {
-          heading: 'Char Dham Circuit',
-          items: [
-            { icon: '🕍', label: 'Char Dham Yatra 9N/10D', sub: 'Full circuit · Yamunotri · Gangotri · Kedarnath · Badrinath', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
-            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5N 6D · from ₹13,500', href: '/packages/do-dham-yatra-5n-6d/' },
-            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3N 4D · from ₹8,500', href: '/packages/kedarnath-yatra-3n-4d/' },
-            { icon: '🛕', label: 'Badrinath Yatra', sub: '2N 3D · Mana Village · from ₹6,500', href: '/packages/badrinath-yatra-2n-3d/' },
-            { icon: '🏔️', label: 'Yamunotri & Gangotri', sub: '4N 5D · 2 Dham · from ₹11,500', href: '/packages/yamunotri-gangotri-2-dham-4n-5d/' },
-          ],
-        },
-        {
-          heading: 'Spiritual & Pilgrim Tours',
-          items: [
-            { icon: '🪷', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi · from ₹14,500', href: '/packages/braj-bhoomi-yatra-5n-6d/', badge: 'New' },
-            { icon: '🌊', label: 'Haridwar & Rishikesh Spiritual', sub: 'Ganga Aarti · temples · yoga · from ₹7,500', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
-            { icon: '🚁', label: 'Kedarnath by Helicopter', sub: 'Skip the trek · VVIP darshan · from ₹24,000', href: '/packages/kedarnath-helicopter-2n-3d/', badge: 'Premium' },
-            { icon: '✨', label: 'Char Dham by Helicopter', sub: 'All 4 dhams · 7N 8D · from ₹65,000', href: '/packages/char-dham-helicopter-7n-8d/', badge: 'Luxury' },
-            { icon: '📍', label: 'From Your City', sub: '20 departure cities — Mumbai, Bangalore & more', href: '/char-dham-from/' },
-          ],
-        },
-      ],
-      featured: {
-        image: '/images/kedarnath_temple_cover.webp',
-        badge: '⭐ Most Popular',
-        title: 'Char Dham Yatra 9N / 10D',
-        price: 'From ₹19,800 / person',
-        href: '/packages/char-dham-yatra-9n-10d/',
-        waText: 'Namaste! I want to book Char Dham Yatra 9N/10D package',
-      },
-    },
-  },
-  {
     label: 'Treks',
     href: '/himalayan-treks/',
     mega: {
@@ -113,6 +77,42 @@ const NAV: NavEntry[] = [
         price: 'From ₹9,500 / person',
         href: '/packages/kedarkantha-trek-5n-6d/',
         waText: 'Namaste! I want to enquire about Kedarkantha Trek',
+      },
+    },
+  },
+  {
+    label: 'Pilgrimages',
+    href: '/packages/char-dham-yatra/',
+    mega: {
+      columns: [
+        {
+          heading: 'Char Dham Circuit',
+          items: [
+            { icon: '🕍', label: 'Char Dham Yatra 9N/10D', sub: 'Full circuit · Yamunotri · Gangotri · Kedarnath · Badrinath', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
+            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5N 6D · from ₹13,500', href: '/packages/do-dham-yatra-5n-6d/' },
+            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3N 4D · from ₹8,500', href: '/packages/kedarnath-yatra-3n-4d/' },
+            { icon: '🛕', label: 'Badrinath Yatra', sub: '2N 3D · Mana Village · from ₹6,500', href: '/packages/badrinath-yatra-2n-3d/' },
+            { icon: '🏔️', label: 'Yamunotri & Gangotri', sub: '4N 5D · 2 Dham · from ₹11,500', href: '/packages/yamunotri-gangotri-2-dham-4n-5d/' },
+          ],
+        },
+        {
+          heading: 'Spiritual & Pilgrim Tours',
+          items: [
+            { icon: '🪷', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi · from ₹14,500', href: '/packages/braj-bhoomi-yatra-5n-6d/', badge: 'New' },
+            { icon: '🌊', label: 'Haridwar & Rishikesh Spiritual', sub: 'Ganga Aarti · temples · yoga · from ₹7,500', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
+            { icon: '🚁', label: 'Kedarnath by Helicopter', sub: 'Skip the trek · VVIP darshan · from ₹24,000', href: '/packages/kedarnath-helicopter-2n-3d/', badge: 'Premium' },
+            { icon: '✨', label: 'Char Dham by Helicopter', sub: 'All 4 dhams · 7N 8D · from ₹65,000', href: '/packages/char-dham-helicopter-7n-8d/', badge: 'Luxury' },
+            { icon: '📍', label: 'From Your City', sub: '20 departure cities — Mumbai, Bangalore & more', href: '/char-dham-from/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/kedarnath_temple_cover.webp',
+        badge: '⭐ Most Popular',
+        title: 'Char Dham Yatra 9N / 10D',
+        price: 'From ₹19,800 / person',
+        href: '/packages/char-dham-yatra-9n-10d/',
+        waText: 'Namaste! I want to book Char Dham Yatra 9N/10D package',
       },
     },
   },
