@@ -35,7 +35,7 @@ export async function generateMetadata({
     title: `${trekName} from ${city.name} — Trek Package | Junegiri Yatra`,
     // Always city-specific — never the generic package meta_description.
     // Prevents 9,367 city-from pages sharing the same description across city variants.
-    description: `Book ${trekName} from ${city.name} — all-inclusive ${trekData.season_label.toLowerCase()} trek from ₹${price.toLocaleString('en-IN')}. Best months: ${trekData.best_months.slice(0, 3).join(', ')}. Expert guides, Haridwar-based operator. WhatsApp for a custom quote.`,
+    description: `Book ${trekName} from ${city.name} — ${trekData.season_label} trek from ₹${price.toLocaleString('en-IN')}. Best: ${trekData.best_months.slice(0, 2).map((m) => m.charAt(0).toUpperCase() + m.slice(1)).join(', ')}. All-inclusive, expert guides. WhatsApp for a quote.`,
     keywords: `${trekName.toLowerCase()} from ${city.name.toLowerCase()}, ${slug} from ${city.name.toLowerCase()}, himalayan trek from ${city.name.toLowerCase()}, trek package ${city.name.toLowerCase()}`,
     alternates: {
       canonical: `https://junegiriyatra.com/trek/${slug}/from/${city.slug}/`,

@@ -22,7 +22,7 @@ export async function generateMetadata({
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
   const title = `Char Dham Yatra from ${city.name} 2026 | Junegiri Yatra`;
-  const description = `Book Char Dham Yatra from ${city.name} with Junegiri Yatra — Haridwar's trusted operator. ${city.total_time}. All-inclusive packages from ₹19,800. WhatsApp us for ${city.name} departure quotes.`;
+  const description = `Char Dham Yatra from ${city.name} — all-inclusive packages from ₹19,800. Travel time: ${city.total_time}. Haridwar-based operator, 4.8★ rated. WhatsApp for a quote.`;
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
