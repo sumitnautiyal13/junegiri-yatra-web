@@ -194,7 +194,7 @@ export default function HomePageClient() {
                 >
                   📱 Plan on WhatsApp
                 </WaLink>
-                <Link href="/packages/char-dham-yatra/" className="btn btn-outline btn-lg">
+                <Link href="/packages/" className="btn btn-outline btn-lg">
                   Explore Packages →
                 </Link>
               </div>
@@ -332,7 +332,7 @@ export default function HomePageClient() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: 52 }} className="fade-in">
-            <Link href="/packages/char-dham-yatra/" className="btn btn-outline-gold btn-lg">
+            <Link href="/packages/" className="btn btn-outline-gold btn-lg">
               View All Packages →
             </Link>
           </div>
@@ -511,7 +511,7 @@ export default function HomePageClient() {
             >
               📱 WhatsApp +91 98738 97652
             </WaLink>
-            <Link href="/packages/char-dham-yatra/" className="btn btn-outline btn-lg">
+            <Link href="/packages/" className="btn btn-outline btn-lg">
               Browse All Packages
             </Link>
           </div>

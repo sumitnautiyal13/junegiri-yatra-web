@@ -144,7 +144,8 @@ export default function CityPage({ city, charDhamPkg }: Props) {
             <span>Char Dham from {city.name}</span>
           </nav>
           <h1 className="city-hero-h1">
-            Char Dham Yatra<br />
+            Char Dham Yatra{' '}
+            <br />
             <span className="city-name-gold">from {city.name}</span>
           </h1>
           <p className="city-hero-sub">

@@ -1,11 +1,31 @@
 import type { NextConfig } from 'next';
 
+// Content-Security-Policy — allows Next.js inline scripts (needed for JSON-LD + __NEXT_DATA__),
+// GTM/GA, WhatsApp widget, and standard CDN assets.
+// 'unsafe-inline' on script-src is required while Next.js uses inline hydration scripts.
+const CSP = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://connect.facebook.net",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: blob: https: http:",
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://region1.google-analytics.com https://stats.g.doubleclick.net",
+  "frame-src https://www.google.com https://www.youtube.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' https://wa.me https://api.whatsapp.com",
+  "upgrade-insecure-requests",
+].join('; ');
+
 const SECURITY_HEADERS = [
   { key: 'X-Content-Type-Options', value: 'nosniff' },
   { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
   { key: 'X-XSS-Protection', value: '1; mode=block' },
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+  // Strengthened HSTS: 2 years, include subdomains, eligible for preload list
+  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+  { key: 'Content-Security-Policy', value: CSP },
 ];
 
 const nextConfig: NextConfig = {
@@ -57,11 +77,26 @@ const nextConfig: NextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
+      {
+        // ISR HTML pages: serve stale for 24 h while revalidating in background
+        // Vercel edge cache will pick this up via s-maxage
+        source: '/((?!_next|images|api|admin|p).*)',
+        headers: [
+          { key: 'Cache-Control', value: 's-maxage=86400, stale-while-revalidate=604800' },
+        ],
+      },
     ];
   },
 
   async redirects() {
     return [
+      // www → non-www canonical redirect (301, not Vercel's default 308)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.junegiriyatra.com' }],
+        destination: 'https://junegiriyatra.com/:path*',
+        permanent: true,
+      },
       // Legacy/wrong package slugs → correct slugs (permanent 308)
       // NOTE: char-dham-yatra, rishikesh-adventures, golden-triangle are HUB CONTENT PAGES
       // — redirect rules removed so generateStaticParams serves the hub page correctly.

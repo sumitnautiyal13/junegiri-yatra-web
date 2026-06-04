@@ -4,16 +4,18 @@ import HomePageClient from './HomePageClient';
 export const metadata: Metadata = {
   title: 'Junegiri Yatra | Himalayan Treks, India Tours & Sacred Yatras 2026',
   description:
-    "India's trusted travel company since 2017 — Himalayan treks, Char Dham Yatra, Golden Triangle, Rishikesh adventures, yoga retreats & international tours. All-inclusive packages from Haridwar. Book on WhatsApp.",
+    "Himalayan treks, Char Dham Yatra, Golden Triangle & yoga retreats — all-inclusive from Haridwar since 2017. 4.8★ 312 reviews. Book on WhatsApp.",
   keywords:
     'himalayan treks, india tour packages, char dham yatra 2026, kedarnath yatra, golden triangle tour, rishikesh adventure, uttarakhand tour operator, junegiri yatra haridwar',
   alternates: { canonical: 'https://junegiriyatra.com/' },
   openGraph: {
     title: 'Junegiri Yatra — Himalayan Treks, India Tours & Sacred Yatras',
     description:
-      "India's trusted travel company — Himalayan treks, Char Dham Yatra, Golden Triangle, Rishikesh adventures & yoga retreats. All-inclusive from Haridwar since 2017.",
+      "Himalayan treks, Char Dham Yatra, Golden Triangle & yoga retreats. All-inclusive from Haridwar since 2017. 4.8★ rated.",
     url: 'https://junegiriyatra.com/',
     type: 'website',
+    siteName: 'Junegiri Yatra',
+    locale: 'en_IN',
     images: [
       {
         url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp',
