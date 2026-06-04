@@ -50,10 +50,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Rishikesh Trip from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Rishikesh adventure trip from ${city.name} with Junegiri Yatra — rafting, bungee jumping & riverside camping. ${city.total_time}. All-inclusive from ₹5,500. WhatsApp for ${city.name} quotes.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `rishikesh trip from ${city.name.toLowerCase()}, rishikesh adventure from ${city.name.toLowerCase()}, rishikesh rafting ${city.name.toLowerCase()}, rishikesh weekend ${city.name.toLowerCase()}`,

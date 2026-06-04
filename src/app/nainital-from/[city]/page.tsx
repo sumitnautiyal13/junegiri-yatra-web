@@ -50,10 +50,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Nainital Tour from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Nainital tour from ${city.name} with Junegiri Yatra — Naini Lake boating, Snow View Point & Jim Corbett. ${city.total_time}. All-inclusive from ₹7,500. WhatsApp for ${city.name} quotes.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `nainital tour from ${city.name.toLowerCase()}, nainital trip from ${city.name.toLowerCase()}, nainital package ${city.name.toLowerCase()}, naini lake from ${city.name.toLowerCase()}, jim corbett from ${city.name.toLowerCase()}`,

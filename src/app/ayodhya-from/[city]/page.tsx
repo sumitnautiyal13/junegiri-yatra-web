@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: `Ayodhya Tour from ${city.name} 2026 | Ram Mandir Darshan | Junegiri Yatra`,
     description: `Book Ayodhya Ram Mandir darshan tour from ${city.name} — all-inclusive 1N/2D from ₹5,500. Ram Ki Paidi, Hanuman Garhi, Kanak Bhawan. WhatsApp for quote.`,
     keywords: `ayodhya tour from ${city.name.toLowerCase()}, ayodhya ram mandir darshan from ${city.name.toLowerCase()}, ayodhya package ${city.name.toLowerCase()}, ram mandir tour ${city.name.toLowerCase()}`,

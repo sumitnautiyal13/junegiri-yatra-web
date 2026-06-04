@@ -50,10 +50,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Badrinath Yatra from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Badrinath Yatra from ${city.name} with Junegiri Yatra — all-inclusive 2N/3D from ₹6,500. Mana Village & Vasudhara Falls included. ${city.total_time}. WhatsApp for ${city.name} quotes.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `badrinath yatra from ${city.name.toLowerCase()}, badrinath package from ${city.name.toLowerCase()}, badrinath tour ${city.name.toLowerCase()}, badrinath yatra booking ${city.name.toLowerCase()}`,

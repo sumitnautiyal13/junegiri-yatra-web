@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: `Kedarnath Helicopter Tour from ${city.name} 2026 | Skip the Trek | Junegiri Yatra`,
     description: `Book Kedarnath helicopter darshan from ${city.name} — all-inclusive 2N/3D from ₹14,500. Fly from Phata or Sirsi helipad. Ideal for elderly, families, and short trips. WhatsApp for slots.`,
     keywords: `kedarnath helicopter from ${city.name.toLowerCase()}, kedarnath helicopter tour ${city.name.toLowerCase()}, kedarnath by helicopter from ${city.name.toLowerCase()}, kedarnath helicopter booking ${city.name.toLowerCase()}`,

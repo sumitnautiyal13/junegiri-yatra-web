@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: `Mathura Vrindavan Tour from ${city.name} 2026 | Junegiri Yatra`,
     description: `Book Braj Bhoomi Yatra from ${city.name} — Mathura, Vrindavan, Govardhan, Nandgaon & Barsana. All-inclusive 2N/3D from ₹6,500. Haridwar-based operator. WhatsApp for quote.`,
     keywords: `mathura vrindavan tour from ${city.name.toLowerCase()}, braj bhoomi yatra from ${city.name.toLowerCase()}, mathura tour ${city.name.toLowerCase()}, vrindavan tour ${city.name.toLowerCase()}`,

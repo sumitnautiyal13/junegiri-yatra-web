@@ -18,10 +18,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Char Dham Yatra from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Char Dham Yatra from ${city.name} with Junegiri Yatra — Haridwar's trusted operator. ${city.total_time}. All-inclusive packages from ₹19,800. WhatsApp us for ${city.name} departure quotes.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `char dham yatra from ${city.name.toLowerCase()}, char dham package from ${city.name.toLowerCase()}, kedarnath from ${city.name.toLowerCase()}, badrinath from ${city.name.toLowerCase()}, do dham from ${city.name.toLowerCase()}`,

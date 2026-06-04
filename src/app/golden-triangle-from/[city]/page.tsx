@@ -14,12 +14,16 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const { city: citySlug } = await params;
   const city = getCityBySlug(citySlug);
   if (!city) return {};
+
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
   const isIntl = (city as any).is_international;
   const title = isIntl
     ? `Golden Triangle Tour from ${city.name} 2026 | Delhi Agra Jaipur | Junegiri Yatra`
     : `Golden Triangle Tour from ${city.name} 2026 | Taj Mahal Package | Junegiri Yatra`;
   const desc = `Book Golden Triangle tour (Delhi–Agra–Jaipur) from ${city.name} — all-inclusive 5N/6D from ₹18,000. Taj Mahal, Amber Fort, Old Delhi. Private vehicle, certified guide, 24/7 support. WhatsApp for a custom quote.`;
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description: desc,
     keywords: `golden triangle tour from ${city.name.toLowerCase()}, delhi agra jaipur from ${city.name.toLowerCase()}, taj mahal tour from ${city.name.toLowerCase()}, india heritage tour from ${city.name.toLowerCase()}`,

@@ -50,10 +50,14 @@ export async function generateMetadata({
   const city = getCityBySlug(citySlug);
   if (!city) return {};
 
+  // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
+  const noindex = (city as unknown as { tier?: number }).tier === 3;
+
   const title = `Valley of Flowers Trek from ${city.name} 2026 | Junegiri Yatra`;
   const description = `Book Valley of Flowers trek from ${city.name} with Junegiri Yatra — UNESCO heritage, 500+ wildflower species, Hemkund Sahib. ${city.total_time}. All-inclusive from ₹8,500. Open July–September.`;
 
   return {
+    robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,
     description,
     keywords: `valley of flowers trek from ${city.name.toLowerCase()}, valley of flowers ${city.name.toLowerCase()}, hemkund sahib from ${city.name.toLowerCase()}`,
