@@ -2317,9 +2317,19 @@
     }
   },
   "indrahar-pass-trek-3n-4d": {
-    "months": ["april", "may", "june", "september", "october", "november"],
+    "months": [
+      "april",
+      "may",
+      "june",
+      "september",
+      "october",
+      "november"
+    ],
     "season_label": "Spring & Autumn",
-    "best_months": ["may", "october"],
+    "best_months": [
+      "may",
+      "october"
+    ],
     "month_data": {
       "april": {
         "title": "Indrahar Pass Trek in April 2026",
@@ -2546,9 +2556,18 @@
     }
   },
   "chandrakhani-pass-trek-3n-4d": {
-    "months": ["may", "june", "july", "september", "october"],
+    "months": [
+      "may",
+      "june",
+      "july",
+      "september",
+      "october"
+    ],
     "season_label": "Spring to Autumn",
-    "best_months": ["june", "september"],
+    "best_months": [
+      "june",
+      "september"
+    ],
     "month_data": {
       "may": {
         "title": "Chandrakhani Pass Trek in May 2026",
@@ -2738,9 +2757,17 @@
     }
   },
   "rupin-pass-trek-8n-9d": {
-    "months": ["may", "june", "september", "october"],
+    "months": [
+      "may",
+      "june",
+      "september",
+      "october"
+    ],
     "season_label": "Snow Season to Autumn",
-    "best_months": ["may", "june"],
+    "best_months": [
+      "may",
+      "june"
+    ],
     "month_data": {
       "may": {
         "title": "Rupin Pass Trek in May 2026",
@@ -2893,9 +2920,17 @@
     }
   },
   "kanamo-peak-5n-6d": {
-    "months": ["june", "july", "august", "september"],
+    "months": [
+      "june",
+      "july",
+      "august",
+      "september"
+    ],
     "season_label": "Summer",
-    "best_months": ["july", "august"],
+    "best_months": [
+      "july",
+      "august"
+    ],
     "month_data": {
       "june": {
         "title": "Kanamo Peak Trek in June 2026",
@@ -3048,9 +3083,15 @@
     }
   },
   "pin-parvati-pass-10n-11d": {
-    "months": ["july", "august", "september"],
+    "months": [
+      "july",
+      "august",
+      "september"
+    ],
     "season_label": "Monsoon Window",
-    "best_months": ["august"],
+    "best_months": [
+      "august"
+    ],
     "month_data": {
       "july": {
         "title": "Pin Parvati Pass Trek in July 2026",
@@ -3160,6 +3201,371 @@
           {
             "q": "Can I do Pin Parvati Pass Trek in reverse — from Spiti to Parvati?",
             "a": "The reverse route (Mudh → Pin Parvati Pass → Kheerganga) is physically harder as the Spiti/Pin Valley side involves a longer, steeper ascent to the pass. September is not recommended for the reverse direction as the Pin Valley side freezes faster. Junegiri Yatra only operates the standard Parvati→Pin direction."
+          }
+        ]
+      }
+    }
+  },
+  "brahmatal-trek-5n-6d": {
+    "months": [
+      "november",
+      "december",
+      "january",
+      "february"
+    ],
+    "season_label": "Winter Snow Trek",
+    "best_months": [
+      "december",
+      "january"
+    ],
+    "month_data": {
+      "november": {
+        "title": "Brahmatal Trek in November 2026",
+        "meta_description": "Brahmatal Trek in November — first snow, autumn forests, frozen lake at 3,462m. 5N/6D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Brahmatal Trek <em>in November</em>",
+        "tagline": "First snow · Autumn oak forests · Clear Himalayan skies",
+        "weather": "Temperature: -3°C to 10°C · Light snowfall above 3,000m · Mostly clear",
+        "trail_condition": "Light snow on upper trail · Dry forest paths below · Excellent visibility",
+        "crowd_level": "Low — ideal for a peaceful, uncrowded experience",
+        "price": 5000,
+        "highlights": [
+          "First dusting of snow on Brahmatal lake shores",
+          "Golden oak forests of Lohajung on the ascent",
+          "Crystal-clear views of Trishul and Nanda Ghunti",
+          "Very few trekkers — almost private Himalayan experience"
+        ],
+        "what_to_pack": [
+          "Down jacket",
+          "Thermal base layers",
+          "Waterproof trekking boots",
+          "Trekking poles",
+          "Gloves and woollen cap"
+        ],
+        "faq": [
+          {
+            "q": "Is Brahmatal good in November?",
+            "a": "November is excellent for Brahmatal — you get early snowfall, autumn forests, and very few crowds. The lake begins to freeze in late November."
+          },
+          {
+            "q": "How cold is Brahmatal in November?",
+            "a": "Daytime temperatures range from 5–10°C at lower altitudes. At Brahmatal lake (3,462m) nights drop to -3°C. A good down jacket and thermal layers are essential."
+          }
+        ]
+      },
+      "december": {
+        "title": "Brahmatal Trek in December 2026",
+        "meta_description": "Brahmatal Trek in December — frozen lake, deep snow, Trishul views. 5N/6D from ₹5,000. Peak winter season. Book with Junegiri Yatra.",
+        "h1": "Brahmatal Trek <em>in December</em>",
+        "tagline": "Frozen lake · Deep snow · 360° Himalayan views",
+        "weather": "Temperature: -8°C to 5°C · Heavy snowfall · Clear blue skies",
+        "trail_condition": "Deep snow throughout · Microspikes and gaiters required · Stunning white landscape",
+        "crowd_level": "Moderate — peak winter trek season",
+        "price": 5000,
+        "highlights": [
+          "Brahmatal lake frozen solid — walk on a Himalayan lake",
+          "Deep snow bugyals with Trishul (7,120m) backdrop",
+          "Summit views of Nanda Ghunti, Mrigthuni",
+          "Snow-covered Wan and Lohajung villages"
+        ],
+        "what_to_pack": [
+          "Heavy down jacket",
+          "Thermal base layers (2 pairs)",
+          "Waterproof boots",
+          "Gaiters",
+          "Microspikes (provided)",
+          "Balaclava"
+        ],
+        "faq": [
+          {
+            "q": "Is Brahmatal Trek safe in December?",
+            "a": "Yes — December is the most popular month for Brahmatal. Our guides carry microspikes and gaiters. The trail is well-marked even in snow."
+          },
+          {
+            "q": "Will the Brahmatal lake be frozen in December?",
+            "a": "Yes, the lake is typically fully frozen by mid-December and remains frozen through February. Walking on the frozen lake is a highlight of this trek."
+          }
+        ]
+      },
+      "january": {
+        "title": "Brahmatal Trek in January 2026",
+        "meta_description": "Brahmatal Trek in January — maximum snow, frozen lake, clear skies. 5N/6D from ₹5,000. Best winter experience. Book with Junegiri Yatra.",
+        "h1": "Brahmatal Trek <em>in January</em>",
+        "tagline": "Maximum snow · Pristine frozen lake · Winter wonderland",
+        "weather": "Temperature: -12°C to 2°C · Coldest month · Deep snow · Generally clear",
+        "trail_condition": "Maximum snow depth · Full winter gear required · Most dramatic landscape of the season",
+        "crowd_level": "Moderate — serious trekkers only",
+        "price": 5000,
+        "highlights": [
+          "Deepest snow of the season — thigh-deep in open sections",
+          "Brahmatal lake completely frozen — perfect for photography",
+          "Clearest Himalayan views of Trishul and Nanda Ghunti",
+          "Most dramatic winter landscape of any Uttarakhand trek"
+        ],
+        "what_to_pack": [
+          "Expedition-grade down jacket (-20°C rated)",
+          "3-layer thermal system",
+          "Waterproof boots",
+          "Gaiters + microspikes",
+          "Balaclava + face mask",
+          "Hand warmers"
+        ],
+        "faq": [
+          {
+            "q": "Is January the best month for Brahmatal Trek?",
+            "a": "January offers the maximum snow and the most dramatic frozen lake experience. It is the coldest month with temperatures at -12°C at night, but for experienced winter trekkers this is the peak."
+          },
+          {
+            "q": "What fitness level is needed for Brahmatal in January?",
+            "a": "Basic trekking fitness with some prior hill experience. You should be able to walk 8-10 km per day in snow. No technical mountaineering skills required."
+          }
+        ]
+      },
+      "february": {
+        "title": "Brahmatal Trek in February 2026",
+        "meta_description": "Brahmatal Trek in February — deep snow, frozen lake, fewer crowds. 5N/6D from ₹5,000. Late winter magic. Book with Junegiri Yatra.",
+        "h1": "Brahmatal Trek <em>in February</em>",
+        "tagline": "Late winter snow · Frozen lake · Fewer crowds",
+        "weather": "Temperature: -8°C to 5°C · Heavy snow · Gradually more sunshine",
+        "trail_condition": "Deep snow · Some sections icy in morning · Microspikes essential",
+        "crowd_level": "Low — quieter than December but same snow conditions",
+        "price": 5000,
+        "highlights": [
+          "Lake still frozen with brilliant blue sky backdrops",
+          "Rhododendron buds starting to appear at lower altitudes",
+          "Fewer trekkers than December — more peaceful experience",
+          "Transition from peak winter to early spring"
+        ],
+        "what_to_pack": [
+          "Down jacket",
+          "Thermal layers",
+          "Waterproof boots",
+          "Gaiters + microspikes",
+          "Sunscreen (strong UV reflection from snow)"
+        ],
+        "faq": [
+          {
+            "q": "Is Brahmatal Trek open in February?",
+            "a": "Yes, February is a great month for Brahmatal. Snow is still deep, the lake remains frozen, and there are generally fewer trekkers than January making it a more intimate experience."
+          },
+          {
+            "q": "Is February colder than December for Brahmatal?",
+            "a": "Similar temperatures — January is the coldest. February begins to warm slightly but snow remains deep and the frozen lake experience is fully intact through the month."
+          }
+        ]
+      }
+    }
+  },
+  "dayara-bugyal-trek-4n-5d": {
+    "months": [
+      "september",
+      "october",
+      "november",
+      "december",
+      "january",
+      "february",
+      "march"
+    ],
+    "season_label": "Meadow & Snow Season",
+    "best_months": [
+      "october",
+      "november"
+    ],
+    "month_data": {
+      "september": {
+        "title": "Dayara Bugyal Trek in September 2026",
+        "meta_description": "Dayara Bugyal in September — lush green meadow, wildflowers, clear skies after monsoon. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in September</em>",
+        "tagline": "Post-monsoon freshness · Lush green bugyal · Wildflowers",
+        "weather": "Temperature: 8°C to 18°C · Occasional showers · Fresh and clear post-monsoon",
+        "trail_condition": "Wet sections in forest · Bugyal lush green · Good visibility",
+        "crowd_level": "Low — season just opening",
+        "price": 5000,
+        "highlights": [
+          "Lush emerald meadow at 3,408m",
+          "Post-monsoon wildflowers",
+          "Fresh Himalayan air",
+          "Bandarpunch and Gangotri peaks clearly visible"
+        ],
+        "what_to_pack": [
+          "Waterproof jacket",
+          "Trekking boots",
+          "Light fleece",
+          "Rain cover for bag"
+        ],
+        "faq": [
+          {
+            "q": "Is September a good time for Dayara Bugyal?",
+            "a": "Yes — the meadow is at its greenest in September after monsoon rains. Occasional showers are possible but the views are spectacular on clear days."
+          }
+        ]
+      },
+      "october": {
+        "title": "Dayara Bugyal Trek in October 2026",
+        "meta_description": "Dayara Bugyal in October — golden meadow, crystal-clear Himalayan views, ideal weather. 4N/5D from ₹5,000. Best month. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in October</em>",
+        "tagline": "Golden meadow · Crystal-clear Himalayan views · Perfect weather",
+        "weather": "Temperature: 5°C to 15°C · Mostly clear · Crisp autumn air",
+        "trail_condition": "Dry trails · Golden grass meadow · Excellent visibility",
+        "crowd_level": "Moderate — prime season",
+        "price": 5000,
+        "highlights": [
+          "Golden autumn meadow at 3,408m",
+          "360° views of Bandarpunch, Srikanth, Gangotri group",
+          "Crisp clear skies — best photography",
+          "Comfortable trekking temperature"
+        ],
+        "what_to_pack": [
+          "Fleece and down jacket (evenings)",
+          "Trekking boots",
+          "Sunscreen",
+          "Sunglasses"
+        ],
+        "faq": [
+          {
+            "q": "Is October the best month for Dayara Bugyal?",
+            "a": "October is widely considered the best month — the meadow turns golden, skies are crystal clear, and temperatures are perfect for trekking. Visibility for Himalayan peaks is at its finest."
+          }
+        ]
+      },
+      "november": {
+        "title": "Dayara Bugyal Trek in November 2026",
+        "meta_description": "Dayara Bugyal in November — first snow on the meadow, stunning winter backdrop. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in November</em>",
+        "tagline": "First snow on the bugyal · Dramatic skies · Autumn forests",
+        "weather": "Temperature: 0°C to 10°C · Possible early snowfall · Clear days",
+        "trail_condition": "Light snow possible on bugyal · Forest trail clear · Excellent views",
+        "crowd_level": "Low — shoulder season",
+        "price": 5000,
+        "highlights": [
+          "First dusting of snow on the vast meadow",
+          "Snow-capped Bandarpunch backdrop",
+          "Empty trails — serene experience",
+          "Transition from autumn to early winter"
+        ],
+        "what_to_pack": [
+          "Down jacket",
+          "Thermal layers",
+          "Waterproof boots",
+          "Gloves and cap"
+        ],
+        "faq": [
+          {
+            "q": "Is Dayara Bugyal good in November?",
+            "a": "November offers a magical transition — the bugyal may see its first snowfall while the lower forests are still in autumn colours. A very photogenic and uncrowded time to visit."
+          }
+        ]
+      },
+      "december": {
+        "title": "Dayara Bugyal Trek in December 2026",
+        "meta_description": "Dayara Bugyal in December — snow-covered meadow, winter landscape, Bandarpunch views. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in December</em>",
+        "tagline": "Snow-covered bugyal · Winter wonderland · Bandarpunch views",
+        "weather": "Temperature: -5°C to 5°C · Regular snowfall · Clear skies between snowfall",
+        "trail_condition": "Snow-covered meadow · Microspikes helpful · Stunning white landscape",
+        "crowd_level": "Very low — winter solitude",
+        "price": 5000,
+        "highlights": [
+          "Vast snow-covered meadow with Bandarpunch backdrop",
+          "Winter solitude — almost no other trekkers",
+          "Snowshoeing possible on the bugyal",
+          "360° white Himalayan panorama"
+        ],
+        "what_to_pack": [
+          "Heavy down jacket",
+          "Thermal layers",
+          "Waterproof boots",
+          "Gaiters",
+          "Microspikes"
+        ],
+        "faq": [
+          {
+            "q": "Can I do Dayara Bugyal in December?",
+            "a": "Yes, December is excellent for winter lovers. The bugyal transforms into a white snowfield. You'll likely have the entire meadow to yourself."
+          }
+        ]
+      },
+      "january": {
+        "title": "Dayara Bugyal Trek in January 2026",
+        "meta_description": "Dayara Bugyal in January — deepest snow, maximum winter, serene Himalayan meadow. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in January</em>",
+        "tagline": "Maximum snow · Serene solitude · Winter at its finest",
+        "weather": "Temperature: -10°C to 0°C · Deep snow · Coldest month",
+        "trail_condition": "Deep snow · Full winter gear essential · Microspikes required",
+        "crowd_level": "Minimal — expedition-feel solitude",
+        "price": 5000,
+        "highlights": [
+          "Deepest snow of the season on the bugyal",
+          "Complete winter solitude",
+          "Brilliant blue-sky days after snowfall",
+          "Bandarpunch, Kala Nag perfectly visible"
+        ],
+        "what_to_pack": [
+          "Expedition down jacket",
+          "3-layer thermal system",
+          "Gaiters + microspikes",
+          "Balaclava"
+        ],
+        "faq": [
+          {
+            "q": "Is Dayara Bugyal accessible in January?",
+            "a": "Yes, with proper winter gear and our experienced winter guides. January offers maximum snow and complete solitude on one of Uttarakhand's most beautiful meadows."
+          }
+        ]
+      },
+      "february": {
+        "title": "Dayara Bugyal Trek in February 2026",
+        "meta_description": "Dayara Bugyal in February — snow meadow, clear skies, early spring hints. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in February</em>",
+        "tagline": "Snow meadow · Clear skies · Early spring warmth",
+        "weather": "Temperature: -6°C to 5°C · Snow · Gradually more sun",
+        "trail_condition": "Snow throughout · Some afternoon melt in sun · Microspikes needed",
+        "crowd_level": "Low",
+        "price": 5000,
+        "highlights": [
+          "Snow still deep on the bugyal",
+          "Slightly longer daylight than January",
+          "Rhododendron buds appearing in forest",
+          "Uncrowded winter experience"
+        ],
+        "what_to_pack": [
+          "Down jacket",
+          "Thermal layers",
+          "Waterproof boots",
+          "Gaiters + microspikes",
+          "Sunscreen"
+        ],
+        "faq": [
+          {
+            "q": "Is February a good month for Dayara Bugyal?",
+            "a": "February is great — still full winter conditions on the meadow but slightly warmer and more daylight than January. The snowshoeing experience on the bugyal is superb."
+          }
+        ]
+      },
+      "march": {
+        "title": "Dayara Bugyal Trek in March 2026",
+        "meta_description": "Dayara Bugyal in March — snow melting, rhododendrons blooming, early spring. 4N/5D from ₹5,000. Book with Junegiri Yatra.",
+        "h1": "Dayara Bugyal Trek <em>in March</em>",
+        "tagline": "Spring awakening · Rhododendrons blooming · Last of the snow",
+        "weather": "Temperature: 0°C to 10°C · Melting snow · Rhododendron bloom begins",
+        "trail_condition": "Slushy in parts · Snow patches on bugyal · Forest trail improving",
+        "crowd_level": "Low — early spring",
+        "price": 5000,
+        "highlights": [
+          "Rhododendron forests bursting into red bloom",
+          "Snow patches on the meadow with spring sunshine",
+          "Waterfalls beginning as snow melts",
+          "Transition from winter to spring — unique landscape"
+        ],
+        "what_to_pack": [
+          "Fleece and light down jacket",
+          "Waterproof boots",
+          "Rain cover",
+          "Sunscreen"
+        ],
+        "faq": [
+          {
+            "q": "Is March a good time for Dayara Bugyal?",
+            "a": "March is beautiful for a different reason — the rhododendron forests bloom in brilliant red while the bugyal still has snow patches. A unique spring-winter transition experience."
           }
         ]
       }
