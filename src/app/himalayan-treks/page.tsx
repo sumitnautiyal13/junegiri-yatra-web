@@ -61,8 +61,8 @@ const UK_TREKS = [
   {
     slug: 'valley-of-flowers-trek-4n-5d',
     name: 'Valley of Flowers',
-    duration: '4N / 5D',
-    price: '₹8,500',
+    duration: '5N / 6D',
+    price: '₹6,000',
     difficulty: 'Moderate',
     diffColor: '#E8AA50',
     tag: 'UNESCO Heritage',
