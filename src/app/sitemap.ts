@@ -41,7 +41,7 @@ const BASE = 'https://junegiriyatra.com';
 // A single uniform date for all URLs signals auto-generation to Google and dilutes trust.
 const DATES = {
   homepage:   '2026-06-04', // technical SEO fixes applied
-  packages:   '2026-06-04', // /packages/ hub page added; title/schema fixes
+  packages:   '2026-06-05', // B2C price updates from Product List Jun 2026
   hubs:       '2026-05-18',
   dest_index: '2026-05-01',
   dest_city:  '2026-04-15',
