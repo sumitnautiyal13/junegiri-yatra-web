@@ -3417,9 +3417,27 @@
       }
     ],
     "related": [
-      "kedarkantha-trek-5n-6d",
-      "kuari-pass-trek-4n-5d",
-      "roopkund-trek-7n-8d"
+      {
+        "name": "Kedarkantha Trek 5N/6D",
+        "duration": "5 Nights / 6 Days",
+        "price": 4000,
+        "image": "/images/kedarkantha_1.webp",
+        "url": "/packages/kedarkantha-trek-5n-6d/"
+      },
+      {
+        "name": "Kuari Pass Trek 4N/5D",
+        "duration": "4 Nights / 5 Days",
+        "price": 5500,
+        "image": "/images/kuari_pass_1.jpg",
+        "url": "/packages/kuari-pass-trek-4n-5d/"
+      },
+      {
+        "name": "Roopkund Trek 7N/8D",
+        "duration": "7 Nights / 8 Days",
+        "price": 12000,
+        "image": "/images/trek_lake.webp",
+        "url": "/packages/roopkund-trek-7n-8d/"
+      }
     ],
     "travel_guide": "<p>Brahmatal sits in the Chamoli district of Uttarakhand, at the head of the Pindar valley. The base village Lohajung is best reached by road from Haridwar or Rishikesh. The nearest railway station is Karan Prayag (60 km), and the nearest airport is Jolly Grant, Dehradun (250 km). The trek passes through Lohajung, Bekaltal, Brahmatal, Daldum, and Wan — all within the Chamoli forest division. Mobile connectivity is limited beyond Lohajung; carry sufficient cash. The trek is snow-bound from December to February, making microspikes and gaiters essential. Altitude sickness is rare at these altitudes but carry basic altitude medication.</p>"
   },
@@ -3585,9 +3603,27 @@
       }
     ],
     "related": [
-      "chopta-tungnath-trek-3n-4d",
-      "har-ki-dun-trek-5n-6d",
-      "kedarkantha-trek-5n-6d"
+      {
+        "name": "Chopta–Tungnath Trek 3N/4D",
+        "duration": "3 Nights / 4 Days",
+        "price": 5000,
+        "image": "/images/trek_mountain_path.webp",
+        "url": "/packages/chopta-tungnath-trek-3n-4d/"
+      },
+      {
+        "name": "Har Ki Dun Trek 5N/6D",
+        "duration": "5 Nights / 6 Days",
+        "price": 9000,
+        "image": "/images/harkidun_1.jpg",
+        "url": "/packages/har-ki-dun-trek-5n-6d/"
+      },
+      {
+        "name": "Kedarkantha Trek 5N/6D",
+        "duration": "5 Nights / 6 Days",
+        "price": 4000,
+        "image": "/images/kedarkantha_1.webp",
+        "url": "/packages/kedarkantha-trek-5n-6d/"
+      }
     ],
     "travel_guide": "<p>Dayara Bugyal lies in the Uttarkashi district of Uttarakhand, above the village of Barsu. The nearest major town is Uttarkashi (35 km), and the nearest city is Dehradun (180 km). The nearest railway station is Dehradun/Haridwar; the nearest airport is Jolly Grant, Dehradun. The trek is within the Uttarkashi forest division — carry entry permits (arranged by Junegiri Yatra). Mobile connectivity is limited on the bugyal; inform family before starting the trek. Carry sufficient cash as ATMs are only available in Uttarkashi town.</p>"
   },
