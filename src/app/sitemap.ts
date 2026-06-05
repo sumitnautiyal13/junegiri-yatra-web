@@ -1,19 +1,19 @@
 /**
- * sitemap.ts — Single-file sitemap, ~19,600 URLs (well under Google's 50k limit)
+ * sitemap.ts — Single-file sitemap, ~21,300 URLs (well under Google's 50k limit)
  *
  * Dest×City×Month pages (~57k) are intentionally excluded here.
  * They are ISR pages discovered by Googlebot via internal month-pill links
  * on every Dest×City page — no sitemap entry needed.
  *
  * URL breakdown:
- *   Homepage + /packages/ hub + packages  ~50
+ *   Homepage + /packages/ hub + packages  ~60
  *   Hub & category pages                  ~15
- *   Trek×From index pages (17 treks)       17
- *   Trek×City (17 × 550)               9,367
- *   Trek×Month                             86
- *   Dest × City (18 × 550)             9,918
+ *   Trek×From index pages (19 treks)       19
+ *   Trek×City (19 × 550)              10,450
+ *   Trek×Month                             97
+ *   Dest × City (19 × 550)            10,469
  *   Blog / yoga / static / misc           ~80
- *   TOTAL                             ~19,533
+ *   TOTAL                             ~21,190
  */
 
 import type { MetadataRoute } from 'next';
@@ -45,7 +45,7 @@ const DATES = {
   hubs:       '2026-05-18',
   dest_index: '2026-05-01',
   dest_city:  '2026-04-15',
-  trek_index: '2026-06-04', // /trek/{slug}/from/ hub pages added
+  trek_index: '2026-06-05', // Brahmatal + Dayara Bugyal trek city pages added
   trek_city:  '2026-04-15',
   trek_month: '2026-03-01',
   static:     '2026-03-01',
@@ -60,6 +60,7 @@ const DEST_ROUTES = [
   { index: '/char-dham-from/',            priority: 0.9 as const },
   { index: '/kedarnath-from/',            priority: 0.9 as const },
   { index: '/kedarnath-helicopter-from/', priority: 0.9 as const },
+  { index: '/char-dham-helicopter-from/', priority: 0.9 as const },
   { index: '/badrinath-from/',            priority: 0.8 as const },
   { index: '/do-dham-from/',              priority: 0.8 as const },
   { index: '/rishikesh-from/',            priority: 0.8 as const },
