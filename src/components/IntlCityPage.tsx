@@ -316,25 +316,7 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                       <span className="price-suffix">/person</span>
                       <span className="price-inr-ref">≈ ${trek.intl_price_usd} USD · all-inclusive from Delhi</span>
                     </div>
-                    {trek.pricing_tiers && trek.pricing_tiers.length > 0 && (
-                      <div style={{ marginBottom: 16, borderTop: '1px solid var(--border)', paddingTop: 12 }}>
-                        <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '1.5px', marginBottom: 8 }}>
-                          Group pricing (USD/person)
-                        </div>
-                        <div style={{ display: 'flex', gap: 8 }}>
-                          {trek.pricing_tiers.map((tier) => {
-                            const usdPrice = Math.round(tier.rates.standard / 83);
-                            const localTierPrice = Math.round(usdPrice * city.usd_to_local);
-                            return (
-                              <div key={tier.group_size} style={{ flex: 1, background: 'rgba(201,146,61,0.07)', border: '1px solid var(--border)', borderRadius: 8, padding: '8px 6px', textAlign: 'center' }}>
-                                <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--gold2)' }}>{city.currency_symbol}{localTierPrice}</div>
-                                <div style={{ fontSize: 9, color: 'var(--muted)', marginTop: 2 }}>{tier.group_size}</div>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    )}
+                    {/* Group pricing removed — pricing via WhatsApp quote only */}
                     <div className="pkg-btns">
                       <WaLink
                         href={trekWaLink}
