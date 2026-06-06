@@ -402,7 +402,7 @@
     "item_b": {
       "name": "Char Dham Helicopter Yatra",
       "slug": "char-dham-helicopter-7n-8d",
-      "price": 65000,
+      "price": 250000,
       "duration": "7 Nights / 8 Days",
       "difficulty": "Easy",
       "best_for": "Elderly pilgrims, VIP travellers, those with limited mobility",
@@ -428,7 +428,7 @@
       {
         "aspect": "Price (from)",
         "a": "₹19,800/person",
-        "b": "₹65,000/person"
+        "b": "₹2,50,000/person"
       },
       {
         "aspect": "Travel Mode",

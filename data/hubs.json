@@ -116,8 +116,8 @@
       {
         "name": "Char Dham Helicopter Yatra",
         "duration": "7N/8D",
-        "price": 65000,
-        "intl_price_usd": 780,
+        "price": 250000,
+        "intl_price_usd": 1390,
         "image": "/images/kedarnath_temple_cover.webp",
         "url": "/packages/char-dham-helicopter-7n-8d/",
         "tag": "Luxury",
@@ -277,7 +277,7 @@
         },
         {
           "is_price": true,
-          "value": 65000
+          "value": 250000
         }
       ]
     ],
