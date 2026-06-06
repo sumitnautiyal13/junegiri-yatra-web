@@ -264,40 +264,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         </div>
       </section>
 
-      {/* PRICING TABLE */}
-      <section className="section" style={{ background: 'var(--card)' }}>
-        <div className="container">
-          <h2 className="s-title">Package <em>Pricing</em></h2>
-          <p className="s-sub">All prices in Indian Rupees (INR) · International visitors see converted price above</p>
-          <div className="s-line" />
-          <div className="price-table-wrap">
-            <table className="price-table">
-              <thead>
-                <tr>
-                  <th>Group Size</th>
-                  {Object.keys(pkg.pricing_tiers[0]?.rates || {}).map((tier) => (
-                    <th key={tier}>{tier.charAt(0).toUpperCase() + tier.slice(1)}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {pkg.pricing_tiers.map((tier, i) => (
-                  <tr key={i}>
-                    <td><strong>{tier.group_size}</strong></td>
-                    {Object.values(tier.rates).map((price, j) => (
-                      <td key={j}>
-                        {price > 0
-                          ? <span className="pv">₹{formatINR(price)}</span>
-                          : <span style={{ color: 'var(--muted)' }}>—</span>}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      {/* PRICING TABLE removed — pricing shown via WhatsApp quote */}
 
       {/* GALLERY */}
       {pkg.gallery && pkg.gallery.length > 0 && (
