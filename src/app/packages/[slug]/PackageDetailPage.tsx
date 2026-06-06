@@ -81,12 +81,27 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
             <div className="pkg-price-row">
               <div className="pkg-price-card">
                 <div className="pkg-price-label">Starting From</div>
-                <PriceDisplay
-                  inrPrice={pkg.price_from}
-                  usdIntlPrice={pkg.intl_price_usd}
-                  showInrRef={true}
-                  suffix="/ person"
-                />
+                {pkg.price_points && pkg.price_points.length > 0 ? (
+                  <div className="pkg-price-points">
+                    {pkg.price_points.map((pt) => (
+                      <div className="pkg-price-point" key={pt.city}>
+                        <PriceDisplay
+                          inrPrice={pt.price}
+                          showInrRef={false}
+                          suffix="/ person"
+                        />
+                        <span className="pkg-price-city">from {pt.city}</span>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <PriceDisplay
+                    inrPrice={pkg.price_from}
+                    usdIntlPrice={pkg.intl_price_usd}
+                    showInrRef={true}
+                    suffix="/ person"
+                  />
+                )}
               </div>
               <div className="pkg-cta-group">
                 <WaLink

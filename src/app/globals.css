@@ -723,6 +723,10 @@ footer a:hover { color: var(--gold2); }
 .pkg-price-label { color: rgba(7,5,26,0.7); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 4px; }
 .pkg-price-card .price-primary { color: #07051A !important; font-size: 2rem; font-weight: 900; display: block; }
 .pkg-price-card .price-inr-ref { color: rgba(7,5,26,0.6); font-size: 13px; }
+.pkg-price-points { display: flex; flex-direction: column; gap: 6px; }
+.pkg-price-point { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.pkg-price-point .price-primary { display: inline; font-size: 1.7rem; }
+.pkg-price-city { color: rgba(7,5,26,0.7); font-size: 12px; font-weight: 700; }
 .pkg-cta-group { display: flex; gap: 12px; flex-wrap: wrap; }
 
 /* ── TRUST BAR ────────────────────────────── */

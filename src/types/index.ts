@@ -35,6 +35,11 @@ export interface Breadcrumb {
   url: string;
 }
 
+export interface PricePoint {
+  city: string;
+  price: number;
+}
+
 export interface Package {
   slug: string;
   url: string;
@@ -52,6 +57,7 @@ export interface Package {
   difficulty: string;
   transport?: string;
   price_from: number;
+  price_points?: PricePoint[];
   intl_price_usd?: number;
   wa_text: string;
   overview: string;
