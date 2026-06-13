@@ -46,7 +46,7 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
   // Geo-aware price for hero display
   const displayPrice = geo.isLoading
     ? `₹${price.toLocaleString('en-IN')}`
-    : formatPrice(price, currency, pkg?.intl_price_usd, geo.tier);
+    : formatPrice(price, currency, pkg?.intl_price_usd);
 
   // Legacy plain WA link (used for non-card CTAs like hero button)
   const waText = encodeURIComponent(

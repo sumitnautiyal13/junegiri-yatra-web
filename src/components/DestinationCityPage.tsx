@@ -52,7 +52,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
   // Geo-aware display price
   const displayPrice = geo.isLoading
     ? `₹${basePrice.toLocaleString('en-IN')}`
-    : formatPrice(basePrice, currency, pkg?.intl_price_usd, geo.tier);
+    : formatPrice(basePrice, currency, pkg?.intl_price_usd);
 
   const jsonLd = {
     '@context': 'https://schema.org',

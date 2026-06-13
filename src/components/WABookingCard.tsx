@@ -41,7 +41,7 @@ export default function WABookingCard({
 
   const priceFormatted = geo.isLoading
     ? '...'
-    : formatPrice(pkg.price_from, currency, pkg.intl_price_usd, geo.tier);
+    : formatPrice(pkg.price_from, currency, pkg.intl_price_usd);
 
   const waHref = geo.isLoading
     ? '#'
@@ -137,13 +137,6 @@ export default function WABookingCard({
         </span>
         <span style={{ color: '#666', fontSize: 14 }}>/ person</span>
       </div>
-
-      {/* INR reference for non-India */}
-      {!geo.isLoading && !isIndia && (
-        <div style={{ color: '#999', fontSize: 12, marginBottom: 16 }}>
-          ≈ ₹{pkg.price_from.toLocaleString('en-IN')} base · {currency} conversion at current rates
-        </div>
-      )}
 
       {/* WA Button */}
       <a

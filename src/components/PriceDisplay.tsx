@@ -1,13 +1,15 @@
 'use client';
 
 import { useCurrency } from '@/contexts/CurrencyContext';
-import { formatPrice, formatINR } from '@/lib/currency';
+import { formatPrice } from '@/lib/currency';
 
 interface PriceDisplayProps {
   inrPrice: number;
   usdIntlPrice?: number;
   className?: string;
-  showInrRef?: boolean; // show "≈ ₹X,XX,XXX" when in foreign currency
+  /** @deprecated The INR conversion reference is no longer shown — prices
+   *  display in the selected currency only. Kept for call-site compatibility. */
+  showInrRef?: boolean;
   suffix?: string;
 }
 
@@ -15,20 +17,15 @@ export default function PriceDisplay({
   inrPrice,
   usdIntlPrice,
   className = '',
-  showInrRef = true,
   suffix = '/person',
 }: PriceDisplayProps) {
   const { currency } = useCurrency();
   const priceStr = formatPrice(inrPrice, currency, usdIntlPrice);
-  const isForein = currency !== 'INR';
 
   return (
     <span className={className}>
       <span className="price-primary">{priceStr}</span>
       {suffix && <span className="price-suffix">{suffix}</span>}
-      {showInrRef && isForein && (
-        <span className="price-inr-ref">≈ ₹{formatINR(inrPrice)}</span>
-      )}
     </span>
   );
 }
