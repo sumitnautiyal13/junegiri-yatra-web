@@ -79,14 +79,15 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
         return;
       }
 
-      // 3. IP-based detection via ipapi.co (free, no key needed)
+      // 3. IP-based detection via Vercel edge geo (reliable, no third-party
+      //    API, no rate limits, same-origin so privacy extensions don't block it)
       try {
-        const res = await fetch('https://ipapi.co/json/', {
+        const res = await fetch('/api/geo', {
           signal: AbortSignal.timeout(5000),
         });
         if (!res.ok) throw new Error('geo failed');
         const data = await res.json();
-        const code: string = (data.country_code ?? 'IN').toUpperCase();
+        const code: string = (data.country ?? 'IN').toUpperCase();
         const tier = (PRICING_TIERS[code] ?? 'other') as GeoTier;
         const detectedCurrency = COUNTRY_TO_CURRENCY[code] ?? 'USD';
 
@@ -95,9 +96,16 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
           setCurrencyState(detectedCurrency as Currency);
         }
 
+        let countryName = code;
+        try {
+          countryName = new Intl.DisplayNames(['en'], { type: 'region' }).of(code) ?? code;
+        } catch {
+          /* Intl unavailable — fall back to the country code */
+        }
+
         setGeo({
           countryCode: code,
-          countryName: data.country_name ?? code,
+          countryName,
           city: data.city ?? '',
           flag: COUNTRY_FLAGS[code] ?? '🌐',
           tier,
