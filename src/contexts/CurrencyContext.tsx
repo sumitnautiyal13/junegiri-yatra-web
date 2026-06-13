@@ -82,7 +82,7 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
       // 3. IP-based detection via Vercel edge geo (reliable, no third-party
       //    API, no rate limits, same-origin so privacy extensions don't block it)
       try {
-        const res = await fetch('/api/geo', {
+        const res = await fetch('/api/geo/', {
           signal: AbortSignal.timeout(5000),
         });
         if (!res.ok) throw new Error('geo failed');
