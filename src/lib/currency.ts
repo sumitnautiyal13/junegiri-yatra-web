@@ -145,16 +145,14 @@ export function formatPrice(
   currency: Currency,
   usdIntlPrice?: number,
 ): string {
-  // Exact prices only — no exchange-rate conversion and no regional markup.
-  // INR shows the real rupee amount; any other currency shows the exact USD
-  // international price (intl_price_usd) when set, otherwise the INR price.
+  // Show the amount in the selected currency (exchange-rate converted, no
+  // regional markup). No "≈ ₹" reference line is shown alongside.
+  const converted = convertPrice(inrPrice, currency, usdIntlPrice);
   if (currency === 'INR') {
-    return '₹' + formatINR(inrPrice);
+    return '₹' + formatINR(converted);
   }
-  if (usdIntlPrice && usdIntlPrice > 0) {
-    return '$' + Math.round(usdIntlPrice).toLocaleString('en-US');
-  }
-  return '₹' + formatINR(inrPrice);
+  const symbol = CURRENCY_SYMBOLS[currency] || '';
+  return symbol + converted.toLocaleString('en-US');
 }
 
 export function formatINR(num: number): string {
