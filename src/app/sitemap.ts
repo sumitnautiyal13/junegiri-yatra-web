@@ -100,10 +100,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // ── Destination × City pages (18 destinations × 550 cities) ──────────────
+  // Only tier-1 and tier-2 cities are indexable; tier-3 (low/zero demand) are
+  // served with noindex, so they must NOT appear in the sitemap (a noindexed
+  // URL in a sitemap is a contradictory crawl signal and wastes crawl budget).
+  const indexableCities = (citiesData as Array<{ slug: string; tier?: string | number }>)
+    .filter((c) => String(c.tier) !== '3');
+
+  // ── Destination × City pages (18 destinations × tier-1/2 cities) ──────────
   for (const dest of DEST_ROUTES) {
     urls.push({ url: `${BASE}${dest.index}`, lastModified: DATES.dest_index, changeFrequency: 'monthly', priority: dest.priority });
-    for (const c of citiesData as Array<{ slug: string }>) {
+    for (const c of indexableCities) {
       urls.push({ url: `${BASE}${dest.index}${c.slug}/`, lastModified: DATES.dest_city, changeFrequency: 'monthly', priority: dest.priority - 0.1 });
     }
   }
@@ -115,11 +121,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  // ── Trek × City pages (17 treks × 550 cities) ────────────────────────────
+  // ── Trek × City pages (17 treks × tier-1/2 cities) ───────────────────────
   for (const slug of Object.keys(trekSeasonsData)) {
     // Trek from-index page (new — was 404 before this release)
     urls.push({ url: `${BASE}/trek/${slug}/from/`, lastModified: DATES.trek_index, changeFrequency: 'monthly', priority: 0.7 });
-    for (const c of citiesData as Array<{ slug: string }>) {
+    for (const c of indexableCities) {
       urls.push({ url: `${BASE}/trek/${slug}/from/${c.slug}/`, lastModified: DATES.trek_city, changeFrequency: 'monthly', priority: 0.65 });
     }
   }

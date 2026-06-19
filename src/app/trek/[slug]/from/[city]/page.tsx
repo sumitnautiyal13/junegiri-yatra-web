@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import { getCityBySlug, getPackageBySlug } from '@/lib/data';
 import TrekCityPage from '@/components/TrekCityPage';
 
-// Dynamic ISR — rendered on demand, cached at CDN for 24 h
-export const dynamic = 'force-dynamic';
+// ISR — rendered on demand, then cached at the CDN for 24 h.
+// (NOT force-dynamic: that re-rendered a function on every crawl/bot hit
+// across ~9k trek×city URLs, driving function/origin-transfer cost.)
 export const revalidate = 86400;
 
 // ── Trek seasons data (loaded at module level for server-side use) ──────────

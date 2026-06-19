@@ -4,8 +4,9 @@ import { getCityBySlug, getAllPackages } from '@/lib/data';
 import CityMonthPage from '@/components/CityMonthPage';
 import yatraSeasons from '../../../../../../data/yatra-seasons.json';
 
-/* ── Dynamic ISR — rendered on demand, cached at CDN for 24 h ── */
-export const dynamic = 'force-dynamic';
+/* ── ISR — rendered on demand, then cached at the CDN for 24 h.
+   (Must NOT be force-dynamic: that re-renders a serverless function on every
+   crawl/bot hit across ~57k dest×city×month URLs and blows usage/cost.) ── */
 export const revalidate = 86400;
 
 /* ── Types ──────────────────────────────────────────────────────── */
@@ -59,6 +60,10 @@ export async function generateMetadata({
   const description = `Book ${destData.destination} from ${city.name} in ${monthData.label} ${monthData.year} — ${monthData.weather} All-inclusive from ₹${destData.base_price.toLocaleString('en-IN')}. ${bookingTipFirst}`;
 
   return {
+    // ~57k thin, 4-level-deep seasonal variants on a low-authority domain:
+    // keep them user-accessible (follow) but out of the index to protect the
+    // site-wide quality signal and crawl budget. Revisit once DR grows.
+    robots: { index: false, follow: true },
     title,
     description,
     openGraph: {

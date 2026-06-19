@@ -79,8 +79,47 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
         return;
       }
 
-      // 3. IP-based detection via Vercel edge geo (reliable, no third-party
-      //    API, no rate limits, same-origin so privacy extensions don't block it)
+      // 3. IP-based detection via Vercel edge geo. The result is cached in
+      //    localStorage so /api/geo is hit once per visitor (not on every page
+      //    load) — keeps serverless-function / edge-request usage and cost low.
+      const GEO_TTL = 7 * 24 * 60 * 60 * 1000; // 7 days
+
+      const applyGeo = (code: string, city: string) => {
+        const tier = (PRICING_TIERS[code] ?? 'other') as GeoTier;
+        if (!saved) {
+          setCurrencyState((COUNTRY_TO_CURRENCY[code] ?? 'USD') as Currency);
+        }
+        let countryName = code;
+        try {
+          countryName = new Intl.DisplayNames(['en'], { type: 'region' }).of(code) ?? code;
+        } catch {
+          /* Intl unavailable — fall back to the country code */
+        }
+        setGeo({
+          countryCode: code,
+          countryName,
+          city,
+          flag: COUNTRY_FLAGS[code] ?? '🌐',
+          tier,
+          isLoading: false,
+        });
+      };
+
+      // 3a. Reuse a fresh cached lookup — skips the network call entirely.
+      try {
+        const cached = localStorage.getItem('jy_geo');
+        if (cached) {
+          const g = JSON.parse(cached) as { code: string; city: string; ts: number };
+          if (g.code && Date.now() - g.ts < GEO_TTL) {
+            applyGeo(g.code, g.city || '');
+            return;
+          }
+        }
+      } catch {
+        /* malformed cache — fall through to a fresh lookup */
+      }
+
+      // 3b. Otherwise look it up once via the edge, then cache it.
       try {
         const res = await fetch('/api/geo/', {
           signal: AbortSignal.timeout(5000),
@@ -88,29 +127,13 @@ export function CurrencyProvider({ children }: { children: React.ReactNode }) {
         if (!res.ok) throw new Error('geo failed');
         const data = await res.json();
         const code: string = (data.country ?? 'IN').toUpperCase();
-        const tier = (PRICING_TIERS[code] ?? 'other') as GeoTier;
-        const detectedCurrency = COUNTRY_TO_CURRENCY[code] ?? 'USD';
-
-        // Only auto-switch currency if user hasn't manually set one
-        if (!saved) {
-          setCurrencyState(detectedCurrency as Currency);
-        }
-
-        let countryName = code;
+        const city: string = data.city ?? '';
         try {
-          countryName = new Intl.DisplayNames(['en'], { type: 'region' }).of(code) ?? code;
+          localStorage.setItem('jy_geo', JSON.stringify({ code, city, ts: Date.now() }));
         } catch {
-          /* Intl unavailable — fall back to the country code */
+          /* storage blocked/full — non-fatal */
         }
-
-        setGeo({
-          countryCode: code,
-          countryName,
-          city: data.city ?? '',
-          flag: COUNTRY_FLAGS[code] ?? '🌐',
-          tier,
-          isLoading: false,
-        });
+        applyGeo(code, city);
       } catch {
         // Fallback to browser locale
         if (!saved) {
