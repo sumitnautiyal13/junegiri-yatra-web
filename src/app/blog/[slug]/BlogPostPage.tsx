@@ -251,6 +251,25 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
         </div>
       </section>
 
+      {/* Author / operator bio — E-E-A-T */}
+      <section className="bp-author-bio">
+        <div className="bp-container">
+          <div className="bp-bio-card">
+            <h2 className="bp-section-heading">About the operator</h2>
+            <p>
+              This guide is published by <strong>Junegiri Yatra</strong> — a Haridwar-based
+              pilgrimage &amp; Himalayan trek operator founded in 2017 by{' '}
+              <strong>Vignesh Waram</strong>, <strong>Yash Negi</strong> and{' '}
+              <strong>Sumit Nautiyal</strong>. The team is licensed by Uttarakhand Tourism
+              (ATOI-approved) and has guided <strong>2,847+ travellers</strong> from 30+
+              countries across the Char Dham, Valley of Flowers, Kedarnath and Himalayan
+              trek circuits — so every route, cost and timing detail here comes from
+              first-hand operating experience. <Link href="/about/">More about the team →</Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Related Posts */}
       {relatedPosts.length > 0 && (
         <section className="bp-related-section">
@@ -604,6 +623,35 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           display: flex;
           gap: 12px;
           flex-wrap: wrap;
+        }
+
+        /* ---- Author / operator bio (E-E-A-T) ---- */
+        .bp-author-bio {
+          padding: 8px 0 0;
+          background: #fff;
+        }
+        .bp-bio-card {
+          max-width: 760px;
+          margin: 0 auto;
+          border: 1px solid #e6e3da;
+          border-left: 4px solid #c9a84c;
+          border-radius: 12px;
+          padding: 22px 26px;
+          background: #faf8f3;
+        }
+        .bp-bio-card .bp-section-heading {
+          font-size: 18px;
+          margin: 0 0 10px;
+        }
+        .bp-bio-card p {
+          font-size: 15px;
+          line-height: 1.7;
+          color: #3a3730;
+          margin: 0;
+        }
+        .bp-bio-card a {
+          color: #b8923a;
+          font-weight: 600;
         }
 
         /* ---- Related Posts ---- */
