@@ -258,13 +258,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
             <h2 className="bp-section-heading">About the operator</h2>
             <p>
               This guide is published by <strong>Junegiri Yatra</strong> — a Haridwar-based
-              pilgrimage &amp; Himalayan trek operator founded in 2017 by{' '}
-              <strong>Vignesh Waram</strong>, <strong>Yash Negi</strong> and{' '}
-              <strong>Sumit Nautiyal</strong>. The team is licensed by Uttarakhand Tourism
-              (ATOI-approved) and has guided <strong>2,847+ travellers</strong> from 30+
-              countries across the Char Dham, Valley of Flowers, Kedarnath and Himalayan
-              trek circuits — so every route, cost and timing detail here comes from
-              first-hand operating experience. <Link href="/about/">More about the team →</Link>
+              pilgrimage &amp; Himalayan trek operator run by <strong>Vignesh Waram</strong>,{' '}
+              <strong>Yash Negi</strong> and <strong>Sumit Nautiyal</strong>, licensed by
+              Uttarakhand Tourism (ATOI-approved). Our team plans and runs the Char Dham,
+              Valley of Flowers, Kedarnath and Himalayan trek circuits end-to-end — so every
+              route, cost and timing detail here comes from first-hand operating experience.{' '}
+              <Link href="/about/">More about the team →</Link>
             </p>
           </div>
         </div>
