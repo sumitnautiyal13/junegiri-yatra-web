@@ -3806,8 +3806,14 @@
     "transport": "Private Vehicle + Trek",
     "price_from": 6000,
     "price_points": [
-      { "city": "Joshimath", "price": 6000 },
-      { "city": "Rishikesh", "price": 8500 }
+      {
+        "city": "Joshimath",
+        "price": 6000
+      },
+      {
+        "city": "Rishikesh",
+        "price": 8500
+      }
     ],
     "intl_price_usd": 420,
     "wa_text": "Hi Junegiri Yatra! I'm interested in the Valley of Flowers Trek 5N/6D package. Please share availability and pricing details.",
@@ -4355,7 +4361,7 @@
       "/images/trek2.webp",
       "/images/trek1.webp",
       "/images/trek_mountain_path.webp",
-      "/images/valley_trek.webp"
+      "/images/valley_of_flowers.webp"
     ],
     "testimonials": [
       {
@@ -4565,7 +4571,7 @@
       "/images/solo_trek_uttarakhand.webp",
       "/images/kedarkantha_trek.webp",
       "/images/trek_mountain_path.webp",
-      "/images/valley_trek.webp"
+      "/images/valley_of_flowers.webp"
     ],
     "testimonials": [
       {
@@ -4637,7 +4643,7 @@
     "keywords": "Dayara Bugyal trek, Dayara Bugyal winter trek, Barsu trek, alpine meadow trek Uttarakhand, Uttarkashi trek, Dayara Bugyal from Dehradun, Dayara Bugyal 2026",
     "h1": "Dayara Bugyal Trek <em>4N/5D</em>",
     "hero_tagline": "Uttarakhand's Most Expansive Alpine Meadow",
-    "hero_image": "/images/valley_trek.webp",
+    "hero_image": "/images/harkidun_2.jpg",
     "tag": "Meadow Trek",
     "duration": "4 Nights / 5 Days",
     "destinations_short": "Barsu · Dayara Bugyal · Bakaria Top",
@@ -4743,7 +4749,7 @@
       }
     ],
     "gallery": [
-      "/images/valley_trek.webp",
+      "/images/valley_of_flowers.webp",
       "/images/trek_mountain_path.webp",
       "/images/valley_of_flowers.webp",
       "/images/solo_trek_uttarakhand.webp"
@@ -5189,8 +5195,8 @@
     "gallery": [
       "/images/trek2.webp",
       "/images/snow_mountain.webp",
-      "/images/trek_meadow.webp",
-      "/images/trek_campsite.webp"
+      "/images/valley_of_flowers.webp",
+      "/images/trek_camping.webp"
     ],
     "testimonials": [
       {
@@ -5262,7 +5268,7 @@
         "name": "Kedarkantha Trek",
         "duration": "5N/6D",
         "price": 9500,
-        "image": "/images/trek_campsite.webp",
+        "image": "/images/trek_camping.webp",
         "url": "/packages/kedarkantha-trek-5n-6d/"
       }
     ],
@@ -5417,8 +5423,8 @@
     "gallery": [
       "/images/trek2.webp",
       "/images/trek1.webp",
-      "/images/trek_meadow.webp",
-      "/images/trek_campsite.webp"
+      "/images/valley_of_flowers.webp",
+      "/images/trek_camping.webp"
     ],
     "testimonials": [
       {
@@ -5490,7 +5496,7 @@
         "name": "Kedarkantha Trek",
         "duration": "5N/6D",
         "price": 9500,
-        "image": "/images/trek_campsite.webp",
+        "image": "/images/trek_camping.webp",
         "url": "/packages/kedarkantha-trek-5n-6d/"
       }
     ],
@@ -5607,8 +5613,8 @@
       "/images/rishikesh_cliff.webp",
       "/images/rishikesh_rafting.webp",
       "/images/rishikesh_bungee.webp",
-      "/images/rishikesh_camping.webp",
-      "/images/rishikesh_kayaking.webp"
+      "/images/rishikesh1.webp",
+      "/images/rishikesh1.webp"
     ],
     "testimonials": [
       {
@@ -5833,8 +5839,8 @@
       "/images/rishikesh_bridge.webp",
       "/images/cover_meditation.webp",
       "/images/rishikesh_yoga.webp",
-      "/images/rishikesh_ganga_aarti.webp",
-      "/images/rishikesh_ashram.webp",
+      "/images/rishikesh1.webp",
+      "/images/rishikesh1.webp",
       "/images/haridwar_ghat.webp"
     ],
     "testimonials": [
@@ -6011,9 +6017,9 @@
       "/images/rishikesh_bridge.webp",
       "/images/rishikesh1.webp",
       "/images/rishikesh_rafting.webp",
-      "/images/rishikesh_camping.webp",
+      "/images/rishikesh1.webp",
       "/images/rishikesh_yoga.webp",
-      "/images/rishikesh_jhula.webp"
+      "/images/rishikesh1.webp"
     ],
     "testimonials": [
       {
@@ -6209,12 +6215,12 @@
       }
     ],
     "gallery": [
-      "/images/mussoorie-mall-road.webp",
-      "/images/kempty-falls.webp",
-      "/images/gun-hill-view.webp",
-      "/images/lal-tibba-sunrise.webp",
-      "/images/robbers-cave-dehradun.webp",
-      "/images/fri-dehradun.webp"
+      "/images/mountains1.webp",
+      "/images/mountains1.webp",
+      "/images/mountains1.webp",
+      "/images/mountains1.webp",
+      "/images/mountains1.webp",
+      "/images/mountains2.webp"
     ],
     "testimonials": [
       {
@@ -6272,21 +6278,21 @@
         "name": "Nainital & Jim Corbett National Park",
         "duration": "4N/5D",
         "price": 11000,
-        "image": "/images/nainital-lake.webp",
+        "image": "/images/trek_lake.webp",
         "url": "/packages/nainital-jim-corbett-4n-5d/"
       },
       {
         "name": "Auli Snow Trip",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "/images/auli-skiing.webp",
+        "image": "/images/auli_skiing.webp",
         "url": "/packages/auli-snow-trip-3n-4d/"
       },
       {
         "name": "Kanatal & Tehri Weekend Getaway",
         "duration": "2N/3D",
         "price": 6500,
-        "image": "/images/kanatal-forest.webp",
+        "image": "/images/mountains1.webp",
         "url": "/packages/kanatal-tehri-weekend-2n-3d/"
       }
     ],
@@ -6426,12 +6432,12 @@
       }
     ],
     "gallery": [
-      "/images/corbett-tiger-jeep-safari.webp",
-      "/images/corbett-elephant-safari.webp",
-      "/images/nainital-lake-boating.webp",
-      "/images/snow-view-point-nainital.webp",
-      "/images/bhimtal-lake.webp",
-      "/images/sattal-birds.webp"
+      "/images/family_travel.webp",
+      "/images/family_travel.webp",
+      "/images/trek_lake.webp",
+      "/images/trek_lake.webp",
+      "/images/trek_lake.webp",
+      "/images/trek_lake.webp"
     ],
     "testimonials": [
       {
@@ -6489,21 +6495,21 @@
         "name": "Mussoorie & Dehradun",
         "duration": "3N/4D",
         "price": 8500,
-        "image": "/images/mussoorie-mall-road.webp",
+        "image": "/images/mountains1.webp",
         "url": "/packages/mussoorie-dehradun-3n-4d/"
       },
       {
         "name": "Lansdowne & Corbett Safari",
         "duration": "3N/4D",
         "price": 9000,
-        "image": "/images/lansdowne-forest.webp",
+        "image": "/images/mountains1.webp",
         "url": "/packages/lansdowne-corbett-safari-3n-4d/"
       },
       {
         "name": "Auli Snow Trip",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "/images/auli-skiing.webp",
+        "image": "/images/auli_skiing.webp",
         "url": "/packages/auli-snow-trip-3n-4d/"
       }
     ],
@@ -6632,12 +6638,12 @@
       }
     ],
     "gallery": [
-      "/images/auli-ski-slopes.webp",
-      "/images/auli-gondola-ropeway.webp",
-      "/images/nanda-devi-auli.webp",
-      "/images/gorson-bugyal-meadow.webp",
-      "/images/kuari-pass-viewpoint.webp",
-      "/images/joshimath-auli-winter.webp"
+      "/images/auli_skiing.webp",
+      "/images/auli_skiing.webp",
+      "/images/auli_skiing.webp",
+      "/images/auli_skiing.webp",
+      "/images/kuari_pass_1.jpg",
+      "/images/auli_skiing.webp"
     ],
     "testimonials": [
       {
@@ -6695,21 +6701,21 @@
         "name": "Mussoorie & Dehradun",
         "duration": "3N/4D",
         "price": 8500,
-        "image": "/images/mussoorie-mall-road.webp",
+        "image": "/images/mountains1.webp",
         "url": "/packages/mussoorie-dehradun-3n-4d/"
       },
       {
         "name": "Kanatal & Tehri Weekend Getaway",
         "duration": "2N/3D",
         "price": 6500,
-        "image": "/images/kanatal-forest.webp",
+        "image": "/images/mountains1.webp",
         "url": "/packages/kanatal-tehri-weekend-2n-3d/"
       },
       {
         "name": "Kuari Pass Trek",
         "duration": "4N/5D",
         "price": 12000,
-        "image": "/images/kuari-pass-trek.webp",
+        "image": "/images/kuari_pass_1.jpg",
         "url": "/packages/kuari-pass-trek-4n-5d/"
       }
     ],
@@ -8081,7 +8087,7 @@
     "keywords": "bali tour package 2025, nusa penida trip, gili trawangan, bali gili island tour, scuba diving bali, bali party trip india",
     "h1": "Bali, <em>Nusa Penida</em> &amp; Gili Party Escape",
     "hero_tagline": "7 days of beaches, scuba diving, Nusa Penida west tour, Gili T nightlife, and ATV adventures. All-inclusive from $530 per person.",
-    "hero_image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1600&q=85&auto=format&fit=crop",
+    "hero_image": "/images/group_photo.webp",
     "tag": "New International",
     "duration": "7 Days / 6 Nights",
     "destinations_short": "Bali · Nusa Penida · Gili Trawangan",
@@ -8462,7 +8468,7 @@
     "keywords": "Triund trek, Triund trek from McLeod Ganj, Triund Dharamshala, Triund camping, Triund 2026, easy Himachal trek, Dhauladhar trek, Kangra valley trek",
     "h1": "Triund <em>Trek</em>",
     "hero_tagline": "The Dhauladhar snow wall from your tent — the most rewarding easy trek in Himachal",
-    "hero_image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=1400&q=80",
+    "hero_image": "/images/hampta_1.jpg",
     "tag": "Easy",
     "duration": "1 Night / 2 Days",
     "destinations_short": "McLeod Ganj · Dharamkot · Triund Summit",
@@ -8540,7 +8546,7 @@
       }
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=800&q=80",
+      "/images/trek_himalaya.webp",
       "/images/trek1.webp",
       "/images/trek_camping.webp",
       "/images/snow_mountain.webp"
@@ -8580,14 +8586,14 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Bhrigu Lake Trek",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/bhrigu-lake-trek-3n-4d/"
       },
       {
@@ -8609,7 +8615,7 @@
     "keywords": "Bhrigu Lake trek, Bhrigu Lake trek Manali, Bhrigu Lake altitude, Bhrigu Lake 2026, Himachal Pradesh high altitude lake trek, Manali trek, Rohtang trek",
     "h1": "Bhrigu Lake <em>Trek</em>",
     "hero_tagline": "A sacred alpine lake at 4,300m — the holy bathing spot of sage Bhrigu with Rohtang's giants all around",
-    "hero_image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80",
+    "hero_image": "/images/trek_lake.webp",
     "tag": "Scenic",
     "duration": "3 Nights / 4 Days",
     "destinations_short": "Manali · Gulaba · Rola Kholi · Bhrigu Lake",
@@ -8700,7 +8706,7 @@
       }
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80",
+      "/images/trek_himalaya.webp",
       "/images/trek1.webp",
       "/images/trek_camping.webp",
       "/images/snow_mountain.webp"
@@ -8740,14 +8746,14 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Triund Trek",
         "duration": "1N/2D",
         "price": 3500,
-        "image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/triund-trek-1n-2d/"
       },
       {
@@ -8769,7 +8775,7 @@
     "keywords": "Kareri Lake trek, Kareri Lake trek Dharamshala, Kareri Lake McLeod Ganj, Kareri trek 2026, easy Himachal trek, Dharamshala trek, alpine lake trek",
     "h1": "Kareri Lake <em>Trek</em>",
     "hero_tagline": "A hidden gem above Dharamshala — emerald forests, river crossings, and a pristine alpine lake",
-    "hero_image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=80",
+    "hero_image": "/images/mountains1.webp",
     "tag": "Scenic",
     "duration": "3 Nights / 4 Days",
     "destinations_short": "McLeod Ganj · Kareri Village · Ravi River · Kareri Lake",
@@ -8870,7 +8876,7 @@
       }
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80",
+      "/images/trek_himalaya.webp",
       "/images/trek1.webp",
       "/images/trek_camping.webp",
       "/images/snow_mountain.webp"
@@ -8918,21 +8924,21 @@
         "name": "Triund Trek",
         "duration": "1N/2D",
         "price": 3500,
-        "image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/triund-trek-1n-2d/"
       },
       {
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Bhrigu Lake Trek",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/bhrigu-lake-trek-3n-4d/"
       }
     ],
@@ -8947,7 +8953,7 @@
     "keywords": "Beas Kund trek, Beas Kund Manali, Beas Kund trek 2026, source of Beas river, Manali glacier trek, easy Himachal trek, Dhundi trek, Bakarthach trek",
     "h1": "Beas Kund <em>Trek</em>",
     "hero_tagline": "Stand at the source of the mighty Beas river — a glacial lake ringed by peaks, just 2 nights from Manali",
-    "hero_image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&q=80",
+    "hero_image": "/images/hampta_5.jpg",
     "tag": "Easy",
     "duration": "2 Nights / 3 Days",
     "destinations_short": "Manali · Dhundi · Bakarthach · Beas Kund",
@@ -9037,7 +9043,7 @@
       }
     ],
     "gallery": [
-      "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
+      "/images/trek_himalaya.webp",
       "/images/trek1.webp",
       "/images/trek_camping.webp",
       "/images/trek_mountain_path.webp"
@@ -9081,21 +9087,21 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Bhrigu Lake Trek",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/bhrigu-lake-trek-3n-4d/"
       },
       {
         "name": "Triund Trek",
         "duration": "1N/2D",
         "price": 3500,
-        "image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/triund-trek-1n-2d/"
       }
     ],
@@ -9110,7 +9116,7 @@
     "keywords": "Indrahar Pass trek, Indrahar Pass from McLeod Ganj, Dhauladhar trek, Triund Indrahar Pass, Himachal Pradesh trek 2026, Lahesh Cave trek, Dharamshala trek",
     "h1": "Indrahar Pass <em>Trek</em>",
     "hero_tagline": "Cross the mighty Dhauladhar range from McLeod Ganj — views of two great Himalayan sub-ranges from a single pass",
-    "hero_image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1400&q=80&auto=format&fit=crop",
+    "hero_image": "/images/trek_mountain_path.webp",
     "tag": "Dhauladhar Cross",
     "duration": "3 Nights / 4 Days",
     "destinations_short": "McLeod Ganj · Triund · Lahesh Cave · Indrahar Pass",
@@ -9212,21 +9218,21 @@
         "name": "Triund Trek",
         "duration": "1N/2D",
         "price": 3500,
-        "image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/triund-trek-1n-2d/"
       },
       {
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Kareri Lake Trek",
         "duration": "3N/4D",
         "price": 8500,
-        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/kareri-lake-trek-3n-4d/"
       }
     ],
@@ -9266,7 +9272,7 @@
     "keywords": "Chandrakhani Pass trek, Chandrakhani Pass Naggar, Malana village trek, Kullu Valley trek, apple orchard trek Himachal, Chandrakhani Pass 2026, Naggar castle trek",
     "h1": "Chandrakhani Pass <em>Trek</em>",
     "hero_tagline": "Through Kullu Valley's apple orchards and ancient deodar forests to the enigmatic Malana village",
-    "hero_image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1400&q=80&auto=format&fit=crop",
+    "hero_image": "/images/sarpass_2.jpg",
     "tag": "Apple Orchard Pass",
     "duration": "3 Nights / 4 Days",
     "destinations_short": "Naggar · Rumsu · Chandrakhani Pass · Malana · Kasol",
@@ -9368,21 +9374,21 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Bhrigu Lake Trek",
         "duration": "3N/4D",
         "price": 9500,
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/bhrigu-lake-trek-3n-4d/"
       },
       {
         "name": "Beas Kund Trek",
         "duration": "2N/3D",
         "price": 6500,
-        "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/beas-kund-trek-2n-3d/"
       }
     ],
@@ -9422,7 +9428,7 @@
     "keywords": "Rupin Pass trek, Rupin Pass trek 2026, snow bridges trek India, Dhaula to Sangla trek, Uttarakhand Himachal crossover trek, Rupin Pass altitude, best moderate difficult treks India",
     "h1": "Rupin Pass <em>Trek</em>",
     "hero_tagline": "India's most dramatic snow bridge trek — from Uttarakhand's gorges to Himachal's Sangla Valley",
-    "hero_image": "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=1400&q=80&auto=format&fit=crop",
+    "hero_image": "/images/trek_snow_peak.webp",
     "tag": "Snow Bridges Trek",
     "duration": "8 Nights / 9 Days",
     "destinations_short": "Dhaula · Sewa · Jhaka · Dhanderas Thatch · Rupin Pass · Sangla",
@@ -9579,21 +9585,21 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Pin Parvati Pass Trek",
         "duration": "10N/11D",
         "price": 22000,
-        "image": "https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/pin-parvati-pass-10n-11d/"
       },
       {
         "name": "Pangarchulla Peak",
         "duration": "5N/6D",
         "price": 12500,
-        "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/pangarchulla-peak-5n-6d/"
       }
     ],
@@ -9633,7 +9639,7 @@
     "keywords": "Kanamo Peak trek, Kanamo Peak Spiti, Spiti Valley trek, high altitude peak India, non-technical peak India 6000m, Kaza trek, Kibber trek, Spiti trekking 2026",
     "h1": "Kanamo Peak <em>Trek</em>",
     "hero_tagline": "One of India's highest non-technical peaks — 360° views of the Spiti cold desert, Kinner Kailash, and Tibet",
-    "hero_image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1400&q=80&auto=format&fit=crop",
+    "hero_image": "/images/himalaya_altitude.webp",
     "tag": "High Altitude Peak",
     "duration": "5 Nights / 6 Days",
     "destinations_short": "Kaza · Kibber · Base Camp · Kanamo Summit",
@@ -9761,21 +9767,21 @@
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       },
       {
         "name": "Pin Parvati Pass Trek",
         "duration": "10N/11D",
         "price": 22000,
-        "image": "https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/pin-parvati-pass-10n-11d/"
       },
       {
         "name": "Rupin Pass Trek",
         "duration": "8N/9D",
         "price": 16500,
-        "image": "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/rupin-pass-trek-8n-9d/"
       }
     ],
@@ -9815,7 +9821,7 @@
     "keywords": "Pin Parvati Pass trek, Pin Parvati Pass 2026, Kullu to Spiti trek, Kheerganga to Kaza trek, hardest treks India, remote treks Himachal Pradesh, Pin Parvati Pass altitude, glacier trek India",
     "h1": "Pin Parvati Pass <em>Trek</em>",
     "hero_tagline": "India's most remote crossover — from the lush Parvati Valley to the barren cold desert of Spiti across a 5,319m glacial pass",
-    "hero_image": "https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=1400&q=80&auto=format&fit=crop",
+    "hero_image": "/images/sunrise_mountain.webp",
     "tag": "Kullu to Spiti Crossover",
     "duration": "10 Nights / 11 Days",
     "destinations_short": "Kheerganga · Tunda Bhuj · Mantalai Lake · Pin Parvati Pass · Pin Valley · Mudh · Kaza",
@@ -9994,21 +10000,21 @@
         "name": "Rupin Pass Trek",
         "duration": "8N/9D",
         "price": 16500,
-        "image": "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/rupin-pass-trek-8n-9d/"
       },
       {
         "name": "Kanamo Peak Trek",
         "duration": "5N/6D",
         "price": 19500,
-        "image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/kanamo-peak-5n-6d/"
       },
       {
         "name": "Hamta Pass Trek",
         "duration": "4N/5D",
         "price": 11500,
-        "image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=400&q=80",
+        "image": "/images/trek_himalaya.webp",
         "url": "/packages/hamta-pass-trek-4n-5d/"
       }
     ],

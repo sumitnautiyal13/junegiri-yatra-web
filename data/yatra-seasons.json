@@ -4,7 +4,7 @@
     "route_base": "/char-dham-from/",
     "package_slug": "char-dham-yatra-9n-10d",
     "base_price": 19800,
-    "hero_image": "/images/char_dham_kedarnath.webp",
+    "hero_image": "/images/kedarnath_landscape.webp",
     "duration": "9 Nights / 10 Days",
     "schema_type": "Religious pilgrimage",
     "months": [
@@ -750,7 +750,7 @@
     "route_base": "/do-dham-from/",
     "package_slug": "do-dham-yatra-5n-6d",
     "base_price": 13500,
-    "hero_image": "/images/char_dham_kedarnath.webp",
+    "hero_image": "/images/kedarnath_landscape.webp",
     "duration": "5 Nights / 6 Days",
     "schema_type": "Religious pilgrimage",
     "months": [

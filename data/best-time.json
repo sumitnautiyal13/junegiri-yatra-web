@@ -2436,7 +2436,7 @@
     "meta_description": "Best time for Hamta Pass Trek — June to September. July-August for wildflowers, September for clear skies. Snow conditions, permit info and packing guide.",
     "h1": "Best Time for <em>Hamta Pass Trek</em>",
     "tagline": "Trek season: June–September · Best months: July & September",
-    "hero_image": "https://images.unsplash.com/photo-1585506942812-e72b29cef752?w=1400&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "The Hamta Pass Trek is open from June through September. July and August offer lush wildflower meadows and reliable snow-free pass conditions. September has the clearest skies and fewest crowds. The pass closes October onward due to heavy snowfall.",
     "package_slug": "hamta-pass-trek-4n-5d",
     "package_price": 11500,
@@ -2518,7 +2518,7 @@
     "meta_description": "Best time for Triund Trek from McLeod Ganj — March to June and September to November. Avoid July-August monsoon. Complete weather and permit guide.",
     "h1": "Best Time for <em>Triund Trek</em>",
     "tagline": "Best months: April–May & October · Avoid July–August monsoon",
-    "hero_image": "https://images.unsplash.com/photo-1571970261658-dce98bc0e9f0?w=1400&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Triund is best visited in spring (March–June) and autumn (September–November). April and May offer rhododendron blooms and clear mountain views. October has snow on the Dhauladhar ridge and crisp air. Avoid July–August when the trail gets very muddy and visibility is poor.",
     "package_slug": "triund-trek-1n-2d",
     "package_price": 3500,
@@ -2621,7 +2621,7 @@
     "meta_description": "Best time for Bhrigu Lake Trek from Manali — June to October. July for wildflowers, September for clearest skies. Altitude, weather and packing guide.",
     "h1": "Best Time for <em>Bhrigu Lake Trek</em>",
     "tagline": "Trek season: June–October · Best months: Late June & September",
-    "hero_image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Bhrigu Lake trek runs from June through early October. Late June offers a partially frozen lake with dramatic ice-water reflections. July–August is warmest with wildflowers in full bloom. September has the clearest skies. October is cold but still safe with fresh snow on the peaks.",
     "package_slug": "bhrigu-lake-trek-3n-4d",
     "package_price": 9500,
@@ -2710,7 +2710,7 @@
     "meta_description": "Best time for Kareri Lake Trek from Dharamshala — April–May and September–October. Avoid July–August monsoon. River crossing safety and permit guide.",
     "h1": "Best Time for <em>Kareri Lake Trek</em>",
     "tagline": "Best months: April–May & October · Avoid July–August monsoon",
-    "hero_image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Kareri Lake Trek is best visited in spring (April–May) and autumn (September–October). April has rhododendrons in bloom and manageable river crossings. October offers golden maple forests and crystal Dhauladhar views. Avoid July–August when monsoon rains make the river crossings dangerous.",
     "package_slug": "kareri-lake-trek-3n-4d",
     "package_price": 7500,
@@ -2813,7 +2813,7 @@
     "meta_description": "Best time for Beas Kund Trek from Manali — June to September. July–August for wildflowers, September for clearest skies. Complete weather and conditions guide.",
     "h1": "Best Time for <em>Beas Kund Trek</em>",
     "tagline": "Trek season: June–September · Best months: July & September",
-    "hero_image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1400&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Beas Kund Trek runs from June through September. July and August offer peak wildflower blooms at Bakarthach. September brings the clearest mountain views with fresh snow on Hanuman Tibba. June is quieter with possible snow patches above 3,400m.",
     "package_slug": "beas-kund-trek-2n-3d",
     "package_price": 6500,
@@ -2895,7 +2895,7 @@
     "meta_description": "Best time for Indrahar Pass Trek — May and October are ideal. Cross Dhauladhar range from Dharamshala year's best months, complete weather and trail guide.",
     "h1": "Best Time for <em>Indrahar Pass Trek</em>",
     "tagline": "Dhauladhar crossing Apr–Jun & Sep–Nov · Best months: May & October",
-    "hero_image": "https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1200&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "The Indrahar Pass Trek (3N/4D) crosses the Dhauladhar range from McLeod Ganj (Dharamshala) to the Chamba Valley at 4,342m. The trek operates in two windows — spring (April–June) and autumn (September–November). May and October are the prime months: skies are crystal clear, trails are firm, and the views from the pass are extraordinary. The trek is closed July–August due to heavy monsoon rain on the Dhauladhar range.",
     "package_slug": "indrahar-pass-trek-3n-4d",
     "package_price": 8500,
@@ -3010,12 +3010,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Pass Altitude", "value": "4,342 m" },
-      { "label": "Base Town", "value": "McLeod Ganj, Dharamshala" },
-      { "label": "Trek Duration", "value": "3N / 4D" },
-      { "label": "Best Months", "value": "May & October" },
-      { "label": "Difficulty", "value": "Moderate–Difficult" },
-      { "label": "Start Point", "value": "Galu Devi Temple, McLeod Ganj" }
+      {
+        "label": "Pass Altitude",
+        "value": "4,342 m"
+      },
+      {
+        "label": "Base Town",
+        "value": "McLeod Ganj, Dharamshala"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "3N / 4D"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & October"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Moderate–Difficult"
+      },
+      {
+        "label": "Start Point",
+        "value": "Galu Devi Temple, McLeod Ganj"
+      }
     ],
     "faq": [
       {
@@ -3039,7 +3057,7 @@
     "meta_description": "Best time for Chandrakhani Pass Trek from Naggar — June and September are ideal. Kullu Valley crossing to Malana, complete weather and trail guide.",
     "h1": "Best Time for <em>Chandrakhani Pass Trek</em>",
     "tagline": "Kullu Valley crossing May–Oct · Best months: June & September",
-    "hero_image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "The Chandrakhani Pass Trek (3N/4D) links Naggar village in Kullu Valley to the remote Malana Valley via a 3,660m pass. The trek season runs May–October with a monsoon dip in July. June is the peak wildflower month; September delivers post-monsoon crystal clarity. The trek starts from Naggar (home to Roerich Museum and Naggar Castle) and descends into the mysterious Malana village.",
     "package_slug": "chandrakhani-pass-trek-3n-4d",
     "package_price": 7500,
@@ -3154,12 +3172,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Pass Altitude", "value": "3,660 m" },
-      { "label": "Base Town", "value": "Naggar, Kullu Valley" },
-      { "label": "Trek Duration", "value": "3N / 4D" },
-      { "label": "Best Months", "value": "June & September" },
-      { "label": "Difficulty", "value": "Moderate" },
-      { "label": "Destination", "value": "Malana Village or Nakthan" }
+      {
+        "label": "Pass Altitude",
+        "value": "3,660 m"
+      },
+      {
+        "label": "Base Town",
+        "value": "Naggar, Kullu Valley"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "3N / 4D"
+      },
+      {
+        "label": "Best Months",
+        "value": "June & September"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Moderate"
+      },
+      {
+        "label": "Destination",
+        "value": "Malana Village or Nakthan"
+      }
     ],
     "faq": [
       {
@@ -3183,7 +3219,7 @@
     "meta_description": "Best time for Rupin Pass Trek — May and June for iconic snow bridges. 8N/9D, Uttarakhand to Himachal. Complete season guide with snow bridge and glacier data.",
     "h1": "Best Time for <em>Rupin Pass Trek</em>",
     "tagline": "Snow bridges May–Jun · Post-monsoon Sep–Oct · Best months: May & June",
-    "hero_image": "https://images.unsplash.com/photo-1455156218388-5e61b526818b?w=1200&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Rupin Pass Trek (8N/9D) is famous for its iconic snow bridges over the Rupin gorge, traversing from Dhaula in Uttarakhand to Sangla in Himachal Pradesh via a 4,650m pass. May and June are the prime months when snow bridges are at their most spectacular. September and October offer a completely different but equally beautiful post-monsoon version of the same route.",
     "package_slug": "rupin-pass-trek-8n-9d",
     "package_price": 16500,
@@ -3298,12 +3334,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Pass Altitude", "value": "4,650 m" },
-      { "label": "Start Point", "value": "Dhaula, Uttarakhand" },
-      { "label": "End Point", "value": "Sangla, Himachal Pradesh" },
-      { "label": "Trek Duration", "value": "8N / 9D" },
-      { "label": "Best Months", "value": "May & June (snow bridges)" },
-      { "label": "Difficulty", "value": "Difficult" }
+      {
+        "label": "Pass Altitude",
+        "value": "4,650 m"
+      },
+      {
+        "label": "Start Point",
+        "value": "Dhaula, Uttarakhand"
+      },
+      {
+        "label": "End Point",
+        "value": "Sangla, Himachal Pradesh"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "8N / 9D"
+      },
+      {
+        "label": "Best Months",
+        "value": "May & June (snow bridges)"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Difficult"
+      }
     ],
     "faq": [
       {
@@ -3327,7 +3381,7 @@
     "meta_description": "Best time to climb Kanamo Peak (6,250m) in Spiti — July and August are ideal. Complete guide with altitude, weather, and summit success data from Kaza base.",
     "h1": "Best Time to Climb <em>Kanamo Peak</em>",
     "tagline": "Spiti cold desert summit Jun–Sep · Best months: July & August",
-    "hero_image": "https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1200&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Kanamo Peak (6,250m) is one of the most accessible 6,000m peaks in India, rising above Kibber village in Spiti Valley. The climbing season runs June–September, with July and August offering the best summit conditions under Spiti's rain-shadow skies. No technical mountaineering certification is required, but prior high-altitude trekking experience is essential.",
     "package_slug": "kanamo-peak-5n-6d",
     "package_price": 19500,
@@ -3442,12 +3496,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Summit Altitude", "value": "6,250 m" },
-      { "label": "Base Town", "value": "Kaza, Spiti Valley" },
-      { "label": "Expedition Duration", "value": "5N / 6D" },
-      { "label": "Best Months", "value": "July & August" },
-      { "label": "Difficulty", "value": "Difficult (High Altitude)" },
-      { "label": "Permit", "value": "Open Peak — IMF registered" }
+      {
+        "label": "Summit Altitude",
+        "value": "6,250 m"
+      },
+      {
+        "label": "Base Town",
+        "value": "Kaza, Spiti Valley"
+      },
+      {
+        "label": "Expedition Duration",
+        "value": "5N / 6D"
+      },
+      {
+        "label": "Best Months",
+        "value": "July & August"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Difficult (High Altitude)"
+      },
+      {
+        "label": "Permit",
+        "value": "Open Peak — IMF registered"
+      }
     ],
     "faq": [
       {
@@ -3471,7 +3543,7 @@
     "meta_description": "Best time for Pin Parvati Pass Trek — August is ideal for glacier crossing. 10N/11D, Parvati Valley to Spiti. Complete guide for India's most technical Himalayan trek.",
     "h1": "Best Time for <em>Pin Parvati Pass Trek</em>",
     "tagline": "Glacier crossing Jul–Sep · Best month: August",
-    "hero_image": "https://images.unsplash.com/photo-1502481851512-e9e2529bfbf9?w=1200&q=80",
+    "hero_image": "/images/trek_himalaya.webp",
     "overview": "Pin Parvati Pass Trek (10N/11D) is India's most demanding and spectacular crossover trek, connecting the lush Parvati Valley (Himachal Pradesh) to the austere Spiti cold desert via a 5,319m glacier pass. The trek season is narrow — July, August, and early September only. August is the prime month with the most stable glacier conditions and highest summit success rate.",
     "package_slug": "pin-parvati-pass-10n-11d",
     "package_price": 22000,
@@ -3586,12 +3658,30 @@
       }
     ],
     "quick_facts": [
-      { "label": "Pass Altitude", "value": "5,319 m" },
-      { "label": "Start Point", "value": "Kheerganga, Parvati Valley" },
-      { "label": "End Point", "value": "Mudh/Kaza, Pin Valley" },
-      { "label": "Trek Duration", "value": "10N / 11D" },
-      { "label": "Best Month", "value": "August" },
-      { "label": "Difficulty", "value": "Very Difficult (Glacier)" }
+      {
+        "label": "Pass Altitude",
+        "value": "5,319 m"
+      },
+      {
+        "label": "Start Point",
+        "value": "Kheerganga, Parvati Valley"
+      },
+      {
+        "label": "End Point",
+        "value": "Mudh/Kaza, Pin Valley"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "10N / 11D"
+      },
+      {
+        "label": "Best Month",
+        "value": "August"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Very Difficult (Glacier)"
+      }
     ],
     "faq": [
       {
