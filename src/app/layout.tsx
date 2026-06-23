@@ -11,6 +11,7 @@ import PWASetup from '@/components/PWASetup';
 import PWAInstallBanner from '@/components/PWAInstallBanner';
 import NavigationProgress from '@/components/NavigationProgress';
 import Analytics from '@/components/Analytics';
+import LeadCapturePopup from '@/components/LeadCapturePopup';
 
 /* ── Self-hosted fonts (no external CSS, no render-blocking) ─ */
 const poppins = Poppins({
@@ -100,6 +101,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <PWASetup />
               <PWAInstallBanner />
               <NavigationProgress />
+              <LeadCapturePopup />
             </>
           )}
         </CurrencyProvider>

@@ -410,7 +410,9 @@ export default function IntlPackageDetail({ pkg, related, popularCities }: Props
                 const rpDiff = DIFF_STYLE[rp.difficulty] ?? { bg: 'rgba(100,116,139,0.2)', color: 'var(--muted)' };
                 return (
                   <div key={rp.slug} className="pkg-card">
-                    <div className="pkg-img" style={{ backgroundImage: `url('${rp.hero_image}')` }} />
+                    <div className="pkg-img">
+                      <Image src={rp.hero_image} alt={rp.name} fill sizes="(max-width: 640px) 100vw, 420px" style={{ objectFit: 'cover' }} />
+                    </div>
                     <div className="pkg-body">
                       <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                         <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: rpDiff.bg, color: rpDiff.color }}>{rp.difficulty}</span>

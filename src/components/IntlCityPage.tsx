@@ -240,7 +240,9 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                       {isPopular ? `Popular from ${city.name}` : pkg.tag}
                     </div>
                   )}
-                  <div className="pkg-img" style={{ backgroundImage: `url('${pkg.hero_image}')` }} />
+                  <div className="pkg-img">
+                    <Image src={pkg.hero_image} alt={pkg.name} fill sizes="(max-width: 640px) 100vw, 420px" style={{ objectFit: 'cover' }} />
+                  </div>
                   <div className="pkg-body">
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                       <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>
@@ -300,7 +302,9 @@ export default function IntlCityPage({ city, packages, treks }: Props) {
                       {isPopular ? `Popular from ${city.name}` : trek.tag}
                     </div>
                   )}
-                  <div className="pkg-img" style={{ backgroundImage: `url('${trek.hero_image}')` }} />
+                  <div className="pkg-img">
+                    <Image src={trek.hero_image} alt={trek.name} fill sizes="(max-width: 640px) 100vw, 420px" style={{ objectFit: 'cover' }} />
+                  </div>
                   <div className="pkg-body">
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
                       <span style={{ fontSize: 11, fontWeight: 700, padding: '3px 10px', borderRadius: 999, background: diff.bg, color: diff.color }}>

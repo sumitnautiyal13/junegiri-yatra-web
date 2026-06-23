@@ -577,7 +577,7 @@ footer a:hover { color: var(--gold2); }
   box-shadow: 0 20px 60px rgba(0,0,0,.5), 0 0 0 1px var(--border2);
   border-color: var(--border2);
 }
-.pkg-img { height: 210px; background-size: cover; background-position: center; position: relative; }
+.pkg-img { height: 210px; position: relative; overflow: hidden; }
 .pkg-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(7,5,26,0.7) 100%); }
 .pkg-tag {
   position: absolute; top: 14px; left: 14px; z-index: 1;
@@ -1491,8 +1491,6 @@ footer a:hover { color: var(--gold2); }
   margin-left: 24px;
   border-radius: 16px;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
   display: flex; align-items: flex-end;
   min-height: 240px;
 }

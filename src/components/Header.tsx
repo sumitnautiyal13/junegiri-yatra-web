@@ -392,8 +392,8 @@ export default function Header() {
                 </div>
 
                 {/* Featured card */}
-                <div className="mega-featured"
-                  style={{ backgroundImage: `url('${currentMega.featured.image}')` }}>
+                <div className="mega-featured">
+                  <Image src={currentMega.featured.image} alt={currentMega.featured.title} fill sizes="320px" style={{ objectFit: 'cover' }} priority={false} />
                   <div className="mega-featured-overlay" />
                   <div className="mega-featured-content">
                     <span className="mega-featured-badge">{currentMega.featured.badge}</span>
