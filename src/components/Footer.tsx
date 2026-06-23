@@ -102,6 +102,8 @@ export default function Footer() {
           <Link href="/contact/" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link>
           <span>·</span>
           <Link href="/privacy/" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
+          <span>·</span>
+          <Link href="/image-credits/" style={{ color: 'inherit', textDecoration: 'none' }}>Image Credits</Link>
         </div>
       </div>
     </footer>
