@@ -32,6 +32,8 @@ export interface Comparison {
   h1: string;
   tagline: string;
   hero_image: string;
+  quick_answer?: string;
+  intro?: string[];
   item_a: ComparisonItem;
   item_b: ComparisonItem;
   comparison_table: ComparisonTableRow[];
@@ -160,6 +162,50 @@ export default function ComparePage({ comparison }: Props) {
           </ol>
         </div>
       </nav>
+
+      {/* ── QUICK ANSWER + INTRO ─────────────────────────── */}
+      {(comparison.quick_answer || (comparison.intro && comparison.intro.length > 0)) && (
+        <section className="section" style={{ paddingTop: 36, paddingBottom: 10 }}>
+          <div className="container" style={{ maxWidth: 820 }}>
+            {comparison.quick_answer && (
+              <div
+                style={{
+                  background: 'rgba(124,158,248,0.10)',
+                  borderLeft: '4px solid #7C9EF8',
+                  padding: 24,
+                  borderRadius: 8,
+                  marginBottom: comparison.intro && comparison.intro.length > 0 ? 32 : 0,
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: 3,
+                    textTransform: 'uppercase',
+                    color: '#7C9EF8',
+                    marginBottom: 10,
+                  }}
+                >
+                  Quick Answer
+                </p>
+                <p style={{ fontSize: 16, color: 'var(--text)', lineHeight: 1.75 }}>
+                  {comparison.quick_answer}
+                </p>
+              </div>
+            )}
+            {comparison.intro &&
+              comparison.intro.map((para, i) => (
+                <p
+                  key={i}
+                  style={{ fontSize: 16, color: 'var(--text)', lineHeight: 1.8, marginBottom: 16 }}
+                >
+                  {para}
+                </p>
+              ))}
+          </div>
+        </section>
+      )}
 
       {/* ── AT A GLANCE CARDS ────────────────────────────── */}
       <section className="section" style={{ paddingBottom: 40 }}>
@@ -395,6 +441,26 @@ function GlanceCard({
           ))}
         </ul>
       </div>
+
+      {/* Package link */}
+      <Link
+        href={`/packages/${item.slug}/`}
+        style={{
+          display: 'block',
+          marginTop: 18,
+          textAlign: 'center',
+          padding: '11px 16px',
+          borderRadius: 8,
+          border: `1px solid ${accentColor}`,
+          color: accentColor,
+          fontWeight: 600,
+          fontSize: 13,
+          letterSpacing: 0.5,
+          textDecoration: 'none',
+        }}
+      >
+        View {item.name} →
+      </Link>
     </div>
   );
 }
