@@ -82,6 +82,7 @@ export default function Footer() {
             <h4>Company</h4>
             <Link href="/about/">About Junegiri Yatra</Link>
             <Link href="/contact/">Contact Us</Link>
+            <Link href="/payment/">Payment & Bank Details</Link>
             <Link href="/reviews/">Reviews & Testimonials</Link>
             <a href="tel:+919873897652">+91 98738 97652</a>
             <a href="mailto:info@junegiriyatra.com">info@junegiriyatra.com</a>
@@ -100,6 +101,8 @@ export default function Footer() {
           <Link href="/about/" style={{ color: 'inherit', textDecoration: 'none' }}>About</Link>
           <span>·</span>
           <Link href="/contact/" style={{ color: 'inherit', textDecoration: 'none' }}>Contact</Link>
+          <span>·</span>
+          <Link href="/payment/" style={{ color: 'inherit', textDecoration: 'none' }}>Payment</Link>
           <span>·</span>
           <Link href="/privacy/" style={{ color: 'inherit', textDecoration: 'none' }}>Privacy Policy</Link>
           <span>·</span>
