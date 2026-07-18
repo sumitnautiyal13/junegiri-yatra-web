@@ -243,7 +243,7 @@ export default function CityMonthPage({
             <span>{monthData.label} {monthData.year}</span>
           </nav>
           <h1 className="city-hero-h1">
-            {destination} from {city.name}
+            {destination} from {city.name}{' '}
             <br />
             <span className="city-name-gold">in {monthData.label} {monthData.year}</span>
           </h1>

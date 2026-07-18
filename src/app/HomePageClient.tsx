@@ -176,7 +176,7 @@ export default function HomePageClient() {
               </div>
 
               <h1 className="hero-h1">
-                India, exactly as it<br />
+                India, exactly as it{' '}<br />
                 <em>was meant to be.</em>
               </h1>
 

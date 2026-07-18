@@ -146,7 +146,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
             <span>from {city.name}</span>
           </nav>
           <h1 className="city-hero-h1">
-            {config.destination}<br />
+            {config.destination}{' '}<br />
             <span className="city-name-gold">from {city.name}</span>
           </h1>
           <p className="city-hero-sub">

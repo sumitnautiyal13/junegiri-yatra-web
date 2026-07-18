@@ -162,7 +162,7 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
             <span>from {city.name}</span>
           </nav>
           <h1 className="city-hero-h1">
-            {trekName}
+            {trekName}{' '}
             <br />
             <span className="city-name-gold">from {city.name}</span>
           </h1>
