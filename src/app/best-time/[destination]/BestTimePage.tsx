@@ -141,6 +141,7 @@ export default function BestTimePage({ destination }: Props) {
 
       {/* ── HERO ─────────────────────────────────── */}
       <section
+        className="hero-dark"
         style={{
           position: 'relative',
           minHeight: '60vh',

@@ -2166,3 +2166,32 @@ footer a:hover { color: var(--gold2); }
 .packages-hub-cta-inner p { color: var(--muted); max-width: 560px; margin: 0 auto 22px; }
 @media (max-width: 991px) { .packages-hub-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .packages-hub-grid { grid-template-columns: 1fr; } }
+
+/* ── Outline buttons on dark photo heroes ──────────────────────────────────
+   .btn-outline is declared twice: the legacy dark-theme rule (~line 165, white
+   text) and the light-theme rule (~line 2053, var(--heading) near-black). The
+   second is unscoped, so it wins everywhere — correct on this site's light
+   surfaces, but ~1.2:1 contrast (invisible) on the dark photo heroes.
+
+   Rather than unscope line 2053 (which would flip every light-surface caller
+   to invisible white), restore the white variant only on dark hero surfaces.
+   Higher specificity (0,2,0) means this wins regardless of source order.
+
+   Dark callers covered: .hero (homepage), .city-hero (dubai/bali/thailand/
+   singapore/intl city + intl package), .pkg-hero (package detail, month),
+   .hero-dark (best-time hero, which is inline-styled with no class).
+   Light callers deliberately untouched: .cta-section, .section, /compare CTA. */
+.hero .btn-outline,
+.city-hero .btn-outline,
+.pkg-hero .btn-outline,
+.hero-dark .btn-outline {
+  color: #fff;
+  border-color: rgba(255, 248, 238, 0.35);
+}
+.hero .btn-outline:hover,
+.city-hero .btn-outline:hover,
+.pkg-hero .btn-outline:hover,
+.hero-dark .btn-outline:hover {
+  border-color: var(--gold2);
+  color: var(--gold2);
+}
