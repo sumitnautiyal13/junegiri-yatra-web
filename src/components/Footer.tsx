@@ -72,9 +72,9 @@ export default function Footer() {
             <Link href="/blog/char-dham-yatra-packing-list/">Char Dham Packing List</Link>
             <Link href="/blog/altitude-sickness-prevention-himalaya/">Altitude Sickness Guide</Link>
             <Link href="/compare/do-dham-vs-char-dham/">Do Dham vs Char Dham</Link>
-            <Link href="/compare/kedarnath-trek-vs-helicopter/">Trek vs Helicopter</Link>
-            <Link href="/compare/mussoorie-vs-nainital/">Mussoorie vs Nainital</Link>
-            <Link href="/compare/hamta-pass-vs-kedarkantha/">Hamta Pass vs Kedarkantha</Link>
+            <Link href="/compare/kedarnath-vs-badrinath/">Kedarnath vs Badrinath</Link>
+            <Link href="/compare/kedarkantha-vs-brahmatal/">Kedarkantha vs Brahmatal</Link>
+            <Link href="/compare/">Compare All Trips →</Link>
             <Link href="/reviews/">Guest Reviews</Link>
           </div>
 

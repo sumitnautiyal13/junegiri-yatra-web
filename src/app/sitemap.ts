@@ -153,6 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // ── Comparisons ───────────────────────────────────────────────────────────
+  urls.push({ url: `${BASE}/compare/`, lastModified: DATES.compare, changeFrequency: 'weekly', priority: 0.8 });
   for (const c of comparisonsData) {
     urls.push({ url: `${BASE}/compare/${c.slug}/`, lastModified: DATES.compare, changeFrequency: 'monthly', priority: 0.6 });
   }
