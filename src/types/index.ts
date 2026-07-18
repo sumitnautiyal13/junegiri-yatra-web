@@ -59,6 +59,9 @@ export interface Package {
   price_from: number;
   price_points?: PricePoint[];
   intl_price_usd?: number;
+  /** Outbound international packages quoted in USD by the supplier: show the
+   *  USD price to every visitor rather than a stale INR conversion. */
+  usd_only?: boolean;
   wa_text: string;
   overview: string;
   itinerary: ItineraryDay[];

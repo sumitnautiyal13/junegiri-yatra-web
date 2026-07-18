@@ -98,6 +98,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                   <PriceDisplay
                     inrPrice={pkg.price_from}
                     usdIntlPrice={pkg.intl_price_usd}
+                    usdOnly={pkg.usd_only}
                     showInrRef={true}
                     suffix="/ person"
                   />
