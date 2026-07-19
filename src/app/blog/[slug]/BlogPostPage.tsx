@@ -28,7 +28,19 @@ function formatDate(dateStr: string) {
   return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-export default function BlogPostPage({ post }: { post: BlogPost }) {
+export interface PlanningGuide {
+  href: string;
+  title: string;
+  sub: string;
+}
+
+export default function BlogPostPage({
+  post,
+  planningGuides = [],
+}: {
+  post: BlogPost;
+  planningGuides?: PlanningGuide[];
+}) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   // Related posts — same category, excluding current post, up to 3
@@ -268,6 +280,38 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           </div>
         </div>
       </section>
+
+      {/* Planning guides — routes into the comparison + seasonal clusters */}
+      {planningGuides.length > 0 && (
+        <section className="bp-related-section">
+          <div className="bp-container">
+            <h2 className="bp-section-heading">Planning This Trip</h2>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+              {planningGuides.map((g) => (
+                <li key={g.href}>
+                  <Link
+                    href={g.href}
+                    style={{
+                      display: 'block',
+                      padding: '14px 18px',
+                      border: '1px solid var(--border)',
+                      borderRadius: 8,
+                      textDecoration: 'none',
+                    }}
+                  >
+                    <span style={{ display: 'block', fontWeight: 600, color: 'var(--heading)' }}>
+                      {g.title} →
+                    </span>
+                    <span style={{ display: 'block', fontSize: 13, color: 'var(--muted)', marginTop: 2 }}>
+                      {g.sub}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {/* Related Posts */}
       {relatedPosts.length > 0 && (

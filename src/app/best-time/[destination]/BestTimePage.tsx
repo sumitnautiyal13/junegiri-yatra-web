@@ -40,8 +40,15 @@ export interface BestTimeDestination {
   faq: FAQ[];
 }
 
+export interface RelatedGuide {
+  href: string;
+  title: string;
+  sub: string;
+}
+
 interface Props {
   destination: BestTimeDestination;
+  relatedComparisons?: RelatedGuide[];
 }
 
 const WA_NUMBER = '919897702777';
@@ -98,7 +105,7 @@ function StatusBadge({ status }: { status: MonthData['status'] }) {
   return <span style={styles[status]}>{labels[status]}</span>;
 }
 
-export default function BestTimePage({ destination }: Props) {
+export default function BestTimePage({ destination, relatedComparisons = [] }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const bestMonths = destination.months.filter((m) => m.score === 5);
@@ -523,6 +530,32 @@ export default function BestTimePage({ destination }: Props) {
           ))}
         </div>
       </section>
+
+      {/* ── STILL DECIDING? (cross-link to comparison guides) ─────── */}
+      {relatedComparisons.length > 0 && (
+        <section className="section" style={{ paddingTop: 10 }}>
+          <div className="container">
+            <p className="s-label">Still Deciding?</p>
+            <h2 className="s-title">Compare <em>{destination.name}</em></h2>
+            <div className="s-line" />
+            <div className="rel-grid">
+              {relatedComparisons.map((r) => (
+                <Link key={r.href} href={r.href} className="rel-card">
+                  <div className="rel-body">
+                    <div className="rel-name">{r.title}</div>
+                    <div className="rel-dur">{r.sub}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <p style={{ marginTop: 22, textAlign: 'center' }}>
+              <Link href="/compare/" style={{ color: 'var(--gold2)', fontWeight: 600 }}>
+                View all comparison guides →
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* ── BOTTOM CTA STRIP ─────────────────────── */}
       <section style={{ padding: '40px 0 80px' }}>

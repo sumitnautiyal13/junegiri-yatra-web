@@ -41,11 +41,19 @@ export interface Comparison {
   faq: ComparisonFaq[];
 }
 
-interface Props {
-  comparison: Comparison;
+export interface RelatedComparison {
+  slug: string;
+  heading: string;
+  tagline: string;
+  hero_image: string;
 }
 
-export default function ComparePage({ comparison }: Props) {
+interface Props {
+  comparison: Comparison;
+  related?: RelatedComparison[];
+}
+
+export default function ComparePage({ comparison, related = [] }: Props) {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
   const { item_a, item_b } = comparison;
@@ -322,6 +330,33 @@ export default function ComparePage({ comparison }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ── RELATED COMPARISONS ──────────────────────────── */}
+      {related.length > 0 && (
+        <section className="section" style={{ paddingTop: 10 }}>
+          <div className="container">
+            <p className="s-label">Keep Comparing</p>
+            <h2 className="s-title">Related <em>Comparisons</em></h2>
+            <div className="s-line" />
+            <div className="rel-grid">
+              {related.map((r) => (
+                <Link key={r.slug} href={`/compare/${r.slug}/`} className="rel-card">
+                  <div className="rel-img" style={{ backgroundImage: `url('${r.hero_image}')` }} />
+                  <div className="rel-body">
+                    <div className="rel-name">{r.heading}</div>
+                    <div className="rel-dur">{r.tagline}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <p style={{ marginTop: 22, textAlign: 'center' }}>
+              <Link href="/compare/" style={{ color: 'var(--gold2)', fontWeight: 600 }}>
+                View all comparison guides →
+              </Link>
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* ── BOTTOM CTA ───────────────────────────────────── */}
       <section
