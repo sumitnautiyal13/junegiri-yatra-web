@@ -35,6 +35,13 @@ interface NavEntry {
 
 /* ─── Navigation data ────────────────────────────────────── */
 const NAV: NavEntry[] = [
+  /* Plain entry (no `mega`) — renders as a direct link in both the desktop
+     nav and the mobile drawer. Gives every page a one-click route to the
+     full package list, which the category mega-menus alone didn't expose. */
+  {
+    label: 'All Packages',
+    href: '/packages/',
+  },
   {
     label: 'Treks',
     href: '/himalayan-treks/',
