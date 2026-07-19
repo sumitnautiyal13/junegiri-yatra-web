@@ -35,12 +35,66 @@ interface NavEntry {
 
 /* ─── Navigation data ────────────────────────────────────── */
 const NAV: NavEntry[] = [
-  /* Plain entry (no `mega`) — renders as a direct link in both the desktop
-     nav and the mobile drawer. Gives every page a one-click route to the
-     full package list, which the category mega-menus alone didn't expose. */
+  /* Consolidated entry. Adventures, Yoga, Heritage and International used to
+     be four separate top-level items, which pushed the desktop nav to nine
+     entries. They now live as columns here. Each column keeps a link to its
+     own category hub so those pages don't lose their sitewide internal link. */
   {
-    label: 'All Packages',
+    label: 'Packages',
     href: '/packages/',
+    mega: {
+      columns: [
+        {
+          heading: 'Adventures & Escapes',
+          items: [
+            { icon: '🚣', label: 'Adventure Pack — Rafting + Bungee', sub: '2N 3D · Grade III-IV · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
+            { icon: '🏕️', label: 'Weekend Escape — Rishikesh', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
+            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
+            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
+            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
+            { icon: '🌊', label: 'All Adventures & Escapes', sub: 'Rafting · bungee · hill stations · winter trips', href: '/packages/rishikesh-adventures/' },
+          ],
+        },
+        {
+          heading: 'Yoga & Wellness',
+          items: [
+            { icon: '🕉️', label: 'Rishikesh — 200-Hour TTC', sub: 'Himalayan ashram · Yoga Alliance RYT 200 · from ₹95,000', href: '/yoga/rishikesh/200hours/', badge: 'Authentic' },
+            { icon: '🌺', label: 'Bali — 200-Hour TTC', sub: 'Tropical villas · Aerial + Yin yoga · from $1,799', href: '/yoga/bali/200hours/', badge: 'Popular' },
+            { icon: '🏖️', label: 'Goa — 200-Hour TTC', sub: 'Beachside · Arabian Sea · from ₹1,09,000', href: '/yoga/goa/200hours/', badge: 'New' },
+            { icon: '🧘', label: 'Yoga Retreat 5N/6D — Rishikesh', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
+            { icon: '📋', label: 'All Yoga Programs', sub: '100hr · 200hr · 300hr — compare levels & locations', href: '/yoga/' },
+          ],
+        },
+        {
+          heading: 'Heritage & Culture',
+          items: [
+            { icon: '🏛️', label: 'Golden Triangle 5N/6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Classic' },
+            { icon: '🏰', label: 'Rajasthan Tour 6N/7D', sub: 'Jaipur · Jodhpur · Jaisalmer · from ₹21,000', href: '/packages/rajasthan-tour-6n-7d/', badge: 'New' },
+            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500', href: '/packages/taj-mahal-day-tour-from-delhi/' },
+            { icon: '🪔', label: 'Varanasi & Prayagraj', sub: '3N 4D · Ganga Aarti · ghats · Sangam · from ₹9,500', href: '/packages/varanasi-prayagraj-spiritual-3n-4d/' },
+            { icon: '🏆', label: 'All Heritage Tours', sub: 'Golden Triangle · Rajasthan · Taj · Varanasi', href: '/packages/golden-triangle/' },
+          ],
+        },
+        {
+          heading: 'International',
+          items: [
+            { icon: '🏝️', label: 'Bali, Nusa Penida & Gili 7D/6N', sub: 'Beaches · scuba · Gili nightlife · ATV · from $699', href: '/packages/bali-7d6n-party-escape/', badge: 'New' },
+            { icon: '🏔️', label: 'Himalayan Spirit 10D', sub: 'Rishikesh · Kedarkantha · Valley camp · from $2,000', href: '/international/himalayan-spirit-10d/', badge: 'Bestseller' },
+            { icon: '🌸', label: 'Sacred India Circuit 12D', sub: 'Agra · Kedarnath · Haridwar Ganga Aarti · from $2,600', href: '/international/sacred-india-circuit-12d/' },
+            { icon: '🌍', label: 'India Treks for Travellers', sub: 'Curated trips for international visitors', href: '/international/' },
+            { icon: '📍', label: 'All Departure Cities', sub: '40+ cities — UK · USA · Australia · Europe', href: '/india-trek-packages/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/kedarnath_temple_cover.webp',
+        badge: '🗂️ Browse Everything',
+        title: 'All 53 Tour Packages',
+        price: 'Treks · Yatras · Adventures · Yoga',
+        href: '/packages/',
+        waText: 'Namaste! I want help choosing the right package',
+      },
+    },
   },
   {
     label: 'Treks',
@@ -123,144 +177,11 @@ const NAV: NavEntry[] = [
       },
     },
   },
-  {
-    label: 'Adventures & Escapes',
-    href: '/packages/rishikesh-adventures/',
-    mega: {
-      columns: [
-        {
-          heading: 'Rishikesh Adventures',
-          items: [
-            { icon: '🚣', label: 'Adventure Pack — Rafting + Bungee', sub: '2N 3D · Grade III-IV · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
-            { icon: '🏕️', label: 'Weekend Escape — Rishikesh', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
-            { icon: '🌊', label: 'River Rafting', sub: 'Shivpuri 16km · Marine Drive 26km · Grade I–IV', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
-            { icon: '🛶', label: 'Kayaking & Cliff Jumping', sub: 'Beginner & expert · supervised · all gear', href: '/packages/rishikesh-adventure-pack-2n-3d/' },
-          ],
-        },
-        {
-          heading: 'Uttarakhand Escapes',
-          items: [
-            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
-            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
-            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
-            { icon: '⛺', label: 'Kanatal & Tehri Lake', sub: '2N 3D · water sports · cedar forests · from ₹6,500', href: '/packages/kanatal-tehri-weekend-2n-3d/' },
-          ],
-        },
-      ],
-      featured: {
-        image: '/images/rishikesh_bridge.webp',
-        badge: '🌊 Adventure Capital',
-        title: 'Rishikesh Adventure Pack',
-        price: 'From ₹5,500 / person',
-        href: '/packages/rishikesh-adventure-pack-2n-3d/',
-        waText: 'Namaste! I want to book Rishikesh adventure activities',
-      },
-    },
-  },
-  {
-    label: 'Yoga & Wellness',
-    href: '/yoga/',
-    mega: {
-      columns: [
-        {
-          heading: 'Yoga Teacher Training (TTC)',
-          items: [
-            { icon: '🕉️', label: 'Rishikesh — 200-Hour TTC', sub: 'Himalayan ashram · Yoga Alliance RYT 200 · from ₹95,000', href: '/yoga/rishikesh/200hours/', badge: 'Authentic' },
-            { icon: '🌺', label: 'Bali — 200-Hour TTC', sub: 'Tropical villas · Aerial + Yin yoga · from $1,799', href: '/yoga/bali/200hours/', badge: 'Popular' },
-            { icon: '🏖️', label: 'Goa — 200-Hour TTC', sub: 'Beachside · Arabian Sea · from ₹1,09,000', href: '/yoga/goa/200hours/', badge: 'New' },
-            { icon: '📋', label: 'All Programs — 100hr · 200hr · 300hr', sub: 'Compare all levels and locations', href: '/yoga/' },
-          ],
-        },
-        {
-          heading: 'Yoga Retreats & Wellness',
-          items: [
-            { icon: '🧘', label: 'Yoga Retreat 5N/6D — Rishikesh', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
-            { icon: '🌿', label: 'Ayurveda + Yoga — Rishikesh', sub: 'Detox · Panchakarma · mindfulness · 5N+', href: '/packages/rishikesh-yoga-retreat-5n-6d/' },
-            { icon: '🪷', label: 'Meditation Retreat', sub: 'Vipassana · Yoga Nidra · silent retreat experience', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
-          ],
-        },
-      ],
-      featured: {
-        image: '/images/rishikesh_bridge.webp',
-        badge: '🧘 Yoga Alliance Certified',
-        title: '200-Hour Yoga TTC — Rishikesh',
-        price: 'From ₹95,000 / person',
-        href: '/yoga/rishikesh/',
-        waText: 'Namaste! I want to enquire about Yoga Teacher Training programs',
-      },
-    },
-  },
-  {
-    label: 'Heritage',
-    href: '/packages/golden-triangle/',
-    mega: {
-      columns: [
-        {
-          heading: 'Heritage Tours',
-          items: [
-            { icon: '🏛️', label: 'Golden Triangle 5N/6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Classic' },
-            { icon: '🏰', label: 'Rajasthan Tour 6N/7D', sub: 'Jaipur · Jodhpur · Jaisalmer · from ₹21,000', href: '/packages/rajasthan-tour-6n-7d/', badge: 'New' },
-            { icon: '🐯', label: 'Golden Triangle + Ranthambore', sub: '7N 8D · Taj + tiger · from ₹24,500', href: '/packages/golden-triangle-ranthambore-7n-8d/' },
-          ],
-        },
-        {
-          heading: 'Spiritual Heritage',
-          items: [
-            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500', href: '/packages/taj-mahal-day-tour-from-delhi/' },
-            { icon: '🪔', label: 'Varanasi & Prayagraj', sub: '3N 4D · Ganga Aarti · ghats · Sangam · from ₹9,500', href: '/packages/varanasi-prayagraj-spiritual-3n-4d/' },
-            { icon: '🌸', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi', href: '/packages/braj-bhoomi-yatra-5n-6d/' },
-          ],
-        },
-      ],
-      featured: {
-        image: '/images/temple_entrance.webp',
-        badge: '🏆 Heritage India',
-        title: 'Rajasthan Tour 6N / 7D',
-        price: 'From ₹21,000 / person',
-        href: '/packages/rajasthan-tour-6n-7d/',
-        waText: 'Namaste! I want to enquire about Rajasthan tour package',
-      },
-    },
-  },
-  {
-    label: 'International',
-    href: '/international/',
-    mega: {
-      columns: [
-        {
-          heading: 'India Trek Packages for Travellers',
-          items: [
-            { icon: '🏔️', label: 'Himalayan Spirit 10D', sub: 'Rishikesh · Kedarkantha · Valley camp · from $2,000', href: '/international/himalayan-spirit-10d/', badge: 'Bestseller' },
-            { icon: '🧘', label: 'Yoga & Chopta Trek 10D', sub: 'Rishikesh Yoga + Tungnath temple · from $2,200', href: '/international/yoga-chopta-trek-10d/', badge: 'Wellness' },
-            { icon: '🌸', label: 'Sacred India Circuit 12D', sub: 'Agra · Kedarnath · Haridwar Ganga Aarti · from $2,600', href: '/international/sacred-india-circuit-12d/', badge: 'Spiritual' },
-            { icon: '🌼', label: 'Valley of Flowers Grand Tour 14D', sub: 'Taj Mahal · Valley of Flowers · Jaipur · from $2,900', href: '/international/valley-of-flowers-grand-tour-14d/', badge: 'Premium' },
-            { icon: '🏕️', label: 'Himalayan Village Trail 12D', sub: 'Kasol · Triund · McLeod Ganj · Amritsar · from $2,400', href: '/international/himalayan-village-trail-12d/' },
-            { icon: '🗻', label: 'Ultimate Himalayan Expedition 15D', sub: 'Har Ki Dun · Kasol · Mussoorie · Amritsar · from $3,200', href: '/international/ultimate-himalayan-expedition-15d/', badge: 'Epic' },
-          ],
-        },
-        {
-          heading: 'Plan by Departure City',
-          items: [
-            { icon: '🇬🇧', label: 'From London / UK', sub: 'Direct flights LHR→DEL · 8.5h · e-Visa · expert guides', href: '/india-trek-packages/from/london/', badge: 'Popular' },
-            { icon: '🇺🇸', label: 'From New York / USA', sub: 'Connecting via EAM · top-rated guides · small groups', href: '/india-trek-packages/from/new-york/' },
-            { icon: '🇦🇺', label: 'From Sydney / Australia', sub: 'SYD→DEL · visa on arrival · curated experiences', href: '/india-trek-packages/from/sydney/' },
-            { icon: '🇩🇪', label: 'From Germany / Europe', sub: 'Frankfurt · Berlin · Munich → New Delhi direct', href: '/india-trek-packages/from/frankfurt/' },
-            { icon: '🌍', label: 'All Departure Cities', sub: '40+ cities — UK · USA · Australia · Europe · Israel', href: '/india-trek-packages/' },
-          ],
-        },
-      ],
-      featured: {
-        image: '/images/trek_snow_peak.webp',
-        badge: '🌍 For International Travellers',
-        title: 'Himalayan Spirit 10-Day Trek',
-        price: 'From $2,000 / person',
-        href: '/international/himalayan-spirit-10d/',
-        waText: 'Hello! I am an international traveller interested in the Himalayan Spirit 10-Day package',
-      },
-    },
-  },
+  /* Compare surfaces the 21 side-by-side guides, previously reachable only
+     from the footer. Contact moved out of the primary nav — the WhatsApp CTA
+     beside it is the actual contact path, and /contact/ stays in the footer. */
+  { label: 'Compare', href: '/compare/' },
   { label: 'Blog', href: '/blog/' },
-  { label: 'Contact', href: '/contact/' },
 ];
 
 /* ─── Component ──────────────────────────────────────────── */
