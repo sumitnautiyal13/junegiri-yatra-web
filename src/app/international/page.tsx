@@ -6,7 +6,7 @@ import type { IntlCity, IntlPackage } from '@/components/IntlCityPage';
 export const metadata: Metadata = {
   title: 'International India Trek Packages | Himalayan Tours for Global Travelers | Junegiri Yatra',
   description:
-    'Premium Himalayan trek packages for international travelers. 10-15 day private tours from $2,000/person. English guide, 3-star hotels, airport transfers. Trusted by travelers from 30+ countries.',
+    'Premium Himalayan trek packages for international travelers. 10-15 day private tours from $2,000/person. English guide, 3-star hotels, airport transfers. Haridwar-based, ATOI-licensed operator.',
   alternates: {
     canonical: 'https://junegiriyatra.com/international/',
   },
@@ -131,7 +131,7 @@ export default function InternationalHubPage() {
         url: 'https://junegiriyatra.com',
         telephone: `+${WA_NUMBER}`,
         description:
-          'Haridwar-based Himalayan trek specialists offering private tours for international travelers. Trusted by guests from 30+ countries since 2017.',
+          'Haridwar-based Himalayan trek specialists offering private tours for international travelers. Operating from Haridwar since 2017, licensed by Uttarakhand Tourism (ATOI-approved).',
         areaServed: 'Worldwide',
         priceRange: '$2,000–$3,500',
       },
@@ -167,7 +167,7 @@ export default function InternationalHubPage() {
         <div className="container mx-auto px-4 relative z-10 py-24">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-slate-800/80 backdrop-blur-sm border border-slate-700 rounded-full px-4 py-1.5 text-sm text-slate-300 mb-6">
-              🌍 International Packages · 30+ countries · Since 2017
+              🌍 International Packages · Private Tours · Since 2017
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
               The Himalayas Await.<br />
@@ -206,7 +206,7 @@ export default function InternationalHubPage() {
             <span className="text-slate-500">···</span>
           </div>
           <p className="text-center text-sm text-slate-400">
-            Trusted by travelers from <strong className="text-white">30+ countries</strong> · All-private tours · Haridwar-based since 2017
+            Private tours for international guests · <strong className="text-white">ATOI-licensed</strong> · Haridwar-based since 2017
           </p>
         </div>
       </section>

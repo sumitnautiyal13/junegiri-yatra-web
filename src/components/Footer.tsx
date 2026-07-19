@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="footer-desc">
               India&apos;s complete travel platform — from sacred Char Dham Yatra to Golden Triangle,
               Himalayan treks, Rishikesh adventures, and spiritual circuits.
-              Trusted by 2,847+ travellers worldwide. Haridwar-based since 2017.
+              Haridwar-based since 2017, licensed by Uttarakhand Tourism (ATOI-approved).
             </p>
           </div>
 

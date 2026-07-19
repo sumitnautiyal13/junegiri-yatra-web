@@ -104,7 +104,7 @@ const WHY_CHOOSE = [
   { icon: '🏔', stat: '8+ Years', title: 'Himalayan Expertise', text: 'Operating since 2017 across Uttarakhand in every season. We know every route, every shortcut, every weather window.' },
   { icon: '💰', stat: '₹0 Hidden', title: 'Zero Hidden Costs', text: 'Hotel, meals, transport, permits, guide fees — all inclusive. What we quote is what you pay. No fine print.' },
   { icon: '📱', stat: '< 60 min', title: 'Always Reachable', text: 'WhatsApp us any time. A dedicated guide stays reachable throughout your journey, 6 AM to 10 PM.' },
-  { icon: '🌍', stat: '30+ Countries', title: 'Trusted Worldwide', text: '2,847+ travellers from Bengaluru to Birmingham. International pricing with local expertise — the best of both worlds.' },
+  { icon: '🌍', stat: 'Worldwide', title: 'Indian & International Guests', text: 'We host travellers from across India and overseas — international pricing with local expertise, the best of both worlds.' },
 ];
 
 const STEPS = [
@@ -116,7 +116,7 @@ const STEPS = [
 const TICKER_ITEMS = [
   '🏔 8+ Years of Himalayan Expertise',
   '⭐ 4.8/5 Rating — 312 Reviews',
-  '✈ 2,847+ Happy Travelers',
+  '✅ Uttarakhand Tourism Licensed (ATOI)',
   '🌍 International Pricing Available',
   '📱 Reply in Under 1 Hour',
   '✅ 100% Satisfaction Guarantee',
@@ -201,10 +201,10 @@ export default function HomePageClient() {
 
               <div className="hero-stats">
                 {[
-                  ['2,847+', 'Happy Travelers'],
                   ['4.8 ★', '312 Reviews'],
                   ['8+ Yrs', 'Experience'],
-                  ['30+', 'Countries'],
+                  ['ATOI', 'Licensed'],
+                  ['24×7', 'On-Trip Support'],
                 ].map(([num, lbl]) => (
                   <div key={lbl} className="hero-stat">
                     <span className="num">{num}</span>
@@ -463,7 +463,7 @@ export default function HomePageClient() {
                 The <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Junegiri</em> Promise
               </h2>
               <p style={{ fontSize: 14, color: 'var(--muted)', marginBottom: 40, lineHeight: 1.7 }}>
-                8 years. 2,847 travelers. 30+ countries. Every single journey crafted with the same care we&apos;d give our own family.
+                Operating from Haridwar since 2017. Every single journey crafted with the same care we&apos;d give our own family.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: 28 }}>

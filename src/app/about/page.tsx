@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Junegiri Yatra — India Tour Operator Since 2017',
     description:
-      'Meet the team behind India\'s trusted travel company — 8 years of Himalayan expertise, 2,847+ happy travelers, Haridwar-based.',
+      'Meet the team behind Junegiri Yatra — 8 years of Himalayan expertise, Haridwar-based and licensed by Uttarakhand Tourism (ATOI-approved).',
     url: 'https://junegiriyatra.com/about/',
     images: [{ url: 'https://junegiriyatra.com/images/mountains1.webp', width: 1200, height: 630 }],
   },
@@ -94,7 +94,7 @@ const MILESTONES = [
   { year: '2022', event: 'International pricing launched. First UK and US group bookings.' },
   { year: '2023', event: 'Launched helicopter packages for Kedarnath and Char Dham.' },
   { year: '2024', event: 'Crossed 2,000 happy travellers. Added Braj Bhoomi Yatra and Rajasthan.' },
-  { year: '2026', event: 'Now 3,000+ travellers across 30+ countries. 1,028 SEO pages live at scale.' },
+  { year: '2026', event: 'Hosting Indian and international guests across the full Char Dham, trek and heritage portfolio.' },
 ];
 
 export default function AboutPage() {
@@ -116,7 +116,7 @@ export default function AboutPage() {
             About <span className="city-name-gold">Junegiri Yatra</span>
           </h1>
           <p className="city-hero-sub">
-            Haridwar-based India tour operator since 2017 · 2,847+ travelers · 30+ countries
+            Haridwar-based India tour operator since 2017 · Uttarakhand Tourism licensed · ATOI-approved
           </p>
         </div>
       </section>
@@ -159,9 +159,9 @@ export default function AboutPage() {
           <div className="cdf-includes-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))' }}>
             {[
               { icon: '🏔', stat: '8+ Years', label: 'Himalayan Experience' },
-              { icon: '👥', stat: '2,847+', label: 'Happy Travelers' },
+              { icon: '✅', stat: 'ATOI', label: 'Licensed Operator' },
               { icon: '⭐', stat: '4.8 / 5', label: 'Average Rating' },
-              { icon: '🌍', stat: '30+', label: 'Countries Served' },
+              { icon: '📱', stat: '24×7', label: 'On-Trip Support' },
               { icon: '🗺', stat: '306+', label: 'Tour Pages' },
               { icon: '🎒', stat: '50+', label: 'Trek Routes' },
             ].map((item) => (

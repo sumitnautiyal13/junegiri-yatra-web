@@ -228,7 +228,7 @@ export default function HubPage({ hub }: { hub: Hub }) {
             aggregateRating: {
               '@type': 'AggregateRating',
               ratingValue: '4.8',
-              reviewCount: '47',
+              reviewCount: '312',
               bestRating: '5',
               worstRating: '1',
             },

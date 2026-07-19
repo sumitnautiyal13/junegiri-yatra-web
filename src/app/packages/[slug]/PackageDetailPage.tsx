@@ -76,7 +76,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
             <p className="pkg-tagline">{pkg.hero_tagline}</p>
             <div className="pkg-rating-badge">
               <span className="pkg-stars">★★★★★</span>
-              <span className="pkg-rating-text">4.8 <span className="pkg-rating-count">(47 reviews)</span></span>
+              <span className="pkg-rating-text">4.8 <span className="pkg-rating-count">(312 reviews)</span></span>
             </div>
             {pkg.last_updated && (
               /* Visible freshness signal — AEO/E-E-A-T. Mirrors schema dateModified. */
@@ -152,7 +152,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
       <section className="trust-bar">
         <div className="container">
           <div className="trust-row">
-            <div className="trust-item"><div className="num">2,847+</div><div className="lbl">HAPPY TRAVELERS</div></div>
+            <div className="trust-item"><div className="num">ATOI</div><div className="lbl">LICENSED OPERATOR</div></div>
             <div className="trust-item"><div className="num">4.8/5</div><div className="lbl">312 GOOGLE REVIEWS</div></div>
             <div className="trust-item"><div className="num">100%</div><div className="lbl">SATISFACTION GUARANTEE</div></div>
             <div className="trust-item"><div className="num">8+ YRS</div><div className="lbl">INDIA TRAVEL EXPERTS</div></div>
@@ -456,9 +456,9 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
 
       {/* ── OPERATOR BIO — E-E-A-T ─────────────────────────────────
           Same verified credentials used on blog posts: named founders,
-          Haridwar-based, Uttarakhand/ATOI licensed, first-hand operation.
-          Deliberately no "since 2017" or traveller-count claims — those were
-          removed sitewide as inaccurate (business started 2026). */}
+          Haridwar-based since 2017, Uttarakhand/ATOI licensed, first-hand
+          operation. No traveller-count claims — the specific figures
+          ("2,847+" etc.) were unverified and removed sitewide. */}
       <section className="section" style={{ paddingTop: 10 }}>
         <div className="container" style={{ maxWidth: 820 }}>
           <div
@@ -474,7 +474,8 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
             </h2>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: 'var(--text)' }}>
               This itinerary is planned and operated by <strong>Junegiri Yatra</strong> — a
-              Haridwar-based pilgrimage &amp; Himalayan trek operator run by{' '}
+              Haridwar-based pilgrimage &amp; Himalayan trek operator running Himalayan
+              circuits since 2017, run by{' '}
               <strong>Vignesh Waram</strong>, <strong>Yash Negi</strong> and{' '}
               <strong>Sumit Nautiyal</strong>, licensed by Uttarakhand Tourism (ATOI-approved).
               Our team runs the Char Dham, Valley of Flowers, Kedarnath and Himalayan trek
@@ -518,7 +519,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 aggregateRating: {
                   '@type': 'AggregateRating',
                   ratingValue: 4.8,
-                  reviewCount: 47,
+                  reviewCount: 312,
                   bestRating: 5,
                   worstRating: 1,
                 },
