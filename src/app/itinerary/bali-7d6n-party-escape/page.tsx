@@ -509,7 +509,7 @@ export default function BaliItineraryPDF() {
           <div className="pdf-meta-row">
             <div className="pdf-meta-pill">👥 2 Pax</div>
             <div className="pdf-meta-pill">📅 23 – 29 May 2025</div>
-            <div className="pdf-meta-pill">💵 From $530 / person</div>
+            <div className="pdf-meta-pill">💵 From $699 / person</div>
             <div className="pdf-meta-pill">🏝️ Bali · Nusa Penida · Gili T</div>
           </div>
         </div>
@@ -522,7 +522,7 @@ export default function BaliItineraryPDF() {
             {/* Option 1 */}
             <div className="pricing-card">
               <div className="pricing-card-title">Option 1</div>
-              <div className="pricing-card-price">$530 <span>/ person</span></div>
+              <div className="pricing-card-price">$699 <span>/ person</span></div>
               <div className="pricing-card-note">Min 2 Pax</div>
               <ul className="pricing-card-hotels">
                 <li><strong>2N — Akmani Legian</strong><br />Grand Deluxe · Bathtub &amp; Balcony</li>
@@ -536,7 +536,7 @@ export default function BaliItineraryPDF() {
             <div className="pricing-card featured">
               <div className="pricing-card-badge">Upgrade</div>
               <div className="pricing-card-title">Option 2</div>
-              <div className="pricing-card-price">$560 <span>/ person</span></div>
+              <div className="pricing-card-price">$749 <span>/ person</span></div>
               <div className="pricing-card-note">Min 2 Pax</div>
               <ul className="pricing-card-hotels">
                 <li><strong>2N — Akmani Legian</strong><br />Grand Deluxe · Bathtub &amp; Balcony</li>
