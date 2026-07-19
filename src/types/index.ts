@@ -62,6 +62,9 @@ export interface Package {
   /** Outbound international packages quoted in USD by the supplier: show the
    *  USD price to every visitor rather than a stale INR conversion. */
   usd_only?: boolean;
+  /** ISO date (YYYY-MM-DD) shown as a visible "Last updated" freshness signal
+   *  and emitted as schema dateModified. Kept in sync with sitemap DATES. */
+  last_updated?: string;
   wa_text: string;
   overview: string;
   itinerary: ItineraryDay[];

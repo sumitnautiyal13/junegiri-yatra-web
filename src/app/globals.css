@@ -2167,6 +2167,15 @@ footer a:hover { color: var(--gold2); }
 @media (max-width: 991px) { .packages-hub-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .packages-hub-grid { grid-template-columns: 1fr; } }
 
+/* Visible "last reviewed" freshness line on package heroes (AEO/E-E-A-T).
+   Sits on the dark photo hero, so it uses the light-on-dark treatment. */
+.pkg-updated {
+  margin-top: 10px;
+  font-size: 0.82rem;
+  color: rgba(255, 248, 238, 0.72);
+}
+.pkg-updated time { font-weight: 600; color: rgba(255, 248, 238, 0.92); }
+
 /* ── Outline buttons on dark photo heroes ──────────────────────────────────
    .btn-outline is declared twice: the legacy dark-theme rule (~line 165, white
    text) and the light-theme rule (~line 2053, var(--heading) near-black). The

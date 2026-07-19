@@ -78,6 +78,18 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
               <span className="pkg-stars">★★★★★</span>
               <span className="pkg-rating-text">4.8 <span className="pkg-rating-count">(47 reviews)</span></span>
             </div>
+            {pkg.last_updated && (
+              /* Visible freshness signal — AEO/E-E-A-T. Mirrors schema dateModified. */
+              <p className="pkg-updated">
+                Itinerary &amp; pricing last reviewed{' '}
+                <time dateTime={pkg.last_updated}>
+                  {new Date(pkg.last_updated + 'T00:00:00Z').toLocaleDateString('en-GB', {
+                    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC',
+                  })}
+                </time>{' '}
+                by the Junegiri Yatra operations team
+              </p>
+            )}
             <div className="pkg-price-row">
               <div className="pkg-price-card">
                 <div className="pkg-price-label">Starting From</div>
@@ -442,6 +454,40 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
         </section>
       )}
 
+      {/* ── OPERATOR BIO — E-E-A-T ─────────────────────────────────
+          Same verified credentials used on blog posts: named founders,
+          Haridwar-based, Uttarakhand/ATOI licensed, first-hand operation.
+          Deliberately no "since 2017" or traveller-count claims — those were
+          removed sitewide as inaccurate (business started 2026). */}
+      <section className="section" style={{ paddingTop: 10 }}>
+        <div className="container" style={{ maxWidth: 820 }}>
+          <div
+            style={{
+              background: 'var(--card2)',
+              border: '1px solid var(--border)',
+              borderRadius: 10,
+              padding: 24,
+            }}
+          >
+            <h2 className="s-title" style={{ fontSize: '1.25rem', marginBottom: 10 }}>
+              Who plans this trip
+            </h2>
+            <p style={{ fontSize: 15, lineHeight: 1.8, color: 'var(--text)' }}>
+              This itinerary is planned and operated by <strong>Junegiri Yatra</strong> — a
+              Haridwar-based pilgrimage &amp; Himalayan trek operator run by{' '}
+              <strong>Vignesh Waram</strong>, <strong>Yash Negi</strong> and{' '}
+              <strong>Sumit Nautiyal</strong>, licensed by Uttarakhand Tourism (ATOI-approved).
+              Our team runs the Char Dham, Valley of Flowers, Kedarnath and Himalayan trek
+              circuits end-to-end, so every route, cost and timing detail on this page comes
+              from first-hand operating experience.{' '}
+              <Link href="/about/" style={{ color: 'var(--gold2)', fontWeight: 600 }}>
+                More about the team →
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* JSON-LD SCHEMA */}
       <script
         type="application/ld+json"
@@ -454,6 +500,7 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 name: pkg.name,
                 description: pkg.meta_description,
                 url: `https://junegiriyatra.com${pkg.url}`,
+                ...(pkg.last_updated ? { dateModified: pkg.last_updated } : {}),
                 image: {
                   '@type': 'ImageObject',
                   url: `https://junegiriyatra.com${pkg.hero_image}`,
