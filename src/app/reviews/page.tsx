@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Junegiri Yatra Reviews — 312 Verified Traveller Reviews | 4.8 / 5',
-  description: 'Read 312 verified reviews of Junegiri Yatra — 4.8/5 from real travellers. Char Dham Yatra, Kedarnath, Rishikesh adventure & Himalayan treks. See what guests say.',
+  description: 'Read 312 verified reviews of Junegiri Yatra — 4.8/5 from real travellers across Char Dham Yatra, Kedarnath, Rishikesh and Himalayan treks.',
   alternates: { canonical: 'https://junegiriyatra.com/reviews/' },
   openGraph: {
     title: 'Junegiri Yatra Reviews — 4.8 / 5 from 312 Verified Travellers',

@@ -1,51 +1,60 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import comparisonsData from '../../../data/comparisons.json';
+import bestTimeData from '../../../data/best-time.json';
+
+/**
+ * The /best-time/ hub did not exist, yet every best-time guide's
+ * BreadcrumbList already pointed position 2 at https://junegiriyatra.com/best-time/
+ * — so all 25 guides shipped a breadcrumb whose URL 404s, and the guides
+ * themselves were reachable only from the sitemap and four footer links.
+ *
+ * Same fix as the /compare/ hub: list everything from the data file so the
+ * cluster stays linked automatically as guides are added.
+ */
 
 export const metadata: Metadata = {
-  title: 'Compare Treks & Yatras 2026 | Uttarakhand Trip Comparisons',
+  title: 'Best Time to Visit Uttarakhand & Himachal 2026 | Month Guides',
   description:
-    'Kedarnath vs Badrinath, Kedarkantha vs Brahmatal, helicopter vs road and 18 more — side-by-side cost, difficulty, season and views. Pick with confidence.',
-  alternates: { canonical: 'https://junegiriyatra.com/compare/' },
+    'Month-by-month guides to Kedarnath, Char Dham, Valley of Flowers, Kedarkantha and 21 more Himalayan destinations — weather, crowds and price.',
+  alternates: { canonical: 'https://junegiriyatra.com/best-time/' },
   openGraph: {
-    title: 'Compare Treks & Yatras | Junegiri Yatra',
+    title: 'Best Time to Visit — Month-by-Month Guides | Junegiri Yatra',
     description:
-      'Side-by-side comparisons to help you choose the right Himalayan trek, Char Dham yatra or hill-station trip — cost, difficulty, season and views.',
+      'When to go, when to avoid: weather, crowd and price guides for 25 Himalayan treks, yatras and hill stations.',
     images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }],
     type: 'website',
   },
 };
 
-type Comparison = {
+type Destination = {
   slug: string;
-  title: string;
+  name: string;
   h1: string;
+  title: string;
   tagline: string;
   hero_image: string;
+  package_price: number;
 };
 
-const comparisons = comparisonsData as Comparison[];
+const destinations = bestTimeData as Destination[];
 
 // Strip inline HTML (e.g. <em>) from the h1 for a clean card heading.
 const cleanHeading = (h1: string) => h1.replace(/<[^>]+>/g, '').trim();
 
-// Light grouping so the hub has scannable sections and indexable H2s.
+// Grouping gives the hub scannable sections and indexable H2s.
 const GROUPS: { key: string; label: string; emoji: string; match: (s: string) => boolean }[] = [
   {
     key: 'yatra',
     label: 'Pilgrimages & Yatras',
     emoji: '🛕',
-    match: (s) =>
-      /(kedarnath|badrinath|do-dham|char-dham|helicopter|varanasi|ayodhya|rishikesh-vs-haridwar)/.test(s) &&
-      !/(kedarkantha)/.test(s),
+    match: (s) => /(kedarnath|badrinath|char-dham|haridwar|varanasi|braj-bhoomi)/.test(s),
   },
   {
     key: 'trek',
     label: 'Himalayan Treks',
     emoji: '🏔️',
-    match: (s) =>
-      /(kedarkantha|brahmatal|valley-of-flowers|har-ki-dun|chopta|kuari|roopkund|dayara|hamta|pass)/.test(s),
+    match: (s) => /trek|pass|peak|lake|valley-of-flowers/.test(s),
   },
   {
     key: 'other',
@@ -55,11 +64,11 @@ const GROUPS: { key: string; label: string; emoji: string; match: (s: string) =>
   },
 ];
 
-function groupComparisons() {
-  const remaining = [...comparisons];
-  const out: { key: string; label: string; emoji: string; items: Comparison[] }[] = [];
+function groupDestinations() {
+  const remaining = [...destinations];
+  const out: { key: string; label: string; emoji: string; items: Destination[] }[] = [];
   for (const g of GROUPS) {
-    const items: Comparison[] = [];
+    const items: Destination[] = [];
     for (let i = remaining.length - 1; i >= 0; i--) {
       if (g.match(remaining[i].slug)) {
         items.unshift(remaining[i]);
@@ -76,10 +85,10 @@ const SCHEMA = {
   '@graph': [
     {
       '@type': 'CollectionPage',
-      name: 'Compare Treks & Yatras — Junegiri Yatra',
+      name: 'Best Time to Visit — Junegiri Yatra',
       description:
-        'Side-by-side comparisons of Himalayan treks, Char Dham yatras and hill-station trips to help travellers choose the right option.',
-      url: 'https://junegiriyatra.com/compare/',
+        'Month-by-month guides on when to visit Himalayan treks, Char Dham yatras and hill stations, covering weather, crowds and price.',
+      url: 'https://junegiriyatra.com/best-time/',
       provider: {
         '@type': 'TravelAgency',
         name: 'Junegiri Yatra',
@@ -94,25 +103,30 @@ const SCHEMA = {
     },
     {
       '@type': 'ItemList',
-      itemListElement: comparisons.map((c, i) => ({
+      itemListElement: destinations.map((d, i) => ({
         '@type': 'ListItem',
         position: i + 1,
-        name: cleanHeading(c.h1),
-        url: `https://junegiriyatra.com/compare/${c.slug}/`,
+        name: cleanHeading(d.h1),
+        url: `https://junegiriyatra.com/best-time/${d.slug}/`,
       })),
     },
     {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://junegiriyatra.com/compare/' },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Best Time to Visit',
+          item: 'https://junegiriyatra.com/best-time/',
+        },
       ],
     },
   ],
 };
 
-export default function CompareHubPage() {
-  const groups = groupComparisons();
+export default function BestTimeHubPage() {
+  const groups = groupDestinations();
 
   return (
     <>
@@ -128,19 +142,20 @@ export default function CompareHubPage() {
             <nav className="breadcrumb-nav" aria-label="Breadcrumb">
               <ol>
                 <li><Link href="/">Home</Link></li>
-                <li aria-current="page">Compare</li>
+                <li aria-current="page">Best Time to Visit</li>
               </ol>
             </nav>
-            <h1 className="packages-hub-title">Compare Treks &amp; Yatras</h1>
+            <h1 className="packages-hub-title">Best Time to Visit</h1>
             <p className="packages-hub-sub">
-              Torn between two trips? These side-by-side guides compare cost, difficulty, season and
-              views so you can pick the right Himalayan trek, Char Dham yatra or hill-station escape —
-              then book on WhatsApp in minutes.
+              Going in the wrong month is the fastest way to ruin a Himalayan trip. These
+              month-by-month guides cover {destinations.length} destinations — when the passes and
+              temples actually open, which months bring rain or snow, when crowds and prices peak,
+              and the two or three weeks we would book ourselves.
             </p>
           </div>
         </section>
 
-        {/* ── COMPARISON GROUPS ──────────────────────────────────── */}
+        {/* ── DESTINATION GROUPS ─────────────────────────────────── */}
         {groups.map((g) => (
           <section key={g.key} className="packages-hub-section">
             <div className="container">
@@ -149,24 +164,26 @@ export default function CompareHubPage() {
                 {g.label}
               </h2>
               <div className="packages-hub-grid">
-                {g.items.map((c) => (
-                  <Link key={c.slug} href={`/compare/${c.slug}/`} className="pkg-card">
+                {g.items.map((d) => (
+                  <Link key={d.slug} href={`/best-time/${d.slug}/`} className="pkg-card">
                     <div className="pkg-card-img-wrap">
                       <Image
-                        src={c.hero_image ?? '/images/kedarnath_temple_cover.webp'}
-                        alt={cleanHeading(c.h1)}
+                        src={d.hero_image ?? '/images/kedarnath_temple_cover.webp'}
+                        alt={cleanHeading(d.h1)}
                         fill
                         sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="pkg-card-img"
                         loading="lazy"
                       />
-                      <span className="pkg-card-tag">Compare</span>
+                      <span className="pkg-card-tag">Best Time</span>
                     </div>
                     <div className="pkg-card-body">
-                      <h3 className="pkg-card-name">{cleanHeading(c.h1)}</h3>
-                      <p className="pkg-card-tagline">{c.tagline}</p>
+                      <h3 className="pkg-card-name">{cleanHeading(d.h1)}</h3>
+                      <p className="pkg-card-tagline">{d.tagline}</p>
                       <div className="pkg-card-meta">
-                        <span className="pkg-meta-pill">Side-by-side guide</span>
+                        <span className="pkg-meta-pill">
+                          Packages from ₹{d.package_price.toLocaleString('en-IN')}
+                        </span>
                       </div>
                     </div>
                   </Link>
@@ -179,18 +196,18 @@ export default function CompareHubPage() {
         {/* ── BOTTOM CTA ─────────────────────────────────────────── */}
         <section className="packages-hub-cta">
           <div className="container packages-hub-cta-inner">
-            <h2>Still not sure which trip is right?</h2>
+            <h2>Not sure which month suits your dates?</h2>
             <p>
-              Tell us your dates, group and budget on WhatsApp — our Haridwar-based team will
-              recommend the best-fit trek or yatra and share an all-inclusive quote.
+              Tell us the window you can travel in on WhatsApp — our Haridwar-based team will tell
+              you honestly what is open, what the weather will be doing, and which trip fits best.
             </p>
             <a
-              href="https://wa.me/919873897652?text=Hi%20Junegiri%20Yatra!%20I%20was%20comparing%20trips%20on%20your%20site%20and%20would%20like%20a%20recommendation."
+              href="https://wa.me/919873897652?text=Hi%20Junegiri%20Yatra!%20I%20am%20planning%20a%20trip%20and%20want%20to%20know%20the%20best%20month%20to%20travel."
               className="btn btn-wa"
               target="_blank"
               rel="noopener noreferrer"
             >
-              📱 Get a Recommendation on WhatsApp
+              📱 Ask About Your Travel Dates
             </a>
           </div>
         </section>

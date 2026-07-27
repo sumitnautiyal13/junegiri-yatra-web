@@ -159,6 +159,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   // ── Best time ─────────────────────────────────────────────────────────────
+  urls.push({ url: `${BASE}/best-time/`, lastModified: DATES.best_time, changeFrequency: 'weekly', priority: 0.8 });
   for (const d of bestTimeData) {
     urls.push({ url: `${BASE}/best-time/${d.slug}/`, lastModified: DATES.best_time, changeFrequency: 'monthly', priority: 0.7 });
   }

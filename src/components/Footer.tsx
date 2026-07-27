@@ -68,6 +68,7 @@ export default function Footer() {
             <Link href="/best-time/valley-of-flowers/">Best Time for Valley of Flowers</Link>
             <Link href="/best-time/hamta-pass-trek/">Best Time for Hamta Pass</Link>
             <Link href="/best-time/triund-trek/">Best Time for Triund Trek</Link>
+            <Link href="/best-time/">Best Time to Visit — All Guides →</Link>
             <Link href="/blog/kedarkantha-trek-beginners-guide/">Kedarkantha Trek Guide</Link>
             <Link href="/blog/char-dham-yatra-packing-list/">Char Dham Packing List</Link>
             <Link href="/blog/altitude-sickness-prevention-himalaya/">Altitude Sickness Guide</Link>

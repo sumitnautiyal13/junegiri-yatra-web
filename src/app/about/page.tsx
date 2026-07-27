@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'About Junegiri Yatra | Haridwar Tour Operator Since 2017',
   description:
-    'Junegiri Yatra is a Haridwar-based tour operator founded in 2017 specialising in Char Dham Yatra, Himalayan treks, Golden Triangle, and Rishikesh adventures. ATOI approved, Uttarakhand Tourism licensed.',
+    'Haridwar-based tour operator since 2017, specialising in Char Dham Yatra, Himalayan treks and Rishikesh adventures. Uttarakhand Tourism licensed, ATOI-approved.',
   alternates: { canonical: 'https://junegiriyatra.com/about/' },
   openGraph: {
     title: 'About Junegiri Yatra — India Tour Operator Since 2017',

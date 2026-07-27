@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Contact Junegiri Yatra | +91 98738 97652 | Haridwar',
   description:
-    'Contact Junegiri Yatra — WhatsApp +91 98738 97652, email info@junegiriyatra.com. Haridwar-based India tour operator. We respond within 60 minutes. Book Char Dham Yatra, Himalayan treks & India tours.',
+    'WhatsApp +91 98738 97652 or email info@junegiriyatra.com. Haridwar-based India tour operator, replying within 60 minutes. Char Dham, treks and tours.',
   alternates: { canonical: 'https://junegiriyatra.com/contact/' },
   openGraph: {
     title: 'Contact Junegiri Yatra | WhatsApp +91 98738 97652',

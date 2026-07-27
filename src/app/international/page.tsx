@@ -4,9 +4,9 @@ import Image from 'next/image';
 import type { IntlCity, IntlPackage } from '@/components/IntlCityPage';
 
 export const metadata: Metadata = {
-  title: 'International India Trek Packages | Himalayan Tours for Global Travelers | Junegiri Yatra',
+  title: 'India Trek Packages for International Travellers | Junegiri',
   description:
-    'Premium Himalayan trek packages for international travelers. 10-15 day private tours from $2,000/person. English guide, 3-star hotels, airport transfers. Haridwar-based, ATOI-licensed operator.',
+    'Private 10-15 day Himalayan treks for international travellers, from $2,000/person. English guide, 3-star hotels, airport transfers. ATOI-licensed.',
   alternates: {
     canonical: 'https://junegiriyatra.com/international/',
   },
