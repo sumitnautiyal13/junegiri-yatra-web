@@ -59,57 +59,103 @@ export default function PaymentPage() {
         </div>
       </section>
 
-      {/* BANK DETAILS */}
+      {/* BANK DETAILS + QR */}
       <section className="city-section">
         <div className="container">
-          <h2 className="section-title-left">Bank Account Details</h2>
+          <h2 className="section-title-left">Pay by Bank Transfer or UPI / QR</h2>
           <p className="section-sub-left">
-            Transfer to the account below via NEFT, IMPS, RTGS or UPI to book your trip.
+            Scan the QR with any UPI or banking app, or transfer to the account below via
+            NEFT, IMPS, RTGS or UPI to book your trip.
           </p>
 
           <div
-            className="cdf-include-card"
             style={{
-              flexDirection: 'column',
-              gap: 0,
-              maxWidth: 520,
-              padding: 0,
-              overflow: 'hidden',
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 28,
+              alignItems: 'flex-start',
             }}
           >
-            {BANK.map((row, i) => (
-              <div
-                key={row.label}
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  gap: 16,
-                  padding: '16px 20px',
-                  borderTop: i === 0 ? 'none' : '1px solid var(--border)',
-                }}
-              >
-                <span style={{ color: 'var(--muted)', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1, fontWeight: 600 }}>
-                  {row.label}
-                </span>
-                <span
+            {/* Bank account card */}
+            <div
+              className="cdf-include-card"
+              style={{
+                flexDirection: 'column',
+                gap: 0,
+                width: '100%',
+                maxWidth: 520,
+                padding: 0,
+                overflow: 'hidden',
+              }}
+            >
+              {BANK.map((row, i) => (
+                <div
+                  key={row.label}
                   style={{
-                    color: 'var(--heading)',
-                    fontWeight: 700,
-                    fontSize: row.mono ? 17 : 15,
-                    fontFamily: row.mono ? 'ui-monospace, SFMono-Regular, Menlo, monospace' : 'inherit',
-                    letterSpacing: row.mono ? 1 : 0,
-                    textAlign: 'right',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    gap: 16,
+                    padding: '16px 20px',
+                    borderTop: i === 0 ? 'none' : '1px solid var(--border)',
                   }}
                 >
-                  {row.value}
-                </span>
+                  <span style={{ color: 'var(--muted)', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1, fontWeight: 600 }}>
+                    {row.label}
+                  </span>
+                  <span
+                    style={{
+                      color: 'var(--heading)',
+                      fontWeight: 700,
+                      fontSize: row.mono ? 17 : 15,
+                      fontFamily: row.mono ? 'ui-monospace, SFMono-Regular, Menlo, monospace' : 'inherit',
+                      letterSpacing: row.mono ? 1 : 0,
+                      textAlign: 'right',
+                    }}
+                  >
+                    {row.value}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            {/* Scan-to-pay QR card */}
+            <div
+              className="cdf-include-card"
+              style={{
+                flexDirection: 'column',
+                alignItems: 'center',
+                gap: 12,
+                padding: 24,
+                width: '100%',
+                maxWidth: 300,
+              }}
+            >
+              <span style={{ color: 'var(--muted)', fontSize: 13, textTransform: 'uppercase', letterSpacing: 1, fontWeight: 600 }}>
+                Scan &amp; Pay
+              </span>
+              <div style={{ background: '#fff', padding: 12, borderRadius: 12, border: '1px solid var(--border)' }}>
+                <Image
+                  src="/images/junegiri-bharatqr.png"
+                  alt="BharatQR code to pay Junegiri Farms Pvt. Ltd via any UPI or banking app"
+                  width={232}
+                  height={232}
+                  style={{ display: 'block', width: 232, height: 232 }}
+                />
               </div>
-            ))}
+              <span style={{ color: 'var(--heading)', fontWeight: 700, fontSize: 14, textAlign: 'center' }}>
+                Junegiri Farms Pvt. Ltd
+              </span>
+              <span style={{ color: 'var(--muted)', fontSize: 12.5, textAlign: 'center', lineHeight: 1.5 }}>
+                Axis Bank · BharatQR — works with GPay, PhonePe, Paytm, BHIM &amp; all banking apps
+              </span>
+            </div>
           </div>
 
-          <p style={{ marginTop: 16, color: 'var(--muted)', fontSize: 14, maxWidth: 520 }}>
-            Junegiri Yatra is operated by <strong>Junegiri Farms Pvt. Ltd</strong>.
+          <p style={{ marginTop: 18, color: 'var(--muted)', fontSize: 14, maxWidth: 520 }}>
+            Junegiri Yatra is operated by <strong>Junegiri Farms Pvt. Ltd</strong>. The account
+            and QR above belong to the same company — please confirm the name shows as
+            <strong> Junegiri Farms Private</strong> in your app before paying.
           </p>
         </div>
       </section>
