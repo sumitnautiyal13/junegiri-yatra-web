@@ -112,7 +112,6 @@ export default async function Page({
       heroImage={destData.hero_image}
       month={month}
       monthData={monthData}
-      allMonths={destData.months}
       pkg={pkg}
     />
   );

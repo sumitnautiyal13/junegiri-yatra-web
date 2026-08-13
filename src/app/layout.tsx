@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Poppins, Playfair_Display, Inter } from 'next/font/google';
-import { headers } from 'next/headers';
 import './globals.css';
 import { CurrencyProvider } from '@/contexts/CurrencyContext';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import SiteChrome from '@/components/SiteChrome';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
 import ScrollReveal from '@/components/ScrollReveal';
 import PWASetup from '@/components/PWASetup';
@@ -62,20 +62,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  // headers() throws DYNAMIC_SERVER_USAGE in static/ISR rendering contexts (Next.js 15+).
-  // Wrap in try/catch so public ISR pages (e.g. /from/, /trek/) render without 500 errors.
-  // isAppRoute is only ever true for /admin and /p routes, which are always dynamic anyway.
-  let isAppRoute = false;
-  try {
-    const headersList = await headers();
-    const pathname = headersList.get('x-pathname') ?? headersList.get('x-invoke-path') ?? '';
-    isAppRoute = pathname.startsWith('/admin') || pathname.startsWith('/p/');
-  } catch {
-    // Static or ISR rendering context — headers not available, default to public layout
-    isAppRoute = false;
-  }
-
+// NOTE: this layout must stay synchronous and must never call headers(), cookies()
+// or any other dynamic API. Doing so opts EVERY route on the site into dynamic
+// rendering, which makes Next.js emit `Cache-Control: no-store` and silently
+// override the s-maxage/stale-while-revalidate config in next.config.ts.
+// The public-vs-app chrome decision lives in <SiteChrome>, a client component
+// that reads usePathname() instead. See src/components/SiteChrome.tsx.
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="en"
@@ -89,21 +82,22 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
       <body>
         <CurrencyProvider>
-          {isAppRoute ? (
-            <>{children}</>
-          ) : (
-            <>
-              <Header />
-              <main>{children}</main>
-              <Footer />
-              <WhatsAppFloat />
-              <ScrollReveal />
-              <PWASetup />
-              <PWAInstallBanner />
-              <NavigationProgress />
-              <LeadCapturePopup />
-            </>
-          )}
+          <SiteChrome
+            header={<Header />}
+            footer={<Footer />}
+            floats={
+              <>
+                <WhatsAppFloat />
+                <ScrollReveal />
+                <PWASetup />
+                <PWAInstallBanner />
+                <NavigationProgress />
+                <LeadCapturePopup />
+              </>
+            }
+          >
+            {children}
+          </SiteChrome>
         </CurrencyProvider>
         {/* Analytics (GA4 + Meta Pixel) — gated so bots/headless/monitoring
             traffic never fire the tags and never pollute reporting. */}

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
 import WaLink from '@/components/WaLink';
+import { bestTimeGuideHref } from '@/lib/bestTimeGuide';
 
 /* ── All destinations for cross-linking ────────────────────────── */
 const ALL_DESTINATIONS = [
@@ -23,13 +24,6 @@ const ALL_DESTINATIONS = [
   { slug: 'golden-triangle', label: 'Golden Triangle Tour', route: '/golden-triangle-from/', icon: '🏛️', price: '₹18,000', tag: '5N/6D' },
   { slug: 'india-tour', label: 'All India Packages', route: '/india-tour-from/', icon: '🇮🇳', price: '₹8,500', tag: 'Custom' },
 ];
-
-/* ── Month label map ────────────────────────────────────────────── */
-const MONTH_LABELS: Record<string, string> = {
-  january: 'Jan', february: 'Feb', march: 'Mar', april: 'Apr',
-  may: 'May', june: 'Jun', july: 'Jul', august: 'Aug',
-  september: 'Sep', october: 'Oct', november: 'Nov', december: 'Dec',
-};
 
 /* ── Types ──────────────────────────────────────────────────────── */
 export interface MonthData {
@@ -55,7 +49,6 @@ interface Props {
   heroImage: string;
   month: string;
   monthData: MonthData;
-  allMonths: string[];
   pkg?: Package;
 }
 
@@ -69,7 +62,6 @@ export default function CityMonthPage({
   heroImage,
   month,
   monthData,
-  allMonths,
   pkg,
 }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -110,9 +102,13 @@ export default function CityMonthPage({
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
+          // Positions 2 and 3 must use routeBase (e.g. /kedarnath-from/), matching the
+          // visible breadcrumb below. They previously pointed at /from/{dest}/ and
+          // /from/{dest}/{city}/, neither of which exists — both 404 — so every page in
+          // this layer was declaring two dead URLs to Google (~28,000 in total).
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-          { '@type': 'ListItem', position: 2, name: destination, item: `https://junegiriyatra.com/from/${destSlug}/` },
-          { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com/from/${destSlug}/${city.slug}/` },
+          { '@type': 'ListItem', position: 2, name: destination, item: `https://junegiriyatra.com${routeBase}` },
+          { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com${routeBase}${city.slug}/` },
           { '@type': 'ListItem', position: 4, name: `in ${monthData.label}`, item: `https://junegiriyatra.com/from/${destSlug}/${city.slug}/${month}/` },
         ],
       },
@@ -420,26 +416,30 @@ export default function CityMonthPage({
         </div>
       </section>
 
-      {/* ── F. OTHER MONTHS ──────────────────────────────────────── */}
-      <section className="city-section">
-        <div className="container">
-          <h2 className="section-title-left">Other months to visit {destination}</h2>
-          <p className="section-sub-left">
-            Plan around your schedule — {destination} has different character each season.
-          </p>
-          <div style={S.monthPills}>
-            {allMonths.map((m) => (
-              <Link
-                key={m}
-                href={`/from/${destSlug}/${city.slug}/${m}/`}
-                style={S.pill(m === month)}
-              >
-                {MONTH_LABELS[m] ?? m.charAt(0).toUpperCase() + m.slice(1)}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── F. WHEN TO TRAVEL ────────────────────────────────────
+          Previously a pill grid linking every sibling month, which kept the whole
+          noindex /from/ layer (~13,986 URLs) reachable: land on one month page and
+          a crawler could walk to every other. Now points at the indexable season
+          guide instead. See src/lib/bestTimeGuide.ts. */}
+      {(() => {
+        const guideHref = bestTimeGuideHref(destSlug);
+        if (!guideHref) return null;
+        return (
+          <section className="city-section">
+            <div className="container">
+              <h2 className="section-title-left">Other months to visit {destination}</h2>
+              <p className="section-sub-left">
+                Plan around your schedule — {destination} has different character each season.
+              </p>
+              <div style={{ marginTop: '20px' }}>
+                <Link href={guideHref} style={S.pill(false)}>
+                  Best time to visit {destination} →
+                </Link>
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* ── G. ALSO EXPLORE FROM THIS CITY ──────────────────────── */}
       <section className="city-section city-section-dark">

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
-import { getCityBySlug, getPackageBySlug } from '@/lib/data';
+import { getAllCities, getCityBySlug, getPackageBySlug } from '@/lib/data';
 import TrekCityPage from '@/components/TrekCityPage';
 
 // ISR — rendered on demand, then cached at the CDN for 24 h.
@@ -13,6 +13,24 @@ let trekSeasonsData: Record<string, { months: string[]; season_label: string; be
 try {
   trekSeasonsData = require('../../../../../../data/trek-seasons.json');
 } catch {}
+
+// Without generateStaticParams this route was fully DYNAMIC despite the
+// `revalidate` above — Next.js served it with `Cache-Control: no-store`, so all
+// 6,327 indexable trek×city URLs in the sitemap re-rendered at the origin on
+// every crawl. Declaring params makes the ISR intent above real.
+//
+// Only tier-1 cities (58) are prerendered at build — 19 treks x 58 = ~1.1k pages,
+// which keeps build time sane. Every other city still resolves: dynamicParams
+// defaults to true, so unlisted combinations are generated on first request and
+// then cached for 24 h rather than re-rendered per hit.
+export async function generateStaticParams() {
+  const tier1 = getAllCities().filter(
+    (c) => (c as unknown as { tier?: number | string }).tier == 1,
+  );
+  return Object.keys(trekSeasonsData).flatMap((slug) =>
+    tier1.map((c) => ({ slug, city: c.slug })),
+  );
+}
 
 export async function generateMetadata({
   params,

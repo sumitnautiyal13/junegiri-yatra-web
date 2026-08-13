@@ -8,6 +8,7 @@ import WaLink from '@/components/WaLink';
 import WABookingCard from '@/components/WABookingCard';
 import { useCurrency } from '@/contexts/CurrencyContext';
 import { formatPrice } from '@/lib/currency';
+import { bestTimeGuideHref } from '@/lib/bestTimeGuide';
 
 /* ─── Config type ────────────────────────────────────────── */
 export interface DestinationHighlight {
@@ -301,128 +302,39 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
         </div>
       </section>
 
-      {/* PLAN BY MONTH — Internal links to Dest×City×Month pages */}
+      {/* PLAN BY SEASON — links to the indexable /best-time/ guide.
+          Replaces 7 per-month links into /from/{dest}/{city}/{month}/, a noindex
+          layer of ~13,986 crawlable URLs that was absent from the sitemap — and
+          which 404'd outright for dubai / thailand / singapore.
+          See src/lib/bestTimeGuide.ts. */}
       {(() => {
-        const DEST_MONTHS: Record<string, { slug: string; label: string }[]> = {
-          'char-dham': [
-            { slug: 'may', label: 'May' }, { slug: 'june', label: 'June' },
-            { slug: 'september', label: 'September' }, { slug: 'october', label: 'October' },
-          ],
-          'kedarnath': [
-            { slug: 'may', label: 'May' }, { slug: 'june', label: 'June' },
-            { slug: 'july', label: 'July' }, { slug: 'august', label: 'August' },
-            { slug: 'september', label: 'September' }, { slug: 'october', label: 'October' },
-            { slug: 'november', label: 'November' },
-          ],
-          'kedarnath-helicopter': [
-            { slug: 'may', label: 'May' }, { slug: 'june', label: 'June' },
-            { slug: 'september', label: 'September' }, { slug: 'october', label: 'October' },
-          ],
-          'badrinath': [
-            { slug: 'may', label: 'May' }, { slug: 'june', label: 'June' },
-            { slug: 'july', label: 'July' }, { slug: 'august', label: 'August' },
-            { slug: 'september', label: 'September' }, { slug: 'october', label: 'October' },
-          ],
-          'do-dham': [
-            { slug: 'may', label: 'May' }, { slug: 'june', label: 'June' },
-            { slug: 'september', label: 'September' }, { slug: 'october', label: 'October' },
-          ],
-          'rishikesh': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-            { slug: 'april', label: 'April' }, { slug: 'may', label: 'May' },
-          ],
-          'valley-of-flowers': [
-            { slug: 'july', label: 'July' }, { slug: 'august', label: 'August' },
-            { slug: 'september', label: 'September' },
-          ],
-          'varanasi': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-          ],
-          'mussoorie': [
-            { slug: 'march', label: 'March' }, { slug: 'april', label: 'April' },
-            { slug: 'may', label: 'May' }, { slug: 'october', label: 'October' },
-            { slug: 'november', label: 'November' }, { slug: 'december', label: 'December' },
-          ],
-          'nainital': [
-            { slug: 'march', label: 'March' }, { slug: 'april', label: 'April' },
-            { slug: 'may', label: 'May' }, { slug: 'october', label: 'October' },
-            { slug: 'november', label: 'November' }, { slug: 'december', label: 'December' },
-          ],
-          'mathura-vrindavan': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-            { slug: 'april', label: 'April' },
-          ],
-          'ayodhya': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-            { slug: 'april', label: 'April' },
-          ],
-          'golden-triangle': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-          ],
-          'india-tour': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' },
-          ],
-          'bali': [
-            { slug: 'april', label: 'April' }, { slug: 'may', label: 'May' },
-            { slug: 'june', label: 'June' }, { slug: 'july', label: 'July' },
-            { slug: 'august', label: 'August' }, { slug: 'september', label: 'September' },
-          ],
-          'thailand': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-          ],
-          'dubai': [
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' }, { slug: 'january', label: 'January' },
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-          ],
-          'singapore': [
-            { slug: 'february', label: 'February' }, { slug: 'march', label: 'March' },
-            { slug: 'april', label: 'April' }, { slug: 'june', label: 'June' },
-            { slug: 'july', label: 'July' }, { slug: 'august', label: 'August' },
-            { slug: 'october', label: 'October' }, { slug: 'november', label: 'November' },
-            { slug: 'december', label: 'December' },
-          ],
-        };
-        const months = DEST_MONTHS[config.destinationSlug];
-        if (!months || months.length === 0) return null;
+        const guideHref = bestTimeGuideHref(config.destinationSlug);
+        if (!guideHref) return null;
         return (
           <section className="city-section">
             <div className="container">
-              <h2 className="section-title-left">Plan {config.destination} from {city.name} by Month</h2>
-              <p className="section-sub-left">Weather, crowd levels, and pricing differ month to month. Choose your travel window:</p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '20px' }}>
-                {months.map((m) => (
-                  <Link
-                    key={m.slug}
-                    href={`/from/${config.destinationSlug}/${city.slug}/${m.slug}/`}
-                    style={{
-                      display: 'inline-block',
-                      padding: '8px 18px',
-                      borderRadius: '24px',
-                      border: '1.5px solid #c8a84b',
-                      color: '#c8a84b',
-                      fontWeight: 600,
-                      fontSize: '0.92rem',
-                      textDecoration: 'none',
-                      transition: 'all 0.2s',
-                      background: 'transparent',
-                    }}
-                  >
-                    {config.destination} in {m.label}
-                  </Link>
-                ))}
+              <h2 className="section-title-left">When to travel to {config.destination}</h2>
+              <p className="section-sub-left">
+                Weather, crowd levels and pricing shift month to month. Our season guide
+                breaks down every travel window for {config.destination}.
+              </p>
+              <div style={{ marginTop: '20px' }}>
+                <Link
+                  href={guideHref}
+                  style={{
+                    display: 'inline-block',
+                    padding: '10px 22px',
+                    borderRadius: '24px',
+                    border: '1.5px solid #c8a84b',
+                    color: '#c8a84b',
+                    fontWeight: 600,
+                    fontSize: '0.95rem',
+                    textDecoration: 'none',
+                    background: 'transparent',
+                  }}
+                >
+                  Best time to visit {config.destination} →
+                </Link>
               </div>
             </div>
           </section>

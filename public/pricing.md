@@ -16,7 +16,7 @@
 - URL: https://junegiriyatra.com/packages/kedarkantha-trek-5n-6d/
 
 ### Valley of Flowers Trek
-- Duration: 4 Nights / 5 Days
+- Duration: 5 Nights / 6 Days
 - Price: From ₹12,500/person
 - Season: July–September
 - Difficulty: Easy–Moderate | Max altitude: 3,658 m
