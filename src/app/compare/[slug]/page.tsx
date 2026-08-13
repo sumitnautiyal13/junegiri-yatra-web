@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import comparisonsData from '../../../../data/comparisons.json';
 import ComparePage from './ComparePage';
@@ -13,8 +14,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const item = (comparisonsData as Comparison[]).find((c) => c.slug === slug);
   if (!item) return {};
   return {
-    title: `${item.title} | Junegiri Yatra`,
-    description: item.meta_description,
+    title: fitTitle(item.title),
+    description: clampDescription(item.meta_description),
     alternates: { canonical: `https://junegiriyatra.com/compare/${slug}/` },
     openGraph: {
       title: item.title,

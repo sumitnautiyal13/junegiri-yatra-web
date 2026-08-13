@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Singapore Tour Package from Your City 2026 | 5N/6D from $680 | Junegiri Yatra',
-  description: 'Book Singapore 5N/6D — Gardens by the Bay · Sentosa · Universal Studios from any Indian city — Mumbai, Delhi, Bangalore, Chennai & 90+ more. No visa required for Indians. From $680/person.',
+  title: 'Singapore Tour Packages from Your City 2026',
+  description: 'Book 5N/6D Singapore from Indian cities — Gardens by the Bay, Sentosa & the Zoo. From $680/person, no visa needed.',
   keywords: 'singapore tour package from india, singapore trip from mumbai, singapore package from bangalore, universal studios sentosa from india, singapore holiday from india',
   alternates: { canonical: 'https://junegiriyatra.com/singapore-from/' },
   openGraph: {

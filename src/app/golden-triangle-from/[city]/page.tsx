@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -18,10 +19,16 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const isIntl = (city as any).is_international;
-  const title = isIntl
-    ? `Golden Triangle Tour from ${city.name} 2026 | Delhi Agra Jaipur | Junegiri Yatra`
-    : `Golden Triangle Tour from ${city.name} 2026 | Taj Mahal Package | Junegiri Yatra`;
-  const desc = `Book Golden Triangle tour (Delhi–Agra–Jaipur) from ${city.name} — all-inclusive 5N/6D from ₹18,000. Taj Mahal, Amber Fort, Old Delhi. Private vehicle, certified guide, 24/7 support. WhatsApp for a custom quote.`;
+  const title = fitTitle(`Golden Triangle Tour from ${city.name}`, ['2026', '— Delhi, Agra & Jaipur']);
+  const desc = fitDescription(
+    `Book the Golden Triangle tour (Delhi–Agra–Jaipur) from ${city.name} — 5N/6D from ₹18,000.`,
+    [
+      isIntl
+        ? 'Taj Mahal, Amber Fort and Old Delhi, with airport pickup and a certified guide.'
+        : 'Taj Mahal, Amber Fort and Old Delhi, with a private vehicle and certified guide.',
+      'WhatsApp for a custom quote.',
+    ],
+  );
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,

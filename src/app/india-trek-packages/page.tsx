@@ -4,9 +4,9 @@ import intlCitiesData from '../../../data/international-cities.json';
 import type { IntlCity } from '@/components/IntlCityPage';
 
 export const metadata: Metadata = {
-  title: 'India Trek Packages by Departure City | Himalayan Tours | Junegiri Yatra',
+  title: 'Himalayan Trek Packages from 46 World Cities',
   description:
-    'Himalayan trek packages for international travelers — 46 departure cities across UK, USA, Australia, Europe & more. Kedarkantha, Valley of Flowers, Har Ki Dun from $170/person. Private guide, airport transfers, e-Visa guidance.',
+    'Himalayan trek packages for international travellers — 46 departure cities across the UK, USA, Australia & Europe.',
   alternates: {
     canonical: 'https://junegiriyatra.com/india-trek-packages/',
   },

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import bestTimeData from '../../../../data/best-time.json';
 import comparisonsData from '../../../../data/comparisons.json';
@@ -38,8 +39,8 @@ export async function generateMetadata({ params }: { params: Promise<{ destinati
   const item = (bestTimeData as BestTimeDestination[]).find((d) => d.slug === destination);
   if (!item) return {};
   return {
-    title: `${item.title} | Junegiri Yatra`,
-    description: item.meta_description,
+    title: fitTitle(item.title),
+    description: clampDescription(item.meta_description),
     alternates: { canonical: `https://junegiriyatra.com/best-time/${destination}/` },
     openGraph: {
       title: `${item.title} | Junegiri Yatra`,

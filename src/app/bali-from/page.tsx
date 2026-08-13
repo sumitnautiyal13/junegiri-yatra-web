@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Bali Tour Package from Your City 2026 | 7D6N from $530 | Junegiri Yatra',
-  description: 'Book Bali 7D6N party escape from any Indian city — Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune & 90+ more. Scuba diving, Nusa Penida, Gili T. From $530/person.',
+  title: 'Bali Tour Packages from Your City 2026',
+  description: 'Book 7D/6N Bali, Nusa Penida & Gili from Indian cities — from $530/person. Scuba diving, ATV ride & parasailing included.',
   keywords: 'bali tour package from india, bali trip from mumbai, bali package from bangalore, bali holiday from delhi, nusa penida gili trawangan package india',
   alternates: { canonical: 'https://junegiriyatra.com/bali-from/' },
   openGraph: {

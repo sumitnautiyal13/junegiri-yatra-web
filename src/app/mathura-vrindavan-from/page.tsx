@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Mathura Vrindavan Tour from Your City 2026 | Junegiri Yatra',
-  description: 'Book Mathura Vrindavan tour from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 95 more. Braj Bhoomi Yatra — Mathura, Vrindavan, Govardhan, Nandgaon, Barsana. All-inclusive from ₹6,500. WhatsApp for quote.',
+  description: 'Book Braj Bhoomi Yatra from 100+ Indian cities — Mathura, Vrindavan, Govardhan & Barsana. 2N/3D from ₹6,500.',
   keywords: 'mathura vrindavan tour from mumbai, braj bhoomi yatra package, mathura vrindavan package india, mathura vrindavan from bangalore',
   alternates: { canonical: 'https://junegiriyatra.com/mathura-vrindavan-from/' },
   openGraph: {

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import IntlPackageDetail, { type IntlPkg } from '@/components/IntlPackageDetail';
 import type { IntlCity } from '@/components/IntlCityPage';
@@ -26,7 +27,10 @@ export async function generateMetadata({
 
   return {
     title: `${pkg.name} | ${pkg.duration} India Tour | Junegiri Yatra`,
-    description: `${pkg.hero_tagline} ${pkg.duration} · ${pkg.destinations_short} · From $${pkg.intl_price_usd}/person. Private guide, 3-star hotels, airport transfers included.`,
+    description: fitDescription(
+      `${pkg.duration} · ${pkg.destinations_short} · from $${pkg.intl_price_usd}/person.`,
+      ['Private guide, 3-star hotels and airport transfers included.'],
+    ),
     alternates: { canonical: `https://junegiriyatra.com/international/${pkg.slug}/` },
     openGraph: {
       title: `${pkg.name} | Junegiri Yatra`,

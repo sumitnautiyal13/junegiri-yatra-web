@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Kedarnath Yatra from Your City 2026 | Junegiri Yatra',
-  description: 'Book Kedarnath Yatra from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Haridwar-based operator, all-inclusive from ₹8,500. Helicopter option available. WhatsApp for departure quotes.',
+  description: 'Book Kedarnath Yatra from 100+ Indian cities — all-inclusive from ₹8,500. Helicopter option available. WhatsApp for quotes.',
   keywords: 'kedarnath yatra from mumbai, kedarnath yatra from bangalore, kedarnath yatra from chennai, kedarnath package from india, kedarnath yatra departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/kedarnath-from/' },
   openGraph: {

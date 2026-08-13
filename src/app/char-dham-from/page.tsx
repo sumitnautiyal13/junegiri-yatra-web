@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Char Dham Yatra from Your City 2026 | Junegiri Yatra',
-  description: 'Book Char Dham Yatra from any city — Mumbai, Bangalore, Delhi, Chennai, Hyderabad, Pune & 90+ more. All-inclusive from ₹19,800. Haridwar-based operator. WhatsApp now.',
+  description: 'Book Char Dham Yatra from 100+ Indian cities — all-inclusive from ₹19,800. Haridwar-based operator, 4.8★ rated.',
   keywords: 'char dham yatra from mumbai, char dham yatra from bangalore, char dham yatra from chennai, char dham package from india, char dham yatra departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/char-dham-from/' },
   openGraph: {

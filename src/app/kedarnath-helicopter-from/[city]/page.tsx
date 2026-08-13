@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
@@ -17,8 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `Kedarnath Helicopter Tour from ${city.name} 2026 | Skip the Trek | Junegiri Yatra`,
-    description: `Book Kedarnath helicopter darshan from ${city.name} — all-inclusive 2N/3D from ₹14,500. Fly from Phata or Sirsi helipad. Ideal for elderly, families, and short trips. WhatsApp for slots.`,
+    title: fitTitle(`Kedarnath Helicopter from ${city.name}`, ['2026', '— from ₹14,500']),
+    description: fitDescription(
+      `Book Kedarnath helicopter darshan from ${city.name} — 2N/3D from ₹14,500.`,
+      ['Fly from Phata or Sirsi — ideal for elderly travellers and short trips.', 'WhatsApp for slots.'],
+    ),
     keywords: `kedarnath helicopter from ${city.name.toLowerCase()}, kedarnath helicopter tour ${city.name.toLowerCase()}, kedarnath by helicopter from ${city.name.toLowerCase()}, kedarnath helicopter booking ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/kedarnath-helicopter-from/${city.slug}/` },
     openGraph: {

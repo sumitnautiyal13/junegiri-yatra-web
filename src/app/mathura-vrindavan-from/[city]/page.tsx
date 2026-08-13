@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
@@ -17,8 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `Mathura Vrindavan Tour from ${city.name} 2026 | Junegiri Yatra`,
-    description: `Book Braj Bhoomi Yatra from ${city.name} — Mathura, Vrindavan, Govardhan, Nandgaon & Barsana. All-inclusive 2N/3D from ₹6,500. Haridwar-based operator. WhatsApp for quote.`,
+    title: fitTitle(`Mathura Vrindavan Tour from ${city.name}`, ['2026']),
+    description: fitDescription(
+      `Book Braj Bhoomi Yatra from ${city.name} — all-inclusive 2N/3D from ₹6,500.`,
+      ['Mathura, Vrindavan, Govardhan, Nandgaon & Barsana.', 'WhatsApp for a quote.'],
+    ),
     keywords: `mathura vrindavan tour from ${city.name.toLowerCase()}, braj bhoomi yatra from ${city.name.toLowerCase()}, mathura tour ${city.name.toLowerCase()}, vrindavan tour ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/mathura-vrindavan-from/${city.slug}/` },
     openGraph: {

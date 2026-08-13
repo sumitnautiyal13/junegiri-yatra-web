@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Golden Triangle Tour from Your City 2026 | Delhi Agra Jaipur',
-  description: 'Book Golden Triangle tour (Delhi–Agra–Jaipur) from any city worldwide — USA, UK, Australia, Canada, Europe, Middle East and 300+ cities. All-inclusive 5–7 days from ₹18,000. Taj Mahal, Amber Fort, Old Delhi. WhatsApp for a custom itinerary.',
+  description: 'Book the Golden Triangle tour (Delhi–Agra–Jaipur) from any city — 5N/6D from ₹18,000. Taj Mahal & Amber Fort included.',
   keywords: 'golden triangle tour from usa, golden triangle india from uk, delhi agra jaipur from australia, golden triangle tour package from canada, golden triangle india holiday from europe',
   alternates: { canonical: 'https://junegiriyatra.com/golden-triangle-from/' },
   openGraph: {

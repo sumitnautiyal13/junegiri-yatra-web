@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Rishikesh Trip from Your City 2026 | Junegiri Yatra',
-  description: 'Book Rishikesh adventure from any city — rafting, bungee jumping, camping, kayaking. All-inclusive from ₹2,500/person. Haridwar-based operator. WhatsApp for quote.',
+  description: 'Book a Rishikesh adventure trip from 100+ Indian cities — rafting, bungee jumping & riverside camping. From ₹5,500.',
   keywords: 'rishikesh trip from mumbai, rishikesh adventure from bangalore, rishikesh rafting from delhi, rishikesh weekend getaway, rishikesh package india',
   alternates: { canonical: 'https://junegiriyatra.com/rishikesh-from/' },
   openGraph: {

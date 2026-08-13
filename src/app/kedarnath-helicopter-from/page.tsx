@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Kedarnath Helicopter Tour from Your City 2026 | Skip the Trek',
-  description: 'Book Kedarnath helicopter darshan from any Indian city — Mumbai, Bangalore, Chennai, Delhi, Hyderabad, Pune and 95 more. Skip the trek. 2N/3D from ₹14,500. Phata / Sirsi helipad. WhatsApp for slots.',
+  title: 'Kedarnath Helicopter from Your City 2026',
+  description: 'Book Kedarnath helicopter darshan from 100+ Indian cities — 2N/3D from ₹14,500. Fly from Phata or Sirsi helipad.',
   keywords: 'kedarnath helicopter tour from mumbai, kedarnath helicopter package from bangalore, kedarnath helicopter booking, kedarnath by helicopter 2026',
   alternates: { canonical: 'https://junegiriyatra.com/kedarnath-helicopter-from/' },
   openGraph: {

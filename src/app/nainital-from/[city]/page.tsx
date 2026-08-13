@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
@@ -53,8 +54,8 @@ export async function generateMetadata({
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
-  const title = `Nainital Tour from ${city.name} 2026 | Junegiri Yatra`;
-  const description = `Book Nainital tour from ${city.name} with Junegiri Yatra — Naini Lake boating, Snow View Point & Jim Corbett. ${city.total_time}. All-inclusive from ₹7,500. WhatsApp for ${city.name} quotes.`;
+  const title = fitTitle(`Nainital Tour from ${city.name}`, ['2026', '— from ₹7,500']);
+  const description = fitDescription(`Book a Nainital tour from ${city.name} — all-inclusive from ₹7,500.`, ['Naini Lake boating, Snow View Point & Jim Corbett.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

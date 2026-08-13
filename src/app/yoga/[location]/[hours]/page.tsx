@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -29,8 +30,11 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
   const priceStr = prog.price_inr ? `from ₹${(prog.price_inr / 1000).toFixed(0)}k` : `from $${prog.price_usd}`;
 
   return {
-    title: `${hoursNum}-Hour Yoga Teacher Training in ${loc} | ${prog.certification.split('(')[0].trim()} | Junegiri Yatra`,
-    description: `${hoursNum}-hour Yoga TTC in ${loc} — ${prog.duration_days} days, ${prog.style}. ${prog.certification}. All-inclusive (accommodation, meals, kit). ${priceStr}. Enrol now.`,
+    title: fitTitle(`${hoursNum}-Hour Yoga TTC in ${loc}`, [`— ${prog.certification.split('(')[0].trim()}`]),
+    description: fitDescription(
+      `${hoursNum}-hour Yoga TTC in ${loc} — ${prog.duration_days} days, ${priceStr}.`,
+      [`${prog.style}.`, 'All-inclusive: accommodation, meals and kit.'],
+    ),
     keywords: [
       `${hoursNum} hour yoga teacher training ${location}`,
       `yoga TTC ${location} ${hoursNum}hr`,

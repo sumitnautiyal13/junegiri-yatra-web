@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug } from '@/lib/data';
 import DubaiCityPage from './CityPage';
@@ -21,8 +22,8 @@ export async function generateMetadata({
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
-  const title = `Dubai Tour Package from ${city.name} 2026 | 5N/6D from $750 | Junegiri Yatra`;
-  const description = `Book 5N/6D Dubai — Burj Khalifa, Desert Safari, Dhow Cruise from ${city.name} from $750/person. Direct flights available. UAE visa assistance included. WhatsApp for instant quote.`;
+  const title = fitTitle(`Dubai Tour Package from ${city.name}`, ['2026', '— 5N/6D from $750']);
+  const description = fitDescription(`Book 5N/6D Dubai from ${city.name} from $750/person.`, ['Burj Khalifa, Desert Safari and Dhow Cruise, with UAE visa assistance.', 'WhatsApp for an instant quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

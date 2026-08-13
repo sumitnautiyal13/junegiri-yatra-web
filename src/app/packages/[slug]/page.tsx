@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { clampDescription } from '@/lib/seoMeta';
 import { notFound } from 'next/navigation';
 import { getAllPackageSlugs, getPackageBySlug, getAllHubSlugs, getHubBySlug } from '@/lib/data';
 import PackageDetailPage from './PackageDetailPage';
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${item.title} | Junegiri Yatra`,
-    description: item.meta_description,
+    description: clampDescription(item.meta_description),
     keywords: item.keywords,
     alternates: {
       canonical: `https://junegiriyatra.com/packages/${slug}/`,

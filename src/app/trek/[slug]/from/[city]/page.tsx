@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getPackageBySlug } from '@/lib/data';
 import TrekCityPage from '@/components/TrekCityPage';
@@ -51,10 +52,17 @@ export async function generateMetadata({
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `${trekName} from ${city.name} — Trek Package | Junegiri Yatra`,
+    title: fitTitle(`${trekName} from ${city.name}`, ['— trek package']),
     // Always city-specific — never the generic package meta_description.
     // Prevents 9,367 city-from pages sharing the same description across city variants.
-    description: `Book ${trekName} from ${city.name} — ${trekData.season_label} trek from ₹${price.toLocaleString('en-IN')}. Best: ${trekData.best_months.slice(0, 2).map((m) => m.charAt(0).toUpperCase() + m.slice(1)).join(', ')}. All-inclusive, expert guides. WhatsApp for a quote.`,
+    description: fitDescription(
+      `Book ${trekName} from ${city.name} — from ₹${price.toLocaleString('en-IN')}, all-inclusive.`,
+      [
+        `${trekData.season_label} trek.`,
+        `Best months: ${trekData.best_months.slice(0, 2).map((m) => m.charAt(0).toUpperCase() + m.slice(1)).join(', ')}.`,
+        'Expert guides. WhatsApp for a quote.',
+      ],
+    ),
     keywords: `${trekName.toLowerCase()} from ${city.name.toLowerCase()}, ${slug} from ${city.name.toLowerCase()}, himalayan trek from ${city.name.toLowerCase()}, trek package ${city.name.toLowerCase()}`,
     alternates: {
       canonical: `https://junegiriyatra.com/trek/${slug}/from/${city.slug}/`,

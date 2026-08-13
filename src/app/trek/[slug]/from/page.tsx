@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getPackageBySlug } from '@/lib/data';
@@ -27,8 +28,11 @@ export async function generateMetadata({
   const price = pkg?.price_from ?? 9500;
 
   return {
-    title: `${trekName} from Your City — Departure Points | Junegiri Yatra`,
-    description: `Book ${trekName} from any city in India — all-inclusive ${trekData.season_label.toLowerCase()} trek from ₹${price.toLocaleString('en-IN')}. Pick your departure city for tailored travel info, routes & quotes.`,
+    title: fitTitle(`${trekName} from Your City`, ['— departure points']),
+    description: fitDescription(
+      `Book ${trekName} from any city in India — from ₹${price.toLocaleString('en-IN')}, all-inclusive.`,
+      [`${trekData.season_label} trek.`, 'Pick your departure city for routes and quotes.'],
+    ),
     alternates: {
       canonical: `https://junegiriyatra.com/trek/${slug}/from/`,
     },

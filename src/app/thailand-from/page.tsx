@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
-  title: 'Thailand Tour Package from Your City 2026 | 7N/8D from $650 | Junegiri Yatra',
-  description: 'Book Thailand 7N/8D Bangkok · Phuket · Pattaya from any Indian city — Mumbai, Delhi, Bangalore, Chennai, Hyderabad & 90+ more. Phi Phi Islands, Grand Palace, Coral Island. From $650/person.',
+  title: 'Thailand Tour Packages from Your City 2026',
+  description: 'Book 7N/8D Thailand from Indian cities — Bangkok, Phuket & Pattaya. From $650/person, all-inclusive.',
   keywords: 'thailand tour package from india, thailand trip from mumbai, thailand package from bangalore, bangkok phuket pattaya tour india, phi phi islands package india',
   alternates: { canonical: 'https://junegiriyatra.com/thailand-from/' },
   openGraph: {

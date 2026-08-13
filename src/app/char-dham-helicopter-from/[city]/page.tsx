@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
@@ -20,8 +21,11 @@ export async function generateMetadata({
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `Char Dham Yatra by Helicopter from ${city.name} 2026 | All 4 Dhams by Air`,
-    description: `Book Char Dham Yatra by helicopter from ${city.name} — all 4 dhams (Yamunotri, Gangotri, Kedarnath, Badrinath) by air. 7N/8D from ₹2,50,000/person. VVIP darshan, luxury hotels. WhatsApp for slots.`,
+    title: fitTitle(`Char Dham by Helicopter from ${city.name}`, ['2026', '— all 4 dhams']),
+    description: fitDescription(
+      `Char Dham by helicopter from ${city.name} — 7N/8D from ₹2,50,000/person.`,
+      ['All four dhams by air, with VVIP darshan and luxury hotels.', 'WhatsApp for slots.'],
+    ),
     keywords: `char dham helicopter from ${city.name.toLowerCase()}, char dham by helicopter ${city.name.toLowerCase()}, char dham helicopter yatra from ${city.name.toLowerCase()}, helicopter yatra ${city.name.toLowerCase()}`,
     alternates: {
       canonical: `https://junegiriyatra.com/char-dham-helicopter-from/${city.slug}/`,

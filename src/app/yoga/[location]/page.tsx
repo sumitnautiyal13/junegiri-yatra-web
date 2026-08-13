@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,7 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
   const loc = location.charAt(0).toUpperCase() + location.slice(1);
   return {
     title: `Yoga Teacher Training in ${loc} | 100hr 200hr 300hr TTC | Junegiri Yatra`,
-    description: `Yoga Alliance certified TTC in ${loc}. Choose 100-Hour Foundation, 200-Hour RYT 200 or 300-Hour RYT 500. Multi-style Hatha, Ashtanga, Vinyasa. All-inclusive. Enrol now.`,
+    description: fitDescription(
+      `Yoga Alliance certified TTC in ${loc} — 100, 200 or 300-hour courses.`,
+      ['Multi-style Hatha, Ashtanga and Vinyasa. All-inclusive.'],
+    ),
     alternates: { canonical: `https://junegiriyatra.com/yoga/${location}/` },
     openGraph: {
       title: `Yoga TTC in ${loc} — 100hr, 200hr, 300hr | Junegiri Yatra`,

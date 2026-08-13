@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Mussoorie Trip from Your City 2026 | Junegiri Yatra',
-  description: 'Book Mussoorie weekend getaway from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Kempty Falls, Gun Hill & Mall Road. All-inclusive from ₹5,500. WhatsApp for departure quotes.',
+  description: 'Book a Mussoorie getaway from 100+ Indian cities — Kempty Falls, Gun Hill & Mall Road. All-inclusive from ₹5,500.',
   keywords: 'mussoorie trip from mumbai, mussoorie tour from bangalore, mussoorie weekend from chennai, mussoorie hill station package india, mussoorie departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/mussoorie-from/' },
   openGraph: {

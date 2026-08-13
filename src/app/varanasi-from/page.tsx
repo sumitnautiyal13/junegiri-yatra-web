@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Varanasi Tour from Your City 2026 | Junegiri Yatra',
-  description: 'Book Varanasi spiritual tour from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Ganga aarti, Kashi Vishwanath & sunrise boat ride. All-inclusive from ₹7,500. WhatsApp for departure quotes.',
+  description: 'Book a Varanasi spiritual tour from 100+ Indian cities — Ganga aarti, Kashi Vishwanath & sunrise boat ride. From ₹7,500.',
   keywords: 'varanasi tour from mumbai, varanasi trip from bangalore, varanasi spiritual tour from chennai, kashi vishwanath from india, varanasi package departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/varanasi-from/' },
   openGraph: {

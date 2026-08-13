@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Badrinath Yatra from Your City 2026 | Junegiri Yatra',
-  description: 'Book Badrinath Yatra from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Haridwar-based operator, all-inclusive from ₹6,500. Mana Village & Vasudhara Falls included. WhatsApp for departure quotes.',
+  description: 'Book Badrinath Yatra from 100+ Indian cities — all-inclusive 2N/3D from ₹6,500. Mana Village & Vasudhara Falls included.',
   keywords: 'badrinath yatra from mumbai, badrinath yatra from bangalore, badrinath yatra from chennai, badrinath package from india, badrinath yatra departure cities',
   alternates: { canonical: 'https://junegiriyatra.com/badrinath-from/' },
   openGraph: {

@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import IntlCityPage, { type IntlCity, type IntlPackage, type TrekPackage } from '@/components/IntlCityPage';
 import intlCitiesData from '../../../../../data/international-cities.json';
@@ -46,8 +47,11 @@ export async function generateMetadata({
   }
 
   return {
-    title: `India Trek Packages from ${city.name} | Himalayan Tours | Junegiri Yatra`,
-    description: `${TREK_SLUGS.size} Himalayan trek packages from ${city.name}. ${city.flight_hours_to_delhi}h flight to Delhi. ${city.visa_type} in ${city.visa_processing_days} days. Private guide & transport included. Kedarkantha, Valley of Flowers, Har Ki Dun & more.`,
+    title: fitTitle(`India Trek Packages from ${city.name}`, ['— Himalayan tours']),
+    description: fitDescription(
+      `${TREK_SLUGS.size} Himalayan trek packages from ${city.name} — ${city.flight_hours_to_delhi}h flight to Delhi.`,
+      [`${city.visa_type} in ${city.visa_processing_days} days.`, 'Private guide & transport included.'],
+    ),
     alternates: {
       canonical: `https://junegiriyatra.com/india-trek-packages/from/${city.slug}/`,
     },

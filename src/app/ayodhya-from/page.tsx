@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Ayodhya Tour from Your City 2026 | Ram Mandir Darshan',
-  description: 'Book Ayodhya tour from any city — Ram Mandir darshan, Ram Ki Paidi, Hanuman Garhi, Kanak Bhawan. All-inclusive from ₹5,500. Expert Haridwar operator. WhatsApp now.',
+  description: 'Book Ayodhya Ram Mandir darshan from 100+ Indian cities — all-inclusive 1N/2D from ₹5,500. WhatsApp for departure quotes.',
   keywords: 'ayodhya tour from mumbai, ayodhya ram mandir darshan package, ayodhya yatra from bangalore, ayodhya tour india',
   alternates: { canonical: 'https://junegiriyatra.com/ayodhya-from/' },
   openGraph: {

@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'India Tour Packages from Your City 2026 | Junegiri Yatra',
-  description: 'Book India tour packages from any city worldwide — USA, UK, Australia, Canada, Europe, Middle East and 200+ cities. Char Dham, Kedarnath, Golden Triangle, Rishikesh. All-inclusive from ₹8,500. WhatsApp for a custom itinerary.',
+  description: 'Book India tour packages from any city — Char Dham, Kedarnath, Golden Triangle & Rishikesh. All-inclusive from ₹8,500.',
   keywords: 'india tour packages from usa, india tour from london, india holiday packages from australia, india travel packages from canada, char dham yatra from abroad, kedarnath tour from overseas',
   alternates: { canonical: 'https://junegiriyatra.com/india-tour-from/' },
   openGraph: {

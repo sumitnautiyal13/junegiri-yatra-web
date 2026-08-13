@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug } from '@/lib/data';
 import SingaporeCityPage from './CityPage';
@@ -21,8 +22,8 @@ export async function generateMetadata({
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
-  const title = `Singapore Tour Package from ${city.name} 2026 | 5N/6D from $680 | Junegiri Yatra`;
-  const description = `Book 5N/6D Singapore — Gardens by the Bay, Sentosa, Singapore Zoo from ${city.name} from $680/person. No visa required for Indians. WhatsApp for instant quote.`;
+  const title = fitTitle(`Singapore Tour Package from ${city.name}`, ['2026', '— from $680']);
+  const description = fitDescription(`Book 5N/6D Singapore from ${city.name} from $680/person.`, ['Gardens by the Bay, Sentosa & Singapore Zoo. No visa required for Indians.', 'WhatsApp for an instant quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

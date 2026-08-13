@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import blogData from '../../../../data/blog-posts.json';
 import comparisonsData from '../../../../data/comparisons.json';
@@ -57,8 +58,8 @@ export async function generateMetadata({
   const post = (blogData as BlogPost[]).find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Junegiri Yatra`,
-    description: post.meta_description,
+    title: fitTitle(post.title),
+    description: clampDescription(post.meta_description),
     keywords: post.keywords,
     alternates: { canonical: `https://junegiriyatra.com/blog/${slug}/` },
     openGraph: {

@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Nainital Tour from Your City 2026 | Junegiri Yatra',
-  description: 'Book Nainital tour from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Naini Lake, Snow View, Jim Corbett. All-inclusive from ₹7,500. WhatsApp for departure quotes.',
+  description: 'Book a Nainital tour from 100+ Indian cities — Naini Lake, Snow View Point & Jim Corbett. All-inclusive from ₹7,500.',
   keywords: 'nainital trip from mumbai, nainital tour from bangalore, nainital from chennai, nainital package india, nainital corbett tour',
   alternates: { canonical: 'https://junegiriyatra.com/nainital-from/' },
   openGraph: {

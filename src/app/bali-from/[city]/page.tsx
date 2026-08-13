@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug } from '@/lib/data';
 import BaliCityPage from './CityPage';
@@ -21,8 +22,8 @@ export async function generateMetadata({
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
-  const title = `Bali Tour Package from ${city.name} 2025 | 7D6N from $530 | Junegiri Yatra`;
-  const description = `Book 7D/6N Bali, Nusa Penida & Gili Party Escape from ${city.name} from $530/person. Scuba diving, ATV ride, parasailing & Nusa Penida west tour included. WhatsApp for instant quote.`;
+  const title = fitTitle(`Bali Tour Package from ${city.name}`, ['2026', '— 7D/6N from $530']);
+  const description = fitDescription(`Book 7D/6N Bali, Nusa Penida & Gili from ${city.name} from $530/person.`, ['Scuba diving, ATV ride & parasailing included.', 'WhatsApp for an instant quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

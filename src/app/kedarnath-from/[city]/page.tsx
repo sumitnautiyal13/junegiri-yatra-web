@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
@@ -17,8 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `Kedarnath Yatra from ${city.name} 2026 | Junegiri Yatra`,
-    description: `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ₹8,500. Haridwar-based operator. Helicopter option available. WhatsApp for quote.`,
+    title: fitTitle(`Kedarnath Yatra from ${city.name}`, ['2026', '— from ₹8,500']),
+    description: fitDescription(
+      `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ₹8,500.`,
+      ['Helicopter option available from a Haridwar-based operator.', 'WhatsApp for a quote.'],
+    ),
     keywords: `kedarnath yatra from ${city.name.toLowerCase()}, kedarnath package from ${city.name.toLowerCase()}, kedarnath tour ${city.name.toLowerCase()}, kedarnath yatra booking ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/kedarnath-from/${city.slug}/` },
     openGraph: { title: `Kedarnath Yatra from ${city.name}`, description: `All-inclusive Kedarnath package from ${city.name} — 3N/4D from ₹8,500.`, images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }] },

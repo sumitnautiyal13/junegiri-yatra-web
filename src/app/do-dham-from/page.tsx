@@ -5,7 +5,7 @@ import { getAllCities } from '@/lib/data';
 
 export const metadata: Metadata = {
   title: 'Do Dham Yatra from Your City 2026 | Kedarnath + Badrinath',
-  description: 'Book Do Dham Yatra (Kedarnath + Badrinath) from any Indian city — Mumbai, Bangalore, Chennai, Hyderabad, Kolkata, Pune and 14 more. Haridwar-based operator, all-inclusive 5N/6D from ₹13,500. WhatsApp for departure quotes.',
+  description: 'Book Do Dham Yatra (Kedarnath + Badrinath) from 100+ Indian cities — 5N/6D from ₹13,500. WhatsApp for departure quotes.',
   keywords: 'do dham yatra from mumbai, do dham yatra from bangalore, kedarnath badrinath package, do dham yatra departure cities, kedarnath badrinath tour india',
   alternates: { canonical: 'https://junegiriyatra.com/do-dham-from/' },
   openGraph: {

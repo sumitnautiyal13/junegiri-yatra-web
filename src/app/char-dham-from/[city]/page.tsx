@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import CityPage from './CityPage';
@@ -21,8 +22,8 @@ export async function generateMetadata({
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
 
-  const title = `Char Dham Yatra from ${city.name} 2026 | Junegiri Yatra`;
-  const description = `Char Dham Yatra from ${city.name} — all-inclusive packages from ₹19,800. Travel time: ${city.total_time}. Haridwar-based operator, 4.8★ rated. WhatsApp for a quote.`;
+  const title = fitTitle(`Char Dham Yatra from ${city.name}`, ['2026', '— from ₹19,800']);
+  const description = fitDescription(`Char Dham Yatra from ${city.name} — all-inclusive from ₹19,800.`, ['Haridwar-based operator, 4.8★ rated.', `Travel time: ${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

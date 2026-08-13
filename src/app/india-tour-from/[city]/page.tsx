@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import Image from 'next/image';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -18,12 +19,16 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const isIntl = (city as any).is_international;
-  const title = isIntl
-    ? `India Tour Packages from ${city.name} 2026 | Char Dham, Kedarnath, Golden Triangle`
-    : `India Tour Packages from ${city.name} 2026 | Junegiri Yatra`;
-  const desc = isIntl
-    ? `Book India tour packages from ${city.name} — Char Dham Yatra, Kedarnath, Golden Triangle, Rishikesh adventures. All-inclusive from ₹8,500. Expert Haridwar-based operator. WhatsApp for a custom itinerary.`
-    : `Book India spiritual & adventure tour packages from ${city.name} — Char Dham, Kedarnath, Rishikesh, Varanasi, Mathura. All-inclusive from ₹8,500. WhatsApp for departure details.`;
+  const title = fitTitle(`India Tour Packages from ${city.name}`, ['2026', '— from ₹8,500']);
+  const desc = fitDescription(
+    `Book India tour packages from ${city.name} — all-inclusive from ₹8,500.`,
+    [
+      isIntl
+        ? 'Char Dham Yatra, Kedarnath, Golden Triangle and Rishikesh adventures.'
+        : 'Char Dham, Kedarnath, Rishikesh, Varanasi and Mathura.',
+      'WhatsApp for a custom itinerary.',
+    ],
+  );
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title,

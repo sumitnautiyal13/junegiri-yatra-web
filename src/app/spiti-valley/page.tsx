@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Spiti Valley Travel Guide 2026 | Trek, Monastery & Adventure Tours | Junegiri Yatra',
+  title: 'Spiti Valley Travel Guide 2026 | Treks & Monastery Tours',
   description: 'Complete Spiti Valley travel guide — Hamta Pass crossover, Chandrataal, Pin Parvati Pass, Key Monastery, Chandratal. Packages from Manali. Expert-guided tours from ₹11,500.',
   alternates: { canonical: 'https://junegiriyatra.com/spiti-valley/' },
   openGraph: {

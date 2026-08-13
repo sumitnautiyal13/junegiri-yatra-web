@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
@@ -17,8 +18,11 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: `Ayodhya Tour from ${city.name} 2026 | Ram Mandir Darshan | Junegiri Yatra`,
-    description: `Book Ayodhya Ram Mandir darshan tour from ${city.name} — all-inclusive 1N/2D from ₹5,500. Ram Ki Paidi, Hanuman Garhi, Kanak Bhawan. WhatsApp for quote.`,
+    title: fitTitle(`Ayodhya Tour from ${city.name}`, ['2026', '— Ram Mandir darshan']),
+    description: fitDescription(
+      `Book Ayodhya Ram Mandir darshan from ${city.name} — all-inclusive 1N/2D from ₹5,500.`,
+      ['Ram Ki Paidi, Hanuman Garhi & Kanak Bhawan.', 'WhatsApp for a quote.'],
+    ),
     keywords: `ayodhya tour from ${city.name.toLowerCase()}, ayodhya ram mandir darshan from ${city.name.toLowerCase()}, ayodhya package ${city.name.toLowerCase()}, ram mandir tour ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/ayodhya-from/${city.slug}/` },
     openGraph: {
