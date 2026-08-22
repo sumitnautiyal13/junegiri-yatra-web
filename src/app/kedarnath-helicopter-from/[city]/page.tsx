@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
 import type { DestinationConfig } from '@/components/DestinationCityPage';
 
@@ -16,18 +16,19 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('kedarnath-helicopter-2n-3d') ?? '';
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: fitTitle(`Kedarnath Helicopter from ${city.name}`, ['2026', '— from ₹14,500']),
+    title: fitTitle(`Kedarnath Helicopter from ${city.name}`, ['2026', '— from ${PRICE}']),
     description: fitDescription(
-      `Book Kedarnath helicopter darshan from ${city.name} — 2N/3D from ₹14,500.`,
+      `Book Kedarnath helicopter darshan from ${city.name} — 2N/3D from ${PRICE}.`,
       ['Fly from Phata or Sirsi — ideal for elderly travellers and short trips.', 'WhatsApp for slots.'],
     ),
     keywords: `kedarnath helicopter from ${city.name.toLowerCase()}, kedarnath helicopter tour ${city.name.toLowerCase()}, kedarnath by helicopter from ${city.name.toLowerCase()}, kedarnath helicopter booking ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/kedarnath-helicopter-from/${city.slug}/` },
     openGraph: {
       title: `Kedarnath Helicopter Tour from ${city.name} | Skip the Trek`,
-      description: `All-inclusive Kedarnath helicopter darshan from ${city.name} — 2N/3D from ₹14,500. Fly to the Jyotirlinga at 3,584 m.`,
+      description: `All-inclusive Kedarnath helicopter darshan from ${city.name} — 2N/3D from ${PRICE}. Fly to the Jyotirlinga at 3,584 m.`,
       images: [{ url: 'https://junegiriyatra.com/images/kedarnath_helicopter.webp' }],
     },
   };

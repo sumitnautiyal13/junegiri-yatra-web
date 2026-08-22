@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { withGuidePrice } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import bestTimeData from '../../../data/best-time.json';
@@ -37,7 +38,7 @@ type Destination = {
   package_price: number;
 };
 
-const destinations = bestTimeData as Destination[];
+const destinations = (bestTimeData as Destination[]).map(withGuidePrice);
 
 // Strip inline HTML (e.g. <em>) from the h1 for a clean card heading.
 const cleanHeading = (h1: string) => h1.replace(/<[^>]+>/g, '').trim();

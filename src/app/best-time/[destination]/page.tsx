@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { withGuidePrice } from '@/lib/data';
 import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import bestTimeData from '../../../../data/best-time.json';
@@ -36,7 +37,8 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ destination: string }> }): Promise<Metadata> {
   const { destination } = await params;
-  const item = (bestTimeData as BestTimeDestination[]).find((d) => d.slug === destination);
+  const raw = (bestTimeData as BestTimeDestination[]).find((d) => d.slug === destination);
+  const item = raw ? withGuidePrice(raw) : undefined;
   if (!item) return {};
   return {
     title: fitTitle(item.title),
@@ -53,7 +55,8 @@ export async function generateMetadata({ params }: { params: Promise<{ destinati
 
 export default async function Page({ params }: { params: Promise<{ destination: string }> }) {
   const { destination } = await params;
-  const item = (bestTimeData as BestTimeDestination[]).find((d) => d.slug === destination);
+  const raw = (bestTimeData as BestTimeDestination[]).find((d) => d.slug === destination);
+  const item = raw ? withGuidePrice(raw) : undefined;
   if (!item) notFound();
   return (
     <BestTimePage

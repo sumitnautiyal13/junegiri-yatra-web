@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
 
 export async function generateStaticParams() {
@@ -18,12 +18,13 @@ export async function generateMetadata({
   if (!city) return {};
 
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('char-dham-helicopter-7n-8d') ?? '';
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
     title: fitTitle(`Char Dham by Helicopter from ${city.name}`, ['2026', '— all 4 dhams']),
     description: fitDescription(
-      `Char Dham by helicopter from ${city.name} — 7N/8D from ₹2,50,000/person.`,
+      `Char Dham by helicopter from ${city.name} — 7N/8D from ${PRICE}/person.`,
       ['All four dhams by air, with VVIP darshan and luxury hotels.', 'WhatsApp for slots.'],
     ),
     keywords: `char dham helicopter from ${city.name.toLowerCase()}, char dham by helicopter ${city.name.toLowerCase()}, char dham helicopter yatra from ${city.name.toLowerCase()}, helicopter yatra ${city.name.toLowerCase()}`,
@@ -32,7 +33,7 @@ export async function generateMetadata({
     },
     openGraph: {
       title: `Char Dham Helicopter Yatra from ${city.name} | Junegiri Yatra`,
-      description: `All 4 Char Dhams by helicopter from ${city.name} — 7N/8D from ₹2,50,000/person. Luxury pilgrimage with VVIP darshan.`,
+      description: `All 4 Char Dhams by helicopter from ${city.name} — 7N/8D from ${PRICE}/person. Luxury pilgrimage with VVIP darshan.`,
       images: [{ url: 'https://junegiriyatra.com/images/kedarnath2.webp' }],
     },
   };

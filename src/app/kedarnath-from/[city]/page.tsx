@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage from '@/components/DestinationCityPage';
 import type { DestinationConfig } from '@/components/DestinationCityPage';
 
@@ -16,16 +16,17 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
 
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('kedarnath-yatra-3n-4d') ?? '';
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: fitTitle(`Kedarnath Yatra from ${city.name}`, ['2026', '— from ₹8,500']),
+    title: fitTitle(`Kedarnath Yatra from ${city.name}`, ['2026', '— from ${PRICE}']),
     description: fitDescription(
-      `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ₹8,500.`,
+      `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ${PRICE}.`,
       ['Helicopter option available from a Haridwar-based operator.', 'WhatsApp for a quote.'],
     ),
     keywords: `kedarnath yatra from ${city.name.toLowerCase()}, kedarnath package from ${city.name.toLowerCase()}, kedarnath tour ${city.name.toLowerCase()}, kedarnath yatra booking ${city.name.toLowerCase()}`,
     alternates: { canonical: `https://junegiriyatra.com/kedarnath-from/${city.slug}/` },
-    openGraph: { title: `Kedarnath Yatra from ${city.name}`, description: `All-inclusive Kedarnath package from ${city.name} — 3N/4D from ₹8,500.`, images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }] },
+    openGraph: { title: `Kedarnath Yatra from ${city.name}`, description: `All-inclusive Kedarnath package from ${city.name} — 3N/4D from ${PRICE}.`, images: [{ url: 'https://junegiriyatra.com/images/kedarnath_temple_cover.webp' }] },
   };
 }
 

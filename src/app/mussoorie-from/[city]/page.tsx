@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
 
 /* ── Destination config ─────────────────────────────────── */
@@ -53,9 +53,10 @@ export async function generateMetadata({
 
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('mussoorie-dehradun-3n-4d') ?? '';
 
-  const title = fitTitle(`Mussoorie Trip from ${city.name}`, ['2026', '— from ₹5,500']);
-  const description = fitDescription(`Book a Mussoorie getaway from ${city.name} — all-inclusive from ₹5,500.`, ['Kempty Falls, Gun Hill & Mall Road.', `${city.total_time}.`, 'WhatsApp for a quote.']);
+  const title = fitTitle(`Mussoorie Trip from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const description = fitDescription(`Book a Mussoorie getaway from ${city.name} — all-inclusive from ${PRICE}.`, ['Kempty Falls, Gun Hill & Mall Road.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
 
 /* ── Destination config ─────────────────────────────────── */
@@ -52,9 +52,10 @@ export async function generateMetadata({
 
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('do-dham-yatra-5n-6d') ?? '';
 
-  const title = fitTitle(`Do Dham Yatra from ${city.name}`, ['2026', '— from ₹13,500']);
-  const description = fitDescription(`Book Do Dham Yatra (Kedarnath + Badrinath) from ${city.name} — 5N/6D from ₹13,500.`, ['Both shrines in one trip.', `${city.total_time}.`, 'WhatsApp for a quote.']);
+  const title = fitTitle(`Do Dham Yatra from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const description = fitDescription(`Book Do Dham Yatra (Kedarnath + Badrinath) from ${city.name} — 5N/6D from ${PRICE}.`, ['Both shrines in one trip.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

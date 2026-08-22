@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import { fitTitle, fitDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
-import { getAllCities, getCityBySlug, getAllPackages } from '@/lib/data';
+import { getAllCities, getAllPackages, getCityBySlug, packagePriceLabel } from '@/lib/data';
 import DestinationCityPage, { type DestinationConfig } from '@/components/DestinationCityPage';
 
 /* ── Destination config ─────────────────────────────────── */
@@ -53,9 +53,10 @@ export async function generateMetadata({
 
   // Tier 3 cities (low/zero demand) get noindex to protect site-wide quality signal
   const noindex = (city as unknown as { tier?: number }).tier === 3;
+  const PRICE = packagePriceLabel('nainital-jim-corbett-4n-5d') ?? '';
 
-  const title = fitTitle(`Nainital Tour from ${city.name}`, ['2026', '— from ₹7,500']);
-  const description = fitDescription(`Book a Nainital tour from ${city.name} — all-inclusive from ₹7,500.`, ['Naini Lake boating, Snow View Point & Jim Corbett.', `${city.total_time}.`, 'WhatsApp for a quote.']);
+  const title = fitTitle(`Nainital Tour from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const description = fitDescription(`Book a Nainital tour from ${city.name} — all-inclusive from ${PRICE}.`, ['Naini Lake boating, Snow View Point & Jim Corbett.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },

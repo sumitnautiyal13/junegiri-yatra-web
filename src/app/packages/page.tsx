@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { normalisePackagePrices } from '@/lib/data';
 import Link from 'next/link';
 import Image from 'next/image';
 import packagesData from '../../../data/packages.json';
@@ -87,7 +88,11 @@ type Package = {
 };
 
 export default function PackagesHubPage() {
-  const pkgs = packagesData as Package[];
+  // Prices come from the data layer so the "from ₹" here matches schema and the
+  // package page — see normalisePackagePrices/lowestBookableRate in @/lib/data.
+  const pkgs = normalisePackagePrices(
+    packagesData as unknown as Parameters<typeof normalisePackagePrices>[0],
+  ) as unknown as Package[];
 
   // Group packages by category
   const grouped: Record<string, Package[]> = {};
