@@ -21,6 +21,13 @@ import intlPackagesData from '../../data/international-packages.json';
  * consumer (schema, titles, cards, WhatsApp messages) follows automatically.
  */
 function lowestBookableRate(p: Package): number | undefined {
+  // Escape hatch for packages whose pricing_tiers are known to be wrong rather
+  // than merely stale. char-dham-helicopter-7n-8d carries tiers of
+  // ₹65,000–₹1,40,000 that do not describe this product at all — the real rate
+  // is ₹2,50,000 per person, confirmed by the operator. Deriving from those
+  // tiers would have advertised a price a quarter of the true one.
+  if ((p as { price_from_authoritative?: boolean }).price_from_authoritative) return undefined;
+
   const rates = (p.pricing_tiers ?? [])
     .flatMap((t) => Object.values(t?.rates ?? {}))
     .filter((r): r is number => typeof r === 'number' && r > 0);

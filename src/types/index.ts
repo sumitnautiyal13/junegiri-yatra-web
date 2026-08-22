@@ -71,6 +71,9 @@ export interface Package {
   inclusions: string[];
   exclusions: string[];
   pricing_tiers: PricingTier[];
+  /** Set when pricing_tiers do not describe this product and price_from is the
+   *  operator-confirmed rate. See lowestBookableRate() in @/lib/data. */
+  price_from_authoritative?: boolean;
   gallery: string[];
   testimonials: Testimonial[];
   faq: FAQ[];
