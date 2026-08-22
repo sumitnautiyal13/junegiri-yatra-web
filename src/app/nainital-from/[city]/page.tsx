@@ -55,7 +55,7 @@ export async function generateMetadata({
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const PRICE = packagePriceLabel('nainital-jim-corbett-4n-5d') ?? '';
 
-  const title = fitTitle(`Nainital Tour from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const title = fitTitle(`Nainital Tour from ${city.name}`, ['2026', `— from ${PRICE}`]);
   const description = fitDescription(`Book a Nainital tour from ${city.name} — all-inclusive from ${PRICE}.`, ['Naini Lake boating, Snow View Point & Jim Corbett.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {

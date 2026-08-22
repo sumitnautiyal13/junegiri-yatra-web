@@ -131,6 +131,16 @@ for (const file of targets) {
   const h1s = (html.match(rx.h1) || []).length;
   if (h1s !== 1) add(page, 'h1-count', `found ${h1s}, expected 1`);
 
+  // Un-interpolated template placeholders and stringified nothings. A single-quoted
+  // '${PRICE}' shipped to production in seven route titles because it never
+  // interpolated, and four hub pages once rendered "undefined | Junegiri Yatra".
+  // Both were invisible to length and link checks.
+  for (const [label, value] of [['title', title], ['description', desc]]) {
+    if (!value) continue;
+    if (/\$\{[^}]*\}/.test(value)) add(page, 'uninterpolated-placeholder', `${label}: ${value}`);
+    if (/\b(undefined|null|NaN)\b/.test(value)) add(page, 'placeholder-value', `${label}: ${value}`);
+  }
+
   const canonical = html.match(rx.canonical)?.[1];
   if (!canonical) { if (!noindex) add(page, 'canonical-missing', ''); }
   else {

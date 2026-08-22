@@ -54,7 +54,7 @@ export async function generateMetadata({
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const PRICE = packagePriceLabel('do-dham-yatra-5n-6d') ?? '';
 
-  const title = fitTitle(`Do Dham Yatra from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const title = fitTitle(`Do Dham Yatra from ${city.name}`, ['2026', `— from ${PRICE}`]);
   const description = fitDescription(`Book Do Dham Yatra (Kedarnath + Badrinath) from ${city.name} — 5N/6D from ${PRICE}.`, ['Both shrines in one trip.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {

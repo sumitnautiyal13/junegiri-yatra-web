@@ -55,7 +55,7 @@ export async function generateMetadata({
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const PRICE = packagePriceLabel('mussoorie-dehradun-3n-4d') ?? '';
 
-  const title = fitTitle(`Mussoorie Trip from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const title = fitTitle(`Mussoorie Trip from ${city.name}`, ['2026', `— from ${PRICE}`]);
   const description = fitDescription(`Book a Mussoorie getaway from ${city.name} — all-inclusive from ${PRICE}.`, ['Kempty Falls, Gun Hill & Mall Road.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {

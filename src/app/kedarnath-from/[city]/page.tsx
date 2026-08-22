@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
   const PRICE = packagePriceLabel('kedarnath-yatra-3n-4d') ?? '';
   return {
     robots: noindex ? { index: false, follow: true } : { index: true, follow: true },
-    title: fitTitle(`Kedarnath Yatra from ${city.name}`, ['2026', '— from ${PRICE}']),
+    title: fitTitle(`Kedarnath Yatra from ${city.name}`, ['2026', `— from ${PRICE}`]),
     description: fitDescription(
       `Book Kedarnath Yatra from ${city.name} — all-inclusive 3N/4D from ${PRICE}.`,
       ['Helicopter option available from a Haridwar-based operator.', 'WhatsApp for a quote.'],

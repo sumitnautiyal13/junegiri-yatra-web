@@ -55,7 +55,7 @@ export async function generateMetadata({
   const noindex = (city as unknown as { tier?: number }).tier === 3;
   const PRICE = packagePriceLabel('varanasi-prayagraj-spiritual-3n-4d') ?? '';
 
-  const title = fitTitle(`Varanasi Tour from ${city.name}`, ['2026', '— from ${PRICE}']);
+  const title = fitTitle(`Varanasi Tour from ${city.name}`, ['2026', `— from ${PRICE}`]);
   const description = fitDescription(`Book a Varanasi spiritual tour from ${city.name} — all-inclusive from ${PRICE}.`, ['Ganga aarti, Kashi Vishwanath & a sunrise boat ride.', `${city.total_time}.`, 'WhatsApp for a quote.']);
 
   return {
