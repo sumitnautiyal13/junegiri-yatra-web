@@ -4345,5 +4345,329 @@
         "a": "April for colour: rhododendron in full bloom through the forest below Chopta. November for clarity: the sharpest mountain views of the year, fewer people, and a chance of early snow on the temple. Both score equally; it depends whether you want the trail or the skyline at its best."
       }
     ]
+  },
+  {
+    "slug": "ayodhya",
+    "name": "Ayodhya",
+    "title": "Best Time to Visit Ayodhya — Month by Month Guide",
+    "meta_description": "Best time to visit Ayodhya — October to April, with November and January ideal. Ram Mandir darshan timings, festival crowds and month-by-month weather.",
+    "h1": "Best Time to Visit <em>Ayodhya</em>",
+    "tagline": "Comfortable season Oct–April · Best: November & January",
+    "hero_image": "/images/braj_ayodhya.webp",
+    "overview": "Ayodhya sits on the Sarayu in eastern Uttar Pradesh, and since the Ram Mandir consecration it has become one of India's busiest pilgrimage destinations. It is a plains city, so the season is governed by heat rather than snow: pleasant from October to March, punishing from May to June, and wet through the monsoon. Junegiri Yatra runs it as a 1 night / 2 day darshan tour year-round, but the comfortable window is narrower than the operating one.",
+    "package_slug": "ayodhya-tour",
+    "package_price": 5500,
+    "months": [
+      {
+        "month": "January",
+        "status": "open",
+        "weather": "6°C to 20°C · Cool, dry, occasional morning fog",
+        "crowds": "High — peak pilgrimage season",
+        "price_note": "Peak pricing around Makar Sankranti",
+        "score": 5,
+        "verdict": "Among the best months. Cool enough to walk the ghats and temple circuit comfortably. Expect fog-related delays on early trains and flights."
+      },
+      {
+        "month": "February",
+        "status": "open",
+        "weather": "9°C to 25°C · Clear and mild",
+        "crowds": "High",
+        "price_note": "Peak pricing",
+        "score": 5,
+        "verdict": "Excellent. The most reliable weather of the year — mild days, no fog, and the temple circuit is comfortable at any hour."
+      },
+      {
+        "month": "March",
+        "status": "open",
+        "weather": "14°C to 31°C · Warming quickly · Ram Navami crowds",
+        "crowds": "Very high during Ram Navami",
+        "price_note": "Peak pricing during Ram Navami",
+        "score": 4,
+        "verdict": "Good early in the month. Ram Navami brings enormous crowds to Ayodhya specifically — extraordinary to witness, difficult if you want an unhurried darshan."
+      },
+      {
+        "month": "April",
+        "status": "open",
+        "weather": "19°C to 37°C · Hot afternoons",
+        "crowds": "Medium",
+        "price_note": "Standard pricing",
+        "score": 3,
+        "verdict": "Season's tail. Mornings and evenings are workable; midday is not. Plan darshan around sunrise and the evening Sarayu aarti."
+      },
+      {
+        "month": "May",
+        "status": "limited",
+        "weather": "24°C to 42°C · Severe heat",
+        "crowds": "Low — few visitors",
+        "price_note": "Low pricing",
+        "score": 1,
+        "verdict": "Not recommended. Peak north Indian summer — heat makes temple queues genuinely unsafe for elderly pilgrims."
+      },
+      {
+        "month": "June",
+        "status": "limited",
+        "weather": "27°C to 41°C · Extreme heat before the monsoon",
+        "crowds": "Low — few visitors",
+        "price_note": "Low pricing",
+        "score": 1,
+        "verdict": "Not recommended. Among the hottest weeks of the year."
+      },
+      {
+        "month": "July",
+        "status": "closed",
+        "weather": "Monsoon · Heavy rain · High humidity",
+        "crowds": "Very low",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Monsoon. Sarayu levels rise and the ghats are frequently unusable."
+      },
+      {
+        "month": "August",
+        "status": "closed",
+        "weather": "Peak monsoon · Persistent rain",
+        "crowds": "Very low",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Monsoon. Not a practical month for a ghat-and-temple itinerary."
+      },
+      {
+        "month": "September",
+        "status": "limited",
+        "weather": "25°C to 34°C · Monsoon withdrawing · Humid",
+        "crowds": "Low",
+        "price_note": "Low pricing",
+        "score": 2,
+        "verdict": "Transitional and humid. Workable late in the month, but October is a far better use of the same trip."
+      },
+      {
+        "month": "October",
+        "status": "open",
+        "weather": "18°C to 32°C · Post-monsoon clarity · Comfortable",
+        "crowds": "Medium, rising",
+        "price_note": "Standard pricing",
+        "score": 4,
+        "verdict": "Season opens properly. Air is washed clean after the monsoon and daytime temperatures become pleasant again."
+      },
+      {
+        "month": "November",
+        "status": "open",
+        "weather": "11°C to 28°C · Crisp and dry · Dev Deepawali",
+        "crowds": "High",
+        "price_note": "Peak pricing around Dev Deepawali",
+        "score": 5,
+        "verdict": "The best month. Ideal weather, and Dev Deepawali lights the Sarayu ghats with lamps — the most striking time to see the river."
+      },
+      {
+        "month": "December",
+        "status": "open",
+        "weather": "7°C to 23°C · Cold mornings · Dense fog possible",
+        "crowds": "High — holiday season",
+        "price_note": "Peak pricing late December",
+        "score": 4,
+        "verdict": "Very good, with the caveat of fog. Late-December fog regularly delays trains and flights into Lucknow and Ayodhya — build slack into travel days."
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Comfortable Season",
+        "value": "October – April"
+      },
+      {
+        "label": "Best Months",
+        "value": "November & January"
+      },
+      {
+        "label": "Avoid",
+        "value": "May – June (severe heat)"
+      },
+      {
+        "label": "Tour Duration",
+        "value": "1 night / 2 days"
+      },
+      {
+        "label": "Main Sites",
+        "value": "Ram Mandir · Sarayu ghats · Hanuman Garhi"
+      },
+      {
+        "label": "Nearest Airport",
+        "value": "Ayodhya (AYJ) · Lucknow (LKO)"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the best month to visit Ayodhya?",
+        "a": "November, closely followed by January and February. November combines comfortable weather with Dev Deepawali, when the Sarayu ghats are lit with thousands of lamps. January and February are equally pleasant and slightly less crowded, though January mornings can be foggy."
+      },
+      {
+        "q": "How crowded is Ayodhya at Ram Navami?",
+        "a": "Extremely. Ram Navami in March or April draws very large crowds to Ayodhya specifically, and darshan queues lengthen considerably. It is a remarkable time to be there if the atmosphere is what you want; if you want an unhurried temple visit, choose November or February instead."
+      },
+      {
+        "q": "Can I visit Ayodhya in summer?",
+        "a": "Tours run year-round, but May and June regularly exceed 40°C and queueing in that heat is genuinely hard on elderly pilgrims. If summer is your only window, plan darshan for early morning and the evening aarti, and keep the middle of the day free."
+      }
+    ]
+  },
+  {
+    "slug": "golden-triangle",
+    "name": "Golden Triangle",
+    "title": "Best Time for the Golden Triangle — Month by Month",
+    "meta_description": "Best time for the Delhi–Agra–Jaipur Golden Triangle — October to March, with November and February ideal. Weather, crowds, fog risk and pricing by month.",
+    "h1": "Best Time for the <em>Golden Triangle</em>",
+    "tagline": "Comfortable season Oct–March · Best: November & February",
+    "hero_image": "/images/golden_triangle.webp",
+    "overview": "The Delhi–Agra–Jaipur circuit is a plains itinerary with a lot of time outdoors — forts, gardens and the Taj at sunrise — so weather governs it completely. October to March is the comfortable window; April to June brings 40°C-plus heat that makes long sightseeing days unpleasant. The one complication of the peak season is December and January fog, which can disrupt road and rail transfers between the three cities.",
+    "package_slug": "golden-triangle-tour-5n-6d",
+    "package_price": 18500,
+    "months": [
+      {
+        "month": "January",
+        "status": "open",
+        "weather": "7°C to 21°C · Cold mornings · Dense fog likely",
+        "crowds": "High",
+        "price_note": "Peak pricing early January",
+        "score": 4,
+        "verdict": "Pleasant once the fog lifts, and the Taj in winter light is superb — but January fog is the single biggest disruptor to this itinerary's transfers."
+      },
+      {
+        "month": "February",
+        "status": "open",
+        "weather": "10°C to 25°C · Clear · Very little fog",
+        "crowds": "High",
+        "price_note": "Peak pricing",
+        "score": 5,
+        "verdict": "The best month alongside November. Fog has cleared, temperatures are ideal for full sightseeing days, and visibility at the Taj is at its best."
+      },
+      {
+        "month": "March",
+        "status": "open",
+        "weather": "16°C to 32°C · Warm afternoons · Holi crowds",
+        "crowds": "Medium to high",
+        "price_note": "Peak pricing around Holi",
+        "score": 4,
+        "verdict": "Good in the first half, warm by the end. Holi is spectacular in this region, particularly around Mathura and Vrindavan, but transport and hotels tighten."
+      },
+      {
+        "month": "April",
+        "status": "limited",
+        "weather": "22°C to 38°C · Hot · Long dusty afternoons",
+        "crowds": "Low — few visitors",
+        "price_note": "Low pricing",
+        "score": 1,
+        "verdict": "Not recommended. Fort and garden sightseeing becomes an endurance test rather than a pleasure."
+      },
+      {
+        "month": "May",
+        "status": "limited",
+        "weather": "27°C to 42°C · Severe heat",
+        "crowds": "Low — few visitors",
+        "price_note": "Low pricing",
+        "score": 1,
+        "verdict": "Not recommended. Peak summer across the plains."
+      },
+      {
+        "month": "June",
+        "status": "limited",
+        "weather": "29°C to 41°C · Extreme heat before the monsoon",
+        "crowds": "Low — few visitors",
+        "price_note": "Low pricing",
+        "score": 1,
+        "verdict": "Not recommended."
+      },
+      {
+        "month": "July",
+        "status": "closed",
+        "weather": "Monsoon · Heavy showers · High humidity",
+        "crowds": "Very low",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Monsoon. Sightseeing is disrupted and the light is flat."
+      },
+      {
+        "month": "August",
+        "status": "closed",
+        "weather": "Peak monsoon · Persistent rain",
+        "crowds": "Very low",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Monsoon. Not advisable for a multi-city road circuit."
+      },
+      {
+        "month": "September",
+        "status": "limited",
+        "weather": "24°C to 34°C · Monsoon withdrawing · Humid",
+        "crowds": "Low",
+        "price_note": "Low pricing",
+        "score": 2,
+        "verdict": "Humid and unpredictable. Cheaper, but you are gambling on the monsoon having finished."
+      },
+      {
+        "month": "October",
+        "status": "open",
+        "weather": "19°C to 33°C · Post-monsoon clarity",
+        "crowds": "Medium, rising",
+        "price_note": "Standard pricing",
+        "score": 4,
+        "verdict": "Season opens. The air is at its cleanest after the monsoon, which matters for Taj photography, though early October can still be warm."
+      },
+      {
+        "month": "November",
+        "status": "open",
+        "weather": "12°C to 28°C · Crisp, clear, dry",
+        "crowds": "High — peak season",
+        "price_note": "Peak pricing",
+        "score": 5,
+        "verdict": "The best month. Comfortable all day, no fog yet, and the clearest views of the Taj and the Amber Fort you will get."
+      },
+      {
+        "month": "December",
+        "status": "open",
+        "weather": "8°C to 23°C · Cold mornings · Fog risk rising",
+        "crowds": "High — holiday season",
+        "price_note": "Peak pricing late December",
+        "score": 4,
+        "verdict": "Very good weather, but fog begins to bite late in the month and delays the Delhi–Agra transfer. Build buffer into travel days."
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Comfortable Season",
+        "value": "October – March"
+      },
+      {
+        "label": "Best Months",
+        "value": "November & February"
+      },
+      {
+        "label": "Avoid",
+        "value": "April – June (severe heat)"
+      },
+      {
+        "label": "Fog Risk",
+        "value": "Late December – January"
+      },
+      {
+        "label": "Tour Duration",
+        "value": "5 nights / 6 days"
+      },
+      {
+        "label": "Cities",
+        "value": "Delhi · Agra · Jaipur"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the best month for the Golden Triangle?",
+        "a": "November and February. Both give comfortable daytime temperatures for full sightseeing days and clear air for the Taj. November has the edge on clarity because it follows the monsoon; February has the edge on reliability because the winter fog has passed."
+      },
+      {
+        "q": "How bad is the winter fog?",
+        "a": "It is the main practical risk to this itinerary. Late December and January fog across the north Indian plains regularly delays flights, trains and the Delhi–Agra road transfer, and can obscure the Taj until mid-morning. The weather is otherwise excellent, so build slack into travel days rather than avoiding the season."
+      },
+      {
+        "q": "Is the Golden Triangle worth doing in summer?",
+        "a": "April to June regularly exceeds 40°C, and this is an itinerary built around outdoor monuments — forts, gardens and the Taj complex. It is possible, and prices are lower, but the experience is markedly worse. October to March is worth waiting for."
+      }
+    ]
   }
 ]

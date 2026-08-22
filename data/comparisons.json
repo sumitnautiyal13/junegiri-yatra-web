@@ -2859,5 +2859,533 @@
         "a": "Both are among the more manageable options, but they are still multi-day treks at over 3,400 m. Chopta–Tungnath is the more forgiving of the two thanks to its shorter schedule. Discuss specific fitness and any medical conditions with the operator before booking."
       }
     ]
+  },
+  {
+    "slug": "varanasi-vs-haridwar",
+    "title": "Varanasi vs Haridwar: Which Ganga City to Visit?",
+    "meta_description": "Varanasi or Haridwar for Ganga aarti and ghats? Compare atmosphere, crowds, travel time, cost and which suits a first pilgrimage.",
+    "h1": "Varanasi vs <em>Haridwar</em>",
+    "tagline": "Two Ganga aarti cities that feel nothing alike",
+    "hero_image": "/images/braj_varanasi.webp",
+    "quick_answer": "Choose Varanasi for depth — the oldest continuously inhabited city in India, cremation ghats, Kashi Vishwanath and a sunrise boat ride that has no equivalent anywhere. Choose Haridwar if you want the Ganga aarti without the intensity, an easier journey from Delhi, and a base that pairs naturally with Rishikesh and the Himalaya.",
+    "intro": [
+      "Both cities are built around the Ganga and both hold a nightly aarti that draws thousands. That is where the resemblance ends. Varanasi is dense, ancient and unflinching about death; Haridwar is a gateway town where the river leaves the mountains.",
+      "The practical difference is intensity and distance. Haridwar is a short drive from Delhi and often visited alongside Rishikesh in the same trip. Varanasi is a flight or an overnight train away and asks more of a first-time visitor — which is exactly why many find it the more affecting of the two."
+    ],
+    "item_a": {
+      "name": "Varanasi & Prayagraj Tour",
+      "slug": "varanasi-prayagraj-spiritual-3n-4d",
+      "price": 6800,
+      "duration": "3 Nights / 4 Days",
+      "difficulty": "Easy",
+      "best_for": "Travellers who want the deepest Hindu pilgrimage experience",
+      "pros": [
+        "Among the oldest living cities in the world",
+        "Sunrise boat ride past the ghats",
+        "Kashi Vishwanath, one of the twelve Jyotirlingas",
+        "Sarnath, where the Buddha first taught, is close by"
+      ],
+      "cons": [
+        "Crowded, intense and confronting for some",
+        "Further from Delhi — flight or overnight train",
+        "Narrow lanes are hard going with limited mobility",
+        "Cremation ghats are not for every traveller"
+      ]
+    },
+    "item_b": {
+      "name": "Haridwar & Rishikesh Tour",
+      "slug": "haridwar-rishikesh-spiritual-3n-4d",
+      "price": 7500,
+      "duration": "3 Nights / 4 Days",
+      "difficulty": "Easy",
+      "best_for": "First-time pilgrims, families, and anyone continuing to the Himalaya",
+      "pros": [
+        "Har Ki Pauri aarti in a more manageable setting",
+        "Short road journey from Delhi",
+        "Pairs naturally with Rishikesh in one trip",
+        "Easier for elderly travellers and families"
+      ],
+      "cons": [
+        "Less historically layered than Varanasi",
+        "No equivalent to the Varanasi sunrise boat ride",
+        "Can feel like a transit town outside aarti hours",
+        "Peak Kanwar season is extremely congested"
+      ]
+    },
+    "comparison_table": [
+      {
+        "aspect": "Duration",
+        "a": "3 nights / 4 days",
+        "b": "3 nights / 4 days"
+      },
+      {
+        "aspect": "Price from",
+        "a": "₹6,800",
+        "b": "₹7,500"
+      },
+      {
+        "aspect": "Getting there",
+        "a": "Flight or overnight train",
+        "b": "Road from Delhi, about 5–6 hours"
+      },
+      {
+        "aspect": "Signature moment",
+        "a": "Sunrise boat ride along the ghats",
+        "b": "Har Ki Pauri evening aarti"
+      },
+      {
+        "aspect": "Main temple",
+        "a": "Kashi Vishwanath",
+        "b": "Mansa Devi, Chandi Devi"
+      },
+      {
+        "aspect": "Best months",
+        "a": "November & February",
+        "b": "February, March & October"
+      },
+      {
+        "aspect": "Intensity",
+        "a": "High",
+        "b": "Moderate"
+      },
+      {
+        "aspect": "Pairs well with",
+        "a": "Prayagraj, Sarnath",
+        "b": "Rishikesh, Char Dham"
+      },
+      {
+        "aspect": "Suits elderly travellers",
+        "a": "With planning",
+        "b": "Yes"
+      },
+      {
+        "aspect": "Avoid",
+        "a": "May–June heat, monsoon",
+        "b": "Kanwar Yatra period"
+      }
+    ],
+    "verdict": "If you have the time and want the experience that stays with you, Varanasi. It is harder work and further away, and that is part of why it lands. If this is a first pilgrimage, you are travelling with elderly parents or children, or you want to continue into the Himalaya afterwards, Haridwar is the sensible choice and pairs with Rishikesh for very little extra.",
+    "faq": [
+      {
+        "q": "Which has the better Ganga aarti?",
+        "a": "They are different rather than ranked. Haridwar's Har Ki Pauri aarti is larger, more choreographed and easier to watch from a seated position. Varanasi's Dashashwamedh aarti is more atmospheric and best seen from a boat on the river, which is an experience Haridwar cannot match."
+      },
+      {
+        "q": "Which is better for first-time visitors to India?",
+        "a": "Haridwar, generally. It is closer to Delhi, less overwhelming and easier to navigate. Varanasi rewards travellers who already have some experience of Indian cities, though many first-timers go and are glad they did."
+      },
+      {
+        "q": "Can I do both in one trip?",
+        "a": "Yes, but they are not near each other — roughly 900 km apart, so plan a flight or an overnight train between them and at least six or seven days in total. A common route is Delhi, Haridwar and Rishikesh, then fly to Varanasi."
+      },
+      {
+        "q": "Which is cheaper?",
+        "a": "The Varanasi and Prayagraj tour starts at ₹6,800 against ₹7,500 for Haridwar and Rishikesh, both for 3 nights. Factor in travel: reaching Varanasi usually costs more than the road transfer to Haridwar."
+      },
+      {
+        "q": "Is Varanasi suitable for elderly pilgrims?",
+        "a": "It can be, with planning. The ghat steps and narrow lanes are the challenge rather than the distances. Boat rides, assisted darshan and hotels close to the main ghats make a substantial difference — discuss mobility needs when booking."
+      },
+      {
+        "q": "What is the best time for either?",
+        "a": "November and February for Varanasi; February, March and October for Haridwar. Both are north Indian plains and river destinations, so avoid May and June heat and the monsoon."
+      }
+    ]
+  },
+  {
+    "slug": "ayodhya-vs-braj-bhoomi",
+    "title": "Ayodhya vs Braj Bhoomi: Ram or Krishna Circuit?",
+    "meta_description": "Ayodhya or the Braj Bhoomi Mathura–Vrindavan circuit? Compare duration, cost, temples and which pilgrimage suits your time and devotion.",
+    "h1": "Ayodhya vs <em>Braj Bhoomi</em>",
+    "tagline": "Ram's birthplace against Krishna's, and they ask for very different trips",
+    "hero_image": "/images/braj_vrindavan.webp",
+    "quick_answer": "Choose Ayodhya if you have a weekend and want a focused Ram Mandir darshan — it is a 1 night / 2 day trip built around one destination. Choose Braj Bhoomi if you have most of a week and want the full Krishna circuit across Mathura, Vrindavan, Govardhan and beyond. One is a pilgrimage stop; the other is a pilgrimage route.",
+    "intro": [
+      "These are not really competing itineraries so much as different scales of commitment. Ayodhya is one city and one overwhelming temple. Braj Bhoomi is a region — Mathura, Vrindavan, Govardhan, Nandgaon and Barsana, each with its own association with Krishna's life.",
+      "So the honest first question is how many nights you have. At 1 night, only Ayodhya works. At 5 nights, Braj Bhoomi gives you a far richer journey, and the Junegiri circuit reaches Ayodhya and Varanasi as well."
+    ],
+    "item_a": {
+      "name": "Ayodhya Ram Mandir Darshan",
+      "slug": "ayodhya-tour",
+      "price": 5500,
+      "duration": "1 Night / 2 Days",
+      "difficulty": "Easy",
+      "best_for": "Weekend pilgrims focused on Ram Mandir darshan",
+      "pros": [
+        "Shortest pilgrimage we run — 1 night",
+        "Newly consecrated Ram Mandir",
+        "Sarayu ghats and evening aarti",
+        "Lowest cost of the two"
+      ],
+      "cons": [
+        "A single destination rather than a circuit",
+        "Very heavy crowds at Ram Navami",
+        "Limited beyond the main temple cluster",
+        "Little time for unhurried darshan on a 2-day schedule"
+      ]
+    },
+    "item_b": {
+      "name": "Braj Bhoomi Yatra",
+      "slug": "braj-bhoomi-yatra-5n-6d",
+      "price": 14500,
+      "duration": "5 Nights / 6 Days",
+      "difficulty": "Easy",
+      "best_for": "Krishna devotees and travellers with a full week",
+      "pros": [
+        "Complete Braj circuit — Mathura, Vrindavan, Govardhan",
+        "Circuit also reaches Ayodhya and Varanasi",
+        "Holi in Barsana and Vrindavan is extraordinary",
+        "Best value per night of the two"
+      ],
+      "cons": [
+        "Needs 5 nights",
+        "Higher total cost",
+        "A lot of road travel between towns",
+        "Holi season books out far in advance"
+      ]
+    },
+    "comparison_table": [
+      {
+        "aspect": "Duration",
+        "a": "1 night / 2 days",
+        "b": "5 nights / 6 days"
+      },
+      {
+        "aspect": "Price from",
+        "a": "₹5,500",
+        "b": "₹14,500"
+      },
+      {
+        "aspect": "Deity focus",
+        "a": "Ram",
+        "b": "Krishna"
+      },
+      {
+        "aspect": "Main sites",
+        "a": "Ram Mandir, Hanuman Garhi, Sarayu ghats",
+        "b": "Mathura, Vrindavan, Govardhan, Nandgaon, Barsana"
+      },
+      {
+        "aspect": "Also covers",
+        "a": "—",
+        "b": "Agra, Ayodhya, Varanasi"
+      },
+      {
+        "aspect": "Best months",
+        "a": "November & January",
+        "b": "November & March"
+      },
+      {
+        "aspect": "Signature festival",
+        "a": "Ram Navami (Mar–Apr)",
+        "b": "Holi (March), Janmashtami (Aug–Sep)"
+      },
+      {
+        "aspect": "Travel intensity",
+        "a": "Low — one base",
+        "b": "High — multiple towns"
+      },
+      {
+        "aspect": "Suits a weekend",
+        "a": "Yes",
+        "b": "No"
+      },
+      {
+        "aspect": "Cost per night",
+        "a": "₹5,500",
+        "b": "₹2,900"
+      }
+    ],
+    "verdict": "If you have a weekend, Ayodhya is the trip that fits, and Ram Mandir alone justifies it. If you have five nights and Krishna is the draw, Braj Bhoomi is much better value per night and covers ground a short trip cannot — and its circuit takes in Ayodhya anyway, so you are not choosing against it so much as including it.",
+    "faq": [
+      {
+        "q": "Does the Braj Bhoomi circuit include Ayodhya?",
+        "a": "Yes. The 5 nights / 6 days Braj Bhoomi Yatra covers Mathura, Vrindavan and Agra alongside Ayodhya and Varanasi, so it is not an either-or if you have the time — the longer circuit includes the shorter destination."
+      },
+      {
+        "q": "When is Holi in Braj, and is it worth planning around?",
+        "a": "Holi falls in March, and Barsana and Vrindavan celebrate it more famously than anywhere else in India, over several days rather than one. It is extraordinary to witness. It is also the single busiest period of the year in the region, so book well in advance and expect crowds."
+      },
+      {
+        "q": "Is two days enough for Ayodhya?",
+        "a": "It is enough for Ram Mandir darshan, Hanuman Garhi and an evening at the Sarayu ghats, which is what the tour is built around. If you want unhurried darshan, avoid Ram Navami and holiday weekends when queues lengthen considerably."
+      },
+      {
+        "q": "Which is better value?",
+        "a": "Braj Bhoomi, per night — roughly ₹2,900 a night against ₹5,500 for the Ayodhya trip, and it covers far more ground. Ayodhya is cheaper in absolute terms because it is one night, not because it costs less per day."
+      },
+      {
+        "q": "Which is easier for elderly pilgrims?",
+        "a": "Ayodhya, because it is short and based in one place. Braj Bhoomi involves a good deal of road travel between towns across five nights, which is more tiring even though no individual day is difficult."
+      },
+      {
+        "q": "What is the best time for both?",
+        "a": "November suits both. Ayodhya is also excellent in January; Braj is at its most memorable in March for Holi, though that comes with the year's heaviest crowds."
+      }
+    ]
+  },
+  {
+    "slug": "golden-triangle-vs-taj-mahal-day-tour",
+    "title": "Golden Triangle vs Taj Mahal Day Tour: Which?",
+    "meta_description": "Full Golden Triangle circuit or a Taj Mahal day trip from Delhi? Compare cost, time, what you actually see and who each one suits.",
+    "h1": "Golden Triangle vs <em>Taj Mahal Day Tour</em>",
+    "tagline": "Six days across three cities, or fourteen hours and one monument",
+    "hero_image": "/images/golden_triangle.webp",
+    "quick_answer": "Choose the Taj Mahal day tour if the Taj is the only thing you actually want to see and you are short on time — it leaves Delhi at 5:30 AM and has you back the same night for ₹4,000. Choose the Golden Triangle if you have close to a week and want Delhi, Agra and Jaipur properly, at a pace that lets you see forts and bazaars rather than sprint through them.",
+    "intro": [
+      "This is a question about time, not taste. Both include the Taj Mahal; one includes almost nothing else.",
+      "The day tour is genuinely useful for travellers on a tight schedule or with a single free day in Delhi. What it cannot do is give you Jaipur, Amber Fort, Old Delhi or an unhurried second look at Agra Fort — and it involves roughly eight hours in a vehicle in one day."
+    ],
+    "item_a": {
+      "name": "Golden Triangle Tour",
+      "slug": "golden-triangle-tour-5n-6d",
+      "price": 18500,
+      "duration": "5 Nights / 6 Days",
+      "difficulty": "Easy",
+      "best_for": "Travellers with 5+ nights who want the full circuit",
+      "pros": [
+        "Delhi, Agra and Jaipur at a workable pace",
+        "Amber Fort, Qutub Minar, Old Delhi and more",
+        "Time for a sunrise Taj visit rather than a rushed one",
+        "Better value per site than repeated day trips"
+      ],
+      "cons": [
+        "Needs almost a week",
+        "Highest cost of the two",
+        "A lot of road travel between cities",
+        "Peak season books out early"
+      ]
+    },
+    "item_b": {
+      "name": "Taj Mahal Day Tour",
+      "slug": "taj-mahal-day-tour-from-delhi",
+      "price": 4000,
+      "duration": "1 Day · 14 hours",
+      "difficulty": "Easy",
+      "best_for": "Short-stay travellers who only want the Taj",
+      "pros": [
+        "Cheapest way to see the Taj Mahal",
+        "No overnight stay needed",
+        "Includes Agra Fort and Mehtab Bagh",
+        "Departs daily at 5:30 AM from Delhi"
+      ],
+      "cons": [
+        "About 8 hours of driving in a single day",
+        "No Jaipur, no Old Delhi",
+        "Tiring — a 14-hour day start to finish",
+        "Little flexibility if traffic delays the return"
+      ]
+    },
+    "comparison_table": [
+      {
+        "aspect": "Duration",
+        "a": "5 nights / 6 days",
+        "b": "1 day · 14 hours"
+      },
+      {
+        "aspect": "Price from",
+        "a": "₹18,500",
+        "b": "₹4,000"
+      },
+      {
+        "aspect": "Cities covered",
+        "a": "Delhi, Agra, Jaipur",
+        "b": "Agra only"
+      },
+      {
+        "aspect": "Taj Mahal",
+        "a": "Yes — unhurried",
+        "b": "Yes — the main event"
+      },
+      {
+        "aspect": "Agra Fort",
+        "a": "Yes",
+        "b": "Yes"
+      },
+      {
+        "aspect": "Amber Fort, Jaipur",
+        "a": "Yes",
+        "b": "No"
+      },
+      {
+        "aspect": "Old Delhi",
+        "a": "Yes",
+        "b": "No"
+      },
+      {
+        "aspect": "Road time",
+        "a": "Spread across days",
+        "b": "About 8 hours in one day"
+      },
+      {
+        "aspect": "Best months",
+        "a": "November & February",
+        "b": "November & February"
+      },
+      {
+        "aspect": "Suits elderly travellers",
+        "a": "Yes",
+        "b": "Demanding"
+      }
+    ],
+    "verdict": "If you have the days, the Golden Triangle is not a more expensive version of the same trip — it is a different trip that happens to include the Taj. If you have one free day in Delhi, the day tour does exactly what it promises for ₹4,000 and there is no reason to feel short-changed. The mistake is booking the day tour when you actually had five nights available.",
+    "faq": [
+      {
+        "q": "Is the Taj Mahal day tour too rushed?",
+        "a": "It is a long day — roughly 14 hours, of which about eight are on the road. You still get several hours at the Taj and Agra Fort, which is enough to see both properly. It is tiring rather than superficial, and it suits travellers with one free day more than those with a week."
+      },
+      {
+        "q": "Can I see the Taj at sunrise on the day tour?",
+        "a": "The tour departs Delhi at 5:30 AM, so you arrive in the morning rather than for first light. If a sunrise Taj visit matters to you, an overnight in Agra or the full Golden Triangle circuit is the way to do it."
+      },
+      {
+        "q": "Is the Golden Triangle worth the extra cost?",
+        "a": "If you have the time, yes — you are adding Jaipur, Amber Fort, Old Delhi and Qutub Minar, not merely more days. Per site it works out better value than stringing together separate day trips from Delhi."
+      },
+      {
+        "q": "Which is better for a first trip to India?",
+        "a": "The Golden Triangle, if your schedule allows. It gives a rounded introduction to north India rather than a single monument. The day tour is best thought of as a way to rescue the Taj from an otherwise packed itinerary."
+      },
+      {
+        "q": "What is the best time for either?",
+        "a": "November and February for both. These are outdoor itineraries in the north Indian plains, so avoid April to June heat, and be aware that late December and January fog can delay the Delhi–Agra transfer."
+      },
+      {
+        "q": "Is the Taj closed on any day?",
+        "a": "The Taj Mahal is closed to visitors on Fridays for prayers. Both itineraries are planned around that, but it is worth knowing if you are choosing your own dates."
+      }
+    ]
+  },
+  {
+    "slug": "rishikesh-yoga-vs-adventure",
+    "title": "Rishikesh Yoga Retreat vs Adventure: Which Trip?",
+    "meta_description": "Rishikesh yoga retreat or adventure pack? Compare duration, cost, pace and what each trip actually involves before you book.",
+    "h1": "Rishikesh Yoga vs <em>Adventure</em>",
+    "tagline": "The same town, two completely different weeks",
+    "hero_image": "/images/rishikesh_yoga.webp",
+    "quick_answer": "Choose the yoga retreat if you want five nights of structure — daily practice, meditation and a slow pace by the Ganga. Choose the adventure pack if you have a long weekend and want rafting, a bungee jump and riverside camping. One is designed to slow you down; the other is designed to do the opposite.",
+    "intro": [
+      "Rishikesh is unusual in serving two audiences that barely overlap. It is the yoga capital, and it is also India's adventure capital, and the two trips share little beyond the town and the river.",
+      "Length is the practical divider. The adventure pack is 2 nights and works as a weekend; the yoga retreat is 5 nights because a shorter retreat does not really function as one."
+    ],
+    "item_a": {
+      "name": "Rishikesh Yoga Retreat",
+      "slug": "rishikesh-yoga-retreat-5n-6d",
+      "price": 12000,
+      "duration": "5 Nights / 6 Days",
+      "difficulty": "Easy",
+      "best_for": "Anyone wanting a structured, slower week by the Ganga",
+      "pros": [
+        "Daily yoga and meditation with experienced teachers",
+        "Five nights allows a real routine to settle",
+        "Riverside setting away from the busiest ghats",
+        "Suits solo travellers well"
+      ],
+      "cons": [
+        "Needs five nights",
+        "Early morning schedule is not optional",
+        "Costs more than double the adventure pack",
+        "Not suited to travellers who want a packed itinerary"
+      ]
+    },
+    "item_b": {
+      "name": "Rishikesh Adventure Pack",
+      "slug": "rishikesh-adventure-pack-2n-3d",
+      "price": 5500,
+      "duration": "2 Nights / 3 Days",
+      "difficulty": "Easy",
+      "best_for": "Weekend groups, first-time rafters and adrenaline seekers",
+      "pros": [
+        "Ganga rafting through graded rapids",
+        "Bungee jumping available",
+        "Riverside camping",
+        "Works as a two-night weekend"
+      ],
+      "cons": [
+        "Short — you will not see much beyond the activities",
+        "Rafting season is closed during the monsoon",
+        "Camps get lively; not a quiet trip",
+        "Activities carry the usual adventure-sport risks"
+      ]
+    },
+    "comparison_table": [
+      {
+        "aspect": "Duration",
+        "a": "5 nights / 6 days",
+        "b": "2 nights / 3 days"
+      },
+      {
+        "aspect": "Price from",
+        "a": "₹12,000",
+        "b": "₹5,500"
+      },
+      {
+        "aspect": "Pace",
+        "a": "Slow and structured",
+        "b": "Fast and activity-led"
+      },
+      {
+        "aspect": "Typical day",
+        "a": "Morning and evening practice",
+        "b": "Rafting, bungee, camp"
+      },
+      {
+        "aspect": "Best months",
+        "a": "February, March & October",
+        "b": "October – March"
+      },
+      {
+        "aspect": "Monsoon",
+        "a": "Runs",
+        "b": "Rafting suspended"
+      },
+      {
+        "aspect": "Suits solo travellers",
+        "a": "Very well",
+        "b": "Better in a group"
+      },
+      {
+        "aspect": "Physical demand",
+        "a": "Low to moderate",
+        "b": "Moderate"
+      },
+      {
+        "aspect": "Cost per night",
+        "a": "₹2,400",
+        "b": "₹2,750"
+      },
+      {
+        "aspect": "Pairs well with",
+        "a": "Haridwar, Char Dham",
+        "b": "Haridwar weekend"
+      }
+    ],
+    "verdict": "These are not competing versions of the same holiday, so pick by what you want the week to feel like. If you are going to Rishikesh to slow down, the two-night adventure pack will not deliver it. If you are going with friends for a weekend, a five-night retreat with 6 AM practice is the wrong booking. Both are good at what they are.",
+    "faq": [
+      {
+        "q": "Can I combine yoga and adventure in one trip?",
+        "a": "Yes, and plenty of people do — the two are booked separately but run in the same town. Allow at least a week if you want to do both properly rather than compressing each into a couple of days."
+      },
+      {
+        "q": "Do I need yoga experience for the retreat?",
+        "a": "No. The retreat is structured for mixed levels and teachers adjust for beginners. What it does ask is willingness to keep to the schedule, which starts early and runs twice a day."
+      },
+      {
+        "q": "When is rafting closed in Rishikesh?",
+        "a": "Rafting is suspended during the monsoon, roughly late June to September, when Ganga flows are unsafe. The season runs from around late September to June, and October to March is the most reliable window."
+      },
+      {
+        "q": "Which is better value?",
+        "a": "They are close per night — about ₹2,400 for the retreat against ₹2,750 for the adventure pack. The retreat costs more in total simply because it is longer, not because it is dearer per day."
+      },
+      {
+        "q": "Is the adventure pack safe for first-timers?",
+        "a": "Rafting and bungee in Rishikesh run with licensed operators and standard safety equipment, and the graded rapids on the standard stretch suit beginners. As with any adventure sport there is inherent risk — declare medical conditions when booking and follow the briefings."
+      },
+      {
+        "q": "Which suits solo travellers better?",
+        "a": "The yoga retreat, comfortably. It is structured, sociable in a low-pressure way and common to do alone. The adventure pack is more fun in a group, though solo bookings are accepted."
+      }
+    ]
   }
 ]
