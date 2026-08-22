@@ -4183,5 +4183,167 @@
         "a": "The route is named after the British Viceroy Lord Curzon, who travelled it in the early twentieth century. The name has stuck to the Joshimath–Kuari Pass trail ever since, and it remains one of the best-known historic trekking routes in the Garhwal Himalaya."
       }
     ]
+  },
+  {
+    "slug": "chopta-tungnath-trek",
+    "name": "Chopta–Tungnath Trek",
+    "title": "Best Time for Chopta–Tungnath Trek — Month Guide",
+    "meta_description": "Best time for the Chopta–Tungnath trek — open March to June and October to December. April and November are best. Month-by-month conditions and crowds.",
+    "h1": "Best Time for <em>Chopta–Tungnath Trek</em>",
+    "tagline": "Year-round short trek · Best: April & November",
+    "hero_image": "/images/trek_mountain_path.webp",
+    "overview": "Chopta–Tungnath is the most accessible high trek in Uttarakhand — three nights, four days, taking in Deoriatal, the meadows around Chopta and Tungnath, the highest Shiva temple in the world. Because it is short and low-commitment it runs across two windows rather than a single season, so the question is less whether it is open and more which version of it you want.",
+    "package_slug": "chopta-tungnath-trek-3n-4d",
+    "package_price": 6500,
+    "months": [
+      {
+        "month": "January",
+        "status": "closed",
+        "weather": "Deep winter · Heavy snow · Roads to Chopta often blocked",
+        "crowds": "No departures",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "No departures. Snow closes the Chopta road for stretches of mid-winter."
+      },
+      {
+        "month": "February",
+        "status": "closed",
+        "weather": "Winter · Snow on the approach road",
+        "crowds": "No departures",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "No departures. The trail reopens in March as the road clears."
+      },
+      {
+        "month": "March",
+        "status": "open",
+        "weather": "0°C to 12°C · Residual snow above Chopta · Clear mornings",
+        "crowds": "Low",
+        "price_note": "Low pricing",
+        "score": 4,
+        "verdict": "Season opens with snow still lying near Tungnath — the quietest month to walk it, and the temple approach still feels wintry."
+      },
+      {
+        "month": "April",
+        "status": "open",
+        "weather": "4°C to 16°C · Rhododendron in full bloom · Excellent visibility",
+        "crowds": "High — peak season",
+        "price_note": "Peak pricing",
+        "score": 5,
+        "verdict": "The best month. The forest below Chopta turns red with rhododendron and the Chaukhamba skyline is at its sharpest."
+      },
+      {
+        "month": "May",
+        "status": "open",
+        "weather": "8°C to 19°C · Warm days · Comfortable nights",
+        "crowds": "High",
+        "price_note": "Peak pricing",
+        "score": 4,
+        "verdict": "Warm, easy walking and long daylight. Slightly hazier than April but the most comfortable conditions of the year."
+      },
+      {
+        "month": "June",
+        "status": "open",
+        "weather": "10°C to 21°C · Pre-monsoon haze building · Warm",
+        "crowds": "Medium",
+        "price_note": "Standard pricing",
+        "score": 3,
+        "verdict": "Still open and pleasant, but haze softens the views. Go in the first half of the month before the monsoon arrives."
+      },
+      {
+        "month": "July",
+        "status": "closed",
+        "weather": "Monsoon · Heavy rain · Landslide risk",
+        "crowds": "No departures",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Closed. Monsoon makes the Garhwal approach roads unreliable."
+      },
+      {
+        "month": "August",
+        "status": "closed",
+        "weather": "Peak monsoon · Persistent rain",
+        "crowds": "No departures",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "Closed. No departures."
+      },
+      {
+        "month": "September",
+        "status": "closed",
+        "weather": "Monsoon withdrawing · Roads still settling",
+        "crowds": "No departures",
+        "price_note": "N/A",
+        "score": 0,
+        "verdict": "No departures. The post-monsoon window opens in October."
+      },
+      {
+        "month": "October",
+        "status": "open",
+        "weather": "2°C to 15°C · Post-monsoon clarity · Crisp air",
+        "crowds": "High — peak autumn",
+        "price_note": "Peak pricing",
+        "score": 5,
+        "verdict": "Equal best. The clearest air of the year over the Chaukhamba and Nanda Devi ranges, with the meadows still green."
+      },
+      {
+        "month": "November",
+        "status": "open",
+        "weather": "−2°C to 12°C · Cold nights · Exceptional visibility",
+        "crowds": "Medium",
+        "price_note": "Standard pricing",
+        "score": 5,
+        "verdict": "The connoisseur's month. Cold, quiet and startlingly clear, with the first snow sometimes dusting Tungnath late in the month."
+      },
+      {
+        "month": "December",
+        "status": "limited",
+        "weather": "−5°C to 8°C · Early snow · Road access weather-dependent",
+        "crowds": "Low",
+        "price_note": "Low pricing",
+        "score": 3,
+        "verdict": "Runs while the road stays open, and early snow on the temple is a genuine draw — but departures can be called off at short notice if Chopta gets cut off."
+      }
+    ],
+    "quick_facts": [
+      {
+        "label": "Trek Open",
+        "value": "March – June, October – December"
+      },
+      {
+        "label": "Best Months",
+        "value": "April & November"
+      },
+      {
+        "label": "Max Altitude",
+        "value": "3,680 m (Tungnath)"
+      },
+      {
+        "label": "Difficulty",
+        "value": "Easy to Moderate"
+      },
+      {
+        "label": "Trek Duration",
+        "value": "3 nights / 4 days"
+      },
+      {
+        "label": "Highlights",
+        "value": "Deoriatal · Chopta · Tungnath temple"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Is Chopta–Tungnath doable as a weekend trip?",
+        "a": "Yes — at 3 nights / 4 days from Haridwar it is the shortest high trek Junegiri Yatra runs, which is why it works as a long weekend. It is graded Easy to Moderate, so it suits people who want a Himalayan trek without taking a full week off."
+      },
+      {
+        "q": "Can I visit Tungnath temple in winter?",
+        "a": "The temple closes for winter and the deity is moved to Mukkumath, and the Chopta road itself is often blocked by snow in January and February. December departures run while access holds but can be cancelled at short notice. For a guaranteed snow trek in mid-winter, Kedarkantha or Brahmatal are the ones that run."
+      },
+      {
+        "q": "April or November — which is better?",
+        "a": "April for colour: rhododendron in full bloom through the forest below Chopta. November for clarity: the sharpest mountain views of the year, fewer people, and a chance of early snow on the temple. Both score equally; it depends whether you want the trail or the skyline at its best."
+      }
+    ]
   }
 ]

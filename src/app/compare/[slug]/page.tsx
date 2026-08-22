@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { withComparisonPrices } from '@/lib/data';
 import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import comparisonsData from '../../../../data/comparisons.json';
@@ -56,7 +57,8 @@ function getRelated(current: Comparison): RelatedComparison[] {
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const item = (comparisonsData as Comparison[]).find((c) => c.slug === slug);
+  const raw = (comparisonsData as Comparison[]).find((c) => c.slug === slug);
+  const item = raw ? withComparisonPrices(raw) : undefined;
   if (!item) notFound();
   return <ComparePage comparison={item} related={getRelated(item)} />;
 }

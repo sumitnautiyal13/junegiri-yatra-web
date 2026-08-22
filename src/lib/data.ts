@@ -122,3 +122,22 @@ export function packagePriceLabel(slug: string): string | undefined {
   const price = getPackageBySlug(slug)?.price_from;
   return price === undefined ? undefined : `₹${price.toLocaleString('en-IN')}`;
 }
+
+/**
+ * Comparison pages store item_a/item_b prices alongside the package slug, and
+ * 17 of them had drifted from the package they compare — Kedarkantha shown at
+ * ₹4,000 against a ₹9,500 package, Kedarnath helicopter at ₹24,000 against
+ * ₹60,000. Deriving them keeps a comparison honest against the page it links to.
+ */
+type PricedComparisonItem = { slug?: string; price?: number };
+
+export function withComparisonPrices<
+  T extends { item_a?: PricedComparisonItem; item_b?: PricedComparisonItem },
+>(c: T): T {
+  const fix = (item?: PricedComparisonItem) => {
+    if (!item?.slug) return item;
+    const price = getPackageBySlug(item.slug)?.price_from;
+    return price !== undefined && price !== item.price ? { ...item, price } : item;
+  };
+  return { ...c, item_a: fix(c.item_a), item_b: fix(c.item_b) };
+}
