@@ -37,7 +37,6 @@ const CITY_ROUTE_MAP: Record<string, string> = {
   'valley-of-flowers-trek-4n-5d': '/valley-of-flowers-from/',
   'mussoorie-dehradun-3n-4d': '/mussoorie-from/',
   'nainital-jim-corbett-4n-5d': '/nainital-from/',
-  'nainital-corbett-tour-3n-4d': '/nainital-from/',
   'varanasi-prayagraj-spiritual-3n-4d': '/varanasi-from/',
   'bali-7d6n-party-escape': '/bali-from/',
 };

@@ -34,8 +34,7 @@ const SCHEMA = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Singapore Package', item: 'https://junegiriyatra.com/packages/singapore-tour-5n-6d/' },
-        { '@type': 'ListItem', position: 3, name: 'From Your City', item: 'https://junegiriyatra.com/singapore-from/' },
+        { '@type': 'ListItem', position: 2, name: 'Singapore Tours', item: 'https://junegiriyatra.com/singapore-from/' },
       ],
     },
   ],
@@ -70,7 +69,7 @@ export default function SingaporeFromIndex() {
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span>
-            <Link href="/packages/singapore-tour-5n-6d/">Singapore Package</Link><span>›</span>
+            <span>Singapore Tours</span><span>›</span>
             <span>From Your City</span>
           </nav>
           <h1 className="city-hero-h1">

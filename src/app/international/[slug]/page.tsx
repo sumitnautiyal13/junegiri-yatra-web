@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { fitDescription } from '@/lib/seoMeta';
+import { fitDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import IntlPackageDetail, { type IntlPkg } from '@/components/IntlPackageDetail';
 import type { IntlCity } from '@/components/IntlCityPage';
@@ -26,7 +26,7 @@ export async function generateMetadata({
   if (!pkg) return { title: 'Not Found' };
 
   return {
-    title: `${pkg.name} | ${pkg.duration} India Tour | Junegiri Yatra`,
+    title: fitTitle(pkg.name, [`— ${pkg.duration} India tour`]),
     description: fitDescription(
       `${pkg.duration} · ${pkg.destinations_short} · from $${pkg.intl_price_usd}/person.`,
       ['Private guide, 3-star hotels and airport transfers included.'],

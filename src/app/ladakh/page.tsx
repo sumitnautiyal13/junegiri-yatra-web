@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Ladakh Travel Guide 2026 | Pangong Lake · Nubra Valley · Leh | Junegiri Yatra',
-  description: 'Complete Ladakh travel guide — Pangong Tso, Nubra Valley, Khardung La, Leh Palace, Diskit Monastery. Expert-guided tours from Leh. Plan your Ladakh trip with Junegiri Yatra.',
+  title: 'Ladakh Travel Guide 2026 — Pangong, Nubra & Leh',
+  description: 'Complete Ladakh travel guide — Pangong Tso, Nubra Valley, Khardung La, Leh Palace, Diskit Monastery. Expert-guided tours from Leh. Plan your Ladakh trip with',
   alternates: { canonical: 'https://junegiriyatra.com/ladakh/' },
   openGraph: {
     title: 'Ladakh Travel Guide 2026 | Pangong Lake · Nubra Valley · Leh | Junegiri Yatra',

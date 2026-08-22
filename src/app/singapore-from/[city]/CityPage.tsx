@@ -125,7 +125,7 @@ export default function SingaporeCityPage({ city }: Props) {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Singapore Package', item: 'https://junegiriyatra.com/packages/singapore-tour-5n-6d/' },
+          { '@type': 'ListItem', position: 2, name: 'Singapore Tours', item: 'https://junegiriyatra.com/singapore-from/' },
           { '@type': 'ListItem', position: 3, name: `From ${city.name}`, item: `https://junegiriyatra.com/singapore-from/${city.slug}/` },
         ],
       },
@@ -148,7 +148,7 @@ export default function SingaporeCityPage({ city }: Props) {
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span>
-            <Link href="/packages/singapore-tour-5n-6d/">Singapore Package</Link><span>›</span>
+            <Link href="/singapore-from/">Singapore Tours</Link><span>›</span>
             <span>From {city.name}</span>
           </nav>
 
@@ -170,9 +170,6 @@ export default function SingaporeCityPage({ city }: Props) {
             >
               📲 WhatsApp from {city.name}
             </WaLink>
-            <Link href="/packages/singapore-tour-5n-6d/" className="btn btn-outline">
-              📋 View Full Package
-            </Link>
           </div>
         </div>
       </section>

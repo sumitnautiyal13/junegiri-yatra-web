@@ -386,8 +386,12 @@ export default function InternationalHubPage() {
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {TOP_CITIES_FOR_HUB.map((city) => {
-              // Check if this city exists in data
+              // Only render a tile when the city actually has a page. The lookup below
+              // already existed but its result was ignored, so dubai and kuala-lumpur —
+              // present in TOP_CITIES_FOR_HUB but absent from international-cities.json —
+              // were rendering links straight into a 404.
               const cityData = intlCities.find((c) => c.slug === city.slug);
+              if (!cityData) return null;
               const href = `/india-trek-packages/from/${city.slug}/`;
               return (
                 <Link

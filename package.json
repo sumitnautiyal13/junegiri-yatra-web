@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seo-check": "node scripts/seo-check.mjs",
+    "seo-check:all": "node scripts/seo-check.mjs --all"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

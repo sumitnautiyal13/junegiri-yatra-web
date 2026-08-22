@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import HomePageClient from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: 'Junegiri Yatra | Himalayan Treks, India Tours & Sacred Yatras 2026',
+  title: 'Himalayan Treks, India Tours & Sacred Yatras 2026',
   description:
     "Himalayan treks, Char Dham Yatra, Golden Triangle & yoga retreats — all-inclusive from Haridwar since 2017. 4.8★ 312 reviews. Book on WhatsApp.",
   keywords:

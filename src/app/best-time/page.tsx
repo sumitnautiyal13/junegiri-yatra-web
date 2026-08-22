@@ -14,7 +14,7 @@ import bestTimeData from '../../../data/best-time.json';
  */
 
 export const metadata: Metadata = {
-  title: 'Best Time to Visit Uttarakhand & Himachal 2026 | Month Guides',
+  title: 'Best Time to Visit Uttarakhand & Himachal — Month Guides',
   description:
     'Month-by-month guides to Kedarnath, Char Dham, Valley of Flowers, Kedarkantha and 21 more Himalayan destinations — weather, crowds and price.',
   alternates: { canonical: 'https://junegiriyatra.com/best-time/' },

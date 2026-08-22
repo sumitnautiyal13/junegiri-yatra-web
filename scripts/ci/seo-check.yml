@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# NOT ACTIVE YET. Move this file to .github/workflows/seo-check.yml to enable it.
+#
+# It lives here because pushing anything under .github/workflows/ requires the
+# `workflow` OAuth scope, which the current gh token does not have — GitHub
+# rejects the entire push, not just that file. Parking it here keeps the config
+# versioned without blocking ordinary commits.
+#
+# To activate:
+#     gh auth refresh -h github.com -s workflow      # one-time, opens a browser
+#     mkdir -p .github/workflows
+#     git mv scripts/ci/seo-check.yml .github/workflows/seo-check.yml
+#     git commit -m "ci: enable SEO check workflow" && git push origin main
+#
+# Until then the guard still runs locally and pre-deploy:
+#     npm run seo-check        # fast sample
+#     npm run seo-check:all    # every prerendered page
+# ─────────────────────────────────────────────────────────────────────────────
+
+name: SEO check
+
+# Guards against the defect class that has shipped four separate times:
+# a link or BreadcrumbList entry pointing at a URL nobody built.
+# Runs against the real build output, so it sees what a crawler would.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  seo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx next build
+      - run: node scripts/seo-check.mjs --all

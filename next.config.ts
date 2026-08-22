@@ -102,7 +102,8 @@ const nextConfig: NextConfig = {
       // — redirect rules removed so generateStaticParams serves the hub page correctly.
       // himalayan-treks has a dedicated top-level route (/himalayan-treks/) so redirect stays.
       { source: '/packages/himalayan-treks/', destination: '/himalayan-treks/', permanent: true },
-      { source: '/packages/international/', destination: '/packages/thailand-tour-7n-8d/', permanent: true },
+      // Was pointing at /packages/thailand-tour-7n-8d/, which never existed — a 301 into a 404.
+      { source: '/packages/international/', destination: '/international/', permanent: true },
       // Blog-post related_package slugs that were wrong — redirect old crawled URLs
       { source: '/packages/kedarnath-yatra-5n-6d/', destination: '/packages/kedarnath-yatra-3n-4d/', permanent: true },
       { source: '/packages/kedarkantha-trek-5d/', destination: '/packages/kedarkantha-trek-5n-6d/', permanent: true },

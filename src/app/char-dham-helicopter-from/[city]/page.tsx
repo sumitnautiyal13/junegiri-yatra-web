@@ -42,6 +42,8 @@ const CHAR_DHAM_HELI_CONFIG: DestinationConfig = {
   destination: 'Char Dham Yatra by Helicopter',
   destinationSlug: 'char-dham-helicopter',
   routeBase: '/char-dham-helicopter-from/',
+  // No hub page exists for this route — breadcrumb parents to the Char Dham hub instead.
+  hubHref: '/char-dham-from/',
   heroImage: '/images/kedarnath2.webp',
   packageSlug: 'char-dham-helicopter-7n-8d',
   basePrice: 250000,

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { clampDescription } from '@/lib/seoMeta';
+import { clampDescription, fitTitle } from '@/lib/seoMeta';
 import { notFound } from 'next/navigation';
 import { getAllPackageSlugs, getPackageBySlug, getAllHubSlugs, getHubBySlug } from '@/lib/data';
 import PackageDetailPage from './PackageDetailPage';
@@ -23,14 +23,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!item) return {};
 
   return {
-    title: `${item.title} | Junegiri Yatra`,
+    // Hubs carry `name`, packages carry `title`. Before this fallback existed the
+    // template interpolated `undefined`, and four indexable hub pages shipped with
+    // the literal title "undefined | Junegiri Yatra" — including
+    // /packages/char-dham-yatra/, which llms.txt links to.
+    // Brand suffix is offered as an extra, so fitTitle appends it only when there is
+    // room — short hub titles get it, long package titles do not.
+    title: fitTitle(item.title ?? item.name ?? '', ['| Junegiri Yatra']),
     description: clampDescription(item.meta_description),
     keywords: item.keywords,
     alternates: {
       canonical: `https://junegiriyatra.com/packages/${slug}/`,
     },
     openGraph: {
-      title: `${item.title} | Junegiri Yatra`,
+      title: `${item.title ?? item.name ?? ''} | Junegiri Yatra`,
       description: item.meta_description,
       url: `https://junegiriyatra.com/packages/${slug}/`,
       images: [{ url: item.hero_image }],

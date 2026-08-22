@@ -21,6 +21,10 @@ export interface DestinationConfig {
   destination: string;          // "Kedarnath"
   destinationSlug: string;      // "kedarnath"
   routeBase: string;            // "/kedarnath-from/"
+  /** Breadcrumb parent, when the route has no hub page of its own.
+   *  char-dham-helicopter-from is the only dest route without a hub (18 of 19 have one),
+   *  so its breadcrumb pointed at a 404 on all 333 city pages. Defaults to routeBase. */
+  hubHref?: string;
   heroImage: string;
   packageSlug: string;          // slug to find in packages array
   basePrice: number;
@@ -95,7 +99,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-          { '@type': 'ListItem', position: 2, name: config.destination, item: `https://junegiriyatra.com${config.routeBase}` },
+          { '@type': 'ListItem', position: 2, name: config.destination, item: `https://junegiriyatra.com${config.hubHref ?? config.routeBase}` },
           { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com${config.routeBase}${city.slug}/` },
         ],
       },
@@ -142,7 +146,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
             <span>›</span>
-            <Link href={config.routeBase}>{config.destination}</Link>
+            <Link href={config.hubHref ?? config.routeBase}>{config.destination}</Link>
             <span>›</span>
             <span>from {city.name}</span>
           </nav>

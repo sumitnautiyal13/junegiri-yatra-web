@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Payment & Bank Details | Junegiri Yatra',
   description:
-    'Bank account details to pay for your Junegiri Yatra trip — Char Dham Yatra, Himalayan treks and India tours. Account name, number and IFSC for NEFT, IMPS, RTGS or UPI transfers.',
+    'Bank account details to pay for your Junegiri Yatra trip — Char Dham Yatra, Himalayan treks and India tours. Account name, number and IFSC for NEFT, IMPS, RTGS',
   alternates: { canonical: 'https://junegiriyatra.com/payment/' },
   openGraph: {
     title: 'Payment & Bank Details | Junegiri Yatra',

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { fitDescription } from '@/lib/seoMeta';
+import { fitDescription, fitTitle } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ location:
   if (!data) return {};
   const loc = location.charAt(0).toUpperCase() + location.slice(1);
   return {
-    title: `Yoga Teacher Training in ${loc} | 100hr 200hr 300hr TTC | Junegiri Yatra`,
+    title: fitTitle(`Yoga Teacher Training in ${loc}`, ['— 100/200/300hr TTC']),
     description: fitDescription(
       `Yoga Alliance certified TTC in ${loc} — 100, 200 or 300-hour courses.`,
       ['Multi-style Hatha, Ashtanga and Vinyasa. All-inclusive.'],

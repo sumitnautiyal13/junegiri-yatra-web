@@ -34,8 +34,7 @@ const SCHEMA = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Dubai Package', item: 'https://junegiriyatra.com/packages/dubai-tour-5n-6d/' },
-        { '@type': 'ListItem', position: 3, name: 'From Your City', item: 'https://junegiriyatra.com/dubai-from/' },
+        { '@type': 'ListItem', position: 2, name: 'Dubai Tours', item: 'https://junegiriyatra.com/dubai-from/' },
       ],
     },
   ],
@@ -70,7 +69,7 @@ export default function DubaiFromIndex() {
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span>
-            <Link href="/packages/dubai-tour-5n-6d/">Dubai Package</Link><span>›</span>
+            <span>Dubai Tours</span><span>›</span>
             <span>From Your City</span>
           </nav>
           <h1 className="city-hero-h1">

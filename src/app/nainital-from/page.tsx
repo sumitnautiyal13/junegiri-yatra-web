@@ -39,7 +39,7 @@ const SCHEMA = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Nainital Package', item: 'https://junegiriyatra.com/packages/nainital-corbett-tour-3n-4d/' },
+        { '@type': 'ListItem', position: 2, name: 'Nainital Package', item: 'https://junegiriyatra.com/packages/nainital-jim-corbett-4n-5d/' },
         { '@type': 'ListItem', position: 3, name: 'From Your City', item: 'https://junegiriyatra.com/nainital-from/' },
       ],
     },
@@ -79,7 +79,7 @@ export default function NainitalFromIndex() {
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link>
             <span>›</span>
-            <Link href="/packages/nainital-corbett-tour-3n-4d/">Nainital</Link>
+            <Link href="/packages/nainital-jim-corbett-4n-5d/">Nainital</Link>
             <span>›</span>
             <span>From Your City</span>
           </nav>

@@ -125,7 +125,7 @@ export default function ThailandCityPage({ city }: Props) {
         '@type': 'BreadcrumbList',
         itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-          { '@type': 'ListItem', position: 2, name: 'Thailand Package', item: 'https://junegiriyatra.com/packages/thailand-tour-7n-8d/' },
+          { '@type': 'ListItem', position: 2, name: 'Thailand Tours', item: 'https://junegiriyatra.com/thailand-from/' },
           { '@type': 'ListItem', position: 3, name: `From ${city.name}`, item: `https://junegiriyatra.com/thailand-from/${city.slug}/` },
         ],
       },
@@ -148,7 +148,7 @@ export default function ThailandCityPage({ city }: Props) {
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span>
-            <Link href="/packages/thailand-tour-7n-8d/">Thailand Package</Link><span>›</span>
+            <Link href="/thailand-from/">Thailand Tours</Link><span>›</span>
             <span>From {city.name}</span>
           </nav>
 
@@ -170,9 +170,6 @@ export default function ThailandCityPage({ city }: Props) {
             >
               📲 WhatsApp from {city.name}
             </WaLink>
-            <Link href="/packages/thailand-tour-7n-8d/" className="btn btn-outline">
-              📋 View Full Package
-            </Link>
           </div>
         </div>
       </section>

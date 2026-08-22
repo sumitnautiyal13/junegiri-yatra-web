@@ -34,8 +34,7 @@ const SCHEMA = {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://junegiriyatra.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Thailand Package', item: 'https://junegiriyatra.com/packages/thailand-tour-7n-8d/' },
-        { '@type': 'ListItem', position: 3, name: 'From Your City', item: 'https://junegiriyatra.com/thailand-from/' },
+        { '@type': 'ListItem', position: 2, name: 'Thailand Tours', item: 'https://junegiriyatra.com/thailand-from/' },
       ],
     },
   ],
@@ -70,7 +69,7 @@ export default function ThailandFromIndex() {
         <div className="container city-hero-inner">
           <nav className="city-breadcrumb" aria-label="Breadcrumb">
             <Link href="/">Home</Link><span>›</span>
-            <Link href="/packages/thailand-tour-7n-8d/">Thailand Package</Link><span>›</span>
+            <span>Thailand Tours</span><span>›</span>
             <span>From Your City</span>
           </nav>
           <h1 className="city-hero-h1">

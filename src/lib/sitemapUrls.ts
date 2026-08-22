@@ -72,11 +72,13 @@ const BLOG_UPDATED = maxDate(blogData.map((p) => p.published));
  */
 const CITY_PAGE_UPDATED = PACKAGES_UPDATED;
 
-const DEST_ROUTES = [
+const DEST_ROUTES: Array<{ index: string; priority: number; hasHub?: boolean }> = [
   { index: '/char-dham-from/',            priority: 0.9 },
   { index: '/kedarnath-from/',            priority: 0.9 },
   { index: '/kedarnath-helicopter-from/', priority: 0.9 },
-  { index: '/char-dham-helicopter-from/', priority: 0.9 },
+  // hasHub:false — this route has [city] pages but no hub page, so the index URL
+  // itself 404s. Its city pages are still emitted below; only the index is skipped.
+  { index: '/char-dham-helicopter-from/', priority: 0.9, hasHub: false },
   { index: '/badrinath-from/',            priority: 0.8 },
   { index: '/do-dham-from/',              priority: 0.8 },
   { index: '/rishikesh-from/',            priority: 0.8 },
@@ -123,6 +125,7 @@ export function contentUrls(): SitemapEntry[] {
 
   // Destination index pages (their city pages live in the dest-from child).
   for (const dest of DEST_ROUTES) {
+    if (dest.hasHub === false) continue;
     urls.push({ url: `${BASE}${dest.index}`, lastmod: CITY_PAGE_UPDATED, changefreq: 'monthly', priority: dest.priority });
   }
 

@@ -6,9 +6,9 @@ import WaLink from '@/components/WaLink';
 import yogaData from '../../../data/yoga-programs.json';
 
 export const metadata: Metadata = {
-  title: 'Yoga Teacher Training in India & Bali | 100hr 200hr 300hr TTC | Junegiri Yatra',
+  title: 'Yoga Teacher Training in India & Bali — 100/200/300hr TTC',
   description:
-    'Yoga Alliance certified Teacher Training Courses (TTC) in Rishikesh, Bali & Goa. 100hr, 200hr & 300hr programs — multi-style Hatha, Ashtanga, Vinyasa. All-inclusive. Book with India\'s trusted travel partner.',
+    'Yoga Alliance certified Teacher Training Courses in Rishikesh, Bali & Goa — 100hr, 200hr & 300hr. Multi-style Hatha, Ashtanga and Vinyasa.',
   keywords: [
     'yoga teacher training India',
     'yoga TTC Rishikesh',

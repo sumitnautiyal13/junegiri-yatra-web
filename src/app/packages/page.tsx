@@ -4,7 +4,7 @@ import Image from 'next/image';
 import packagesData from '../../../data/packages.json';
 
 export const metadata: Metadata = {
-  title: 'All Tour Packages 2026 | Treks, Yatras & Tours | Junegiri Yatra',
+  title: 'All Tour Packages 2026 — Treks, Yatras & Tours',
   description:
     'Himalayan treks, Char Dham Yatra, Rishikesh adventures, Golden Triangle, Rajasthan tours and yoga retreats. All-inclusive from ₹2,500/person.',
   alternates: { canonical: 'https://junegiriyatra.com/packages/' },

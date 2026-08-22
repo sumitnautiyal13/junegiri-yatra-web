@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { clampDescription } from '@/lib/seoMeta';
 import type { Metadata } from 'next';
 import { getPackageBySlug } from '@/lib/data';
 import trekSeasons from '../../../../../data/trek-seasons.json';
@@ -33,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : 'https://junegiriyatra.com/images/trek_himalaya.webp';
   return {
     title: `${monthData.title} | Junegiri Yatra`,
-    description: monthData.meta_description,
+    description: clampDescription(monthData.meta_description),
     alternates: { canonical: `https://junegiriyatra.com/packages/${slug}/${month}/` },
     openGraph: {
       title: `${monthData.title} | Junegiri Yatra`,
