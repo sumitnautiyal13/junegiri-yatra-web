@@ -516,10 +516,32 @@ export default function BlogPostPage({
           color: #111827;
         }
         .content-section table {
+          width: 100%;
+          border-collapse: collapse;
           font-size: 0.9rem;
+          margin: 20px 0;
           border-radius: 8px;
           overflow: hidden;
+          display: block;
+          overflow-x: auto;
         }
+        .content-section thead th {
+          background: #fff7ed;
+          color: #92400e;
+          text-align: left;
+          font-weight: 700;
+          font-size: 0.82rem;
+          text-transform: uppercase;
+          letter-spacing: 0.03em;
+        }
+        .content-section th,
+        .content-section td {
+          border: 1px solid #f0e6d8;
+          padding: 10px 14px;
+          vertical-align: top;
+        }
+        .content-section tbody tr:nth-child(even) { background: #fcfaf6; }
+        .content-section td strong { color: #b45309; }
 
         /* ---- Sidebar ---- */
         .bp-sidebar {
