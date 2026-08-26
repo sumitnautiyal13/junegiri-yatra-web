@@ -4,6 +4,16 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import blogData from '../../../../data/blog-posts.json';
+import packagesData from '../../../../data/packages.json';
+
+interface RelatedPkg {
+  slug: string;
+  name: string;
+  duration?: string;
+  hero_image?: string;
+  price_from?: number;
+  intl_price_usd?: number;
+}
 
 export interface BlogPost {
   slug: string;
@@ -48,8 +58,20 @@ export default function BlogPostPage({
     .filter((p) => p.category === post.category && p.slug !== post.slug)
     .slice(0, 3);
 
+  // Pull the actual related package so blog CTAs show a real, priced product (commercial conversion).
+  const relatedPkg = (packagesData as RelatedPkg[]).find(
+    (p) => p.slug === post.related_package
+  );
+  const pkgName = relatedPkg?.name || 'this package';
+  const priceInr =
+    relatedPkg?.price_from != null
+      ? `₹${relatedPkg.price_from.toLocaleString('en-IN')}`
+      : null;
+  const priceUsd =
+    relatedPkg?.intl_price_usd != null ? `$${relatedPkg.intl_price_usd}` : null;
+
   const whatsappMsg = encodeURIComponent(
-    `Hi! I read your blog post "${post.title}" and I'm interested in the ${post.related_package} package. Can you share details?`
+    `Hi! I read your blog post "${post.title}" and I'm interested in the ${pkgName} package. Can you share details and current pricing?`
   );
   const whatsappUrl = `https://wa.me/919873897652?text=${whatsappMsg}`;
 
@@ -169,10 +191,31 @@ export default function BlogPostPage({
           {/* Sidebar CTA */}
           <aside className="bp-sidebar">
             <div className="bp-sidebar-card">
-              <p className="bp-sidebar-label">Ready to travel?</p>
-              <h3 className="bp-sidebar-heading">Book This Experience</h3>
+              {relatedPkg?.hero_image && (
+                <Link href={`/packages/${post.related_package}/`} className="bp-sidebar-thumb">
+                  <Image
+                    src={relatedPkg.hero_image}
+                    alt={pkgName}
+                    fill
+                    sizes="320px"
+                    style={{ objectFit: 'cover' }}
+                  />
+                </Link>
+              )}
+              <p className="bp-sidebar-label">Recommended package</p>
+              <h3 className="bp-sidebar-heading">{pkgName}</h3>
+              {relatedPkg?.duration && (
+                <p className="bp-sidebar-duration">{relatedPkg.duration}</p>
+              )}
+              {priceInr && (
+                <p className="bp-sidebar-price">
+                  from <strong>{priceInr}</strong>
+                  {priceUsd && <span className="bp-sidebar-price-usd"> · {priceUsd}</span>}
+                  <span className="bp-sidebar-price-unit"> / person</span>
+                </p>
+              )}
               <p className="bp-sidebar-text">
-                Get a customised quote and expert advice from our yatra specialists.
+                Get a customised quote on WhatsApp — our Haridwar team replies within the hour.
               </p>
               <a
                 href={whatsappUrl}
@@ -189,7 +232,7 @@ export default function BlogPostPage({
                 href={`/packages/${post.related_package}/`}
                 className="bp-btn-package"
               >
-                View Package Details →
+                View Full Itinerary &amp; Price →
               </Link>
             </div>
           </aside>
@@ -257,7 +300,7 @@ export default function BlogPostPage({
               href={`/packages/${post.related_package}/`}
               className="bp-btn-package bp-btn-package--large"
             >
-              View {post.category} Package →
+              {priceInr ? `View ${pkgName} — from ${priceInr} →` : `View ${pkgName} →`}
             </Link>
           </div>
         </div>
@@ -492,6 +535,33 @@ export default function BlogPostPage({
           flex-direction: column;
           gap: 12px;
         }
+        .bp-sidebar-thumb {
+          position: relative;
+          display: block;
+          width: 100%;
+          height: 160px;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-bottom: 4px;
+        }
+        .bp-sidebar-duration {
+          font-size: 0.85rem;
+          color: #92400e;
+          font-weight: 600;
+          margin: -6px 0 0;
+        }
+        .bp-sidebar-price {
+          font-size: 1rem;
+          color: #374151;
+          margin: 0;
+        }
+        .bp-sidebar-price strong {
+          font-size: 1.35rem;
+          color: #b45309;
+          font-weight: 800;
+        }
+        .bp-sidebar-price-usd { color: #6b7280; font-weight: 600; }
+        .bp-sidebar-price-unit { color: #9ca3af; font-size: 0.82rem; }
         .bp-sidebar-label {
           font-size: 0.78rem;
           font-weight: 600;
