@@ -194,9 +194,11 @@ export function destFromUrls(): SitemapEntry[] {
   const urls: SitemapEntry[] = [];
   for (const dest of DEST_ROUTES) {
     for (const c of cities) {
+      // lastmod deliberately omitted: no honest per-city mutation timestamp
+      // exists, and a single date repeated across ~12.6k URLs is a distrust
+      // signal Google discounts. Omitting is cleaner than a uniform fake date.
       urls.push({
         url: `${BASE}${dest.index}${c.slug}/`,
-        lastmod: CITY_PAGE_UPDATED,
         changefreq: 'monthly',
         priority: Number((dest.priority - 0.1).toFixed(2)),
       });
@@ -210,7 +212,8 @@ export function trekFromUrls(): SitemapEntry[] {
   const urls: SitemapEntry[] = [];
   for (const slug of Object.keys(trekSeasonsData)) {
     for (const c of cities) {
-      urls.push({ url: `${BASE}/trek/${slug}/from/${c.slug}/`, lastmod: CITY_PAGE_UPDATED, changefreq: 'monthly', priority: 0.65 });
+      // lastmod omitted — see destFromUrls(): no honest per-city timestamp.
+      urls.push({ url: `${BASE}/trek/${slug}/from/${c.slug}/`, changefreq: 'monthly', priority: 0.65 });
     }
   }
   return urls;

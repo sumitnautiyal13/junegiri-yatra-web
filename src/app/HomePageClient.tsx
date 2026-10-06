@@ -181,8 +181,9 @@ export default function HomePageClient() {
               </h1>
 
               <p className="hero-sub" style={{ fontSize: 17, maxWidth: 600 }}>
-                Char Dham pilgrimages. Himalayan treks. Rishikesh adventures.
-                Crafted privately for your group — no compromises.
+                Junegiri Yatra is a Haridwar-based travel operator (since 2017)
+                crafting private Char Dham pilgrimages, Himalayan treks and
+                Rishikesh adventures for your group — no compromises.
               </p>
 
               <div className="hero-ctas">

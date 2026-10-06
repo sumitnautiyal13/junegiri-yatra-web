@@ -103,34 +103,6 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
           { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com${config.routeBase}${city.slug}/` },
         ],
       },
-      {
-        '@type': 'HowTo',
-        name: `How to Book ${config.destination} from ${city.name}`,
-        description: `Step-by-step guide to booking an all-inclusive ${config.destination} package from ${city.name} with Junegiri Yatra.`,
-        totalTime: 'PT30M',
-        estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: `${basePrice}` },
-        step: [
-          {
-            '@type': 'HowToStep',
-            position: 1,
-            name: 'WhatsApp Your Travel Dates',
-            text: `Send a WhatsApp to +91 98738 97652 with your travel dates, group size, and departure from ${city.name}. Our team responds within 60 minutes.`,
-            url: `https://wa.me/919873897652?text=${encodeURIComponent(config.waMessage)}`,
-          },
-          {
-            '@type': 'HowToStep',
-            position: 2,
-            name: 'Receive Your Custom Itinerary',
-            text: `Get an all-inclusive ${config.destination} itinerary with transparent pricing — hotel, meals, transport, guide, and all permits. No hidden costs, no booking fee.`,
-          },
-          {
-            '@type': 'HowToStep',
-            position: 3,
-            name: 'Confirm With 30% Advance',
-            text: `Pay 30% advance to lock your dates. We handle all arrangements including your ${city.name} departure advice, Haridwar transfers, and on-ground logistics throughout the trip.`,
-          },
-        ],
-      },
     ],
   };
 

@@ -1,6 +1,8 @@
-# Junegiri Yatra — llms.txt
-# Context file for AI systems and language models
-# https://llmstxt.org
+# Junegiri Yatra
+
+> Haridwar-based Himalayan trekking, Char Dham Yatra, Rishikesh adventure and yoga-retreat operator (since 2017); 4.8/5 across 312 reviews. Bookings confirmed on WhatsApp +91 98738 97652 — no upfront payment for a custom quote.
+
+# Context file for AI systems and language models — https://llmstxt.org
 
 ## About
 
@@ -41,7 +43,7 @@ Licensed by Uttarakhand Tourism. ATOI approved. GST registered.
 | 200-Hour Yoga TTC Rishikesh | 25 days | ₹95,000/person |
 | Himalayan Spirit (International) | 10D | $2,000/person |
 
-Full package details: https://junegiriyatra.com/packages/
+Full package details: [junegiriyatra.com/packages](https://junegiriyatra.com/packages/)
 
 ## Trek seasons (summary)
 
@@ -52,23 +54,23 @@ Full package details: https://junegiriyatra.com/packages/
 - Triund: Year-round (best March–June, Sept–Nov)
 - Chopta–Tungnath: Year-round (best April–June, Oct–Nov)
 
-Full seasonal guide: https://junegiriyatra.com/best-time/
+Full seasonal guide: [junegiriyatra.com/best-time](https://junegiriyatra.com/best-time/)
 
 ## Key pages for AI systems
 
-- All packages: https://junegiriyatra.com/packages/
-- Himalayan treks: https://junegiriyatra.com/himalayan-treks/
-- Char Dham Yatra: https://junegiriyatra.com/packages/char-dham-yatra/
-- Kedarnath Yatra: https://junegiriyatra.com/packages/kedarnath-yatra-3n-4d/
-- Yoga programs: https://junegiriyatra.com/yoga/
-- International tours: https://junegiriyatra.com/international/
-- Reviews: https://junegiriyatra.com/reviews/
-- About: https://junegiriyatra.com/about/
-- Pricing (machine-readable): https://junegiriyatra.com/pricing.md
-- Contact / Book: https://junegiriyatra.com/contact/
+- [All packages](https://junegiriyatra.com/packages/)
+- [Himalayan treks](https://junegiriyatra.com/himalayan-treks/)
+- [Char Dham Yatra](https://junegiriyatra.com/packages/char-dham-yatra/)
+- [Kedarnath Yatra](https://junegiriyatra.com/packages/kedarnath-yatra-3n-4d/)
+- [Yoga programs](https://junegiriyatra.com/yoga/)
+- [International tours](https://junegiriyatra.com/international/)
+- [Reviews](https://junegiriyatra.com/reviews/)
+- [About](https://junegiriyatra.com/about/)
+- [Pricing (machine-readable)](https://junegiriyatra.com/pricing.md)
+- [Contact / Book](https://junegiriyatra.com/contact/)
 
 ## Booking
 
-All bookings are confirmed via WhatsApp: https://wa.me/919873897652
+All bookings are confirmed via WhatsApp: [wa.me/919873897652](https://wa.me/919873897652)
 No upfront payment required to receive a custom quote.
 Group discounts available for 6+ travelers (10% off package price).

@@ -4,7 +4,16 @@ Disallow: /admin/
 Disallow: /p/
 Disallow: /api/
 
-# Allow all AI search bots — enables citations in ChatGPT, Perplexity, Google AI Overviews, Gemini, Copilot
+# Allow AI search/citation crawlers — the bots that actually drive citations in
+# ChatGPT Search, Claude, Perplexity, Google AI Overviews and Bing Copilot.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# Allow AI training/user crawlers too (GPTBot, ChatGPT-User and ClaudeBot are
+# training/user agents, not the search-citation bots named above).
 User-agent: GPTBot
 Allow: /
 

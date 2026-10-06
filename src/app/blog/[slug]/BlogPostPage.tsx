@@ -90,7 +90,7 @@ export default function BlogPostPage({
     datePublished: post.published,
     dateModified: (post as any).date_modified || post.published,
     author: {
-      '@type': 'Person',
+      '@type': 'Organization',
       name: post.author,
       url: 'https://junegiriyatra.com/about/',
     },
@@ -98,6 +98,12 @@ export default function BlogPostPage({
       '@type': 'Organization',
       name: 'Junegiri Yatra',
       url: 'https://junegiriyatra.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://junegiriyatra.com/logo.png',
+        width: 855,
+        height: 271,
+      },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',

@@ -93,34 +93,6 @@ export default function CityPage({ city, charDhamPkg }: Props) {
           },
         ],
       },
-      {
-        '@type': 'HowTo',
-        name: `How to Book Char Dham Yatra from ${city.name}`,
-        description: `Step-by-step guide to booking an all-inclusive Char Dham Yatra from ${city.name} with Junegiri Yatra.`,
-        totalTime: 'PT30M',
-        estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: `${basePrice}` },
-        step: [
-          {
-            '@type': 'HowToStep',
-            position: 1,
-            name: 'WhatsApp Your Travel Dates',
-            text: `Send a WhatsApp message to +91 98738 97652 with your preferred travel dates, group size, and departure city (${city.name}). Our Haridwar team responds within 60 minutes.`,
-            url: `https://wa.me/919873897652?text=Namaste!%20I%20want%20to%20book%20Char%20Dham%20Yatra%20from%20${encodeURIComponent(city.name)}`,
-          },
-          {
-            '@type': 'HowToStep',
-            position: 2,
-            name: 'Receive Your Custom Itinerary',
-            text: 'Get a fully customised Char Dham Yatra itinerary with transparent all-inclusive pricing — hotel, meals, transport, guide, and all permits. No hidden costs. No booking fee.',
-          },
-          {
-            '@type': 'HowToStep',
-            position: 3,
-            name: 'Confirm With 30% Advance',
-            text: `Pay 30% advance to confirm your seats. We handle all arrangements from your ${city.name} departure to the final drop — flights/train advice, Haridwar hotel, all 4 dhams, and return transfer.`,
-          },
-        ],
-      },
     ],
   };
 

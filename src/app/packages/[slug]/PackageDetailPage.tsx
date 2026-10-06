@@ -532,6 +532,25 @@ export default function PackageDetailPage({ pkg }: { pkg: Package }) {
                 },
               },
               {
+                '@type': 'Product',
+                name: pkg.name,
+                description: pkg.meta_description,
+                image: `https://junegiriyatra.com${pkg.hero_image}`,
+                brand: { '@type': 'Brand', name: 'Junegiri Yatra' },
+                offers: {
+                  '@type': 'Offer',
+                  price: pkg.price_from,
+                  priceCurrency: 'INR',
+                  availability: 'https://schema.org/InStock',
+                  url: `https://junegiriyatra.com${pkg.url}`,
+                  seller: {
+                    '@type': 'TravelAgency',
+                    name: 'Junegiri Yatra',
+                    url: 'https://junegiriyatra.com',
+                  },
+                },
+              },
+              {
                 '@type': 'BreadcrumbList',
                 itemListElement: breadcrumbs.map((b, i) => ({
                   '@type': 'ListItem',

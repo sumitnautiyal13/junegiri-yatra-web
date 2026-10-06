@@ -101,34 +101,6 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
           { '@type': 'ListItem', position: 3, name: `from ${city.name}`, item: `https://junegiriyatra.com/trek/${slug}/from/${city.slug}/` },
         ],
       },
-      {
-        '@type': 'HowTo',
-        name: `How to Book ${trekName} from ${city.name}`,
-        description: `Step-by-step guide to booking an all-inclusive ${trekName} package from ${city.name} with Junegiri Yatra.`,
-        totalTime: 'PT30M',
-        estimatedCost: { '@type': 'MonetaryAmount', currency: 'INR', value: `${price}` },
-        step: [
-          {
-            '@type': 'HowToStep',
-            position: 1,
-            name: 'WhatsApp Your Travel Dates',
-            text: `Send a WhatsApp to +91 98738 97652 with your preferred trekking dates, group size, and departure city (${city.name}). Our team responds within 60 minutes.`,
-            url: waLink,
-          },
-          {
-            '@type': 'HowToStep',
-            position: 2,
-            name: 'Receive Your Custom Trek Itinerary',
-            text: `Get a detailed ${trekName} itinerary with transparent all-inclusive pricing — accommodation, meals, guides, permits, and transport. No hidden costs.`,
-          },
-          {
-            '@type': 'HowToStep',
-            position: 3,
-            name: 'Confirm With 30% Advance',
-            text: `Pay 30% advance to lock your dates. We handle all arrangements including your ${city.name} departure advice, Haridwar transfers, and complete on-ground logistics.`,
-          },
-        ],
-      },
     ],
   };
 
