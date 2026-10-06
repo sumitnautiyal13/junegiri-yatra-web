@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { City, Package } from '@/types';
+import { cityReachSentence } from '@/lib/cityIntro';
 
 interface Props {
   city: City;
@@ -29,6 +30,7 @@ export default function CityPage({ city, charDhamPkg }: Props) {
 
   const waLink = `${WA_BASE}${encodeURIComponent(city.name)}`;
   const basePrice = charDhamPkg?.price_from ?? 19800;
+  const reachSentence = cityReachSentence(city);
 
   /* ── JSON-LD ─────────────────────────────────────────── */
   const jsonLd = {
@@ -134,6 +136,12 @@ export default function CityPage({ city, charDhamPkg }: Props) {
       <section className="city-hook">
         <div className="container">
           <p className="city-hook-text">✨ {city.cultural_hook}</p>
+          {reachSentence && (
+            <p className="city-intro-text">
+              {reachSentence} From Haridwar, our team runs the full Char Dham circuit —
+              Yamunotri, Gangotri, Kedarnath and Badrinath — with stay, transport and permits handled.
+            </p>
+          )}
         </div>
       </section>
 

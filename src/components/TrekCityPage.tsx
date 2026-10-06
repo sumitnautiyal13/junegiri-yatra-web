@@ -7,6 +7,7 @@ import type { City, Package } from '@/types';
 import WABookingCard from '@/components/WABookingCard';
 import { useCurrency } from '@/contexts/CurrencyContext';
 import { formatPrice } from '@/lib/currency';
+import { cityReachSentence } from '@/lib/cityIntro';
 
 interface TrekData {
   months: string[];
@@ -38,6 +39,7 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const { currency, geo } = useCurrency();
 
+  const reachSentence = cityReachSentence(city);
   const trekName = pkg?.name ?? slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
   const heroImage = pkg?.hero_image ?? '/images/trek_himalaya.webp';
   const price = pkg?.price_from ?? 9500;
@@ -158,6 +160,12 @@ export default function TrekCityPage({ city, slug, pkg, trekData }: Props) {
       <section className="city-hook">
         <div className="container">
           <p className="city-hook-text">✨ {city.cultural_hook}</p>
+          {reachSentence && (
+            <p className="city-intro-text">
+              {reachSentence} From Haridwar, our team runs your {trekName} — camps,
+              permits, guides and transport included.
+            </p>
+          )}
         </div>
       </section>
 

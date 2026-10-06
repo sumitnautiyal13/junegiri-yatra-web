@@ -9,6 +9,7 @@ import WABookingCard from '@/components/WABookingCard';
 import { useCurrency } from '@/contexts/CurrencyContext';
 import { formatPrice } from '@/lib/currency';
 import { bestTimeGuideHref } from '@/lib/bestTimeGuide';
+import { cityReachSentence } from '@/lib/cityIntro';
 
 /* ─── Config type ────────────────────────────────────────── */
 export interface DestinationHighlight {
@@ -53,6 +54,7 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
   const { currency, geo } = useCurrency();
   const basePrice = pkg?.price_from ?? config.basePrice;
   const waLink = `https://wa.me/919873897652?text=${encodeURIComponent(config.waMessage)}`;
+  const reachSentence = cityReachSentence(city);
 
   // Geo-aware display price
   const displayPrice = geo.isLoading
@@ -141,6 +143,12 @@ export default function DestinationCityPage({ city, pkg, config }: Props) {
       <section className="city-hook">
         <div className="container">
           <p className="city-hook-text">✨ {city.cultural_hook}</p>
+          {reachSentence && (
+            <p className="city-intro-text">
+              {reachSentence} Once you reach Haridwar, our local team handles your
+              entire {config.destination} itinerary — stay, transport, guide and permits.
+            </p>
+          )}
         </div>
       </section>
 

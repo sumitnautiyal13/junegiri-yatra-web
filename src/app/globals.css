@@ -963,6 +963,10 @@ footer a:hover { color: var(--gold2); }
   font-size: 0.98rem; color: var(--text);
   max-width: 800px; font-style: italic; line-height: 1.65;
 }
+.city-intro-text {
+  font-size: 0.95rem; color: var(--text2, var(--text));
+  max-width: 800px; line-height: 1.7; margin-top: 10px;
+}
 
 /* SHARED SECTION STYLES */
 .city-section { padding: 72px 0; }
