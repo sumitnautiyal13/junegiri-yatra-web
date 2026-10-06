@@ -142,6 +142,7 @@ export function contentUrls(): SitemapEntry[] {
   }
 
   urls.push({ url: `${BASE}/himalayan-treks/`, lastmod: PACKAGES_UPDATED, changefreq: 'monthly', priority: 0.9 });
+  urls.push({ url: `${BASE}/kedarnath-helicopter/`, lastmod: PACKAGES_UPDATED, changefreq: 'monthly', priority: 0.9 });
 
   // No honest timestamp in the data for these — lastmod deliberately omitted.
   urls.push({ url: `${BASE}/spiti-valley/`, changefreq: 'monthly', priority: 0.8 });
