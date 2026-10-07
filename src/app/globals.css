@@ -142,7 +142,7 @@ header.scrolled {
   box-shadow: 0 4px 16px rgba(37,211,102,.3);
 }
 .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(37,211,102,.4) !important; }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; border: none; background: transparent; }
+.hamburger { display: none; flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; padding: 8px; min-width: 44px; min-height: 44px; border: none; background: transparent; }
 .hamburger span { width: 24px; height: 2px; background: #fff; transition: all .3s; display: block; }
 
 /* ── BUTTONS ──────────────────────────────── */
@@ -1456,6 +1456,9 @@ footer a:hover { color: var(--gold2); }
   border-right: 1px solid var(--border);
 }
 
+/* Single-column menus (Yoga, Plan) shouldn't leave an empty grid slot */
+.mega-cols.cols-1 { grid-template-columns: 1fr; }
+
 /* Column */
 .mega-col { padding: 4px 12px; }
 .mega-col-heading {
@@ -1648,6 +1651,13 @@ footer a:hover { color: var(--gold2); }
   padding: 4px 8px 10px;
   background: rgba(255,255,255,0.02);
   border-radius: 10px; margin-bottom: 4px;
+}
+.mob-subgroup { display: flex; flex-direction: column; gap: 1px; }
+.mob-subgroup + .mob-subgroup { margin-top: 8px; }
+.mob-subhead {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold); margin: 6px 0 3px 10px;
 }
 .mob-item {
   display: flex; align-items: center; gap: 12px;

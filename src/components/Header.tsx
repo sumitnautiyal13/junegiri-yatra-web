@@ -26,6 +26,7 @@ interface MegaFeatured {
   price: string;
   href: string;
   waText: string;
+  cta?: string;
 }
 interface NavEntry {
   label: string;
@@ -33,101 +34,68 @@ interface NavEntry {
   mega?: { columns: MegaColumn[]; featured: MegaFeatured };
 }
 
-/* ─── Navigation data ────────────────────────────────────── */
+/* ─── Navigation data ────────────────────────────────────────
+   One axis at the top level — the visitor's TRIP INTENT. Each menu is a
+   single clean category (no product appears in two menus), capped at ~7
+   curated hero picks + a "View all" row + one featured card, in at most two
+   columns so the panel fits above the fold. Geography/season/budget are
+   filters on the hub pages, never top-level branches. URLs are unchanged. */
 const NAV: NavEntry[] = [
-  /* Consolidated entry. Adventures, Yoga, Heritage and International used to
-     be four separate top-level items, which pushed the desktop nav to nine
-     entries. They now live as columns here. Each column keeps a link to its
-     own category hub so those pages don't lose their sitewide internal link. */
   {
-    label: 'Packages',
-    href: '/packages/',
+    label: 'Char Dham & Yatras',
+    href: '/char-dham-from/',
     mega: {
       columns: [
         {
-          heading: 'Adventures & Escapes',
+          heading: 'Char Dham Circuit',
           items: [
-            { icon: '🚣', label: 'Adventure Pack — Rafting + Bungee', sub: '2N 3D · Grade III-IV · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
-            { icon: '🏕️', label: 'Weekend Escape — Rishikesh', sub: '1N 2D · Rafting · camping · bonfire · from ₹2,500', href: '/packages/rishikesh-weekend-1n-2d/' },
-            { icon: '⛷️', label: 'Auli Snow Trip', sub: 'Dec–Feb · skiing · Asia\'s longest gondola · from ₹9,500', href: '/packages/auli-snow-trip-3n-4d/', badge: 'Winter' },
-            { icon: '🏔️', label: 'Mussoorie & Dehradun', sub: '3N 4D · Queen of Hills · Kempty Falls · from ₹8,500', href: '/packages/mussoorie-dehradun-3n-4d/' },
-            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
-            { icon: '🌊', label: 'All Adventures & Escapes', sub: 'Rafting · bungee · hill stations · winter trips', href: '/packages/rishikesh-adventures/' },
+            { icon: '🕍', label: 'Char Dham Yatra 9N/10D', sub: 'All four dhams · from ₹19,800', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
+            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5N 6D · from ₹13,500', href: '/packages/do-dham-yatra-5n-6d/' },
+            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3N 4D · from ₹8,500', href: '/packages/kedarnath-yatra-3n-4d/' },
+            { icon: '🛕', label: 'Badrinath Yatra', sub: '2N 3D · Mana Village · from ₹6,500', href: '/packages/badrinath-yatra-2n-3d/' },
           ],
         },
         {
-          heading: 'Yoga & Wellness',
+          heading: 'By Helicopter & Spiritual',
           items: [
-            { icon: '🕉️', label: 'Rishikesh — 200-Hour TTC', sub: 'Himalayan ashram · Yoga Alliance RYT 200 · from ₹95,000', href: '/yoga/rishikesh/200hours/', badge: 'Authentic' },
-            { icon: '🌺', label: 'Bali — 200-Hour TTC', sub: 'Tropical villas · Aerial + Yin yoga · from $1,799', href: '/yoga/bali/200hours/', badge: 'Popular' },
-            { icon: '🏖️', label: 'Goa — 200-Hour TTC', sub: 'Beachside · Arabian Sea · from ₹1,09,000', href: '/yoga/goa/200hours/', badge: 'New' },
-            { icon: '🧘', label: 'Yoga Retreat 5N/6D — Rishikesh', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
-            { icon: '📋', label: 'All Yoga Programs', sub: '100hr · 200hr · 300hr — compare levels & locations', href: '/yoga/' },
-          ],
-        },
-        {
-          heading: 'Heritage & Culture',
-          items: [
-            { icon: '🏛️', label: 'Golden Triangle 5N/6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Classic' },
-            { icon: '🏰', label: 'Rajasthan Tour 6N/7D', sub: 'Jaipur · Jodhpur · Jaisalmer · from ₹21,000', href: '/packages/rajasthan-tour-6n-7d/', badge: 'New' },
-            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500', href: '/packages/taj-mahal-day-tour-from-delhi/' },
-            { icon: '🪔', label: 'Varanasi & Prayagraj', sub: '3N 4D · Ganga Aarti · ghats · Sangam · from ₹9,500', href: '/packages/varanasi-prayagraj-spiritual-3n-4d/' },
-            { icon: '🏆', label: 'All Heritage Tours', sub: 'Golden Triangle · Rajasthan · Taj · Varanasi', href: '/packages/golden-triangle/' },
-          ],
-        },
-        {
-          heading: 'International',
-          items: [
-            { icon: '🏝️', label: 'Bali, Nusa Penida & Gili 7D/6N', sub: 'Beaches · scuba · Gili nightlife · ATV · from $699', href: '/packages/bali-7d6n-party-escape/', badge: 'New' },
-            { icon: '🏔️', label: 'Himalayan Spirit 10D', sub: 'Rishikesh · Kedarkantha · Valley camp · from $2,000', href: '/international/himalayan-spirit-10d/', badge: 'Bestseller' },
-            { icon: '🌸', label: 'Sacred India Circuit 12D', sub: 'Agra · Kedarnath · Haridwar Ganga Aarti · from $2,600', href: '/international/sacred-india-circuit-12d/' },
-            { icon: '🌍', label: 'India Treks for Travellers', sub: 'Curated trips for international visitors', href: '/international/' },
-            { icon: '📍', label: 'All Departure Cities', sub: '40+ cities — UK · USA · Australia · Europe', href: '/india-trek-packages/' },
+            { icon: '🚁', label: 'Kedarnath by Helicopter', sub: 'Skip the trek · VVIP darshan · from ₹24,000', href: '/kedarnath-helicopter/', badge: 'Premium' },
+            { icon: '✨', label: 'Char Dham by Helicopter', sub: 'All 4 dhams · 7N 8D · from ₹2,50,000', href: '/packages/char-dham-helicopter-7n-8d/', badge: 'Luxury' },
+            { icon: '🪷', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Varanasi · from ₹14,500', href: '/packages/braj-bhoomi-yatra-5n-6d/' },
+            { icon: '📍', label: 'Yatras from your city', sub: '20 departure cities — Mumbai, Bangalore & more', href: '/char-dham-from/' },
           ],
         },
       ],
       featured: {
         image: '/images/kedarnath_temple_cover.webp',
-        badge: '🗂️ Browse Everything',
-        title: 'All 53 Tour Packages',
-        price: 'Treks · Yatras · Adventures · Yoga',
-        href: '/packages/',
-        waText: 'Namaste! I want help choosing the right package',
+        badge: '⭐ Most Popular',
+        title: 'Char Dham Yatra 9N / 10D',
+        price: 'From ₹19,800 / person',
+        href: '/packages/char-dham-yatra-9n-10d/',
+        waText: 'Namaste! I want to book Char Dham Yatra 9N/10D package',
       },
     },
   },
   {
-    label: 'Treks',
+    label: 'Himalayan Treks',
     href: '/himalayan-treks/',
     mega: {
       columns: [
         {
-          heading: 'Uttarakhand Treks',
+          heading: 'Uttarakhand',
           items: [
             { icon: '❄️', label: 'Kedarkantha Trek', sub: 'Dec–Apr · 3,810m · snow trails', href: '/packages/kedarkantha-trek-5n-6d/', badge: 'Bestseller' },
             { icon: '🌸', label: 'Valley of Flowers', sub: 'Jul–Sep · UNESCO · 300+ wildflowers', href: '/packages/valley-of-flowers-trek-4n-5d/', badge: 'UNESCO' },
             { icon: '🏕️', label: 'Har Ki Dun Trek', sub: 'Apr–Nov · Pandava route · 3,566m', href: '/packages/har-ki-dun-trek-5n-6d/' },
-            { icon: '🌄', label: 'Chopta–Tungnath Trek', sub: "Year-round · world's highest Shiva temple", href: '/packages/chopta-tungnath-trek-3n-4d/' },
-            { icon: '⛷️', label: 'Kuari Pass Trek', sub: "Feb–Jun · Lord Curzon's Trail · 3,812m", href: '/packages/kuari-pass-trek-4n-5d/' },
             { icon: '🗻', label: 'Roopkund Trek', sub: 'May–Oct · Mystery Lake · 4,800m', href: '/packages/roopkund-trek-7n-8d/' },
-            { icon: '🏔️', label: 'View All Treks', sub: 'Full list — Uttarakhand & Himachal Pradesh', href: '/himalayan-treks/' },
           ],
         },
         {
-          heading: 'Himachal Pradesh Treks',
+          heading: 'Himachal & more',
           items: [
-            { icon: '🏕️', label: 'Triund Trek', sub: 'Easy · 2,875m · Dharamshala · 1N/2D · from ₹3,500', href: '/packages/triund-trek-1n-2d/', badge: 'Easy' },
-            { icon: '🌊', label: 'Kareri Lake Trek', sub: 'Easy-Mod · 2,950m · Dharamshala · 3N/4D · from ₹7,500', href: '/packages/kareri-lake-trek-3n-4d/' },
-            { icon: '🏞️', label: 'Beas Kund Trek', sub: 'Easy · 3,700m · Manali · 2N/3D · from ₹6,500', href: '/packages/beas-kund-trek-2n-3d/' },
-            { icon: '🌅', label: 'Bhrigu Lake Trek', sub: 'Easy-Mod · 4,300m · Manali · 3N/4D · from ₹9,500', href: '/packages/bhrigu-lake-trek-3n-4d/' },
-            { icon: '🏔️', label: 'Hamta Pass Trek', sub: 'Moderate · 4,270m · Kullu to Spiti · 4N/5D · from ₹11,500', href: '/packages/hamta-pass-trek-4n-5d/', badge: 'New' },
-            { icon: '🧊', label: 'Indrahar Pass Trek', sub: 'Mod-Diff · 4,342m · Dhauladhar · 3N/4D · ₹8,500', href: '/packages/indrahar-pass-trek-3n-4d/' },
-            { icon: '🍎', label: 'Chandrakhani Pass Trek', sub: 'Moderate · 3,660m · Apple orchards · 3N/4D · ₹7,500', href: '/packages/chandrakhani-pass-trek-3n-4d/' },
-            { icon: '🌸', label: 'Rupin Pass Trek', sub: 'Mod-Diff · 4,650m · Snow bridges · 8N/9D · ₹16,500', href: '/packages/rupin-pass-trek-8n-9d/' },
-            { icon: '🏔️', label: 'Kanamo Peak', sub: 'Difficult · 5,964m · Spiti · 5N/6D · ₹19,500', href: '/packages/kanamo-peak-5n-6d/', badge: 'High Alt' },
-            { icon: '🗺️', label: 'Pin Parvati Pass', sub: 'Difficult · 5,319m · Kullu→Spiti · 10N/11D · ₹22,000', href: '/packages/pin-parvati-pass-10n-11d/' },
-            { icon: '🏔️', label: 'Spiti Valley Guide', sub: 'Cold desert · Key Monastery · Chandrataal · Kaza', href: '/spiti-valley/', badge: 'Guide' },
-            { icon: '🏔️', label: 'Ladakh Travel Guide', sub: 'Pangong Lake · Nubra Valley · Leh · Khardung La', href: '/ladakh/', badge: 'Guide' },
+            { icon: '🏔️', label: 'Hamta Pass Trek', sub: 'Moderate · 4,270m · Kullu to Spiti', href: '/packages/hamta-pass-trek-4n-5d/', badge: 'New' },
+            { icon: '🏕️', label: 'Triund Trek', sub: 'Easy · 2,875m · Dharamshala · 1N/2D', href: '/packages/triund-trek-1n-2d/', badge: 'Easy' },
+            { icon: '🌅', label: 'Bhrigu Lake Trek', sub: 'Easy-Mod · 4,300m · Manali · 3N/4D', href: '/packages/bhrigu-lake-trek-3n-4d/' },
+            { icon: '🧭', label: 'All 17 treks + difficulty', sub: 'Uttarakhand & Himachal · easy to challenging', href: '/himalayan-treks/' },
           ],
         },
       ],
@@ -142,46 +110,92 @@ const NAV: NavEntry[] = [
     },
   },
   {
-    label: 'Pilgrimages',
-    href: '/packages/char-dham-yatra/',
+    label: 'Tours & Getaways',
+    href: '/packages/',
     mega: {
       columns: [
         {
-          heading: 'Char Dham Circuit',
+          heading: 'Heritage & Classic India',
           items: [
-            { icon: '🕍', label: 'Char Dham Yatra 9N/10D', sub: 'Full circuit · Yamunotri · Gangotri · Kedarnath · Badrinath', href: '/packages/char-dham-yatra-9n-10d/', badge: 'Popular' },
-            { icon: '🔱', label: 'Do Dham — Kedarnath & Badrinath', sub: '5N 6D · from ₹13,500', href: '/packages/do-dham-yatra-5n-6d/' },
-            { icon: '⛺', label: 'Kedarnath Yatra', sub: '3N 4D · from ₹8,500', href: '/packages/kedarnath-yatra-3n-4d/' },
-            { icon: '🛕', label: 'Badrinath Yatra', sub: '2N 3D · Mana Village · from ₹6,500', href: '/packages/badrinath-yatra-2n-3d/' },
-            { icon: '🏔️', label: 'Yamunotri & Gangotri', sub: '4N 5D · 2 Dham · from ₹11,500', href: '/packages/yamunotri-gangotri-2-dham-4n-5d/' },
+            { icon: '🏛️', label: 'Golden Triangle 5N/6D', sub: 'Delhi · Agra · Jaipur · from ₹18,500', href: '/packages/golden-triangle-tour-5n-6d/', badge: 'Classic' },
+            { icon: '🏰', label: 'Rajasthan Tour Package 6N/7D', sub: 'Jaipur · Jodhpur · Jaisalmer · from ₹21,000', href: '/packages/rajasthan-tour-6n-7d/' },
+            { icon: '🕌', label: 'Taj Mahal Day Tour', sub: 'From Delhi · sunrise slot · from ₹6,500', href: '/packages/taj-mahal-day-tour-from-delhi/' },
+            { icon: '🪔', label: 'Varanasi & Prayagraj', sub: '3N 4D · Ganga Aarti · Sangam · from ₹9,500', href: '/packages/varanasi-prayagraj-spiritual-3n-4d/' },
           ],
         },
         {
-          heading: 'Spiritual & Pilgrim Tours',
+          heading: 'Hills, Adventure & Abroad',
           items: [
-            { icon: '🪷', label: 'Braj Bhoomi Yatra', sub: 'Mathura · Vrindavan · Ayodhya · Varanasi · from ₹14,500', href: '/packages/braj-bhoomi-yatra-5n-6d/', badge: 'New' },
-            { icon: '🌊', label: 'Haridwar & Rishikesh Spiritual', sub: 'Ganga Aarti · temples · yoga · from ₹7,500', href: '/packages/haridwar-rishikesh-spiritual-3n-4d/' },
-            { icon: '🚁', label: 'Kedarnath by Helicopter', sub: 'Skip the trek · VVIP darshan · from ₹24,000', href: '/packages/kedarnath-helicopter-2n-3d/', badge: 'Premium' },
-            { icon: '✨', label: 'Char Dham by Helicopter', sub: 'All 4 dhams · 7N 8D · from ₹65,000', href: '/packages/char-dham-helicopter-7n-8d/', badge: 'Luxury' },
-            { icon: '📍', label: 'From Your City', sub: '20 departure cities — Mumbai, Bangalore & more', href: '/char-dham-from/' },
+            { icon: '🚣', label: 'Rishikesh Adventure Pack', sub: '2N 3D · rafting · 83m bungee · from ₹5,500', href: '/packages/rishikesh-adventure-pack-2n-3d/', badge: 'Thrilling' },
+            { icon: '🏞️', label: 'Nainital & Jim Corbett', sub: '4N 5D · Naini Lake · tiger safari · from ₹11,000', href: '/packages/nainital-jim-corbett-4n-5d/' },
+            { icon: '🏝️', label: 'Bali, Nusa Penida & Gili', sub: '7D/6N · beaches · scuba · from $699', href: '/packages/bali-7d6n-party-escape/' },
+            { icon: '🗂️', label: 'All 53 tour packages', sub: 'Browse every trip with filters', href: '/packages/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/golden_triangle.webp',
+        badge: '🏛️ Classic',
+        title: 'Golden Triangle Tour',
+        price: 'From ₹18,500 / person',
+        href: '/packages/golden-triangle-tour-5n-6d/',
+        waText: 'Namaste! I want to enquire about the Golden Triangle Tour',
+      },
+    },
+  },
+  {
+    label: 'Yoga & Retreats',
+    href: '/yoga/',
+    mega: {
+      columns: [
+        {
+          heading: 'Teacher Training & Retreats',
+          items: [
+            { icon: '🕉️', label: 'Rishikesh — 200-Hour TTC', sub: 'Himalayan ashram · Yoga Alliance RYT 200 · from ₹95,000', href: '/yoga/rishikesh/200hours/', badge: 'Authentic' },
+            { icon: '🌺', label: 'Bali — 200-Hour TTC', sub: 'Tropical villas · Aerial + Yin · from $1,799', href: '/yoga/bali/200hours/', badge: 'Popular' },
+            { icon: '🏖️', label: 'Goa — 200-Hour TTC', sub: 'Beachside · Arabian Sea · from ₹1,09,000', href: '/yoga/goa/200hours/' },
+            { icon: '🧘', label: 'Yoga Retreat 5N/6D — Rishikesh', sub: 'Certified instructors · ashram stay · from ₹12,000', href: '/packages/rishikesh-yoga-retreat-5n-6d/', badge: 'Wellness' },
+            { icon: '📋', label: 'All yoga programs', sub: '100hr · 200hr · 300hr — compare levels', href: '/yoga/' },
           ],
         },
       ],
       featured: {
         image: '/images/kedarnath_temple_cover.webp',
-        badge: '⭐ Most Popular',
-        title: 'Char Dham Yatra 9N / 10D',
-        price: 'From ₹19,800 / person',
-        href: '/packages/char-dham-yatra-9n-10d/',
-        waText: 'Namaste! I want to book Char Dham Yatra 9N/10D package',
+        badge: '🕉️ Yoga Alliance',
+        title: 'Rishikesh 200-Hour TTC',
+        price: 'Certified RYT 200 · from ₹95,000',
+        href: '/yoga/rishikesh/200hours/',
+        waText: 'Namaste! I want details on the Rishikesh 200-Hour Yoga TTC',
       },
     },
   },
-  /* Compare surfaces the 21 side-by-side guides, previously reachable only
-     from the footer. Contact moved out of the primary nav — the WhatsApp CTA
-     beside it is the actual contact path, and /contact/ stays in the footer. */
-  { label: 'Compare', href: '/compare/' },
-  { label: 'Blog', href: '/blog/' },
+  {
+    label: 'Plan',
+    href: '/compare/',
+    mega: {
+      columns: [
+        {
+          heading: 'Decide with confidence',
+          items: [
+            { icon: '⚖️', label: 'Compare Trips', sub: 'Side-by-side guides — duration, cost, difficulty', href: '/compare/' },
+            { icon: '📅', label: 'Best Time to Visit', sub: 'Month-by-month seasons for every destination', href: '/best-time/' },
+            { icon: '📝', label: 'Travel Blog', sub: 'Costs, itineraries, packing & how-to guides', href: '/blog/' },
+            { icon: '⭐', label: 'Reviews', sub: '4.8★ from 312 travellers', href: '/reviews/' },
+            { icon: '🏔️', label: 'About Junegiri Yatra', sub: 'Haridwar operator since 2017 · ATOI licensed', href: '/about/' },
+          ],
+        },
+      ],
+      featured: {
+        image: '/images/golden_triangle.webp',
+        badge: '💬 Not sure where to start?',
+        title: 'Get a free custom quote',
+        price: 'Reply within the hour on WhatsApp',
+        href: '/compare/',
+        cta: 'Compare Trips',
+        waText: 'Namaste! I need help planning my India trip — can you suggest options?',
+      },
+    },
+  },
 ];
 
 /* ─── Component ──────────────────────────────────────────── */
@@ -300,7 +314,7 @@ export default function Header() {
             <div className="mega-panel">
               <div className="container mega-inner">
                 {/* Columns */}
-                <div className="mega-cols">
+                <div className={`mega-cols cols-${currentMega.columns.length}`}>
                   {currentMega.columns.map((col) => (
                     <div key={col.heading} className="mega-col">
                       <p className="mega-col-heading">{col.heading}</p>
@@ -330,7 +344,7 @@ export default function Header() {
                     <div className="mega-featured-btns">
                       <Link href={currentMega.featured.href}
                         className="mega-btn-primary" onClick={() => setActiveMega(null)}>
-                        View Package
+                        {currentMega.featured.cta ?? 'View Package'}
                       </Link>
                       <WaLink href={`https://wa.me/919873897652?text=${encodeURIComponent(currentMega.featured.waText)}`}
                         className="mega-btn-wa" target="_blank" rel="noopener noreferrer"
@@ -379,18 +393,21 @@ export default function Header() {
 
                   {mobileGroup === entry.label && (
                     <div className="mob-items">
-                      {entry.mega.columns.flatMap((col) =>
-                        col.items.map((item) => (
-                          <Link key={item.href + item.label} href={item.href}
-                            className="mob-item" onClick={closeAll}>
-                            <span className="mob-icon">{item.icon}</span>
-                            <span className="mob-item-body">
-                              <span className="mob-item-label">{item.label}</span>
-                              <span className="mob-item-sub">{item.sub}</span>
-                            </span>
-                          </Link>
-                        ))
-                      )}
+                      {entry.mega.columns.map((col) => (
+                        <div key={col.heading} className="mob-subgroup">
+                          <p className="mob-subhead">{col.heading}</p>
+                          {col.items.map((item) => (
+                            <Link key={item.href + item.label} href={item.href}
+                              className="mob-item" onClick={closeAll}>
+                              <span className="mob-icon">{item.icon}</span>
+                              <span className="mob-item-body">
+                                <span className="mob-item-label">{item.label}</span>
+                                <span className="mob-item-sub">{item.sub}</span>
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      ))}
                       {/* Featured link in mobile */}
                       <Link href={entry.mega.featured.href}
                         className="mob-featured" onClick={closeAll}>
