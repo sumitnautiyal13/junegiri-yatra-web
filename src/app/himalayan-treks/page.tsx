@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import TreksExplorer, { type TrekEntry } from '@/components/TreksExplorer';
 
 export const metadata: Metadata = {
   title: 'Himalayan Treks 2026 | Uttarakhand & Himachal | Junegiri',
@@ -369,45 +370,30 @@ const FEATURES = [
   { icon: '🏥', title: 'Altitude Safety Protocol', desc: 'Acclimatisation built into every itinerary. Pulse oximeters on all treks. Medical evacuation protocol in place.' },
 ];
 
-/* cardBase moved to CSS class .trek-card-hover in globals.css */
+/* cardBase moved to CSS class .trek-card-hover in globals.css.
+   TrekCard now lives in the TreksExplorer client island. */
 
-/* ── Shared trek card (one design for all sections) ──────────── */
-function TrekCard({
-  image, name, tag, tagColor, difficulty, diffColor,
-  duration, altitude, season, desc, price, href,
-}: {
-  image: string; name: string; tag: string; tagColor: string;
-  difficulty: string; diffColor: string; duration: string; altitude: string;
-  season: string; desc: string; price?: string; href: string;
-}) {
-  return (
-    <Link href={href} className="trek-card-hover" style={{ display: 'block', textDecoration: 'none' }}>
-      <div className="trek-card-inner">
-        <div style={{ position: 'relative', height: 190 }}>
-          <Image src={image} alt={name} fill sizes="400px" style={{ objectFit: 'cover' }} />
-          <span style={{ position: 'absolute', top: 12, left: 12, background: tagColor, color: '#fff', fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20, textTransform: 'uppercase', letterSpacing: '0.06em' }}>{tag}</span>
-          <span style={{ position: 'absolute', top: 12, right: 12, background: 'rgba(0,0,0,0.65)', color: diffColor, fontSize: 11, fontWeight: 600, padding: '4px 10px', borderRadius: 20 }}>{difficulty}</span>
-        </div>
-        <div style={{ padding: '18px 20px 20px', flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-          <h3 style={{ fontSize: 17, fontWeight: 700, color: 'var(--heading)', marginBottom: 6 }}>{name}</h3>
-          <p style={{ fontSize: 12.5, color: 'var(--muted)', lineHeight: 1.55, marginBottom: 12, flexGrow: 1 }}>{desc}</p>
-          <div style={{ display: 'flex', gap: 14, marginBottom: 12, flexWrap: 'wrap' }}>
-            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>🕐 {duration}</span>
-            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>⛰️ {altitude}</span>
-            <span style={{ fontSize: 11.5, color: 'var(--muted)' }}>📅 {season}</span>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: 12, borderTop: '1px solid var(--border)' }}>
-            <div>
-              <div style={{ fontSize: 10, color: 'var(--muted)', textTransform: 'uppercase', letterSpacing: '0.07em' }}>From</div>
-              <div style={{ fontSize: 20, fontWeight: 800, color: 'var(--gold2)' }}>{price}<span style={{ fontSize: 11, fontWeight: 400, color: 'var(--muted)' }}>/person</span></div>
-            </div>
-            <span style={{ background: 'var(--gold)', color: '#07051A', fontSize: 12, fontWeight: 700, padding: '9px 16px', borderRadius: 8 }}>View Trek →</span>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-}
+/* ── Unified, filterable trek list (region + difficulty + budget) ── */
+const TREKS: TrekEntry[] = [
+  ...UK_TREKS.map((t) => ({
+    name: t.name, image: t.image, tag: t.tag, tagColor: t.tagColor,
+    difficulty: t.difficulty, diffColor: t.diffColor, duration: t.duration,
+    altitude: t.altitude, season: t.season, desc: t.desc, price: t.price,
+    href: `/packages/${t.slug}/`, region: 'Uttarakhand' as const,
+  })),
+  ...HP_EASY.map((t) => ({
+    name: t.name, image: t.image, tag: t.tag, tagColor: t.tagColor,
+    difficulty: t.difficulty, diffColor: t.diffColor, duration: t.duration,
+    altitude: t.altitude, season: t.season, desc: t.highlight, price: t.price,
+    href: t.packageUrl ?? '/himalayan-treks/', region: 'Himachal' as const,
+  })),
+  ...HP_MODERATE.map((t) => ({
+    name: t.name, image: t.image, tag: t.tag, tagColor: t.tagColor,
+    difficulty: t.difficulty, diffColor: t.diffColor, duration: t.duration,
+    altitude: t.altitude, season: t.season, desc: t.highlight, price: t.price,
+    href: t.packageUrl ?? '/himalayan-treks/', region: 'Himachal' as const,
+  })),
+];
 
 export default function HimalayanTreksPage() {
   return (
@@ -466,109 +452,18 @@ export default function HimalayanTreksPage() {
       </section>
 
       {/* ══════════════════════════════════════════════════════
-          HIMACHAL PRADESH TREKS
+          ALL TREKS — filter by region, difficulty & budget
       ══════════════════════════════════════════════════════ */}
       <section className="city-section">
         <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#5B9BD5', background: 'rgba(91,155,213,0.12)', padding: '4px 12px', borderRadius: 20 }}>Himachal Pradesh</span>
-          </div>
           <h2 className="section-title-left">
-            Himachal Pradesh <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Trek Routes</em>
+            Browse All <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Himalayan Treks</em>
           </h2>
           <p className="section-sub-left">
-            10 trek routes from Manali, Dharamshala &amp; Spiti — fully packaged with transport, permits &amp; guides.
+            16 routes across Uttarakhand &amp; Himachal Pradesh — filter by region, difficulty and budget to find your trek. Every departure includes transport from Haridwar, all permits and NCRD-certified guides.
           </p>
-
-          {/* Easy–Moderate */}
-          <div style={{ marginTop: 32 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
-              <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#3DC9A0', display: 'inline-block', flexShrink: 0 }} />
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#3DC9A0', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Easy – Moderate</h3>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
-              {HP_EASY.map((trek) => (
-                <TrekCard
-                  key={trek.name}
-                  image={trek.image}
-                  name={trek.name}
-                  tag={trek.tag}
-                  tagColor={trek.tagColor}
-                  difficulty={trek.difficulty}
-                  diffColor={trek.diffColor}
-                  duration={trek.duration}
-                  altitude={trek.altitude}
-                  season={trek.season}
-                  desc={trek.highlight}
-                  price={trek.price}
-                  href={trek.packageUrl ?? '/himalayan-treks/'}
-                />
-              ))}
-            </div>
-          </div>
-
-          {/* Moderate–Difficult */}
-          <div style={{ marginTop: 40 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 18 }}>
-              <span style={{ width: 10, height: 10, borderRadius: '50%', background: '#E8AA50', display: 'inline-block', flexShrink: 0 }} />
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: '#E8AA50', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Moderate – Difficult</h3>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24 }}>
-              {HP_MODERATE.map((trek) => (
-                <TrekCard
-                  key={trek.name}
-                  image={trek.image}
-                  name={trek.name}
-                  tag={trek.tag}
-                  tagColor={trek.tagColor}
-                  difficulty={trek.difficulty}
-                  diffColor={trek.diffColor}
-                  duration={trek.duration}
-                  altitude={trek.altitude}
-                  season={trek.season}
-                  desc={trek.highlight}
-                  price={trek.price}
-                  href={trek.packageUrl ?? '/himalayan-treks/'}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════
-          ALSO EXPLORE — UTTARAKHAND TREKS
-      ══════════════════════════════════════════════════════ */}
-      <section className="city-section" style={{ background: 'var(--card)', paddingTop: 60, paddingBottom: 60 }}>
-        <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 6 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gold)', background: 'rgba(201,146,61,0.12)', padding: '4px 12px', borderRadius: 20 }}>Also Explore · Uttarakhand</span>
-          </div>
-          <h2 className="section-title-left">
-            Garhwal &amp; Kumaon <em style={{ fontStyle: 'normal', color: 'var(--gold2)' }}>Trek Packages</em>
-          </h2>
-          <p className="section-sub-left">
-            Prefer the Garhwal Himalayas? You can also explore our Uttarakhand treks — Kuari Pass, Roopkund, Chopta–Tungnath &amp; more, all departing from Haridwar.
-          </p>
-
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 24, marginTop: 28 }}>
-            {UK_TREKS.map((trek) => (
-              <TrekCard
-                key={trek.slug}
-                image={trek.image}
-                name={trek.name}
-                tag={trek.tag}
-                tagColor={trek.tagColor}
-                difficulty={trek.difficulty}
-                diffColor={trek.diffColor}
-                duration={trek.duration}
-                altitude={trek.altitude}
-                season={trek.season}
-                desc={trek.desc}
-                price={trek.price}
-                href={`/packages/${trek.slug}/`}
-              />
-            ))}
+          <div style={{ marginTop: 28 }}>
+            <TreksExplorer treks={TREKS} />
           </div>
         </div>
       </section>
